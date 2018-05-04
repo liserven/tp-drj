@@ -40,6 +40,7 @@ class Action extends Base
      */
     public function toList()
     {
+        $list = config('menu');
 
         $where['ad_pid'] = input('pid') ? input('pid') : '';
         $where['ad_topic'] = input('seach') ? input('seach') : '';
@@ -65,6 +66,7 @@ class Action extends Base
     {
 
         if ($this->request->isPost()) {
+
             //组合数据
             if (!$this->_checkAction()) {
                 return $this->ajaxShow(false, '无权此操作');
@@ -119,19 +121,20 @@ class Action extends Base
             $data['ad_topic'] = input('topic');
             $data['ad_url'] = input('url');
             $data['ad_state'] = input('state') == 'on' ? 1 : 2;
-            $data['ad_id'] = input('adid/d');
+
+            $id = input('post.id');
+
             //验证数据
             (new ActionValidate())->goCheck($data);
-            $data = ActionData::get($data['ad_id']);
-            if (!$data)
+            $datas = ActionData::get($id);
+            if (!$datas)
             {
                 new ParameterException([
                     'msg' => '该行为已经不存在'
                 ]);
             }
-
             //修改
-            $actionResult = ActionData::update($data);
+            $actionResult = Db::table('action_data')->where([ 'ad_id'=> $id])->update($data);
 
             //返回结果
             if (!$actionResult) {

@@ -25,4 +25,9 @@ class Error extends Controller
     {
         return $this->fetch();
     }
+
+    public function notduty(){
+        echo '您权限不够';
+    }
+
 }

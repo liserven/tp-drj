@@ -1,6 +1,6 @@
 <layout name="layout" />
 <div style="padding: 20px;">
-    <form class="layui-form" action="{:url('admin/Member/doAdd')}">
+    <form class="layui-form" action="{:url('admin/Member/doAdd')}" method="post">
         <div class="layui-form-item">
             <label class="layui-form-label">行为名称</label>
             <div class="layui-input-inline">
@@ -27,13 +27,15 @@
         <div class="layui-form-item">
             <label class="layui-form-label">是否启用</label>
             <div class="layui-input-block">
+
                 <input type="radio" name="status" value="1" title="启用" checked>
                 <input type="radio" name="status" value="2" title="停用">
             </div>
         </div>
         <div class="layui-form-item">
             <div class="layui-input-block">
-                <button class="layui-btn" lay-submit lay-filter="formEdit" id="submit">立即提交</button>
+                <input type="hidden" name="id" value="{$data.ad_id}">
+                <button class="layui-btn" lay-submit lay-filter="ActionEdit" id="submit">立即提交</button>
                 <button type="reset" class="layui-btn layui-btn-primary">重置</button>
             </div>
         </div>

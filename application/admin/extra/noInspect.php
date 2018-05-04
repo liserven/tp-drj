@@ -6,5 +6,5 @@
 */
 
 return [
-    '',
+    'admin/Index/index',
 ];

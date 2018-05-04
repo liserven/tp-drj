@@ -22,7 +22,6 @@ class Index extends Base
     public function index()
     {
         return $this->fetch();
-		
     }
 
     //加载欢迎界面

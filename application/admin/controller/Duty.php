@@ -80,6 +80,7 @@ class Duty extends Base
             $data['dd_describe'] = input('describe');
             $data['dd_status'] = input('status');
             $actionList = input('actions/a');
+
             if( empty($actionList) )
             {
                 throw new ParameterException([

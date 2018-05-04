@@ -1,8 +1,49 @@
-<layout name="layout"/>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:74:"D:\phpStudy\WWW\drhome\public/../application/admin\view\action\tolist.html";i:1525426148;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>后台管理系统</title>
+    <link rel="stylesheet" href="__STATIC__/layui/css/layui.css">
+    <link rel="stylesheet" href="__STATIC__/static/css/style.css">
+    <link rel="stylesheet" href="__STATIC__/static/css/style.css">
+    <link rel="stylesheet" href="__CSS__/common.css">
+    <link rel="icon" href="__STATIC__/editor/themes/simple/simple.css">
+    <link rel="icon" href="__JS__/<?php echo $mName; ?>/wangEditor/release/wangEditor.css">
+    <script src="__JS__/jquery.min.js"></script>
+    <script src="__STATIC__/layui/layui.js"></script>
+
+    <!--/meta 作为公共模版分离出去-->
+    <script type="text/javascript">
+        layui.config({
+            base:'/Js/admin/',
+        }).extend({
+            custom : 'common'
+        }).use('operation');
+        var config = {
+            root : "__ROOT__",
+            url : "__URL__",
+            curl : "__CURL__",
+            uid: "<?php echo $User['am_id']; ?>",
+            cName : "<?php echo $cName; ?>",
+            nickname:"<?php echo $User['am_nickname']; ?>"
+        };
+        var baseUrl = 'http://www.zxzm.com';
+    </script>
+
+</head>
+<body>
+
+<div class="box-content">
+    
 <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
     <legend>行为列表 <a href="javascript:;" class="layui-btn layui-btn-small add">添加行为</a>
-        <a href="{:url('user/leadingin')}" class="layui-btn layui-btn-danger layui-btn-small">批量导入</a>
-        <a href="{:url('user/expuser')}" class="layui-btn layui-btn-warm layui-btn-small">批量导出</a>
+        <a href="<?php echo url('user/leadingin'); ?>" class="layui-btn layui-btn-danger layui-btn-small">批量导入</a>
+        <a href="<?php echo url('user/expuser'); ?>" class="layui-btn layui-btn-warm layui-btn-small">批量导出</a>
         <a href="javascript:;" class="layui-btn layui-btn-default layui-btn-small refresh"><i class="layui-icon">&#x1002;</i>刷新</a>
     </legend>
 </fieldset>
@@ -63,10 +104,10 @@
             </tr>
             </thead>
             <tbody class="">
-            <volist name="page" id="vo">
-            <tr data-index="0" class="tbody_content" data-id="{$vo.ad_id}">
+            <?php if(is_array($page) || $page instanceof \think\Collection || $page instanceof \think\Paginator): $i = 0; $__LIST__ = $page;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+            <tr data-index="0" class="tbody_content" data-id="<?php echo $vo['ad_id']; ?>">
                 <td >
-                    <div class="layui-table-cell">{$key}</div>
+                    <div class="layui-table-cell"><?php echo $key; ?></div>
                 </td>
                 <td>
                     <div class="layui-table-cell">
@@ -77,29 +118,29 @@
                     </div>
                 </td>
                 <td>
-                    <div class="layui-table-cell">{$vo.ad_id}</div>
+                    <div class="layui-table-cell"><?php echo $vo['ad_id']; ?></div>
                 </td>
                 <td>
-                    <div class="layui-table-cell">{$vo.ad_topic}</div>
+                    <div class="layui-table-cell"><?php echo $vo['ad_topic']; ?></div>
                 </td>
 
                 <td>
-                    <div class="layui-table-cell">{$vo.ad_url}</div>
+                    <div class="layui-table-cell"><?php echo $vo['ad_url']; ?></div>
                 </td>
                 <td>
-                    <div class="layui-table-cell">{$vo.pname.ad_topic?$vo.pname.ad_topic:'一级分类'}</div>
+                    <div class="layui-table-cell"><?php echo !empty($vo['pname']['ad_topic'])?$vo['pname']['ad_topic']:'一级分类'; ?></div>
                 </td>
                 <td data-id="1">
                     <div class="layui-table-cell">
                         <input type="checkbox" lay-filter="eidt_status" lay-skin="switch" lay-text="启用|停用"
-                               type-d="{$vo.ad_status==1?2:1}" {$vo.ad_status==1 ? 'checked' :''}>
+                               type-d="<?php echo $vo['ad_status']==1?2:1; ?>" <?php echo $vo['ad_status']==1?'checked' :''; ?>>
                     </div>
                 </td>
                 <td>
-                    <div class="layui-table-cell">{$vo.create_at}</div>
+                    <div class="layui-table-cell"><?php echo $vo['create_at']; ?></div>
                 </td>
                 <td>
-                    <div class="layui-table-cell">{$vo.update_at}</div>
+                    <div class="layui-table-cell"><?php echo $vo['update_at']; ?></div>
                 </td>
                 <td>
                     <div class="layui-table-cell">
@@ -109,11 +150,11 @@
                     </div>
                 </td>
             </tr>
-            </volist>
+            <?php endforeach; endif; else: echo "" ;endif; ?>
             </tbody>
             <tfoot>
                 <tr>
-                    <td colspan="13">{$page->render();}</td>
+                    <td colspan="13"><?php echo $page->render();; ?></td>
                 </tr>
             </tfoot>
         </table>
@@ -122,3 +163,21 @@
 </div>
 </div>
 </div>  
+</div>
+<?php if(($aName == 'doadd') OR ($aName == 'doedit')): ?>
+    <script type="text/javascript" src="__STATIC__/ueditor/1.4.3/ueditor.config.js"></script>
+    <script type="text/javascript" src="__STATIC__/ueditor/1.4.3/ueditor.all.min.js"></script>
+    <script type="text/javascript" src="__STATIC__/ueditor/1.4.3/lang/zh-cn/zh-cn.js"></script>
+    <script type="text/javascript" src="__STATIC__/qiniu/dist/qiniu.min.js"></script>
+    <script src="__JS__/<?php echo $mName; ?>/wangEditor/release/wangEditor.js"></script>
+
+<?php endif; ?>
+<script src="__JS__/<?php echo $mName; ?>/<?php echo $cName; ?>/<?php echo $aName; ?>.js?v=<?php echo time(); ?>"></script>
+
+
+<?php if(($cName == 'Index')): ?>
+    <script type="text/javascript" src="__JS__/<?php echo $mName; ?>/chat.js"></script>
+    <script type="text/javascript" src="__JS__/jquery-3.2.1.min.js"></script>
+<?php endif; ?>
+    </body>
+</html>

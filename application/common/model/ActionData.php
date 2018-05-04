@@ -11,12 +11,6 @@ namespace app\common\model;
 
 class ActionData extends BaseModel
 {
-    protected $autoWriteTimestamp = true; //开启时间自动写入
-    protected $createTime = 'ad_ctime';      //设置写入字段
-    protected $updateTime = 'ad_utime';
-
-    protected $hidden = []; //隐藏的字段
-
     public function actions(){
         return $this->hasMany('ActionData','ad_pid','ad_id');
     }

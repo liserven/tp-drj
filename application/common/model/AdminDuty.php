@@ -27,7 +27,7 @@ class AdminDuty extends BaseModel
     }
     //根据用户id搜索所有行为
     public static function getDutyList($userid){
-        $data = self::with(['dutys','dutys.action','dutys.action.actions'])->where(['ad_user_id'=>$userid])->find();
+        $data = self::with(['dutys'])->where(['ad_user_id'=>$userid])->find();
         return $data;
     }
 

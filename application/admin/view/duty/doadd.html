@@ -24,11 +24,13 @@
             <label class="layui-form-label">对应权限</label>
             <div class="layui-input-block">
                 <volist name="actionPidList" id="vo">
+
                     <fieldset class="layui-elem-field">
                         <legend>{$vo.ad_topic}</legend>
                         <div class="layui-field-box">
+                            <input type="checkbox" value="{$vo.ad_id}" name="actions[]" title="{$vo.ad_topic}" lay-filter="check-all" class="check-all" lay-skin="primary">
                             <volist name="vo['actions']" id="v">
-                                <input type="checkbox" value="{$v.ad_id}" name="actions[]" title="{$v.ad_topic}" lay-skin="primary">
+                                <input type="checkbox" value="{$v.ad_id}" name="actions[]" lay-filter="check-one" title="{$v.ad_topic}" class="check-one" lay-skin="primary">
                             </volist>
                         </div>
                     </fieldset>
