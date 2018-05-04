@@ -28,7 +28,6 @@ class Banner extends Base
     public function indexBanner()
     {
         $banners = BannerModel::getBannerList([], 3);
-        $a = '';
         if( empty($banners) )
         {
             throw new ParameterException();
