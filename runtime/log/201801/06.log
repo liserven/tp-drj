@@ -1,0 +1,1103 @@
+---------------------------------------------------------------
+[ 2018-01-06T13:55:28+08:00 ] 0.0.0.0 GET /lsy/public/index.php/admin
+[ info ] localhost/lsy/public/index.php/admin [运行时间：0.072719s][吞吐率：13.75req/s] [内存消耗：1,467.90kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4589391872; PHPSESSID=s1hn97q3ggsam1ijm46sccp577; _csrf=656244bcdca9b6f1acdee621b4d7b8b1d85714442ebcd5980a53025632db6cbba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kZ75QxCPIvd6AEoe8qRB448ahTg6ypbV%22%3B%7D',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\lsy\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\lsy\\runtime\\session',
+)
+[ info ] [ VIEW ] D:\phpStudy\WWW\lsy\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-06T13:55:31+08:00 ] 0.0.0.0 GET /lsy/public/index.php/admin/login/index.html
+[ info ] localhost/lsy/public/index.php/admin/login/index.html [运行时间：0.085545s][吞吐率：11.69req/s] [内存消耗：1,473.93kb] [文件加载：60]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4589391872; PHPSESSID=s1hn97q3ggsam1ijm46sccp577; _csrf=656244bcdca9b6f1acdee621b4d7b8b1d85714442ebcd5980a53025632db6cbba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kZ75QxCPIvd6AEoe8qRB448ahTg6ypbV%22%3B%7D',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/lsy/public/index.php/admin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy\WWW\lsy\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\lsy\public/../application/admin\view\login\index.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-06T13:55:31+08:00 ] 0.0.0.0 GET /lsy/public/index.php/captcha.html
+[ info ] localhost/lsy/public/index.php/captcha.html [运行时间：0.306263s][吞吐率：3.27req/s] [内存消耗：1,125.12kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4589391872; PHPSESSID=s1hn97q3ggsam1ijm46sccp577; _csrf=656244bcdca9b6f1acdee621b4d7b8b1d85714442ebcd5980a53025632db6cbba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kZ75QxCPIvd6AEoe8qRB448ahTg6ypbV%22%3B%7D',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/lsy/public/index.php/admin/login/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\phpStudy\WWW\lsy\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\lsy\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\lsy\\runtime\\session',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-06T13:56:34+08:00 ] 0.0.0.0 POST /lsy/public/index.php/admin/login/login.html
+[ info ] localhost/lsy/public/index.php/admin/login/login.html [运行时间：0.394625s][吞吐率：2.53req/s] [内存消耗：2,265.97kb] [文件加载：73]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4589391872; PHPSESSID=s1hn97q3ggsam1ijm46sccp577; _csrf=656244bcdca9b6f1acdee621b4d7b8b1d85714442ebcd5980a53025632db6cbba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kZ75QxCPIvd6AEoe8qRB448ahTg6ypbV%22%3B%7D',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/lsy/public/index.php/admin/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://localhost',
+  'cache-control' => 'max-age=0',
+  'content-length' => '49',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'phone' => '13525965579',
+  'password' => '1314yydeai',
+  'captcha' => 'xca',
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\phpStudy\WWW\lsy\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\lsy\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\lsy\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.157726s ] mysql:host=127.0.0.1;dbname=zszm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `member` [ RunTime:0.019555s ]
+[ sql ] [ SQL ] SELECT * FROM `member` WHERE  `am_phone` = '13525965579' LIMIT 1 [ RunTime:0.016736s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `member_log` [ RunTime:0.011771s ]
+[ sql ] [ SQL ] INSERT INTO `member_log` (`ml_member_id` , `ml_name` , `ml_url` , `ml_ip` , `ml_ctime`) VALUES (1 , '登录后台' , 'admin/login/login' , '0.0.0.0' , 1515218194) [ RunTime:0.077993s ]
+[ sql ] [ SQL ] UPDATE `member`  SET `am_ssid`='s1hn97q3ggsam1ijm46sccp577',`am_prelog_time`=1515218194,`am_utime`=1515218194  WHERE  `am_id` = 1 [ RunTime:0.046246s ]
+---------------------------------------------------------------
+[ 2018-01-06T13:56:40+08:00 ] 0.0.0.0 GET /lsy/public/index.php/admin
+[ info ] localhost/lsy/public/index.php/admin [运行时间：0.046418s][吞吐率：21.54req/s] [内存消耗：1,705.80kb] [文件加载：63]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4589391872; PHPSESSID=s1hn97q3ggsam1ijm46sccp577; _csrf=656244bcdca9b6f1acdee621b4d7b8b1d85714442ebcd5980a53025632db6cbba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kZ75QxCPIvd6AEoe8qRB448ahTg6ypbV%22%3B%7D',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\lsy\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\lsy\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\lsy\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\lsy\public/../application/admin\view\index\index.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-06T13:56:40+08:00 ] 0.0.0.0 GET /lsy/public/index.php/admin/index/welcome.html
+[ info ] localhost/lsy/public/index.php/admin/index/welcome.html [运行时间：0.155880s][吞吐率：6.42req/s] [内存消耗：1,843.31kb] [文件加载：67]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4589391872; PHPSESSID=s1hn97q3ggsam1ijm46sccp577; _csrf=656244bcdca9b6f1acdee621b4d7b8b1d85714442ebcd5980a53025632db6cbba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kZ75QxCPIvd6AEoe8qRB448ahTg6ypbV%22%3B%7D',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/lsy/public/index.php/admin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\lsy\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\lsy\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\lsy\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\lsy\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'server',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012035s ] mysql:host=127.0.0.1;dbname=zszm;charset=utf8
+[ sql ] [ SQL ] select version() [ RunTime:0.084476s ]
+---------------------------------------------------------------
+[ 2018-01-06T13:57:48+08:00 ] 0.0.0.0 GET /lsy/public/index.php/admin/User/tolist
+[ info ] localhost/lsy/public/index.php/admin/User/tolist [运行时间：0.212049s][吞吐率：4.72req/s] [内存消耗：2,511.93kb] [文件加载：74]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'User',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4589391872; PHPSESSID=s1hn97q3ggsam1ijm46sccp577; _csrf=656244bcdca9b6f1acdee621b4d7b8b1d85714442ebcd5980a53025632db6cbba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kZ75QxCPIvd6AEoe8qRB448ahTg6ypbV%22%3B%7D',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/lsy/public/index.php/admin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\lsy\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\lsy\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\User->toList[ D:\phpStudy\WWW\lsy\application\admin\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\lsy\public/../application/admin\view\user\tolist.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'userList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004048s ] mysql:host=127.0.0.1;dbname=zszm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.110067s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `user` `au` LIMIT 1 [ RunTime:0.001870s ]
+[ sql ] [ SQL ] SELECT * FROM `user` `au` ORDER BY au_id DESC LIMIT 0,5 [ RunTime:0.002737s ]
+---------------------------------------------------------------
+[ 2018-01-06T13:57:48+08:00 ] 0.0.0.0 GET /lsy/public/index.php/admin/User/456654ewqew?imageView2/1/w/50/h/50
+[ info ] localhost/lsy/public/index.php/admin/User/456654ewqew?imageView2/1/w/50/h/50 [运行时间：0.076187s][吞吐率：13.13req/s] [内存消耗：1,586.56kb] [文件加载：63]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'User',
+    2 => '456654ewqew',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4589391872; PHPSESSID=s1hn97q3ggsam1ijm46sccp577; _csrf=656244bcdca9b6f1acdee621b4d7b8b1d85714442ebcd5980a53025632db6cbba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kZ75QxCPIvd6AEoe8qRB448ahTg6ypbV%22%3B%7D',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/lsy/public/index.php/admin/User/tolist',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'imageView2/1/w/50/h/50' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\lsy\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\lsy\\runtime\\session',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-06T13:57:49+08:00 ] 0.0.0.0 GET /lsy/public/index.php/admin/User/456978?imageView2/1/w/50/h/50
+[ info ] localhost/lsy/public/index.php/admin/User/456978?imageView2/1/w/50/h/50 [运行时间：0.092369s][吞吐率：10.83req/s] [内存消耗：1,586.55kb] [文件加载：63]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'User',
+    2 => '456978',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4589391872; PHPSESSID=s1hn97q3ggsam1ijm46sccp577; _csrf=656244bcdca9b6f1acdee621b4d7b8b1d85714442ebcd5980a53025632db6cbba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kZ75QxCPIvd6AEoe8qRB448ahTg6ypbV%22%3B%7D',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/lsy/public/index.php/admin/User/tolist',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'imageView2/1/w/50/h/50' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\lsy\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\lsy\\runtime\\session',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-06T13:57:54+08:00 ] 0.0.0.0 GET /lsy/public/index.php/admin/Member/tolist
+[ info ] localhost/lsy/public/index.php/admin/Member/tolist [运行时间：0.132467s][吞吐率：7.55req/s] [内存消耗：2,657.21kb] [文件加载：82]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Member',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4589391872; PHPSESSID=s1hn97q3ggsam1ijm46sccp577; _csrf=656244bcdca9b6f1acdee621b4d7b8b1d85714442ebcd5980a53025632db6cbba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kZ75QxCPIvd6AEoe8qRB448ahTg6ypbV%22%3B%7D',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/lsy/public/index.php/admin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\lsy\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\lsy\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Member->toList[ D:\phpStudy\WWW\lsy\application\admin\controller\Member.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\lsy\public/../application/admin\view\member\tolist.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'dutyList',
+  7 => 'MemberList',
+  8 => 'empty',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011511s ] mysql:host=127.0.0.1;dbname=zszm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `duty_data` [ RunTime:0.013041s ]
+[ sql ] [ SQL ] SELECT * FROM `duty_data` [ RunTime:0.001069s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `member` [ RunTime:0.012979s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `member` `am` LIMIT 1 [ RunTime:0.000725s ]
+[ sql ] [ SQL ] SELECT * FROM `member` `am` LIMIT 0,10 [ RunTime:0.001138s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_duty` [ RunTime:0.013403s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_duty` WHERE  `ad_user_id` IN (1,12,13,14,15) [ RunTime:0.000853s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_duty` WHERE  `ad_user_id` IN (1,12,13,14,15) [ RunTime:0.000738s ]
+[ sql ] [ SQL ] SELECT * FROM `duty_data` WHERE  `dd_id` IN (6,11,14) [ RunTime:0.000745s ]
+[ error ] [0]类的属性不存在:app\common\model\Member->am_status[D:\phpStudy\WWW\lsy\thinkphp\library\think\Model.php:587]
+---------------------------------------------------------------
+[ 2018-01-06T14:00:26+08:00 ] 0.0.0.0 GET /lsy/public/index.php/admin
+[ info ] localhost/lsy/public/index.php/admin [运行时间：0.047976s][吞吐率：20.84req/s] [内存消耗：1,584.48kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4589391872; PHPSESSID=s1hn97q3ggsam1ijm46sccp577; _csrf=656244bcdca9b6f1acdee621b4d7b8b1d85714442ebcd5980a53025632db6cbba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kZ75QxCPIvd6AEoe8qRB448ahTg6ypbV%22%3B%7D',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\lsy\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\lsy\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\lsy\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\lsy\public/../application/admin\view\index\index.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-06T14:00:26+08:00 ] 0.0.0.0 GET /lsy/public/index.php/admin/index/welcome.html
+[ info ] localhost/lsy/public/index.php/admin/index/welcome.html [运行时间：0.062611s][吞吐率：15.97req/s] [内存消耗：1,731.75kb] [文件加载：65]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4589391872; PHPSESSID=s1hn97q3ggsam1ijm46sccp577; _csrf=656244bcdca9b6f1acdee621b4d7b8b1d85714442ebcd5980a53025632db6cbba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kZ75QxCPIvd6AEoe8qRB448ahTg6ypbV%22%3B%7D',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/lsy/public/index.php/admin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\lsy\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\lsy\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\lsy\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\lsy\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'server',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012228s ] mysql:host=127.0.0.1;dbname=zszm;charset=utf8
+[ sql ] [ SQL ] select version() [ RunTime:0.000649s ]
+---------------------------------------------------------------
+[ 2018-01-06T14:00:28+08:00 ] 0.0.0.0 GET /lsy/public/index.php/admin/Member/tolist
+[ info ] localhost/lsy/public/index.php/admin/Member/tolist [运行时间：0.142575s][吞吐率：7.01req/s] [内存消耗：2,527.43kb] [文件加载：80]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Member',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4589391872; PHPSESSID=s1hn97q3ggsam1ijm46sccp577; _csrf=656244bcdca9b6f1acdee621b4d7b8b1d85714442ebcd5980a53025632db6cbba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kZ75QxCPIvd6AEoe8qRB448ahTg6ypbV%22%3B%7D',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/lsy/public/index.php/admin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\lsy\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\lsy\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Member->toList[ D:\phpStudy\WWW\lsy\application\admin\controller\Member.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\lsy\public/../application/admin\view\member\tolist.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'dutyList',
+  7 => 'MemberList',
+  8 => 'empty',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012428s ] mysql:host=127.0.0.1;dbname=zszm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `duty_data` [ RunTime:0.013773s ]
+[ sql ] [ SQL ] SELECT * FROM `duty_data` [ RunTime:0.000846s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `member` [ RunTime:0.021169s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `member` `am` LIMIT 1 [ RunTime:0.000760s ]
+[ sql ] [ SQL ] SELECT * FROM `member` `am` LIMIT 0,10 [ RunTime:0.000935s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_duty` [ RunTime:0.014086s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_duty` WHERE  `ad_user_id` IN (1,12,13,14,15) [ RunTime:0.000783s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_duty` WHERE  `ad_user_id` IN (1,12,13,14,15) [ RunTime:0.000845s ]
+[ sql ] [ SQL ] SELECT * FROM `duty_data` WHERE  `dd_id` IN (6,11,14) [ RunTime:0.000744s ]
+[ error ] [0]类的属性不存在:app\common\model\Member->am_pre_time[D:\phpStudy\WWW\lsy\thinkphp\library\think\Model.php:587]
+---------------------------------------------------------------
+[ 2018-01-06T14:00:42+08:00 ] 0.0.0.0 GET /lsy/public/index.php/admin
+[ info ] localhost/lsy/public/index.php/admin [运行时间：0.040664s][吞吐率：24.59req/s] [内存消耗：1,584.48kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4589391872; PHPSESSID=s1hn97q3ggsam1ijm46sccp577; _csrf=656244bcdca9b6f1acdee621b4d7b8b1d85714442ebcd5980a53025632db6cbba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kZ75QxCPIvd6AEoe8qRB448ahTg6ypbV%22%3B%7D',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\lsy\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\lsy\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\lsy\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\lsy\public/../application/admin\view\index\index.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-06T14:00:43+08:00 ] 0.0.0.0 GET /lsy/public/index.php/admin/index/welcome.html
+[ info ] localhost/lsy/public/index.php/admin/index/welcome.html [运行时间：0.062509s][吞吐率：16.00req/s] [内存消耗：1,731.75kb] [文件加载：65]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4589391872; PHPSESSID=s1hn97q3ggsam1ijm46sccp577; _csrf=656244bcdca9b6f1acdee621b4d7b8b1d85714442ebcd5980a53025632db6cbba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kZ75QxCPIvd6AEoe8qRB448ahTg6ypbV%22%3B%7D',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/lsy/public/index.php/admin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\lsy\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\lsy\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\lsy\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\lsy\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'server',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012969s ] mysql:host=127.0.0.1;dbname=zszm;charset=utf8
+[ sql ] [ SQL ] select version() [ RunTime:0.000447s ]
+---------------------------------------------------------------
+[ 2018-01-06T14:00:44+08:00 ] 0.0.0.0 GET /lsy/public/index.php/admin/Member/tolist
+[ info ] localhost/lsy/public/index.php/admin/Member/tolist [运行时间：0.111639s][吞吐率：8.96req/s] [内存消耗：2,505.87kb] [文件加载：77]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Member',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4589391872; PHPSESSID=s1hn97q3ggsam1ijm46sccp577; _csrf=656244bcdca9b6f1acdee621b4d7b8b1d85714442ebcd5980a53025632db6cbba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kZ75QxCPIvd6AEoe8qRB448ahTg6ypbV%22%3B%7D',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/lsy/public/index.php/admin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\lsy\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\lsy\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Member->toList[ D:\phpStudy\WWW\lsy\application\admin\controller\Member.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\lsy\public/../application/admin\view\member\tolist.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'dutyList',
+  7 => 'MemberList',
+  8 => 'empty',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003701s ] mysql:host=127.0.0.1;dbname=zszm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `duty_data` [ RunTime:0.013023s ]
+[ sql ] [ SQL ] SELECT * FROM `duty_data` [ RunTime:0.000791s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `member` [ RunTime:0.013125s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `member` `am` LIMIT 1 [ RunTime:0.000736s ]
+[ sql ] [ SQL ] SELECT * FROM `member` `am` LIMIT 0,10 [ RunTime:0.000755s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_duty` [ RunTime:0.012718s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_duty` WHERE  `ad_user_id` IN (1,12,13,14,15) [ RunTime:0.000693s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_duty` WHERE  `ad_user_id` IN (1,12,13,14,15) [ RunTime:0.000758s ]
+[ sql ] [ SQL ] SELECT * FROM `duty_data` WHERE  `dd_id` IN (6,11,14) [ RunTime:0.000670s ]
+---------------------------------------------------------------
+[ 2018-01-06T14:00:44+08:00 ] 0.0.0.0 GET /lsy/public/index.php/admin/Member/13525965579?imageView2/1/w/50/h/50
+[ info ] localhost/lsy/public/index.php/admin/Member/13525965579?imageView2/1/w/50/h/50 [运行时间：0.078280s][吞吐率：12.77req/s] [内存消耗：2,267.39kb] [文件加载：71]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Member',
+    2 => '13525965579',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4589391872; PHPSESSID=s1hn97q3ggsam1ijm46sccp577; _csrf=656244bcdca9b6f1acdee621b4d7b8b1d85714442ebcd5980a53025632db6cbba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kZ75QxCPIvd6AEoe8qRB448ahTg6ypbV%22%3B%7D',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/lsy/public/index.php/admin/Member/tolist',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'imageView2/1/w/50/h/50' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\lsy\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\lsy\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011926s ] mysql:host=127.0.0.1;dbname=zszm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `duty_data` [ RunTime:0.012078s ]
+[ sql ] [ SQL ] SELECT * FROM `duty_data` [ RunTime:0.000753s ]
+---------------------------------------------------------------
+[ 2018-01-06T14:00:45+08:00 ] 0.0.0.0 GET /lsy/public/index.php/admin/Member/13500000531?imageView2/1/w/50/h/50
+[ info ] localhost/lsy/public/index.php/admin/Member/13500000531?imageView2/1/w/50/h/50 [运行时间：0.124307s][吞吐率：8.04req/s] [内存消耗：2,267.39kb] [文件加载：71]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Member',
+    2 => '13500000531',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4589391872; PHPSESSID=s1hn97q3ggsam1ijm46sccp577; _csrf=656244bcdca9b6f1acdee621b4d7b8b1d85714442ebcd5980a53025632db6cbba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kZ75QxCPIvd6AEoe8qRB448ahTg6ypbV%22%3B%7D',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/lsy/public/index.php/admin/Member/tolist',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'imageView2/1/w/50/h/50' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\lsy\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\lsy\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003833s ] mysql:host=127.0.0.1;dbname=zszm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `duty_data` [ RunTime:0.010726s ]
+[ sql ] [ SQL ] SELECT * FROM `duty_data` [ RunTime:0.000616s ]
+---------------------------------------------------------------
+[ 2018-01-06T14:00:45+08:00 ] 0.0.0.0 GET /lsy/public/index.php/admin/Member/13525966552?imageView2/1/w/50/h/50
+[ info ] localhost/lsy/public/index.php/admin/Member/13525966552?imageView2/1/w/50/h/50 [运行时间：0.135498s][吞吐率：7.38req/s] [内存消耗：2,267.39kb] [文件加载：71]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Member',
+    2 => '13525966552',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4589391872; PHPSESSID=s1hn97q3ggsam1ijm46sccp577; _csrf=656244bcdca9b6f1acdee621b4d7b8b1d85714442ebcd5980a53025632db6cbba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kZ75QxCPIvd6AEoe8qRB448ahTg6ypbV%22%3B%7D',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/lsy/public/index.php/admin/Member/tolist',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'imageView2/1/w/50/h/50' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\lsy\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\lsy\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.058648s ] mysql:host=127.0.0.1;dbname=zszm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `duty_data` [ RunTime:0.010895s ]
+[ sql ] [ SQL ] SELECT * FROM `duty_data` [ RunTime:0.000745s ]
+---------------------------------------------------------------
+[ 2018-01-06T14:00:45+08:00 ] 0.0.0.0 GET /lsy/public/index.php/admin/Member/13838145698?imageView2/1/w/50/h/50
+[ info ] localhost/lsy/public/index.php/admin/Member/13838145698?imageView2/1/w/50/h/50 [运行时间：0.214183s][吞吐率：4.67req/s] [内存消耗：2,267.39kb] [文件加载：71]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Member',
+    2 => '13838145698',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4589391872; PHPSESSID=s1hn97q3ggsam1ijm46sccp577; _csrf=656244bcdca9b6f1acdee621b4d7b8b1d85714442ebcd5980a53025632db6cbba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kZ75QxCPIvd6AEoe8qRB448ahTg6ypbV%22%3B%7D',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/lsy/public/index.php/admin/Member/tolist',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'imageView2/1/w/50/h/50' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\lsy\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\lsy\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.059726s ] mysql:host=127.0.0.1;dbname=zszm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `duty_data` [ RunTime:0.010957s ]
+[ sql ] [ SQL ] SELECT * FROM `duty_data` [ RunTime:0.000725s ]
+---------------------------------------------------------------
+[ 2018-01-06T14:00:45+08:00 ] 0.0.0.0 GET /lsy/public/index.php/admin/Member/13632568965?imageView2/1/w/50/h/50
+[ info ] localhost/lsy/public/index.php/admin/Member/13632568965?imageView2/1/w/50/h/50 [运行时间：0.290818s][吞吐率：3.44req/s] [内存消耗：2,267.39kb] [文件加载：71]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Member',
+    2 => '13632568965',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4589391872; PHPSESSID=s1hn97q3ggsam1ijm46sccp577; _csrf=656244bcdca9b6f1acdee621b4d7b8b1d85714442ebcd5980a53025632db6cbba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kZ75QxCPIvd6AEoe8qRB448ahTg6ypbV%22%3B%7D',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/lsy/public/index.php/admin/Member/tolist',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'imageView2/1/w/50/h/50' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\lsy\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\lsy\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.054745s ] mysql:host=127.0.0.1;dbname=zszm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `duty_data` [ RunTime:0.010611s ]
+[ sql ] [ SQL ] SELECT * FROM `duty_data` [ RunTime:0.000778s ]
+---------------------------------------------------------------
+[ 2018-01-06T14:00:51+08:00 ] 0.0.0.0 POST /lsy/public/index.php/admin/Member/editStatus
+[ info ] localhost/lsy/public/index.php/admin/Member/editStatus [运行时间：0.283794s][吞吐率：3.52req/s] [内存消耗：2,271.24kb] [文件加载：73]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Member',
+    2 => 'editStatus',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4589391872; PHPSESSID=s1hn97q3ggsam1ijm46sccp577; _csrf=656244bcdca9b6f1acdee621b4d7b8b1d85714442ebcd5980a53025632db6cbba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kZ75QxCPIvd6AEoe8qRB448ahTg6ypbV%22%3B%7D',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/lsy/public/index.php/admin/Member/tolist',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://localhost',
+  'accept' => '*/*',
+  'content-length' => '12',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+  'state' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\lsy\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\lsy\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Member->editStatus[ D:\phpStudy\WWW\lsy\application\admin\controller\Member.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011446s ] mysql:host=127.0.0.1;dbname=zszm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `duty_data` [ RunTime:0.012941s ]
+[ sql ] [ SQL ] SELECT * FROM `duty_data` [ RunTime:0.000833s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `member` [ RunTime:0.013436s ]
+[ sql ] [ SQL ] SELECT * FROM `member` WHERE  `am_id` = 1 LIMIT 1 [ RunTime:0.000957s ]
+[ sql ] [ SQL ] UPDATE `member`  SET `am_status`=2,`am_utime`=1515218451  WHERE  `am_id` = 1 [ RunTime:0.096412s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `member_log` [ RunTime:0.025772s ]
+[ sql ] [ SQL ] INSERT INTO `member_log` (`ml_member_id` , `ml_name` , `ml_url` , `ml_ip` , `ml_ctime`) VALUES (1 , '修改了管理员李沈阳状态' , 'admin/Member/editStatus' , '0.0.0.0' , 1515218451) [ RunTime:0.057779s ]
+---------------------------------------------------------------
+[ 2018-01-06T14:00:54+08:00 ] 0.0.0.0 POST /lsy/public/index.php/admin/Member/editStatus
+[ info ] localhost/lsy/public/index.php/admin/Member/editStatus [运行时间：0.288755s][吞吐率：3.46req/s] [内存消耗：2,271.24kb] [文件加载：73]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Member',
+    2 => 'editStatus',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4589391872; PHPSESSID=s1hn97q3ggsam1ijm46sccp577; _csrf=656244bcdca9b6f1acdee621b4d7b8b1d85714442ebcd5980a53025632db6cbba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kZ75QxCPIvd6AEoe8qRB448ahTg6ypbV%22%3B%7D',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/lsy/public/index.php/admin/Member/tolist',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://localhost',
+  'accept' => '*/*',
+  'content-length' => '12',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+  'state' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\lsy\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\lsy\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Member->editStatus[ D:\phpStudy\WWW\lsy\application\admin\controller\Member.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012349s ] mysql:host=127.0.0.1;dbname=zszm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `duty_data` [ RunTime:0.014571s ]
+[ sql ] [ SQL ] SELECT * FROM `duty_data` [ RunTime:0.001597s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `member` [ RunTime:0.025991s ]
+[ sql ] [ SQL ] SELECT * FROM `member` WHERE  `am_id` = 1 LIMIT 1 [ RunTime:0.001804s ]
+[ sql ] [ SQL ] UPDATE `member`  SET `am_status`=1,`am_utime`=1515218454  WHERE  `am_id` = 1 [ RunTime:0.082871s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `member_log` [ RunTime:0.028636s ]
+[ sql ] [ SQL ] INSERT INTO `member_log` (`ml_member_id` , `ml_name` , `ml_url` , `ml_ip` , `ml_ctime`) VALUES (1 , '修改了管理员李沈阳状态' , 'admin/Member/editStatus' , '0.0.0.0' , 1515218454) [ RunTime:0.057056s ]
+---------------------------------------------------------------
+[ 2018-01-06T14:00:57+08:00 ] 0.0.0.0 GET /lsy/public/index.php/admin/Member/doAdd
+[ info ] localhost/lsy/public/index.php/admin/Member/doAdd [运行时间：0.075122s][吞吐率：13.31req/s] [内存消耗：2,399.91kb] [文件加载：71]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Member',
+    2 => 'doAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4589391872; PHPSESSID=s1hn97q3ggsam1ijm46sccp577; _csrf=656244bcdca9b6f1acdee621b4d7b8b1d85714442ebcd5980a53025632db6cbba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kZ75QxCPIvd6AEoe8qRB448ahTg6ypbV%22%3B%7D',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/lsy/public/index.php/admin/Member/tolist',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\lsy\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\lsy\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Member->doAdd[ D:\phpStudy\WWW\lsy\application\admin\controller\Member.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\lsy\public/../application/admin\view\member\doadd.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'dutyList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003771s ] mysql:host=127.0.0.1;dbname=zszm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `duty_data` [ RunTime:0.011544s ]
+[ sql ] [ SQL ] SELECT * FROM `duty_data` [ RunTime:0.000733s ]

@@ -1,0 +1,41 @@
+<layout name="layout" />
+<div class='layui-row' style="padding: 20px;">
+    <form class="layui-form" method="post" enctype="multipart/form-data">
+        <div class="layui-form-item">
+            <label class="layui-form-label">名称</label>
+            <div class="layui-col-md3">
+                <input type="text" name="name" lay-verify="required" placeholder="请输入名称" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">父类名称</label>
+            <div class="layui-input-inline">
+                <select name="pid" lay-verify="required">
+                    <option value="0">一级分类</option>
+                    <volist name="sort" id="vo">
+                        <option value="{$vo.id}">{$vo.name}</option>
+                    </volist>
+                </select>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">顺序</label>
+            <div class="layui-col-md1">
+                <input type="number" name="order"  value="99" lay-verify="required"  class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">是否启用</label>
+            <div class="layui-input-block">
+                <input type="radio" name="status" value="1" title="启用" checked>
+                <input type="radio" name="status" value="2" title="停用">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+            </div>
+        </div>
+    </form>
+</div>

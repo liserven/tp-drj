@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 用户绑定拨动框架 */
+.swiper-container { }
+.my-pagination { }
+.my-pagination .swiper-pagination-bullet { text-align: center; border-radius: 0; opacity: 1; }
+.my-pagination ul { display: -webkit-box; }
+.my-pagination .swiper-pagination-bullet-active { color: #fff;background-color: #d00f30; border-radius: 30px; }
+.my-pagination .swiper-pagination-bullet-active:after { opacity: 1; background-color: #21a4f4; height: 4px; }
+/* 用户绑定 */
+
+.user_zc_body { margin: 0px auto; overflow: hidden; background: #fff; }
+.user_zc_body ul { margin: 0 20px; overflow: hidden; }
+.user_zc_body li { background: #fff; overflow: hidden; padding: 10px 0; position: relative; }
+.user_zc_body li:last-child { margin-bottom: 0; }
+.user_zc_body li:after { content: ""; display: block; position: absolute; left: 0; bottom: 0; z-index: 1; width: 100%; height: 1px; background: #dcdcdc; -webkit-transform: scaleY(.5); }
+.user_zc_body .p_input { padding-left: 40px; position: relative; }
+.user_zc_body .p_input input { width: 100%; padding: 0; margin: 0; height: 40px; color: #444; font-size: 15px; }
+.user_zc_body .p_input em { position: absolute; left: 0; top: 0; z-index: 1; width: 40px; height: 40px; line-height: 40px; text-align: center; color: #6ecb09; font-size: 16px; }
+.user_zc_body .p_wjmm { margin: 20px; text-align: right; }
+.user_zc_body .p_input_sm { padding-right: 50px; }
+.user_zc_body .p_input_sm .sp_btn { display: inline-block; position: absolute; right: 5px; top: 5px; z-index: 1; width: 40px; height: 30px; line-height: 30px; text-align: center; background: #f4f4f4; color: #666; border-radius: 4px; font-size: 12px; }
+.user_zc_body .p_input_sm .sp_btn i { font-size: 24px; margin-top: 4px; line-height: 32px; }
+.user_zc_body .p_input_yzm { padding-right: 90px; }
+.user_zc_body .p_input_yzm .sp_btn { display: inline-block; position: absolute; right: 5px; top: 5px; z-index: 1; width: 80px; height: 30px; line-height: 30px; text-align: center; background: #288eff; color: #fff; border-radius: 4px; font-size: 12px; }
+.user_zc_body .p_input_yzm .sp_btn:active { background: #2686ef; }
+.user_zc_body .p_input_yzm .sp_btn_dx { right: 70px; }
+.user_zc_body .p_input_yzm .sp_btn.no_hit { color: #bbb; }
+.user_wj_pw { overflow: hidden; padding: 0 10px; }
+.user_zc_btn { padding: 20px; overflow: hidden; background: #fff; }
+.user_zc_btn .p_btn { overflow: hidden; }
+.user_zc_btn .p_btn a { display: block; height: 40px; line-height: 40px; text-align: center; color: #fff; border-radius: 4px; font-size: 16px; }
+.user_zc_btn .p_btn a.c_1 { background: #f15145; }
+.user_zc_btn .p_btn a.c_1:active { background: #e44d41; }
+.user_zc_btn .p_btn a.c_2 { background: #00cfbe; }
+.user_zc_btn .p_btn a.c_2:active { background: #00c3b3; }
+.user_zc_btn .p_btn a.c_3 { background: #288eff; }
+.user_zc_btn .p_btn a.c_3:active { background: #2686ef; }
+.user_zc_btn .p_btn a.c_4 { background: #6ecb09; }
+.user_zc_btn .p_btn a.c_4:active { background: #66bc08; }
+
+
+
+
+
+

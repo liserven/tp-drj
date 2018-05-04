@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link href="https://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+	<title>我的名片</title>
+	<link rel="stylesheet" type="text/css" href="__JS__/index/src/css/style.css">
+	<link href="https://cdn.bootcss.com/Swiper/4.2.0/css/swiper.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="__JS__/index/src/css/public.css">
+	<link rel="stylesheet" type="text/css" href="__JS__/index/src/css/page_style.css">
+	<style type="text/css">
+		.card_content {
+			background: url(./src/image/logo_image.jpg) 0 0 no-repeat;
+			background-size: 100%;
+			position: fixed;
+			height: 100%;width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<header class="title_head">
+		<ul>
+			<li class="col-xs-1 col-md-1 text-left"><a href=""><img width="13px" height="20px" src="__JS__/index/src/image/back_icon.png"></a></li>
+			<li class="col-xs-10 col-md-10 text-center mycard">我的名片</li>
+			<li class="col-xs-1 col-md-1 text-right"><a href=""><img width="19px" height="20px" src="__JS__/index/src/image/edit_icon.png"></a></li>
+		</ul>
+	</header>
+	<div class="card_content">
+		<div class="socard text-center">
+			<ul class="personal">
+				<img class="avatar_logo" src="{$data.ud_logo}">
+				<p class="avatar_name">
+					<span>{$data.ud_name}</span>
+					<a href=""><img style="    vertical-align: baseline;" width="20px" height="20px" src="__JS__/index/src/image/sex_{$data.ud_sex}.png"></a>
+				</p>
+				<a class="address">{$data.town}</a>
+				<dl class="centent">
+					<dd class="col-xs-7 col-md-7 display-flex" style="margin-left:55px;">
+						<span>成交<b style="    display: inline-block;
+    padding-left: 4px;">{$data.deal}</b></span>
+						<span>互动<b style="    display: inline-block;
+    padding-left: 4px;">{$data.comm}</b></span>
+					</dd>
+					<dd class="col-xs-5 col-md-5 text-right">
+						<a class="grade on4" src="" border="value"></a>
+					</dd>
+				</dl>
+				<dl class="interaction text-center">
+					<a href="tel:{$data.ud_phone}"><img src="__JS__/index/src/image/telphone_icon.png"></a>
+					<a href="sms:{$data.ud_phone}"><img src="__JS__/index/src/image/smsmessage_icon.png"></a>
+					<a><img src="__JS__/index/src/image/shareto_icon.png"></a>
+					<a class="thumbsup"><img width="25" src="__JS__/index/src/image/onthumbsup.png">{$data.likes}</a>
+				</dl>
+			</ul>
+		</div>
+		<div class="in_shop text-center">进入商城</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<volist name="set" id="vo">
+    <div class="layui-form-item">
+        <label class="layui-form-label">{$vo.name}</label>
+        <div class="layui-input-inline">
+            <input type="hidden" name="set_name[]" value="{$vo.name}">
+            <input type="text" name="set[]" placeholder="请输入" class="layui-input" required>
+        </div>
+    </div>
+</volist>

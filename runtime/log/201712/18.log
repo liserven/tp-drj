@@ -1,0 +1,1637 @@
+---------------------------------------------------------------
+[ 2017-12-18T00:26:28+08:00 ] 172.17.75.57 47.93.112.232 GET /
+[ info ] 39.104.60.138:80/ [运行时间：0.014630s][吞吐率：68.35req/s] [内存消耗：1,691.26kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/kx.lsybk.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'identity',
+  'connection' => 'Close',
+  'host' => '39.104.60.138:80',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /www/wwwroot/kx.lsybk.com/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'menu',
+  4 => 'kx',
+  5 => 'code',
+  6 => 'msg',
+  7 => 'data',
+  8 => 'url',
+  9 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-18T08:24:28+08:00 ] 172.17.75.57 116.62.176.205 GET /
+[ info ] 39.104.15.48:80/ [运行时间：0.014763s][吞吐率：67.74req/s] [内存消耗：1,691.27kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/kx.lsybk.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'identity',
+  'connection' => 'Close',
+  'host' => '39.104.15.48:80',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /www/wwwroot/kx.lsybk.com/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'menu',
+  4 => 'kx',
+  5 => 'code',
+  6 => 'msg',
+  7 => 'data',
+  8 => 'url',
+  9 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-18T08:58:02+08:00 ] 172.17.75.57 106.11.226.55 GET /
+[ info ] zz.lsybk.com/ [运行时间：0.014342s][吞吐率：69.73req/s] [内存消耗：1,692.77kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/kx.lsybk.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'host' => 'zz.lsybk.com',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPad; CPU OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept-encoding' => 'gzip',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /www/wwwroot/kx.lsybk.com/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'menu',
+  4 => 'kx',
+  5 => 'code',
+  6 => 'msg',
+  7 => 'data',
+  8 => 'url',
+  9 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-18T14:36:02+08:00 ] 172.17.75.57 222.35.171.130 GET /
+[ info ] kx.lsybk.com/ [运行时间：0.014555s][吞吐率：68.71req/s] [内存消耗：1,692.80kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/kx.lsybk.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'kx.lsybk.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /www/wwwroot/kx.lsybk.com/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'menu',
+  4 => 'kx',
+  5 => 'code',
+  6 => 'msg',
+  7 => 'data',
+  8 => 'url',
+  9 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-18T14:36:13+08:00 ] 172.17.75.57 222.35.171.130 GET /index.php/index/login/index.html
+[ info ] kx.lsybk.com/index.php/index/login/index.html [运行时间：0.013769s][吞吐率：72.63req/s] [内存消耗：1,691.97kb] [文件加载：48]
+[ info ] [ LANG ] /www/wwwroot/kx.lsybk.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ehjas7bem914vpr005viljq2u5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'kx.lsybk.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Login->index[ /www/wwwroot/kx.lsybk.com/application/index/controller/Login.php ]
+[ info ] [ VIEW ] /www/wwwroot/kx.lsybk.com/public/../application/index/view/login/index.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'menu',
+  4 => 'kx',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-18T14:36:13+08:00 ] 172.17.75.57 222.35.171.130 GET /index.php/index/login/__PUBLIC__/jquery.min.js
+[ info ] kx.lsybk.com/index.php/index/login/__PUBLIC__/jquery.min.js [运行时间：0.014132s][吞吐率：70.76req/s] [内存消耗：1,697.70kb] [文件加载：49]
+[ info ] [ LANG ] /www/wwwroot/kx.lsybk.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => '__PUBLIC__',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ehjas7bem914vpr005viljq2u5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://kx.lsybk.com/index.php/index/login/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'kx.lsybk.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-18T14:36:26+08:00 ] 172.17.75.57 222.35.171.130 POST /index.php/index/login/login.html
+[ info ] kx.lsybk.com/index.php/index/login/login.html [运行时间：0.023050s][吞吐率：43.38req/s] [内存消耗：2,608.79kb] [文件加载：57]
+[ info ] [ LANG ] /www/wwwroot/kx.lsybk.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ehjas7bem914vpr005viljq2u5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://kx.lsybk.com/index.php/index/login/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://kx.lsybk.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '33',
+  'connection' => 'keep-alive',
+  'host' => 'kx.lsybk.com',
+)
+[ info ] [ PARAM ] array (
+  'phone' => '17600775386',
+  'password' => '123456',
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ /www/wwwroot/kx.lsybk.com/application/index/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000257s ] mysql:host=127.0.0.1;port=3306;dbname=kx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.001927s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `phone` = '17600775386' LIMIT 1 [ RunTime:0.000194s ]
+---------------------------------------------------------------
+[ 2017-12-18T14:36:26+08:00 ] 172.17.75.57 222.35.171.130 GET /index.php/index/index/index.html
+[ info ] kx.lsybk.com/index.php/index/index/index.html [运行时间：0.016836s][吞吐率：59.40req/s] [内存消耗：1,960.58kb] [文件加载：52]
+[ info ] [ LANG ] /www/wwwroot/kx.lsybk.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ehjas7bem914vpr005viljq2u5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://kx.lsybk.com/index.php/index/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'kx.lsybk.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/kx.lsybk.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/kx.lsybk.com/public/../application/index/view/index/index.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'menu',
+  4 => 'kx',
+  5 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-18T14:36:38+08:00 ] 172.17.75.57 222.35.171.130 GET /index.php/index/kehu/tolist
+[ info ] kx.lsybk.com/index.php/index/kehu/tolist [运行时间：0.024606s][吞吐率：40.64req/s] [内存消耗：2,797.02kb] [文件加载：64]
+[ info ] [ LANG ] /www/wwwroot/kx.lsybk.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'kehu',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ehjas7bem914vpr005viljq2u5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://kx.lsybk.com/index.php/index/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'kx.lsybk.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Kehu->tolist[ /www/wwwroot/kx.lsybk.com/application/index/controller/Kehu.php ]
+[ info ] [ VIEW ] /www/wwwroot/kx.lsybk.com/public/../application/index/view/kehu/tolist.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'menu',
+  4 => 'kx',
+  5 => 'user',
+  6 => 'sort',
+  7 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000230s ] mysql:host=127.0.0.1;port=3306;dbname=kx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sort` [ RunTime:0.000507s ]
+[ sql ] [ SQL ] SELECT * FROM `sort` [ RunTime:0.000098s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `kehu` [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `kehu` LIMIT 1 [ RunTime:0.000094s ]
+[ sql ] [ SQL ] SELECT * FROM `kehu` LIMIT 0,10 [ RunTime:0.000091s ]
+---------------------------------------------------------------
+[ 2017-12-18T14:36:39+08:00 ] 172.17.75.57 222.35.171.130 GET /index.php/index/Plan/tolist
+[ info ] kx.lsybk.com/index.php/index/Plan/tolist [运行时间：0.024255s][吞吐率：41.23req/s] [内存消耗：2,770.88kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/kx.lsybk.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Plan',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ehjas7bem914vpr005viljq2u5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://kx.lsybk.com/index.php/index/kehu/tolist',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'kx.lsybk.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Plan->toList[ /www/wwwroot/kx.lsybk.com/application/index/controller/Plan.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/kx.lsybk.com/public/../application/index/view/plan/tolist.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'menu',
+  4 => 'kx',
+  5 => 'user',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000238s ] mysql:host=127.0.0.1;port=3306;dbname=kx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `plan` [ RunTime:0.000502s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `plan` LIMIT 1 [ RunTime:0.000100s ]
+[ sql ] [ SQL ] SELECT * FROM `plan` LIMIT 0,10 [ RunTime:0.000080s ]
+---------------------------------------------------------------
+[ 2017-12-18T14:39:10+08:00 ] 172.17.75.57 222.35.171.130 GET /
+[ info ] kx.lsybk.com/ [运行时间：0.016188s][吞吐率：61.77req/s] [内存消耗：1,960.36kb] [文件加载：52]
+[ info ] [ LANG ] /www/wwwroot/kx.lsybk.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ehjas7bem914vpr005viljq2u5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'kx.lsybk.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/kx.lsybk.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/kx.lsybk.com/public/../application/index/view/index/index.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'menu',
+  4 => 'kx',
+  5 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-18T14:39:11+08:00 ] 172.17.75.57 222.35.171.130 GET /Js/index/Index/tolist.js
+[ info ] kx.lsybk.com/Js/index/Index/tolist.js [运行时间：0.011392s][吞吐率：87.78req/s] [内存消耗：1,395.02kb] [文件加载：41]
+[ info ] [ LANG ] /www/wwwroot/kx.lsybk.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ehjas7bem914vpr005viljq2u5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://kx.lsybk.com/',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'kx.lsybk.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-18T14:39:11+08:00 ] 172.17.75.57 222.35.171.130 GET /Js/index/Index/tolist.js
+[ info ] kx.lsybk.com/Js/index/Index/tolist.js [运行时间：0.011293s][吞吐率：88.55req/s] [内存消耗：1,395.02kb] [文件加载：41]
+[ info ] [ LANG ] /www/wwwroot/kx.lsybk.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ehjas7bem914vpr005viljq2u5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://kx.lsybk.com/',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'kx.lsybk.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-18T14:39:14+08:00 ] 172.17.75.57 222.35.171.130 GET /index.php/index/kehu/tolist
+[ info ] kx.lsybk.com/index.php/index/kehu/tolist [运行时间：0.024288s][吞吐率：41.17req/s] [内存消耗：2,797.02kb] [文件加载：64]
+[ info ] [ LANG ] /www/wwwroot/kx.lsybk.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'kehu',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ehjas7bem914vpr005viljq2u5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://kx.lsybk.com/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'kx.lsybk.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Kehu->tolist[ /www/wwwroot/kx.lsybk.com/application/index/controller/Kehu.php ]
+[ info ] [ VIEW ] /www/wwwroot/kx.lsybk.com/public/../application/index/view/kehu/tolist.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'menu',
+  4 => 'kx',
+  5 => 'user',
+  6 => 'sort',
+  7 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000224s ] mysql:host=127.0.0.1;port=3306;dbname=kx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sort` [ RunTime:0.000517s ]
+[ sql ] [ SQL ] SELECT * FROM `sort` [ RunTime:0.000097s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `kehu` [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `kehu` LIMIT 1 [ RunTime:0.000086s ]
+[ sql ] [ SQL ] SELECT * FROM `kehu` LIMIT 0,10 [ RunTime:0.000090s ]
+---------------------------------------------------------------
+[ 2017-12-18T14:39:19+08:00 ] 172.17.75.57 222.35.171.130 GET /index.php/index/Plan/tolist
+[ info ] kx.lsybk.com/index.php/index/Plan/tolist [运行时间：0.023404s][吞吐率：42.73req/s] [内存消耗：2,770.88kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/kx.lsybk.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Plan',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ehjas7bem914vpr005viljq2u5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://kx.lsybk.com/index.php/index/kehu/tolist',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'kx.lsybk.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Plan->toList[ /www/wwwroot/kx.lsybk.com/application/index/controller/Plan.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/kx.lsybk.com/public/../application/index/view/plan/tolist.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'menu',
+  4 => 'kx',
+  5 => 'user',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000235s ] mysql:host=127.0.0.1;port=3306;dbname=kx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `plan` [ RunTime:0.000493s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `plan` LIMIT 1 [ RunTime:0.000097s ]
+[ sql ] [ SQL ] SELECT * FROM `plan` LIMIT 0,10 [ RunTime:0.000111s ]
+---------------------------------------------------------------
+[ 2017-12-18T14:39:22+08:00 ] 172.17.75.57 222.35.171.130 GET /index
+[ info ] kx.lsybk.com/index [运行时间：0.016927s][吞吐率：59.08req/s] [内存消耗：1,963.60kb] [文件加载：52]
+[ info ] [ LANG ] /www/wwwroot/kx.lsybk.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ehjas7bem914vpr005viljq2u5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'kx.lsybk.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/kx.lsybk.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/kx.lsybk.com/public/../application/index/view/index/index.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'menu',
+  4 => 'kx',
+  5 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-18T14:39:22+08:00 ] 172.17.75.57 222.35.171.130 GET /Js/index/Index/tolist.js
+[ info ] kx.lsybk.com/Js/index/Index/tolist.js [运行时间：0.012744s][吞吐率：78.47req/s] [内存消耗：1,395.02kb] [文件加载：41]
+[ info ] [ LANG ] /www/wwwroot/kx.lsybk.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ehjas7bem914vpr005viljq2u5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://kx.lsybk.com/index',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'kx.lsybk.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-18T14:39:32+08:00 ] 172.17.75.57 58.247.212.98 GET /index
+[ info ] kx.lsybk.com/index [运行时间：0.013857s][吞吐率：72.17req/s] [内存消耗：1,694.42kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/kx.lsybk.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'host' => 'kx.lsybk.com',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2141.400 QQBrowser/9.5.10219.400',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /www/wwwroot/kx.lsybk.com/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'menu',
+  4 => 'kx',
+  5 => 'code',
+  6 => 'msg',
+  7 => 'data',
+  8 => 'url',
+  9 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-18T14:39:39+08:00 ] 172.17.75.57 222.35.171.130 GET /index/Plan
+[ info ] kx.lsybk.com/index/Plan [运行时间：0.022580s][吞吐率：44.29req/s] [内存消耗：2,012.70kb] [文件加载：54]
+[ info ] [ LANG ] /www/wwwroot/kx.lsybk.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Plan',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ehjas7bem914vpr005viljq2u5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'kx.lsybk.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-18T14:39:39+08:00 ] 172.17.75.57 222.35.171.130 GET /index/Plan
+[ info ] kx.lsybk.com/index/Plan [运行时间：0.011699s][吞吐率：85.48req/s] [内存消耗：1,395.41kb] [文件加载：41]
+[ info ] [ LANG ] /www/wwwroot/kx.lsybk.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ehjas7bem914vpr005viljq2u5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'kx.lsybk.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-18T14:39:49+08:00 ] 172.17.75.57 58.247.212.98 GET /index/Plan
+[ info ] kx.lsybk.com/index/Plan [运行时间：0.014508s][吞吐率：68.93req/s] [内存消耗：1,702.05kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/kx.lsybk.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Plan',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'host' => 'kx.lsybk.com',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /www/wwwroot/kx.lsybk.com/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'menu',
+  4 => 'kx',
+  5 => 'code',
+  6 => 'msg',
+  7 => 'data',
+  8 => 'url',
+  9 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-18T14:42:01+08:00 ] 172.17.75.57 222.35.171.130 GET /index/kehu
+[ info ] kx.lsybk.com/index/kehu [运行时间：0.025773s][吞吐率：38.80req/s] [内存消耗：2,732.95kb] [文件加载：62]
+[ info ] [ LANG ] /www/wwwroot/kx.lsybk.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'kehu',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ehjas7bem914vpr005viljq2u5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'kx.lsybk.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000251s ] mysql:host=127.0.0.1;port=3306;dbname=kx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sort` [ RunTime:0.000512s ]
+[ sql ] [ SQL ] SELECT * FROM `sort` [ RunTime:0.000101s ]
+---------------------------------------------------------------
+[ 2017-12-18T14:42:01+08:00 ] 172.17.75.57 222.35.171.130 GET /index/kehu
+[ info ] kx.lsybk.com/index/kehu [运行时间：0.012457s][吞吐率：80.28req/s] [内存消耗：1,395.41kb] [文件加载：41]
+[ info ] [ LANG ] /www/wwwroot/kx.lsybk.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ehjas7bem914vpr005viljq2u5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'kx.lsybk.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-18T14:42:12+08:00 ] 172.17.75.57 222.35.171.130 GET /index.php/index/kehu
+[ info ] kx.lsybk.com/index.php/index/kehu [运行时间：0.026358s][吞吐率：37.94req/s] [内存消耗：2,729.74kb] [文件加载：62]
+[ info ] [ LANG ] /www/wwwroot/kx.lsybk.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'kehu',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ehjas7bem914vpr005viljq2u5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'kx.lsybk.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000243s ] mysql:host=127.0.0.1;port=3306;dbname=kx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sort` [ RunTime:0.000503s ]
+[ sql ] [ SQL ] SELECT * FROM `sort` [ RunTime:0.000111s ]
+---------------------------------------------------------------
+[ 2017-12-18T14:42:12+08:00 ] 172.17.75.57 222.35.171.130 GET /index.php/index/kehu
+[ info ] kx.lsybk.com/index.php/index/kehu [运行时间：0.012063s][吞吐率：82.90req/s] [内存消耗：1,395.42kb] [文件加载：41]
+[ info ] [ LANG ] /www/wwwroot/kx.lsybk.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ehjas7bem914vpr005viljq2u5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'kx.lsybk.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-18T14:42:23+08:00 ] 172.17.75.57 58.247.212.98 GET /index.php/index/kehu
+[ info ] kx.lsybk.com/index.php/index/kehu [运行时间：0.014809s][吞吐率：67.53req/s] [内存消耗：1,700.97kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/kx.lsybk.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'kehu',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'host' => 'kx.lsybk.com',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /www/wwwroot/kx.lsybk.com/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'menu',
+  4 => 'kx',
+  5 => 'code',
+  6 => 'msg',
+  7 => 'data',
+  8 => 'url',
+  9 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-18T14:42:39+08:00 ] 172.17.75.57 222.35.171.130 GET /
+[ info ] kx.lsybk.com/ [运行时间：0.017064s][吞吐率：58.60req/s] [内存消耗：1,960.36kb] [文件加载：52]
+[ info ] [ LANG ] /www/wwwroot/kx.lsybk.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ehjas7bem914vpr005viljq2u5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'kx.lsybk.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/kx.lsybk.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/kx.lsybk.com/public/../application/index/view/index/index.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'menu',
+  4 => 'kx',
+  5 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-18T14:42:39+08:00 ] 172.17.75.57 222.35.171.130 GET /Js/index/Index/tolist.js
+[ info ] kx.lsybk.com/Js/index/Index/tolist.js [运行时间：0.011417s][吞吐率：87.59req/s] [内存消耗：1,395.02kb] [文件加载：41]
+[ info ] [ LANG ] /www/wwwroot/kx.lsybk.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ehjas7bem914vpr005viljq2u5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://kx.lsybk.com/',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'kx.lsybk.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-18T14:42:42+08:00 ] 172.17.75.57 222.35.171.130 GET /index.php/index/kehu/tolist
+[ info ] kx.lsybk.com/index.php/index/kehu/tolist [运行时间：0.024197s][吞吐率：41.33req/s] [内存消耗：2,797.02kb] [文件加载：64]
+[ info ] [ LANG ] /www/wwwroot/kx.lsybk.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'kehu',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ehjas7bem914vpr005viljq2u5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://kx.lsybk.com/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'kx.lsybk.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Kehu->tolist[ /www/wwwroot/kx.lsybk.com/application/index/controller/Kehu.php ]
+[ info ] [ VIEW ] /www/wwwroot/kx.lsybk.com/public/../application/index/view/kehu/tolist.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'menu',
+  4 => 'kx',
+  5 => 'user',
+  6 => 'sort',
+  7 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000235s ] mysql:host=127.0.0.1;port=3306;dbname=kx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sort` [ RunTime:0.000537s ]
+[ sql ] [ SQL ] SELECT * FROM `sort` [ RunTime:0.000099s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `kehu` [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `kehu` LIMIT 1 [ RunTime:0.000084s ]
+[ sql ] [ SQL ] SELECT * FROM `kehu` LIMIT 0,10 [ RunTime:0.000098s ]
+---------------------------------------------------------------
+[ 2017-12-18T14:42:44+08:00 ] 172.17.75.57 222.35.171.130 GET /index.php/index/Plan/tolist
+[ info ] kx.lsybk.com/index.php/index/Plan/tolist [运行时间：0.024367s][吞吐率：41.04req/s] [内存消耗：2,770.88kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/kx.lsybk.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Plan',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ehjas7bem914vpr005viljq2u5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://kx.lsybk.com/index.php/index/kehu/tolist',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'kx.lsybk.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Plan->toList[ /www/wwwroot/kx.lsybk.com/application/index/controller/Plan.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/kx.lsybk.com/public/../application/index/view/plan/tolist.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'menu',
+  4 => 'kx',
+  5 => 'user',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000242s ] mysql:host=127.0.0.1;port=3306;dbname=kx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `plan` [ RunTime:0.000517s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `plan` LIMIT 1 [ RunTime:0.000102s ]
+[ sql ] [ SQL ] SELECT * FROM `plan` LIMIT 0,10 [ RunTime:0.000077s ]
+---------------------------------------------------------------
+[ 2017-12-18T14:42:45+08:00 ] 172.17.75.57 222.35.171.130 GET /index.php/index/kehu/tolist
+[ info ] kx.lsybk.com/index.php/index/kehu/tolist [运行时间：0.024175s][吞吐率：41.36req/s] [内存消耗：2,797.02kb] [文件加载：64]
+[ info ] [ LANG ] /www/wwwroot/kx.lsybk.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'kehu',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ehjas7bem914vpr005viljq2u5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://kx.lsybk.com/index.php/index/Plan/tolist',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'kx.lsybk.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Kehu->tolist[ /www/wwwroot/kx.lsybk.com/application/index/controller/Kehu.php ]
+[ info ] [ VIEW ] /www/wwwroot/kx.lsybk.com/public/../application/index/view/kehu/tolist.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'menu',
+  4 => 'kx',
+  5 => 'user',
+  6 => 'sort',
+  7 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000277s ] mysql:host=127.0.0.1;port=3306;dbname=kx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sort` [ RunTime:0.000492s ]
+[ sql ] [ SQL ] SELECT * FROM `sort` [ RunTime:0.000111s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `kehu` [ RunTime:0.000403s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `kehu` LIMIT 1 [ RunTime:0.000083s ]
+[ sql ] [ SQL ] SELECT * FROM `kehu` LIMIT 0,10 [ RunTime:0.000087s ]
+---------------------------------------------------------------
+[ 2017-12-18T14:42:53+08:00 ] 172.17.75.57 222.35.171.130 GET /index/kehu/tolist
+[ info ] kx.lsybk.com/index/kehu/tolist [运行时间：0.024606s][吞吐率：40.64req/s] [内存消耗：2,800.22kb] [文件加载：64]
+[ info ] [ LANG ] /www/wwwroot/kx.lsybk.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'kehu',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ehjas7bem914vpr005viljq2u5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'kx.lsybk.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Kehu->tolist[ /www/wwwroot/kx.lsybk.com/application/index/controller/Kehu.php ]
+[ info ] [ VIEW ] /www/wwwroot/kx.lsybk.com/public/../application/index/view/kehu/tolist.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'menu',
+  4 => 'kx',
+  5 => 'user',
+  6 => 'sort',
+  7 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000236s ] mysql:host=127.0.0.1;port=3306;dbname=kx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sort` [ RunTime:0.000513s ]
+[ sql ] [ SQL ] SELECT * FROM `sort` [ RunTime:0.000099s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `kehu` [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `kehu` LIMIT 1 [ RunTime:0.000097s ]
+[ sql ] [ SQL ] SELECT * FROM `kehu` LIMIT 0,10 [ RunTime:0.000093s ]
+---------------------------------------------------------------
+[ 2017-12-18T14:46:17+08:00 ] 172.17.75.57 222.35.171.130 GET /index.php/index/Plan/tolist
+[ info ] kx.lsybk.com/index.php/index/Plan/tolist [运行时间：0.024152s][吞吐率：41.40req/s] [内存消耗：2,770.88kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/kx.lsybk.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Plan',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ehjas7bem914vpr005viljq2u5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://kx.lsybk.com/index/kehu/tolist',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'kx.lsybk.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Plan->toList[ /www/wwwroot/kx.lsybk.com/application/index/controller/Plan.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/kx.lsybk.com/public/../application/index/view/plan/tolist.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'menu',
+  4 => 'kx',
+  5 => 'user',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000239s ] mysql:host=127.0.0.1;port=3306;dbname=kx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `plan` [ RunTime:0.000499s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `plan` LIMIT 1 [ RunTime:0.000100s ]
+[ sql ] [ SQL ] SELECT * FROM `plan` LIMIT 0,10 [ RunTime:0.000079s ]
+---------------------------------------------------------------
+[ 2017-12-18T14:47:19+08:00 ] 172.17.75.57 222.35.171.130 GET /index/Plan/tolist
+[ info ] kx.lsybk.com/index/Plan/tolist [运行时间：0.023121s][吞吐率：43.25req/s] [内存消耗：2,774.08kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/kx.lsybk.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Plan',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ehjas7bem914vpr005viljq2u5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'kx.lsybk.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Plan->toList[ /www/wwwroot/kx.lsybk.com/application/index/controller/Plan.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/kx.lsybk.com/public/../application/index/view/plan/tolist.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'menu',
+  4 => 'kx',
+  5 => 'user',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000214s ] mysql:host=127.0.0.1;port=3306;dbname=kx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `plan` [ RunTime:0.000523s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `plan` LIMIT 1 [ RunTime:0.000097s ]
+[ sql ] [ SQL ] SELECT * FROM `plan` LIMIT 0,10 [ RunTime:0.000076s ]
+---------------------------------------------------------------
+[ 2017-12-18T16:27:07+08:00 ] 172.17.75.57 47.93.90.175 GET /
+[ info ] 39.104.9.146:80/ [运行时间：0.013831s][吞吐率：72.30req/s] [内存消耗：1,691.27kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/kx.lsybk.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'identity',
+  'connection' => 'Close',
+  'host' => '39.104.9.146:80',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /www/wwwroot/kx.lsybk.com/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'menu',
+  4 => 'kx',
+  5 => 'code',
+  6 => 'msg',
+  7 => 'data',
+  8 => 'url',
+  9 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-18T16:48:05+08:00 ] 172.17.75.57 106.11.225.38 GET /
+[ info ] kx.lsybk.com/ [运行时间：0.014745s][吞吐率：67.82req/s] [内存消耗：1,692.77kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/kx.lsybk.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'host' => 'kx.lsybk.com',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPad; CPU OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept-encoding' => 'gzip',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /www/wwwroot/kx.lsybk.com/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'menu',
+  4 => 'kx',
+  5 => 'code',
+  6 => 'msg',
+  7 => 'data',
+  8 => 'url',
+  9 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-18T18:31:23+08:00 ] 172.17.75.57 222.35.171.130 GET /index/plan/doedit/id/3.html
+[ info ] kx.lsybk.com/index/plan/doedit/id/3.html [运行时间：0.022321s][吞吐率：44.80req/s] [内存消耗：2,698.62kb] [文件加载：60]
+[ info ] [ LANG ] /www/wwwroot/kx.lsybk.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'plan',
+    2 => 'doedit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ehjas7bem914vpr005viljq2u5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://kx.lsybk.com/index/Plan/tolist',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'kx.lsybk.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '3',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Plan->doEdit[ /www/wwwroot/kx.lsybk.com/application/index/controller/Plan.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/kx.lsybk.com/public/../application/index/view/plan/doedit.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'menu',
+  4 => 'kx',
+  5 => 'user',
+  6 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000245s ] mysql:host=127.0.0.1;port=3306;dbname=kx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `plan` [ RunTime:0.000504s ]
+[ sql ] [ SQL ] SELECT * FROM `plan` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000141s ]
+---------------------------------------------------------------
+[ 2017-12-18T18:31:32+08:00 ] 172.17.75.57 58.247.212.98 GET /index/plan/doedit/id/3.html
+[ info ] kx.lsybk.com/index/plan/doedit/id/3.html [运行时间：0.014707s][吞吐率：68.00req/s] [内存消耗：1,704.50kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/kx.lsybk.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'plan',
+    2 => 'doedit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'host' => 'kx.lsybk.com',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'referer' => 'http://kx.lsybk.com/index/Plan/tolist',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '3',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /www/wwwroot/kx.lsybk.com/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'menu',
+  4 => 'kx',
+  5 => 'code',
+  6 => 'msg',
+  7 => 'data',
+  8 => 'url',
+  9 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-18T18:39:53+08:00 ] 172.17.75.57 139.162.88.63 GET /echo.php?info=1234567890
+[ info ] clientapi.ipip.net/echo.php?info=1234567890 [运行时间：0.011954s][吞吐率：83.66req/s] [内存消耗：1,392.52kb] [文件加载：41]
+[ info ] [ LANG ] /www/wwwroot/kx.lsybk.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'clientapi.ipip.net',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File

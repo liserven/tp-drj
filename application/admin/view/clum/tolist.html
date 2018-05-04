@@ -1,0 +1,110 @@
+<layout name="layout"/>
+<fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+    <legend>建材类别 <a href="javascript:;" class="layui-btn layui-btn-small add">添加建材分类</a>
+        <a href="{:url('user/leadingin')}" class="layui-btn layui-btn-danger layui-btn-small">批量导入</a>
+        <a href="{:url('user/expuser')}" class="layui-btn layui-btn-warm layui-btn-small">批量导出</a>
+        <a href="javascript:;" class="layui-btn layui-btn-default layui-btn-small refresh"><i class="layui-icon">&#x1002;</i>刷新</a>
+    </legend>
+</fieldset>
+<div class="layui-form layui-border-box layui-table-view" lay-filter="content-box" style="padding: 20px;border: 0;">
+    <div class="layui-table-box">
+        <table class="layui-table" style="width: 100%; border: 1px solid #eee">
+            <colgroup>
+                <col width="50">
+                <col width="50">
+            </colgroup>
+            <thead>
+            <tr>
+                <th data-field="0">
+                    <div class="layui-table-cell laytable-cell-1-0 laytable-cell-numbers">
+                        <span>#</span>
+                    </div>
+                </th>
+                <th data-field="1" data-unresize="true">
+                    <div class="layui-table-cell laytable-cell-1-1 laytable-cell-checkbox">
+                        <input name="layTableCheckbox" lay-skin="primary" lay-filter="layTableAllChoose" type="checkbox">
+                        <div class="layui-unselect layui-form-checkbox" lay-skin="primary">
+                            <i class="layui-icon"></i>
+                        </div>
+                    </div>
+                </th>
+                <th data-field="id">
+                    <div class="layui-table-cell laytable-cell-1-id">
+                        <span>ID</span>
+                        <span class="layui-table-sort layui-inline">
+                            <i class="layui-edge layui-table-sort-asc"></i><i
+                                class="layui-edge layui-table-sort-desc"></i>
+                        </span>
+                    </div>
+                </th>
+                <th data-field="name">
+                    <div class="layui-table-cell">
+                        <span>类别名称</span>
+                    </div>
+                </th>
+                <th data-field="type">
+                    <div class="layui-table-cell"><span>所属分类</span></div>
+                </th>
+
+                <th data-field="createdTime">
+                    <div class="layui-table-cell"><span>创建时间</span></div>
+                </th>
+                <th data-field="modifiedTime">
+                    <div class="layui-table-cell"><span>修改时间</span></div>
+                </th>
+                <th data-field="11">
+                    <div class="layui-table-cell" align="center"><span>操作</span></div>
+                </th>
+            </tr>
+            </thead>
+            <tbody class="">
+            <volist name="page" id="vo">
+                <tr data-index="0" class="tbody_content" data-id="{$vo.id}">
+                    <td >
+                        <div class="layui-table-cell">{$key}</div>
+                    </td>
+                    <td>
+                        <div class="layui-table-cell">
+                            <input name="layTableCheckbox" class="" lay-skin="primary" value="1" type="checkbox">
+                            <div class="layui-unselect layui-form-checkbox" lay-skin="primary">
+                                <i class="layui-icon"></i>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="layui-table-cell">{$vo.id}</div>
+                    </td>
+                    <td>
+                        <div class="layui-table-cell">{$vo.name}</div>
+                    </td>
+                    <td>
+                        <div class="layui-table-cell">{$vo.pid}</div>
+                    </td>
+
+                    <td>
+                        <div class="layui-table-cell">{$vo.create_at}</div>
+                    </td>
+                    <td>
+                        <div class="layui-table-cell">{$vo.update_at}</div>
+                    </td>
+                    <td>
+                        <div class="layui-table-cell">
+                            <a class="layui-btn layui-btn-xs edit">编辑</a>
+                            <a class="layui-btn layui-btn-danger layui-btn-xs do_del">删除</a>
+
+                        </div>
+                    </td>
+                </tr>
+            </volist>
+            </tbody>
+            <tfoot>
+            <tr>
+                <td colspan="13">{$page->render();}</td>
+            </tr>
+            </tfoot>
+        </table>
+
+    </div>
+</div>
+</div>
+</div>

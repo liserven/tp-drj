@@ -1,0 +1,775 @@
+---------------------------------------------------------------
+[ 2017-12-24T00:22:30+08:00 ] 172.17.75.57 47.93.112.232 GET /
+[ info ] 39.104.30.185:80/ [运行时间：0.015620s][吞吐率：64.02req/s] [内存消耗：1,690.97kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/kx.lsybk.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'identity',
+  'connection' => 'Close',
+  'host' => '39.104.30.185:80',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /www/wwwroot/kx.lsybk.com/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'menu',
+  4 => 'kx',
+  5 => 'code',
+  6 => 'msg',
+  7 => 'data',
+  8 => 'url',
+  9 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-24T01:10:00+08:00 ] 172.17.75.57 45.32.67.12 GET /index
+[ info ] sso.ywcyyjt.com/index [运行时间：0.014582s][吞吐率：68.58req/s] [内存消耗：1,692.82kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/kx.lsybk.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sso.ywcyyjt.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /www/wwwroot/kx.lsybk.com/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'menu',
+  4 => 'kx',
+  5 => 'code',
+  6 => 'msg',
+  7 => 'data',
+  8 => 'url',
+  9 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-24T04:45:22+08:00 ] 172.17.75.57 47.203.93.242 GET /
+[ info ] httpheader.net/ [运行时间：0.014030s][吞吐率：71.28req/s] [内存消耗：1,692.70kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/kx.lsybk.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'accept-charset' => 'ISO-8859-1,utf-8;q=0.7,*;q=0.7',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'en-gb,en;q=0.5',
+  'proxy-connection' => 'Keep-Alive',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'httpheader.net',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.28) Gecko/20120306 Firefox/3.6.28 (.NET CLR 3.5.30729)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /www/wwwroot/kx.lsybk.com/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'menu',
+  4 => 'kx',
+  5 => 'code',
+  6 => 'msg',
+  7 => 'data',
+  8 => 'url',
+  9 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-24T04:56:39+08:00 ] 172.17.75.57 112.80.138.24 GET /
+[ info ] www.epochtimes.com/ [运行时间：0.014613s][吞吐率：68.43req/s] [内存消耗：1,693.35kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/kx.lsybk.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like GeckoMozilla/5.0 (Windows NT 10.0; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0',
+  'proxy-connection' => 'Keep-Alive',
+  'proxy-authorization' => 'Basic Og==',
+  'host' => 'www.epochtimes.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /www/wwwroot/kx.lsybk.com/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'menu',
+  4 => 'kx',
+  5 => 'code',
+  6 => 'msg',
+  7 => 'data',
+  8 => 'url',
+  9 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-24T04:56:39+08:00 ] 172.17.75.57 122.96.131.32 GET /
+[ info ] boxun.com/ [运行时间：0.014634s][吞吐率：68.33req/s] [内存消耗：1,692.71kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/kx.lsybk.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0',
+  'proxy-connection' => 'Keep-Alive',
+  'proxy-authorization' => 'Basic Og==',
+  'host' => 'boxun.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /www/wwwroot/kx.lsybk.com/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'menu',
+  4 => 'kx',
+  5 => 'code',
+  6 => 'msg',
+  7 => 'data',
+  8 => 'url',
+  9 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-24T04:56:42+08:00 ] 172.17.75.57 171.118.65.105 GET /
+[ info ] www.minghui.org/ [运行时间：0.014019s][吞吐率：71.33req/s] [内存消耗：1,692.72kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/kx.lsybk.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0',
+  'proxy-connection' => 'Keep-Alive',
+  'proxy-authorization' => 'Basic Og==',
+  'host' => 'www.minghui.org',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /www/wwwroot/kx.lsybk.com/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'menu',
+  4 => 'kx',
+  5 => 'code',
+  6 => 'msg',
+  7 => 'data',
+  8 => 'url',
+  9 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-24T05:25:57+08:00 ] 172.17.75.57 80.82.78.50 GET /cache/global/img/gs.gif
+[ info ] www.baidu.com/cache/global/img/gs.gif [运行时间：0.013370s][吞吐率：74.80req/s] [内存消耗：1,392.19kb] [文件加载：41]
+[ info ] [ LANG ] /www/wwwroot/kx.lsybk.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'if-modified-since' => 'Thu, 19 Apr 2012 09:51:20 GMT',
+  'user-agent' => 'Mozilla',
+  'host' => 'www.baidu.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-24T08:22:37+08:00 ] 172.17.75.57 116.62.176.205 GET /
+[ info ] 39.104.14.72:80/ [运行时间：0.014050s][吞吐率：71.17req/s] [内存消耗：1,690.98kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/kx.lsybk.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'identity',
+  'connection' => 'Close',
+  'host' => '39.104.14.72:80',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /www/wwwroot/kx.lsybk.com/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'menu',
+  4 => 'kx',
+  5 => 'code',
+  6 => 'msg',
+  7 => 'data',
+  8 => 'url',
+  9 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-24T09:05:26+08:00 ] 172.17.75.57 106.11.225.97 GET /
+[ info ] zz.lsybk.com/ [运行时间：0.015003s][吞吐率：66.65req/s] [内存消耗：1,692.48kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/kx.lsybk.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'host' => 'zz.lsybk.com',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPad; CPU OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept-encoding' => 'gzip',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /www/wwwroot/kx.lsybk.com/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'menu',
+  4 => 'kx',
+  5 => 'code',
+  6 => 'msg',
+  7 => 'data',
+  8 => 'url',
+  9 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-24T14:10:53+08:00 ] 172.17.75.57 94.102.49.174 GET /cache/global/img/gs.gif
+[ info ] www.baidu.com/cache/global/img/gs.gif [运行时间：0.012665s][吞吐率：78.96req/s] [内存消耗：1,392.19kb] [文件加载：41]
+[ info ] [ LANG ] /www/wwwroot/kx.lsybk.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'if-modified-since' => 'Thu, 19 Apr 2012 09:51:20 GMT',
+  'user-agent' => 'Mozilla',
+  'host' => 'www.baidu.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-24T17:20:58+08:00 ] 172.17.75.57 106.11.226.233 GET /
+[ info ] kx.lsybk.com/ [运行时间：0.014921s][吞吐率：67.02req/s] [内存消耗：1,692.48kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/kx.lsybk.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'host' => 'kx.lsybk.com',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPad; CPU OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept-encoding' => 'gzip',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /www/wwwroot/kx.lsybk.com/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'menu',
+  4 => 'kx',
+  5 => 'code',
+  6 => 'msg',
+  7 => 'data',
+  8 => 'url',
+  9 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-24T20:50:54+08:00 ] 172.17.75.57 139.162.88.63 GET /echo.php?info=1234567890
+[ info ] clientapi.ipip.net/echo.php?info=1234567890 [运行时间：0.011720s][吞吐率：85.32req/s] [内存消耗：1,392.20kb] [文件加载：41]
+[ info ] [ LANG ] /www/wwwroot/kx.lsybk.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'clientapi.ipip.net',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-24T22:32:22+08:00 ] 172.17.75.57 171.34.218.213 GET /
+[ info ] www.epochtimes.com/ [运行时间：0.014938s][吞吐率：66.94req/s] [内存消耗：1,692.73kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/kx.lsybk.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'proxy-connection' => 'Keep-Alive',
+  'proxy-authorization' => 'Basic Og==',
+  'host' => 'www.epochtimes.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /www/wwwroot/kx.lsybk.com/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'menu',
+  4 => 'kx',
+  5 => 'code',
+  6 => 'msg',
+  7 => 'data',
+  8 => 'url',
+  9 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-24T22:32:23+08:00 ] 172.17.75.57 171.34.218.35 GET /
+[ info ] boxun.com/ [运行时间：0.015410s][吞吐率：64.89req/s] [内存消耗：1,692.71kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/kx.lsybk.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'proxy-connection' => 'Keep-Alive',
+  'proxy-authorization' => 'Basic Og==',
+  'host' => 'boxun.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /www/wwwroot/kx.lsybk.com/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'menu',
+  4 => 'kx',
+  5 => 'code',
+  6 => 'msg',
+  7 => 'data',
+  8 => 'url',
+  9 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-24T22:32:23+08:00 ] 172.17.75.57 171.34.218.236 GET /
+[ info ] www.123cha.com/ [运行时间：0.015332s][吞吐率：65.22req/s] [内存消耗：1,693.34kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/kx.lsybk.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like GeckoMozilla/5.0 (Windows NT 10.0; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'proxy-connection' => 'Keep-Alive',
+  'proxy-authorization' => 'Basic Og==',
+  'host' => 'www.123cha.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /www/wwwroot/kx.lsybk.com/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'menu',
+  4 => 'kx',
+  5 => 'code',
+  6 => 'msg',
+  7 => 'data',
+  8 => 'url',
+  9 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-24T22:32:28+08:00 ] 172.17.75.57 171.34.218.192 GET /english/
+[ info ] www.rfa.org/english/ [运行时间：0.014141s][吞吐率：70.72req/s] [内存消耗：1,395.13kb] [文件加载：41]
+[ info ] [ LANG ] /www/wwwroot/kx.lsybk.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'english',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'proxy-connection' => 'Keep-Alive',
+  'proxy-authorization' => 'Basic Og==',
+  'host' => 'www.rfa.org',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-24T22:32:28+08:00 ] 172.17.75.57 171.34.218.192 GET /english/
+[ info ] www.rfa.org/english/ [运行时间：0.012361s][吞吐率：80.90req/s] [内存消耗：1,395.13kb] [文件加载：41]
+[ info ] [ LANG ] /www/wwwroot/kx.lsybk.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'proxy-connection' => 'Keep-Alive',
+  'proxy-authorization' => 'Basic Og==',
+  'host' => 'www.rfa.org',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-24T22:32:29+08:00 ] 172.17.75.57 171.34.218.33 GET /
+[ info ] www.minghui.org/ [运行时间：0.014001s][吞吐率：71.42req/s] [内存消耗：1,693.34kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/kx.lsybk.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like GeckoMozilla/5.0 (Windows NT 10.0; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'proxy-connection' => 'Keep-Alive',
+  'proxy-authorization' => 'Basic Og==',
+  'host' => 'www.minghui.org',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /www/wwwroot/kx.lsybk.com/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'menu',
+  4 => 'kx',
+  5 => 'code',
+  6 => 'msg',
+  7 => 'data',
+  8 => 'url',
+  9 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-24T22:32:37+08:00 ] 172.17.75.57 171.34.218.33 GET /
+[ info ] www.wujieliulan.com/ [运行时间：0.014199s][吞吐率：70.43req/s] [内存消耗：1,693.35kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/kx.lsybk.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like GeckoMozilla/5.0 (Windows NT 10.0; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'proxy-connection' => 'Keep-Alive',
+  'proxy-authorization' => 'Basic Og==',
+  'host' => 'www.wujieliulan.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /www/wwwroot/kx.lsybk.com/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'menu',
+  4 => 'kx',
+  5 => 'code',
+  6 => 'msg',
+  7 => 'data',
+  8 => 'url',
+  9 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File

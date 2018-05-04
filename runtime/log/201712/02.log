@@ -1,0 +1,3646 @@
+---------------------------------------------------------------
+[ 2017-12-02T00:01:24+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/toList?page=1
+[ info ] localhost/toupiao/public/index.php/admin/Vote/toList?page=1 [运行时间：0.088277s][吞吐率：11.33req/s] [内存消耗：2,365.13kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => 'toList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList?page=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Vote->toList[ D:\phpStudy\WWW\toupiao\application\admin\controller\Vote.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\toupiao\public/../application/admin\view\vote\tolist.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011939s ] mysql:host=127.0.0.1;port=3306;dbname=toupiao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vote` [ RunTime:0.017759s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vote` LIMIT 1 [ RunTime:0.000609s ]
+[ sql ] [ SQL ] SELECT * FROM `vote` LIMIT 0,1 [ RunTime:0.000567s ]
+---------------------------------------------------------------
+[ 2017-12-02T00:01:24+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png
+[ info ] localhost/toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png [运行时间：0.039563s][吞吐率：25.28req/s] [内存消耗：1,427.21kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => '__ADMIN__',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList?page=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'static' => 'image',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-02T00:01:31+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/toList?page=2
+[ info ] localhost/toupiao/public/index.php/admin/Vote/toList?page=2 [运行时间：0.090023s][吞吐率：11.11req/s] [内存消耗：2,365.08kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => 'toList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList?page=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ RUN ] app\admin\controller\Vote->toList[ D:\phpStudy\WWW\toupiao\application\admin\controller\Vote.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\toupiao\public/../application/admin\view\vote\tolist.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004968s ] mysql:host=127.0.0.1;port=3306;dbname=toupiao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vote` [ RunTime:0.030990s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vote` LIMIT 1 [ RunTime:0.001262s ]
+[ sql ] [ SQL ] SELECT * FROM `vote` LIMIT 1,1 [ RunTime:0.001087s ]
+---------------------------------------------------------------
+[ 2017-12-02T00:01:32+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png
+[ info ] localhost/toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png [运行时间：0.043968s][吞吐率：22.74req/s] [内存消耗：1,426.68kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => '__ADMIN__',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList?page=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'static' => 'image',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-02T00:01:41+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/toList?page=2
+[ info ] localhost/toupiao/public/index.php/admin/Vote/toList?page=2 [运行时间：0.126684s][吞吐率：7.89req/s] [内存消耗：2,365.14kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => 'toList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList?page=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ RUN ] app\admin\controller\Vote->toList[ D:\phpStudy\WWW\toupiao\application\admin\controller\Vote.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\toupiao\public/../application/admin\view\vote\tolist.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014843s ] mysql:host=127.0.0.1;port=3306;dbname=toupiao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vote` [ RunTime:0.026374s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vote` LIMIT 1 [ RunTime:0.000801s ]
+[ sql ] [ SQL ] SELECT * FROM `vote` LIMIT 1,1 [ RunTime:0.000868s ]
+---------------------------------------------------------------
+[ 2017-12-02T00:01:41+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png
+[ info ] localhost/toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png [运行时间：0.037153s][吞吐率：26.92req/s] [内存消耗：1,427.21kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => '__ADMIN__',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList?page=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'static' => 'image',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-02T00:01:44+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/toList?page=1
+[ info ] localhost/toupiao/public/index.php/admin/Vote/toList?page=1 [运行时间：0.119339s][吞吐率：8.38req/s] [内存消耗：2,365.08kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => 'toList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList?page=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Vote->toList[ D:\phpStudy\WWW\toupiao\application\admin\controller\Vote.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\toupiao\public/../application/admin\view\vote\tolist.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007840s ] mysql:host=127.0.0.1;port=3306;dbname=toupiao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vote` [ RunTime:0.028343s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vote` LIMIT 1 [ RunTime:0.000864s ]
+[ sql ] [ SQL ] SELECT * FROM `vote` LIMIT 0,1 [ RunTime:0.000861s ]
+---------------------------------------------------------------
+[ 2017-12-02T00:01:44+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png
+[ info ] localhost/toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png [运行时间：0.038298s][吞吐率：26.11req/s] [内存消耗：1,426.68kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => '__ADMIN__',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList?page=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'static' => 'image',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-02T00:01:46+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/toList?page=2
+[ info ] localhost/toupiao/public/index.php/admin/Vote/toList?page=2 [运行时间：0.067638s][吞吐率：14.78req/s] [内存消耗：2,365.08kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => 'toList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList?page=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ RUN ] app\admin\controller\Vote->toList[ D:\phpStudy\WWW\toupiao\application\admin\controller\Vote.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\toupiao\public/../application/admin\view\vote\tolist.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002943s ] mysql:host=127.0.0.1;port=3306;dbname=toupiao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vote` [ RunTime:0.017530s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vote` LIMIT 1 [ RunTime:0.000503s ]
+[ sql ] [ SQL ] SELECT * FROM `vote` LIMIT 1,1 [ RunTime:0.000559s ]
+---------------------------------------------------------------
+[ 2017-12-02T00:01:46+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png
+[ info ] localhost/toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png [运行时间：0.040661s][吞吐率：24.59req/s] [内存消耗：1,426.68kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => '__ADMIN__',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList?page=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'static' => 'image',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-02T00:02:11+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/toList?page=2
+[ info ] localhost/toupiao/public/index.php/admin/Vote/toList?page=2 [运行时间：0.099628s][吞吐率：10.04req/s] [内存消耗：2,365.14kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => 'toList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList?page=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ RUN ] app\admin\controller\Vote->toList[ D:\phpStudy\WWW\toupiao\application\admin\controller\Vote.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\toupiao\public/../application/admin\view\vote\tolist.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006368s ] mysql:host=127.0.0.1;port=3306;dbname=toupiao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vote` [ RunTime:0.023375s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vote` LIMIT 1 [ RunTime:0.000723s ]
+[ sql ] [ SQL ] SELECT * FROM `vote` LIMIT 1,1 [ RunTime:0.000788s ]
+---------------------------------------------------------------
+[ 2017-12-02T00:02:11+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png
+[ info ] localhost/toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png [运行时间：0.037291s][吞吐率：26.82req/s] [内存消耗：1,427.21kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => '__ADMIN__',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList?page=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'static' => 'image',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-02T00:02:18+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/toList?page=1
+[ info ] localhost/toupiao/public/index.php/admin/Vote/toList?page=1 [运行时间：0.119698s][吞吐率：8.35req/s] [内存消耗：2,365.08kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => 'toList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList?page=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Vote->toList[ D:\phpStudy\WWW\toupiao\application\admin\controller\Vote.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\toupiao\public/../application/admin\view\vote\tolist.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004785s ] mysql:host=127.0.0.1;port=3306;dbname=toupiao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vote` [ RunTime:0.055735s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vote` LIMIT 1 [ RunTime:0.001297s ]
+[ sql ] [ SQL ] SELECT * FROM `vote` LIMIT 0,1 [ RunTime:0.001473s ]
+---------------------------------------------------------------
+[ 2017-12-02T00:02:18+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png
+[ info ] localhost/toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png [运行时间：0.043776s][吞吐率：22.84req/s] [内存消耗：1,426.68kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => '__ADMIN__',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList?page=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'static' => 'image',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-02T00:02:20+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/toList?page=2
+[ info ] localhost/toupiao/public/index.php/admin/Vote/toList?page=2 [运行时间：0.179060s][吞吐率：5.58req/s] [内存消耗：2,365.08kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => 'toList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList?page=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ RUN ] app\admin\controller\Vote->toList[ D:\phpStudy\WWW\toupiao\application\admin\controller\Vote.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\toupiao\public/../application/admin\view\vote\tolist.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010885s ] mysql:host=127.0.0.1;port=3306;dbname=toupiao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vote` [ RunTime:0.044690s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vote` LIMIT 1 [ RunTime:0.001653s ]
+[ sql ] [ SQL ] SELECT * FROM `vote` LIMIT 1,1 [ RunTime:0.001646s ]
+---------------------------------------------------------------
+[ 2017-12-02T00:02:20+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png
+[ info ] localhost/toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png [运行时间：0.036050s][吞吐率：27.74req/s] [内存消耗：1,426.68kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => '__ADMIN__',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList?page=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'static' => 'image',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-02T00:02:54+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/toList?page=2
+[ info ] localhost/toupiao/public/index.php/admin/Vote/toList?page=2 [运行时间：0.120755s][吞吐率：8.28req/s] [内存消耗：2,365.14kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => 'toList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList?page=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ RUN ] app\admin\controller\Vote->toList[ D:\phpStudy\WWW\toupiao\application\admin\controller\Vote.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\toupiao\public/../application/admin\view\vote\tolist.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004576s ] mysql:host=127.0.0.1;port=3306;dbname=toupiao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vote` [ RunTime:0.024566s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vote` LIMIT 1 [ RunTime:0.000902s ]
+[ sql ] [ SQL ] SELECT * FROM `vote` LIMIT 1,1 [ RunTime:0.001017s ]
+---------------------------------------------------------------
+[ 2017-12-02T00:02:54+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png
+[ info ] localhost/toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png [运行时间：0.038014s][吞吐率：26.31req/s] [内存消耗：1,427.21kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => '__ADMIN__',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList?page=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'static' => 'image',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-02T00:03:07+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/toList?page=2
+[ info ] localhost/toupiao/public/index.php/admin/Vote/toList?page=2 [运行时间：0.139528s][吞吐率：7.17req/s] [内存消耗：2,365.14kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => 'toList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList?page=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ RUN ] app\admin\controller\Vote->toList[ D:\phpStudy\WWW\toupiao\application\admin\controller\Vote.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\toupiao\public/../application/admin\view\vote\tolist.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.018336s ] mysql:host=127.0.0.1;port=3306;dbname=toupiao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vote` [ RunTime:0.027810s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vote` LIMIT 1 [ RunTime:0.001055s ]
+[ sql ] [ SQL ] SELECT * FROM `vote` LIMIT 1,1 [ RunTime:0.000933s ]
+---------------------------------------------------------------
+[ 2017-12-02T00:03:07+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png
+[ info ] localhost/toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png [运行时间：0.037604s][吞吐率：26.59req/s] [内存消耗：1,427.21kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => '__ADMIN__',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList?page=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'static' => 'image',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-02T00:05:03+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/toList?page=2
+[ info ] localhost/toupiao/public/index.php/admin/Vote/toList?page=2 [运行时间：0.147343s][吞吐率：6.79req/s] [内存消耗：2,489.91kb] [文件加载：63]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => 'toList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList?page=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ RUN ] app\admin\controller\Vote->toList[ D:\phpStudy\WWW\toupiao\application\admin\controller\Vote.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\toupiao\public/../application/admin\view\vote\tolist.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005513s ] mysql:host=127.0.0.1;port=3306;dbname=toupiao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vote` [ RunTime:0.028044s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vote` LIMIT 1 [ RunTime:0.000911s ]
+[ sql ] [ SQL ] SELECT * FROM `vote` LIMIT 1,1 [ RunTime:0.000985s ]
+---------------------------------------------------------------
+[ 2017-12-02T00:05:03+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png
+[ info ] localhost/toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png [运行时间：0.038570s][吞吐率：25.93req/s] [内存消耗：1,427.21kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => '__ADMIN__',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList?page=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'static' => 'image',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-02T00:05:26+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/toList?page=2
+[ info ] localhost/toupiao/public/index.php/admin/Vote/toList?page=2 [运行时间：0.145035s][吞吐率：6.89req/s] [内存消耗：2,489.91kb] [文件加载：63]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => 'toList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList?page=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ RUN ] app\admin\controller\Vote->toList[ D:\phpStudy\WWW\toupiao\application\admin\controller\Vote.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\toupiao\public/../application/admin\view\vote\tolist.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.059546s ] mysql:host=127.0.0.1;port=3306;dbname=toupiao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vote` [ RunTime:0.017898s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vote` LIMIT 1 [ RunTime:0.000534s ]
+[ sql ] [ SQL ] SELECT * FROM `vote` LIMIT 1,1 [ RunTime:0.000564s ]
+---------------------------------------------------------------
+[ 2017-12-02T00:05:26+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png
+[ info ] localhost/toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png [运行时间：0.037808s][吞吐率：26.45req/s] [内存消耗：1,427.21kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => '__ADMIN__',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList?page=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'static' => 'image',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-02T00:06:23+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/toList?page=2
+[ info ] localhost/toupiao/public/index.php/admin/Vote/toList?page=2 [运行时间：0.154112s][吞吐率：6.49req/s] [内存消耗：2,365.14kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => 'toList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList?page=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ RUN ] app\admin\controller\Vote->toList[ D:\phpStudy\WWW\toupiao\application\admin\controller\Vote.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\toupiao\public/../application/admin\view\vote\tolist.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015516s ] mysql:host=127.0.0.1;port=3306;dbname=toupiao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vote` [ RunTime:0.031746s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vote` LIMIT 1 [ RunTime:0.000994s ]
+[ sql ] [ SQL ] SELECT * FROM `vote` LIMIT 1,1 [ RunTime:0.001106s ]
+---------------------------------------------------------------
+[ 2017-12-02T00:06:23+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png
+[ info ] localhost/toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png [运行时间：0.037306s][吞吐率：26.81req/s] [内存消耗：1,427.21kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => '__ADMIN__',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList?page=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'static' => 'image',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-02T00:07:38+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/toList?page=2
+[ info ] localhost/toupiao/public/index.php/admin/Vote/toList?page=2 [运行时间：0.081580s][吞吐率：12.26req/s] [内存消耗：2,490.23kb] [文件加载：63]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => 'toList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList?page=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ RUN ] app\admin\controller\Vote->toList[ D:\phpStudy\WWW\toupiao\application\admin\controller\Vote.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\toupiao\public/../application/admin\view\vote\tolist.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004016s ] mysql:host=127.0.0.1;port=3306;dbname=toupiao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vote` [ RunTime:0.017923s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vote` LIMIT 1 [ RunTime:0.000534s ]
+[ sql ] [ SQL ] SELECT * FROM `vote` LIMIT 1,1 [ RunTime:0.000568s ]
+---------------------------------------------------------------
+[ 2017-12-02T00:07:38+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png
+[ info ] localhost/toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png [运行时间：0.039318s][吞吐率：25.43req/s] [内存消耗：1,427.21kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => '__ADMIN__',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList?page=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'static' => 'image',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-02T00:07:59+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/toList?page=2
+[ info ] localhost/toupiao/public/index.php/admin/Vote/toList?page=2 [运行时间：0.150875s][吞吐率：6.63req/s] [内存消耗：2,365.17kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => 'toList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList?page=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ RUN ] app\admin\controller\Vote->toList[ D:\phpStudy\WWW\toupiao\application\admin\controller\Vote.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\toupiao\public/../application/admin\view\vote\tolist.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014962s ] mysql:host=127.0.0.1;port=3306;dbname=toupiao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vote` [ RunTime:0.035657s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vote` LIMIT 1 [ RunTime:0.001014s ]
+[ sql ] [ SQL ] SELECT * FROM `vote` LIMIT 1,1 [ RunTime:0.001092s ]
+---------------------------------------------------------------
+[ 2017-12-02T00:07:59+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png
+[ info ] localhost/toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png [运行时间：0.038019s][吞吐率：26.30req/s] [内存消耗：1,427.21kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => '__ADMIN__',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList?page=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'static' => 'image',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-02T00:10:22+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/toList?page=2
+[ info ] localhost/toupiao/public/index.php/admin/Vote/toList?page=2 [运行时间：0.168878s][吞吐率：5.92req/s] [内存消耗：2,489.48kb] [文件加载：63]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => 'toList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList?page=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ RUN ] app\admin\controller\Vote->toList[ D:\phpStudy\WWW\toupiao\application\admin\controller\Vote.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\toupiao\public/../application/admin\view\vote\tolist.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.018032s ] mysql:host=127.0.0.1;port=3306;dbname=toupiao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vote` [ RunTime:0.030169s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vote` LIMIT 1 [ RunTime:0.000893s ]
+[ sql ] [ SQL ] SELECT * FROM `vote` LIMIT 1,1 [ RunTime:0.000981s ]
+---------------------------------------------------------------
+[ 2017-12-02T00:10:22+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png
+[ info ] localhost/toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png [运行时间：0.039779s][吞吐率：25.14req/s] [内存消耗：1,427.21kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => '__ADMIN__',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList?page=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'static' => 'image',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-02T00:10:46+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/toList?page=2
+[ info ] localhost/toupiao/public/index.php/admin/Vote/toList?page=2 [运行时间：0.146376s][吞吐率：6.83req/s] [内存消耗：2,489.48kb] [文件加载：63]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => 'toList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList?page=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ RUN ] app\admin\controller\Vote->toList[ D:\phpStudy\WWW\toupiao\application\admin\controller\Vote.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\toupiao\public/../application/admin\view\vote\tolist.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005334s ] mysql:host=127.0.0.1;port=3306;dbname=toupiao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vote` [ RunTime:0.040775s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vote` LIMIT 1 [ RunTime:0.000884s ]
+[ sql ] [ SQL ] SELECT * FROM `vote` LIMIT 1,1 [ RunTime:0.001047s ]
+---------------------------------------------------------------
+[ 2017-12-02T00:10:46+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png
+[ info ] localhost/toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png [运行时间：0.037799s][吞吐率：26.46req/s] [内存消耗：1,427.21kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => '__ADMIN__',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList?page=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'static' => 'image',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-02T00:11:20+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/toList?page=2
+[ info ] localhost/toupiao/public/index.php/admin/Vote/toList?page=2 [运行时间：0.169367s][吞吐率：5.90req/s] [内存消耗：2,364.42kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => 'toList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList?page=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ RUN ] app\admin\controller\Vote->toList[ D:\phpStudy\WWW\toupiao\application\admin\controller\Vote.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\toupiao\public/../application/admin\view\vote\tolist.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010860s ] mysql:host=127.0.0.1;port=3306;dbname=toupiao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vote` [ RunTime:0.041088s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vote` LIMIT 1 [ RunTime:0.000901s ]
+[ sql ] [ SQL ] SELECT * FROM `vote` LIMIT 1,1 [ RunTime:0.001023s ]
+---------------------------------------------------------------
+[ 2017-12-02T00:11:20+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png
+[ info ] localhost/toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png [运行时间：0.037208s][吞吐率：26.88req/s] [内存消耗：1,427.21kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => '__ADMIN__',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList?page=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'static' => 'image',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-02T00:12:46+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/toList?page=2
+[ info ] localhost/toupiao/public/index.php/admin/Vote/toList?page=2 [运行时间：0.089985s][吞吐率：11.11req/s] [内存消耗：2,364.42kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => 'toList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList?page=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ RUN ] app\admin\controller\Vote->toList[ D:\phpStudy\WWW\toupiao\application\admin\controller\Vote.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\toupiao\public/../application/admin\view\vote\tolist.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003440s ] mysql:host=127.0.0.1;port=3306;dbname=toupiao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vote` [ RunTime:0.020283s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vote` LIMIT 1 [ RunTime:0.000485s ]
+[ sql ] [ SQL ] SELECT * FROM `vote` LIMIT 1,1 [ RunTime:0.000562s ]
+---------------------------------------------------------------
+[ 2017-12-02T00:12:46+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png
+[ info ] localhost/toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png [运行时间：0.035856s][吞吐率：27.89req/s] [内存消耗：1,427.21kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => '__ADMIN__',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList?page=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'static' => 'image',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-02T00:12:49+08:00 ] ::1 ::1 POST /toupiao/public/index.php/admin/Vote/doDel
+[ info ] localhost/toupiao/public/index.php/admin/Vote/doDel [运行时间：0.092361s][吞吐率：10.83req/s] [内存消耗：1,426.78kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => 'doDel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'content-length' => '4',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList?page=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-02T00:12:52+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/toList?page=2
+[ info ] localhost/toupiao/public/index.php/admin/Vote/toList?page=2 [运行时间：0.191739s][吞吐率：5.22req/s] [内存消耗：2,364.42kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => 'toList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList?page=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ RUN ] app\admin\controller\Vote->toList[ D:\phpStudy\WWW\toupiao\application\admin\controller\Vote.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\toupiao\public/../application/admin\view\vote\tolist.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.016256s ] mysql:host=127.0.0.1;port=3306;dbname=toupiao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vote` [ RunTime:0.043885s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vote` LIMIT 1 [ RunTime:0.001361s ]
+[ sql ] [ SQL ] SELECT * FROM `vote` LIMIT 1,1 [ RunTime:0.001539s ]
+---------------------------------------------------------------
+[ 2017-12-02T00:12:52+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png
+[ info ] localhost/toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png [运行时间：0.037032s][吞吐率：27.00req/s] [内存消耗：1,427.21kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => '__ADMIN__',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList?page=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'static' => 'image',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-02T00:15:55+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/toList?page=2
+[ info ] localhost/toupiao/public/index.php/admin/Vote/toList?page=2 [运行时间：0.148114s][吞吐率：6.75req/s] [内存消耗：2,364.42kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => 'toList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList?page=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ RUN ] app\admin\controller\Vote->toList[ D:\phpStudy\WWW\toupiao\application\admin\controller\Vote.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\toupiao\public/../application/admin\view\vote\tolist.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.076736s ] mysql:host=127.0.0.1;port=3306;dbname=toupiao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vote` [ RunTime:0.017784s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vote` LIMIT 1 [ RunTime:0.000494s ]
+[ sql ] [ SQL ] SELECT * FROM `vote` LIMIT 1,1 [ RunTime:0.000606s ]
+---------------------------------------------------------------
+[ 2017-12-02T00:15:55+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png
+[ info ] localhost/toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png [运行时间：0.064552s][吞吐率：15.49req/s] [内存消耗：1,427.21kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => '__ADMIN__',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList?page=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'static' => 'image',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-02T00:15:59+08:00 ] ::1 ::1 POST /toupiao/public/index.php/admin/Vote/doDel
+[ info ] localhost/toupiao/public/index.php/admin/Vote/doDel [运行时间：0.031856s][吞吐率：31.39req/s] [内存消耗：1,426.78kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => 'doDel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'content-length' => '4',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList?page=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-02T00:24:19+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/toList?page=2
+[ info ] localhost/toupiao/public/index.php/admin/Vote/toList?page=2 [运行时间：0.186625s][吞吐率：5.36req/s] [内存消耗：2,366.40kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => 'toList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList?page=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ RUN ] app\admin\controller\Vote->toList[ D:\phpStudy\WWW\toupiao\application\admin\controller\Vote.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\toupiao\public/../application/admin\view\vote\tolist.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.077641s ] mysql:host=127.0.0.1;port=3306;dbname=toupiao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vote` [ RunTime:0.023392s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vote` LIMIT 1 [ RunTime:0.000761s ]
+[ sql ] [ SQL ] SELECT * FROM `vote` LIMIT 1,1 [ RunTime:0.000831s ]
+---------------------------------------------------------------
+[ 2017-12-02T00:24:19+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png
+[ info ] localhost/toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png [运行时间：0.038703s][吞吐率：25.84req/s] [内存消耗：1,429.19kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => '__ADMIN__',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList?page=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'static' => 'image',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-02T00:24:23+08:00 ] ::1 ::1 POST /toupiao/public/index.php/admin/Vote/doDel
+[ info ] localhost/toupiao/public/index.php/admin/Vote/doDel [运行时间：0.233296s][吞吐率：4.29req/s] [内存消耗：2,269.70kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => 'doDel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'content-length' => '4',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList?page=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ RUN ] app\admin\controller\Vote->doDel[ D:\phpStudy\WWW\toupiao\application\admin\controller\Vote.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006251s ] mysql:host=127.0.0.1;port=3306;dbname=toupiao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vote` [ RunTime:0.028626s ]
+[ sql ] [ SQL ] SELECT * FROM `vote` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.001347s ]
+[ sql ] [ SQL ] DELETE FROM `vote`    WHERE  `id` = 2 [ RunTime:0.100052s ]
+---------------------------------------------------------------
+[ 2017-12-02T00:24:24+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/toList?page=2
+[ info ] localhost/toupiao/public/index.php/admin/Vote/toList?page=2 [运行时间：0.130958s][吞吐率：7.64req/s] [内存消耗：2,365.04kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => 'toList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList?page=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ RUN ] app\admin\controller\Vote->toList[ D:\phpStudy\WWW\toupiao\application\admin\controller\Vote.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\toupiao\public/../application/admin\view\vote\tolist.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012184s ] mysql:host=127.0.0.1;port=3306;dbname=toupiao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vote` [ RunTime:0.026791s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vote` LIMIT 1 [ RunTime:0.000842s ]
+[ sql ] [ SQL ] SELECT * FROM `vote` LIMIT 1,1 [ RunTime:0.000892s ]
+---------------------------------------------------------------
+[ 2017-12-02T00:24:24+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png
+[ info ] localhost/toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png [运行时间：0.039375s][吞吐率：25.40req/s] [内存消耗：1,429.19kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => '__ADMIN__',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList?page=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'static' => 'image',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-02T00:24:28+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/toList?page=2
+[ info ] localhost/toupiao/public/index.php/admin/Vote/toList?page=2 [运行时间：0.121633s][吞吐率：8.22req/s] [内存消耗：2,365.04kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => 'toList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList?page=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ RUN ] app\admin\controller\Vote->toList[ D:\phpStudy\WWW\toupiao\application\admin\controller\Vote.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\toupiao\public/../application/admin\view\vote\tolist.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008906s ] mysql:host=127.0.0.1;port=3306;dbname=toupiao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vote` [ RunTime:0.026294s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vote` LIMIT 1 [ RunTime:0.000793s ]
+[ sql ] [ SQL ] SELECT * FROM `vote` LIMIT 1,1 [ RunTime:0.000849s ]
+---------------------------------------------------------------
+[ 2017-12-02T00:24:28+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png
+[ info ] localhost/toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png [运行时间：0.038604s][吞吐率：25.90req/s] [内存消耗：1,429.19kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => '__ADMIN__',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList?page=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'static' => 'image',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-02T00:25:18+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/vote/doadd.html
+[ info ] localhost/toupiao/public/index.php/admin/vote/doadd.html [运行时间：0.091130s][吞吐率：10.97req/s] [内存消耗：1,571.53kb] [文件加载：50]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'vote',
+    2 => 'doadd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList?page=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Vote->doAdd[ D:\phpStudy\WWW\toupiao\application\admin\controller\Vote.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\toupiao\public/../application/admin\view\vote\doadd.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-02T00:25:18+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/vote/__ADMIN__/static/image/code.png
+[ info ] localhost/toupiao/public/index.php/admin/vote/__ADMIN__/static/image/code.png [运行时间：0.054406s][吞吐率：18.38req/s] [内存消耗：1,428.64kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'vote',
+    2 => '__ADMIN__',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/vote/doadd.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'static' => 'image',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-02T00:25:40+08:00 ] ::1 ::1 POST /toupiao/public/index.php/admin/Vote/doAdd
+[ info ] localhost/toupiao/public/index.php/admin/Vote/doAdd [运行时间：0.217787s][吞吐率：4.59req/s] [内存消耗：2,218.99kb] [文件加载：58]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => 'doAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'content-length' => '228',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/vote/doadd.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'topic' => '全部优秀部门评选',
+  'start_time' => '2017-12-02 00:25:32',
+  'over_time' => '2017-12-29 00:00:00',
+  'explain' => '多撒所大撒多所大',
+)
+[ info ] [ RUN ] app\admin\controller\Vote->doAdd[ D:\phpStudy\WWW\toupiao\application\admin\controller\Vote.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010810s ] mysql:host=127.0.0.1;port=3306;dbname=toupiao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vote` [ RunTime:0.036166s ]
+[ sql ] [ SQL ] INSERT INTO `vote` (`topic` , `start_time` , `over_time` , `explain` , `create_at` , `update_at`) VALUES ('全部优秀部门评选' , 2017 , 2017 , '多撒所大撒多所大' , 1512145540 , 1512145540) [ RunTime:0.067245s ]
+---------------------------------------------------------------
+[ 2017-12-02T00:25:40+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/toList
+[ info ] localhost/toupiao/public/index.php/admin/Vote/toList [运行时间：0.158869s][吞吐率：6.29req/s] [内存消耗：2,365.80kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => 'toList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/vote/doadd.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Vote->toList[ D:\phpStudy\WWW\toupiao\application\admin\controller\Vote.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\toupiao\public/../application/admin\view\vote\tolist.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.016838s ] mysql:host=127.0.0.1;port=3306;dbname=toupiao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vote` [ RunTime:0.045023s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vote` LIMIT 1 [ RunTime:0.001468s ]
+[ sql ] [ SQL ] SELECT * FROM `vote` LIMIT 0,1 [ RunTime:0.001819s ]
+---------------------------------------------------------------
+[ 2017-12-02T00:25:40+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png
+[ info ] localhost/toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png [运行时间：0.037415s][吞吐率：26.73req/s] [内存消耗：1,428.64kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => '__ADMIN__',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'static' => 'image',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-02T00:28:12+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/toList
+[ info ] localhost/toupiao/public/index.php/admin/Vote/toList [运行时间：0.270497s][吞吐率：3.70req/s] [内存消耗：2,490.93kb] [文件加载：63]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => 'toList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/vote/doadd.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Vote->toList[ D:\phpStudy\WWW\toupiao\application\admin\controller\Vote.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\toupiao\public/../application/admin\view\vote\tolist.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015048s ] mysql:host=127.0.0.1;port=3306;dbname=toupiao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vote` [ RunTime:0.095534s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vote` LIMIT 1 [ RunTime:0.001304s ]
+[ sql ] [ SQL ] SELECT * FROM `vote` LIMIT 0,1 [ RunTime:0.001606s ]
+---------------------------------------------------------------
+[ 2017-12-02T00:28:12+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png
+[ info ] localhost/toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png [运行时间：0.038344s][吞吐率：26.08req/s] [内存消耗：1,429.17kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => '__ADMIN__',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'static' => 'image',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-02T00:30:35+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/toList
+[ info ] localhost/toupiao/public/index.php/admin/Vote/toList [运行时间：0.185573s][吞吐率：5.39req/s] [内存消耗：2,485.43kb] [文件加载：63]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => 'toList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/vote/doadd.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Vote->toList[ D:\phpStudy\WWW\toupiao\application\admin\controller\Vote.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\toupiao\public/../application/admin\view\vote\tolist.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010206s ] mysql:host=127.0.0.1;port=3306;dbname=toupiao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vote` [ RunTime:0.036726s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vote` LIMIT 1 [ RunTime:0.001103s ]
+[ sql ] [ SQL ] SELECT * FROM `vote` LIMIT 0,1 [ RunTime:0.001225s ]
+---------------------------------------------------------------
+[ 2017-12-02T00:30:35+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png
+[ info ] localhost/toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png [运行时间：0.039083s][吞吐率：25.59req/s] [内存消耗：1,429.17kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => '__ADMIN__',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'static' => 'image',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-02T00:31:18+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/toList
+[ info ] localhost/toupiao/public/index.php/admin/Vote/toList [运行时间：0.136209s][吞吐率：7.34req/s] [内存消耗：2,485.55kb] [文件加载：63]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => 'toList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/vote/doadd.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Vote->toList[ D:\phpStudy\WWW\toupiao\application\admin\controller\Vote.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\toupiao\public/../application/admin\view\vote\tolist.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007723s ] mysql:host=127.0.0.1;port=3306;dbname=toupiao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vote` [ RunTime:0.028488s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vote` LIMIT 1 [ RunTime:0.000932s ]
+[ sql ] [ SQL ] SELECT * FROM `vote` LIMIT 0,1 [ RunTime:0.000989s ]
+---------------------------------------------------------------
+[ 2017-12-02T00:31:18+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png
+[ info ] localhost/toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png [运行时间：0.039488s][吞吐率：25.32req/s] [内存消耗：1,429.17kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => '__ADMIN__',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'static' => 'image',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-02T00:31:47+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/toList
+[ info ] localhost/toupiao/public/index.php/admin/Vote/toList [运行时间：0.232053s][吞吐率：4.31req/s] [内存消耗：2,485.63kb] [文件加载：63]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => 'toList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/vote/doadd.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Vote->toList[ D:\phpStudy\WWW\toupiao\application\admin\controller\Vote.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\toupiao\public/../application/admin\view\vote\tolist.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.079424s ] mysql:host=127.0.0.1;port=3306;dbname=toupiao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vote` [ RunTime:0.024141s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vote` LIMIT 1 [ RunTime:0.000695s ]
+[ sql ] [ SQL ] SELECT * FROM `vote` LIMIT 0,1 [ RunTime:0.000815s ]
+---------------------------------------------------------------
+[ 2017-12-02T00:31:47+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png
+[ info ] localhost/toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png [运行时间：0.043082s][吞吐率：23.21req/s] [内存消耗：1,429.17kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => '__ADMIN__',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'static' => 'image',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-02T00:32:05+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/toList
+[ info ] localhost/toupiao/public/index.php/admin/Vote/toList [运行时间：0.171596s][吞吐率：5.83req/s] [内存消耗：2,485.64kb] [文件加载：63]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => 'toList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/vote/doadd.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Vote->toList[ D:\phpStudy\WWW\toupiao\application\admin\controller\Vote.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\toupiao\public/../application/admin\view\vote\tolist.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006729s ] mysql:host=127.0.0.1;port=3306;dbname=toupiao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vote` [ RunTime:0.040134s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vote` LIMIT 1 [ RunTime:0.001235s ]
+[ sql ] [ SQL ] SELECT * FROM `vote` LIMIT 0,1 [ RunTime:0.001306s ]
+---------------------------------------------------------------
+[ 2017-12-02T00:32:05+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png
+[ info ] localhost/toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png [运行时间：0.036420s][吞吐率：27.46req/s] [内存消耗：1,429.17kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => '__ADMIN__',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'static' => 'image',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-02T00:33:10+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/toList
+[ info ] localhost/toupiao/public/index.php/admin/Vote/toList [运行时间：0.082578s][吞吐率：12.11req/s] [内存消耗：2,365.98kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => 'toList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/vote/doadd.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Vote->toList[ D:\phpStudy\WWW\toupiao\application\admin\controller\Vote.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\toupiao\public/../application/admin\view\vote\tolist.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006204s ] mysql:host=127.0.0.1;port=3306;dbname=toupiao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vote` [ RunTime:0.018393s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vote` LIMIT 1 [ RunTime:0.000563s ]
+[ sql ] [ SQL ] SELECT * FROM `vote` LIMIT 0,1 [ RunTime:0.000573s ]
+---------------------------------------------------------------
+[ 2017-12-02T00:33:10+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png
+[ info ] localhost/toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png [运行时间：0.037037s][吞吐率：27.00req/s] [内存消耗：1,429.91kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => '__ADMIN__',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'static' => 'image',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-02T00:33:15+08:00 ] ::1 ::1 POST /toupiao/public/index.php/admin/Vote/doDel
+[ info ] localhost/toupiao/public/index.php/admin/Vote/doDel [运行时间：0.218040s][吞吐率：4.59req/s] [内存消耗：2,270.42kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => 'doDel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'content-length' => '4',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Vote->doDel[ D:\phpStudy\WWW\toupiao\application\admin\controller\Vote.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002997s ] mysql:host=127.0.0.1;port=3306;dbname=toupiao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vote` [ RunTime:0.016850s ]
+[ sql ] [ SQL ] SELECT * FROM `vote` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000621s ]
+[ sql ] [ SQL ] DELETE FROM `vote`    WHERE  `id` = 1 [ RunTime:0.111327s ]
+---------------------------------------------------------------
+[ 2017-12-02T00:33:16+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/toList
+[ info ] localhost/toupiao/public/index.php/admin/Vote/toList [运行时间：0.210781s][吞吐率：4.74req/s] [内存消耗：2,366.01kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => 'toList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/vote/doadd.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Vote->toList[ D:\phpStudy\WWW\toupiao\application\admin\controller\Vote.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\toupiao\public/../application/admin\view\vote\tolist.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009866s ] mysql:host=127.0.0.1;port=3306;dbname=toupiao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vote` [ RunTime:0.051276s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vote` LIMIT 1 [ RunTime:0.001309s ]
+[ sql ] [ SQL ] SELECT * FROM `vote` LIMIT 0,1 [ RunTime:0.001559s ]
+---------------------------------------------------------------
+[ 2017-12-02T00:33:16+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png
+[ info ] localhost/toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png [运行时间：0.035360s][吞吐率：28.28req/s] [内存消耗：1,429.91kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => '__ADMIN__',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'static' => 'image',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-02T00:33:21+08:00 ] ::1 ::1 POST /toupiao/public/index.php/admin/Vote/doDel
+[ info ] localhost/toupiao/public/index.php/admin/Vote/doDel [运行时间：0.254241s][吞吐率：3.93req/s] [内存消耗：2,270.42kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => 'doDel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'content-length' => '4',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'id' => '3',
+)
+[ info ] [ RUN ] app\admin\controller\Vote->doDel[ D:\phpStudy\WWW\toupiao\application\admin\controller\Vote.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005766s ] mysql:host=127.0.0.1;port=3306;dbname=toupiao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vote` [ RunTime:0.030796s ]
+[ sql ] [ SQL ] SELECT * FROM `vote` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001257s ]
+[ sql ] [ SQL ] DELETE FROM `vote`    WHERE  `id` = 3 [ RunTime:0.118805s ]
+---------------------------------------------------------------
+[ 2017-12-02T00:33:23+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/toList
+[ info ] localhost/toupiao/public/index.php/admin/Vote/toList [运行时间：0.148058s][吞吐率：6.75req/s] [内存消耗：2,364.63kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => 'toList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/vote/doadd.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Vote->toList[ D:\phpStudy\WWW\toupiao\application\admin\controller\Vote.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\toupiao\public/../application/admin\view\vote\tolist.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014991s ] mysql:host=127.0.0.1;port=3306;dbname=toupiao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vote` [ RunTime:0.033731s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vote` LIMIT 1 [ RunTime:0.000812s ]
+[ sql ] [ SQL ] SELECT * FROM `vote` LIMIT 0,1 [ RunTime:0.000799s ]
+---------------------------------------------------------------
+[ 2017-12-02T00:33:23+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png
+[ info ] localhost/toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png [运行时间：0.034841s][吞吐率：28.70req/s] [内存消耗：1,429.91kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => '__ADMIN__',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'static' => 'image',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-02T00:33:24+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/vote/doadd.html
+[ info ] localhost/toupiao/public/index.php/admin/vote/doadd.html [运行时间：0.065301s][吞吐率：15.31req/s] [内存消耗：1,572.25kb] [文件加载：50]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'vote',
+    2 => 'doadd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Vote->doAdd[ D:\phpStudy\WWW\toupiao\application\admin\controller\Vote.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\toupiao\public/../application/admin\view\vote\doadd.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-02T00:33:24+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/vote/__ADMIN__/static/image/code.png
+[ info ] localhost/toupiao/public/index.php/admin/vote/__ADMIN__/static/image/code.png [运行时间：0.037335s][吞吐率：26.78req/s] [内存消耗：1,429.38kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'vote',
+    2 => '__ADMIN__',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/vote/doadd.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'static' => 'image',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-02T00:33:39+08:00 ] ::1 ::1 POST /toupiao/public/index.php/admin/Vote/doAdd
+[ info ] localhost/toupiao/public/index.php/admin/Vote/doAdd [运行时间：0.231992s][吞吐率：4.31req/s] [内存消耗：2,219.84kb] [文件加载：58]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => 'doAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'content-length' => '256',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/vote/doadd.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'topic' => '优秀大会',
+  'start_time' => '2017-12-02 00:33:31',
+  'over_time' => '2017-12-30 00:00:00',
+  'explain' => ' 阿萨德撒所大撒多所大奥所多多撒',
+)
+[ info ] [ RUN ] app\admin\controller\Vote->doAdd[ D:\phpStudy\WWW\toupiao\application\admin\controller\Vote.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006879s ] mysql:host=127.0.0.1;port=3306;dbname=toupiao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vote` [ RunTime:0.039499s ]
+[ sql ] [ SQL ] INSERT INTO `vote` (`topic` , `start_time` , `over_time` , `explain` , `create_at` , `update_at`) VALUES ('优秀大会' , 1512146011 , 1514563200 , ' 阿萨德撒所大撒多所大奥所多多撒' , 1512146019 , 1512146019) [ RunTime:0.071661s ]
+---------------------------------------------------------------
+[ 2017-12-02T00:33:39+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/toList
+[ info ] localhost/toupiao/public/index.php/admin/Vote/toList [运行时间：0.189652s][吞吐率：5.27req/s] [内存消耗：2,366.05kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => 'toList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/vote/doadd.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Vote->toList[ D:\phpStudy\WWW\toupiao\application\admin\controller\Vote.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\toupiao\public/../application/admin\view\vote\tolist.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008300s ] mysql:host=127.0.0.1;port=3306;dbname=toupiao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vote` [ RunTime:0.044927s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vote` LIMIT 1 [ RunTime:0.001295s ]
+[ sql ] [ SQL ] SELECT * FROM `vote` LIMIT 0,1 [ RunTime:0.001469s ]
+---------------------------------------------------------------
+[ 2017-12-02T00:33:39+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png
+[ info ] localhost/toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png [运行时间：0.037196s][吞吐率：26.88req/s] [内存消耗：1,429.38kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => '__ADMIN__',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'static' => 'image',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-02T00:34:00+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/toList
+[ info ] localhost/toupiao/public/index.php/admin/Vote/toList [运行时间：0.211943s][吞吐率：4.72req/s] [内存消耗：2,486.45kb] [文件加载：63]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => 'toList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/vote/doadd.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Vote->toList[ D:\phpStudy\WWW\toupiao\application\admin\controller\Vote.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\toupiao\public/../application/admin\view\vote\tolist.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008118s ] mysql:host=127.0.0.1;port=3306;dbname=toupiao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vote` [ RunTime:0.041547s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vote` LIMIT 1 [ RunTime:0.001346s ]
+[ sql ] [ SQL ] SELECT * FROM `vote` LIMIT 0,1 [ RunTime:0.001479s ]
+---------------------------------------------------------------
+[ 2017-12-02T00:34:00+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png
+[ info ] localhost/toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png [运行时间：0.037935s][吞吐率：26.36req/s] [内存消耗：1,429.91kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => '__ADMIN__',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'static' => 'image',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-02T00:34:16+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/toList
+[ info ] localhost/toupiao/public/index.php/admin/Vote/toList [运行时间：0.070580s][吞吐率：14.17req/s] [内存消耗：2,486.32kb] [文件加载：63]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => 'toList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/vote/doadd.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Vote->toList[ D:\phpStudy\WWW\toupiao\application\admin\controller\Vote.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\toupiao\public/../application/admin\view\vote\tolist.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004381s ] mysql:host=127.0.0.1;port=3306;dbname=toupiao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vote` [ RunTime:0.015771s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vote` LIMIT 1 [ RunTime:0.000520s ]
+[ sql ] [ SQL ] SELECT * FROM `vote` LIMIT 0,1 [ RunTime:0.000554s ]
+---------------------------------------------------------------
+[ 2017-12-02T00:34:16+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png
+[ info ] localhost/toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png [运行时间：0.038163s][吞吐率：26.20req/s] [内存消耗：1,429.91kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => '__ADMIN__',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'static' => 'image',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-02T00:34:28+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/toList
+[ info ] localhost/toupiao/public/index.php/admin/Vote/toList [运行时间：0.108584s][吞吐率：9.21req/s] [内存消耗：2,486.32kb] [文件加载：63]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => 'toList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/vote/doadd.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Vote->toList[ D:\phpStudy\WWW\toupiao\application\admin\controller\Vote.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\toupiao\public/../application/admin\view\vote\tolist.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005510s ] mysql:host=127.0.0.1;port=3306;dbname=toupiao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vote` [ RunTime:0.024210s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vote` LIMIT 1 [ RunTime:0.000787s ]
+[ sql ] [ SQL ] SELECT * FROM `vote` LIMIT 0,1 [ RunTime:0.000881s ]
+---------------------------------------------------------------
+[ 2017-12-02T00:34:28+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png
+[ info ] localhost/toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png [运行时间：0.045996s][吞吐率：21.74req/s] [内存消耗：1,429.91kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => '__ADMIN__',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'static' => 'image',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-02T00:35:05+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/toList
+[ info ] localhost/toupiao/public/index.php/admin/Vote/toList [运行时间：0.128224s][吞吐率：7.80req/s] [内存消耗：2,486.78kb] [文件加载：63]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => 'toList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/vote/doadd.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Vote->toList[ D:\phpStudy\WWW\toupiao\application\admin\controller\Vote.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\toupiao\public/../application/admin\view\vote\tolist.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014609s ] mysql:host=127.0.0.1;port=3306;dbname=toupiao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vote` [ RunTime:0.023934s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vote` LIMIT 1 [ RunTime:0.000801s ]
+[ sql ] [ SQL ] SELECT * FROM `vote` LIMIT 0,1 [ RunTime:0.000915s ]
+---------------------------------------------------------------
+[ 2017-12-02T00:35:05+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png
+[ info ] localhost/toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png [运行时间：0.038424s][吞吐率：26.03req/s] [内存消耗：1,429.91kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => '__ADMIN__',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'static' => 'image',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-02T00:39:11+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/vote/doadd.html
+[ info ] localhost/toupiao/public/index.php/admin/vote/doadd.html [运行时间：0.096625s][吞吐率：10.35req/s] [内存消耗：1,452.29kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'vote',
+    2 => 'doadd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Vote->doAdd[ D:\phpStudy\WWW\toupiao\application\admin\controller\Vote.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\toupiao\public/../application/admin\view\vote\doadd.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-02T00:39:12+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/vote/__ADMIN__/static/image/code.png
+[ info ] localhost/toupiao/public/index.php/admin/vote/__ADMIN__/static/image/code.png [运行时间：0.037530s][吞吐率：26.65req/s] [内存消耗：1,429.38kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'vote',
+    2 => '__ADMIN__',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/vote/doadd.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'static' => 'image',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-02T13:18:46+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/vote/doadd.html
+[ info ] localhost/toupiao/public/index.php/admin/vote/doadd.html [运行时间：0.504701s][吞吐率：1.98req/s] [内存消耗：1,452.35kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'vote',
+    2 => 'doadd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Vote->doAdd[ D:\phpStudy\WWW\toupiao\application\admin\controller\Vote.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\toupiao\public/../application/admin\view\vote\doadd.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-02T13:18:47+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/vote/__ADMIN__/static/image/code.png
+[ info ] localhost/toupiao/public/index.php/admin/vote/__ADMIN__/static/image/code.png [运行时间：0.446549s][吞吐率：2.24req/s] [内存消耗：1,429.91kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'vote',
+    2 => '__ADMIN__',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/vote/doadd.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'static' => 'image',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-02T13:19:04+08:00 ] ::1 ::1 POST /toupiao/public/index.php/admin/Vote/doAdd
+[ info ] localhost/toupiao/public/index.php/admin/Vote/doAdd [运行时间：0.551803s][吞吐率：1.81req/s] [内存消耗：2,219.70kb] [文件加载：58]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => 'doAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'content-length' => '219',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/vote/doadd.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'topic' => '多撒所大撒奥所',
+  'start_time' => '2017-12-02 13:18:57',
+  'over_time' => '2017-12-29 00:00:00',
+  'explain' => '多撒大所多撒多所',
+)
+[ info ] [ RUN ] app\admin\controller\Vote->doAdd[ D:\phpStudy\WWW\toupiao\application\admin\controller\Vote.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.185641s ] mysql:host=127.0.0.1;port=3306;dbname=toupiao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vote` [ RunTime:0.103905s ]
+[ sql ] [ SQL ] INSERT INTO `vote` (`topic` , `start_time` , `over_time` , `explain` , `create_at` , `update_at`) VALUES ('多撒所大撒奥所' , 1512191937 , 1514476800 , '多撒大所多撒多所' , 1512191944 , 1512191944) [ RunTime:0.070895s ]
+---------------------------------------------------------------
+[ 2017-12-02T13:19:05+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/toList
+[ info ] localhost/toupiao/public/index.php/admin/Vote/toList [运行时间：0.281865s][吞吐率：3.55req/s] [内存消耗：2,365.93kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => 'toList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/vote/doadd.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Vote->toList[ D:\phpStudy\WWW\toupiao\application\admin\controller\Vote.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\toupiao\public/../application/admin\view\vote\tolist.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005377s ] mysql:host=127.0.0.1;port=3306;dbname=toupiao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vote` [ RunTime:0.091980s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vote` LIMIT 1 [ RunTime:0.043594s ]
+[ sql ] [ SQL ] SELECT * FROM `vote` LIMIT 0,1 [ RunTime:0.001313s ]
+---------------------------------------------------------------
+[ 2017-12-02T13:19:05+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png
+[ info ] localhost/toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png [运行时间：0.044348s][吞吐率：22.55req/s] [内存消耗：1,429.38kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => '__ADMIN__',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'static' => 'image',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-02T13:19:07+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/toList?page=2
+[ info ] localhost/toupiao/public/index.php/admin/Vote/toList?page=2 [运行时间：0.083676s][吞吐率：11.95req/s] [内存消耗：2,366.33kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => 'toList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ RUN ] app\admin\controller\Vote->toList[ D:\phpStudy\WWW\toupiao\application\admin\controller\Vote.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\toupiao\public/../application/admin\view\vote\tolist.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012371s ] mysql:host=127.0.0.1;port=3306;dbname=toupiao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vote` [ RunTime:0.020210s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vote` LIMIT 1 [ RunTime:0.000465s ]
+[ sql ] [ SQL ] SELECT * FROM `vote` LIMIT 1,1 [ RunTime:0.000390s ]
+---------------------------------------------------------------
+[ 2017-12-02T13:19:07+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png
+[ info ] localhost/toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png [运行时间：0.050155s][吞吐率：19.94req/s] [内存消耗：1,429.39kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => '__ADMIN__',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList?page=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'static' => 'image',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-02T13:26:05+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/toList?page=2
+[ info ] localhost/toupiao/public/index.php/admin/Vote/toList?page=2 [运行时间：0.152568s][吞吐率：6.55req/s] [内存消耗：2,366.47kb] [文件加载：62]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => 'toList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ RUN ] app\admin\controller\Vote->toList[ D:\phpStudy\WWW\toupiao\application\admin\controller\Vote.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\toupiao\public/../application/admin\view\vote\tolist.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.054771s ] mysql:host=127.0.0.1;port=3306;dbname=toupiao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vote` [ RunTime:0.020542s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vote` LIMIT 1 [ RunTime:0.000543s ]
+[ sql ] [ SQL ] SELECT * FROM `vote` LIMIT 1,1 [ RunTime:0.000540s ]
+---------------------------------------------------------------
+[ 2017-12-02T13:26:05+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png
+[ info ] localhost/toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png [运行时间：0.046026s][吞吐率：21.73req/s] [内存消耗：1,430.00kb] [文件加载：50]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => '__ADMIN__',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList?page=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'static' => 'image',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-02T13:27:24+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/toList?page=2
+[ info ] localhost/toupiao/public/index.php/admin/Vote/toList?page=2 [运行时间：0.154687s][吞吐率：6.46req/s] [内存消耗：2,366.78kb] [文件加载：62]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => 'toList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ RUN ] app\admin\controller\Vote->toList[ D:\phpStudy\WWW\toupiao\application\admin\controller\Vote.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\toupiao\public/../application/admin\view\vote\tolist.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007287s ] mysql:host=127.0.0.1;port=3306;dbname=toupiao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vote` [ RunTime:0.036293s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vote` LIMIT 1 [ RunTime:0.000782s ]
+[ sql ] [ SQL ] SELECT * FROM `vote` LIMIT 1,1 [ RunTime:0.000973s ]
+---------------------------------------------------------------
+[ 2017-12-02T13:27:24+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png
+[ info ] localhost/toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png [运行时间：0.047720s][吞吐率：20.96req/s] [内存消耗：1,430.31kb] [文件加载：50]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => '__ADMIN__',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList?page=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'static' => 'image',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-02T13:27:37+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/toList?page=2
+[ info ] localhost/toupiao/public/index.php/admin/Vote/toList?page=2 [运行时间：0.091990s][吞吐率：10.87req/s] [内存消耗：2,366.83kb] [文件加载：62]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => 'toList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ RUN ] app\admin\controller\Vote->toList[ D:\phpStudy\WWW\toupiao\application\admin\controller\Vote.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\toupiao\public/../application/admin\view\vote\tolist.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012566s ] mysql:host=127.0.0.1;port=3306;dbname=toupiao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vote` [ RunTime:0.019357s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vote` LIMIT 1 [ RunTime:0.000573s ]
+[ sql ] [ SQL ] SELECT * FROM `vote` LIMIT 1,1 [ RunTime:0.000551s ]
+---------------------------------------------------------------
+[ 2017-12-02T13:27:37+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png
+[ info ] localhost/toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png [运行时间：0.047332s][吞吐率：21.13req/s] [内存消耗：1,430.36kb] [文件加载：50]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => '__ADMIN__',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList?page=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'static' => 'image',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-02T13:28:04+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/toList?page=2
+[ info ] localhost/toupiao/public/index.php/admin/Vote/toList?page=2 [运行时间：0.128928s][吞吐率：7.76req/s] [内存消耗：2,367.44kb] [文件加载：62]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => 'toList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ RUN ] app\admin\controller\Vote->toList[ D:\phpStudy\WWW\toupiao\application\admin\controller\Vote.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\toupiao\public/../application/admin\view\vote\tolist.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013403s ] mysql:host=127.0.0.1;port=3306;dbname=toupiao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vote` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vote` LIMIT 1 [ RunTime:0.000689s ]
+[ sql ] [ SQL ] SELECT * FROM `vote` LIMIT 1,1 [ RunTime:0.000685s ]
+---------------------------------------------------------------
+[ 2017-12-02T13:28:04+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png
+[ info ] localhost/toupiao/public/index.php/admin/Vote/__ADMIN__/static/image/code.png [运行时间：0.051936s][吞吐率：19.25req/s] [内存消耗：1,430.97kb] [文件加载：50]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => '__ADMIN__',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList?page=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'static' => 'image',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-02T13:28:27+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/toList?page=2
+[ info ] localhost/toupiao/public/index.php/admin/Vote/toList?page=2 [运行时间：0.231264s][吞吐率：4.32req/s] [内存消耗：1,416.38kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => 'toList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-02T13:28:41+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/toList?page=2
+[ info ] localhost/toupiao/public/index.php/admin/Vote/toList?page=2 [运行时间：0.046290s][吞吐率：21.60req/s] [内存消耗：1,416.39kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => 'toList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-02T13:28:52+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/toList?page=2
+[ info ] localhost/toupiao/public/index.php/admin/Vote/toList?page=2 [运行时间：0.062490s][吞吐率：16.00req/s] [内存消耗：1,416.39kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => 'toList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-02T13:30:35+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin/Vote/toList?page=2
+[ info ] localhost/toupiao/public/index.php/admin/Vote/toList?page=2 [运行时间：0.077600s][吞吐率：12.89req/s] [内存消耗：1,462.05kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Vote',
+    2 => 'toList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/admin/Vote/toList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ LOG ] INIT File

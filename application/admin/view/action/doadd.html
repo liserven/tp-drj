@@ -1,0 +1,42 @@
+<layout name="layout" />
+<div style="padding: 20px;">
+    <form class="layui-form" action="{:url('admin/Member/doAdd')}">
+        <div class="layui-form-item">
+            <label class="layui-form-label">行为名称</label>
+            <div class="layui-input-inline">
+                <input type="text" name="topic"  lay-verify="required" placeholder="请输入标题" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">行为url</label>
+            <div class="layui-input-inline">
+                <input type="text" name="url"  lay-verify="required" placeholder="请输入标题" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">选择框</label>
+            <div class="layui-input-inline">
+                <select name="pid" lay-verify="required">
+                    <option value="0">一级分类</option>
+                    <volist name="actionPidList" id="vo">
+                        <option value="{$vo.ad_id}">{$vo.ad_topic}</option>
+                    </volist>
+                </select>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">是否启用</label>
+            <div class="layui-input-block">
+                <input type="radio" name="status" value="1" title="启用" checked>
+                <input type="radio" name="status" value="2" title="停用">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button class="layui-btn" lay-submit lay-filter="formDemo" id="submit">立即提交</button>
+                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+            </div>
+        </div>
+    </form>
+
+</div>

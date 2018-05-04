@@ -1,0 +1,147 @@
+---------------------------------------------------------------
+[ 2017-12-15T23:13:21+08:00 ] ::1 ::1 GET /toupiao/public/index.php/admin
+[ info ] localhost/toupiao/public/index.php/admin [运行时间：0.361212s][吞吐率：2.77req/s] [内存消耗：1,226.46kb] [文件加载：42]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-15T23:13:32+08:00 ] ::1 ::1 GET /toupiao/public/index.php/
+[ info ] localhost/toupiao/public/index.php/ [运行时间：0.099975s][吞吐率：10.00req/s] [内存消耗：1,442.37kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\toupiao\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\toupiao\public/../application/index\view\index\index.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'menu',
+  4 => 'kx',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-15T23:13:36+08:00 ] ::1 ::1 GET /toupiao/public/index.php/index/login/goout.html
+[ info ] localhost/toupiao/public/index.php/index/login/goout.html [运行时间：0.035506s][吞吐率：28.16req/s] [内存消耗：1,429.09kb] [文件加载：50]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'goout',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-15T23:13:44+08:00 ] ::1 ::1 GET /toupiao/public/index.php/index/login
+[ info ] localhost/toupiao/public/index.php/index/login [运行时间：0.083682s][吞吐率：11.95req/s] [内存消耗：1,439.47kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Login->index[ D:\phpStudy\WWW\toupiao\application\index\controller\Login.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\toupiao\public/../application/index\view\login\index.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+  3 => 'menu',
+  4 => 'kx',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-15T23:13:44+08:00 ] ::1 ::1 GET /toupiao/public/index.php/index/__PUBLIC__/jquery.min.js
+[ info ] localhost/toupiao/public/index.php/index/__PUBLIC__/jquery.min.js [运行时间：0.062913s][吞吐率：15.89req/s] [内存消耗：1,228.52kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\WWW\toupiao\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => '__PUBLIC__',
+    2 => 'jquery.min.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4854844416',
+  'referer' => 'http://localhost/toupiao/public/index.php/index/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File

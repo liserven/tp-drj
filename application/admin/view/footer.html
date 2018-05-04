@@ -1,0 +1,17 @@
+<if condition="($aName == 'doadd') OR ($aName == 'doedit')">
+    <script type="text/javascript" src="__STATIC__/ueditor/1.4.3/ueditor.config.js"></script>
+    <script type="text/javascript" src="__STATIC__/ueditor/1.4.3/ueditor.all.min.js"></script>
+    <script type="text/javascript" src="__STATIC__/ueditor/1.4.3/lang/zh-cn/zh-cn.js"></script>
+    <script type="text/javascript" src="__STATIC__/qiniu/dist/qiniu.min.js"></script>
+    <script src="__JS__/{$mName}/wangEditor/release/wangEditor.js"></script>
+
+</if>
+<script src="__JS__/{$mName}/{$cName}/{$aName}.js?v={:time()}"></script>
+
+
+<if condition="($cName == 'Index') ">
+    <script type="text/javascript" src="__JS__/{$mName}/chat.js"></script>
+    <script type="text/javascript" src="__JS__/jquery-3.2.1.min.js"></script>
+</if>
+    </body>
+</html>

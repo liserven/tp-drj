@@ -1,0 +1,2 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"D:\phpStudy\WWW\drj\public/../application/index\view\index\index.html";i:1523238213;}*/ ?>
+<img src="<?php echo url('index/Index/getImg'); ?>" alt="">

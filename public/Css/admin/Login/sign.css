@@ -1,0 +1,91 @@
+@charset "utf-8";
+*{padding:0px;margin:0px;}
+body{min-width:980px;background-color:#fafafa;font:12px/1.5 arial,sans-serif;}
+body,ul,h1{margin:0px;}
+ul{list-style-type:none;}
+img{display:block;}/*变成块集元素*/
+a{text-decoration:none;}
+
+/*--弹窗样式--*/
+
+#gray{width:100%;height:100%;background:rgba(0,0,0,0.3);position:fixed;top:0px;display:none;z-index:99;}
+
+.popup{
+    width:532px;
+    background-color:#fff;
+    position:absolute;
+    z-index:100;
+    border:1px solid #ebeaea;
+    left: 37%;
+    top: 252px;
+}
+.popup .top_nav{
+    width:532px;
+    height:46px;
+    background-image: url(../images/popup_top_bj.jpg);
+    border-bottom:1px solid #ebeaea;
+    position:relative;
+    cursor:move;
+}
+.popup .top_nav i{width:35px;height:35px;display:block; }
+.popup .top_nav span{font:18px/18px 'microsoft yahei';color:#707070;display:block;position:absolute;top:13px;left:50px;}
+
+.popup .top_nav a.guanbi { background:url(../images/popup_guanbi.png) repeat 0px 0px; width:35px; height: 35px; display: block; position:absolute;top:8px;right:10px;cursor:pointer;}
+.popup .top_nav a.guanbi span { display: none;}
+.popup .top_nav a.guanbi:hover { background: url(../images/popup_guanbi.png) repeat 0px -35px; }
+.popup .min{width:532px;height:auto;padding:10px;}
+
+.tc_login{width:510px;background-color:#fff;}
+.tc_login .right{width:485px;float:right;padding-right:10px;height:280px;}
+.tc_login .right i{font-size:20px;color:#090;float:right;margin:15px 0 0px 0;}
+.tc_login .right a{font:13px/18px 'microsoft yahei';color:#666;float:right;margin:16px 0 0px 6px;}
+.tc_login .right a:hover{color:#06F;text-decoration: underline;}
+.tc_login .right input{
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    height: 40px;
+    padding:0 0 0 34px;
+    margin:10px 0px 0px 10px;
+    transition: background 0.3s ease-in-out;
+    width: 454px;
+    float:right;
+}
+.tc_login .right input:focus {
+    outline: none;
+    border-color: #019A0D;
+    box-shadow: 0 0 0px #019A0D;
+}
+.tc_login .right .input_yh{background:url(../images/tc_login_yonghu.jpg) no-repeat left top;}
+.tc_login .right .input_mm{background:url(../images/tc_login_mima.jpg) no-repeat left top;}
+.tc_login .right .input_yh:focus{background:url(http://www/zxzm.com/Images/login/tc_login_yonghu2.jpg) no-repeat left top;}
+.tc_login .right .input_mm:focus{background:url(../images/login/tc_login_mima2.jpg) no-repeat left top;}
+.tc_login .right .button{
+    -webkit-appearance: none;
+    background:#36a803;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    cursor: pointer;
+    height: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    letter-spacing: 0.05em;
+    text-align: center;
+    text-transform: uppercase;
+    transition: background 0.3s ease-in-out;
+    width: 485px;
+    padding:0 50px 0 50px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.tc_login .right .button:hover {
+
+    background: #019A0D;
+}
+.tc_login .right dd{width:100%;height:30px;}
+.tc_login .right dd a{font:12px/18px 'microsoft yahei';color:#06F;}
+.tc_login .right dd a:hover{font:13px/18px 'microsoft yahei';color:#06F;text-decoration: underline;}
+.tc_login .right hr{height:1px;border:none;border-top:1px dashed #E4E4E4;clear:both;margin:240px 0 5px 0px;}

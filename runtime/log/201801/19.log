@@ -1,0 +1,3376 @@
+---------------------------------------------------------------
+[ 2018-01-19T16:03:23+08:00 ] 0.0.0.0 GET /mrw/public/index.php
+[ info ] localhost/mrw/public/index.php [运行时间：0.025949s][吞吐率：38.54req/s] [内存消耗：1,365.16kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-19T16:03:27+08:00 ] 0.0.0.0 GET /mrw/public/index.php/admin
+[ info ] localhost/mrw/public/index.php/admin [运行时间：0.029349s][吞吐率：34.07req/s] [内存消耗：1,868.94kb] [文件加载：62]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ VIEW ] D:\phpStudy\WWW\mrw\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-19T16:03:30+08:00 ] 0.0.0.0 GET /mrw/public/index.php/admin/login/index.html
+[ info ] localhost/mrw/public/index.php/admin/login/index.html [运行时间：0.027819s][吞吐率：35.95req/s] [内存消耗：1,872.84kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/mrw/public/index.php/admin',
+  'cookie' => 'PHPSESSID=0bcr20l71i405uhqklbchcko64',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy\WWW\mrw\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\mrw\public/../application/admin\view\login\index.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-19T16:03:30+08:00 ] 0.0.0.0 GET /mrw/public/index.php/captcha.html
+[ info ] localhost/mrw/public/index.php/captcha.html [运行时间：0.041867s][吞吐率：23.89req/s] [内存消耗：1,380.11kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/mrw/public/index.php/admin/login/index.html',
+  'cookie' => 'PHPSESSID=0bcr20l71i405uhqklbchcko64',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\phpStudy\WWW\mrw\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-19T16:05:58+08:00 ] 0.0.0.0 POST /mrw/public/index.php/admin/login/login.html
+[ info ] localhost/mrw/public/index.php/admin/login/login.html [运行时间：0.132000s][吞吐率：7.58req/s] [内存消耗：3,033.83kb] [文件加载：75]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/mrw/public/index.php/admin/login/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '49',
+  'cookie' => 'PHPSESSID=0bcr20l71i405uhqklbchcko64',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'phone' => '13525965579',
+  'password' => '1314yydeai',
+  'captcha' => 'uz2',
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\phpStudy\WWW\mrw\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000630s ] mysql:host=127.0.0.1;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `member` [ RunTime:0.007263s ]
+[ sql ] [ SQL ] SELECT * FROM `member` WHERE  `am_phone` = '13525965579' LIMIT 1 [ RunTime:0.000431s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `member_log` [ RunTime:0.004323s ]
+[ sql ] [ SQL ] INSERT INTO `member_log` (`ml_member_id` , `ml_name` , `ml_url` , `ml_ip` , `create_at`) VALUES (1 , '登录后台' , 'admin/login/login' , '0.0.0.0' , 1516349158) [ RunTime:0.051704s ]
+[ sql ] [ SQL ] UPDATE `member`  SET `am_ssid`='0bcr20l71i405uhqklbchcko64',`am_pre_time`=1516349158,`update_at`=1516349158  WHERE  `am_id` = 1 [ RunTime:0.022741s ]
+---------------------------------------------------------------
+[ 2018-01-19T16:05:58+08:00 ] 0.0.0.0 GET /mrw/public/index.php/index.html
+[ info ] localhost/mrw/public/index.php/index.html [运行时间：0.033630s][吞吐率：29.74req/s] [内存消耗：2,237.66kb] [文件加载：64]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/mrw/public/index.php/admin/login/index.html',
+  'cookie' => 'PHPSESSID=0bcr20l71i405uhqklbchcko64',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\mrw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\mrw\public/../application/admin\view\index\index.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-19T16:05:58+08:00 ] 0.0.0.0 GET /mrw/public/index.php/admin/index/welcome.html
+[ info ] localhost/mrw/public/index.php/admin/index/welcome.html [运行时间：0.038714s][吞吐率：25.83req/s] [内存消耗：2,387.23kb] [文件加载：68]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/mrw/public/index.php/index.html',
+  'cookie' => 'PHPSESSID=0bcr20l71i405uhqklbchcko64',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\mrw\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\mrw\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'server',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000675s ] mysql:host=127.0.0.1;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] select version() [ RunTime:0.000284s ]
+---------------------------------------------------------------
+[ 2018-01-19T16:06:18+08:00 ] 0.0.0.0 GET /mrw/public/index.php/index.html
+[ info ] localhost/mrw/public/index.php/index.html [运行时间：0.031614s][吞吐率：31.63req/s] [内存消耗：2,083.09kb] [文件加载：62]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/mrw/public/index.php/admin/login/index.html',
+  'cookie' => 'PHPSESSID=0bcr20l71i405uhqklbchcko64',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\mrw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\mrw\public/../application/admin\view\index\index.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-19T16:06:18+08:00 ] 0.0.0.0 GET /mrw/public/index.php/admin/index/welcome.html
+[ info ] localhost/mrw/public/index.php/admin/index/welcome.html [运行时间：0.037140s][吞吐率：26.93req/s] [内存消耗：2,247.39kb] [文件加载：66]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/mrw/public/index.php/index.html',
+  'cookie' => 'PHPSESSID=0bcr20l71i405uhqklbchcko64',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\mrw\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\mrw\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'server',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000457s ] mysql:host=127.0.0.1;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] select version() [ RunTime:0.000175s ]
+---------------------------------------------------------------
+[ 2018-01-19T16:07:18+08:00 ] 0.0.0.0 GET /mrw/public/index.php/index.html
+[ info ] localhost/mrw/public/index.php/index.html [运行时间：0.033065s][吞吐率：30.24req/s] [内存消耗：2,082.55kb] [文件加载：62]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=0bcr20l71i405uhqklbchcko64',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\mrw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\mrw\public/../application/admin\view\index\index.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-19T16:07:18+08:00 ] 0.0.0.0 GET /mrw/public/index.php/admin/index/welcome.html
+[ info ] localhost/mrw/public/index.php/admin/index/welcome.html [运行时间：0.060196s][吞吐率：16.61req/s] [内存消耗：2,247.20kb] [文件加载：66]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/mrw/public/index.php/index.html',
+  'cookie' => 'PHPSESSID=0bcr20l71i405uhqklbchcko64',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\mrw\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\mrw\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'server',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.025255s ] mysql:host=127.0.0.1;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] select version() [ RunTime:0.000261s ]
+---------------------------------------------------------------
+[ 2018-01-19T16:19:19+08:00 ] 127.0.0.1 GET /mrw/public/
+[ info ] mrw.com/mrw/public/ [运行时间：0.023650s][吞吐率：42.28req/s] [内存消耗：1,365.03kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mrw.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-19T16:21:48+08:00 ] 127.0.0.1 GET /mrw/public/
+[ info ] mrw.com/mrw/public/ [运行时间：0.023807s][吞吐率：42.00req/s] [内存消耗：1,365.03kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mrw.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-19T16:21:52+08:00 ] 127.0.0.1 GET /mrw/public/admin
+[ info ] mrw.com/mrw/public/admin [运行时间：0.021230s][吞吐率：47.10req/s] [内存消耗：1,368.28kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mrw',
+    1 => 'public',
+    2 => 'admin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mrw.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  '/admin' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-19T16:21:58+08:00 ] 127.0.0.1 GET /mrw/public/index.php/admin
+[ info ] mrw.com/mrw/public/index.php/admin [运行时间：0.027875s][吞吐率：35.87req/s] [内存消耗：1,727.68kb] [文件加载：60]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mrw.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ VIEW ] D:\phpStudy\WWW\mrw\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-19T16:22:01+08:00 ] 127.0.0.1 GET /mrw/public/index.php/admin/login/index.html
+[ info ] mrw.com/mrw/public/index.php/admin/login/index.html [运行时间：0.024759s][吞吐率：40.39req/s] [内存消耗：1,729.40kb] [文件加载：59]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mrw.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/mrw/public/index.php/admin',
+  'cookie' => 'PHPSESSID=crh8hkpfvm8t452upnon63t344',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy\WWW\mrw\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\mrw\public/../application/admin\view\login\index.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-19T16:22:01+08:00 ] 127.0.0.1 GET /mrw/public/index.php/captcha.html
+[ info ] mrw.com/mrw/public/index.php/captcha.html [运行时间：0.021635s][吞吐率：46.22req/s] [内存消耗：1,380.09kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mrw.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/mrw/public/index.php/admin/login/index.html',
+  'cookie' => 'PHPSESSID=crh8hkpfvm8t452upnon63t344',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\phpStudy\WWW\mrw\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-19T16:32:08+08:00 ] 127.0.0.1 GET /index.php/admin
+[ info ] mrw.com/index.php/admin [运行时间：0.037308s][吞吐率：26.80req/s] [内存消耗：1,379.45kb] [文件加载：60]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=crh8hkpfvm8t452upnon63t344',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ VIEW ] D:\phpStudy\WWW\mrw\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-19T16:32:11+08:00 ] 127.0.0.1 GET /index.php/admin/login/index.html
+[ info ] mrw.com/index.php/admin/login/index.html [运行时间：0.016755s][吞吐率：59.68req/s] [内存消耗：1,378.76kb] [文件加载：59]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=crh8hkpfvm8t452upnon63t344',
+  'referer' => 'http://mrw.com/index.php/admin',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy\WWW\mrw\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\mrw\public/../application/admin\view\login\index.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-19T16:32:11+08:00 ] 127.0.0.1 GET /index.php/captcha.html
+[ info ] mrw.com/index.php/captcha.html [运行时间：0.019423s][吞吐率：51.49req/s] [内存消耗：1,105.05kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=crh8hkpfvm8t452upnon63t344',
+  'referer' => 'http://mrw.com/index.php/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\phpStudy\WWW\mrw\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-19T16:32:14+08:00 ] 127.0.0.1 GET /
+[ info ] mrw.com/ [运行时间：0.015138s][吞吐率：66.06req/s] [内存消耗：1,088.12kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=crh8hkpfvm8t452upnon63t344',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-19T16:32:18+08:00 ] 127.0.0.1 GET /admin
+[ info ] mrw.com/admin [运行时间：0.017084s][吞吐率：58.53req/s] [内存消耗：1,382.78kb] [文件加载：60]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=crh8hkpfvm8t452upnon63t344',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ VIEW ] D:\phpStudy\WWW\mrw\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-19T16:32:21+08:00 ] 127.0.0.1 GET /admin/login/index.html
+[ info ] mrw.com/admin/login/index.html [运行时间：0.016024s][吞吐率：62.41req/s] [内存消耗：1,382.23kb] [文件加载：59]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=crh8hkpfvm8t452upnon63t344',
+  'referer' => 'http://mrw.com/admin',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy\WWW\mrw\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\mrw\public/../application/admin\view\login\index.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-19T16:32:21+08:00 ] 127.0.0.1 GET /captcha.html
+[ info ] mrw.com/captcha.html [运行时间：0.014823s][吞吐率：67.46req/s] [内存消耗：1,108.34kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=crh8hkpfvm8t452upnon63t344',
+  'referer' => 'http://mrw.com/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/captcha_html' => '',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\phpStudy\WWW\mrw\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-19T16:32:31+08:00 ] 127.0.0.1 POST /admin/login/login.html
+[ info ] mrw.com/admin/login/login.html [运行时间：0.087197s][吞吐率：11.47req/s] [内存消耗：2,437.78kb] [文件加载：75]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=crh8hkpfvm8t452upnon63t344',
+  'content-length' => '49',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://mrw.com/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/login_html' => '',
+  'phone' => '13525965579',
+  'password' => '1314yydeai',
+  'captcha' => 'yrj',
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\phpStudy\WWW\mrw\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001270s ] mysql:host=127.0.0.1;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `member` [ RunTime:0.007567s ]
+[ sql ] [ SQL ] SELECT * FROM `member` WHERE  `am_phone` = '13525965579' LIMIT 1 [ RunTime:0.000385s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `member_log` [ RunTime:0.004315s ]
+[ sql ] [ SQL ] INSERT INTO `member_log` (`ml_member_id` , `ml_name` , `ml_url` , `ml_ip` , `create_at`) VALUES (1 , '登录后台' , 'admin/login/login' , '127.0.0.1' , 1516350751) [ RunTime:0.022130s ]
+[ sql ] [ SQL ] UPDATE `member`  SET `am_ssid`='crh8hkpfvm8t452upnon63t344',`am_pre_time`=1516350751,`update_at`=1516350751  WHERE  `am_id` = 1 [ RunTime:0.023082s ]
+---------------------------------------------------------------
+[ 2018-01-19T16:32:31+08:00 ] 127.0.0.1 GET /index.html
+[ info ] mrw.com/index.html [运行时间：0.019102s][吞吐率：52.35req/s] [内存消耗：1,674.68kb] [文件加载：62]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=crh8hkpfvm8t452upnon63t344',
+  'referer' => 'http://mrw.com/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\mrw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\mrw\public/../application/admin\view\index\index.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-19T16:32:31+08:00 ] 127.0.0.1 GET /admin/index/welcome.html
+[ info ] mrw.com/admin/index/welcome.html [运行时间：0.020975s][吞吐率：47.68req/s] [内存消耗：1,813.41kb] [文件加载：66]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=crh8hkpfvm8t452upnon63t344',
+  'referer' => 'http://mrw.com/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\mrw\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\mrw\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'server',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000404s ] mysql:host=127.0.0.1;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] select version() [ RunTime:0.000239s ]
+---------------------------------------------------------------
+[ 2018-01-19T16:32:33+08:00 ] 127.0.0.1 GET /admin/News/tolist
+[ info ] mrw.com/admin/News/tolist [运行时间：0.064811s][吞吐率：15.43req/s] [内存消耗：2,695.74kb] [文件加载：80]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'News',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=crh8hkpfvm8t452upnon63t344',
+  'referer' => 'http://mrw.com/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/News/tolist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\News->toList[ D:\phpStudy\WWW\mrw\application\admin\controller\News.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\mrw\public/../application/admin\view\news\tolist.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'hotLabel',
+  7 => 'sort',
+  8 => 'twoSort',
+  9 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000429s ] mysql:host=127.0.0.1;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `label` [ RunTime:0.020295s ]
+[ sql ] [ SQL ] SELECT COUNT(DISTINCT id) as hots,`id`,`name` FROM `label` `l` GROUP BY `name` ORDER BY hots DESC [ RunTime:0.000548s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sort` [ RunTime:0.003409s ]
+[ sql ] [ SQL ] SELECT * FROM `sort` WHERE  `pid` = 0 [ RunTime:0.000271s ]
+[ sql ] [ SQL ] SELECT * FROM `sort` WHERE  `pid` = 2 [ RunTime:0.000184s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.004150s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `news` `n` LIMIT 1 [ RunTime:0.000218s ]
+[ sql ] [ SQL ] SELECT * FROM `news` `n` LIMIT 0,10 [ RunTime:0.000207s ]
+---------------------------------------------------------------
+[ 2018-01-19T16:32:34+08:00 ] 127.0.0.1 GET /admin/Sort/tolist
+[ info ] mrw.com/admin/Sort/tolist [运行时间：0.039718s][吞吐率：25.18req/s] [内存消耗：2,652.01kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Sort',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=crh8hkpfvm8t452upnon63t344',
+  'referer' => 'http://mrw.com/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Sort/tolist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Sort->toList[ D:\phpStudy\WWW\mrw\application\admin\controller\Sort.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\mrw\public/../application/admin\view\sort\tolist.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'sort',
+  7 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000395s ] mysql:host=127.0.0.1;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sort` [ RunTime:0.005758s ]
+[ sql ] [ SQL ] SELECT * FROM `sort` WHERE  `pid` = 0 [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sort` `s` LIMIT 1 [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SELECT * FROM `sort` `s` ORDER BY s.id DESC LIMIT 0,10 [ RunTime:0.000210s ]
+[ sql ] [ SQL ] SELECT * FROM `sort` WHERE  `id` IN (2,3,0) [ RunTime:0.000335s ]
+---------------------------------------------------------------
+[ 2018-01-19T16:34:07+08:00 ] 127.0.0.1 POST /admin/Sort/editOrder
+[ info ] mrw.com/admin/Sort/editOrder [运行时间：0.130472s][吞吐率：7.66req/s] [内存消耗：2,423.56kb] [文件加载：76]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Sort',
+    2 => 'editOrder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=crh8hkpfvm8t452upnon63t344',
+  'content-length' => '12',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://mrw.com/admin/Sort/tolist',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Sort/editOrder' => '',
+  'id' => '7',
+  'order' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Sort->editOrder[ D:\phpStudy\WWW\mrw\application\admin\controller\Sort.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000380s ] mysql:host=127.0.0.1;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sort` [ RunTime:0.005926s ]
+[ sql ] [ SQL ] SELECT * FROM `sort` WHERE  `pid` = 0 [ RunTime:0.000267s ]
+[ sql ] [ SQL ] SELECT * FROM `sort` WHERE  `id` = 7 LIMIT 1 [ RunTime:0.000265s ]
+[ sql ] [ SQL ] UPDATE `sort`  SET `order`=1,`update_at`=1516350847  WHERE  `id` = 7 [ RunTime:0.047977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `member_log` [ RunTime:0.019557s ]
+[ sql ] [ SQL ] INSERT INTO `member_log` (`ml_member_id` , `ml_name` , `ml_url` , `ml_ip` , `create_at`) VALUES (1 , '修改了 <a class=\"c-red\">阿拉</a>排序,结果为1' , 'admin/Sort/editOrder' , '127.0.0.1' , 1516350847) [ RunTime:0.030059s ]
+---------------------------------------------------------------
+[ 2018-01-19T16:34:09+08:00 ] 127.0.0.1 GET /admin/Sort/tolist
+[ info ] mrw.com/admin/Sort/tolist [运行时间：0.037705s][吞吐率：26.52req/s] [内存消耗：2,516.05kb] [文件加载：76]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Sort',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=crh8hkpfvm8t452upnon63t344',
+  'referer' => 'http://mrw.com/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Sort/tolist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Sort->toList[ D:\phpStudy\WWW\mrw\application\admin\controller\Sort.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\mrw\public/../application/admin\view\sort\tolist.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'sort',
+  7 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000415s ] mysql:host=127.0.0.1;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sort` [ RunTime:0.005636s ]
+[ sql ] [ SQL ] SELECT * FROM `sort` WHERE  `pid` = 0 [ RunTime:0.000238s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sort` `s` LIMIT 1 [ RunTime:0.000173s ]
+[ sql ] [ SQL ] SELECT * FROM `sort` `s` ORDER BY s.id DESC LIMIT 0,10 [ RunTime:0.000170s ]
+[ sql ] [ SQL ] SELECT * FROM `sort` WHERE  `id` IN (2,3,0) [ RunTime:0.000213s ]
+---------------------------------------------------------------
+[ 2018-01-19T16:34:10+08:00 ] 127.0.0.1 GET /admin/Label/tolist
+[ info ] mrw.com/admin/Label/tolist [运行时间：0.038886s][吞吐率：25.72req/s] [内存消耗：2,576.55kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Label',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=crh8hkpfvm8t452upnon63t344',
+  'referer' => 'http://mrw.com/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Label/tolist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Label->toList[ D:\phpStudy\WWW\mrw\application\admin\controller\Label.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\mrw\public/../application/admin\view\label\tolist.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000552s ] mysql:host=127.0.0.1;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `label` [ RunTime:0.005913s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `label` `l` LIMIT 1 [ RunTime:0.000213s ]
+[ sql ] [ SQL ] SELECT * FROM `label` `l` LIMIT 0,10 [ RunTime:0.000162s ]
+[ error ] [0]类的属性不存在:app\common\model\Label->title[D:\phpStudy\WWW\mrw\thinkphp\library\think\Model.php:587]
+---------------------------------------------------------------
+[ 2018-01-19T16:34:21+08:00 ] 127.0.0.1 GET /admin/News/doAdd
+[ info ] mrw.com/admin/News/doAdd [运行时间：0.036532s][吞吐率：27.37req/s] [内存消耗：2,446.46kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'News',
+    2 => 'doAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=crh8hkpfvm8t452upnon63t344',
+  'referer' => 'http://mrw.com/admin/News/tolist',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/News/doAdd' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\News->doAdd[ D:\phpStudy\WWW\mrw\application\admin\controller\News.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\mrw\public/../application/admin\view\news\doadd.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'hotLabel',
+  7 => 'sort',
+  8 => 'twoSort',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000361s ] mysql:host=127.0.0.1;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `label` [ RunTime:0.003737s ]
+[ sql ] [ SQL ] SELECT COUNT(DISTINCT id) as hots,`id`,`name` FROM `label` `l` GROUP BY `name` ORDER BY hots DESC [ RunTime:0.000364s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sort` [ RunTime:0.002465s ]
+[ sql ] [ SQL ] SELECT * FROM `sort` WHERE  `pid` = 0 [ RunTime:0.000222s ]
+[ sql ] [ SQL ] SELECT * FROM `sort` WHERE  `pid` = 2 [ RunTime:0.000267s ]
+---------------------------------------------------------------
+[ 2018-01-19T16:34:25+08:00 ] 127.0.0.1 GET /admin/News/doAdd
+[ info ] mrw.com/admin/News/doAdd [运行时间：0.035963s][吞吐率：27.81req/s] [内存消耗：2,316.09kb] [文件加载：70]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'News',
+    2 => 'doAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=crh8hkpfvm8t452upnon63t344',
+  'referer' => 'http://mrw.com/admin/News/tolist',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/News/doAdd' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\News->doAdd[ D:\phpStudy\WWW\mrw\application\admin\controller\News.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\mrw\public/../application/admin\view\news\doadd.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'hotLabel',
+  7 => 'sort',
+  8 => 'twoSort',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000501s ] mysql:host=127.0.0.1;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `label` [ RunTime:0.005862s ]
+[ sql ] [ SQL ] SELECT COUNT(DISTINCT id) as hots,`id`,`name` FROM `label` `l` GROUP BY `name` ORDER BY hots DESC [ RunTime:0.000459s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sort` [ RunTime:0.002849s ]
+[ sql ] [ SQL ] SELECT * FROM `sort` WHERE  `pid` = 0 [ RunTime:0.000227s ]
+[ sql ] [ SQL ] SELECT * FROM `sort` WHERE  `pid` = 2 [ RunTime:0.000186s ]
+---------------------------------------------------------------
+[ 2018-01-19T16:36:36+08:00 ] 127.0.0.1 POST /admin/News/doAdd
+[ info ] mrw.com/admin/News/doAdd [运行时间：0.064138s][吞吐率：15.59req/s] [内存消耗：2,377.62kb] [文件加载：73]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'News',
+    2 => 'doAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=crh8hkpfvm8t452upnon63t344',
+  'content-length' => '283',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://mrw.com/admin/News/doAdd',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/News/doAdd' => '',
+  'title' => 'ffasfdsdfsfd',
+  'sm_title' => 'dfsdfsf',
+  'message' => 'dsfdsds',
+  'source' => 'fdsdfsfds',
+  'one_sort' => '2',
+  'sort_id' => '7',
+  'label' => '阿拉,哦',
+  'is_index' => '2',
+  'file' => '',
+  'is_top' => '2',
+  'is_comment' => '1',
+  'order' => '99',
+  'content' => '<p>大师大师大师大师<br/></p>',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\News->doAdd[ D:\phpStudy\WWW\mrw\application\admin\controller\News.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000441s ] mysql:host=127.0.0.1;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `label` [ RunTime:0.003482s ]
+[ sql ] [ SQL ] SELECT COUNT(DISTINCT id) as hots,`id`,`name` FROM `label` `l` GROUP BY `name` ORDER BY hots DESC [ RunTime:0.000566s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sort` [ RunTime:0.002546s ]
+[ sql ] [ SQL ] SELECT * FROM `sort` WHERE  `pid` = 0 [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SELECT * FROM `sort` WHERE  `pid` = 2 [ RunTime:0.000248s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.002926s ]
+[ sql ] [ SQL ] INSERT INTO `news` (`title` , `order` , `sm_title` , `message` , `is_index` , `is_comment` , `is_top` , `source` , `mid` , `sort_id` , `create_at` , `update_at`) VALUES ('ffasfdsdfsfd' , 99 , 'dfsdfsf' , 'dfsdfsf' , 2 , 1 , 2 , 'fdsdfsfds' , 1 , 7 , 1516350996 , 1516350996) [ RunTime:0.000274s ]
+[ sql ] [ SQL ] SELECT * FROM `label` WHERE  `id` IN (0,1) LIMIT 1 [ RunTime:0.000193s ]
+[ sql ] [ SQL ] SELECT * FROM `label` WHERE  `id` IN (0,1) LIMIT 1 [ RunTime:0.000209s ]
+---------------------------------------------------------------
+[ 2018-01-19T16:39:07+08:00 ] 127.0.0.1 POST /admin/News/doAdd
+[ info ] mrw.com/admin/News/doAdd [运行时间：0.043350s][吞吐率：23.07req/s] [内存消耗：2,323.67kb] [文件加载：70]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'News',
+    2 => 'doAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=crh8hkpfvm8t452upnon63t344',
+  'content-length' => '283',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://mrw.com/admin/News/doAdd',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/News/doAdd' => '',
+  'title' => 'ffasfdsdfsfd',
+  'sm_title' => 'dfsdfsf',
+  'message' => 'dsfdsds',
+  'source' => 'fdsdfsfds',
+  'one_sort' => '2',
+  'sort_id' => '7',
+  'label' => '阿拉,哦',
+  'is_index' => '2',
+  'file' => '',
+  'is_top' => '2',
+  'is_comment' => '1',
+  'order' => '99',
+  'content' => '<p>大师大师大师大师<br/></p>',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\News->doAdd[ D:\phpStudy\WWW\mrw\application\admin\controller\News.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001861s ] mysql:host=127.0.0.1;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `label` [ RunTime:0.006639s ]
+[ sql ] [ SQL ] SELECT COUNT(DISTINCT id) as hots,`id`,`name` FROM `label` `l` GROUP BY `name` ORDER BY hots DESC [ RunTime:0.000641s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sort` [ RunTime:0.005597s ]
+[ sql ] [ SQL ] SELECT * FROM `sort` WHERE  `pid` = 0 [ RunTime:0.000251s ]
+[ sql ] [ SQL ] SELECT * FROM `sort` WHERE  `pid` = 2 [ RunTime:0.000176s ]
+---------------------------------------------------------------
+[ 2018-01-19T16:39:21+08:00 ] 127.0.0.1 POST /admin/News/doAdd
+[ info ] mrw.com/admin/News/doAdd [运行时间：0.041032s][吞吐率：24.37req/s] [内存消耗：2,323.66kb] [文件加载：70]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'News',
+    2 => 'doAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=crh8hkpfvm8t452upnon63t344',
+  'content-length' => '283',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://mrw.com/admin/News/doAdd',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/News/doAdd' => '',
+  'title' => 'ffasfdsdfsfd',
+  'sm_title' => 'dfsdfsf',
+  'message' => 'dsfdsds',
+  'source' => 'fdsdfsfds',
+  'one_sort' => '2',
+  'sort_id' => '7',
+  'label' => '阿拉,哦',
+  'is_index' => '2',
+  'file' => '',
+  'is_top' => '2',
+  'is_comment' => '1',
+  'order' => '99',
+  'content' => '<p>大师大师大师大师<br/></p>',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\News->doAdd[ D:\phpStudy\WWW\mrw\application\admin\controller\News.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000439s ] mysql:host=127.0.0.1;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `label` [ RunTime:0.009046s ]
+[ sql ] [ SQL ] SELECT COUNT(DISTINCT id) as hots,`id`,`name` FROM `label` `l` GROUP BY `name` ORDER BY hots DESC [ RunTime:0.000610s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sort` [ RunTime:0.005825s ]
+[ sql ] [ SQL ] SELECT * FROM `sort` WHERE  `pid` = 0 [ RunTime:0.000264s ]
+[ sql ] [ SQL ] SELECT * FROM `sort` WHERE  `pid` = 2 [ RunTime:0.000233s ]
+---------------------------------------------------------------
+[ 2018-01-19T16:39:40+08:00 ] 127.0.0.1 POST /admin/News/doAdd
+[ info ] mrw.com/admin/News/doAdd [运行时间：0.047593s][吞吐率：21.01req/s] [内存消耗：2,323.66kb] [文件加载：70]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'News',
+    2 => 'doAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=crh8hkpfvm8t452upnon63t344',
+  'content-length' => '283',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://mrw.com/admin/News/doAdd',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/News/doAdd' => '',
+  'title' => 'ffasfdsdfsfd',
+  'sm_title' => 'dfsdfsf',
+  'message' => 'dsfdsds',
+  'source' => 'fdsdfsfds',
+  'one_sort' => '2',
+  'sort_id' => '7',
+  'label' => '阿拉,哦',
+  'is_index' => '2',
+  'file' => '',
+  'is_top' => '2',
+  'is_comment' => '1',
+  'order' => '99',
+  'content' => '<p>大师大师大师大师<br/></p>',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\News->doAdd[ D:\phpStudy\WWW\mrw\application\admin\controller\News.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000442s ] mysql:host=127.0.0.1;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `label` [ RunTime:0.013934s ]
+[ sql ] [ SQL ] SELECT COUNT(DISTINCT id) as hots,`id`,`name` FROM `label` `l` GROUP BY `name` ORDER BY hots DESC [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sort` [ RunTime:0.007154s ]
+[ sql ] [ SQL ] SELECT * FROM `sort` WHERE  `pid` = 0 [ RunTime:0.000214s ]
+[ sql ] [ SQL ] SELECT * FROM `sort` WHERE  `pid` = 2 [ RunTime:0.000183s ]
+---------------------------------------------------------------
+[ 2018-01-19T16:40:00+08:00 ] 127.0.0.1 POST /admin/News/doAdd
+[ info ] mrw.com/admin/News/doAdd [运行时间：0.046408s][吞吐率：21.55req/s] [内存消耗：2,325.16kb] [文件加载：70]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'News',
+    2 => 'doAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=crh8hkpfvm8t452upnon63t344',
+  'content-length' => '283',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://mrw.com/admin/News/doAdd',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/News/doAdd' => '',
+  'title' => 'ffasfdsdfsfd',
+  'sm_title' => 'dfsdfsf',
+  'message' => 'dsfdsds',
+  'source' => 'fdsdfsfds',
+  'one_sort' => '2',
+  'sort_id' => '7',
+  'label' => '阿拉,哦',
+  'is_index' => '2',
+  'file' => '',
+  'is_top' => '2',
+  'is_comment' => '1',
+  'order' => '99',
+  'content' => '<p>大师大师大师大师<br/></p>',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\News->doAdd[ D:\phpStudy\WWW\mrw\application\admin\controller\News.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000442s ] mysql:host=127.0.0.1;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `label` [ RunTime:0.014264s ]
+[ sql ] [ SQL ] SELECT COUNT(DISTINCT id) as hots,`id`,`name` FROM `label` `l` GROUP BY `name` ORDER BY hots DESC [ RunTime:0.000615s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sort` [ RunTime:0.004736s ]
+[ sql ] [ SQL ] SELECT * FROM `sort` WHERE  `pid` = 0 [ RunTime:0.000244s ]
+[ sql ] [ SQL ] SELECT * FROM `sort` WHERE  `pid` = 2 [ RunTime:0.000172s ]
+[ sql ] [ SQL ] SELECT * FROM `label` WHERE  `id` IN (0,1) LIMIT 1 [ RunTime:0.000411s ]
+---------------------------------------------------------------
+[ 2018-01-19T16:40:14+08:00 ] 127.0.0.1 POST /admin/News/doAdd
+[ info ] mrw.com/admin/News/doAdd [运行时间：0.044310s][吞吐率：22.57req/s] [内存消耗：2,325.00kb] [文件加载：70]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'News',
+    2 => 'doAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=crh8hkpfvm8t452upnon63t344',
+  'content-length' => '283',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://mrw.com/admin/News/doAdd',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/News/doAdd' => '',
+  'title' => 'ffasfdsdfsfd',
+  'sm_title' => 'dfsdfsf',
+  'message' => 'dsfdsds',
+  'source' => 'fdsdfsfds',
+  'one_sort' => '2',
+  'sort_id' => '7',
+  'label' => '阿拉,哦',
+  'is_index' => '2',
+  'file' => '',
+  'is_top' => '2',
+  'is_comment' => '1',
+  'order' => '99',
+  'content' => '<p>大师大师大师大师<br/></p>',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\News->doAdd[ D:\phpStudy\WWW\mrw\application\admin\controller\News.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000810s ] mysql:host=127.0.0.1;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `label` [ RunTime:0.006234s ]
+[ sql ] [ SQL ] SELECT COUNT(DISTINCT id) as hots,`id`,`name` FROM `label` `l` GROUP BY `name` ORDER BY hots DESC [ RunTime:0.000551s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sort` [ RunTime:0.004932s ]
+[ sql ] [ SQL ] SELECT * FROM `sort` WHERE  `pid` = 0 [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SELECT * FROM `sort` WHERE  `pid` = 2 [ RunTime:0.000177s ]
+[ sql ] [ SQL ] SELECT * FROM `label` WHERE  `name` = '阿拉'  AND `mid` = 1 LIMIT 1 [ RunTime:0.000203s ]
+---------------------------------------------------------------
+[ 2018-01-19T16:40:49+08:00 ] 127.0.0.1 POST /admin/News/doAdd
+[ info ] mrw.com/admin/News/doAdd [运行时间：0.078973s][吞吐率：12.66req/s] [内存消耗：2,363.13kb] [文件加载：74]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'News',
+    2 => 'doAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=crh8hkpfvm8t452upnon63t344',
+  'content-length' => '283',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://mrw.com/admin/News/doAdd',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/News/doAdd' => '',
+  'title' => 'ffasfdsdfsfd',
+  'sm_title' => 'dfsdfsf',
+  'message' => 'dsfdsds',
+  'source' => 'fdsdfsfds',
+  'one_sort' => '2',
+  'sort_id' => '7',
+  'label' => '阿拉,哦',
+  'is_index' => '2',
+  'file' => '',
+  'is_top' => '2',
+  'is_comment' => '1',
+  'order' => '99',
+  'content' => '<p>大师大师大师大师<br/></p>',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\News->doAdd[ D:\phpStudy\WWW\mrw\application\admin\controller\News.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000518s ] mysql:host=127.0.0.1;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `label` [ RunTime:0.014500s ]
+[ sql ] [ SQL ] SELECT COUNT(DISTINCT id) as hots,`id`,`name` FROM `label` `l` GROUP BY `name` ORDER BY hots DESC [ RunTime:0.000643s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sort` [ RunTime:0.005728s ]
+[ sql ] [ SQL ] SELECT * FROM `sort` WHERE  `pid` = 0 [ RunTime:0.000267s ]
+[ sql ] [ SQL ] SELECT * FROM `sort` WHERE  `pid` = 2 [ RunTime:0.000225s ]
+[ sql ] [ SQL ] SELECT * FROM `label` WHERE  `name` = '阿拉'  AND `mid` = 1 LIMIT 1 [ RunTime:0.000223s ]
+[ sql ] [ SQL ] INSERT INTO `label` (`name` , `mid` , `create_at` , `update_at`) VALUES ('阿拉' , 1 , 1516351249 , 1516351249) [ RunTime:0.028624s ]
+[ error ] [8]未定义变量: newResult[D:\phpStudy\WWW\mrw\application\admin\controller\News.php:91]
+---------------------------------------------------------------
+[ 2018-01-19T16:41:07+08:00 ] 127.0.0.1 POST /admin/News/doAdd
+[ info ] mrw.com/admin/News/doAdd [运行时间：0.082576s][吞吐率：12.11req/s] [内存消耗：2,378.40kb] [文件加载：73]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'News',
+    2 => 'doAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=crh8hkpfvm8t452upnon63t344',
+  'content-length' => '283',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://mrw.com/admin/News/doAdd',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/News/doAdd' => '',
+  'title' => 'ffasfdsdfsfd',
+  'sm_title' => 'dfsdfsf',
+  'message' => 'dsfdsds',
+  'source' => 'fdsdfsfds',
+  'one_sort' => '2',
+  'sort_id' => '7',
+  'label' => '阿拉,哦',
+  'is_index' => '2',
+  'file' => '',
+  'is_top' => '2',
+  'is_comment' => '1',
+  'order' => '99',
+  'content' => '<p>大师大师大师大师<br/></p>',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\News->doAdd[ D:\phpStudy\WWW\mrw\application\admin\controller\News.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000445s ] mysql:host=127.0.0.1;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `label` [ RunTime:0.016291s ]
+[ sql ] [ SQL ] SELECT COUNT(DISTINCT id) as hots,`id`,`name` FROM `label` `l` GROUP BY `name` ORDER BY hots DESC [ RunTime:0.000603s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sort` [ RunTime:0.005940s ]
+[ sql ] [ SQL ] SELECT * FROM `sort` WHERE  `pid` = 0 [ RunTime:0.000248s ]
+[ sql ] [ SQL ] SELECT * FROM `sort` WHERE  `pid` = 2 [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.005546s ]
+[ sql ] [ SQL ] INSERT INTO `news` (`title` , `order` , `sm_title` , `message` , `is_index` , `is_comment` , `is_top` , `source` , `mid` , `sort_id` , `create_at` , `update_at`) VALUES ('ffasfdsdfsfd' , 99 , 'dfsdfsf' , 'dfsdfsf' , 2 , 1 , 2 , 'fdsdfsfds' , 1 , 7 , 1516351267 , 1516351267) [ RunTime:0.000232s ]
+[ sql ] [ SQL ] SELECT * FROM `label` WHERE  `id` IN (0,1) LIMIT 1 [ RunTime:0.000205s ]
+[ sql ] [ SQL ] SELECT * FROM `label` WHERE  `id` IN (0,1) LIMIT 1 [ RunTime:0.000176s ]
+---------------------------------------------------------------
+[ 2018-01-19T16:42:14+08:00 ] 127.0.0.1 POST /admin/News/doAdd
+[ info ] mrw.com/admin/News/doAdd [运行时间：0.050311s][吞吐率：19.88req/s] [内存消耗：2,325.91kb] [文件加载：70]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'News',
+    2 => 'doAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=crh8hkpfvm8t452upnon63t344',
+  'content-length' => '283',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://mrw.com/admin/News/doAdd',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/News/doAdd' => '',
+  'title' => 'ffasfdsdfsfd',
+  'sm_title' => 'dfsdfsf',
+  'message' => 'dsfdsds',
+  'source' => 'fdsdfsfds',
+  'one_sort' => '2',
+  'sort_id' => '7',
+  'label' => '阿拉,哦',
+  'is_index' => '2',
+  'file' => '',
+  'is_top' => '2',
+  'is_comment' => '1',
+  'order' => '99',
+  'content' => '<p>大师大师大师大师<br/></p>',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\News->doAdd[ D:\phpStudy\WWW\mrw\application\admin\controller\News.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000432s ] mysql:host=127.0.0.1;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `label` [ RunTime:0.017320s ]
+[ sql ] [ SQL ] SELECT COUNT(DISTINCT id) as hots,`id`,`name` FROM `label` `l` GROUP BY `name` ORDER BY hots DESC [ RunTime:0.000645s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sort` [ RunTime:0.006294s ]
+[ sql ] [ SQL ] SELECT * FROM `sort` WHERE  `pid` = 0 [ RunTime:0.000218s ]
+[ sql ] [ SQL ] SELECT * FROM `sort` WHERE  `pid` = 2 [ RunTime:0.000182s ]
+[ sql ] [ SQL ] SELECT * FROM `label` WHERE  `name` = '阿拉'  AND `mid` = 1 LIMIT 1 [ RunTime:0.000235s ]
+---------------------------------------------------------------
+[ 2018-01-19T16:42:27+08:00 ] 127.0.0.1 POST /admin/News/doAdd
+[ info ] mrw.com/admin/News/doAdd [运行时间：0.070161s][吞吐率：14.25req/s] [内存消耗：2,327.44kb] [文件加载：70]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'News',
+    2 => 'doAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=crh8hkpfvm8t452upnon63t344',
+  'content-length' => '283',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://mrw.com/admin/News/doAdd',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/News/doAdd' => '',
+  'title' => 'ffasfdsdfsfd',
+  'sm_title' => 'dfsdfsf',
+  'message' => 'dsfdsds',
+  'source' => 'fdsdfsfds',
+  'one_sort' => '2',
+  'sort_id' => '7',
+  'label' => '阿拉,哦',
+  'is_index' => '2',
+  'file' => '',
+  'is_top' => '2',
+  'is_comment' => '1',
+  'order' => '99',
+  'content' => '<p>大师大师大师大师<br/></p>',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\News->doAdd[ D:\phpStudy\WWW\mrw\application\admin\controller\News.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000426s ] mysql:host=127.0.0.1;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `label` [ RunTime:0.013409s ]
+[ sql ] [ SQL ] SELECT COUNT(DISTINCT id) as hots,`id`,`name` FROM `label` `l` GROUP BY `name` ORDER BY hots DESC [ RunTime:0.000440s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sort` [ RunTime:0.002910s ]
+[ sql ] [ SQL ] SELECT * FROM `sort` WHERE  `pid` = 0 [ RunTime:0.000232s ]
+[ sql ] [ SQL ] SELECT * FROM `sort` WHERE  `pid` = 2 [ RunTime:0.000195s ]
+[ sql ] [ SQL ] SELECT * FROM `label` WHERE  `name` = '阿拉'  AND `mid` = 1 LIMIT 1 [ RunTime:0.000240s ]
+[ sql ] [ SQL ] SELECT * FROM `label` WHERE  `name` = '哦'  AND `mid` = 1 LIMIT 1 [ RunTime:0.000171s ]
+[ sql ] [ SQL ] INSERT INTO `label` (`name` , `mid` , `create_at` , `update_at`) VALUES ('哦' , 1 , 1516351347 , 1516351347) [ RunTime:0.023448s ]
+---------------------------------------------------------------
+[ 2018-01-19T16:46:21+08:00 ] 127.0.0.1 POST /admin/News/doAdd
+[ info ] mrw.com/admin/News/doAdd [运行时间：0.046420s][吞吐率：21.54req/s] [内存消耗：2,365.23kb] [文件加载：74]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'News',
+    2 => 'doAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=crh8hkpfvm8t452upnon63t344',
+  'content-length' => '283',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://mrw.com/admin/News/doAdd',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/News/doAdd' => '',
+  'title' => 'ffasfdsdfsfd',
+  'sm_title' => 'dfsdfsf',
+  'message' => 'dsfdsds',
+  'source' => 'fdsdfsfds',
+  'one_sort' => '2',
+  'sort_id' => '7',
+  'label' => '阿拉,哦',
+  'is_index' => '2',
+  'file' => '',
+  'is_top' => '2',
+  'is_comment' => '1',
+  'order' => '99',
+  'content' => '<p>大师大师大师大师<br/></p>',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\News->doAdd[ D:\phpStudy\WWW\mrw\application\admin\controller\News.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001164s ] mysql:host=127.0.0.1;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `label` [ RunTime:0.006196s ]
+[ sql ] [ SQL ] SELECT COUNT(DISTINCT id) as hots,`id`,`name` FROM `label` `l` GROUP BY `name` ORDER BY hots DESC [ RunTime:0.000553s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sort` [ RunTime:0.004058s ]
+[ sql ] [ SQL ] SELECT * FROM `sort` WHERE  `pid` = 0 [ RunTime:0.000310s ]
+[ sql ] [ SQL ] SELECT * FROM `sort` WHERE  `pid` = 2 [ RunTime:0.000181s ]
+[ sql ] [ SQL ] SELECT * FROM `label` WHERE  `name` = '阿拉'  AND `mid` = 1 LIMIT 1 [ RunTime:0.000198s ]
+[ sql ] [ SQL ] SELECT * FROM `label` WHERE  `name` = '哦'  AND `mid` = 1 LIMIT 1 [ RunTime:0.000178s ]
+[ error ] [8]未定义数组下标: 1[D:\phpStudy\WWW\mrw\application\admin\controller\News.php:90]
+---------------------------------------------------------------
+[ 2018-01-19T16:47:23+08:00 ] 127.0.0.1 POST /admin/News/doAdd
+[ info ] mrw.com/admin/News/doAdd [运行时间：0.033954s][吞吐率：29.45req/s] [内存消耗：2,327.96kb] [文件加载：70]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'News',
+    2 => 'doAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=crh8hkpfvm8t452upnon63t344',
+  'content-length' => '283',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://mrw.com/admin/News/doAdd',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/News/doAdd' => '',
+  'title' => 'ffasfdsdfsfd',
+  'sm_title' => 'dfsdfsf',
+  'message' => 'dsfdsds',
+  'source' => 'fdsdfsfds',
+  'one_sort' => '2',
+  'sort_id' => '7',
+  'label' => '阿拉,哦',
+  'is_index' => '2',
+  'file' => '',
+  'is_top' => '2',
+  'is_comment' => '1',
+  'order' => '99',
+  'content' => '<p>大师大师大师大师<br/></p>',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\News->doAdd[ D:\phpStudy\WWW\mrw\application\admin\controller\News.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000437s ] mysql:host=127.0.0.1;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `label` [ RunTime:0.002967s ]
+[ sql ] [ SQL ] SELECT COUNT(DISTINCT id) as hots,`id`,`name` FROM `label` `l` GROUP BY `name` ORDER BY hots DESC [ RunTime:0.000465s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sort` [ RunTime:0.002669s ]
+[ sql ] [ SQL ] SELECT * FROM `sort` WHERE  `pid` = 0 [ RunTime:0.000332s ]
+[ sql ] [ SQL ] SELECT * FROM `sort` WHERE  `pid` = 2 [ RunTime:0.000259s ]
+[ sql ] [ SQL ] SELECT * FROM `label` WHERE  `name` = '阿拉'  AND `mid` = 1 LIMIT 1 [ RunTime:0.000240s ]
+[ sql ] [ SQL ] SELECT * FROM `label` WHERE  `name` = '哦'  AND `mid` = 1 LIMIT 1 [ RunTime:0.000179s ]
+---------------------------------------------------------------
+[ 2018-01-19T16:47:53+08:00 ] 127.0.0.1 POST /admin/News/doAdd
+[ info ] mrw.com/admin/News/doAdd [运行时间：0.076057s][吞吐率：13.15req/s] [内存消耗：2,397.48kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'News',
+    2 => 'doAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=crh8hkpfvm8t452upnon63t344',
+  'content-length' => '283',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://mrw.com/admin/News/doAdd',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/News/doAdd' => '',
+  'title' => 'ffasfdsdfsfd',
+  'sm_title' => 'dfsdfsf',
+  'message' => 'dsfdsds',
+  'source' => 'fdsdfsfds',
+  'one_sort' => '2',
+  'sort_id' => '7',
+  'label' => '阿拉,哦',
+  'is_index' => '2',
+  'file' => '',
+  'is_top' => '2',
+  'is_comment' => '1',
+  'order' => '99',
+  'content' => '<p>大师大师大师大师<br/></p>',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\News->doAdd[ D:\phpStudy\WWW\mrw\application\admin\controller\News.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000440s ] mysql:host=127.0.0.1;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `label` [ RunTime:0.002810s ]
+[ sql ] [ SQL ] SELECT COUNT(DISTINCT id) as hots,`id`,`name` FROM `label` `l` GROUP BY `name` ORDER BY hots DESC [ RunTime:0.000427s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sort` [ RunTime:0.002753s ]
+[ sql ] [ SQL ] SELECT * FROM `sort` WHERE  `pid` = 0 [ RunTime:0.000207s ]
+[ sql ] [ SQL ] SELECT * FROM `sort` WHERE  `pid` = 2 [ RunTime:0.000183s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.003093s ]
+[ sql ] [ SQL ] INSERT INTO `news` (`title` , `order` , `sm_title` , `message` , `is_index` , `is_comment` , `is_top` , `source` , `mid` , `sort_id` , `create_at` , `update_at`) VALUES ('ffasfdsdfsfd' , 99 , 'dfsdfsf' , 'dfsdfsf' , 2 , 1 , 2 , 'fdsdfsfds' , 1 , 7 , 1516351673 , 1516351673) [ RunTime:0.000284s ]
+[ sql ] [ SQL ] SELECT * FROM `label` WHERE  `id` IN (0,1) LIMIT 1 [ RunTime:0.000214s ]
+[ sql ] [ SQL ] SELECT * FROM `label` WHERE  `id` IN (0,1) LIMIT 1 [ RunTime:0.000177s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `new_label` [ RunTime:0.014709s ]
+[ sql ] [ SQL ] INSERT INTO `new_label` (`label_id` , `new_id` , `create_at` , `update_at`) VALUES (1 , 3 , 1516351673 , 1516351673) [ RunTime:0.000191s ]
+[ sql ] [ SQL ] INSERT INTO `new_label` (`label_id` , `new_id` , `create_at` , `update_at`) VALUES (1 , 3 , 1516351673 , 1516351673) [ RunTime:0.000059s ]
+---------------------------------------------------------------
+[ 2018-01-19T16:47:55+08:00 ] 127.0.0.1 GET /admin/News/tolist
+[ info ] mrw.com/admin/News/tolist [运行时间：0.043579s][吞吐率：22.95req/s] [内存消耗：2,573.88kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'News',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=crh8hkpfvm8t452upnon63t344',
+  'referer' => 'http://mrw.com/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/News/tolist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\News->toList[ D:\phpStudy\WWW\mrw\application\admin\controller\News.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\mrw\public/../application/admin\view\news\tolist.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'hotLabel',
+  7 => 'sort',
+  8 => 'twoSort',
+  9 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000408s ] mysql:host=127.0.0.1;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `label` [ RunTime:0.006819s ]
+[ sql ] [ SQL ] SELECT COUNT(DISTINCT id) as hots,`id`,`name` FROM `label` `l` GROUP BY `name` ORDER BY hots DESC [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sort` [ RunTime:0.002901s ]
+[ sql ] [ SQL ] SELECT * FROM `sort` WHERE  `pid` = 0 [ RunTime:0.000482s ]
+[ sql ] [ SQL ] SELECT * FROM `sort` WHERE  `pid` = 2 [ RunTime:0.000302s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.002811s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `news` `n` LIMIT 1 [ RunTime:0.000180s ]
+[ sql ] [ SQL ] SELECT * FROM `news` `n` LIMIT 0,10 [ RunTime:0.000204s ]
+---------------------------------------------------------------
+[ 2018-01-19T16:48:00+08:00 ] 127.0.0.1 GET /index.html
+[ info ] mrw.com/index.html [运行时间：0.018548s][吞吐率：53.91req/s] [内存消耗：1,674.91kb] [文件加载：62]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=crh8hkpfvm8t452upnon63t344',
+  'referer' => 'http://mrw.com/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\mrw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\mrw\public/../application/admin\view\index\index.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-19T16:48:00+08:00 ] 127.0.0.1 GET /admin/index/welcome.html
+[ info ] mrw.com/admin/index/welcome.html [运行时间：0.021852s][吞吐率：45.76req/s] [内存消耗：1,813.41kb] [文件加载：66]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=crh8hkpfvm8t452upnon63t344',
+  'referer' => 'http://mrw.com/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\mrw\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\mrw\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'server',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000456s ] mysql:host=127.0.0.1;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] select version() [ RunTime:0.000149s ]
+---------------------------------------------------------------
+[ 2018-01-19T16:48:01+08:00 ] 127.0.0.1 GET /admin/News/tolist
+[ info ] mrw.com/admin/News/tolist [运行时间：0.040493s][吞吐率：24.70req/s] [内存消耗：2,573.66kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'News',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=crh8hkpfvm8t452upnon63t344',
+  'referer' => 'http://mrw.com/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/News/tolist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\News->toList[ D:\phpStudy\WWW\mrw\application\admin\controller\News.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\mrw\public/../application/admin\view\news\tolist.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'hotLabel',
+  7 => 'sort',
+  8 => 'twoSort',
+  9 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000429s ] mysql:host=127.0.0.1;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `label` [ RunTime:0.003765s ]
+[ sql ] [ SQL ] SELECT COUNT(DISTINCT id) as hots,`id`,`name` FROM `label` `l` GROUP BY `name` ORDER BY hots DESC [ RunTime:0.000513s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sort` [ RunTime:0.002869s ]
+[ sql ] [ SQL ] SELECT * FROM `sort` WHERE  `pid` = 0 [ RunTime:0.000317s ]
+[ sql ] [ SQL ] SELECT * FROM `sort` WHERE  `pid` = 2 [ RunTime:0.000265s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.003149s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `news` `n` LIMIT 1 [ RunTime:0.000275s ]
+[ sql ] [ SQL ] SELECT * FROM `news` `n` LIMIT 0,10 [ RunTime:0.000210s ]
+---------------------------------------------------------------
+[ 2018-01-19T16:48:04+08:00 ] 127.0.0.1 POST /admin/News/editOrder
+[ info ] mrw.com/admin/News/editOrder [运行时间：0.037926s][吞吐率：26.37req/s] [内存消耗：2,364.92kb] [文件加载：74]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'News',
+    2 => 'editOrder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=crh8hkpfvm8t452upnon63t344',
+  'content-length' => '13',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://mrw.com/admin/News/tolist',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/News/editOrder' => '',
+  'id' => '3',
+  'order' => '99',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\News->editOrder[ D:\phpStudy\WWW\mrw\application\admin\controller\News.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000446s ] mysql:host=127.0.0.1;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `label` [ RunTime:0.007433s ]
+[ sql ] [ SQL ] SELECT COUNT(DISTINCT id) as hots,`id`,`name` FROM `label` `l` GROUP BY `name` ORDER BY hots DESC [ RunTime:0.000530s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sort` [ RunTime:0.003146s ]
+[ sql ] [ SQL ] SELECT * FROM `sort` WHERE  `pid` = 0 [ RunTime:0.000316s ]
+[ sql ] [ SQL ] SELECT * FROM `sort` WHERE  `pid` = 2 [ RunTime:0.000186s ]
+[ error ] [1]Class 'app\admin\controller\IDMustBePositiveInt' not found[D:\phpStudy\WWW\mrw\application\admin\controller\News.php:164]
+---------------------------------------------------------------
+[ 2018-01-19T18:01:03+08:00 ] 127.0.0.1 GET /index.html
+[ info ] mrw.com/index.html [运行时间：0.022324s][吞吐率：44.79req/s] [内存消耗：1,674.92kb] [文件加载：62]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=crh8hkpfvm8t452upnon63t344',
+  'referer' => 'http://mrw.com/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\mrw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\mrw\public/../application/admin\view\index\index.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-19T18:01:03+08:00 ] 127.0.0.1 GET /admin/index/welcome.html
+[ info ] mrw.com/admin/index/welcome.html [运行时间：0.047440s][吞吐率：21.08req/s] [内存消耗：1,813.41kb] [文件加载：66]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=crh8hkpfvm8t452upnon63t344',
+  'referer' => 'http://mrw.com/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\mrw\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\mrw\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'server',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.025577s ] mysql:host=127.0.0.1;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] select version() [ RunTime:0.000162s ]
+---------------------------------------------------------------
+[ 2018-01-19T18:01:05+08:00 ] 127.0.0.1 GET /admin/News/tolist
+[ info ] mrw.com/admin/News/tolist [运行时间：0.053032s][吞吐率：18.86req/s] [内存消耗：2,573.66kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'News',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=crh8hkpfvm8t452upnon63t344',
+  'referer' => 'http://mrw.com/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/News/tolist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\News->toList[ D:\phpStudy\WWW\mrw\application\admin\controller\News.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\mrw\public/../application/admin\view\news\tolist.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'hotLabel',
+  7 => 'sort',
+  8 => 'twoSort',
+  9 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000411s ] mysql:host=127.0.0.1;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `label` [ RunTime:0.017361s ]
+[ sql ] [ SQL ] SELECT COUNT(DISTINCT id) as hots,`id`,`name` FROM `label` `l` GROUP BY `name` ORDER BY hots DESC [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sort` [ RunTime:0.002501s ]
+[ sql ] [ SQL ] SELECT * FROM `sort` WHERE  `pid` = 0 [ RunTime:0.000218s ]
+[ sql ] [ SQL ] SELECT * FROM `sort` WHERE  `pid` = 2 [ RunTime:0.000168s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.002887s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `news` `n` LIMIT 1 [ RunTime:0.000231s ]
+[ sql ] [ SQL ] SELECT * FROM `news` `n` LIMIT 0,10 [ RunTime:0.000216s ]
+---------------------------------------------------------------
+[ 2018-01-19T18:05:14+08:00 ] 127.0.0.1 GET /index.html
+[ info ] mrw.com/index.html [运行时间：0.020487s][吞吐率：48.81req/s] [内存消耗：1,676.34kb] [文件加载：62]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=crh8hkpfvm8t452upnon63t344',
+  'referer' => 'http://mrw.com/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\mrw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\mrw\public/../application/admin\view\index\index.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-19T18:05:14+08:00 ] 127.0.0.1 GET /admin/index/welcome.html
+[ info ] mrw.com/admin/index/welcome.html [运行时间：0.033114s][吞吐率：30.20req/s] [内存消耗：1,814.88kb] [文件加载：66]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=crh8hkpfvm8t452upnon63t344',
+  'referer' => 'http://mrw.com/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\mrw\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\mrw\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'server',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010709s ] mysql:host=127.0.0.1;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] select version() [ RunTime:0.000169s ]
+---------------------------------------------------------------
+[ 2018-01-19T18:05:17+08:00 ] 127.0.0.1 GET /admin/Banner/tolist
+[ info ] mrw.com/admin/Banner/tolist [运行时间：0.046305s][吞吐率：21.60req/s] [内存消耗：2,607.09kb] [文件加载：75]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Banner',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=crh8hkpfvm8t452upnon63t344',
+  'referer' => 'http://mrw.com/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Banner/tolist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Banner->toList[ D:\phpStudy\WWW\mrw\application\admin\controller\Banner.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\mrw\public/../application/admin\view\banner\tolist.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000392s ] mysql:host=127.0.0.1;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.014308s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `banner` `b` LIMIT 1 [ RunTime:0.000201s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` `b` ORDER BY b.order ASC LIMIT 0,10 [ RunTime:0.000235s ]
+---------------------------------------------------------------
+[ 2018-01-19T18:05:17+08:00 ] 127.0.0.1 GET /admin/Banner/2017/12/f1813201712011111154975.jpg
+[ info ] mrw.com/admin/Banner/2017/12/f1813201712011111154975.jpg [运行时间：0.021644s][吞吐率：46.20req/s] [内存消耗：1,679.50kb] [文件加载：64]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Banner',
+    2 => '2017',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=crh8hkpfvm8t452upnon63t344',
+  'referer' => 'http://mrw.com/admin/Banner/tolist',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Banner/2017/12/f1813201712011111154975_jpg' => '',
+  0 => 'f1813201712011111154975.jpg',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-19T18:05:17+08:00 ] 127.0.0.1 GET /admin/Banner/2017/11/57fb9201711231035104316.jpg
+[ info ] mrw.com/admin/Banner/2017/11/57fb9201711231035104316.jpg [运行时间：0.020162s][吞吐率：49.60req/s] [内存消耗：1,679.50kb] [文件加载：64]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Banner',
+    2 => '2017',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=crh8hkpfvm8t452upnon63t344',
+  'referer' => 'http://mrw.com/admin/Banner/tolist',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Banner/2017/11/57fb9201711231035104316_jpg' => '',
+  0 => '57fb9201711231035104316.jpg',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-19T18:05:17+08:00 ] 127.0.0.1 GET /admin/Banner/2017/12/ebcbc201712041052452155.jpg
+[ info ] mrw.com/admin/Banner/2017/12/ebcbc201712041052452155.jpg [运行时间：0.019133s][吞吐率：52.27req/s] [内存消耗：1,679.50kb] [文件加载：64]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Banner',
+    2 => '2017',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=crh8hkpfvm8t452upnon63t344',
+  'referer' => 'http://mrw.com/admin/Banner/tolist',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Banner/2017/12/ebcbc201712041052452155_jpg' => '',
+  0 => 'ebcbc201712041052452155.jpg',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-19T18:05:18+08:00 ] 127.0.0.1 GET /admin/Banner/2017/11/3dfff201711221226002160.jpg
+[ info ] mrw.com/admin/Banner/2017/11/3dfff201711221226002160.jpg [运行时间：0.019444s][吞吐率：51.43req/s] [内存消耗：1,679.50kb] [文件加载：64]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Banner',
+    2 => '2017',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=crh8hkpfvm8t452upnon63t344',
+  'referer' => 'http://mrw.com/admin/Banner/tolist',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Banner/2017/11/3dfff201711221226002160_jpg' => '',
+  0 => '3dfff201711221226002160.jpg',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-19T18:05:18+08:00 ] 127.0.0.1 GET /admin/Banner/2017/11/585f4201711230935256536.jpg
+[ info ] mrw.com/admin/Banner/2017/11/585f4201711230935256536.jpg [运行时间：0.025418s][吞吐率：39.34req/s] [内存消耗：1,679.45kb] [文件加载：64]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Banner',
+    2 => '2017',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=crh8hkpfvm8t452upnon63t344',
+  'referer' => 'http://mrw.com/admin/Banner/tolist',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Banner/2017/11/585f4201711230935256536_jpg' => '',
+  0 => '585f4201711230935256536.jpg',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-19T18:05:18+08:00 ] 127.0.0.1 GET /admin/Banner/2017/11/e9629201711230935502359.jpg
+[ info ] mrw.com/admin/Banner/2017/11/e9629201711230935502359.jpg [运行时间：0.026670s][吞吐率：37.50req/s] [内存消耗：1,679.45kb] [文件加载：64]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Banner',
+    2 => '2017',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=crh8hkpfvm8t452upnon63t344',
+  'referer' => 'http://mrw.com/admin/Banner/tolist',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Banner/2017/11/e9629201711230935502359_jpg' => '',
+  0 => 'e9629201711230935502359.jpg',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-19T18:05:18+08:00 ] 127.0.0.1 GET /admin/Banner/2017/11/af3f6201711230936035984.jpg
+[ info ] mrw.com/admin/Banner/2017/11/af3f6201711230936035984.jpg [运行时间：0.039573s][吞吐率：25.27req/s] [内存消耗：1,679.45kb] [文件加载：64]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Banner',
+    2 => '2017',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=crh8hkpfvm8t452upnon63t344',
+  'referer' => 'http://mrw.com/admin/Banner/tolist',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Banner/2017/11/af3f6201711230936035984_jpg' => '',
+  0 => 'af3f6201711230936035984.jpg',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-19T18:05:18+08:00 ] 127.0.0.1 GET /admin/Banner/2017/11/c54ac201711221218133770.jpg
+[ info ] mrw.com/admin/Banner/2017/11/c54ac201711221218133770.jpg [运行时间：0.024985s][吞吐率：40.02req/s] [内存消耗：1,679.45kb] [文件加载：64]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Banner',
+    2 => '2017',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=crh8hkpfvm8t452upnon63t344',
+  'referer' => 'http://mrw.com/admin/Banner/tolist',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Banner/2017/11/c54ac201711221218133770_jpg' => '',
+  0 => 'c54ac201711221218133770.jpg',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-19T18:05:43+08:00 ] 127.0.0.1 GET /index.html
+[ info ] mrw.com/index.html [运行时间：0.019344s][吞吐率：51.70req/s] [内存消耗：1,676.34kb] [文件加载：62]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=crh8hkpfvm8t452upnon63t344',
+  'referer' => 'http://mrw.com/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\mrw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\mrw\public/../application/admin\view\index\index.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-19T18:05:44+08:00 ] 127.0.0.1 GET /admin/index/welcome.html
+[ info ] mrw.com/admin/index/welcome.html [运行时间：0.023986s][吞吐率：41.69req/s] [内存消耗：1,814.88kb] [文件加载：66]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=crh8hkpfvm8t452upnon63t344',
+  'referer' => 'http://mrw.com/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\mrw\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\mrw\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'server',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000730s ] mysql:host=127.0.0.1;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] select version() [ RunTime:0.000177s ]
+---------------------------------------------------------------
+[ 2018-01-19T19:06:50+08:00 ] 127.0.0.1 GET /index.html
+[ info ] mrw.com/index.html [运行时间：0.021870s][吞吐率：45.72req/s] [内存消耗：1,676.34kb] [文件加载：62]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=crh8hkpfvm8t452upnon63t344',
+  'referer' => 'http://mrw.com/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\mrw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\mrw\public/../application/admin\view\index\index.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-19T19:06:50+08:00 ] 127.0.0.1 GET /admin/index/welcome.html
+[ info ] mrw.com/admin/index/welcome.html [运行时间：0.025727s][吞吐率：38.87req/s] [内存消耗：1,814.88kb] [文件加载：66]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=crh8hkpfvm8t452upnon63t344',
+  'referer' => 'http://mrw.com/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\mrw\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\mrw\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'server',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000923s ] mysql:host=127.0.0.1;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] select version() [ RunTime:0.000207s ]
+---------------------------------------------------------------
+[ 2018-01-19T19:06:53+08:00 ] 127.0.0.1 GET /admin/Meeting/tolist
+[ info ] mrw.com/admin/Meeting/tolist [运行时间：0.038838s][吞吐率：25.75req/s] [内存消耗：2,332.59kb] [文件加载：74]
+[ info ] [ LANG ] D:\phpStudy\WWW\mrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Meeting',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=crh8hkpfvm8t452upnon63t344',
+  'referer' => 'http://mrw.com/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Meeting/tolist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\mrw\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Meeting->toList[ D:\phpStudy\WWW\mrw\application\admin\controller\Meeting.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000375s ] mysql:host=127.0.0.1;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `partner` [ RunTime:0.010225s ]
+[ sql ] [ SQL ] SELECT * FROM `partner` [ RunTime:0.000205s ]
+[ error ] [8192]Non-static method app\common\model\Meeting::getPage() should not be called statically, assuming $this from incompatible context[D:\phpStudy\WWW\mrw\application\admin\controller\Meeting.php:33]

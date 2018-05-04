@@ -1,0 +1,2520 @@
+---------------------------------------------------------------
+[ 2018-03-30T08:58:48+08:00 ] 127.0.0.1 GET /admin
+[ info ] drj.bjzhishanzhimei.com/admin [运行时间：0.230000s][吞吐率：4.35req/s] [内存消耗：1,742.45kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1521767536,1522025841,1522131885,1522285100',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ VIEW ] D:\phpStudy\WWW\drj\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-30T08:58:51+08:00 ] 127.0.0.1 GET /admin/login/index.html
+[ info ] drj.bjzhishanzhimei.com/admin/login/index.html [运行时间：0.221000s][吞吐率：4.52req/s] [内存消耗：1,751.51kb] [文件加载：60]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1522025841,1522131885,1522285100,1522371528; PHPSESSID=b3buo9no62p5s91bjolbblr351; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1522371528',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy\WWW\drj\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\drj\public/../application/admin\view\login\index.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-30T08:58:51+08:00 ] 127.0.0.1 GET /captcha.html
+[ info ] drj.bjzhishanzhimei.com/captcha.html [运行时间：0.230000s][吞吐率：4.35req/s] [内存消耗：1,418.09kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1522025841,1522131885,1522285100,1522371528; PHPSESSID=b3buo9no62p5s91bjolbblr351; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1522371528',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/captcha_html' => '',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\phpStudy\WWW\drj\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-30T08:59:01+08:00 ] 127.0.0.1 POST /admin/login/login.html
+[ info ] drj.bjzhishanzhimei.com/admin/login/login.html [运行时间：0.260000s][吞吐率：3.85req/s] [内存消耗：1,750.21kb] [文件加载：60]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1522025841,1522131885,1522285100,1522371528; PHPSESSID=b3buo9no62p5s91bjolbblr351; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1522371532',
+  'content-length' => '45',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/login_html' => '',
+  'phone' => '12345678910',
+  'password' => '123456',
+  'captcha' => 'PRW',
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\phpStudy\WWW\drj\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-30T08:59:01+08:00 ] 127.0.0.1 GET /captcha.html?0.8035697186345261
+[ info ] drj.bjzhishanzhimei.com/captcha.html?0.8035697186345261 [运行时间：0.170000s][吞吐率：5.88req/s] [内存消耗：1,418.30kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1522025841,1522131885,1522285100,1522371528; PHPSESSID=b3buo9no62p5s91bjolbblr351; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1522371532',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/captcha_html' => '',
+  '0_8035697186345261' => '',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\phpStudy\WWW\drj\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-30T08:59:05+08:00 ] 127.0.0.1 POST /admin/login/login.html
+[ info ] drj.bjzhishanzhimei.com/admin/login/login.html [运行时间：1.020001s][吞吐率：0.98req/s] [内存消耗：2,951.92kb] [文件加载：76]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1522025841,1522131885,1522285100,1522371528; PHPSESSID=b3buo9no62p5s91bjolbblr351; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1522371532',
+  'content-length' => '45',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/login_html' => '',
+  'phone' => '12345678910',
+  'password' => '123456',
+  'captcha' => 'ZSR',
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\phpStudy\WWW\drj\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.120000s ] mysql:host=47.104.154.142;port=9989;dbname=drj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `member` [ RunTime:0.080000s ]
+[ sql ] [ SQL ] SELECT * FROM `member` WHERE  `am_phone` = '12345678910' LIMIT 1 [ RunTime:0.080001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `member_log` [ RunTime:0.080000s ]
+[ sql ] [ SQL ] INSERT INTO `member_log` (`ml_member_id` , `ml_name` , `ml_url` , `ml_ip` , `create_at`) VALUES (17 , '登录后台' , 'admin/login/login' , '127.0.0.1' , 1522371545) [ RunTime:0.090000s ]
+[ sql ] [ SQL ] UPDATE `member`  SET `am_ssid`='b3buo9no62p5s91bjolbblr351',`am_pre_time`=1522371545,`update_at`=1522371545  WHERE  `am_id` = 17 [ RunTime:0.090000s ]
+---------------------------------------------------------------
+[ 2018-03-30T08:59:05+08:00 ] 127.0.0.1 GET /admin/index/index.html
+[ info ] drj.bjzhishanzhimei.com/admin/index/index.html [运行时间：0.200001s][吞吐率：5.00req/s] [内存消耗：2,046.34kb] [文件加载：63]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1522025841,1522131885,1522285100,1522371528; PHPSESSID=b3buo9no62p5s91bjolbblr351; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1522371532',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\drj\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\drj\public/../application/admin\view\index\index.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-30T08:59:06+08:00 ] 127.0.0.1 GET /admin/index/welcome.html
+[ info ] drj.bjzhishanzhimei.com/admin/index/welcome.html [运行时间：0.401000s][吞吐率：2.49req/s] [内存消耗：2,222.54kb] [文件加载：67]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1522025841,1522131885,1522285100,1522371528; PHPSESSID=b3buo9no62p5s91bjolbblr351; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1522371532',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\drj\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\drj\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'service',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.121000s ] mysql:host=47.104.154.142;port=9989;dbname=drj;charset=utf8
+[ sql ] [ SQL ] select version() [ RunTime:0.080000s ]
+---------------------------------------------------------------
+[ 2018-03-30T09:02:47+08:00 ] 127.0.0.1 GET /admin/index/admin/Consumer/tolist
+[ info ] drj.bjzhishanzhimei.com/admin/index/admin/Consumer/tolist [运行时间：0.230000s][吞吐率：4.35req/s] [内存消耗：2,036.56kb] [文件加载：65]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'admin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1522025841,1522131885,1522285100,1522371528; PHPSESSID=b3buo9no62p5s91bjolbblr351; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1522371546',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/admin/Consumer/tolist' => '',
+  'Consumer' => 'tolist',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-30T09:02:50+08:00 ] 127.0.0.1 GET /admin/index/admin/Consumer_r/tolist
+[ info ] drj.bjzhishanzhimei.com/admin/index/admin/Consumer_r/tolist [运行时间：0.220001s][吞吐率：4.55req/s] [内存消耗：2,036.56kb] [文件加载：65]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'admin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1522025841,1522131885,1522285100,1522371528; PHPSESSID=b3buo9no62p5s91bjolbblr351; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1522371546',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/admin/Consumer_r/tolist' => '',
+  'Consumer_r' => 'tolist',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-30T09:02:57+08:00 ] 127.0.0.1 GET /admin
+[ info ] drj.bjzhishanzhimei.com/admin [运行时间：0.210001s][吞吐率：4.76req/s] [内存消耗：2,045.20kb] [文件加载：63]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1522025841,1522131885,1522285100,1522371528; PHPSESSID=b3buo9no62p5s91bjolbblr351; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1522371546',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\drj\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\drj\public/../application/admin\view\index\index.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-30T09:02:58+08:00 ] 127.0.0.1 GET /admin/index/welcome.html
+[ info ] drj.bjzhishanzhimei.com/admin/index/welcome.html [运行时间：0.490001s][吞吐率：2.04req/s] [内存消耗：2,222.27kb] [文件加载：67]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1522025841,1522131885,1522285100,1522371528; PHPSESSID=b3buo9no62p5s91bjolbblr351; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1522371546',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\drj\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\drj\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'service',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.120000s ] mysql:host=47.104.154.142;port=9989;dbname=drj;charset=utf8
+[ sql ] [ SQL ] select version() [ RunTime:0.080001s ]
+---------------------------------------------------------------
+[ 2018-03-30T09:02:59+08:00 ] 127.0.0.1 GET /admin/Consumer/tolist
+[ info ] drj.bjzhishanzhimei.com/admin/Consumer/tolist [运行时间：0.570001s][吞吐率：1.75req/s] [内存消耗：2,852.45kb] [文件加载：70]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Consumer',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1522025841,1522131885,1522285100,1522371528; PHPSESSID=b3buo9no62p5s91bjolbblr351; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1522371778',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Consumer/tolist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Consumer->tolist[ D:\phpStudy\WWW\drj\application\admin\controller\Consumer.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\drj\public/../application/admin\view\consumer\tolist.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.110000s ] mysql:host=47.104.154.142;port=9989;dbname=drj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_data` [ RunTime:0.080000s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `type` = 1 [ RunTime:0.080000s ]
+---------------------------------------------------------------
+[ 2018-03-30T09:03:00+08:00 ] 127.0.0.1 GET /Js/admin/Consumer/tolist.js?v=1522371779
+[ info ] drj.bjzhishanzhimei.com/Js/admin/Consumer/tolist.js?v=1522371779 [运行时间：0.180001s][吞吐率：5.56req/s] [内存消耗：1,413.40kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Js',
+    1 => 'admin',
+    2 => 'Consumer',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1522025841,1522131885,1522285100,1522371528; PHPSESSID=b3buo9no62p5s91bjolbblr351; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1522371778',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin/Consumer/tolist',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/Js/admin/Consumer/tolist_js' => '',
+  'v' => '1522371779',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-30T09:03:01+08:00 ] 127.0.0.1 GET /admin/Consumer_r/tolist
+[ info ] drj.bjzhishanzhimei.com/admin/Consumer_r/tolist [运行时间：0.580001s][吞吐率：1.72req/s] [内存消耗：2,835.76kb] [文件加载：70]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Consumer_r',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1522025841,1522131885,1522285100,1522371528; PHPSESSID=b3buo9no62p5s91bjolbblr351; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1522371778',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Consumer_r/tolist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\ConsumerR->tolist[ D:\phpStudy\WWW\drj\application\admin\controller\ConsumerR.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\drj\public/../application/admin\view\consumer_r\tolist.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.110000s ] mysql:host=47.104.154.142;port=9989;dbname=drj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `grab_red` [ RunTime:0.080001s ]
+[ sql ] [ SQL ] SELECT * FROM `grab_red` ORDER BY `id`  desc [ RunTime:0.080000s ]
+---------------------------------------------------------------
+[ 2018-03-30T09:03:02+08:00 ] 127.0.0.1 GET /Js/admin/ConsumerR/tolist.js?v=1522371781
+[ info ] drj.bjzhishanzhimei.com/Js/admin/ConsumerR/tolist.js?v=1522371781 [运行时间：0.180000s][吞吐率：5.56req/s] [内存消耗：1,413.40kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Js',
+    1 => 'admin',
+    2 => 'ConsumerR',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1522025841,1522131885,1522285100,1522371528; PHPSESSID=b3buo9no62p5s91bjolbblr351; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1522371778',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin/Consumer_r/tolist',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/Js/admin/ConsumerR/tolist_js' => '',
+  'v' => '1522371781',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-30T18:11:01+08:00 ] 127.0.0.1 GET /admin/User/tolist
+[ info ] drj.bjzhishanzhimei.com/admin/User/tolist [运行时间：0.662038s][吞吐率：1.51req/s] [内存消耗：2,873.48kb] [文件加载：70]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'User',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1522025841,1522131885,1522285100,1522371528; PHPSESSID=b3buo9no62p5s91bjolbblr351; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1522371778',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/User/tolist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\User->toList[ D:\phpStudy\WWW\drj\application\admin\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\drj\public/../application/admin\view\user\tolist.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.108007s ] mysql:host=47.104.154.142;port=9989;dbname=drj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_data` [ RunTime:0.075004s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `type` = 2 [ RunTime:0.074004s ]
+---------------------------------------------------------------
+[ 2018-03-30T18:11:04+08:00 ] 127.0.0.1 GET /admin/User_r/tolist
+[ info ] drj.bjzhishanzhimei.com/admin/User_r/tolist [运行时间：0.616035s][吞吐率：1.62req/s] [内存消耗：2,836.83kb] [文件加载：70]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'User_r',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1522025841,1522131885,1522285100,1522371528; PHPSESSID=b3buo9no62p5s91bjolbblr351; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1522371778',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/User_r/tolist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\UserR->tolist[ D:\phpStudy\WWW\drj\application\admin\controller\UserR.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\drj\public/../application/admin\view\user_r\tolist.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.134007s ] mysql:host=47.104.154.142;port=9989;dbname=drj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `give_red` [ RunTime:0.092006s ]
+[ sql ] [ SQL ] SELECT * FROM `give_red` ORDER BY `id`  desc [ RunTime:0.093005s ]
+---------------------------------------------------------------
+[ 2018-03-30T18:11:04+08:00 ] 127.0.0.1 GET /Js/admin/UserR/tolist.js?v=1522404664
+[ info ] drj.bjzhishanzhimei.com/Js/admin/UserR/tolist.js?v=1522404664 [运行时间：0.223013s][吞吐率：4.48req/s] [内存消耗：1,413.36kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Js',
+    1 => 'admin',
+    2 => 'UserR',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1522025841,1522131885,1522285100,1522371528; PHPSESSID=b3buo9no62p5s91bjolbblr351; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1522371778',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin/User_r/tolist',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/Js/admin/UserR/tolist_js' => '',
+  'v' => '1522404664',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-30T18:11:12+08:00 ] 127.0.0.1 GET /admin/Duty/tolist
+[ info ] drj.bjzhishanzhimei.com/admin/Duty/tolist [运行时间：1.207069s][吞吐率：0.83req/s] [内存消耗：3,052.06kb] [文件加载：77]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Duty',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1522025841,1522131885,1522285100,1522371528; PHPSESSID=b3buo9no62p5s91bjolbblr351; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1522371778',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Duty/tolist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Duty->toList[ D:\phpStudy\WWW\drj\application\admin\controller\Duty.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\drj\public/../application/admin\view\duty\tolist.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'actionPidList',
+  7 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.133008s ] mysql:host=47.104.154.142;port=9989;dbname=drj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `action_data` [ RunTime:0.092005s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `action_data` WHERE  `ad_pid` = 0 LIMIT 1 [ RunTime:0.094005s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 0 LIMIT 0,10 [ RunTime:0.093005s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `duty_data` [ RunTime:0.092005s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM ( SELECT count(*) FROM `duty_data` `dd` LEFT JOIN `admin_duty` `ad` ON `ad`.`ad_duty_id`=`dd`.`dd_id` LEFT JOIN `member` `am` ON `am`.`am_id`=`ad`.`ad_user_id` GROUP BY `dd`.`dd_id` ) `_group_count_` LIMIT 1 [ RunTime:0.091005s ]
+[ sql ] [ SQL ] SELECT `dd`.*,COUNT(DISTINCT am.am_id) AS members FROM `duty_data` `dd` LEFT JOIN `admin_duty` `ad` ON `ad`.`ad_duty_id`=`dd`.`dd_id` LEFT JOIN `member` `am` ON `am`.`am_id`=`ad`.`ad_user_id` GROUP BY `dd`.`dd_id` LIMIT 0,10 [ RunTime:0.092005s ]
+---------------------------------------------------------------
+[ 2018-03-30T18:11:17+08:00 ] 127.0.0.1 GET /admin/Duty/tolist
+[ info ] drj.bjzhishanzhimei.com/admin/Duty/tolist [运行时间：1.072061s][吞吐率：0.93req/s] [内存消耗：3,052.06kb] [文件加载：77]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Duty',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1522025841,1522131885,1522285100,1522371528; PHPSESSID=b3buo9no62p5s91bjolbblr351; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1522371778',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Duty/tolist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Duty->toList[ D:\phpStudy\WWW\drj\application\admin\controller\Duty.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\drj\public/../application/admin\view\duty\tolist.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'actionPidList',
+  7 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.122007s ] mysql:host=47.104.154.142;port=9989;dbname=drj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `action_data` [ RunTime:0.085004s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `action_data` WHERE  `ad_pid` = 0 LIMIT 1 [ RunTime:0.085005s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 0 LIMIT 0,10 [ RunTime:0.085005s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `duty_data` [ RunTime:0.084004s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM ( SELECT count(*) FROM `duty_data` `dd` LEFT JOIN `admin_duty` `ad` ON `ad`.`ad_duty_id`=`dd`.`dd_id` LEFT JOIN `member` `am` ON `am`.`am_id`=`ad`.`ad_user_id` GROUP BY `dd`.`dd_id` ) `_group_count_` LIMIT 1 [ RunTime:0.084005s ]
+[ sql ] [ SQL ] SELECT `dd`.*,COUNT(DISTINCT am.am_id) AS members FROM `duty_data` `dd` LEFT JOIN `admin_duty` `ad` ON `ad`.`ad_duty_id`=`dd`.`dd_id` LEFT JOIN `member` `am` ON `am`.`am_id`=`ad`.`ad_user_id` GROUP BY `dd`.`dd_id` LIMIT 0,10 [ RunTime:0.086005s ]
+---------------------------------------------------------------
+[ 2018-03-30T18:11:19+08:00 ] 127.0.0.1 GET /admin/Action/tolist
+[ info ] drj.bjzhishanzhimei.com/admin/Action/tolist [运行时间：0.629036s][吞吐率：1.59req/s] [内存消耗：2,981.72kb] [文件加载：80]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Action',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1522025841,1522131885,1522285100,1522371528; PHPSESSID=b3buo9no62p5s91bjolbblr351; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1522371778',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Action/tolist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Action->toList[ D:\phpStudy\WWW\drj\application\admin\controller\Action.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.122007s ] mysql:host=47.104.154.142;port=9989;dbname=drj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `action_data` [ RunTime:0.084004s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 0 [ RunTime:0.084005s ]
+[ error ] [2]PDO::prepare(): MySQL server has gone away[D:\phpStudy\WWW\drj\thinkphp\library\think\db\Connection.php:368]
+---------------------------------------------------------------
+[ 2018-03-30T18:11:25+08:00 ] 127.0.0.1 GET /admin/Building/tolist
+[ info ] drj.bjzhishanzhimei.com/admin/Building/tolist [运行时间：0.994056s][吞吐率：1.01req/s] [内存消耗：2,907.16kb] [文件加载：74]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Building',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1522025841,1522131885,1522285100,1522371528; PHPSESSID=b3buo9no62p5s91bjolbblr351; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1522371778',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Building/tolist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Building->tolist[ D:\phpStudy\WWW\drj\application\admin\controller\Building.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.124007s ] mysql:host=47.104.154.142;port=9989;dbname=drj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `building_details` [ RunTime:0.085005s ]
+[ sql ] [ SQL ] SELECT * FROM `building_details` [ RunTime:0.085005s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `building_img` [ RunTime:0.085005s ]
+[ sql ] [ SQL ] SELECT * FROM `building_img` WHERE  `g_id` IN (10,11,12,13,14,15,16) [ RunTime:0.086005s ]
+---------------------------------------------------------------
+[ 2018-03-30T18:11:27+08:00 ] 127.0.0.1 GET /admin/Clum/tolist
+[ info ] drj.bjzhishanzhimei.com/admin/Clum/tolist [运行时间：0.577033s][吞吐率：1.73req/s] [内存消耗：2,869.68kb] [文件加载：70]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Clum',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1522025841,1522131885,1522285100,1522371528; PHPSESSID=b3buo9no62p5s91bjolbblr351; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1522371778',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Clum/tolist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Clum->tolist[ D:\phpStudy\WWW\drj\application\admin\controller\Clum.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\drj\public/../application/admin\view\clum\tolist.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.133007s ] mysql:host=47.104.154.142;port=9989;dbname=drj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `building_column` [ RunTime:0.090005s ]
+[ sql ] [ SQL ] SELECT * FROM `building_column` ORDER BY `id`  desc [ RunTime:0.090005s ]
+---------------------------------------------------------------
+[ 2018-03-30T18:11:27+08:00 ] 127.0.0.1 GET /Js/admin/Clum/tolist.js?v=1522404687
+[ info ] drj.bjzhishanzhimei.com/Js/admin/Clum/tolist.js?v=1522404687 [运行时间：0.199012s][吞吐率：5.02req/s] [内存消耗：1,413.35kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Js',
+    1 => 'admin',
+    2 => 'Clum',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1522025841,1522131885,1522285100,1522371528; PHPSESSID=b3buo9no62p5s91bjolbblr351; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1522371778',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin/Clum/tolist',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/Js/admin/Clum/tolist_js' => '',
+  'v' => '1522404687',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-30T18:11:29+08:00 ] 127.0.0.1 GET /admin/Orbuilding/tolist
+[ info ] drj.bjzhishanzhimei.com/admin/Orbuilding/tolist [运行时间：0.625035s][吞吐率：1.60req/s] [内存消耗：2,841.12kb] [文件加载：70]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Orbuilding',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1522025841,1522131885,1522285100,1522371528; PHPSESSID=b3buo9no62p5s91bjolbblr351; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1522371778',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Orbuilding/tolist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Orbuilding->tolist[ D:\phpStudy\WWW\drj\application\admin\controller\Orbuilding.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\drj\public/../application/admin\view\orbuilding\tolist.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.141008s ] mysql:host=47.104.154.142;port=9989;dbname=drj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `building_order` [ RunTime:0.098006s ]
+[ sql ] [ SQL ] SELECT * FROM `building_order` [ RunTime:0.097005s ]
+---------------------------------------------------------------
+[ 2018-03-30T18:11:29+08:00 ] 127.0.0.1 GET /Js/admin/Orbuilding/tolist.js?v=1522404689
+[ info ] drj.bjzhishanzhimei.com/Js/admin/Orbuilding/tolist.js?v=1522404689 [运行时间：0.193011s][吞吐率：5.18req/s] [内存消耗：1,413.40kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Js',
+    1 => 'admin',
+    2 => 'Orbuilding',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1522025841,1522131885,1522285100,1522371528; PHPSESSID=b3buo9no62p5s91bjolbblr351; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1522371778',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin/Orbuilding/tolist',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/Js/admin/Orbuilding/tolist_js' => '',
+  'v' => '1522404689',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-30T18:11:38+08:00 ] 127.0.0.1 GET /admin/Villa/tolist
+[ info ] drj.bjzhishanzhimei.com/admin/Villa/tolist [运行时间：0.636037s][吞吐率：1.57req/s] [内存消耗：2,908.86kb] [文件加载：70]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Villa',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1522025841,1522131885,1522285100,1522371528; PHPSESSID=b3buo9no62p5s91bjolbblr351; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1522371778',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Villa/tolist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\villa->tolist[ D:\phpStudy\WWW\drj\application\admin\controller\Villa.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\drj\public/../application/admin\view\villa\tolist.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.141008s ] mysql:host=47.104.154.142;port=9989;dbname=drj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `villa_data` [ RunTime:0.097005s ]
+[ sql ] [ SQL ] SELECT * FROM `villa_data` [ RunTime:0.099006s ]
+---------------------------------------------------------------
+[ 2018-03-30T18:11:45+08:00 ] 127.0.0.1 GET /admin/Ordlist/tolist
+[ info ] drj.bjzhishanzhimei.com/admin/Ordlist/tolist [运行时间：0.587033s][吞吐率：1.70req/s] [内存消耗：2,835.76kb] [文件加载：70]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Ordlist',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1522025841,1522131885,1522285100,1522371528; PHPSESSID=b3buo9no62p5s91bjolbblr351; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1522371778',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Ordlist/tolist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Ordlist->tolist[ D:\phpStudy\WWW\drj\application\admin\controller\Ordlist.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\drj\public/../application/admin\view\ordlist\tolist.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.117006s ] mysql:host=47.104.154.142;port=9989;dbname=drj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `villa_order` [ RunTime:0.083005s ]
+[ sql ] [ SQL ] SELECT * FROM `villa_order` [ RunTime:0.081005s ]
+---------------------------------------------------------------
+[ 2018-03-30T18:11:45+08:00 ] 127.0.0.1 GET /Js/admin/Ordlist/tolist.js?v=1522404705
+[ info ] drj.bjzhishanzhimei.com/Js/admin/Ordlist/tolist.js?v=1522404705 [运行时间：0.190011s][吞吐率：5.26req/s] [内存消耗：1,413.38kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Js',
+    1 => 'admin',
+    2 => 'Ordlist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1522025841,1522131885,1522285100,1522371528; PHPSESSID=b3buo9no62p5s91bjolbblr351; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1522371778',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin/Ordlist/tolist',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/Js/admin/Ordlist/tolist_js' => '',
+  'v' => '1522404705',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-30T18:11:49+08:00 ] 127.0.0.1 GET /admin/Seas/tolist
+[ info ] drj.bjzhishanzhimei.com/admin/Seas/tolist [运行时间：0.596035s][吞吐率：1.68req/s] [内存消耗：2,836.14kb] [文件加载：70]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Seas',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1522025841,1522131885,1522285100,1522371528; PHPSESSID=b3buo9no62p5s91bjolbblr351; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1522371778',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Seas/tolist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Seas->toList[ D:\phpStudy\WWW\drj\application\admin\controller\Seas.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\drj\public/../application/admin\view\seas\tolist.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.141008s ] mysql:host=47.104.154.142;port=9989;dbname=drj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `seas` [ RunTime:0.095005s ]
+[ sql ] [ SQL ] SELECT * FROM `seas` [ RunTime:0.095006s ]
+---------------------------------------------------------------
+[ 2018-03-30T18:11:50+08:00 ] 127.0.0.1 GET /admin/Sum/tolist
+[ info ] drj.bjzhishanzhimei.com/admin/Sum/tolist [运行时间：0.546031s][吞吐率：1.83req/s] [内存消耗：2,831.09kb] [文件加载：70]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Sum',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1522025841,1522131885,1522285100,1522371528; PHPSESSID=b3buo9no62p5s91bjolbblr351; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1522371778',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Sum/tolist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Sum->tolist[ D:\phpStudy\WWW\drj\application\admin\controller\Sum.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\drj\public/../application/admin\view\sum\tolist.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.115007s ] mysql:host=47.104.154.142;port=9989;dbname=drj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bargain_ste` [ RunTime:0.080005s ]
+[ sql ] [ SQL ] SELECT * FROM `bargain_ste` LIMIT 1 [ RunTime:0.081004s ]
+---------------------------------------------------------------
+[ 2018-03-30T18:11:51+08:00 ] 127.0.0.1 GET /Js/admin/Sum/tolist.js?v=1522404710
+[ info ] drj.bjzhishanzhimei.com/Js/admin/Sum/tolist.js?v=1522404710 [运行时间：0.219012s][吞吐率：4.57req/s] [内存消耗：1,413.34kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Js',
+    1 => 'admin',
+    2 => 'Sum',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1522025841,1522131885,1522285100,1522371528; PHPSESSID=b3buo9no62p5s91bjolbblr351; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1522371778',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin/Sum/tolist',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/Js/admin/Sum/tolist_js' => '',
+  'v' => '1522404710',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-30T18:11:52+08:00 ] 127.0.0.1 GET /admin/Bargain/tolist
+[ info ] drj.bjzhishanzhimei.com/admin/Bargain/tolist [运行时间：0.589033s][吞吐率：1.70req/s] [内存消耗：2,836.93kb] [文件加载：70]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Bargain',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1522025841,1522131885,1522285100,1522371528; PHPSESSID=b3buo9no62p5s91bjolbblr351; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1522371778',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Bargain/tolist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Bargain->tolist[ D:\phpStudy\WWW\drj\application\admin\controller\Bargain.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\drj\public/../application/admin\view\bargain\tolist.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.139008s ] mysql:host=47.104.154.142;port=9989;dbname=drj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bargain` [ RunTime:0.095005s ]
+[ sql ] [ SQL ] SELECT * FROM `bargain` ORDER BY `id`  desc [ RunTime:0.095005s ]
+---------------------------------------------------------------
+[ 2018-03-30T18:11:54+08:00 ] 127.0.0.1 GET /admin/Ask/tolist
+[ info ] drj.bjzhishanzhimei.com/admin/Ask/tolist [运行时间：0.530030s][吞吐率：1.89req/s] [内存消耗：2,835.61kb] [文件加载：70]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Ask',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1522025841,1522131885,1522285100,1522371528; PHPSESSID=b3buo9no62p5s91bjolbblr351; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1522371778',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Ask/tolist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Ask->tolist[ D:\phpStudy\WWW\drj\application\admin\controller\Ask.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\drj\public/../application/admin\view\ask\tolist.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.097006s ] mysql:host=47.104.154.142;port=9989;dbname=drj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `opinion_back` [ RunTime:0.067004s ]
+[ sql ] [ SQL ] SELECT * FROM `opinion_back` ORDER BY `id`  desc [ RunTime:0.067004s ]
+---------------------------------------------------------------
+[ 2018-03-30T18:11:54+08:00 ] 127.0.0.1 GET /Js/admin/Ask/tolist.js?v=1522404714
+[ info ] drj.bjzhishanzhimei.com/Js/admin/Ask/tolist.js?v=1522404714 [运行时间：0.220012s][吞吐率：4.55req/s] [内存消耗：1,413.34kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Js',
+    1 => 'admin',
+    2 => 'Ask',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1522025841,1522131885,1522285100,1522371528; PHPSESSID=b3buo9no62p5s91bjolbblr351; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1522371778',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin/Ask/tolist',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/Js/admin/Ask/tolist_js' => '',
+  'v' => '1522404714',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-30T18:11:57+08:00 ] 127.0.0.1 GET /admin/Dope/tolist
+[ info ] drj.bjzhishanzhimei.com/admin/Dope/tolist [运行时间：0.596035s][吞吐率：1.68req/s] [内存消耗：2,846.65kb] [文件加载：70]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Dope',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1522025841,1522131885,1522285100,1522371528; PHPSESSID=b3buo9no62p5s91bjolbblr351; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1522371778',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Dope/tolist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Dope->tolist[ D:\phpStudy\WWW\drj\application\admin\controller\Dope.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\drj\public/../application/admin\view\dope\tolist.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.134007s ] mysql:host=47.104.154.142;port=9989;dbname=drj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dopes` [ RunTime:0.093005s ]
+[ sql ] [ SQL ] SELECT * FROM `dopes` ORDER BY `id`  desc [ RunTime:0.092005s ]
+---------------------------------------------------------------
+[ 2018-03-30T18:11:57+08:00 ] 127.0.0.1 GET /Js/admin/Dope/tolist.js?v=1522404717
+[ info ] drj.bjzhishanzhimei.com/Js/admin/Dope/tolist.js?v=1522404717 [运行时间：0.185010s][吞吐率：5.41req/s] [内存消耗：1,413.35kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Js',
+    1 => 'admin',
+    2 => 'Dope',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1522025841,1522131885,1522285100,1522371528; PHPSESSID=b3buo9no62p5s91bjolbblr351; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1522371778',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin/Dope/tolist',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/Js/admin/Dope/tolist_js' => '',
+  'v' => '1522404717',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-30T18:11:58+08:00 ] 127.0.0.1 GET /admin/Examine/tolist
+[ info ] drj.bjzhishanzhimei.com/admin/Examine/tolist [运行时间：0.559032s][吞吐率：1.79req/s] [内存消耗：2,992.77kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Examine',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1522025841,1522131885,1522285100,1522371528; PHPSESSID=b3buo9no62p5s91bjolbblr351; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1522371778',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Examine/tolist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Examine->tolist[ D:\phpStudy\WWW\drj\application\admin\controller\Examine.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\drj\public/../application/admin\view\examine\tolist.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.098005s ] mysql:host=47.104.154.142;port=9989;dbname=drj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `auditing_information` [ RunTime:0.066003s ]
+[ sql ] [ SQL ] SELECT * FROM `auditing_information` ORDER BY `id`  desc [ RunTime:0.067004s ]
+---------------------------------------------------------------
+[ 2018-03-30T18:11:58+08:00 ] 127.0.0.1 GET /Js/admin/Examine/tolist.js?v=1522404718
+[ info ] drj.bjzhishanzhimei.com/Js/admin/Examine/tolist.js?v=1522404718 [运行时间：0.188011s][吞吐率：5.32req/s] [内存消耗：1,413.38kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Js',
+    1 => 'admin',
+    2 => 'Examine',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1522025841,1522131885,1522285100,1522371528; PHPSESSID=b3buo9no62p5s91bjolbblr351; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1522371778',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin/Examine/tolist',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/Js/admin/Examine/tolist_js' => '',
+  'v' => '1522404718',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-30T18:12:00+08:00 ] 127.0.0.1 GET /admin/Examine/doAdd
+[ info ] drj.bjzhishanzhimei.com/admin/Examine/doAdd [运行时间：0.296017s][吞吐率：3.38req/s] [内存消耗：2,126.15kb] [文件加载：64]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Examine',
+    2 => 'doAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1522025841,1522131885,1522285100,1522371528; PHPSESSID=b3buo9no62p5s91bjolbblr351; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1522371778',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin/Examine/tolist',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Examine/doAdd' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Examine->doadd[ D:\phpStudy\WWW\drj\application\admin\controller\Examine.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\drj\public/../application/admin\view\examine\doadd.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-30T18:12:01+08:00 ] 127.0.0.1 GET /Js/admin/Examine/doadd.js?v=1522404720
+[ info ] drj.bjzhishanzhimei.com/Js/admin/Examine/doadd.js?v=1522404720 [运行时间：0.229013s][吞吐率：4.37req/s] [内存消耗：1,413.38kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Js',
+    1 => 'admin',
+    2 => 'Examine',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1522025841,1522131885,1522285100,1522371528; PHPSESSID=b3buo9no62p5s91bjolbblr351; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1522371778',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin/Examine/doAdd',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/Js/admin/Examine/doadd_js' => '',
+  'v' => '1522404720',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-30T18:12:04+08:00 ] 127.0.0.1 POST /admin/Examine/doAdd
+[ info ] drj.bjzhishanzhimei.com/admin/Examine/doAdd [运行时间：0.558032s][吞吐率：1.79req/s] [内存消耗：2,755.87kb] [文件加载：70]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Examine',
+    2 => 'doAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1522025841,1522131885,1522285100,1522371528; PHPSESSID=b3buo9no62p5s91bjolbblr351; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1522371778',
+  'content-length' => '140',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin/Examine/doAdd',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Examine/doAdd' => '',
+  'auditing' => '期望的无群',
+  'editorValue' => '<p>强无敌请我<br/></p>',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Examine->doadd[ D:\phpStudy\WWW\drj\application\admin\controller\Examine.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.134008s ] mysql:host=47.104.154.142;port=9989;dbname=drj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `auditing_information` [ RunTime:0.091005s ]
+[ sql ] [ SQL ] INSERT INTO `auditing_information` (`auditing` , `content` , `create_at` , `update_at`) VALUES ('期望的无群' , '<p>强无敌请我<br/></p>' , 1522404724 , 1522404724) [ RunTime:0.091005s ]
+---------------------------------------------------------------
+[ 2018-03-30T18:12:07+08:00 ] 127.0.0.1 GET /admin/Examine/tolist
+[ info ] drj.bjzhishanzhimei.com/admin/Examine/tolist [运行时间：0.627036s][吞吐率：1.59req/s] [内存消耗：2,846.09kb] [文件加载：70]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Examine',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1522025841,1522131885,1522285100,1522371528; PHPSESSID=b3buo9no62p5s91bjolbblr351; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1522371778',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Examine/tolist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Examine->tolist[ D:\phpStudy\WWW\drj\application\admin\controller\Examine.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\drj\public/../application/admin\view\examine\tolist.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.141008s ] mysql:host=47.104.154.142;port=9989;dbname=drj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `auditing_information` [ RunTime:0.096005s ]
+[ sql ] [ SQL ] SELECT * FROM `auditing_information` ORDER BY `id`  desc [ RunTime:0.096005s ]
+---------------------------------------------------------------
+[ 2018-03-30T18:12:07+08:00 ] 127.0.0.1 GET /Js/admin/Examine/tolist.js?v=1522404727
+[ info ] drj.bjzhishanzhimei.com/Js/admin/Examine/tolist.js?v=1522404727 [运行时间：0.221013s][吞吐率：4.52req/s] [内存消耗：1,413.38kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Js',
+    1 => 'admin',
+    2 => 'Examine',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1522025841,1522131885,1522285100,1522371528; PHPSESSID=b3buo9no62p5s91bjolbblr351; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1522371778',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin/Examine/tolist',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/Js/admin/Examine/tolist_js' => '',
+  'v' => '1522404727',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-30T18:12:17+08:00 ] 127.0.0.1 GET /admin/Dope/doAdd
+[ info ] drj.bjzhishanzhimei.com/admin/Dope/doAdd [运行时间：0.233013s][吞吐率：4.29req/s] [内存消耗：1,990.08kb] [文件加载：62]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Dope',
+    2 => 'doAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1522025841,1522131885,1522285100,1522371528; PHPSESSID=b3buo9no62p5s91bjolbblr351; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1522371778',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin/Dope/tolist',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Dope/doAdd' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Dope->doAdd[ D:\phpStudy\WWW\drj\application\admin\controller\Dope.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\drj\public/../application/admin\view\dope\doadd.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-30T18:12:22+08:00 ] 127.0.0.1 POST /admin/Dope/doAdd
+[ info ] drj.bjzhishanzhimei.com/admin/Dope/doAdd [运行时间：0.606034s][吞吐率：1.65req/s] [内存消耗：2,757.02kb] [文件加载：70]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Dope',
+    2 => 'doAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1522025841,1522131885,1522285100,1522371528; PHPSESSID=b3buo9no62p5s91bjolbblr351; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1522371778',
+  'content-length' => '181',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin/Dope/doAdd',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Dope/doAdd' => '',
+  'name' => '文身断发宠物店方',
+  'editorValue' => '<p>的程度吃但删除<br/></p>',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Dope->doAdd[ D:\phpStudy\WWW\drj\application\admin\controller\Dope.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.142009s ] mysql:host=47.104.154.142;port=9989;dbname=drj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dopes` [ RunTime:0.097005s ]
+[ sql ] [ SQL ] INSERT INTO `dopes` (`name` , `content` , `create_at` , `update_at`) VALUES ('文身断发宠物店方' , '<p>的程度吃但删除<br/></p>' , 1522404741 , 1522404741) [ RunTime:0.096005s ]
+---------------------------------------------------------------
+[ 2018-03-30T18:12:24+08:00 ] 127.0.0.1 GET /admin/Dope/tolist
+[ info ] drj.bjzhishanzhimei.com/admin/Dope/tolist [运行时间：0.627036s][吞吐率：1.59req/s] [内存消耗：2,847.44kb] [文件加载：70]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Dope',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1522025841,1522131885,1522285100,1522371528; PHPSESSID=b3buo9no62p5s91bjolbblr351; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1522371778',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Dope/tolist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Dope->tolist[ D:\phpStudy\WWW\drj\application\admin\controller\Dope.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\drj\public/../application/admin\view\dope\tolist.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.140008s ] mysql:host=47.104.154.142;port=9989;dbname=drj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dopes` [ RunTime:0.097006s ]
+[ sql ] [ SQL ] SELECT * FROM `dopes` ORDER BY `id`  desc [ RunTime:0.096006s ]
+---------------------------------------------------------------
+[ 2018-03-30T18:12:25+08:00 ] 127.0.0.1 GET /Js/admin/Dope/tolist.js?v=1522404744
+[ info ] drj.bjzhishanzhimei.com/Js/admin/Dope/tolist.js?v=1522404744 [运行时间：0.221013s][吞吐率：4.52req/s] [内存消耗：1,413.35kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Js',
+    1 => 'admin',
+    2 => 'Dope',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1522025841,1522131885,1522285100,1522371528; PHPSESSID=b3buo9no62p5s91bjolbblr351; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1522371778',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin/Dope/tolist',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/Js/admin/Dope/tolist_js' => '',
+  'v' => '1522404744',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-30T18:12:30+08:00 ] 127.0.0.1 GET /admin/Partner/tolist
+[ info ] drj.bjzhishanzhimei.com/admin/Partner/tolist [运行时间：0.761044s][吞吐率：1.31req/s] [内存消耗：3,053.30kb] [文件加载：77]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Partner',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1522025841,1522131885,1522285100,1522371528; PHPSESSID=b3buo9no62p5s91bjolbblr351; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1522371778',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Partner/tolist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Partner->tolist[ D:\phpStudy\WWW\drj\application\admin\controller\Partner.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\drj\public/../application/admin\view\partner\tolist.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.141008s ] mysql:host=47.104.154.142;port=9989;dbname=drj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `parthers_audit` [ RunTime:0.096006s ]
+[ sql ] [ SQL ] SELECT * FROM `parthers_audit` [ RunTime:0.095005s ]
+[ error ] [8]未定义数组索引: id_code[D:\phpStudy\WWW\drj\runtime\temp\380529226190eca2b7f905e5b8d4f8d1.php:144]
+---------------------------------------------------------------
+[ 2018-03-30T18:21:48+08:00 ] 127.0.0.1 GET /admin/Consumer/tolist
+[ info ] drj.bjzhishanzhimei.com/admin/Consumer/tolist [运行时间：0.611035s][吞吐率：1.64req/s] [内存消耗：2,853.02kb] [文件加载：70]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Consumer',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1522025841,1522131885,1522285100,1522371528; PHPSESSID=b3buo9no62p5s91bjolbblr351; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1522371778',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Consumer/tolist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Consumer->tolist[ D:\phpStudy\WWW\drj\application\admin\controller\Consumer.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\drj\public/../application/admin\view\consumer\tolist.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.136008s ] mysql:host=47.104.154.142;port=9989;dbname=drj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_data` [ RunTime:0.096005s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `type` = 1 [ RunTime:0.093005s ]
+---------------------------------------------------------------
+[ 2018-03-30T18:21:48+08:00 ] 127.0.0.1 GET /Js/admin/Consumer/tolist.js?v=1522405308
+[ info ] drj.bjzhishanzhimei.com/Js/admin/Consumer/tolist.js?v=1522405308 [运行时间：0.212012s][吞吐率：4.72req/s] [内存消耗：1,413.40kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Js',
+    1 => 'admin',
+    2 => 'Consumer',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1522025841,1522131885,1522285100,1522371528; PHPSESSID=b3buo9no62p5s91bjolbblr351; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1522371778',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin/Consumer/tolist',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/Js/admin/Consumer/tolist_js' => '',
+  'v' => '1522405308',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-30T18:21:55+08:00 ] 127.0.0.1 GET /admin/Consumer/tolist
+[ info ] drj.bjzhishanzhimei.com/admin/Consumer/tolist [运行时间：0.621035s][吞吐率：1.61req/s] [内存消耗：2,852.45kb] [文件加载：70]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Consumer',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1522025841,1522131885,1522285100,1522371528; PHPSESSID=b3buo9no62p5s91bjolbblr351; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1522371778',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Consumer/tolist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Consumer->tolist[ D:\phpStudy\WWW\drj\application\admin\controller\Consumer.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\drj\public/../application/admin\view\consumer\tolist.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.126007s ] mysql:host=47.104.154.142;port=9989;dbname=drj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_data` [ RunTime:0.088005s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `type` = 1 [ RunTime:0.087005s ]
+---------------------------------------------------------------
+[ 2018-03-30T18:21:55+08:00 ] 127.0.0.1 GET /Js/admin/Consumer/tolist.js?v=1522405315
+[ info ] drj.bjzhishanzhimei.com/Js/admin/Consumer/tolist.js?v=1522405315 [运行时间：0.198011s][吞吐率：5.05req/s] [内存消耗：1,413.40kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Js',
+    1 => 'admin',
+    2 => 'Consumer',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1522025841,1522131885,1522285100,1522371528; PHPSESSID=b3buo9no62p5s91bjolbblr351; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1522371778',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin/Consumer/tolist',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/Js/admin/Consumer/tolist_js' => '',
+  'v' => '1522405315',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-30T18:22:22+08:00 ] 127.0.0.1 GET /admin
+[ info ] drj.bjzhishanzhimei.com/admin [运行时间：0.230014s][吞吐率：4.35req/s] [内存消耗：2,045.61kb] [文件加载：63]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1522025841,1522131885,1522285100,1522371528; PHPSESSID=b3buo9no62p5s91bjolbblr351; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1522371778',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\drj\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\drj\public/../application/admin\view\index\index.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-30T18:22:23+08:00 ] 127.0.0.1 GET /admin/index/welcome.html
+[ info ] drj.bjzhishanzhimei.com/admin/index/welcome.html [运行时间：0.501028s][吞吐率：2.00req/s] [内存消耗：2,222.27kb] [文件加载：67]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1522025841,1522131885,1522285100,1522371528; PHPSESSID=b3buo9no62p5s91bjolbblr351; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1522371778',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\drj\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\drj\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'service',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.120006s ] mysql:host=47.104.154.142;port=9989;dbname=drj;charset=utf8
+[ sql ] [ SQL ] select version() [ RunTime:0.078005s ]
+---------------------------------------------------------------
+[ 2018-03-30T18:22:25+08:00 ] 127.0.0.1 GET /admin/Consumer/tolist
+[ info ] drj.bjzhishanzhimei.com/admin/Consumer/tolist [运行时间：0.634036s][吞吐率：1.58req/s] [内存消耗：2,851.06kb] [文件加载：70]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Consumer',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1522025841,1522131885,1522285100,1522371528; PHPSESSID=b3buo9no62p5s91bjolbblr351; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1522405343',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Consumer/tolist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Consumer->tolist[ D:\phpStudy\WWW\drj\application\admin\controller\Consumer.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\drj\public/../application/admin\view\consumer\tolist.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.134007s ] mysql:host=47.104.154.142;port=9989;dbname=drj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_data` [ RunTime:0.092005s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `type` = 1 [ RunTime:0.095005s ]
+---------------------------------------------------------------
+[ 2018-03-30T18:22:26+08:00 ] 127.0.0.1 GET /Js/admin/Consumer/tolist.js?v=1522405345
+[ info ] drj.bjzhishanzhimei.com/Js/admin/Consumer/tolist.js?v=1522405345 [运行时间：0.204011s][吞吐率：4.90req/s] [内存消耗：1,413.40kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Js',
+    1 => 'admin',
+    2 => 'Consumer',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1522025841,1522131885,1522285100,1522371528; PHPSESSID=b3buo9no62p5s91bjolbblr351; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1522405343',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin/Consumer/tolist',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/Js/admin/Consumer/tolist_js' => '',
+  'v' => '1522405345',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-30T18:22:28+08:00 ] 127.0.0.1 GET /admin/User/tolist
+[ info ] drj.bjzhishanzhimei.com/admin/User/tolist [运行时间：0.567032s][吞吐率：1.76req/s] [内存消耗：2,874.77kb] [文件加载：70]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'User',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1522025841,1522131885,1522285100,1522371528; PHPSESSID=b3buo9no62p5s91bjolbblr351; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1522405343',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/User/tolist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\User->toList[ D:\phpStudy\WWW\drj\application\admin\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\drj\public/../application/admin\view\user\tolist.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.116007s ] mysql:host=47.104.154.142;port=9989;dbname=drj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_data` [ RunTime:0.080005s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `type` = 2 [ RunTime:0.080004s ]

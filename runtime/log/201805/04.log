@@ -1,0 +1,1127 @@
+---------------------------------------------------------------
+[ 2018-05-04T14:56:03+08:00 ] 127.0.0.1 GET /
+[ info ] sldl.com/ [运行时间：0.271890s][吞吐率：3.68req/s] [内存消耗：1,802.60kb] [文件加载：53]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sldl.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\drj\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-04T14:56:10+08:00 ] 127.0.0.1 GET /admin
+[ info ] sldl.com/admin [运行时间：0.088942s][吞吐率：11.24req/s] [内存消耗：2,100.16kb] [文件加载：65]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sldl.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/admin' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ VIEW ] D:\phpStudy\WWW\drj\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-04T14:56:13+08:00 ] 127.0.0.1 GET /admin/login/index.html
+[ info ] sldl.com/admin/login/index.html [运行时间：0.090779s][吞吐率：11.02req/s] [内存消耗：2,103.62kb] [文件加载：64]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sldl.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://sldl.com/admin',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=inqui74urgtumhahpb4flpnkg7',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy\WWW\drj\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\drj\public/../application/admin\view\login\index.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-04T14:56:14+08:00 ] 127.0.0.1 GET /captcha.html
+[ info ] sldl.com/captcha.html [运行时间：0.075754s][吞吐率：13.20req/s] [内存消耗：1,573.03kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sldl.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://sldl.com/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=inqui74urgtumhahpb4flpnkg7',
+)
+[ info ] [ PARAM ] array (
+  '/captcha_html' => '',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\phpStudy\WWW\drj\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-04T15:12:10+08:00 ] 127.0.0.1 GET /admin
+[ info ] sldl.com/admin [运行时间：0.043832s][吞吐率：22.81req/s] [内存消耗：1,958.20kb] [文件加载：63]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sldl.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'pgv_pvi=8186027008; pgv_si=s9484663808',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  '/admin' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ VIEW ] D:\phpStudy\WWW\drj\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-04T15:12:13+08:00 ] 127.0.0.1 GET /admin/login/index.html
+[ info ] sldl.com/admin/login/index.html [运行时间：0.051496s][吞吐率：19.42req/s] [内存消耗：1,959.66kb] [文件加载：62]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sldl.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://sldl.com/admin',
+  'cookie' => 'pgv_pvi=8186027008; pgv_si=s9484663808; PHPSESSID=hg4oebbnag2ul0ar97t4crrma0',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy\WWW\drj\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\drj\public/../application/admin\view\login\index.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-04T15:12:13+08:00 ] 127.0.0.1 GET /captcha.html
+[ info ] sldl.com/captcha.html [运行时间：0.049150s][吞吐率：20.35req/s] [内存消耗：1,573.02kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sldl.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://sldl.com/admin/login/index.html',
+  'cookie' => 'pgv_pvi=8186027008; pgv_si=s9484663808; PHPSESSID=hg4oebbnag2ul0ar97t4crrma0',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  '/captcha_html' => '',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\phpStudy\WWW\drj\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-04T15:12:21+08:00 ] 127.0.0.1 POST /admin/login/login.html
+[ info ] sldl.com/admin/login/login.html [运行时间：0.504674s][吞吐率：1.98req/s] [内存消耗：3,277.51kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sldl.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://sldl.com/admin/login/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '45',
+  'cookie' => 'pgv_pvi=8186027008; pgv_si=s9484663808; PHPSESSID=hg4oebbnag2ul0ar97t4crrma0',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/login_html' => '',
+  'phone' => '12345678910',
+  'password' => '123456',
+  'captcha' => 'b6f',
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\phpStudy\WWW\drj\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.090651s ] mysql:host=47.104.154.142;port=9989;dbname=drj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `member` [ RunTime:0.053200s ]
+[ sql ] [ SQL ] SELECT * FROM `member` WHERE  `am_phone` = '12345678910' LIMIT 1 [ RunTime:0.051672s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `member_log` [ RunTime:0.048064s ]
+[ sql ] [ SQL ] INSERT INTO `member_log` (`ml_member_id` , `ml_name` , `ml_url` , `ml_ip` , `create_at`) VALUES (17 , '登录后台' , 'admin/login/login' , '127.0.0.1' , 1525417940) [ RunTime:0.052169s ]
+[ sql ] [ SQL ] UPDATE `member`  SET `am_ssid`='hg4oebbnag2ul0ar97t4crrma0',`am_pre_time`=1525417941,`update_at`=1525417941  WHERE  `am_id` = 17 [ RunTime:0.052219s ]
+---------------------------------------------------------------
+[ 2018-05-04T15:12:21+08:00 ] 127.0.0.1 GET /admin/index/index.html
+[ info ] sldl.com/admin/index/index.html [运行时间：0.076331s][吞吐率：13.10req/s] [内存消耗：2,479.09kb] [文件加载：67]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sldl.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://sldl.com/admin/login/index.html',
+  'cookie' => 'pgv_pvi=8186027008; pgv_si=s9484663808; PHPSESSID=hg4oebbnag2ul0ar97t4crrma0',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\drj\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\drj\public/../application/admin\view\index\index.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-04T15:12:21+08:00 ] 127.0.0.1 GET /admin/index/welcome.html
+[ info ] sldl.com/admin/index/welcome.html [运行时间：0.176516s][吞吐率：5.67req/s] [内存消耗：2,628.48kb] [文件加载：71]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sldl.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://sldl.com/admin/index/index.html',
+  'cookie' => 'pgv_pvi=8186027008; pgv_si=s9484663808; PHPSESSID=hg4oebbnag2ul0ar97t4crrma0',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\drj\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\drj\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'service',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.062513s ] mysql:host=47.104.154.142;port=9989;dbname=drj;charset=utf8
+[ sql ] [ SQL ] select version() [ RunTime:0.042966s ]
+---------------------------------------------------------------
+[ 2018-05-04T15:12:32+08:00 ] 127.0.0.1 GET /admin/index/index.html
+[ info ] sldl.com/admin/index/index.html [运行时间：0.046787s][吞吐率：21.37req/s] [内存消耗：2,318.18kb] [文件加载：65]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sldl.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://sldl.com/admin/login/index.html',
+  'cookie' => 'pgv_pvi=8186027008; pgv_si=s9484663808; PHPSESSID=hg4oebbnag2ul0ar97t4crrma0',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\drj\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\drj\public/../application/admin\view\index\index.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-04T15:12:33+08:00 ] 127.0.0.1 GET /admin/index/welcome.html
+[ info ] sldl.com/admin/index/welcome.html [运行时间：0.216113s][吞吐率：4.63req/s] [内存消耗：2,484.78kb] [文件加载：69]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sldl.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://sldl.com/admin/index/index.html',
+  'cookie' => 'pgv_pvi=8186027008; pgv_si=s9484663808; PHPSESSID=hg4oebbnag2ul0ar97t4crrma0',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\drj\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\drj\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'service',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.095307s ] mysql:host=47.104.154.142;port=9989;dbname=drj;charset=utf8
+[ sql ] [ SQL ] select version() [ RunTime:0.069137s ]
+---------------------------------------------------------------
+[ 2018-05-04T15:12:37+08:00 ] 127.0.0.1 GET /Js/jquery.min.map
+[ info ] sldl.com/Js/jquery.min.map [运行时间：0.042974s][吞吐率：23.27req/s] [内存消耗：1,561.06kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Js',
+    1 => 'jquery.min.map',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sldl.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'origin' => 'null',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  '/Js/jquery_min_map' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-04T15:13:29+08:00 ] 127.0.0.1 GET /admin/building/tolist.html
+[ info ] sldl.com/admin/building/tolist.html [运行时间：0.437738s][吞吐率：2.28req/s] [内存消耗：3,563.80kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'building',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sldl.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'pgv_pvi=8186027008; pgv_si=s9484663808; PHPSESSID=hg4oebbnag2ul0ar97t4crrma0',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/building/tolist_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Building->tolist[ D:\phpStudy\WWW\drj\application\admin\controller\Building.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\drj\public/../application/admin\view\building\tolist.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'deploy',
+  7 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.070411s ] mysql:host=47.104.154.142;port=9989;dbname=drj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `deploy` [ RunTime:0.046580s ]
+[ sql ] [ SQL ] SELECT * FROM `deploy` WHERE  `type` = 2 [ RunTime:0.046937s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `building_details` [ RunTime:0.048708s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `building_details` `bd` LEFT JOIN `building_column` `bc` ON `bc`.`id`=`bd`.`g_column` LEFT JOIN `building_column` `bc2` ON `bc2`.`id`=`bd`.`g_columr` LEFT JOIN `building_column` `bc3` ON `bc3`.`id`=`bd`.`g_columx` LIMIT 1 [ RunTime:0.046556s ]
+[ sql ] [ SQL ] SELECT `bd`.*,bc.name as oname,bc2.name as tname,bc3.name as ename FROM `building_details` `bd` LEFT JOIN `building_column` `bc` ON `bc`.`id`=`bd`.`g_column` LEFT JOIN `building_column` `bc2` ON `bc2`.`id`=`bd`.`g_columr` LEFT JOIN `building_column` `bc3` ON `bc3`.`id`=`bd`.`g_columx` ORDER BY id DESC LIMIT 0,15 [ RunTime:0.048827s ]
+---------------------------------------------------------------
+[ 2018-05-04T15:13:32+08:00 ] 127.0.0.1 GET /admin/building/doAdd
+[ info ] sldl.com/admin/building/doAdd [运行时间：0.368962s][吞吐率：2.71req/s] [内存消耗：3,244.74kb] [文件加载：73]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'building',
+    2 => 'doAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sldl.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://sldl.com/admin/building/tolist.html',
+  'cookie' => 'pgv_pvi=8186027008; pgv_si=s9484663808; PHPSESSID=hg4oebbnag2ul0ar97t4crrma0',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/building/doAdd' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Building->doAdd[ D:\phpStudy\WWW\drj\application\admin\controller\Building.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\drj\public/../application/admin\view\building\doadd.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'deploy',
+  7 => 'province',
+  8 => 'two',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.064288s ] mysql:host=47.104.154.142;port=9989;dbname=drj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `deploy` [ RunTime:0.043495s ]
+[ sql ] [ SQL ] SELECT * FROM `deploy` WHERE  `type` = 2 [ RunTime:0.044509s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `building_column` [ RunTime:0.044619s ]
+[ sql ] [ SQL ] SELECT * FROM `building_column` WHERE  `pid` = 0 [ RunTime:0.044893s ]
+[ sql ] [ SQL ] SELECT * FROM `building_column` WHERE  `pid` = 36 [ RunTime:0.043827s ]
+---------------------------------------------------------------
+[ 2018-05-04T15:13:39+08:00 ] 127.0.0.1 GET /admin/index/index.html
+[ info ] sldl.com/admin/index/index.html [运行时间：0.044593s][吞吐率：22.42req/s] [内存消耗：2,317.94kb] [文件加载：65]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sldl.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://sldl.com/admin/login/index.html',
+  'cookie' => 'pgv_pvi=8186027008; pgv_si=s9484663808; PHPSESSID=hg4oebbnag2ul0ar97t4crrma0',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\drj\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\drj\public/../application/admin\view\index\index.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-04T15:13:39+08:00 ] 127.0.0.1 GET /admin/index/welcome.html
+[ info ] sldl.com/admin/index/welcome.html [运行时间：0.176084s][吞吐率：5.68req/s] [内存消耗：2,484.46kb] [文件加载：69]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sldl.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://sldl.com/admin/index/index.html',
+  'cookie' => 'pgv_pvi=8186027008; pgv_si=s9484663808; PHPSESSID=hg4oebbnag2ul0ar97t4crrma0',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\drj\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\drj\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'service',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.071628s ] mysql:host=47.104.154.142;port=9989;dbname=drj;charset=utf8
+[ sql ] [ SQL ] select version() [ RunTime:0.046942s ]
+---------------------------------------------------------------
+[ 2018-05-04T15:17:05+08:00 ] 127.0.0.1 GET /admin/index/index.html
+[ info ] sldl.com/admin/index/index.html [运行时间：0.043575s][吞吐率：22.95req/s] [内存消耗：2,318.23kb] [文件加载：65]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sldl.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://sldl.com/admin/login/index.html',
+  'cookie' => 'pgv_pvi=8186027008; pgv_si=s9484663808; PHPSESSID=hg4oebbnag2ul0ar97t4crrma0',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\drj\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\drj\public/../application/admin\view\index\index.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-04T15:17:06+08:00 ] 127.0.0.1 GET /admin/index/welcome.html
+[ info ] sldl.com/admin/index/welcome.html [运行时间：0.185689s][吞吐率：5.39req/s] [内存消耗：2,484.46kb] [文件加载：69]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sldl.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://sldl.com/admin/index/index.html',
+  'cookie' => 'pgv_pvi=8186027008; pgv_si=s9484663808; PHPSESSID=hg4oebbnag2ul0ar97t4crrma0',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\drj\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\drj\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'service',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.086158s ] mysql:host=47.104.154.142;port=9989;dbname=drj;charset=utf8
+[ sql ] [ SQL ] select version() [ RunTime:0.048944s ]
+---------------------------------------------------------------
+[ 2018-05-04T15:17:45+08:00 ] 127.0.0.1 GET /admin/index/index.html
+[ info ] sldl.com/admin/index/index.html [运行时间：0.044957s][吞吐率：22.24req/s] [内存消耗：2,318.23kb] [文件加载：65]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sldl.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://sldl.com/admin/login/index.html',
+  'cookie' => 'pgv_pvi=8186027008; pgv_si=s9484663808; PHPSESSID=hg4oebbnag2ul0ar97t4crrma0',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\drj\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\drj\public/../application/admin\view\index\index.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-04T15:17:45+08:00 ] 127.0.0.1 GET /admin/index/welcome.html
+[ info ] sldl.com/admin/index/welcome.html [运行时间：0.176377s][吞吐率：5.67req/s] [内存消耗：2,484.46kb] [文件加载：69]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sldl.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://sldl.com/admin/index/index.html',
+  'cookie' => 'pgv_pvi=8186027008; pgv_si=s9484663808; PHPSESSID=hg4oebbnag2ul0ar97t4crrma0',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\drj\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\drj\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'service',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.070969s ] mysql:host=47.104.154.142;port=9989;dbname=drj;charset=utf8
+[ sql ] [ SQL ] select version() [ RunTime:0.054015s ]
+---------------------------------------------------------------
+[ 2018-05-04T15:17:50+08:00 ] 127.0.0.1 GET /admin/index/index.html
+[ info ] sldl.com/admin/index/index.html [运行时间：0.039917s][吞吐率：25.05req/s] [内存消耗：2,318.42kb] [文件加载：65]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sldl.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://sldl.com/admin/login/index.html',
+  'cookie' => 'pgv_pvi=8186027008; pgv_si=s9484663808; PHPSESSID=hg4oebbnag2ul0ar97t4crrma0',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\drj\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\drj\public/../application/admin\view\index\index.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-04T15:17:50+08:00 ] 127.0.0.1 GET /admin/index/welcome.html
+[ info ] sldl.com/admin/index/welcome.html [运行时间：0.173259s][吞吐率：5.77req/s] [内存消耗：2,484.89kb] [文件加载：69]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sldl.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://sldl.com/admin/index/index.html',
+  'cookie' => 'pgv_pvi=8186027008; pgv_si=s9484663808; PHPSESSID=hg4oebbnag2ul0ar97t4crrma0',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\drj\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\drj\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'service',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.075181s ] mysql:host=47.104.154.142;port=9989;dbname=drj;charset=utf8
+[ sql ] [ SQL ] select version() [ RunTime:0.049784s ]
+---------------------------------------------------------------
+[ 2018-05-04T15:18:25+08:00 ] 127.0.0.1 GET /admin/index/index.html
+[ info ] sldl.com/admin/index/index.html [运行时间：0.049011s][吞吐率：20.40req/s] [内存消耗：2,318.23kb] [文件加载：65]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sldl.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://sldl.com/admin/login/index.html',
+  'cookie' => 'pgv_pvi=8186027008; pgv_si=s9484663808; PHPSESSID=hg4oebbnag2ul0ar97t4crrma0',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\drj\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\drj\public/../application/admin\view\index\index.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-04T15:18:26+08:00 ] 127.0.0.1 GET /admin/index/welcome.html
+[ info ] sldl.com/admin/index/welcome.html [运行时间：0.181410s][吞吐率：5.51req/s] [内存消耗：2,484.46kb] [文件加载：69]
+[ info ] [ LANG ] D:\phpStudy\WWW\drj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sldl.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://sldl.com/admin/index/index.html',
+  'cookie' => 'pgv_pvi=8186027008; pgv_si=s9484663808; PHPSESSID=hg4oebbnag2ul0ar97t4crrma0',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drj\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\drj\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\drj\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'service',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.077758s ] mysql:host=47.104.154.142;port=9989;dbname=drj;charset=utf8
+[ sql ] [ SQL ] select version() [ RunTime:0.050167s ]

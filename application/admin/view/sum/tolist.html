@@ -1,0 +1,38 @@
+<layout name="layout" />
+<div style="padding: 20px;">
+    <form class="layui-form" action="{:url('admin/Sum/doEdit')}">
+        <div class="layui-form-item">
+            <label class="layui-form-label" style="width:100px" >红包单个金额</label>
+            <div class="layui-input-inline">
+                <input type="text" name="red_set"  lay-verify="required" placeholder="{$page.red_set}" class="layui-input" value="{$page.red_set}">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label"style="width:100px">砍价总金额</label>
+            <div class="layui-input-inline">
+                <input type="text" name="bargain_set"  lay-verify="required" placeholder="请输入百分比" class="layui-input"value="{$page.bargain_set}">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label"style="width:100px">砍价总人数</label>
+            <div class="layui-input-inline">
+                <input type="text" name="bargain_num"  lay-verify="required" placeholder="请输入百分比" class="layui-input"value="{$page.bargain_set}">
+            </div>
+        </div>
+        <div class="layui-form-item">
+        <label class="layui-form-label" style="width:100px">合伙人申请费用</label>
+        <div class="layui-input-inline">
+            <input type="text" name="partner_money"  lay-verify="required" placeholder="请输入百分比" class="layui-input"value="{$page.partner_money}">
+        </div>
+    </div>
+         <input type="hidden" name="id" value="{$page.id}">
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button class="layui-btn" lay-submit lay-filter="formEdit" id="submit">立即提交</button>
+
+            </div>
+        </div>
+    </form>
+
+</div>

@@ -1,0 +1,59 @@
+
+<layout name="layout" />
+
+<div style="padding: 20px;">
+    <blockquote class="layui-elem-quote success-color">该系统由北京至善至美文化传播有限公司开发 <i class="layui-icon">&#xe6af;</i></blockquote>
+    <fieldset class="layui-elem-field layui-col-md4">
+        <legend>系统信息</legend>
+        <div class="layui-field-box">
+
+
+            <table class="layui-table" lay-even="" lay-skin="nob">
+                <colgroup>
+                    <col width="150">
+                    <col width="150">
+                    <col width="200">
+                    <col>
+                </colgroup>
+                <thead>
+                <tr>
+                    <th>信息</th>
+                    <th>数据</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>访问地址</td>
+                    <td>{$_SERVER['HTTP_HOST']}</td>
+                </tr>
+                <tr>
+                    <td>Apache版本</td>
+
+                    <td>{$_SERVER['SERVER_SOFTWARE']}</td>
+                </tr>
+                <tr>
+                    <td>请求头信息内容</td>
+
+                    <td>{$_SERVER['HTTP_ACCEPT_LANGUAGE']}</td>
+                </tr>
+                <tr>
+                    <td>端口</td>
+
+                    <td>{$_SERVER['SERVER_PORT']}</td>
+                </tr>
+                <tr>
+                    <td>当前访问者IP</td>
+
+                    <td>{$_SERVER['REMOTE_ADDR']}</td>
+                </tr>
+                <tr>
+                    <td>PHP版本</td>
+
+                    <td><?php echo phpversion()?></td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </fieldset>
+</div>

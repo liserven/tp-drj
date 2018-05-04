@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        button{
+            width:200px;
+            height:65px;
+            font-size: 24px;
+            border-radius:0;
+            backgroun:red;
+        }
+        .help-bargain:hover{ color:red;}
+        input{height:80px; font-size:24px;}
+    </style>
+</head>
+<body>
+<eq name="data.is_help" value="2">
+    <div style="font-size: 30px">
+
+        <p>发起人: {$data.user_id} </p>
+        <p>金额: {$data.b_money}</p>
+        <p>个数: {$data.b_number}</p>
+        <p>openid: {$userInfo.openid}</p>
+
+        <input type="text" class="phone">
+        <input type="hidden" class="nickname" value="{$userInfo.nickname}">
+        <input type="hidden" class="logo" value="{$userInfo.headimgurl}">
+        <input type="hidden" class="openid" value="{$userInfo.openid}">
+        <input type="hidden" class="bargainid" value="{$data.id}">
+        <input type="text" class="code">
+        <button class="fs-code">发送验证码</button>
+        <button class="help-bargain">帮忙砍价</button>
+    </div>
+    <else/>
+    你已经帮过他了
+</eq>
+</body>
+
+<script src="__JS__/jquery-3.2.1.min.js"></script>
+<script>
+    $(function () {
+
+        $('.fs-code').click(function () {
+            var data = {
+                phone : $('.phone').val(),
+            };
+            if( data.phone == '' )
+            {
+                alert('手机不能为空');
+                return false;
+            }
+            var url = '/h_bargain_code';
+            $.post(url, data , function(result ){
+                if(result.bol)
+                {
+                    alert('发送成功');
+                    $('.fs-code').remove();
+                }
+                else{
+                    alert(result.msg);
+                }
+            });
+        });
+        $(".help-bargain").click(function () {
+
+            var data = {
+                code : $('.code').val(),
+                logo : $('.logo').val(),
+                nickname : $('.nickname').val(),
+                openid : $('.openid').val(),
+                bargainid : $('.bargainid').val(),
+                phone : $('.phone').val(),
+            };
+            if( data.phone == '' )
+            {
+                alert('手机不能为空');
+                return false;
+            }
+
+            if( data.code == '' )
+            {
+                alert('验证码不能为空');
+                return false;
+            }
+            var url = '/h_bargain';
+            $.post(url, data , function(result ){
+                if(result.bol)
+                {
+                    alert('成功帮他砍价');
+                    setTimeout(function () {
+                        window.location.reload();
+
+                    },1000);
+                }
+                else{
+                    alert(result.msg);
+                    setTimeout(function () {
+                        window.location.reload();
+
+                    },1000);
+                }
+            });
+
+        });
+    })
+</script>
+</html>

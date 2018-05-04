@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link href="https://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+	<title>灯具详情</title>
+	<link rel="stylesheet" type="text/css" href="__JS__/index/src/css/style.css">
+	<link href="https://cdn.bootcss.com/Swiper/4.2.0/css/swiper.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="__JS__/index/src/css/public.css">
+	<link rel="stylesheet" type="text/css" href="__JS__/index/src/css/page_style.css">
+</head>
+<body>
+	<div class="container">
+		<header class="home">
+			<a class="return_back"><img src="__JS__/index/src/image/return_back.png" width="36px" /></a>
+			<div class="swiper-container" style="overflow: hidden;">
+				<div class="swiper-wrapper">
+					<volist name="data.images" id="vo">
+						<eq name="vo.g_img_type" value="2">
+					<div class="swiper-slide"><img src="{$vo.g_img}" width="100%" /></div>
+						</eq>
+					</volist>
+				</div>
+			    <!-- 如果需要分页器 -->
+			    <div class="swiper-pagination current_class"></div>
+			</div>
+		</header>
+		<div class="content">
+			<div class="titlehaed text-center">
+				<h1>{$data.g_name}</h1>
+				<p>
+					<span>{$data.g_price_r}</span>
+					<s>{$data.g_price}</s>
+				</p>
+				<a>*适配地形：地中海户型配套</a>
+			</div>
+			<!--  -->
+			<nav>
+				<ul class="list text-center">
+					<volist name="data.customers" id="vo">
+					<li class="col-xs-4 col-md-4">
+						<dt><img width="25px" height="25px" src="{$vo.img}"></dt>
+						<dd><span>{$vo.cus_name}</span></dd>
+					</li>
+					</volist>
+				</ul>
+			</nav>
+			<!-- 别墅详情 -->
+			<ul class="villadetails">
+				<h3 class="title">灯具详情</h3>
+				<volist name="data.sets" id="vo">
+					<li>
+						<span>{$vo.set_name}</span>
+						<a>{$vo.value}</a>
+					</li>
+				</volist>
+			</ul>
+			<!-- 图片 -->
+			<div class="picture">
+				<h3 class="title">图片</h3>
+				<div class="pic_image">
+					<volist name="data.images" id="vo">
+						<eq name="vo.g_img_type" value="1">
+						<img width="100%" src="{$data.g_img}">
+						</eq>
+					</volist>
+				</div>
+			</div>
+			<!-- 底部悬浮窗 -->
+			<div style="height: 50px"></div>
+			<footer class="classsign">
+				<div class="col-xs-7 col-md-7 text-center">
+					<img width="25px" height="25px" src="__JS__/index/src/image/share_icon.png">
+					<img class="collect" width="28px" height="25px" src="__JS__/index/src/image/collect_icon.png">
+					<img class="toshop" width="28px" height="25px" src="__JS__/index/src/image/toshop_icon.png">
+				</div>
+				<div class="col-xs-5 col-md-5 padding" style="height: 60px;">
+					<button class="tosign">立即购买</button>
+				</div>
+			</footer>
+		</div>
+	</div>
+	<!-- 下载APP -->
+	<div id="fade">
+		<ul class="tolink text-center">
+			<li class="message">
+				您还未下载定荣家APP,请立<br>即前往应用商店进行下载
+			</li>
+			<li class="clicklink">
+				<dd class="col-md-6 col-xs-6 wait">再等等</dd>
+				<dd class="col-md-6 col-xs-6 goto">立即前往</dd>
+			</li>
+		</ul>
+	</div>
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/Swiper/4.2.0/js/swiper.min.js"></script>
+<script type="text/javascript" src="__JS__/index/src/js/main.js"></script>
+<script type="text/javascript">
+	var mySwiper = new Swiper('.swiper-container',{
+	    direction: 'horizontal',
+	    loop: true,
+    	// 如果需要分页器
+	    pagination: {
+	        el: '.swiper-pagination',
+	        hideOnClick :false,
+	        type: 'fraction',
+	        renderFraction: function (currentClass, totalClass) {
+	          	return '<span class="' + currentClass + '"></span>' +
+	                 ' / ' +
+	                 '<span class="' + totalClass + '"></span>';
+	                 console.log(currentClass);
+        	},
+  		},
+  	})   
+</script>
+</html>

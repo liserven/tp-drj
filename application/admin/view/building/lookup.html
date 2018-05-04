@@ -1,0 +1,114 @@
+<layout name="layout"/>
+<fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+    <legend>查询结果
+    </legend>
+</fieldset>
+
+<div class="layui-form layui-border-box layui-table-view" lay-filter="content-box" style="padding: 20px;border: 0;">
+    <div class="layui-table-box">
+        <table class="layui-table" style="width: 100%; border: 1px solid #eee">
+            <colgroup>
+                <col width="50">
+                <col width="50">
+            </colgroup>
+            <thead>
+            <tr>
+
+
+                <th data-field="id">
+                    <div class="layui-table-cell laytable-cell-1-id">
+                        <span>ID</span>
+
+                    </div>
+                </th>
+                <th data-field="name">
+                    <div class="layui-table-cell">
+                        <span>建材名称</span>
+                    </div>
+                </th>
+                <th data-field="type">
+                    <div class="layui-table-cell"><span>所属分类</span></div>
+                </th>
+                <th data-field="type">
+                    <div class="layui-table-cell"><span>商品材质</span></div>
+                </th>
+                <th data-field="type">
+                    <div class="layui-table-cell"><span>商品排序</span></div>
+                </th>
+                <th data-field="type">
+                    <div class="layui-table-cell"><span>推荐首页</span></div>
+                </th>
+
+                <th data-field="modifiedTime">
+                    <div class="layui-table-cell"><span>商品缩略图</span></div>
+                </th>
+                <th data-field="createdTime">
+                    <div class="layui-table-cell"><span>创建时间</span></div>
+                </th>
+                <th data-field="modifiedTime">
+                    <div class="layui-table-cell"><span>修改时间</span></div>
+                </th>
+
+                <th data-field="11">
+                    <div class="layui-table-cell" align="center"><span>操作</span></div>
+                </th>
+            </tr>
+            </thead>
+            <tbody class="">
+
+
+
+
+                    <td>
+                        <div class="layui-table-cell">{$list.id}</div>
+                    </td>
+                    <td>
+                        <div class="layui-table-cell">{$list.g_name}</div>
+                    </td>
+                    <td>
+                        <div class="layui-table-cell">{$list.g_column}</div>
+                    </td>
+                    <td>
+                        <div class="layui-table-cell">{$list.g_material}</div>
+                    </td>
+                    <td>
+                        <div class="layui-table-cell">{$list.order}</div>
+                    </td>
+                    <if condition="$list['is_index'] eq 1">
+                        <td>
+                            <div class="layui-table-cell">是</div>
+                        </td>
+
+                        <else>
+                            <td>
+                                <div class="layui-table-cell">否</div>
+                            </td>
+                    </if>
+                    <td>
+                        <div class="layui-table-cell"><img src="{$list.g_img}?imageView2/1/w/50/h/50"></div>
+                    </td>
+                    <td>
+                        <div class="layui-table-cell">{$list.create_at}</div>
+                    </td>
+
+                    <td>
+                        <div class="layui-table-cell">{$list.update_at}</div>
+                    </td>
+
+                    <td>
+                        <div class="layui-table-cell">
+                            <a class="layui-btn layui-btn-xs edit">编辑</a>
+                            <a class="layui-btn layui-btn-danger layui-btn-xs do_del">删除</a>
+
+                        </div>
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+</div>
+</div>
+</div>

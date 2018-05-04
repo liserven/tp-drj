@@ -1,0 +1,3319 @@
+---------------------------------------------------------------
+[ 2018-02-06T15:10:30+08:00 ] 127.0.0.1 GET /admin
+[ info ] mrw.com/admin [运行时间：0.406321s][吞吐率：2.46req/s] [内存消耗：1,431.49kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T15:10:34+08:00 ] 127.0.0.1 GET /admin/login/index.html
+[ info ] mrw.com/admin/login/index.html [运行时间：0.075138s][吞吐率：13.31req/s] [内存消耗：1,431.08kb] [文件加载：60]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'referer' => 'http://mrw.com/admin',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/admin\view\login\index.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T15:11:28+08:00 ] 127.0.0.1 GET /index.html
+[ info ] mrw.com/index.html [运行时间：0.029167s][吞吐率：34.29req/s] [内存消耗：1,431.08kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T15:11:32+08:00 ] 127.0.0.1 GET /admin/login/index.html
+[ info ] mrw.com/admin/login/index.html [运行时间：0.028429s][吞吐率：35.18req/s] [内存消耗：1,431.11kb] [文件加载：60]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'referer' => 'http://mrw.com/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/admin\view\login\index.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:03:23+08:00 ] 127.0.0.1 GET /
+[ info ] lsy.com/ [运行时间：0.585487s][吞吐率：1.71req/s] [内存消耗：2,261.15kb] [文件加载：69]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.222172s ] mysql:host=47.95.114.220;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `headline` [ RunTime:0.141027s ]
+[ sql ] [ SQL ] SELECT `title`,`create_at` FROM `headline` LIMIT 6 [ RunTime:0.140907s ]
+[ error ] [1]Class 'app\common\model\Meeting' not found[D:\phpStudy\WWW\lsybk\application\home\controller\BaseController.php:15]
+---------------------------------------------------------------
+[ 2018-02-06T19:03:52+08:00 ] 127.0.0.1 GET /
+[ info ] lsy.com/ [运行时间：0.040632s][吞吐率：24.61req/s] [内存消耗：1,552.50kb] [文件加载：63]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\lsybk\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\lsybk\\runtime\\session',
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\phpStudy\WWW\lsybk\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\lsybk\public/../application/home\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'mName',
+  2 => 'cName',
+  3 => 'aName',
+  4 => 'menu',
+  5 => 'kx',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: headline[D:\phpStudy\WWW\lsybk\runtime\temp\a3c32b8ee81b9d2d035dd1490f3568ac.php:114]
+---------------------------------------------------------------
+[ 2018-02-06T19:04:23+08:00 ] 127.0.0.1 GET /
+[ info ] lsy.com/ [运行时间：0.041224s][吞吐率：24.26req/s] [内存消耗：1,495.30kb] [文件加载：58]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\lsybk\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\lsybk\\runtime\\session',
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\phpStudy\WWW\lsybk\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\lsybk\public/../application/home\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'mName',
+  2 => 'cName',
+  3 => 'aName',
+  4 => 'menu',
+  5 => 'kx',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:04:23+08:00 ] 127.0.0.1 GET /Image/indexsearch-icon.png
+[ info ] lsy.com/Image/indexsearch-icon.png [运行时间：0.026510s][吞吐率：37.72req/s] [内存消耗：1,127.05kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Image',
+    1 => 'indexsearch-icon.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'referer' => 'http://lsy.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Image/indexsearch-icon_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:04:24+08:00 ] 127.0.0.1 GET /Image/showindex-logo.png
+[ info ] lsy.com/Image/showindex-logo.png [运行时间：0.048830s][吞吐率：20.48req/s] [内存消耗：1,127.04kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Image',
+    1 => 'showindex-logo.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'referer' => 'http://lsy.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Image/showindex-logo_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:04:24+08:00 ] 127.0.0.1 GET /Image/personaladmin.png
+[ info ] lsy.com/Image/personaladmin.png [运行时间：0.030196s][吞吐率：33.12req/s] [内存消耗：1,126.95kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Image',
+    1 => 'personaladmin.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'referer' => 'http://lsy.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Image/personaladmin_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:04:24+08:00 ] 127.0.0.1 GET /Image/standardalliance.png
+[ info ] lsy.com/Image/standardalliance.png [运行时间：0.031785s][吞吐率：31.46req/s] [内存消耗：1,127.05kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Image',
+    1 => 'standardalliance.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'referer' => 'http://lsy.com/Css/home/style.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Image/standardalliance_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:04:24+08:00 ] 127.0.0.1 GET /Image/downloadclient-code.png
+[ info ] lsy.com/Image/downloadclient-code.png [运行时间：0.057357s][吞吐率：17.43req/s] [内存消耗：1,127.12kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Image',
+    1 => 'downloadclient-code.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'referer' => 'http://lsy.com/Css/home/style.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Image/downloadclient-code_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:04:42+08:00 ] 127.0.0.1 GET /
+[ info ] lsy.com/ [运行时间：0.029291s][吞吐率：34.14req/s] [内存消耗：1,379.44kb] [文件加载：56]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\lsybk\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\lsybk\\runtime\\session',
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\phpStudy\WWW\lsybk\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\lsybk\public/../application/home\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'mName',
+  2 => 'cName',
+  3 => 'aName',
+  4 => 'menu',
+  5 => 'kx',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:04:42+08:00 ] 127.0.0.1 GET /Image/showindex-logo.png
+[ info ] lsy.com/Image/showindex-logo.png [运行时间：0.022825s][吞吐率：43.81req/s] [内存消耗：1,127.35kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Image',
+    1 => 'showindex-logo.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'referer' => 'http://lsy.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Image/showindex-logo_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:04:42+08:00 ] 127.0.0.1 GET /Image/indexsearch-icon.png
+[ info ] lsy.com/Image/indexsearch-icon.png [运行时间：0.023525s][吞吐率：42.51req/s] [内存消耗：1,127.05kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Image',
+    1 => 'indexsearch-icon.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'referer' => 'http://lsy.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Image/indexsearch-icon_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:04:42+08:00 ] 127.0.0.1 GET /Image/personaladmin.png
+[ info ] lsy.com/Image/personaladmin.png [运行时间：0.023486s][吞吐率：42.58req/s] [内存消耗：1,127.02kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Image',
+    1 => 'personaladmin.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'referer' => 'http://lsy.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Image/personaladmin_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:04:42+08:00 ] 127.0.0.1 GET /Image/downloadclient-code.png
+[ info ] lsy.com/Image/downloadclient-code.png [运行时间：0.019401s][吞吐率：51.54req/s] [内存消耗：1,127.20kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Image',
+    1 => 'downloadclient-code.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'referer' => 'http://lsy.com/Css/home/style.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Image/downloadclient-code_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:04:42+08:00 ] 127.0.0.1 GET /Image/standardalliance.png
+[ info ] lsy.com/Image/standardalliance.png [运行时间：0.021084s][吞吐率：47.43req/s] [内存消耗：1,127.04kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Image',
+    1 => 'standardalliance.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'referer' => 'http://lsy.com/Css/home/style.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Image/standardalliance_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:05:04+08:00 ] 127.0.0.1 GET /
+[ info ] lsy.com/ [运行时间：0.036571s][吞吐率：27.34req/s] [内存消耗：1,495.28kb] [文件加载：58]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\lsybk\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\lsybk\\runtime\\session',
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\phpStudy\WWW\lsybk\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\lsybk\public/../application/home\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'mName',
+  2 => 'cName',
+  3 => 'aName',
+  4 => 'menu',
+  5 => 'kx',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:05:04+08:00 ] 127.0.0.1 GET /Image/personaladmin.png
+[ info ] lsy.com/Image/personaladmin.png [运行时间：0.021860s][吞吐率：45.75req/s] [内存消耗：1,127.30kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Image',
+    1 => 'personaladmin.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'referer' => 'http://lsy.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Image/personaladmin_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:05:04+08:00 ] 127.0.0.1 GET /Image/showindex-logo.png
+[ info ] lsy.com/Image/showindex-logo.png [运行时间：0.023168s][吞吐率：43.16req/s] [内存消耗：1,127.35kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Image',
+    1 => 'showindex-logo.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'referer' => 'http://lsy.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Image/showindex-logo_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:05:04+08:00 ] 127.0.0.1 GET /Image/indexsearch-icon.png
+[ info ] lsy.com/Image/indexsearch-icon.png [运行时间：0.040007s][吞吐率：25.00req/s] [内存消耗：1,127.34kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Image',
+    1 => 'indexsearch-icon.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'referer' => 'http://lsy.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Image/indexsearch-icon_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:05:04+08:00 ] 127.0.0.1 GET /Image/downloadclient-code.png
+[ info ] lsy.com/Image/downloadclient-code.png [运行时间：0.022502s][吞吐率：44.44req/s] [内存消耗：1,127.20kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Image',
+    1 => 'downloadclient-code.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'referer' => 'http://lsy.com/Css/home/style.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Image/downloadclient-code_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:05:04+08:00 ] 127.0.0.1 GET /Image/standardalliance.png
+[ info ] lsy.com/Image/standardalliance.png [运行时间：0.027729s][吞吐率：36.06req/s] [内存消耗：1,127.36kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Image',
+    1 => 'standardalliance.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'referer' => 'http://lsy.com/Css/home/style.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Image/standardalliance_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:05:16+08:00 ] 127.0.0.1 GET /
+[ info ] lsy.com/ [运行时间：0.032815s][吞吐率：30.47req/s] [内存消耗：1,495.28kb] [文件加载：58]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\lsybk\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\lsybk\\runtime\\session',
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\phpStudy\WWW\lsybk\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\lsybk\public/../application/home\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'mName',
+  2 => 'cName',
+  3 => 'aName',
+  4 => 'menu',
+  5 => 'kx',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:05:16+08:00 ] 127.0.0.1 GET /Image/personaladmin.png
+[ info ] lsy.com/Image/personaladmin.png [运行时间：0.023344s][吞吐率：42.84req/s] [内存消耗：1,127.30kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Image',
+    1 => 'personaladmin.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'referer' => 'http://lsy.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Image/personaladmin_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:05:16+08:00 ] 127.0.0.1 GET /Image/indexsearch-icon.png
+[ info ] lsy.com/Image/indexsearch-icon.png [运行时间：0.032269s][吞吐率：30.99req/s] [内存消耗：1,127.34kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Image',
+    1 => 'indexsearch-icon.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'referer' => 'http://lsy.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Image/indexsearch-icon_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:05:16+08:00 ] 127.0.0.1 GET /Image/standardalliance.png
+[ info ] lsy.com/Image/standardalliance.png [运行时间：0.025892s][吞吐率：38.62req/s] [内存消耗：1,127.04kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Image',
+    1 => 'standardalliance.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'referer' => 'http://lsy.com/Css/home/style.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Image/standardalliance_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:05:16+08:00 ] 127.0.0.1 GET /Image/downloadclient-code.png
+[ info ] lsy.com/Image/downloadclient-code.png [运行时间：0.027359s][吞吐率：36.55req/s] [内存消耗：1,127.20kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Image',
+    1 => 'downloadclient-code.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'referer' => 'http://lsy.com/Css/home/style.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Image/downloadclient-code_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:08:00+08:00 ] 127.0.0.1 GET /
+[ info ] lsy.com/ [运行时间：0.031744s][吞吐率：31.50req/s] [内存消耗：1,379.13kb] [文件加载：56]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\lsybk\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\lsybk\\runtime\\session',
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\phpStudy\WWW\lsybk\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\lsybk\public/../application/home\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'mName',
+  2 => 'cName',
+  3 => 'aName',
+  4 => 'menu',
+  5 => 'kx',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:08:00+08:00 ] 127.0.0.1 GET /Image/indexsearch-icon.png
+[ info ] lsy.com/Image/indexsearch-icon.png [运行时间：0.020193s][吞吐率：49.52req/s] [内存消耗：1,127.05kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Image',
+    1 => 'indexsearch-icon.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'referer' => 'http://lsy.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Image/indexsearch-icon_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:08:00+08:00 ] 127.0.0.1 GET /Image/personaladmin.png
+[ info ] lsy.com/Image/personaladmin.png [运行时间：0.024751s][吞吐率：40.40req/s] [内存消耗：1,127.02kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Image',
+    1 => 'personaladmin.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'referer' => 'http://lsy.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Image/personaladmin_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:08:00+08:00 ] 127.0.0.1 GET /Image/standardalliance.png
+[ info ] lsy.com/Image/standardalliance.png [运行时间：0.021692s][吞吐率：46.10req/s] [内存消耗：1,127.04kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Image',
+    1 => 'standardalliance.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'referer' => 'http://lsy.com/Css/home/style.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Image/standardalliance_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:08:00+08:00 ] 127.0.0.1 GET /Image/downloadclient-code.png
+[ info ] lsy.com/Image/downloadclient-code.png [运行时间：0.027441s][吞吐率：36.44req/s] [内存消耗：1,127.20kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Image',
+    1 => 'downloadclient-code.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'referer' => 'http://lsy.com/Css/home/style.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Image/downloadclient-code_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:08:07+08:00 ] 127.0.0.1 GET /
+[ info ] lsy.com/ [运行时间：0.034609s][吞吐率：28.89req/s] [内存消耗：1,495.27kb] [文件加载：58]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\lsybk\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\lsybk\\runtime\\session',
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\phpStudy\WWW\lsybk\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\lsybk\public/../application/home\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'mName',
+  2 => 'cName',
+  3 => 'aName',
+  4 => 'menu',
+  5 => 'kx',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:08:08+08:00 ] 127.0.0.1 GET /Image/personaladmin.png
+[ info ] lsy.com/Image/personaladmin.png [运行时间：0.029454s][吞吐率：33.95req/s] [内存消耗：1,127.30kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Image',
+    1 => 'personaladmin.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'referer' => 'http://lsy.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Image/personaladmin_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:08:08+08:00 ] 127.0.0.1 GET /Image/indexsearch-icon.png
+[ info ] lsy.com/Image/indexsearch-icon.png [运行时间：0.030254s][吞吐率：33.05req/s] [内存消耗：1,127.34kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Image',
+    1 => 'indexsearch-icon.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'referer' => 'http://lsy.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Image/indexsearch-icon_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:08:08+08:00 ] 127.0.0.1 GET /Image/downloadclient-code.png
+[ info ] lsy.com/Image/downloadclient-code.png [运行时间：0.021299s][吞吐率：46.95req/s] [内存消耗：1,127.45kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Image',
+    1 => 'downloadclient-code.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'referer' => 'http://lsy.com/Css/home/style.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Image/downloadclient-code_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:08:08+08:00 ] 127.0.0.1 GET /Images/logo2.png
+[ info ] lsy.com/Images/logo2.png [运行时间：0.074476s][吞吐率：13.43req/s] [内存消耗：1,126.86kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Images',
+    1 => 'logo2.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'referer' => 'http://lsy.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Images/logo2_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:08:08+08:00 ] 127.0.0.1 GET /Image/standardalliance.png
+[ info ] lsy.com/Image/standardalliance.png [运行时间：0.035003s][吞吐率：28.57req/s] [内存消耗：1,127.36kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Image',
+    1 => 'standardalliance.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'referer' => 'http://lsy.com/Css/home/style.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Image/standardalliance_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:08:23+08:00 ] 127.0.0.1 GET /
+[ info ] lsy.com/ [运行时间：0.046862s][吞吐率：21.34req/s] [内存消耗：1,495.27kb] [文件加载：58]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\lsybk\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\lsybk\\runtime\\session',
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\phpStudy\WWW\lsybk\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\lsybk\public/../application/home\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'mName',
+  2 => 'cName',
+  3 => 'aName',
+  4 => 'menu',
+  5 => 'kx',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:08:23+08:00 ] 127.0.0.1 GET /Images/logo2.jpg
+[ info ] lsy.com/Images/logo2.jpg [运行时间：0.026349s][吞吐率：37.95req/s] [内存消耗：1,126.86kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Images',
+    1 => 'logo2.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'referer' => 'http://lsy.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Images/logo2_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:08:23+08:00 ] 127.0.0.1 GET /Image/personaladmin.png
+[ info ] lsy.com/Image/personaladmin.png [运行时间：0.022573s][吞吐率：44.30req/s] [内存消耗：1,127.30kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Image',
+    1 => 'personaladmin.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'referer' => 'http://lsy.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Image/personaladmin_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:08:23+08:00 ] 127.0.0.1 GET /Image/indexsearch-icon.png
+[ info ] lsy.com/Image/indexsearch-icon.png [运行时间：0.052238s][吞吐率：19.14req/s] [内存消耗：1,127.05kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Image',
+    1 => 'indexsearch-icon.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'referer' => 'http://lsy.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Image/indexsearch-icon_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:08:23+08:00 ] 127.0.0.1 GET /Image/downloadclient-code.png
+[ info ] lsy.com/Image/downloadclient-code.png [运行时间：0.027287s][吞吐率：36.65req/s] [内存消耗：1,127.20kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Image',
+    1 => 'downloadclient-code.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'referer' => 'http://lsy.com/Css/home/style.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Image/downloadclient-code_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:08:23+08:00 ] 127.0.0.1 GET /Image/standardalliance.png
+[ info ] lsy.com/Image/standardalliance.png [运行时间：0.035418s][吞吐率：28.23req/s] [内存消耗：1,127.04kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Image',
+    1 => 'standardalliance.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'referer' => 'http://lsy.com/Css/home/style.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Image/standardalliance_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:08:42+08:00 ] 127.0.0.1 GET /
+[ info ] lsy.com/ [运行时间：0.035960s][吞吐率：27.81req/s] [内存消耗：1,379.43kb] [文件加载：56]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\lsybk\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\lsybk\\runtime\\session',
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\phpStudy\WWW\lsybk\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\lsybk\public/../application/home\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'mName',
+  2 => 'cName',
+  3 => 'aName',
+  4 => 'menu',
+  5 => 'kx',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:08:42+08:00 ] 127.0.0.1 GET /Image/indexsearch-icon.png
+[ info ] lsy.com/Image/indexsearch-icon.png [运行时间：0.025893s][吞吐率：38.62req/s] [内存消耗：1,127.34kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Image',
+    1 => 'indexsearch-icon.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'referer' => 'http://lsy.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Image/indexsearch-icon_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:08:42+08:00 ] 127.0.0.1 GET /Image/personaladmin.png
+[ info ] lsy.com/Image/personaladmin.png [运行时间：0.033354s][吞吐率：29.98req/s] [内存消耗：1,127.30kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Image',
+    1 => 'personaladmin.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'referer' => 'http://lsy.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Image/personaladmin_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:08:42+08:00 ] 127.0.0.1 GET /Image/standardalliance.png
+[ info ] lsy.com/Image/standardalliance.png [运行时间：0.024925s][吞吐率：40.12req/s] [内存消耗：1,127.04kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Image',
+    1 => 'standardalliance.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'referer' => 'http://lsy.com/Css/home/style.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Image/standardalliance_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:08:42+08:00 ] 127.0.0.1 GET /Image/downloadclient-code.png
+[ info ] lsy.com/Image/downloadclient-code.png [运行时间：0.027080s][吞吐率：36.93req/s] [内存消耗：1,127.20kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Image',
+    1 => 'downloadclient-code.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'referer' => 'http://lsy.com/Css/home/style.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Image/downloadclient-code_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:08:56+08:00 ] 127.0.0.1 GET /
+[ info ] lsy.com/ [运行时间：0.030947s][吞吐率：32.31req/s] [内存消耗：1,493.84kb] [文件加载：58]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\lsybk\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\lsybk\\runtime\\session',
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\phpStudy\WWW\lsybk\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\lsybk\public/../application/home\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'mName',
+  2 => 'cName',
+  3 => 'aName',
+  4 => 'menu',
+  5 => 'kx',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:08:56+08:00 ] 127.0.0.1 GET /Image/indexsearch-icon.png
+[ info ] lsy.com/Image/indexsearch-icon.png [运行时间：0.025168s][吞吐率：39.73req/s] [内存消耗：1,127.34kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Image',
+    1 => 'indexsearch-icon.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'referer' => 'http://lsy.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Image/indexsearch-icon_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:08:56+08:00 ] 127.0.0.1 GET /Image/personaladmin.png
+[ info ] lsy.com/Image/personaladmin.png [运行时间：0.026277s][吞吐率：38.06req/s] [内存消耗：1,127.30kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Image',
+    1 => 'personaladmin.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'referer' => 'http://lsy.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Image/personaladmin_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:08:56+08:00 ] 127.0.0.1 GET /Image/downloadclient-code.png
+[ info ] lsy.com/Image/downloadclient-code.png [运行时间：0.023371s][吞吐率：42.79req/s] [内存消耗：1,127.20kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Image',
+    1 => 'downloadclient-code.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'referer' => 'http://lsy.com/Css/home/style.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Image/downloadclient-code_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:09:54+08:00 ] 127.0.0.1 GET /
+[ info ] lsy.com/ [运行时间：0.032495s][吞吐率：30.77req/s] [内存消耗：1,493.84kb] [文件加载：58]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\lsybk\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\lsybk\\runtime\\session',
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\phpStudy\WWW\lsybk\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\lsybk\public/../application/home\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'mName',
+  2 => 'cName',
+  3 => 'aName',
+  4 => 'menu',
+  5 => 'kx',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:09:54+08:00 ] 127.0.0.1 GET /Image/personaladmin.png
+[ info ] lsy.com/Image/personaladmin.png [运行时间：0.028455s][吞吐率：35.14req/s] [内存消耗：1,127.30kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Image',
+    1 => 'personaladmin.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'referer' => 'http://lsy.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Image/personaladmin_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:09:54+08:00 ] 127.0.0.1 GET /Image/downloadclient-code.png
+[ info ] lsy.com/Image/downloadclient-code.png [运行时间：0.021190s][吞吐率：47.19req/s] [内存消耗：1,127.20kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Image',
+    1 => 'downloadclient-code.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'referer' => 'http://lsy.com/Css/home/style.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Image/downloadclient-code_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:10:02+08:00 ] 127.0.0.1 GET /
+[ info ] lsy.com/ [运行时间：0.033740s][吞吐率：29.64req/s] [内存消耗：1,493.80kb] [文件加载：58]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\lsybk\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\lsybk\\runtime\\session',
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\phpStudy\WWW\lsybk\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\lsybk\public/../application/home\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'mName',
+  2 => 'cName',
+  3 => 'aName',
+  4 => 'menu',
+  5 => 'kx',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:10:02+08:00 ] 127.0.0.1 GET /Image/personaladmin.png
+[ info ] lsy.com/Image/personaladmin.png [运行时间：0.023924s][吞吐率：41.80req/s] [内存消耗：1,127.30kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Image',
+    1 => 'personaladmin.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'referer' => 'http://lsy.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Image/personaladmin_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:10:02+08:00 ] 127.0.0.1 GET /Image/downloadclient-code.png
+[ info ] lsy.com/Image/downloadclient-code.png [运行时间：0.022864s][吞吐率：43.74req/s] [内存消耗：1,127.20kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Image',
+    1 => 'downloadclient-code.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'referer' => 'http://lsy.com/Css/home/style.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Image/downloadclient-code_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:10:15+08:00 ] 127.0.0.1 GET /
+[ info ] lsy.com/ [运行时间：0.050532s][吞吐率：19.79req/s] [内存消耗：1,493.80kb] [文件加载：58]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\lsybk\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\lsybk\\runtime\\session',
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\phpStudy\WWW\lsybk\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\lsybk\public/../application/home\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'mName',
+  2 => 'cName',
+  3 => 'aName',
+  4 => 'menu',
+  5 => 'kx',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:10:15+08:00 ] 127.0.0.1 GET /Image/personaladmin.png
+[ info ] lsy.com/Image/personaladmin.png [运行时间：0.027654s][吞吐率：36.16req/s] [内存消耗：1,127.30kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Image',
+    1 => 'personaladmin.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'referer' => 'http://lsy.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Image/personaladmin_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:10:15+08:00 ] 127.0.0.1 GET /Image/downloadclient-code.png
+[ info ] lsy.com/Image/downloadclient-code.png [运行时间：0.020265s][吞吐率：49.35req/s] [内存消耗：1,127.20kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Image',
+    1 => 'downloadclient-code.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'referer' => 'http://lsy.com/Css/home/style.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Image/downloadclient-code_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:10:16+08:00 ] 127.0.0.1 GET /
+[ info ] lsy.com/ [运行时间：0.028822s][吞吐率：34.70req/s] [内存消耗：1,379.40kb] [文件加载：56]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\lsybk\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\lsybk\\runtime\\session',
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\phpStudy\WWW\lsybk\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\lsybk\public/../application/home\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'mName',
+  2 => 'cName',
+  3 => 'aName',
+  4 => 'menu',
+  5 => 'kx',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:10:16+08:00 ] 127.0.0.1 GET /Image/personaladmin.png
+[ info ] lsy.com/Image/personaladmin.png [运行时间：0.022368s][吞吐率：44.71req/s] [内存消耗：1,127.30kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Image',
+    1 => 'personaladmin.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'referer' => 'http://lsy.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Image/personaladmin_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:10:16+08:00 ] 127.0.0.1 GET /Image/downloadclient-code.png
+[ info ] lsy.com/Image/downloadclient-code.png [运行时间：0.024025s][吞吐率：41.62req/s] [内存消耗：1,127.20kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Image',
+    1 => 'downloadclient-code.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'referer' => 'http://lsy.com/Css/home/style.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Image/downloadclient-code_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:10:18+08:00 ] 127.0.0.1 GET /Css/home/bootstrap.min.css.map
+[ info ] lsy.com/Css/home/bootstrap.min.css.map [运行时间：0.024853s][吞吐率：40.24req/s] [内存消耗：1,126.65kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Css',
+    1 => 'home',
+    2 => 'bootstrap.min.css.map',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Css/home/bootstrap_min_css_map' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:10:32+08:00 ] 127.0.0.1 GET /
+[ info ] lsy.com/ [运行时间：0.027376s][吞吐率：36.53req/s] [内存消耗：1,379.40kb] [文件加载：56]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\lsybk\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\lsybk\\runtime\\session',
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\phpStudy\WWW\lsybk\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\lsybk\public/../application/home\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'mName',
+  2 => 'cName',
+  3 => 'aName',
+  4 => 'menu',
+  5 => 'kx',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:10:32+08:00 ] 127.0.0.1 GET /Image/personaladmin.png
+[ info ] lsy.com/Image/personaladmin.png [运行时间：0.026157s][吞吐率：38.23req/s] [内存消耗：1,127.30kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Image',
+    1 => 'personaladmin.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'referer' => 'http://lsy.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Image/personaladmin_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:10:32+08:00 ] 127.0.0.1 GET /Image/downloadclient-code.png
+[ info ] lsy.com/Image/downloadclient-code.png [运行时间：0.021036s][吞吐率：47.54req/s] [内存消耗：1,127.20kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Image',
+    1 => 'downloadclient-code.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'referer' => 'http://lsy.com/Css/home/style.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Image/downloadclient-code_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:10:33+08:00 ] 127.0.0.1 GET /Css/home/bootstrap.min.css.map
+[ info ] lsy.com/Css/home/bootstrap.min.css.map [运行时间：0.023006s][吞吐率：43.47req/s] [内存消耗：1,127.03kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Css',
+    1 => 'home',
+    2 => 'bootstrap.min.css.map',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'origin' => 'null',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Css/home/bootstrap_min_css_map' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:10:44+08:00 ] 127.0.0.1 GET /
+[ info ] lsy.com/ [运行时间：0.031873s][吞吐率：31.37req/s] [内存消耗：1,493.74kb] [文件加载：58]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\lsybk\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\lsybk\\runtime\\session',
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\phpStudy\WWW\lsybk\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\lsybk\public/../application/home\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'mName',
+  2 => 'cName',
+  3 => 'aName',
+  4 => 'menu',
+  5 => 'kx',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:10:44+08:00 ] 127.0.0.1 GET /Image/personaladmin.png
+[ info ] lsy.com/Image/personaladmin.png [运行时间：0.025967s][吞吐率：38.51req/s] [内存消耗：1,127.30kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Image',
+    1 => 'personaladmin.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'referer' => 'http://lsy.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Image/personaladmin_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:10:44+08:00 ] 127.0.0.1 GET /Image/downloadclient-code.png
+[ info ] lsy.com/Image/downloadclient-code.png [运行时间：0.020015s][吞吐率：49.96req/s] [内存消耗：1,127.45kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Image',
+    1 => 'downloadclient-code.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'referer' => 'http://lsy.com/Css/home/style.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Image/downloadclient-code_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:10:44+08:00 ] 127.0.0.1 GET /Css/home/bootstrap.min.css.map
+[ info ] lsy.com/Css/home/bootstrap.min.css.map [运行时间：0.023974s][吞吐率：41.71req/s] [内存消耗：1,127.03kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Css',
+    1 => 'home',
+    2 => 'bootstrap.min.css.map',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'origin' => 'null',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Css/home/bootstrap_min_css_map' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:11:52+08:00 ] 127.0.0.1 GET /
+[ info ] lsy.com/ [运行时间：0.040487s][吞吐率：24.70req/s] [内存消耗：1,493.84kb] [文件加载：58]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\lsybk\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\lsybk\\runtime\\session',
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\phpStudy\WWW\lsybk\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\lsybk\public/../application/home\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'mName',
+  2 => 'cName',
+  3 => 'aName',
+  4 => 'menu',
+  5 => 'kx',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:11:52+08:00 ] 127.0.0.1 GET /Image/personaladmin.png
+[ info ] lsy.com/Image/personaladmin.png [运行时间：0.028690s][吞吐率：34.86req/s] [内存消耗：1,127.30kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Image',
+    1 => 'personaladmin.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'referer' => 'http://lsy.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Image/personaladmin_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:11:52+08:00 ] 127.0.0.1 GET /Image/downloadclient-code.png
+[ info ] lsy.com/Image/downloadclient-code.png [运行时间：0.024098s][吞吐率：41.50req/s] [内存消耗：1,127.45kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Image',
+    1 => 'downloadclient-code.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'referer' => 'http://lsy.com/Css/home/style.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Image/downloadclient-code_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:11:52+08:00 ] 127.0.0.1 GET /Css/home/bootstrap.min.css.map
+[ info ] lsy.com/Css/home/bootstrap.min.css.map [运行时间：0.022350s][吞吐率：44.74req/s] [内存消耗：1,127.03kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Css',
+    1 => 'home',
+    2 => 'bootstrap.min.css.map',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'origin' => 'null',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Css/home/bootstrap_min_css_map' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:12:08+08:00 ] 127.0.0.1 GET /
+[ info ] lsy.com/ [运行时间：0.030490s][吞吐率：32.80req/s] [内存消耗：1,493.80kb] [文件加载：58]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\lsybk\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\lsybk\\runtime\\session',
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\phpStudy\WWW\lsybk\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\lsybk\public/../application/home\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'mName',
+  2 => 'cName',
+  3 => 'aName',
+  4 => 'menu',
+  5 => 'kx',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:12:08+08:00 ] 127.0.0.1 GET /Image/personaladmin.png
+[ info ] lsy.com/Image/personaladmin.png [运行时间：0.028178s][吞吐率：35.49req/s] [内存消耗：1,127.30kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Image',
+    1 => 'personaladmin.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'referer' => 'http://lsy.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Image/personaladmin_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:12:08+08:00 ] 127.0.0.1 GET /Image/downloadclient-code.png
+[ info ] lsy.com/Image/downloadclient-code.png [运行时间：0.020649s][吞吐率：48.43req/s] [内存消耗：1,127.45kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Image',
+    1 => 'downloadclient-code.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'referer' => 'http://lsy.com/Css/home/style.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Image/downloadclient-code_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:12:09+08:00 ] 127.0.0.1 GET /Css/home/bootstrap.min.css.map
+[ info ] lsy.com/Css/home/bootstrap.min.css.map [运行时间：0.021399s][吞吐率：46.73req/s] [内存消耗：1,127.03kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Css',
+    1 => 'home',
+    2 => 'bootstrap.min.css.map',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'origin' => 'null',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Css/home/bootstrap_min_css_map' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:12:40+08:00 ] 127.0.0.1 GET /
+[ info ] lsy.com/ [运行时间：0.029504s][吞吐率：33.89req/s] [内存消耗：1,444.48kb] [文件加载：57]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\lsybk\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\lsybk\\runtime\\session',
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\phpStudy\WWW\lsybk\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\lsybk\public/../application/home\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'mName',
+  2 => 'cName',
+  3 => 'aName',
+  4 => 'menu',
+  5 => 'kx',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:12:40+08:00 ] 127.0.0.1 GET /Css/home/bootstrap.min.css.map
+[ info ] lsy.com/Css/home/bootstrap.min.css.map [运行时间：0.022930s][吞吐率：43.61req/s] [内存消耗：1,127.03kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Css',
+    1 => 'home',
+    2 => 'bootstrap.min.css.map',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'origin' => 'null',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Css/home/bootstrap_min_css_map' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:12:54+08:00 ] 127.0.0.1 GET /
+[ info ] lsy.com/ [运行时间：0.028208s][吞吐率：35.45req/s] [内存消耗：1,444.42kb] [文件加载：57]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\lsybk\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\lsybk\\runtime\\session',
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\phpStudy\WWW\lsybk\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\lsybk\public/../application/home\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'mName',
+  2 => 'cName',
+  3 => 'aName',
+  4 => 'menu',
+  5 => 'kx',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:12:55+08:00 ] 127.0.0.1 GET /Css/home/bootstrap.min.css.map
+[ info ] lsy.com/Css/home/bootstrap.min.css.map [运行时间：0.022918s][吞吐率：43.63req/s] [内存消耗：1,127.03kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Css',
+    1 => 'home',
+    2 => 'bootstrap.min.css.map',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'origin' => 'null',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Css/home/bootstrap_min_css_map' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:13:08+08:00 ] 127.0.0.1 GET /
+[ info ] lsy.com/ [运行时间：0.031243s][吞吐率：32.01req/s] [内存消耗：1,444.45kb] [文件加载：57]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\lsybk\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\lsybk\\runtime\\session',
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\phpStudy\WWW\lsybk\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\lsybk\public/../application/home\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'mName',
+  2 => 'cName',
+  3 => 'aName',
+  4 => 'menu',
+  5 => 'kx',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:13:09+08:00 ] 127.0.0.1 GET /Css/home/bootstrap.min.css.map
+[ info ] lsy.com/Css/home/bootstrap.min.css.map [运行时间：0.025068s][吞吐率：39.89req/s] [内存消耗：1,127.03kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Css',
+    1 => 'home',
+    2 => 'bootstrap.min.css.map',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'origin' => 'null',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Css/home/bootstrap_min_css_map' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:13:16+08:00 ] 127.0.0.1 GET /
+[ info ] lsy.com/ [运行时间：0.028707s][吞吐率：34.83req/s] [内存消耗：1,444.45kb] [文件加载：57]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\lsybk\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\lsybk\\runtime\\session',
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\phpStudy\WWW\lsybk\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\lsybk\public/../application/home\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'mName',
+  2 => 'cName',
+  3 => 'aName',
+  4 => 'menu',
+  5 => 'kx',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:13:16+08:00 ] 127.0.0.1 GET /Css/home/bootstrap.min.css.map
+[ info ] lsy.com/Css/home/bootstrap.min.css.map [运行时间：0.022617s][吞吐率：44.21req/s] [内存消耗：1,127.03kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Css',
+    1 => 'home',
+    2 => 'bootstrap.min.css.map',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'origin' => 'null',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Css/home/bootstrap_min_css_map' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:13:23+08:00 ] 127.0.0.1 GET /
+[ info ] lsy.com/ [运行时间：0.028999s][吞吐率：34.48req/s] [内存消耗：1,444.45kb] [文件加载：57]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\lsybk\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\lsybk\\runtime\\session',
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\phpStudy\WWW\lsybk\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\lsybk\public/../application/home\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'mName',
+  2 => 'cName',
+  3 => 'aName',
+  4 => 'menu',
+  5 => 'kx',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:13:23+08:00 ] 127.0.0.1 GET /Css/home/bootstrap.min.css.map
+[ info ] lsy.com/Css/home/bootstrap.min.css.map [运行时间：0.023829s][吞吐率：41.97req/s] [内存消耗：1,127.03kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Css',
+    1 => 'home',
+    2 => 'bootstrap.min.css.map',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'origin' => 'null',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Css/home/bootstrap_min_css_map' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:13:28+08:00 ] 127.0.0.1 GET /
+[ info ] lsy.com/ [运行时间：0.030090s][吞吐率：33.23req/s] [内存消耗：1,444.45kb] [文件加载：57]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\lsybk\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\lsybk\\runtime\\session',
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\phpStudy\WWW\lsybk\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\lsybk\public/../application/home\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'mName',
+  2 => 'cName',
+  3 => 'aName',
+  4 => 'menu',
+  5 => 'kx',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:13:29+08:00 ] 127.0.0.1 GET /Css/home/bootstrap.min.css.map
+[ info ] lsy.com/Css/home/bootstrap.min.css.map [运行时间：0.024043s][吞吐率：41.59req/s] [内存消耗：1,127.03kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Css',
+    1 => 'home',
+    2 => 'bootstrap.min.css.map',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'origin' => 'null',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Css/home/bootstrap_min_css_map' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:13:33+08:00 ] 127.0.0.1 GET /
+[ info ] lsy.com/ [运行时间：0.030157s][吞吐率：33.16req/s] [内存消耗：1,444.45kb] [文件加载：57]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\lsybk\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\lsybk\\runtime\\session',
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\phpStudy\WWW\lsybk\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\lsybk\public/../application/home\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'mName',
+  2 => 'cName',
+  3 => 'aName',
+  4 => 'menu',
+  5 => 'kx',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:13:33+08:00 ] 127.0.0.1 GET /Css/home/bootstrap.min.css.map
+[ info ] lsy.com/Css/home/bootstrap.min.css.map [运行时间：0.024218s][吞吐率：41.29req/s] [内存消耗：1,127.03kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Css',
+    1 => 'home',
+    2 => 'bootstrap.min.css.map',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'origin' => 'null',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Css/home/bootstrap_min_css_map' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:13:50+08:00 ] 127.0.0.1 GET /
+[ info ] lsy.com/ [运行时间：0.026809s][吞吐率：37.30req/s] [内存消耗：1,444.45kb] [文件加载：57]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\lsybk\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\lsybk\\runtime\\session',
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\phpStudy\WWW\lsybk\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\lsybk\public/../application/home\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'mName',
+  2 => 'cName',
+  3 => 'aName',
+  4 => 'menu',
+  5 => 'kx',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:13:50+08:00 ] 127.0.0.1 GET /Css/home/bootstrap.min.css.map
+[ info ] lsy.com/Css/home/bootstrap.min.css.map [运行时间：0.024331s][吞吐率：41.10req/s] [内存消耗：1,127.03kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Css',
+    1 => 'home',
+    2 => 'bootstrap.min.css.map',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'origin' => 'null',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Css/home/bootstrap_min_css_map' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:13:59+08:00 ] 127.0.0.1 GET /
+[ info ] lsy.com/ [运行时间：0.029431s][吞吐率：33.98req/s] [内存消耗：1,444.45kb] [文件加载：57]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=lcrur2b9sapc0r5f8hgt6jgih0',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\lsybk\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\lsybk\\runtime\\session',
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\phpStudy\WWW\lsybk\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\lsybk\public/../application/home\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'mName',
+  2 => 'cName',
+  3 => 'aName',
+  4 => 'menu',
+  5 => 'kx',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T19:14:00+08:00 ] 127.0.0.1 GET /Css/home/bootstrap.min.css.map
+[ info ] lsy.com/Css/home/bootstrap.min.css.map [运行时间：0.021615s][吞吐率：46.26req/s] [内存消耗：1,127.03kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\lsybk\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Css',
+    1 => 'home',
+    2 => 'bootstrap.min.css.map',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'origin' => 'null',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'lsy.com',
+)
+[ info ] [ PARAM ] array (
+  '/Css/home/bootstrap_min_css_map' => '',
+)
+[ info ] [ LOG ] INIT File

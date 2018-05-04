@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link href="https://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+	<title>定制别墅</title>
+	<link rel="stylesheet" type="text/css" href="__JS__/index/src/css/style.css">
+	<link href="__JS__/index/src/css/swiper.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="__JS__/index/src/css/public.css">
+	<link rel="stylesheet" type="text/css" href="__JS__/index/src/css/page_style.css">
+</head>
+<body>
+	<div class="container">
+		<header class="home">
+			<a class="return_back"><img src="__JS__/index/src/image/return_back.png" width="36px" /></a>
+			<div class="swiper-container" style="overflow: hidden;">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="{$data.vd_logo}" width="100%" /></div>
+				</div>
+			    <!-- 如果需要分页器 -->
+			    <div class="swiper-pagination current_class"></div>
+			</div>
+		</header>
+		<div class="content">
+			<div class="titlehaed text-center">
+				<h1>{$data.vd_name}</h1>
+				<p>
+					<span>{$data.vd_price}万</span>
+					<s>{$data.vd_name}</s>
+				</p>
+				<a>*此价格为毛坯房材料出厂价　不含栏杆费用</a>
+			</div>
+			<!--  -->
+			<nav>
+				<ul class="list text-center">
+					<li class="col-xs-3 col-md-3">
+						<dt><img width="25px" height="25px" src="__JS__/index/src/image/energy_icon.png"></dt>
+						<dd><span>节能环保</span></dd>
+					</li>
+					<li class="col-xs-3 col-md-3">
+						<dt><img width="25px" height="25px" src="__JS__/index/src/image/repair_icon.png"></dt>
+						<dd><span>全时报修</span></dd>
+					</li>
+					<li class="col-xs-3 col-md-3">
+						<dt><img width="25px" height="25px" src="__JS__/index/src/image/longrepair_icon.png"></dt>
+						<dd><span>终身报修</span></dd>
+					</li>
+					<li class="col-xs-3 col-md-3">
+						<dt><img width="20px" height="25px" src="__JS__/index/src/image/settled_icon.png"></dt>
+						<dd><span>30天入驻</span></dd>
+					</li>
+					<li class="col-xs-3 col-md-3">
+						<dt><img width="25px" height="25px" src="__JS__/index/src/image/wholecountry_icon.png"></dt>
+						<dd><span>全国可建</span></dd>
+					</li>
+					<li class="col-xs-3 col-md-3">
+						<dt><img width="22px" height="20px" src="__JS__/index/src/image/notice_icon.png"></dt>
+						<dd><span>通知</span></dd>
+					</li>
+				</ul>
+			</nav>
+			<!-- 别墅详情 -->
+			<ul class="villadetails">
+				<h3 class="title">别墅详情</h3>
+				<li>
+					<span>层高</span>
+					<a>{$data.vd_height}</a>
+				</li>
+				<li>
+					<span>入户门</span>
+					<a>{$data.vd_door}</a>
+				</li>
+				<li>
+					<span>屋面瓦</span>
+					<a>{$data.vd_wmw}</a>
+				</li>
+				<li>
+					<span>窗户</span>
+					<a>{$data.vd_wq}</a>
+				</li>
+				<li>
+					<span>外墙</span>
+					<a>{$data.vd_wq}</a>
+				</li>
+				<li>
+					<span>尺寸</span>
+					<a>{$data.vd_building_area}</a>
+				</li>
+			</ul>
+			<!-- 图片 -->
+			<div class="picture">
+				<h3 class="title">图片</h3>
+				<div class="swiper-container3" style="overflow: hidden;margin-top: 2rem">
+				<div class="my-pagination"><ul class="my-pagination-ul"></ul></div>
+				<div class="swiper-wrapper text-center" style="margin-top: 2rem">
+					<div class="swiper-slide">
+						<volist name="data.wg" id="vo">
+			        	<img width="100%" src="{$vo.img}">
+						</volist>
+			        </div>
+					<div class="swiper-slide">
+						<volist name="data.sn" id="vo">
+							<img width="100%" src="{$vo.img}">
+						</volist>
+			        </div>
+			        <div class="swiper-slide">
+						<volist name="data.xj" id="vo">
+							<img width="100%" src="{$vo.img}">
+						</volist>
+			        </div>
+			        <div class="swiper-slide">
+						<volist name="data.jg" id="vo">
+							<img width="100%" src="{$vo.img}">
+						</volist>
+			        </div>
+			        <div class="swiper-slide">
+						<volist name="data.mj" id="vo">
+							<img width="100%" src="{$vo.img}">
+						</volist>
+			        </div>
+				</div>
+			</div>
+			<!-- 底部悬浮窗 -->
+			<div style="height: 50px"></div>
+			<footer class="classsign">
+				<div class="col-xs-7 col-md-7 text-center" sty>
+					<img width="25px" height="25px" src="__JS__/index/src/image/share_icon.png">
+					<img class="collect" width="28px" height="25px" src="__JS__/index/src/image/collect_icon.png">
+				</div>
+				<div class="col-xs-5 col-md-5 padding" style="height: 60px;">
+					<button class="tosign">立即签约</button>
+				</div>
+			</footer>
+		</div>
+	</div>
+	<!-- 下载APP -->
+	<div id="fade">
+		<ul class="tolink text-center">
+			<li class="message">
+				您还未下载定荣家APP,请立<br>即前往应用商店进行下载
+			</li>
+			<li class="clicklink">
+				<dd class="col-md-6 col-xs-6 wait">再等等</dd>
+				<dd class="col-md-6 col-xs-6 goto">立即前往</dd>
+			</li>
+		</ul>
+	</div>
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="__JS__/index/src/js/swiper.min.js"></script>
+<script type="text/javascript" src="__JS__/index/src/js/main.js"></script>
+<script type="text/javascript">
+	var mySwiper = new Swiper('.swiper-container',{
+	    direction: 'horizontal',
+	    loop: true,
+    	// 如果需要分页器
+	    pagination: {
+	        el: '.swiper-pagination',
+	        hideOnClick :false,
+	        type: 'fraction',
+	        renderFraction: function (currentClass, totalClass) {
+	          	return '<span class="' + currentClass + '"></span>' +
+	                 ' / ' +
+	                 '<span class="' + totalClass + '"></span>';
+	                 console.log(currentClass);
+        	},
+  		},
+  	})   
+	var mySwiper3 = new Swiper('.swiper-container3',{
+		pagination: '.my-pagination-ul',
+		paginationClickable: true,
+		paginationBulletRender: function (index, className) {
+			switch (index) {
+			  case 0: name='外观图';break;
+			  case 1: name='室内图';break;
+			  case 2: name='细节图';break;
+			  case 3: name='建筑结构图';break;
+			  case 4: name='面积图';break;
+			  default: name='';
+			}
+	      	return '<li class="' + className + '">' + name + '</li>';
+	  	}
+	})
+</script>
+</html>

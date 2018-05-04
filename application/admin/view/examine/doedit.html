@@ -1,0 +1,28 @@
+<layout name="layout" />
+<div style="padding: 20px;">
+    <form class="layui-form">
+        <div class="layui-form-item">
+            <label class="layui-form-label">审核状态</label>
+            <div class="layui-input-block">
+                <input type="text" name="topic" value="{$data.auditing}"  lay-verify="required" placeholder="请输入标题" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">审核说明</label>
+            <div class="layui-input-block">
+                <textarea name="describe" placeholder="请输入内容" class="layui-textarea">{$data.content}</textarea>
+            </div>
+        </div>
+
+
+
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button class="layui-btn" lay-submit lay-filter="formEdit" id="submit">立即提交</button>
+                <input type="hidden" name="id" value="{$data.id}">
+                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+            </div>
+        </div>
+    </form>
+
+</div>

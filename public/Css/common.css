@@ -1,0 +1,125 @@
+@charset "utf-8";
+
+*{ padding: 0; margin:0;}
+header{height:60px; background:#fff}
+
+.pagination{text-align: center;}
+
+.pagination li{display: inline-block;min-width:35px;border:1px solid #ccc;line-height:20px;margin-left:2px;font-size:15px;
+    cursor: pointer;}
+.pagination li:hover{background: #5a98de;}
+.pagination li:first-child{margin: 0;}
+.pagination li:last-child{margin: 0;}
+.pagination li a{display: block}
+/*上传图片样式*/
+li {
+    list-style-type: none;
+}
+
+.list {
+    padding: 10px;
+}
+
+.list:after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+}
+
+.list li {
+    position: relative;
+    float: left;
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+}
+
+.list li:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 1px;
+    margin-top: -1px;
+    margin-left: -15px;
+    background-color: #ccc;
+}
+
+.list li:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1px;
+    height: 30px;
+    margin-top: -15px;
+    margin-left: -1px;
+    background-color: #ccc;
+}
+
+.list li img {
+    position: relative;
+    z-index: 2;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.del_span{color:#f60}
+.list input[type="file"] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    opacity: 0;
+}
+.d-c-r-bottom span.wxts{color:#666; display: inline-block; line-height:40px;text-indent:1em;font-weight:bold;}
+
+/*上传图片css**/
+.layui-upload-img{
+    border:1px solid #eee;
+}
+::-webkit-scrollbar
+{
+    width: 16px;
+    height: 16px;
+    background-color: #F5F5F5;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #eee;
+}
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #555;
+}
+.w-e-text{overflow: auto !important;}
+.am-topbar-inverse {
+    background: #fff;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.2);
+    border: none;
+}
+.am-topbar{background: #fff !important;border: none !important;height:70px;}
+.am-topbar h1{background:#fff !important}
+.am-topbar .am-container{background-color: #fff !important;}
+.am-topbar .am-container .am-collapse{background-color: #fff !important;}
+.am-topbar .am-container .am-collapse ul{background-color: #fff !important;}
+.am-topbar .am-container .am-collapse ul li{background-color: #fff !important;}
+.gg{margin: 82px 0 0 10px;}
+.screen-img{width:120px; height:120px; border:1px solid #eee}

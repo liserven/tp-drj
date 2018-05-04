@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+address,cite,dfn,em,var,i{font-style:normal}
+code,kbd,pre,samp{font-family:courier new,courier,monospace}
+form{display:inline}
+small{font-size:14px}
+ul,ol,li{list-style:none}
+a{text-decoration:none;}
+a:hover, a:active, a:focus{text-decoration: none;}
+a:active{}
+img{vertical-align:middle;border:0;-ms-interpolation-mode:bicubic}
+button,input,select,textarea{-webkit-appearance:none; border:0; background:none; font-size:100%; vertical-align:middle; outline:none; font-family:'Microsoft Yahei','Simsun',Arial, Helvetica, sans-serif;}
+button:active,input:active,select:active,textarea:active{outline:none;}
+
+table{border-collapse:collapse;border-spacing:0}
+textarea{resize:none}
+
+.fn-left{ float:left; display:inline}
+.fn-right{ float:right; display:inline}
+
+.text-left{ text-align:left!important;}
+.text-right{ text-align:right!important;}
+.text-center{ text-align:center!important;}
+.hidden{display:none}
+header, footer, article, section, nav, menu, hgroup {display: block;clear:all;} 
+
+
+*{-webkit-tap-highlight-color:rgba(0, 0, 0, 0);}
+a{-webkit-tap-highlight-color:rgba(0, 0, 0, 0);} /* 取消链接高亮 */
+
+
+.text-overflow{ overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+
+
+
+/*盒子类*/
+
+.box-flex-box{display:box;display:-webkit-box;display:-moz-box;}
+.box-flex-1{width:1%; box-flex:1;-moz-box-flex:1;-webkit-box-flex:1;}
+.box-flex-2{width:1%; box-flex:2;-moz-box-flex:2;-webkit-box-flex:2;}
+.box-flex-3{width:1%; box-flex:3;-moz-box-flex:3;-webkit-box-flex:3;}
+

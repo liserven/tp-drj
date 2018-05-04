@@ -1,0 +1,48 @@
+<layout name="layout" />
+<div style="padding: 20px;">
+    <form class="layui-form" action="{:url('admin/Member/doAdd')}">
+        <div class="layui-form-item">
+            <label class="layui-form-label">角色名称</label>
+            <div class="layui-input-block">
+                <input type="text" name="topic"  lay-verify="required" placeholder="请输入标题" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">角色描述</label>
+            <div class="layui-input-block">
+                <textarea name="describe" placeholder="请输入内容" class="layui-textarea"></textarea>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">是否启用</label>
+            <div class="layui-input-block">
+                <input type="radio" name="status" value="1" title="启用" checked>
+                <input type="radio" name="status" value="2" title="停用">
+            </div>
+        </div>
+        <div class="layui-form-item layui-form-text">
+            <label class="layui-form-label">对应权限</label>
+            <div class="layui-input-block">
+                <volist name="actionPidList" id="vo">
+                    <fieldset class="layui-elem-field">
+                        <legend>{$vo.ad_topic}</legend>
+                        <div class="layui-field-box">
+                            <volist name="vo['actions']" id="v">
+                                <input type="checkbox" value="{$v.ad_id}" name="actions[]" title="{$v.ad_topic}" lay-skin="primary">
+                            </volist>
+                        </div>
+                    </fieldset>
+                </volist>
+
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button class="layui-btn" lay-submit lay-filter="formDemo" id="submit">立即提交</button>
+                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+            </div>
+        </div>
+    </form>
+
+</div>

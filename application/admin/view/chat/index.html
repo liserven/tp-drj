@@ -1,0 +1,71 @@
+<div id="chat-dialog">
+    <div class="set-out">
+        <ul>
+            <li><a href="javascript:;"><i class="layui-icon">&#xe61a;</i></a></li>
+            <li><a href="javascript:;" class="go-out-chat"><i class="layui-icon">&#x1006;</i></a></li>
+        </ul>
+    </div>
+
+    <div class="chat-content">
+
+        <div class="chat-c-header">
+            <div class="chat-c-header-logo">
+                <img src="{$user.am_logo}" alt="">
+            </div>
+            <div class="chat-c-header-info">
+                <p class="u-nickname">{$user.am_nickname}</p>
+                <p class="u-message">我是简介</p>
+            </div>
+            <div class="both"></div>
+        </div>
+        <div class="chat-c-body">
+            <div class="f-group-list">
+                <ul>
+                    <volist name="friends" id="vo">
+                        <li class="group-list  group-{$vo.id}"><i class="layui-icon group-conf-r">&#xe623;</i>{$vo.name} <span
+                                class="f-num info-right">{$vo.friends|count}</span>
+                        </li>
+                        <div class="friend-list display-none">
+                            <ul>
+                                <volist name="vo.friends" id="v">
+                                    <notempty name="v.am_nickname">
+                                    <li class="f-list"><a href="javascript:;">
+                                        <div class="friend-content">
+                                            <div class="chat-c-header-logo">
+                                                <img src="http://t.cn/RCzsdCq" alt="">
+                                            </div>
+                                            <div class="chat-c-header-info">
+                                                <p class="u-nickname <eq name='v.am_log_status' value='1'>success-color</eq>">{$v.am_nickname}
+                                                    <gt name="v.messages" value="0"><span class="layui-badge-dot info-right"></span></gt>
+                                                </p>
+                                                <p class="u-message">我是简介 <gt name="v.messages" value="0"><span class="info-right"><?php
+                                                         if( isset($v['send_time']))
+                                                         {
+                                                             echo date('H:i', strtotime($v['send_time']) );
+                                                         }else{
+                                                            echo '00:00';
+                                                         }
+                                                    ?></span></gt></p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                        <div class="both"></div>
+                                    </li>
+                                    </notempty>
+                                </volist>
+                            </ul>
+                        </div>
+                    </volist>
+                </ul>
+
+            </div>
+        </div>
+        <div class="chat-c-footer">
+            <ul>
+                <li><a href="javascript:;"><i class="layui-icon">&#xe65f;</i></a></li>
+                <li><a href="javascript:;"><i class="layui-icon">&#xe615;</i></a></li>
+                <li><a href="javascript:;"><i class="layui-icon">&#xe654;</i></a></li>
+            </ul>
+        </div>
+    </div>
+</div>

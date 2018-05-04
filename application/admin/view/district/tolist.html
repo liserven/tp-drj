@@ -1,0 +1,41 @@
+<layout name="layout" />
+<div style="padding: 20px;">
+    <form class="layui-form" action="{:url('admin/Sum/doEdit')}">
+        <div class="layui-form-item">
+            <label class="layui-form-label">选择地区</label>
+            <div class="layui-input-inline">
+                <select name="quiz1" id="culm"  lay-filter="sort">
+                    <option value="">请选择</option>
+                    <volist name="$province" id="vo" >
+                        <option value="{$vo.provice_id}" data-id="{$vo.provice_id}">{$vo.provice_name}</option>
+                    </volist>
+                </select>
+
+
+
+            </div>
+            <div class="layui-input-inline">
+                <select name="id" class="two-sort" lay-filter="two-sort">
+                    <option value="">请选择</option>
+                </select>
+            </div>
+
+
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label" >人数限制</label>
+            <div class="layui-input-inline">
+                <input type="text" name="partner_limit"  lay-verify="required" placeholder="请输入人数" class="layui-input numer_input" >
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button class="layui-btn" lay-submit lay-filter="formEdits" id="submit">立即提交</button>
+
+            </div>
+        </div>
+    </form>
+
+</div>

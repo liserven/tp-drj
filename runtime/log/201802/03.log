@@ -1,0 +1,4272 @@
+---------------------------------------------------------------
+[ 2018-02-03T09:29:53+08:00 ] 127.0.0.1 GET /
+[ info ] mrw.com/ [运行时间：4.007711s][吞吐率：0.25req/s] [内存消耗：2,985.95kb] [文件加载：82]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\phpStudy\WWW\zgmrw\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/home\view\index\index.html [ array (
+  0 => 'headline',
+  1 => 'meeting',
+  2 => 'mName',
+  3 => 'cName',
+  4 => 'aName',
+  5 => 'menu',
+  6 => 'kx',
+  7 => 'banner',
+  8 => 'expert',
+  9 => 'youqing',
+  10 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.190548s ] mysql:host=47.95.114.220;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `headline` [ RunTime:0.128109s ]
+[ sql ] [ SQL ] SELECT `title`,`create_at` FROM `headline` LIMIT 6 [ RunTime:0.127841s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `meeting` [ RunTime:0.128334s ]
+[ sql ] [ SQL ] SELECT `img`,`title`,`create_at`,`city` FROM `meeting` ORDER BY id DESC LIMIT 4 [ RunTime:0.127250s ]
+[ sql ] [ SQL ] SELECT `title`,`create_at` FROM `headline` LIMIT 6 [ RunTime:0.129148s ]
+[ sql ] [ SQL ] SELECT `img`,`title`,`create_at`,`city` FROM `meeting` ORDER BY id DESC LIMIT 4 [ RunTime:0.127658s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.128658s ]
+[ sql ] [ SQL ] SELECT `b`.`url`,`b`.`img`,`b`.`title` FROM `banner` `b` WHERE  `sort` = 0  AND `b`.`status` = 1 ORDER BY b.order ASC LIMIT 0,9 [ RunTime:0.127391s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `expert` [ RunTime:0.128604s ]
+[ sql ] [ SQL ] SELECT * FROM `expert` LIMIT 8 [ RunTime:0.128320s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `expert_project` [ RunTime:0.128226s ]
+[ sql ] [ SQL ] SELECT * FROM `expert_project` WHERE  `expert_id` IN (7,9,10,11,12) [ RunTime:0.127674s ]
+[ sql ] [ SQL ] SELECT * FROM `expert_project` WHERE  `expert_id` IN (7,9,10,11,12) [ RunTime:0.128251s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project` [ RunTime:0.129165s ]
+[ sql ] [ SQL ] SELECT * FROM `project` WHERE  `id` IN (1,2,6,13) [ RunTime:0.127919s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `link` [ RunTime:0.128598s ]
+[ sql ] [ SQL ] SELECT * FROM `link` [ RunTime:0.128096s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sort` [ RunTime:0.128225s ]
+[ sql ] [ SQL ] SELECT * FROM `sort` WHERE  `pid` = 0 LIMIT 0,6 [ RunTime:0.127508s ]
+[ sql ] [ SQL ] SELECT * FROM `sort` WHERE  `pid` IN (2,3,9,13,14,15) [ RunTime:0.128119s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.130072s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`sm_img`,`create_at`,`source` FROM `news` WHERE  `one_sort` = 2 OR `sort_id` = 2 LIMIT 10 [ RunTime:0.128055s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`sm_img`,`create_at`,`source` FROM `news` WHERE  `one_sort` = 3 OR `sort_id` = 3 LIMIT 10 [ RunTime:0.127984s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`sm_img`,`create_at`,`source` FROM `news` WHERE  `one_sort` = 9 OR `sort_id` = 9 LIMIT 10 [ RunTime:0.127380s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`sm_img`,`create_at`,`source` FROM `news` WHERE  `one_sort` = 13 OR `sort_id` = 13 LIMIT 10 [ RunTime:0.127898s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`sm_img`,`create_at`,`source` FROM `news` WHERE  `one_sort` = 14 OR `sort_id` = 14 LIMIT 10 [ RunTime:0.128042s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`sm_img`,`create_at`,`source` FROM `news` WHERE  `one_sort` = 15 OR `sort_id` = 15 LIMIT 10 [ RunTime:0.128262s ]
+---------------------------------------------------------------
+[ 2018-02-03T09:29:53+08:00 ] 127.0.0.1 GET /o_1c50fmhlnjge1dgop0fvfpcc14.png
+[ info ] mrw.com/o_1c50fmhlnjge1dgop0fvfpcc14.png [运行时间：0.032138s][吞吐率：31.12req/s] [内存消耗：1,103.04kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'o_1c50fmhlnjge1dgop0fvfpcc14.png',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/o_1c50fmhlnjge1dgop0fvfpcc14_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-03T09:29:53+08:00 ] 127.0.0.1 GET /css/image/standardalliance.png
+[ info ] mrw.com/css/image/standardalliance.png [运行时间：0.022650s][吞吐率：44.15req/s] [内存消耗：1,103.14kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'css',
+    1 => 'image',
+    2 => 'standardalliance.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/css/home/style.css',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/Css/image/standardalliance_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-03T09:29:54+08:00 ] 127.0.0.1 GET /css/image/downloadclient-code.png
+[ info ] mrw.com/css/image/downloadclient-code.png [运行时间：0.024648s][吞吐率：40.57req/s] [内存消耗：1,103.05kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'css',
+    1 => 'image',
+    2 => 'downloadclient-code.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/css/home/style.css',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/Css/image/downloadclient-code_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-03T09:29:54+08:00 ] 127.0.0.1 GET /css/image/headlines-header-icon.png
+[ info ] mrw.com/css/image/headlines-header-icon.png [运行时间：0.028443s][吞吐率：35.16req/s] [内存消耗：1,103.19kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'css',
+    1 => 'image',
+    2 => 'headlines-header-icon.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/css/home/style.css',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/Css/image/headlines-header-icon_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-03T09:30:07+08:00 ] 127.0.0.1 GET /home/cosmetology/index.html
+[ info ] mrw.com/home/cosmetology/index.html [运行时间：1.928904s][吞吐率：0.52req/s] [内存消耗：2,481.55kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'cosmetology',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/home/cosmetology/index_html' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Cosmetology->index[ D:\phpStudy\WWW\zgmrw\application\home\controller\Cosmetology.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/home\view\cosmetology\index.html [ array (
+  0 => 'headline',
+  1 => 'meeting',
+  2 => 'mName',
+  3 => 'cName',
+  4 => 'aName',
+  5 => 'menu',
+  6 => 'kx',
+  7 => 'twoProject',
+  8 => 'threeProject',
+  9 => 'oneProject',
+  10 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.202679s ] mysql:host=47.95.114.220;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `headline` [ RunTime:0.136251s ]
+[ sql ] [ SQL ] SELECT `title`,`create_at` FROM `headline` LIMIT 6 [ RunTime:0.135648s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `meeting` [ RunTime:0.136676s ]
+[ sql ] [ SQL ] SELECT `img`,`title`,`create_at`,`city` FROM `meeting` ORDER BY id DESC LIMIT 4 [ RunTime:0.136328s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project` [ RunTime:0.137052s ]
+[ sql ] [ SQL ] SELECT * FROM `project` WHERE  `pid` = 0 [ RunTime:0.136365s ]
+[ sql ] [ SQL ] SELECT * FROM `project` WHERE  `pid` = 1 [ RunTime:0.136323s ]
+[ sql ] [ SQL ] SELECT * FROM `project` WHERE  `pid` = 16 [ RunTime:0.136068s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `science` [ RunTime:0.137074s ]
+[ sql ] [ SQL ] SELECT * FROM `science` WHERE  `project_id` = 17 LIMIT 1 [ RunTime:0.136561s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `science_img` [ RunTime:0.136031s ]
+[ sql ] [ SQL ] SELECT * FROM `science_img` WHERE  `science_id` = 5 [ RunTime:0.135482s ]
+---------------------------------------------------------------
+[ 2018-02-03T09:30:07+08:00 ] 127.0.0.1 GET /css/image/standardalliance.png
+[ info ] mrw.com/css/image/standardalliance.png [运行时间：0.021935s][吞吐率：45.59req/s] [内存消耗：1,103.14kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'css',
+    1 => 'image',
+    2 => 'standardalliance.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/css/home/style.css',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/Css/image/standardalliance_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-03T09:30:07+08:00 ] 127.0.0.1 GET /css/image/downloadclient-code.png
+[ info ] mrw.com/css/image/downloadclient-code.png [运行时间：0.025331s][吞吐率：39.48req/s] [内存消耗：1,103.05kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'css',
+    1 => 'image',
+    2 => 'downloadclient-code.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/css/home/style.css',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/Css/image/downloadclient-code_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-03T09:30:08+08:00 ] 127.0.0.1 GET /css/image/pain_1.png
+[ info ] mrw.com/css/image/pain_1.png [运行时间：0.038178s][吞吐率：26.19req/s] [内存消耗：1,102.91kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'css',
+    1 => 'image',
+    2 => 'pain_1.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/css/home/style.css',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/Css/image/pain_1_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-03T09:30:08+08:00 ] 127.0.0.1 GET /css/image/headlines-header-icon.png
+[ info ] mrw.com/css/image/headlines-header-icon.png [运行时间：0.040249s][吞吐率：24.85req/s] [内存消耗：1,103.23kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'css',
+    1 => 'image',
+    2 => 'headlines-header-icon.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/css/home/style.css',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/Css/image/headlines-header-icon_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-03T09:30:22+08:00 ] 127.0.0.1 GET /policies.html
+[ info ] mrw.com/policies.html [运行时间：1.710990s][吞吐率：0.58req/s] [内存消耗：2,553.70kb] [文件加载：75]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'Policies',
+    2 => 'tolist',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/home/cosmetology/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/policies_html' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Policies->toList[ D:\phpStudy\WWW\zgmrw\application\home\controller\Policies.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/home\view\policies\toList.html [ array (
+  0 => 'headline',
+  1 => 'meeting',
+  2 => 'mName',
+  3 => 'cName',
+  4 => 'aName',
+  5 => 'menu',
+  6 => 'kx',
+  7 => 'zcPageHtml',
+  8 => 'fgPageHtml',
+  9 => 'zc',
+  10 => 'fg',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.219853s ] mysql:host=47.95.114.220;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `headline` [ RunTime:0.147064s ]
+[ sql ] [ SQL ] SELECT `title`,`create_at` FROM `headline` LIMIT 6 [ RunTime:0.146259s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `meeting` [ RunTime:0.147153s ]
+[ sql ] [ SQL ] SELECT `img`,`title`,`create_at`,`city` FROM `meeting` ORDER BY id DESC LIMIT 4 [ RunTime:0.146607s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.147559s ]
+[ sql ] [ SQL ] SELECT `title`,`create_at` FROM `news` WHERE  `sort_id` = 8 LIMIT 0,1 [ RunTime:0.146402s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `news` WHERE  `sort_id` = 8 LIMIT 1 [ RunTime:0.145869s ]
+[ sql ] [ SQL ] SELECT `title`,`create_at` FROM `news` WHERE  `sort_id` = 10 LIMIT 0,16 [ RunTime:0.146024s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `news` WHERE  `sort_id` = 10 LIMIT 1 [ RunTime:0.145677s ]
+---------------------------------------------------------------
+[ 2018-02-03T09:30:22+08:00 ] 127.0.0.1 GET /css/image/downloadclient-code.png
+[ info ] mrw.com/css/image/downloadclient-code.png [运行时间：0.020576s][吞吐率：48.60req/s] [内存消耗：1,103.05kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'css',
+    1 => 'image',
+    2 => 'downloadclient-code.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/css/home/style.css',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/Css/image/downloadclient-code_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-03T09:30:22+08:00 ] 127.0.0.1 GET /css/image/standardalliance.png
+[ info ] mrw.com/css/image/standardalliance.png [运行时间：0.021041s][吞吐率：47.53req/s] [内存消耗：1,103.14kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'css',
+    1 => 'image',
+    2 => 'standardalliance.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/css/home/style.css',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/Css/image/standardalliance_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-03T09:30:23+08:00 ] 127.0.0.1 GET /css/image/headlines-header-icon.png
+[ info ] mrw.com/css/image/headlines-header-icon.png [运行时间：0.039706s][吞吐率：25.19req/s] [内存消耗：1,103.23kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'css',
+    1 => 'image',
+    2 => 'headlines-header-icon.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/css/home/style.css',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/Css/image/headlines-header-icon_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-03T09:30:24+08:00 ] 127.0.0.1 GET /meeting_index.html
+[ info ] mrw.com/meeting_index.html [运行时间：1.396228s][吞吐率：0.72req/s] [内存消耗：2,432.34kb] [文件加载：71]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'Meeting',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/policies.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/meeting_index_html' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Meeting->index[ D:\phpStudy\WWW\zgmrw\application\home\controller\Meeting.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/home\view\meeting\index.html [ array (
+  0 => 'headline',
+  1 => 'meeting',
+  2 => 'mName',
+  3 => 'cName',
+  4 => 'aName',
+  5 => 'menu',
+  6 => 'kx',
+  7 => 'city',
+  8 => 'meetingList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.200520s ] mysql:host=47.95.114.220;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `headline` [ RunTime:0.134774s ]
+[ sql ] [ SQL ] SELECT `title`,`create_at` FROM `headline` LIMIT 6 [ RunTime:0.134517s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `meeting` [ RunTime:0.135305s ]
+[ sql ] [ SQL ] SELECT `img`,`title`,`create_at`,`city` FROM `meeting` ORDER BY id DESC LIMIT 4 [ RunTime:0.136590s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `city` [ RunTime:0.134783s ]
+[ sql ] [ SQL ] SELECT * FROM `city` WHERE  `is_meeting` = 1 [ RunTime:0.134568s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `meeting` LIMIT 1 [ RunTime:0.134619s ]
+[ sql ] [ SQL ] SELECT `id`,`img`,`title`,`create_at`,`start_time`,`city` FROM `meeting` ORDER BY id DESC LIMIT 0,12 [ RunTime:0.134998s ]
+---------------------------------------------------------------
+[ 2018-02-03T09:30:25+08:00 ] 127.0.0.1 GET /css/image/standardalliance.png
+[ info ] mrw.com/css/image/standardalliance.png [运行时间：0.020261s][吞吐率：49.36req/s] [内存消耗：1,103.14kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'css',
+    1 => 'image',
+    2 => 'standardalliance.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/css/home/style.css',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/Css/image/standardalliance_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-03T09:30:25+08:00 ] 127.0.0.1 GET /css/image/downloadclient-code.png
+[ info ] mrw.com/css/image/downloadclient-code.png [运行时间：0.020819s][吞吐率：48.03req/s] [内存消耗：1,103.05kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'css',
+    1 => 'image',
+    2 => 'downloadclient-code.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/css/home/style.css',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/Css/image/downloadclient-code_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-03T09:30:26+08:00 ] 127.0.0.1 GET /css/image/headlines-header-icon.png
+[ info ] mrw.com/css/image/headlines-header-icon.png [运行时间：0.021186s][吞吐率：47.20req/s] [内存消耗：1,103.23kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'css',
+    1 => 'image',
+    2 => 'headlines-header-icon.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/css/home/style.css',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/Css/image/headlines-header-icon_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-03T09:30:26+08:00 ] 127.0.0.1 GET /css/image/meetinglocation.png
+[ info ] mrw.com/css/image/meetinglocation.png [运行时间：0.023028s][吞吐率：43.43req/s] [内存消耗：1,103.14kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'css',
+    1 => 'image',
+    2 => 'meetinglocation.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/css/home/style.css',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/Css/image/meetinglocation_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-03T09:30:26+08:00 ] 127.0.0.1 GET /css/image/lookmoredetails01.png
+[ info ] mrw.com/css/image/lookmoredetails01.png [运行时间：0.032304s][吞吐率：30.96req/s] [内存消耗：1,103.09kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'css',
+    1 => 'image',
+    2 => 'lookmoredetails01.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/css/home/style.css',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/Css/image/lookmoredetails01_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-03T09:34:08+08:00 ] 127.0.0.1 GET /ad
+[ info ] mrw.com/ad [运行时间：0.025808s][吞吐率：38.75req/s] [内存消耗：1,102.84kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'ad',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/ad' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-03T09:34:12+08:00 ] 127.0.0.1 GET /admini
+[ info ] mrw.com/admini [运行时间：0.021889s][吞吐率：45.69req/s] [内存消耗：1,102.90kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admini',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admini' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-03T09:34:15+08:00 ] 127.0.0.1 GET /admin
+[ info ] mrw.com/admin [运行时间：0.132366s][吞吐率：7.55req/s] [内存消耗：1,407.63kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-03T09:34:18+08:00 ] 127.0.0.1 GET /admin/login/index.html
+[ info ] mrw.com/admin/login/index.html [运行时间：0.030574s][吞吐率：32.71req/s] [内存消耗：1,407.63kb] [文件加载：60]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/admin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/admin\view\login\index.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-03T09:34:18+08:00 ] 127.0.0.1 GET /captcha.html
+[ info ] mrw.com/captcha.html [运行时间：0.101383s][吞吐率：9.86req/s] [内存消耗：1,119.67kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/admin/login/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/captcha_html' => '',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\phpStudy\WWW\zgmrw\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-03T09:34:30+08:00 ] 127.0.0.1 POST /admin/login/login.html
+[ info ] mrw.com/admin/login/login.html [运行时间：1.045673s][吞吐率：0.96req/s] [内存消耗：2,463.03kb] [文件加载：76]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/admin/login/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://mrw.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '49',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/login_html' => '',
+  'phone' => '13525965579',
+  'password' => '1314yydeai',
+  'captcha' => 'fuv',
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.228295s ] mysql:host=47.95.114.220;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `member` [ RunTime:0.146664s ]
+[ sql ] [ SQL ] SELECT * FROM `member` WHERE  `am_phone` = '13525965579' LIMIT 1 [ RunTime:0.147427s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `member_log` [ RunTime:0.154057s ]
+[ sql ] [ SQL ] INSERT INTO `member_log` (`ml_member_id` , `ml_name` , `ml_url` , `ml_ip` , `create_at`) VALUES (1 , '登录后台' , 'admin/login/login' , '127.0.0.1' , 1517621670) [ RunTime:0.147761s ]
+[ sql ] [ SQL ] UPDATE `member`  SET `am_ssid`='totbnqrv2uaa099ob5algn8jv3',`am_pre_time`=1517621670,`update_at`=1517621670  WHERE  `am_id` = 1 [ RunTime:0.147355s ]
+---------------------------------------------------------------
+[ 2018-02-03T09:34:30+08:00 ] 127.0.0.1 GET /index.html
+[ info ] mrw.com/index.html [运行时间：0.042134s][吞吐率：23.73req/s] [内存消耗：1,699.75kb] [文件加载：63]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/admin/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/admin\view\index\index.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-03T09:34:31+08:00 ] 127.0.0.1 GET /admin/index/welcome.html
+[ info ] mrw.com/admin/index/welcome.html [运行时间：0.385425s][吞吐率：2.59req/s] [内存消耗：1,838.85kb] [文件加载：67]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'server',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.211585s ] mysql:host=47.95.114.220;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] select version() [ RunTime:0.140691s ]
+---------------------------------------------------------------
+[ 2018-02-03T09:34:37+08:00 ] 127.0.0.1 GET /admin/Hospital/tolist
+[ info ] mrw.com/admin/Hospital/tolist [运行时间：1.789071s][吞吐率：0.56req/s] [内存消耗：2,658.81kb] [文件加载：77]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Hospital',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Hospital/tolist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Hospital->toList[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Hospital.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/admin\view\hospital\tolist.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'service',
+  7 => 'twoService',
+  8 => 'project',
+  9 => 'province',
+  10 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.202291s ] mysql:host=47.95.114.220;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hospital_service` [ RunTime:0.135652s ]
+[ sql ] [ SQL ] SELECT * FROM `hospital_service` WHERE  `pid` = 0 [ RunTime:0.135584s ]
+[ sql ] [ SQL ] SELECT * FROM `hospital_service` WHERE  `pid` = 1 [ RunTime:0.135615s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project` [ RunTime:0.137477s ]
+[ sql ] [ SQL ] SELECT * FROM `project` [ RunTime:0.135152s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `province` [ RunTime:0.136146s ]
+[ sql ] [ SQL ] SELECT * FROM `province` [ RunTime:0.135024s ]
+[ sql ] [ SQL ] SELECT * FROM `project` WHERE  `pid` = 0 [ RunTime:0.135781s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hospital` [ RunTime:0.136700s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hospital` `hd` LEFT JOIN `city` `c` ON `hd`.`city`=`c`.`id` LEFT JOIN `hospital_service` `hs` ON `hd`.`service_type`=`hs`.`id` LIMIT 1 [ RunTime:0.135563s ]
+[ sql ] [ SQL ] SELECT `hd`.*,c.city as diqu,hs.type as stype FROM `hospital` `hd` LEFT JOIN `city` `c` ON `hd`.`city`=`c`.`id` LEFT JOIN `hospital_service` `hs` ON `hd`.`service_type`=`hs`.`id` ORDER BY hd.id desc LIMIT 0,10 [ RunTime:0.136636s ]
+---------------------------------------------------------------
+[ 2018-02-03T09:40:00+08:00 ] 127.0.0.1 GET /admin/Hospital/doAdd
+[ info ] mrw.com/admin/Hospital/doAdd [运行时间：1.267758s][吞吐率：0.79req/s] [内存消耗：2,632.45kb] [文件加载：75]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Hospital',
+    2 => 'doAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/admin/Hospital/tolist',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Hospital/doAdd' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Hospital->doAdd[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Hospital.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/admin\view\hospital\doadd.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'service',
+  7 => 'twoService',
+  8 => 'project',
+  9 => 'province',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.190112s ] mysql:host=47.95.114.220;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hospital_service` [ RunTime:0.126086s ]
+[ sql ] [ SQL ] SELECT * FROM `hospital_service` WHERE  `pid` = 0 [ RunTime:0.126000s ]
+[ sql ] [ SQL ] SELECT * FROM `hospital_service` WHERE  `pid` = 1 [ RunTime:0.126957s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project` [ RunTime:0.127607s ]
+[ sql ] [ SQL ] SELECT * FROM `project` [ RunTime:0.126823s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `province` [ RunTime:0.125844s ]
+[ sql ] [ SQL ] SELECT * FROM `province` [ RunTime:0.126014s ]
+[ sql ] [ SQL ] SELECT * FROM `project` WHERE  `pid` = 0 [ RunTime:0.125983s ]
+---------------------------------------------------------------
+[ 2018-02-03T09:41:26+08:00 ] 127.0.0.1 GET /index.html
+[ info ] mrw.com/index.html [运行时间：0.030107s][吞吐率：33.21req/s] [内存消耗：1,699.92kb] [文件加载：63]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/admin/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/admin\view\index\index.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-03T09:41:26+08:00 ] 127.0.0.1 GET /admin/index/welcome.html
+[ info ] mrw.com/admin/index/welcome.html [运行时间：0.393857s][吞吐率：2.54req/s] [内存消耗：1,838.85kb] [文件加载：67]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'server',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.216627s ] mysql:host=47.95.114.220;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] select version() [ RunTime:0.144704s ]
+---------------------------------------------------------------
+[ 2018-02-03T09:41:29+08:00 ] 127.0.0.1 GET /admin/Hospital/tolist
+[ info ] mrw.com/admin/Hospital/tolist [运行时间：1.720269s][吞吐率：0.58req/s] [内存消耗：2,662.22kb] [文件加载：77]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Hospital',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Hospital/tolist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Hospital->toList[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Hospital.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/admin\view\hospital\tolist.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'service',
+  7 => 'twoService',
+  8 => 'project',
+  9 => 'province',
+  10 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.199138s ] mysql:host=47.95.114.220;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hospital_service` [ RunTime:0.135999s ]
+[ sql ] [ SQL ] SELECT * FROM `hospital_service` WHERE  `pid` = 0 [ RunTime:0.133833s ]
+[ sql ] [ SQL ] SELECT * FROM `hospital_service` WHERE  `pid` = 1 [ RunTime:0.133271s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project` [ RunTime:0.134177s ]
+[ sql ] [ SQL ] SELECT * FROM `project` [ RunTime:0.132697s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `province` [ RunTime:0.133798s ]
+[ sql ] [ SQL ] SELECT * FROM `province` [ RunTime:0.133422s ]
+[ sql ] [ SQL ] SELECT * FROM `project` WHERE  `pid` = 0 [ RunTime:0.133440s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hospital` [ RunTime:0.134199s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hospital` `hd` LEFT JOIN `city` `c` ON `hd`.`city`=`c`.`id` LEFT JOIN `hospital_service` `hs` ON `hd`.`service_type`=`hs`.`id` LIMIT 1 [ RunTime:0.132690s ]
+[ sql ] [ SQL ] SELECT `hd`.*,c.city as diqu,hs.type as stype FROM `hospital` `hd` LEFT JOIN `city` `c` ON `hd`.`city`=`c`.`id` LEFT JOIN `hospital_service` `hs` ON `hd`.`service_type`=`hs`.`id` ORDER BY hd.id desc LIMIT 0,10 [ RunTime:0.134777s ]
+---------------------------------------------------------------
+[ 2018-02-03T09:41:31+08:00 ] 127.0.0.1 GET /admin/Hospital/doAdd
+[ info ] mrw.com/admin/Hospital/doAdd [运行时间：1.323643s][吞吐率：0.76req/s] [内存消耗：2,632.57kb] [文件加载：75]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Hospital',
+    2 => 'doAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/admin/Hospital/tolist',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Hospital/doAdd' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Hospital->doAdd[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Hospital.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/admin\view\hospital\doadd.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'service',
+  7 => 'twoService',
+  8 => 'project',
+  9 => 'province',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.201553s ] mysql:host=47.95.114.220;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hospital_service` [ RunTime:0.134495s ]
+[ sql ] [ SQL ] SELECT * FROM `hospital_service` WHERE  `pid` = 0 [ RunTime:0.134386s ]
+[ sql ] [ SQL ] SELECT * FROM `hospital_service` WHERE  `pid` = 1 [ RunTime:0.134375s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project` [ RunTime:0.134660s ]
+[ sql ] [ SQL ] SELECT * FROM `project` [ RunTime:0.134450s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `province` [ RunTime:0.134684s ]
+[ sql ] [ SQL ] SELECT * FROM `province` [ RunTime:0.134311s ]
+[ sql ] [ SQL ] SELECT * FROM `project` WHERE  `pid` = 0 [ RunTime:0.134888s ]
+---------------------------------------------------------------
+[ 2018-02-03T09:41:51+08:00 ] 127.0.0.1 GET /index.html
+[ info ] mrw.com/index.html [运行时间：0.033464s][吞吐率：29.88req/s] [内存消耗：1,699.92kb] [文件加载：63]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/admin/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/admin\view\index\index.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-03T09:41:52+08:00 ] 127.0.0.1 GET /admin/index/welcome.html
+[ info ] mrw.com/admin/index/welcome.html [运行时间：0.368753s][吞吐率：2.71req/s] [内存消耗：1,838.85kb] [文件加载：67]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'server',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.203254s ] mysql:host=47.95.114.220;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] select version() [ RunTime:0.135410s ]
+---------------------------------------------------------------
+[ 2018-02-03T09:41:56+08:00 ] 127.0.0.1 GET /admin/Science/tolist
+[ info ] mrw.com/admin/Science/tolist [运行时间：0.910133s][吞吐率：1.10req/s] [内存消耗：2,553.26kb] [文件加载：75]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Science',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Science/tolist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Science->toList[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Science.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/admin\view\science\tolist.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'project',
+  7 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.191806s ] mysql:host=47.95.114.220;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project` [ RunTime:0.126582s ]
+[ sql ] [ SQL ] SELECT * FROM `project` WHERE  `pid` = 0 [ RunTime:0.126035s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `science` [ RunTime:0.127498s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `science` `s` LEFT JOIN `project` `p` ON `p`.`id`=`s`.`project_id` LIMIT 1 [ RunTime:0.126158s ]
+[ sql ] [ SQL ] SELECT `s`.*,`p`.`name` FROM `science` `s` LEFT JOIN `project` `p` ON `p`.`id`=`s`.`project_id` LIMIT 0,10 [ RunTime:0.127875s ]
+---------------------------------------------------------------
+[ 2018-02-03T09:42:00+08:00 ] 127.0.0.1 GET /admin/Science/doAdd
+[ info ] mrw.com/admin/Science/doAdd [运行时间：0.555505s][吞吐率：1.80req/s] [内存消耗：2,333.26kb] [文件加载：70]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Science',
+    2 => 'doAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/admin/Science/tolist',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Science/doAdd' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Science->doAdd[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Science.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/admin\view\science\doadd.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'project',
+  7 => 'config',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.201620s ] mysql:host=47.95.114.220;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project` [ RunTime:0.135233s ]
+[ sql ] [ SQL ] SELECT * FROM `project` WHERE  `pid` = 0 [ RunTime:0.135491s ]
+---------------------------------------------------------------
+[ 2018-02-03T09:42:03+08:00 ] 127.0.0.1 GET /index.php/admin/Project/getProjectByPid?id=1
+[ info ] mrw.com/index.php/admin/Project/getProjectByPid?id=1 [运行时间：0.720885s][吞吐率：1.39req/s] [内存消耗：2,322.05kb] [文件加载：71]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Project',
+    2 => 'getProjectByPid',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/admin/Science/doAdd',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Project->getProjectByPid[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Project.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/admin\view\project\getprojectbypid.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'pJect',
+  7 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.220877s ] mysql:host=47.95.114.220;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project` [ RunTime:0.145277s ]
+[ sql ] [ SQL ] SELECT * FROM `project` WHERE  `pid` = 0 [ RunTime:0.145189s ]
+[ sql ] [ SQL ] SELECT * FROM `project` WHERE  `pid` = 1 [ RunTime:0.144984s ]
+---------------------------------------------------------------
+[ 2018-02-03T09:42:04+08:00 ] 127.0.0.1 GET /index.php/admin/Project/getProjectByPid?id=21
+[ info ] mrw.com/index.php/admin/Project/getProjectByPid?id=21 [运行时间：0.644833s][吞吐率：1.55req/s] [内存消耗：2,322.05kb] [文件加载：71]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Project',
+    2 => 'getProjectByPid',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/admin/Science/doAdd',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '21',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Project->getProjectByPid[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Project.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/admin\view\project\getprojectbypid.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'pJect',
+  7 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.200377s ] mysql:host=47.95.114.220;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project` [ RunTime:0.134800s ]
+[ sql ] [ SQL ] SELECT * FROM `project` WHERE  `pid` = 0 [ RunTime:0.135896s ]
+[ sql ] [ SQL ] SELECT * FROM `project` WHERE  `pid` = 21 [ RunTime:0.134551s ]
+---------------------------------------------------------------
+[ 2018-02-03T09:42:40+08:00 ] 127.0.0.1 GET /index.html
+[ info ] mrw.com/index.html [运行时间：0.032916s][吞吐率：30.38req/s] [内存消耗：1,699.92kb] [文件加载：63]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/admin/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/admin\view\index\index.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-03T09:42:40+08:00 ] 127.0.0.1 GET /admin/index/welcome.html
+[ info ] mrw.com/admin/index/welcome.html [运行时间：0.343189s][吞吐率：2.91req/s] [内存消耗：1,838.85kb] [文件加载：67]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'server',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.187048s ] mysql:host=47.95.114.220;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] select version() [ RunTime:0.125070s ]
+---------------------------------------------------------------
+[ 2018-02-03T09:43:39+08:00 ] 127.0.0.1 GET /admin/Meeting/tolist
+[ info ] mrw.com/admin/Meeting/tolist [运行时间：1.919682s][吞吐率：0.52req/s] [内存消耗：2,690.95kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Meeting',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Meeting/tolist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Meeting->toList[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Meeting.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/admin\view\meeting\tolist.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'partner',
+  7 => 'guest',
+  8 => 'province',
+  9 => 'meetingSort',
+  10 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.217472s ] mysql:host=47.95.114.220;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `partner` [ RunTime:0.145811s ]
+[ sql ] [ SQL ] SELECT * FROM `partner` [ RunTime:0.146019s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `guest` [ RunTime:0.146357s ]
+[ sql ] [ SQL ] SELECT * FROM `guest` [ RunTime:0.146115s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `province` [ RunTime:0.145874s ]
+[ sql ] [ SQL ] SELECT * FROM `province` [ RunTime:0.145931s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `meeting_sort` [ RunTime:0.146208s ]
+[ sql ] [ SQL ] SELECT * FROM `meeting_sort` [ RunTime:0.145194s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `meeting` [ RunTime:0.146316s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `meeting` `m` LIMIT 1 [ RunTime:0.145165s ]
+[ sql ] [ SQL ] SELECT * FROM `meeting` `m` LIMIT 0,10 [ RunTime:0.145988s ]
+---------------------------------------------------------------
+[ 2018-02-03T09:43:41+08:00 ] 127.0.0.1 GET /admin/Meeting/doAdd
+[ info ] mrw.com/admin/Meeting/doAdd [运行时间：1.362666s][吞吐率：0.73req/s] [内存消耗：2,530.25kb] [文件加载：74]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Meeting',
+    2 => 'doAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/admin/Meeting/tolist',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Meeting/doAdd' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Meeting->doAdd[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Meeting.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/admin\view\meeting\doadd.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'partner',
+  7 => 'guest',
+  8 => 'province',
+  9 => 'meetingSort',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.203730s ] mysql:host=47.95.114.220;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `partner` [ RunTime:0.136887s ]
+[ sql ] [ SQL ] SELECT * FROM `partner` [ RunTime:0.136529s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `guest` [ RunTime:0.136170s ]
+[ sql ] [ SQL ] SELECT * FROM `guest` [ RunTime:0.136328s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `province` [ RunTime:0.137810s ]
+[ sql ] [ SQL ] SELECT * FROM `province` [ RunTime:0.136249s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `meeting_sort` [ RunTime:0.137589s ]
+[ sql ] [ SQL ] SELECT * FROM `meeting_sort` [ RunTime:0.135961s ]
+---------------------------------------------------------------
+[ 2018-02-03T09:45:55+08:00 ] 127.0.0.1 GET /index.html
+[ info ] mrw.com/index.html [运行时间：0.033610s][吞吐率：29.75req/s] [内存消耗：1,699.92kb] [文件加载：63]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/admin/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/admin\view\index\index.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-03T09:45:55+08:00 ] 127.0.0.1 GET /admin/index/welcome.html
+[ info ] mrw.com/admin/index/welcome.html [运行时间：0.359680s][吞吐率：2.78req/s] [内存消耗：1,838.85kb] [文件加载：67]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'server',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.196307s ] mysql:host=47.95.114.220;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] select version() [ RunTime:0.130625s ]
+---------------------------------------------------------------
+[ 2018-02-03T09:45:58+08:00 ] 127.0.0.1 GET /admin/Meeting/tolist
+[ info ] mrw.com/admin/Meeting/tolist [运行时间：1.746737s][吞吐率：0.57req/s] [内存消耗：2,692.64kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Meeting',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Meeting/tolist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Meeting->toList[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Meeting.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/admin\view\meeting\tolist.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'partner',
+  7 => 'guest',
+  8 => 'province',
+  9 => 'meetingSort',
+  10 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.202347s ] mysql:host=47.95.114.220;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `partner` [ RunTime:0.135589s ]
+[ sql ] [ SQL ] SELECT * FROM `partner` [ RunTime:0.136122s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `guest` [ RunTime:0.135787s ]
+[ sql ] [ SQL ] SELECT * FROM `guest` [ RunTime:0.136223s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `province` [ RunTime:0.135359s ]
+[ sql ] [ SQL ] SELECT * FROM `province` [ RunTime:0.136848s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `meeting_sort` [ RunTime:0.135513s ]
+[ sql ] [ SQL ] SELECT * FROM `meeting_sort` [ RunTime:0.135864s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `meeting` [ RunTime:0.136071s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `meeting` `m` LIMIT 1 [ RunTime:0.134613s ]
+[ sql ] [ SQL ] SELECT * FROM `meeting` `m` LIMIT 0,10 [ RunTime:0.136354s ]
+---------------------------------------------------------------
+[ 2018-02-03T09:53:32+08:00 ] 127.0.0.1 GET /index.html
+[ info ] mrw.com/index.html [运行时间：0.035825s][吞吐率：27.91req/s] [内存消耗：1,700.56kb] [文件加载：63]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/admin/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/admin\view\index\index.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-03T09:53:33+08:00 ] 127.0.0.1 GET /admin/index/welcome.html
+[ info ] mrw.com/admin/index/welcome.html [运行时间：0.363659s][吞吐率：2.75req/s] [内存消耗：1,839.55kb] [文件加载：67]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'server',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.199023s ] mysql:host=47.95.114.220;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] select version() [ RunTime:0.131259s ]
+---------------------------------------------------------------
+[ 2018-02-03T10:14:37+08:00 ] 127.0.0.1 GET /admin/Guest/tolist
+[ info ] mrw.com/admin/Guest/tolist [运行时间：0.707178s][吞吐率：1.41req/s] [内存消耗：2,476.76kb] [文件加载：74]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Guest',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Guest/tolist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Guest->toList[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Guest.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/admin\view\guest\tolist.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.197574s ] mysql:host=47.95.114.220;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `guest` [ RunTime:0.131712s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `guest` LIMIT 1 [ RunTime:0.136319s ]
+[ sql ] [ SQL ] SELECT * FROM `guest` LIMIT 0,10 [ RunTime:0.135989s ]
+---------------------------------------------------------------
+[ 2018-02-03T10:19:49+08:00 ] 127.0.0.1 GET /index.html
+[ info ] mrw.com/index.html [运行时间：0.035113s][吞吐率：28.48req/s] [内存消耗：1,700.57kb] [文件加载：63]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/admin/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/admin\view\index\index.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-03T10:19:50+08:00 ] 127.0.0.1 GET /admin/index/welcome.html
+[ info ] mrw.com/admin/index/welcome.html [运行时间：0.387529s][吞吐率：2.58req/s] [内存消耗：1,839.55kb] [文件加载：67]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'server',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.211454s ] mysql:host=47.95.114.220;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] select version() [ RunTime:0.140645s ]
+---------------------------------------------------------------
+[ 2018-02-03T10:19:51+08:00 ] 127.0.0.1 GET /admin/Cooperation/tolist
+[ info ] mrw.com/admin/Cooperation/tolist [运行时间：0.412855s][吞吐率：2.42req/s] [内存消耗：2,385.51kb] [文件加载：76]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Cooperation',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Cooperation/tolist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Cooperation->toList[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Cooperation.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.202129s ] mysql:host=47.95.114.220;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cooperation` [ RunTime:0.136636s ]
+[ error ] [2]PDO::prepare(): MySQL server has gone away[D:\phpStudy\WWW\zgmrw\thinkphp\library\think\db\Connection.php:368]
+---------------------------------------------------------------
+[ 2018-02-03T10:19:56+08:00 ] 127.0.0.1 GET /index.html
+[ info ] mrw.com/index.html [运行时间：0.041183s][吞吐率：24.28req/s] [内存消耗：1,700.57kb] [文件加载：63]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/admin/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/admin\view\index\index.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-03T10:19:56+08:00 ] 127.0.0.1 GET /admin/index/welcome.html
+[ info ] mrw.com/admin/index/welcome.html [运行时间：0.359826s][吞吐率：2.78req/s] [内存消耗：1,839.55kb] [文件加载：67]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'server',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.195977s ] mysql:host=47.95.114.220;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] select version() [ RunTime:0.130593s ]
+---------------------------------------------------------------
+[ 2018-02-03T10:20:01+08:00 ] 127.0.0.1 GET /admin/Meeting/tolist
+[ info ] mrw.com/admin/Meeting/tolist [运行时间：1.726905s][吞吐率：0.58req/s] [内存消耗：2,693.23kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Meeting',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Meeting/tolist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Meeting->toList[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Meeting.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/admin\view\meeting\tolist.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'partner',
+  7 => 'guest',
+  8 => 'province',
+  9 => 'meetingSort',
+  10 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.199457s ] mysql:host=47.95.114.220;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `partner` [ RunTime:0.135219s ]
+[ sql ] [ SQL ] SELECT * FROM `partner` [ RunTime:0.134205s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `guest` [ RunTime:0.133965s ]
+[ sql ] [ SQL ] SELECT * FROM `guest` [ RunTime:0.133802s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `province` [ RunTime:0.133965s ]
+[ sql ] [ SQL ] SELECT * FROM `province` [ RunTime:0.133493s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `meeting_sort` [ RunTime:0.134588s ]
+[ sql ] [ SQL ] SELECT * FROM `meeting_sort` [ RunTime:0.133665s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `meeting` [ RunTime:0.134199s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `meeting` `m` LIMIT 1 [ RunTime:0.133066s ]
+[ sql ] [ SQL ] SELECT * FROM `meeting` `m` LIMIT 0,10 [ RunTime:0.135660s ]
+---------------------------------------------------------------
+[ 2018-02-03T10:20:03+08:00 ] 127.0.0.1 GET /admin/Cooperation/tolist
+[ info ] mrw.com/admin/Cooperation/tolist [运行时间：0.379251s][吞吐率：2.64req/s] [内存消耗：2,385.51kb] [文件加载：76]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Cooperation',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Cooperation/tolist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Cooperation->toList[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Cooperation.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.198850s ] mysql:host=47.95.114.220;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cooperation` [ RunTime:0.132841s ]
+[ error ] [2]PDO::prepare(): MySQL server has gone away[D:\phpStudy\WWW\zgmrw\thinkphp\library\think\db\Connection.php:368]
+---------------------------------------------------------------
+[ 2018-02-03T10:20:10+08:00 ] 127.0.0.1 GET /index.html
+[ info ] mrw.com/index.html [运行时间：0.044262s][吞吐率：22.59req/s] [内存消耗：1,700.57kb] [文件加载：63]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/admin/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/admin\view\index\index.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-03T10:20:10+08:00 ] 127.0.0.1 GET /admin/index/welcome.html
+[ info ] mrw.com/admin/index/welcome.html [运行时间：0.371109s][吞吐率：2.69req/s] [内存消耗：1,839.55kb] [文件加载：67]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'server',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.203527s ] mysql:host=47.95.114.220;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] select version() [ RunTime:0.135258s ]
+---------------------------------------------------------------
+[ 2018-02-03T10:20:11+08:00 ] 127.0.0.1 GET /admin/Cooperation/tolist
+[ info ] mrw.com/admin/Cooperation/tolist [运行时间：0.044062s][吞吐率：22.70req/s] [内存消耗：1,886.07kb] [文件加载：70]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Cooperation',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Cooperation/tolist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Cooperation->toList[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Cooperation.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/admin\view\cooperation\tolist.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: page[D:\phpStudy\WWW\zgmrw\runtime\temp\8028b22b2b04357becd577a6c71eed09.php:112]
+---------------------------------------------------------------
+[ 2018-02-03T10:20:31+08:00 ] 127.0.0.1 GET /index.html
+[ info ] mrw.com/index.html [运行时间：0.031298s][吞吐率：31.95req/s] [内存消耗：1,700.57kb] [文件加载：63]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/admin/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/admin\view\index\index.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-03T10:20:31+08:00 ] 127.0.0.1 GET /admin/index/welcome.html
+[ info ] mrw.com/admin/index/welcome.html [运行时间：0.377208s][吞吐率：2.65req/s] [内存消耗：1,839.55kb] [文件加载：67]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'server',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.202297s ] mysql:host=47.95.114.220;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] select version() [ RunTime:0.134488s ]
+---------------------------------------------------------------
+[ 2018-02-03T10:20:34+08:00 ] 127.0.0.1 GET /admin/Cooperation/tolist
+[ info ] mrw.com/admin/Cooperation/tolist [运行时间：0.035364s][吞吐率：28.28req/s] [内存消耗：1,774.19kb] [文件加载：68]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Cooperation',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Cooperation/tolist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Cooperation->toList[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Cooperation.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/admin\view\cooperation\tolist.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [1]Call to a member function render() on array[D:\phpStudy\WWW\zgmrw\runtime\temp\8028b22b2b04357becd577a6c71eed09.php:169]
+---------------------------------------------------------------
+[ 2018-02-03T10:21:00+08:00 ] 127.0.0.1 GET /index.html
+[ info ] mrw.com/index.html [运行时间：0.039464s][吞吐率：25.34req/s] [内存消耗：1,700.56kb] [文件加载：63]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/admin/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/admin\view\index\index.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-03T10:21:00+08:00 ] 127.0.0.1 GET /admin/index/welcome.html
+[ info ] mrw.com/admin/index/welcome.html [运行时间：0.376372s][吞吐率：2.66req/s] [内存消耗：1,839.55kb] [文件加载：67]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'server',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.206021s ] mysql:host=47.95.114.220;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] select version() [ RunTime:0.137482s ]
+---------------------------------------------------------------
+[ 2018-02-03T10:21:02+08:00 ] 127.0.0.1 GET /admin/Cooperation/tolist
+[ info ] mrw.com/admin/Cooperation/tolist [运行时间：0.364695s][吞吐率：2.74req/s] [内存消耗：2,385.18kb] [文件加载：76]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Cooperation',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Cooperation/tolist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Cooperation->toList[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Cooperation.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.190040s ] mysql:host=47.95.114.220;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cooperation` [ RunTime:0.127850s ]
+[ error ] [2]PDO::prepare(): MySQL server has gone away[D:\phpStudy\WWW\zgmrw\thinkphp\library\think\db\Connection.php:368]
+---------------------------------------------------------------
+[ 2018-02-03T10:21:18+08:00 ] 127.0.0.1 GET /index.html
+[ info ] mrw.com/index.html [运行时间：0.031692s][吞吐率：31.55req/s] [内存消耗：1,700.57kb] [文件加载：63]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/admin/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/admin\view\index\index.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-03T10:21:18+08:00 ] 127.0.0.1 GET /admin/index/welcome.html
+[ info ] mrw.com/admin/index/welcome.html [运行时间：0.374928s][吞吐率：2.67req/s] [内存消耗：1,839.55kb] [文件加载：67]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'server',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.204042s ] mysql:host=47.95.114.220;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] select version() [ RunTime:0.136228s ]
+---------------------------------------------------------------
+[ 2018-02-03T10:21:20+08:00 ] 127.0.0.1 GET /admin/Cooperation/tolist
+[ info ] mrw.com/admin/Cooperation/tolist [运行时间：0.514510s][吞吐率：1.94req/s] [内存消耗：2,404.52kb] [文件加载：76]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Cooperation',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Cooperation/tolist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Cooperation->toList[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Cooperation.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/admin\view\cooperation\tolist.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.202219s ] mysql:host=47.95.114.220;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cooperation` [ RunTime:0.135721s ]
+[ sql ] [ SQL ] SELECT * FROM `cooperation` [ RunTime:0.135052s ]
+[ error ] [1]Call to a member function render() on array[D:\phpStudy\WWW\zgmrw\runtime\temp\8028b22b2b04357becd577a6c71eed09.php:169]
+---------------------------------------------------------------
+[ 2018-02-03T10:21:39+08:00 ] 127.0.0.1 GET /index.html
+[ info ] mrw.com/index.html [运行时间：0.032699s][吞吐率：30.58req/s] [内存消耗：1,700.57kb] [文件加载：63]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/admin/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/admin\view\index\index.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-03T10:21:39+08:00 ] 127.0.0.1 GET /admin/index/welcome.html
+[ info ] mrw.com/admin/index/welcome.html [运行时间：0.397288s][吞吐率：2.52req/s] [内存消耗：1,839.55kb] [文件加载：67]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'server',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.217975s ] mysql:host=47.95.114.220;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] select version() [ RunTime:0.145086s ]
+---------------------------------------------------------------
+[ 2018-02-03T10:21:41+08:00 ] 127.0.0.1 GET /admin/Cooperation/tolist
+[ info ] mrw.com/admin/Cooperation/tolist [运行时间：0.557131s][吞吐率：1.79req/s] [内存消耗：2,533.31kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Cooperation',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Cooperation/tolist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Cooperation->toList[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Cooperation.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/admin\view\cooperation\tolist.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.216721s ] mysql:host=47.95.114.220;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cooperation` [ RunTime:0.145654s ]
+[ sql ] [ SQL ] SELECT * FROM `cooperation` [ RunTime:0.145972s ]
+[ error ] [1]Call to a member function render() on array[D:\phpStudy\WWW\zgmrw\runtime\temp\8028b22b2b04357becd577a6c71eed09.php:169]
+---------------------------------------------------------------
+[ 2018-02-03T10:21:47+08:00 ] 127.0.0.1 GET /index.html
+[ info ] mrw.com/index.html [运行时间：0.040388s][吞吐率：24.76req/s] [内存消耗：1,700.57kb] [文件加载：63]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/admin/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/admin\view\index\index.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-03T10:21:47+08:00 ] 127.0.0.1 GET /admin/index/welcome.html
+[ info ] mrw.com/admin/index/welcome.html [运行时间：0.350940s][吞吐率：2.85req/s] [内存消耗：1,839.55kb] [文件加载：67]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'server',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.190524s ] mysql:host=47.95.114.220;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] select version() [ RunTime:0.126812s ]
+---------------------------------------------------------------
+[ 2018-02-03T10:21:51+08:00 ] 127.0.0.1 GET /admin/Cooperation/tolist
+[ info ] mrw.com/admin/Cooperation/tolist [运行时间：0.559653s][吞吐率：1.79req/s] [内存消耗：2,471.15kb] [文件加载：73]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Cooperation',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Cooperation/tolist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Cooperation->toList[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Cooperation.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/admin\view\cooperation\tolist.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.217070s ] mysql:host=47.95.114.220;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cooperation` [ RunTime:0.145034s ]
+[ sql ] [ SQL ] SELECT * FROM `cooperation` [ RunTime:0.145004s ]
+---------------------------------------------------------------
+[ 2018-02-03T10:21:51+08:00 ] 127.0.0.1 GET /Js/admin/Cooperation/tolist.js
+[ info ] mrw.com/Js/admin/Cooperation/tolist.js [运行时间：0.030679s][吞吐率：32.60req/s] [内存消耗：1,103.30kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Js',
+    1 => 'admin',
+    2 => 'Cooperation',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/admin/Cooperation/tolist',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/Js/admin/Cooperation/tolist_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-03T10:21:52+08:00 ] 127.0.0.1 GET /admin/Cooperation/doAdd
+[ info ] mrw.com/admin/Cooperation/doAdd [运行时间：0.035753s][吞吐率：27.97req/s] [内存消耗：1,787.59kb] [文件加载：64]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Cooperation',
+    2 => 'doAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/admin/Cooperation/tolist',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Cooperation/doAdd' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Cooperation->doAdd[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Cooperation.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/admin\view\cooperation\doadd.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-03T10:21:52+08:00 ] 127.0.0.1 GET /Js/admin/Cooperation/doadd.js
+[ info ] mrw.com/Js/admin/Cooperation/doadd.js [运行时间：0.022916s][吞吐率：43.64req/s] [内存消耗：1,103.29kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Js',
+    1 => 'admin',
+    2 => 'Cooperation',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/admin/Cooperation/doAdd',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/Js/admin/Cooperation/doadd_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-03T10:21:52+08:00 ] 127.0.0.1 GET /Js/admin/Cooperation/doadd.js
+[ info ] mrw.com/Js/admin/Cooperation/doadd.js [运行时间：0.022546s][吞吐率：44.35req/s] [内存消耗：1,103.29kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Js',
+    1 => 'admin',
+    2 => 'Cooperation',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/admin/Cooperation/doAdd',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/Js/admin/Cooperation/doadd_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-03T10:22:09+08:00 ] 127.0.0.1 GET /index.html
+[ info ] mrw.com/index.html [运行时间：0.032347s][吞吐率：30.91req/s] [内存消耗：1,700.57kb] [文件加载：63]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/admin/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/admin\view\index\index.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-03T10:22:09+08:00 ] 127.0.0.1 GET /admin/index/welcome.html
+[ info ] mrw.com/admin/index/welcome.html [运行时间：0.368376s][吞吐率：2.71req/s] [内存消耗：1,839.55kb] [文件加载：67]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'server',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.201153s ] mysql:host=47.95.114.220;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] select version() [ RunTime:0.135346s ]
+---------------------------------------------------------------
+[ 2018-02-03T10:22:11+08:00 ] 127.0.0.1 GET /admin/Cooperation/tolist
+[ info ] mrw.com/admin/Cooperation/tolist [运行时间：0.384681s][吞吐率：2.60req/s] [内存消耗：2,385.51kb] [文件加载：76]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Cooperation',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Cooperation/tolist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Cooperation->toList[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Cooperation.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.201746s ] mysql:host=47.95.114.220;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cooperation` [ RunTime:0.135826s ]
+[ error ] [2]PDO::prepare(): MySQL server has gone away[D:\phpStudy\WWW\zgmrw\thinkphp\library\think\db\Connection.php:368]
+---------------------------------------------------------------
+[ 2018-02-03T10:36:52+08:00 ] 127.0.0.1 GET /policies.html
+[ info ] mrw.com/policies.html [运行时间：1.445189s][吞吐率：0.69req/s] [内存消耗：2,426.22kb] [文件加载：73]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'Policies',
+    2 => 'tolist',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/meeting_index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/policies_html' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Policies->toList[ D:\phpStudy\WWW\zgmrw\application\home\controller\Policies.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/home\view\policies\toList.html [ array (
+  0 => 'headline',
+  1 => 'meeting',
+  2 => 'mName',
+  3 => 'cName',
+  4 => 'aName',
+  5 => 'menu',
+  6 => 'kx',
+  7 => 'zcPageHtml',
+  8 => 'fgPageHtml',
+  9 => 'zc',
+  10 => 'fg',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.197529s ] mysql:host=47.95.114.220;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `headline` [ RunTime:0.132199s ]
+[ sql ] [ SQL ] SELECT `title`,`create_at` FROM `headline` LIMIT 6 [ RunTime:0.132017s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `meeting` [ RunTime:0.133082s ]
+[ sql ] [ SQL ] SELECT `img`,`title`,`create_at`,`city` FROM `meeting` ORDER BY id DESC LIMIT 4 [ RunTime:0.131810s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.133001s ]
+[ sql ] [ SQL ] SELECT `title`,`create_at` FROM `news` WHERE  `sort_id` = 8 LIMIT 0,1 [ RunTime:0.133316s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `news` WHERE  `sort_id` = 8 LIMIT 1 [ RunTime:0.131893s ]
+[ sql ] [ SQL ] SELECT `title`,`create_at` FROM `news` WHERE  `sort_id` = 10 LIMIT 0,16 [ RunTime:0.131461s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `news` WHERE  `sort_id` = 10 LIMIT 1 [ RunTime:0.131660s ]
+---------------------------------------------------------------
+[ 2018-02-03T10:36:52+08:00 ] 127.0.0.1 GET /css/image/downloadclient-code.png
+[ info ] mrw.com/css/image/downloadclient-code.png [运行时间：0.024775s][吞吐率：40.36req/s] [内存消耗：1,103.59kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'css',
+    1 => 'image',
+    2 => 'downloadclient-code.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/css/home/style.css',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/Css/image/downloadclient-code_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-03T10:36:53+08:00 ] 127.0.0.1 GET /css/image/standardalliance.png
+[ info ] mrw.com/css/image/standardalliance.png [运行时间：0.029172s][吞吐率：34.28req/s] [内存消耗：1,103.41kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'css',
+    1 => 'image',
+    2 => 'standardalliance.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/css/home/style.css',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/Css/image/standardalliance_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-03T10:36:53+08:00 ] 127.0.0.1 GET /css/image/headlines-header-icon.png
+[ info ] mrw.com/css/image/headlines-header-icon.png [运行时间：0.028343s][吞吐率：35.28req/s] [内存消耗：1,103.46kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'css',
+    1 => 'image',
+    2 => 'headlines-header-icon.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/css/home/style.css',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/Css/image/headlines-header-icon_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-03T10:36:55+08:00 ] 127.0.0.1 GET /home/Policies/getPageList?p=2
+[ info ] mrw.com/home/Policies/getPageList?p=2 [运行时间：1.089209s][吞吐率：0.92req/s] [内存消耗：2,362.07kb] [文件加载：71]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'Policies',
+    2 => 'getPageList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/policies.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/home/Policies/getPageList' => '',
+  'p' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Policies->getPageList[ D:\phpStudy\WWW\zgmrw\application\home\controller\Policies.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/home\view\policies\getpagelist.html [ array (
+  0 => 'headline',
+  1 => 'meeting',
+  2 => 'mName',
+  3 => 'cName',
+  4 => 'aName',
+  5 => 'menu',
+  6 => 'kx',
+  7 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.205226s ] mysql:host=47.95.114.220;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `headline` [ RunTime:0.138009s ]
+[ sql ] [ SQL ] SELECT `title`,`create_at` FROM `headline` LIMIT 6 [ RunTime:0.136740s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `meeting` [ RunTime:0.138373s ]
+[ sql ] [ SQL ] SELECT `img`,`title`,`create_at`,`city` FROM `meeting` ORDER BY id DESC LIMIT 4 [ RunTime:0.138650s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.138138s ]
+[ sql ] [ SQL ] SELECT `title`,`create_at` FROM `news` WHERE  `sort_id` = 8 LIMIT 1,1 [ RunTime:0.137212s ]
+---------------------------------------------------------------
+[ 2018-02-03T10:36:58+08:00 ] 127.0.0.1 GET /home/Policies/getPageList?p=1
+[ info ] mrw.com/home/Policies/getPageList?p=1 [运行时间：0.784108s][吞吐率：1.28req/s] [内存消耗：2,354.82kb] [文件加载：71]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'Policies',
+    2 => 'getPageList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/policies.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/home/Policies/getPageList' => '',
+  'p' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Policies->getPageList[ D:\phpStudy\WWW\zgmrw\application\home\controller\Policies.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/home\view\policies\getpagelist.html [ array (
+  0 => 'headline',
+  1 => 'meeting',
+  2 => 'mName',
+  3 => 'cName',
+  4 => 'aName',
+  5 => 'menu',
+  6 => 'kx',
+  7 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.201788s ] mysql:host=47.95.114.220;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `headline` [ RunTime:0.136701s ]
+[ sql ] [ SQL ] SELECT `title`,`create_at` FROM `headline` LIMIT 6 [ RunTime:0.134970s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `meeting` [ RunTime:0.135644s ]
+[ sql ] [ SQL ] SELECT `img`,`title`,`create_at`,`city` FROM `meeting` ORDER BY id DESC LIMIT 4 [ RunTime:0.134870s ]
+---------------------------------------------------------------
+[ 2018-02-03T10:37:00+08:00 ] 127.0.0.1 GET /home/Policies/getPageList?p=2
+[ info ] mrw.com/home/Policies/getPageList?p=2 [运行时间：0.824846s][吞吐率：1.21req/s] [内存消耗：2,354.82kb] [文件加载：71]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'Policies',
+    2 => 'getPageList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/policies.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/home/Policies/getPageList' => '',
+  'p' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Policies->getPageList[ D:\phpStudy\WWW\zgmrw\application\home\controller\Policies.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/home\view\policies\getpagelist.html [ array (
+  0 => 'headline',
+  1 => 'meeting',
+  2 => 'mName',
+  3 => 'cName',
+  4 => 'aName',
+  5 => 'menu',
+  6 => 'kx',
+  7 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.212742s ] mysql:host=47.95.114.220;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `headline` [ RunTime:0.142931s ]
+[ sql ] [ SQL ] SELECT `title`,`create_at` FROM `headline` LIMIT 6 [ RunTime:0.141713s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `meeting` [ RunTime:0.143194s ]
+[ sql ] [ SQL ] SELECT `img`,`title`,`create_at`,`city` FROM `meeting` ORDER BY id DESC LIMIT 4 [ RunTime:0.141848s ]
+---------------------------------------------------------------
+[ 2018-02-03T10:37:02+08:00 ] 127.0.0.1 GET /home/Policies/getPageList?p=1
+[ info ] mrw.com/home/Policies/getPageList?p=1 [运行时间：0.802880s][吞吐率：1.25req/s] [内存消耗：2,354.82kb] [文件加载：71]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'Policies',
+    2 => 'getPageList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/policies.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/home/Policies/getPageList' => '',
+  'p' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Policies->getPageList[ D:\phpStudy\WWW\zgmrw\application\home\controller\Policies.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/home\view\policies\getpagelist.html [ array (
+  0 => 'headline',
+  1 => 'meeting',
+  2 => 'mName',
+  3 => 'cName',
+  4 => 'aName',
+  5 => 'menu',
+  6 => 'kx',
+  7 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.206394s ] mysql:host=47.95.114.220;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `headline` [ RunTime:0.137318s ]
+[ sql ] [ SQL ] SELECT `title`,`create_at` FROM `headline` LIMIT 6 [ RunTime:0.137173s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `meeting` [ RunTime:0.140605s ]
+[ sql ] [ SQL ] SELECT `img`,`title`,`create_at`,`city` FROM `meeting` ORDER BY id DESC LIMIT 4 [ RunTime:0.137349s ]
+---------------------------------------------------------------
+[ 2018-02-03T10:37:06+08:00 ] 127.0.0.1 GET /home/Policies/getPageList?p=2
+[ info ] mrw.com/home/Policies/getPageList?p=2 [运行时间：0.788759s][吞吐率：1.27req/s] [内存消耗：2,354.82kb] [文件加载：71]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'Policies',
+    2 => 'getPageList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/policies.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/home/Policies/getPageList' => '',
+  'p' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Policies->getPageList[ D:\phpStudy\WWW\zgmrw\application\home\controller\Policies.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/home\view\policies\getpagelist.html [ array (
+  0 => 'headline',
+  1 => 'meeting',
+  2 => 'mName',
+  3 => 'cName',
+  4 => 'aName',
+  5 => 'menu',
+  6 => 'kx',
+  7 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.201529s ] mysql:host=47.95.114.220;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `headline` [ RunTime:0.135483s ]
+[ sql ] [ SQL ] SELECT `title`,`create_at` FROM `headline` LIMIT 6 [ RunTime:0.135739s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `meeting` [ RunTime:0.135845s ]
+[ sql ] [ SQL ] SELECT `img`,`title`,`create_at`,`city` FROM `meeting` ORDER BY id DESC LIMIT 4 [ RunTime:0.135086s ]
+---------------------------------------------------------------
+[ 2018-02-03T10:56:44+08:00 ] 127.0.0.1 GET /index.html
+[ info ] mrw.com/index.html [运行时间：0.038180s][吞吐率：26.19req/s] [内存消耗：1,700.56kb] [文件加载：63]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/admin/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/admin\view\index\index.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-03T10:56:44+08:00 ] 127.0.0.1 GET /admin/index/welcome.html
+[ info ] mrw.com/admin/index/welcome.html [运行时间：0.325114s][吞吐率：3.08req/s] [内存消耗：1,839.55kb] [文件加载：67]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=totbnqrv2uaa099ob5algn8jv3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mrw.com/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'server',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.175614s ] mysql:host=47.95.114.220;dbname=mrw;charset=utf8
+[ sql ] [ SQL ] select version() [ RunTime:0.116846s ]
+---------------------------------------------------------------
+[ 2018-02-03T11:00:18+08:00 ] 127.0.0.1 GET /admin
+[ info ] mrw.com/admin [运行时间：0.028204s][吞吐率：35.46req/s] [内存消耗：1,408.77kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-03T11:00:22+08:00 ] 127.0.0.1 GET /admin/login/index.html
+[ info ] mrw.com/admin/login/index.html [运行时间：0.040244s][吞吐率：24.85req/s] [内存消耗：1,408.37kb] [文件加载：60]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'referer' => 'http://mrw.com/admin',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/admin\view\login\index.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-03T11:01:17+08:00 ] 127.0.0.1 GET /index.html
+[ info ] mrw.com/index.html [运行时间：0.025668s][吞吐率：38.96req/s] [内存消耗：1,409.16kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\zgmrw\\runtime\\session',
+)
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-03T11:01:21+08:00 ] 127.0.0.1 GET /admin/login/index.html
+[ info ] mrw.com/admin/login/index.html [运行时间：0.024779s][吞吐率：40.36req/s] [内存消耗：1,408.34kb] [文件加载：60]
+[ info ] [ LANG ] D:\phpStudy\WWW\zgmrw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'referer' => 'http://mrw.com/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'host' => 'mrw.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy\WWW\zgmrw\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zgmrw\public/../application/admin\view\login\index.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File

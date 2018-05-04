@@ -1,0 +1,80 @@
+<layout name="layout"/>
+<fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+    <legend>消息列表<a href="javascript:;" class="layui-btn layui-btn-small add">添加推送</a>
+
+    </legend>
+</fieldset>
+<div class="layui-form layui-border-box layui-table-view" lay-filter="content-box" style="padding: 20px;border: 0;">
+    <div class="layui-table-box">
+        <table class="layui-table" style="width: 100%; border: 1px solid #eee">
+            <colgroup>
+                <col width="50">
+                <col width="50">
+            </colgroup>
+            <thead>
+            <tr>
+                <th data-field="0">
+                    <div class="layui-table-cell laytable-cell-1-0 laytable-cell-numbers">
+                        <span>#</span>
+                    </div>
+                </th>
+
+                <th data-field="id">
+                    <div class="layui-table-cell laytable-cell-1-id">
+                        <span>ID</span>
+
+                    </div>
+                </th>
+                <th data-field="name">
+                    <div class="layui-table-cell">
+                        <span>消息内容</span>
+                    </div>
+                </th>
+                <th data-field="type">
+                    <div class="layui-table-cell"><span>推送状态</span></div>
+                </th>
+                <th data-field="type">
+                    <div class="layui-table-cell"><span>推送时间</span></div>
+                </th>
+
+
+
+            </tr>
+            </thead>
+            <tbody class="">
+            <volist name="page" id="vo">
+                <tr data-index="0" class="tbody_content" data-id="{$vo.id}">
+                    <td >
+                        <div class="layui-table-cell">{$key}</div>
+                    </td>
+
+                    <td>
+                        <div class="layui-table-cell">{$vo.id}</div>
+                    </td>
+                    <td>
+                        <div class="layui-table-cell">{$vo.content}</div>
+                    </td>
+
+                    <td>
+                        <div class="layui-table-cell">{$vo.status}</div>
+                    </td>
+
+                    <td>
+                        <div class="layui-table-cell">{$vo.create_at}</div>
+                    </td>
+
+
+                </tr>
+            </volist>
+            </tbody>
+            <tfoot>
+            <tr>
+                <td colspan="13">{$page->render();}</td>
+            </tr>
+            </tfoot>
+        </table>
+
+    </div>
+</div>
+</div>
+</div>
