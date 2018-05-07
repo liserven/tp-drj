@@ -23,7 +23,7 @@ class BuildingOrder extends BaseModel
         return self::alias('bo')
             ->where($where)
             ->field('bo.id, bo.order_no, bo.total_price, bo.total_count, bo.snap_img, bo.snap_name,
-                       bo.snap_address,  bo.create_at, bo.status,bo.payment_type,bo.pay_time,bo.trade_no, bo.transaction_id, bo.cancel_reason')
+                       bo.snap_address,bo.user_id,  bo.create_at, bo.status,bo.payment_type,bo.pay_time,bo.trade_no, bo.transaction_id, bo.cancel_reason')
             ->order('id desc')
             ->find();
     }

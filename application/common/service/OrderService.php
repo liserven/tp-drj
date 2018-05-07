@@ -242,7 +242,7 @@ class OrderService
                     'errorCode' => 60001,
                 ]);
         }
-        return $userAddress->u_other;
+        return $userAddress->id;
     }
     private function getProductStatus($oPID, $oCount)
     {
@@ -313,9 +313,10 @@ class OrderService
             $order->total_count = $snap['totalCount'];
             $order->snap_img = $snap['snapImg'];
             $order->snap_name = $snap['snapName'];
-            $order->snap_address = $snap['snapAddress'];
+            $order->snap_address = $this->address;
             $order->items = json_encode($snap['pStatus']);
             $order->topic = $snap['snapName'];
+            $order->message = input('message') ? input('message') : '请尽快发货哟!!';
             $order->save();
 
             $orderID = $order->id;
@@ -328,7 +329,7 @@ class OrderService
             foreach ($this->oBuilding as $key=> $val)
             {
                 $this->oBuilding[$key]['order_id'] = $orderID;
-                $this->oBuilding[$key]['u_address'] = $order->snap_address;
+                $this->oBuilding[$key]['u_address_id'] = $this->address;
             }
 
             $orderProduct = new BuildingOrderDetail();

@@ -35,6 +35,9 @@ class BuildingWxPayNotifyService extends \WxPayNotify
                         'user_id' => $orderData['user_id'],
                         'topic' => '支付成功',
                         'content' => '您的订单名称为'.$orderData->snap_name.'已经支付成功',
+                        'type'=> 2,
+                        'img'=> $orderData['snap_img']
+
                     ];
 
                     $orderData->status = BuildingOrderStatus::PAID;
