@@ -1,3 +1,22 @@
-<div>
+<layout name="layout"/>
+  <form action="{:url('orbuilding/logistics')}" method="post">
+    <div class="layui-form-item">
+        <div class="layui-inline">
+            <label class="layui-form-label">选择物流</label>
+            <div class="layui-input-inline">
+                <select name="inflow">
+                    <volist name="page" id="vo">
+                        <option value="{$vo.code}">{$vo.name}</option>
+                    </volist>
+                </select>
+            </div>
+        </div>
+
+    </div>
+
     请输入运单号：<input type="text" name="logustics">
-</div>
+
+<input type="hidden" name="id" value="$id">
+    <input type="submit" value="提交">
+
+  </form>

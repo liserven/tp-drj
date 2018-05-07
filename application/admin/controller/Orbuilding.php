@@ -9,6 +9,8 @@
 namespace app\admin\controller;
 
 use app\common\model\BuildingOrderDetail;
+use think\Db;
+
 
 class Orbuilding extends Base
 {
@@ -22,7 +24,32 @@ class Orbuilding extends Base
         return $this->fetch();
     }
 
-    public function logistics(){
-        return view();
+    public function logistics($id){
+
+        if ($this->request->isPost()) {
+            if (!$this->_checkAction()) {
+                return $this->ajaxShow(false, '无权此操作');
+            }
+
+             dd($id);exit;
+             $a    = input('logistics');
+             $b = input('inflow');
+             $result = db('building_order_detail')->where('id',$id)->update(['logistics' => $a,'express_code'=>$b]);
+
+             return $this->resultHandle($result);
+
+        }else{
+
+             $id = $id;
+             $id = explode('id',$id);
+             var_dump($id);exit;
+             $page = Db::table('express_code')->select();
+             $this->assign([
+                 'page' => $page,
+                  'id'  => $id
+             ]);
+
+             $this->display();
+        }
     }
 }

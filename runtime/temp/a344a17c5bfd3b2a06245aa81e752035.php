@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:72:"D:\phpStudy\WWW\drhome\public/../application/admin\view\index\index.html";i:1525435641;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:72:"D:\phpStudy\WWW\drhome\public/../application/admin\view\index\index.html";i:1525655444;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
 
 <!DOCTYPE HTML>
 <html>
@@ -83,7 +83,7 @@
                     <li class="layui-nav-item">
                         <a class="" href="javascript:;"><?php echo $vo['ad_topic']; ?></a>
                         <dl class="layui-nav-child lsy-col-offset2" style="text-align: center;">
-                            <?php if(is_array($vo['two']) || $vo['two'] instanceof \think\Collection || $vo['two'] instanceof \think\Paginator): $i = 0; $__LIST__ = $vo['two'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?>
+                            <?php if(is_array($vo['data']) || $vo['data'] instanceof \think\Collection || $vo['data'] instanceof \think\Paginator): $i = 0; $__LIST__ = $vo['data'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?>
                                 <dd><a href="javascript:;" href-url="<?php echo $v['ad_url']; ?>"><?php echo $v['ad_topic']; ?></a></dd>
                             <?php endforeach; endif; else: echo "" ;endif; ?>
                         </dl>

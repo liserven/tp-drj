@@ -327,7 +327,7 @@ class Building extends Base
         Db::startTrans();
         try {
             $result = $data->delete();
-            CusLog::writeLog($this->User['am_id'], '删除了 <a class="c-red">' . $data->id . '</a>Banner');
+            CusLog::writeLog($this->User['am_id'], '删除了 <a class="c-red">' . $data->id . '</a>');
             Db::commit();
             return $this->resultHandle($result);
         } catch (\Exception $e) {
@@ -361,6 +361,7 @@ class Building extends Base
 
 
         $page = db('building_details')->where('id',$id)->setField('status','2');
+        CusLog::writeLog($this->User['am_id'], '下架了 <a class="c-red">' . $page->id . '</a>');
         return $this->resultHandle($page);
     }
 
@@ -371,6 +372,7 @@ class Building extends Base
 
 
         $page = db('building_details')->where('id',$id)->setField('status','1');
+        CusLog::writeLog($this->User['am_id'], '上架 <a class="c-red">' . $page->id . '</a>');
         return $this->resultHandle($page);
     }
 
@@ -383,4 +385,10 @@ class Building extends Base
 
 
     }
+
+
+
+
+
+
 }

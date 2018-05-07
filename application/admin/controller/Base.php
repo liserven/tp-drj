@@ -76,7 +76,7 @@ class Base extends Controller
         $User = $this->_checkLogin();  //获取登录用户
         if( $User['am_issupre']==1){
             //超级管理员 直接过
-            return config('menu');
+            return $this->getSuperAction();
         }
         //获取用户所在权限的所有行为
         $actionList = $this->getDutyAction($User['am_id']);  //一级导航
@@ -246,6 +246,20 @@ class Base extends Controller
         }
         return $newIds;
     }
+
+
+
+
+    private function getSuperAction(){
+        $actions = Db::table('action_data')->where([ 'ad_pid'=> 0])->select();
+        foreach ( $actions as $key=> $action)
+        {
+           $actions[$key]['data'] = Db::table('action_data')->where([ 'ad_pid'=> $action['ad_id']])->select();
+        }
+
+        return $actions;
+    }
+
 
 
     public function _checkAction(){

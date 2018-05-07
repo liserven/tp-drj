@@ -1,0 +1,2 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:77:"D:\phpStudy\WWW\drhome\public/../application/admin\view\building\waybill.html";i:1525657491;}*/ ?>
+<span>填写运单号：<input type="text" name="waybill"></span>

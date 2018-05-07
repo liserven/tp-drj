@@ -99,7 +99,7 @@
                         <div class="layui-table-cell">{$vo.g_number}</div>
                     </td>
                     <td>
-                        <div class="layui-table-cell">{$vo.u_address}</div>
+                        <div class="layui-table-cell">{$vo.u_address_id}</div>
                     </td>
                     <td>
                         <div class="layui-table-cell">{$vo.pay}</div>
@@ -107,12 +107,6 @@
                     <td>
                         <div class="layui-table-cell">{$vo.status}</div>
                     </td>
-                    <if condition="$vo.logistics eq null">
-
-                        <td>
-                                <a class="layui-btn layui-btn-xs find-ali-status" pay-type="" name="">填写运单号</a>
-                        </td>
-                        <else>
                     <td>
                         <div class="layui-table-cell">{$vo.logistics}</div>
                     </td>
@@ -136,9 +130,10 @@
                     <td>
                         <div class="layui-table-cell">{$vo.update_at}</div>
                     </td>
+
                     <td class="layui-table-cell">
 
-                            <a class="layui-btn layui-btn-xs find-ali-status" pay-type="" name="">填写发货信息</a>
+                            <a class="layui-btn layui-btn-xs find-ali-status" data-id="{$vo.id}">填写发货信息</a>
 
                     </td>
                 </tr>

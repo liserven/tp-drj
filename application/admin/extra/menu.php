@@ -287,7 +287,7 @@ return [
 
         ],
     ],
-    'kanjia' => [
+    'Kanjia' => [
         'icon' => '&#xe62d;',
         'id' => 'menu_notice',
         'ad_topic' => '砍价列表',
@@ -315,7 +315,7 @@ return [
 
         ],
     ],
-    'ask' => [
+    'Ask' => [
         'icon' => '&#xe62d;',
         'id' => 'menu_notice',
         'ad_topic' => '客户提问',
@@ -336,7 +336,7 @@ return [
         ],
     ],
 
-    'message' => [
+    'Message' => [
         'icon' => '&#xe62d;',
         'id' => 'menu_notice',
         'ad_topic' => '系统消息',
@@ -415,7 +415,7 @@ return [
 
         ],
     ],
-    'System' => [
+    'Tuisong' => [
         'icon' => '&#xe62d;',
         'id' => 'menu_notice',
         'ad_topic' => '推送消息',
