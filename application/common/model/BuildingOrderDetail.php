@@ -11,6 +11,9 @@ namespace app\common\model;
 
 class BuildingOrderDetail extends BaseModel
 {
+
+
+
    public static function getBuildPage($where=[],$rows=10){
        return self::with([])
            ->where($where)

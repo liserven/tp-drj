@@ -34,7 +34,7 @@ class Building extends Base
     //建材列表
     public function tolist()
     {
-    
+
         $page = Db::table('building_details')->where('status','1')->paginate('10');
 
         $this->assign('page', $page);

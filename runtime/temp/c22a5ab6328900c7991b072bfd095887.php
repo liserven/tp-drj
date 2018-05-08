@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:78:"D:\phpStudy\WWW\drhome\public/../application/admin\view\orbuilding\tolist.html";i:1525694109;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:78:"D:\phpStudy\WWW\drhome\public/../application/admin\view\orbuilding\tolist.html";i:1525761650;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
 
 <!DOCTYPE HTML>
 <html>
@@ -42,8 +42,6 @@
     
 <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
     <legend>订单列表
-        <a href="<?php echo url('user/leadingin'); ?>" class="layui-btn layui-btn-danger layui-btn-small">批量导入</a>
-        <a href="<?php echo url('user/expuser'); ?>" class="layui-btn layui-btn-warm layui-btn-small">批量导出</a>
         <a href="javascript:;" class="layui-btn layui-btn-default layui-btn-small refresh"><i class="layui-icon">&#x1002;</i>刷新</a>
     </legend>
 </fieldset>
@@ -85,10 +83,6 @@
                 <th data-field="modifiedTime">
                     <div class="layui-table-cell"><span>产品数量</span></div>
                 </th>
-                <th data-field="modifiedTime">
-                    <div class="layui-table-cell"><span>收货地址</span></div>
-                </th>
-
                 <th data-field="modifiedTime">
                     <div class="layui-table-cell"><span>支付方式</span></div>
                 </th>
@@ -138,9 +132,6 @@
 
                     <td>
                         <div class="layui-table-cell"><?php echo $vo['g_number']; ?></div>
-                    </td>
-                    <td>
-                        <div class="layui-table-cell"><?php echo $vo['u_address_id']; ?></div>
                     </td>
                     <td>
                         <div class="layui-table-cell"><?php echo $vo['pay']; ?></div>
