@@ -35,6 +35,7 @@ class User extends Base
         //前置操作 必须是用户才能访问
         'checkLogin' => [ 'except'=> 'confirmBinding' ],
         'checkUserScope' => [ 'only'=> 'confirmBinding'],
+        'checkPartner' => ['only' => 'getNeed,editNeed']
     ];
 
     // 合伙人获取用户基本信息
@@ -291,36 +292,49 @@ class User extends Base
         return $this->resultHandle(UserData::update($data));
     }
 
+    /**
+     * @return \think\response\Json
+     * @throws \think\exception\DbException
+     */
     public function getNeed()
     {
         $id = input('user_id');
-        $userId = !empty( $id )? $id : $this->user['ud_id'];
-        $data = UserNeed::get([ 'user_id'=> $userId]);
+        $data = UserNeed::get([ 'user_id'=> $id, 'partner_id'=> $this->user['ud_id']]);
         return show(true, 'ok', $data);
     }
 
     public function editNeed()
     {
-        $needData = UserNeed::get([ 'user_id'=> $this->user['ud_id']]);
-        $data['un_name'] = input('name');
-        $data['un_phone'] = input('phone');
-        $data['un_address'] = input('address');
-        $data['un_area_covered'] = input('covered');
-        $data['un_pattern'] = input('pattern');
-        $data['un_floor'] = input('floor');
-        $data['un_layout'] = input('layout');
-        $data['un_remarks'] = input('remarks');
-        $data['user_id'] =  $this->user['ud_id'];
-        $data['un_topic'] =  input('topic');
-        if( !empty($needData) )
+        $userId = input('user_id');
+        $needData = UserNeed::get([ 'user_id'=> $userId, 'partner_id'=> $this->user['ud_id']]);
+        if( !$needData )
         {
-            $data['un_id'] = $needData['un_id'];
-            UserNeed::update($data);
+            $data['un_name'] = input('name');
+            $data['un_phone'] = input('phone');
+            $data['un_address'] = input('address');
+            $data['un_area_covered'] = input('covered');
+            $data['un_pattern'] = input('pattern');
+            $data['un_floor'] = input('floor');
+            $data['un_layout'] = input('layout');
+            $data['un_remarks'] = input('remarks');
+            $data['user_id'] =  $this->user['ud_id'];
+            $data['partner_id'] =  $this->user['ud_id'];
+            $data['un_topic'] =  input('topic');
+            $result = UserNeed::create($data);
         }
         else{
-            UserNeed::create($data);
+            $needData->un_name = input('name');
+            $needData->un_phone = input('phone');
+            $needData->un_address = input('address');
+            $needData->un_area_covered = input('covered');
+            $needData->un_pattern = input('pattern');
+            $needData->un_floor = input('floor');
+            $needData->un_layout = input('layout');
+            $needData->un_remarks = input('remarks');
+            $needData->un_topic =  input('topic');
+            $result = $needData->save();
         }
-        return show(true, 'ok', $data);
+        return $this->resultHandle($result);
     }
 
 

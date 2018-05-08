@@ -167,6 +167,12 @@ class PartnerUser extends Base
                     'content' => '您的合伙人认为别墅已经完成最后阶段，可以完工',
                     'type' => 3,
                 ]);
+                $villaOrderDetailData = [
+                    'order_id' => $villaOrderResult['id'],
+                    'status' => '签订合同',
+                    'create_at' => time()
+                ];
+                Db::table('villa_order_detail')->insert($villaOrderDetailData);
                 Db::table(['partner_user'])->where(['pu_partner_id' => $this->user['ud_id'], 'pu_user_id' => $userId])->update(['status' => PartnerUserStatus::END]);
                 $villaOrder = VillaOrder::get(['user_id' => $partnerUserData['pu_user_id'],
                     'partner_id' => $partnerUserData['pu_partner_id']
@@ -189,17 +195,26 @@ class PartnerUser extends Base
                     'msg' => '还没有签约或正在施工'
                 ]);
             }
-
+            $orderId = input('order_id');
+            if (!$orderId) {
+                throw new PartnerException([
+                    'msg' => '订单id必须'
+                ]);
+            }
+            $villaOrder = VillaOrder::get($orderId);
+            if ($villaOrder['user_id'] != $userId || $villaOrder['partner_id'] != $this->user['ud_id']) {
+                throw new PartnerException([
+                    'msg'=> '该订单不属于您和该用户'
+                ]);
+            }
             Db::startTrans();
             try {
-                $villaOrder = VillaOrder::get(['user_id' => $partnerUserData['pu_user_id'],
-                    'partner_id' => $partnerUserData['pu_partner_id']
-                ]);
+
                 Db::table(['partner_user'])->where(['pu_partner_id' => $this->user['ud_id'], 'pu_user_id' => $userId])->update(['status' => PartnerUserStatus::CONSTRUCTION]);
                 $villaOrder->status = 2;
                 $villaOrder->save();
                 $villaOrderDetailData = [
-                    'order_id' => $villaOrder['id'],
+                    'order_id' => $villaOrder['id'] ,
                     'status' => '正在施工',
                     'create_at' => time()
                 ];

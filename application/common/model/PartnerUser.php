@@ -12,29 +12,7 @@ namespace app\common\model;
 class PartnerUser extends BaseModel
 {
 
-    public function getStatusAttr($value)
-    {
-        $str = '';
-        switch ($value)
-        {
-            case 1 :
-                $str = "跟进";
-                break;
-            case 2 :
-                $str = "绑定";
-                break;
-            case 3 :
-                $str = "签约";
-                break;
-            case 4 :
-                $str = "施工";
-                break;
-            case 5 :
-                $str = "结款";
-                break;
-        }
-        return $str;
-    }
+
 
     //根据合伙人查询客户
     public static function getCustomerListByPartnerId($partnerId)

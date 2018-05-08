@@ -12,8 +12,8 @@
 use think\Route;
 //首页Banner位
 Route::get('api/:version/i_banner', 'api/:version.Banner/indexBanner');
-Route::get('api/:version/need', 'api/:version.User/getNeed');
-Route::post('api/:version/edit_need', 'api/:version.User/editNeed');
+Route::get('api/:version/need', 'api/:version.User/getNeed');  //获取备忘录
+Route::post('api/:version/edit_need', 'api/:version.User/editNeed'); //修改备忘录
 
 
 //建材分类
@@ -120,6 +120,7 @@ Route::get('api/:version/building_cart_list', 'api/:version.Building/getShopping
 
 //建材提交订单
 Route::post('api/:version/o_report_building', 'api/:version.Order/reportOrder');
+Route::post('api/:version/a_report_building', 'api/:version.Order/AnOorder');
 
 
 // 购买

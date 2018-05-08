@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" filePermissions="493" folderPermissions="493" autoUploadExternalChanges="true">
+  <component name="PublishConfigData" autoUpload="Always" serverName="drj" filePermissions="493" folderPermissions="493" autoUploadExternalChanges="true">
+    <serverData>
+      <paths name="drj">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
     <option name="myAutoUpload" value="ALWAYS" />
   </component>
 </project>

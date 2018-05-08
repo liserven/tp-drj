@@ -44,12 +44,18 @@ class Notice extends Base
     public function noticeList()
     {
         $limit = $this->getLimit();
-        $notices = UserNotices::getPage(['user_id'=> $this->user['ud_id']],$limit);
-        if( $notices->isEmpty())
+
+        $wl = UserNotices::getPage(['user_id'=> $this->user['ud_id'], 'type'=> 2],$limit);
+        $tz = UserNotices::getPage(['user_id'=> $this->user['ud_id'], 'type'=> 1],$limit);
+        if( $wl->isEmpty() && $tz->isEmpty())
         {
             throw new NoticeException();
         }
-        return show(true, 'ok', $notices);
+
+        return show(true, 'ok', [
+            'wl'=> $wl,
+            'tz'=> $tz
+        ]);
     }
 
 

@@ -11,6 +11,7 @@ namespace app\api\controller\v1;
 
 use app\common\model\BuildingOrder;
 use app\common\model\BuildingOrderDetail;
+use app\common\model\UserDelivery;
 use app\common\model\VillaOrder;
 use app\common\service\KdniaoService;
 use app\common\service\OrderService;
@@ -26,7 +27,7 @@ class Order extends Base
 {
     protected $beforeActionList = [
         'checkLogin'=> [ 'only'=> 'getOrderByBuilding,getOrderByVilla,reportOrder,cancelBuildingOrder,delBuildingOrder
-        ,getOrderDetailBuilding']
+        ,getOrderDetailBuilding,AnOorder']
     ];
 
 
@@ -44,13 +45,22 @@ class Order extends Base
         return show( true, 'ok', $oBuildings);
     }
 
+
+    //获取建材订单详情
     public function getOrderDetailBuilding($id)
     {
         (new IDMustBePositiveInt())->goCheck();
         $oBuilding = BuildingOrder::getOrderDetailsBuWhereFind([ 'id'=> $id]); //获取订单
+        $oBuilding['address'] = UserDelivery::get($oBuilding['snap_address']);
         if(!$oBuilding)
         {
             throw new OrderException();
+        }
+        if( $oBuilding['user_id'] != $this->user['ud_id'])
+        {
+            throw new OrderException([
+                'msg'=> '该订单不是你的'
+            ]);
         }
         $details = BuildingOrderDetail::getBuildOrdersByOrderId([ 'order_id'=> $oBuilding['id']]); //获取订单详情
         foreach ($details as &$detail)
@@ -100,6 +110,27 @@ class Order extends Base
     }
 
 
+    public function AnOorder()
+    {
+        $ids = input('id/a');
+        $counts = input('count/a');
+        $types = input('type/a');
+        $products = [];
+        foreach ($ids as $key=>$id)
+        {
+            $products[$key]['id'] = $id;
+            $products[$key]['count'] = $counts[$key];
+            $products[$key]['type'] = $types[$key];
+        }
+        $payService = new OrderService( );
+        $orderResult = $payService->directPurchase($this->user['ud_id'], $products);
+        if( $orderResult['pass'] ) {
+            return show(true, 'ok', $orderResult);
+        }
+        else{
+            return show( false , 'error', []);
+        }
+    }
     //提交订单
     public function reportOrder()
     {
