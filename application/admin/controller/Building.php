@@ -31,7 +31,7 @@ class Building extends Base
     }
 
 
-    //建材列表
+    //建材列表 
     public function tolist()
     {
 
