@@ -13,12 +13,18 @@ use think\Db;
 
 class ConsumerR extends Base{
     public function tolist(){
-       $list = db('grab_red')->select();
+       $list = db('grab_red')->paginate('15')->each(function($item,$key){
+           if(is_array($item) && !empty($item)){
+               $page = db('user_data')->where('ud_id',$item['partner_id'])->find();
+               $item['partner_id'] = $page['ud_name'];
+              return $item;
 
-       foreach ($list as $k=>$val){
-           $page = db('user_data')->where('ud_id',$val['partner_id'])->find();
-           $list[$k]['partner_id'] = $page['ud_name'];
-       }
+           }
+
+
+       });
+
+
       $this->assign('page',$list);
         return view();
     }
