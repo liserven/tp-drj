@@ -12,8 +12,8 @@
 use think\Route;
 //首页Banner位
 Route::get('api/:version/i_banner', 'api/:version.Banner/indexBanner');
-Route::get('api/:version/need', 'api/:version.User/getNeed');
-Route::post('api/:version/edit_need', 'api/:version.User/editNeed');
+Route::get('api/:version/need', 'api/:version.User/getNeed');  //获取备忘录
+Route::post('api/:version/edit_need', 'api/:version.User/editNeed'); //修改备忘录
 
 
 //建材分类

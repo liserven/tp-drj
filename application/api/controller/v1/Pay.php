@@ -78,7 +78,7 @@ class Pay extends Base
             'order_name' => $orderData->snap_name,
             'order_money' => $orderData->total_price,
             'order_no' => $orderData->order_no,
-            'notify_url' => 'http://www.61drhome.cn/ali_pay_building_notify'
+            'NotifyUrl' => 'http://www.61drhome.cn/ali_pay_building_notify'
         ]);
     }
 
