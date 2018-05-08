@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:81:"D:\phpStudy\WWW\drhome\public/../application/admin\view\orbuilding\logistics.html";i:1525680382;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:81:"D:\phpStudy\WWW\drhome\public/../application/admin\view\orbuilding\logistics.html";i:1525748762;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
 
 <!DOCTYPE HTML>
 <html>
@@ -40,27 +40,35 @@
 
 <div class="box-content">
     
-  <form action="<?php echo url('orbuilding/logistics'); ?>" method="post">
-    <div class="layui-form-item">
-        <div class="layui-inline">
-            <label class="layui-form-label">选择物流</label>
-            <div class="layui-input-inline">
-                <select name="inflow">
-                    <?php if(is_array($page) || $page instanceof \think\Collection || $page instanceof \think\Paginator): $i = 0; $__LIST__ = $page;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-                        <option value="<?php echo $vo['code']; ?>"><?php echo $vo['name']; ?></option>
-                    <?php endforeach; endif; else: echo "" ;endif; ?>
-                </select>
-            </div>
-        </div>
+<div style="padding: 20px;">
 
-    </div>
+  <form class="layui-form"  method="post">
+      <div class="layui-form-item">
+          <label class="layui-form-label">运单号</label>
+          <div class="layui-input-inline">
+              <input type="text" name="logustics"  lay-verify="required" placeholder="请输入标题" class="layui-input">
+          </div>
+      </div>
+      <div class="layui-form-item">
+          <label class="layui-form-label">选择物流</label>
+          <div class="layui-input-inline">
+              <select name="logustics_code" lay-verify="required">
+                  <?php if(is_array($page) || $page instanceof \think\Collection || $page instanceof \think\Paginator): $i = 0; $__LIST__ = $page;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+                      <option value="<?php echo $vo['code']; ?>"><?php echo $vo['name']; ?></option>
+                  <?php endforeach; endif; else: echo "" ;endif; ?>
+              </select>
+          </div>
+      </div>
 
-    请输入运单号：<input type="text" name="logustics">
-
-<input type="hidden" name="id" value="$id">
-    <input type="submit" value="提交">
-
+      <div class="layui-form-item">
+          <div class="layui-input-block">
+              <input type="hidden" name="id" value="<?php echo $id; ?>">
+              <button class="layui-btn" lay-submit lay-filter="logistics" id="submit">立即提交</button>
+          </div>
+      </div>
   </form>
+</div>
+
 
 </div>
 <?php if(($aName == 'doadd') OR ($aName == 'doedit')): ?>

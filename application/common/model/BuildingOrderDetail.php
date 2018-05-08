@@ -14,7 +14,9 @@ class BuildingOrderDetail extends BaseModel
    public static function getBuildPage($where=[],$rows=10){
        return self::with([])
            ->where($where)
+
            ->find()
+           ->order('id desc')
            ->paginate($rows);
    }
 
@@ -35,5 +37,7 @@ class BuildingOrderDetail extends BaseModel
             ->field('g_name, id, g_money_solo, g_money_all, g_number, order_no, order_status')
             ->select();
     }
+
+
 
 }

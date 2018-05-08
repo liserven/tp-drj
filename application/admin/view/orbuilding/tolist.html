@@ -130,20 +130,24 @@
                     <td>
                         <div class="layui-table-cell">{$vo.update_at}</div>
                     </td>
-
+                    <eq name="$vo.logistics" value="">
                     <td class="layui-table-cell">
 
                             <a class="layui-btn layui-btn-xs find-ali-status" data-id="{$vo.id}">填写发货信息</a>
 
                     </td>
+                        <else>
+                            <td class="layui-table-cell">
+
+                                <a class="layui-btn layui-btn-xs layui-btn-normal detail  " data-id="{$vo.id}">查看详情</a>
+
+                            </td>
+                    </eq>
+
                 </tr>
             </volist>
             </tbody>
-            <tfoot>
-            <tr>
-                <td colspan="13">{$page->render();}</td>
-            </tr>
-            </tfoot>
+
         </table>
 
     </div>

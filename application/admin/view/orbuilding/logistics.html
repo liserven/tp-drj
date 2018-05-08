@@ -1,22 +1,30 @@
 <layout name="layout"/>
-  <form action="{:url('orbuilding/logistics')}" method="post">
-    <div class="layui-form-item">
-        <div class="layui-inline">
-            <label class="layui-form-label">选择物流</label>
-            <div class="layui-input-inline">
-                <select name="inflow">
-                    <volist name="page" id="vo">
-                        <option value="{$vo.code}">{$vo.name}</option>
-                    </volist>
-                </select>
-            </div>
-        </div>
+<div style="padding: 20px;">
 
-    </div>
+  <form class="layui-form"  method="post">
+      <div class="layui-form-item">
+          <label class="layui-form-label">运单号</label>
+          <div class="layui-input-inline">
+              <input type="text" name="logustics"  lay-verify="required" placeholder="请输入标题" class="layui-input">
+          </div>
+      </div>
+      <div class="layui-form-item">
+          <label class="layui-form-label">选择物流</label>
+          <div class="layui-input-inline">
+              <select name="logustics_code" lay-verify="required">
+                  <volist name="page" id="vo">
+                      <option value="{$vo.code}">{$vo.name}</option>
+                  </volist>
+              </select>
+          </div>
+      </div>
 
-    请输入运单号：<input type="text" name="logustics">
-
-<input type="hidden" name="id" value="$id">
-    <input type="submit" value="提交">
-
+      <div class="layui-form-item">
+          <div class="layui-input-block">
+              <input type="hidden" name="id" value="{$id}">
+              <button class="layui-btn" lay-submit lay-filter="logistics" id="submit">立即提交</button>
+          </div>
+      </div>
   </form>
+</div>
+

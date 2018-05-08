@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:78:"D:\phpStudy\WWW\drhome\public/../application/admin\view\orbuilding\tolist.html";i:1525694109;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:76:"D:\phpStudy\WWW\drhome\public/../application/admin\view\consumer\tolist.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
 
 <!DOCTYPE HTML>
 <html>
@@ -41,12 +41,30 @@
 <div class="box-content">
     
 <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
-    <legend>订单列表
+    <legend>用户列表
         <a href="<?php echo url('user/leadingin'); ?>" class="layui-btn layui-btn-danger layui-btn-small">批量导入</a>
         <a href="<?php echo url('user/expuser'); ?>" class="layui-btn layui-btn-warm layui-btn-small">批量导出</a>
-        <a href="javascript:;" class="layui-btn layui-btn-default layui-btn-small refresh"><i class="layui-icon">&#x1002;</i>刷新</a>
     </legend>
 </fieldset>
+<div class="layui-col-md12 layui-col-md-offset4">
+    <div class="layui-form-query">
+        <form class="layui-form" id="query_form" action="<?php echo url('consumer/lookup'); ?>">
+            <div class="layui-form-item">
+                <div class="layui-inline">
+                    <label class="layui-form-mid">手机号/用户名：</label>
+                    <div class="layui-input-inline">
+                        <input name="phone" title="请输入用户手机号" class="layui-input" type="text">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <div class="layui-input-inline">
+                        <button class="layui-btn" type="submit" lay-submit="seach_phone"><i class="layui-icon"></i>查询</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
 <div class="layui-form layui-border-box layui-table-view" lay-filter="content-box" style="padding: 20px;border: 0;">
     <div class="layui-table-box">
         <table class="layui-table" style="width: 100%; border: 1px solid #eee">
@@ -61,109 +79,102 @@
                         <span>#</span>
                     </div>
                 </th>
-
+                <th data-field="1" data-unresize="true">
+                    <div class="layui-table-cell laytable-cell-1-1 laytable-cell-checkbox">
+                        <input name="layTableCheckbox" lay-skin="primary" lay-filter="layTableAllChoose" type="checkbox">
+                        <div class="layui-unselect layui-form-checkbox" lay-skin="primary">
+                            <i class="layui-icon"></i>
+                        </div>
+                    </div>
+                </th>
                 <th data-field="id">
                     <div class="layui-table-cell laytable-cell-1-id">
                         <span>ID</span>
-
+                        <span class="layui-table-sort layui-inline">
+                            <i class="layui-edge layui-table-sort-asc"></i><i
+                                class="layui-edge layui-table-sort-desc"></i>
+                        </span>
                     </div>
                 </th>
                 <th data-field="name">
-                    <div class="layui-table-cell">
-                        <span>用户名称</span>
+                    <div class="layui-table-cell laytable-cell-1-name">
+                        <span>用户名</span>
+                        <span class="layui-table-sort layui-inline">
+                    </span>
                     </div>
                 </th>
                 <th data-field="type">
-                    <div class="layui-table-cell"><span>产品价格</span></div>
+                    <div class="layui-table-cell"><span>手机号</span></div>
                 </th>
-                <th data-field="type">
-                    <div class="layui-table-cell"><span>产品名称</span></div>
+                <th data-field="city">
+                    <div class="layui-table-cell"><span>头像</span></div>
                 </th>
-                <th data-field="type">
-                    <div class="layui-table-cell"><span>产品规格</span></div>
+                <th data-field="sex">
+                    <div class="layui-table-cell"><span>性别</span></div>
                 </th>
-                <th data-field="modifiedTime">
-                    <div class="layui-table-cell"><span>产品数量</span></div>
-                </th>
-                <th data-field="modifiedTime">
-                    <div class="layui-table-cell"><span>收货地址</span></div>
+                <th data-field="state">
+                    <div class="layui-table-cell"><span>状态</span></div>
                 </th>
 
-                <th data-field="modifiedTime">
-                    <div class="layui-table-cell"><span>支付方式</span></div>
-                </th>
-                <th data-field="modifiedTime">
-                    <div class="layui-table-cell"><span>物流状态</span></div>
-                </th>
-                <th data-field="createdTime">
-                    <div class="layui-table-cell"><span>运单号</span></div>
-                </th>
-                <th data-field="createdTime">
-                    <div class="layui-table-cell"><span>收货状态</span></div>
-                </th>
                 <th data-field="createdTime">
                     <div class="layui-table-cell"><span>创建时间</span></div>
                 </th>
                 <th data-field="modifiedTime">
                     <div class="layui-table-cell"><span>修改时间</span></div>
                 </th>
-                <th data-field="modifiedTime">
-                    <div class="layui-table-cell"><span>操作</span></div>
-                </th>
 
             </tr>
             </thead>
             <tbody class="">
             <?php if(is_array($page) || $page instanceof \think\Collection || $page instanceof \think\Paginator): $i = 0; $__LIST__ = $page;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-                <tr data-index="0" class="tbody_content" data-id="<?php echo $vo['id']; ?>">
+                <tr data-index="0" class="tbody_content" data-id="<?php echo $vo['ud_id']; ?>">
                     <td >
                         <div class="layui-table-cell"><?php echo $key; ?></div>
                     </td>
-
                     <td>
-                        <div class="layui-table-cell"><?php echo $vo['id']; ?></div>
+                        <div class="layui-table-cell">
+                            <input name="layTableCheckbox" class="" lay-skin="primary" value="1" type="checkbox">
+                            <div class="layui-unselect layui-form-checkbox" lay-skin="primary">
+                                <i class="layui-icon"></i>
+                            </div>
+                        </div>
                     </td>
                     <td>
-                        <div class="layui-table-cell"><?php echo $vo['uid']; ?></div>
+                        <div class="layui-table-cell"><?php echo $vo['ud_id']; ?></div>
                     </td>
                     <td>
-                        <div class="layui-table-cell"><?php echo $vo['g_money_all']; ?></div>
+                        <div class="layui-table-cell"><?php echo $vo['ud_name']; ?></div>
                     </td>
                     <td>
-                        <div class="layui-table-cell"><?php echo $vo['g_name']; ?></div>
+                        <div class="layui-table-cell"><?php echo $vo['ud_phone']; ?></div>
                     </td>
                     <td>
-                        <div class="layui-table-cell"><?php echo $vo['g_type']; ?></div>
+                        <div class="layui-table-cell" style="height:55px;">
+                            <img src="<?php echo $vo['ud_logo']; ?>?imageView2/1/w/50/h/50" alt="">
+                        </div>
                     </td>
-
-                    <td>
-                        <div class="layui-table-cell"><?php echo $vo['g_number']; ?></div>
-                    </td>
-                    <td>
-                        <div class="layui-table-cell"><?php echo $vo['u_address_id']; ?></div>
-                    </td>
-                    <td>
-                        <div class="layui-table-cell"><?php echo $vo['pay']; ?></div>
-                    </td>
-                    <td>
-                        <div class="layui-table-cell"><?php echo $vo['status']; ?></div>
-                    </td>
-                    <td>
-                        <div class="layui-table-cell"><?php echo $vo['logistics']; ?></div>
-                    </td>
-                        </else>
-                    </if>
-                    <?php if($vo['is_receive'] == 1): ?>
-                    <td>
-
-                        <div class="layui-table-cell">已收货</div>
-                    </td>
+                    <?php if($vo['ud_sex'] == 1): ?>
+                        <td>
+                            <div class="layui-table-cell">男</div>
+                        </td>
+                        <?php elseif($vo['ud_sex'] == 2): ?>
+                            <td>
+                                <div class="layui-table-cell">女</div>
+                            </td>
+                        </elseif>
                         <?php else: ?>
                             <td>
-
-                                <div class="layui-table-cell">未收货</div>
+                                <div class="layui-table-cell">保密</div>
                             </td>
+                        </else>
+
                     <?php endif; ?>
+                    <td data-id="1">
+                        <div class="layui-table-cell">
+                            <input type="checkbox" lay-filter="eidt_status" lay-skin="switch" lay-text="启用|停用"
+                                   type-d="<?php echo $vo['status']==1?2:1; ?>" <?php echo $vo['status']==1?'checked' :''; ?>>
+                        </div>
+                    </td>
 
                     <td>
                         <div class="layui-table-cell"><?php echo $vo['create_at']; ?></div>
@@ -171,20 +182,7 @@
                     <td>
                         <div class="layui-table-cell"><?php echo $vo['update_at']; ?></div>
                     </td>
-                    <?php if($vo['logistics'] == ''): ?>
-                    <td class="layui-table-cell">
-
-                            <a class="layui-btn layui-btn-xs find-ali-status" data-id="<?php echo $vo['id']; ?>">填写发货信息</a>
-
-                    </td>
-                        <?php else: ?>
-                            <td class="layui-table-cell">
-
-                                <a class="layui-btn layui-btn-xs layui-btn-normal detail  " data-id="<?php echo $vo['id']; ?>">查看详情</a>
-
-                            </td>
-                    <?php endif; ?>
-
+                
                 </tr>
             <?php endforeach; endif; else: echo "" ;endif; ?>
             </tbody>

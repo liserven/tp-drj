@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:78:"D:\phpStudy\WWW\drhome\public/../application/admin\view\orbuilding\tolist.html";i:1525694109;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:72:"D:\phpStudy\WWW\drhome\public/../application/admin\view\bset\tolist.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
 
 <!DOCTYPE HTML>
 <html>
@@ -41,12 +41,31 @@
 <div class="box-content">
     
 <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
-    <legend>订单列表
+    <legend>选项列表 <a href="javascript:;" class="layui-btn layui-btn-small add">添加选项</a>
         <a href="<?php echo url('user/leadingin'); ?>" class="layui-btn layui-btn-danger layui-btn-small">批量导入</a>
         <a href="<?php echo url('user/expuser'); ?>" class="layui-btn layui-btn-warm layui-btn-small">批量导出</a>
         <a href="javascript:;" class="layui-btn layui-btn-default layui-btn-small refresh"><i class="layui-icon">&#x1002;</i>刷新</a>
     </legend>
 </fieldset>
+<div class="layui-col-md12 layui-col-md-offset4">
+    <div class="layui-form-query">
+        <form class="layui-form" id="query_form" action="<?php echo url('building/lookup'); ?>">
+            <div class="layui-form-item">
+                <div class="layui-inline">
+                    <label class="layui-form-mid">建材名称：</label>
+                    <div class="layui-input-inline">
+                        <input name="name" title="请输入建材名称" class="layui-input" type="text">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <div class="layui-input-inline">
+                        <button class="layui-btn" type="submit" lay-submit="seach_phone"><i class="layui-icon"></i>查询</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
 <div class="layui-form layui-border-box layui-table-view" lay-filter="content-box" style="padding: 20px;border: 0;">
     <div class="layui-table-box">
         <table class="layui-table" style="width: 100%; border: 1px solid #eee">
@@ -68,49 +87,24 @@
 
                     </div>
                 </th>
-                <th data-field="name">
-                    <div class="layui-table-cell">
-                        <span>用户名称</span>
-                    </div>
+
+                <th data-field="type">
+                    <div class="layui-table-cell"><span>所属分类</span></div>
                 </th>
                 <th data-field="type">
-                    <div class="layui-table-cell"><span>产品价格</span></div>
-                </th>
-                <th data-field="type">
-                    <div class="layui-table-cell"><span>产品名称</span></div>
-                </th>
-                <th data-field="type">
-                    <div class="layui-table-cell"><span>产品规格</span></div>
-                </th>
-                <th data-field="modifiedTime">
-                    <div class="layui-table-cell"><span>产品数量</span></div>
-                </th>
-                <th data-field="modifiedTime">
-                    <div class="layui-table-cell"><span>收货地址</span></div>
+                    <div class="layui-table-cell"><span>商品选项</span></div>
                 </th>
 
-                <th data-field="modifiedTime">
-                    <div class="layui-table-cell"><span>支付方式</span></div>
-                </th>
-                <th data-field="modifiedTime">
-                    <div class="layui-table-cell"><span>物流状态</span></div>
-                </th>
-                <th data-field="createdTime">
-                    <div class="layui-table-cell"><span>运单号</span></div>
-                </th>
-                <th data-field="createdTime">
-                    <div class="layui-table-cell"><span>收货状态</span></div>
-                </th>
                 <th data-field="createdTime">
                     <div class="layui-table-cell"><span>创建时间</span></div>
                 </th>
                 <th data-field="modifiedTime">
                     <div class="layui-table-cell"><span>修改时间</span></div>
                 </th>
-                <th data-field="modifiedTime">
-                    <div class="layui-table-cell"><span>操作</span></div>
-                </th>
 
+                <th data-field="11">
+                    <div class="layui-table-cell" align="center"><span>操作</span></div>
+                </th>
             </tr>
             </thead>
             <tbody class="">
@@ -124,71 +118,36 @@
                         <div class="layui-table-cell"><?php echo $vo['id']; ?></div>
                     </td>
                     <td>
-                        <div class="layui-table-cell"><?php echo $vo['uid']; ?></div>
+                        <div class="layui-table-cell"><?php echo $vo['clum_id']; ?></div>
                     </td>
                     <td>
-                        <div class="layui-table-cell"><?php echo $vo['g_money_all']; ?></div>
-                    </td>
-                    <td>
-                        <div class="layui-table-cell"><?php echo $vo['g_name']; ?></div>
-                    </td>
-                    <td>
-                        <div class="layui-table-cell"><?php echo $vo['g_type']; ?></div>
+                        <div class="layui-table-cell"><?php echo $vo['name']; ?></div>
                     </td>
 
-                    <td>
-                        <div class="layui-table-cell"><?php echo $vo['g_number']; ?></div>
-                    </td>
-                    <td>
-                        <div class="layui-table-cell"><?php echo $vo['u_address_id']; ?></div>
-                    </td>
-                    <td>
-                        <div class="layui-table-cell"><?php echo $vo['pay']; ?></div>
-                    </td>
-                    <td>
-                        <div class="layui-table-cell"><?php echo $vo['status']; ?></div>
-                    </td>
-                    <td>
-                        <div class="layui-table-cell"><?php echo $vo['logistics']; ?></div>
-                    </td>
-                        </else>
-                    </if>
-                    <?php if($vo['is_receive'] == 1): ?>
-                    <td>
-
-                        <div class="layui-table-cell">已收货</div>
-                    </td>
-                        <?php else: ?>
-                            <td>
-
-                                <div class="layui-table-cell">未收货</div>
-                            </td>
-                    <?php endif; ?>
 
                     <td>
                         <div class="layui-table-cell"><?php echo $vo['create_at']; ?></div>
                     </td>
+
                     <td>
                         <div class="layui-table-cell"><?php echo $vo['update_at']; ?></div>
                     </td>
-                    <?php if($vo['logistics'] == ''): ?>
-                    <td class="layui-table-cell">
 
-                            <a class="layui-btn layui-btn-xs find-ali-status" data-id="<?php echo $vo['id']; ?>">填写发货信息</a>
+                    <td>
+                        <div class="layui-table-cell">
+                            <a class="layui-btn layui-btn-xs edit">编辑</a>
+                            <a class="layui-btn layui-btn-danger layui-btn-xs do_del">删除</a>
 
+                        </div>
                     </td>
-                        <?php else: ?>
-                            <td class="layui-table-cell">
-
-                                <a class="layui-btn layui-btn-xs layui-btn-normal detail  " data-id="<?php echo $vo['id']; ?>">查看详情</a>
-
-                            </td>
-                    <?php endif; ?>
-
                 </tr>
             <?php endforeach; endif; else: echo "" ;endif; ?>
             </tbody>
-
+            <tfoot>
+            <tr>
+                <td colspan="13"><?php echo $page->render();; ?></td>
+            </tr>
+            </tfoot>
         </table>
 
     </div>
