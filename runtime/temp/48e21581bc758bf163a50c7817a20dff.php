@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:74:"D:\phpStudy\WWW\drhome\public/../application/admin\view\user_r\tolist.html";i:1525771239;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:78:"D:\phpStudy\WWW\drhome\public/../application/admin\view\consumer_r\tolist.html";i:1525768459;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
 
 <!DOCTYPE HTML>
 <html>
@@ -41,7 +41,8 @@
 <div class="box-content">
     
 <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
-    <legend>合伙人红包
+    <legend>用户抢红包
+
         <a href="javascript:;" class="layui-btn layui-btn-default layui-btn-small refresh"><i class="layui-icon">&#x1002;</i>刷新</a>
     </legend>
 </fieldset>
@@ -78,28 +79,19 @@
                 </th>
                 <th data-field="name">
                     <div class="layui-table-cell">
-                        <span>用户名称</span>
+                        <span>用户手机号</span>
                     </div>
                 </th>
                 <th data-field="type">
                     <div class="layui-table-cell"><span>红包总金额</span></div>
                 </th>
+                <th data-field="type">
+                    <div class="layui-table-cell"><span>红包发放人</span></div>
+                </th>
 
-                <th data-field="createdTime">
-                    <div class="layui-table-cell"><span>单个金额</span></div>
-                </th>
-                <th data-field="modifiedTime">
-                    <div class="layui-table-cell"><span>红包个数</span></div>
-                </th>
-                <th data-field="11">
-                    <div class="layui-table-cell" align="center"><span>红包寄语</span></div>
-                </th>
-                <th data-field="11">
-                    <div class="layui-table-cell" align="center"><span>开始时间</span></div>
-                </th>
-                <th data-field="11">
-                    <div class="layui-table-cell" align="center"><span>结束时间</span></div>
-                </th>
+
+
+
             </tr>
             </thead>
             <tbody class="">
@@ -120,42 +112,29 @@
                         <div class="layui-table-cell"><?php echo $vo['id']; ?></div>
                     </td>
                     <td>
-                        <div class="layui-table-cell"><?php echo $vo['user_id']; ?></div>
+                        <div class="layui-table-cell"><?php echo $vo['phone']; ?></div>
                     </td>
                     <td>
-                        <div class="layui-table-cell"><?php echo $vo['total']; ?></div>
+                        <div class="layui-table-cell"><?php echo $vo['money']; ?></div>
                     </td>
 
                     <td>
-                        <div class="layui-table-cell"><?php echo $vo['solo']; ?></div>
+                        <div class="layui-table-cell"><?php echo $vo['partner_id']; ?></div>
                     </td>
-                    <td>
-                        <div class="layui-table-cell"><?php echo $vo['num']; ?></div>
-                    </td>
-                    <td>
-                        <div class="layui-table-cell"><?php echo $vo['word']; ?></div>
-                    </td>
-                    <td>
-                        <div class="layui-table-cell"><?php echo $vo['create_at']; ?></div>
-                    </td>
-                    <td>
-                        <div class="layui-table-cell"><?php echo $vo['update_at']; ?></div>
-                    </td>
+
+
+
 
                 </tr>
             <?php endforeach; endif; else: echo "" ;endif; ?>
             </tbody>
 
-            <tfoot>
-            <tr>
-                <td colspan="13"><?php echo $page->render();; ?></td>
-            </tr>
-            </tfoot>
         </table>
 
-
+    </div>
 </div>
-</div>  
+</div>
+</div>
 </div>
 <?php if(($aName == 'doadd') OR ($aName == 'doedit')): ?>
     <script type="text/javascript" src="__STATIC__/ueditor/1.4.3/ueditor.config.js"></script>

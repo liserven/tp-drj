@@ -8,11 +8,18 @@
 
 namespace app\admin\controller;
 
+use app\common\model\GrabRed;
+use think\Db;
 
 class ConsumerR extends Base{
     public function tolist(){
-        $userlist = db('grab_red')->order('id','desc')->select();
-        $this -> assign('page',$userlist);
-        return $this -> fetch();
+       $list = db('grab_red')->select();
+
+       foreach ($list as $k=>$val){
+           $page = db('user_data')->where('ud_id',$val['partner_id'])->find();
+           $list[$k]['partner_id'] = $page['ud_name'];
+       }
+      $this->assign('page',$list);
+        return view();
     }
 }

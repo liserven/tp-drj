@@ -2,9 +2,13 @@
 
 namespace app\admin\controller;
 
+use app\common\model\UserData;
+use app\common\validate\IDMustBePositiveInt;
+use custom\CusLog;
+use think\Db;
 class Consumer extends Base{
     public function tolist(){
-        $list = db('user_data')->where('type',1)->select();
+        $list = db('user_data')->where('type',1)->paginate(15);
         $this->assign('page',$list);
         return $this->fetch();
     }
@@ -27,4 +31,23 @@ class Consumer extends Base{
         return $this->resultHandle($list);
 
     }
+    public function doDel($id)
+    {
+        (new IDMustBePositiveInt())->goCheck();
+        $data = UserData::get(['ud_id' => $id]);
+        if (!$data) {
+            throw new ParameterException();
+        }
+        Db::startTrans();
+        try {
+            $result = $data->delete();
+            CusLog::writeLog($this->User['am_id'], '删除了 <a class="c-red">' . $data->ud_id . '</a>');
+            Db::commit();
+            return $this->resultHandle($result);
+        } catch (\Exception $e) {
+            Db::rollback();
+            return show(false, $e->getMessage());
+        }
+    }
+
 }

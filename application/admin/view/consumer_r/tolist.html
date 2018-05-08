@@ -44,16 +44,13 @@
                 <th data-field="type">
                     <div class="layui-table-cell"><span>红包总金额</span></div>
                 </th>
-
-
-
-
-                <th data-field="11">
-                    <div class="layui-table-cell" align="center"><span>开始时间</span></div>
+                <th data-field="type">
+                    <div class="layui-table-cell"><span>红包发放人</span></div>
                 </th>
-                <th data-field="11">
-                    <div class="layui-table-cell" align="center"><span>结束时间</span></div>
-                </th>
+
+
+
+
             </tr>
             </thead>
             <tbody class="">
@@ -80,15 +77,12 @@
                         <div class="layui-table-cell">{$vo.money}</div>
                     </td>
 
-
-
-
                     <td>
-                        <div class="layui-table-cell">{$vo.create_at}</div>
+                        <div class="layui-table-cell">{$vo.partner_id}</div>
                     </td>
-                    <td>
-                        <div class="layui-table-cell">{$vo.update_at}</div>
-                    </td>
+
+
+
 
                 </tr>
             </volist>

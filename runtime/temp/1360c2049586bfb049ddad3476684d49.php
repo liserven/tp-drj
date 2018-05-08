@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:76:"D:\phpStudy\WWW\drhome\public/../application/admin\view\consumer\tolist.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:76:"D:\phpStudy\WWW\drhome\public/../application/admin\view\consumer\tolist.html";i:1525772845;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
 
 <!DOCTYPE HTML>
 <html>
@@ -42,8 +42,7 @@
     
 <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
     <legend>用户列表
-        <a href="<?php echo url('user/leadingin'); ?>" class="layui-btn layui-btn-danger layui-btn-small">批量导入</a>
-        <a href="<?php echo url('user/expuser'); ?>" class="layui-btn layui-btn-warm layui-btn-small">批量导出</a>
+
     </legend>
 </fieldset>
 <div class="layui-col-md12 layui-col-md-offset4">
@@ -112,15 +111,16 @@
                 <th data-field="sex">
                     <div class="layui-table-cell"><span>性别</span></div>
                 </th>
-                <th data-field="state">
-                    <div class="layui-table-cell"><span>状态</span></div>
-                </th>
+
 
                 <th data-field="createdTime">
                     <div class="layui-table-cell"><span>创建时间</span></div>
                 </th>
                 <th data-field="modifiedTime">
                     <div class="layui-table-cell"><span>修改时间</span></div>
+                </th>
+                <th data-field="modifiedTime">
+                    <div class="layui-table-cell"><span>操作</span></div>
                 </th>
 
             </tr>
@@ -169,24 +169,30 @@
                         </else>
 
                     <?php endif; ?>
-                    <td data-id="1">
-                        <div class="layui-table-cell">
-                            <input type="checkbox" lay-filter="eidt_status" lay-skin="switch" lay-text="启用|停用"
-                                   type-d="<?php echo $vo['status']==1?2:1; ?>" <?php echo $vo['status']==1?'checked' :''; ?>>
-                        </div>
-                    </td>
-
                     <td>
                         <div class="layui-table-cell"><?php echo $vo['create_at']; ?></div>
                     </td>
                     <td>
                         <div class="layui-table-cell"><?php echo $vo['update_at']; ?></div>
                     </td>
+                    <td>
+                        <div class="layui-table-cell">
+                            <input type="hidden" name="id" value="<?php echo $vo['ud_id']; ?>">
+                            <a class="layui-btn layui-btn-xs forbidden ">禁用</a>
+                            <a class="layui-btn layui-btn-xs layui-btn-normal check" data-id="<?php echo $vo['ud_id']; ?>">详情</a>
+                            <a class="layui-btn layui-btn-danger layui-btn-xs do_del">删除</a>
+
+                        </div>
+                    </td>
                 
                 </tr>
             <?php endforeach; endif; else: echo "" ;endif; ?>
             </tbody>
-
+            <tfoot>
+            <tr>
+                <td colspan="13"><?php echo $page->render();; ?></td>
+            </tr>
+            </tfoot>
         </table>
 
     </div>

@@ -33,4 +33,8 @@ class GiveRed extends BaseModel{
             ->paginate($rows);
     }
 
+    public function getUserPage(){
+
+    }
+
 }

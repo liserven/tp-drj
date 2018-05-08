@@ -70,15 +70,16 @@
                 <th data-field="sex">
                     <div class="layui-table-cell"><span>性别</span></div>
                 </th>
-                <th data-field="state">
-                    <div class="layui-table-cell"><span>状态</span></div>
-                </th>
+
 
                 <th data-field="createdTime">
                     <div class="layui-table-cell"><span>创建时间</span></div>
                 </th>
                 <th data-field="modifiedTime">
                     <div class="layui-table-cell"><span>修改时间</span></div>
+                </th>
+                <th data-field="modifiedTime">
+                    <div class="layui-table-cell"><span>操作</span></div>
                 </th>
 
             </tr>
@@ -127,24 +128,30 @@
                         </else>
 
                     </if>
-                    <td data-id="1">
-                        <div class="layui-table-cell">
-                            <input type="checkbox" lay-filter="eidt_status" lay-skin="switch" lay-text="启用|停用"
-                                   type-d="{$vo.status==1?2:1}" {$vo.status==1 ? 'checked' :''}>
-                        </div>
-                    </td>
-
                     <td>
                         <div class="layui-table-cell">{$vo.create_at}</div>
                     </td>
                     <td>
                         <div class="layui-table-cell">{$vo.update_at}</div>
                     </td>
+                    <td>
+                        <div class="layui-table-cell">
+                            <input type="hidden" name="id" value="{$vo.ud_id}">
+                            <a class="layui-btn layui-btn-xs forbidden ">禁用</a>
+                            <a class="layui-btn layui-btn-xs layui-btn-normal check" data-id="{$vo.ud_id}">详情</a>
+                            <a class="layui-btn layui-btn-danger layui-btn-xs do_del">删除</a>
+
+                        </div>
+                    </td>
                 
                 </tr>
             </volist>
             </tbody>
-
+            <tfoot>
+            <tr>
+                <td colspan="13">{$page->render();}</td>
+            </tr>
+            </tfoot>
         </table>
 
     </div>
