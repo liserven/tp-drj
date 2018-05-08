@@ -17,7 +17,7 @@ use app\common\model\BuildingSet;
 use app\common\validate\IDMustBePositiveInt;
 use app\lib\exception\ParameterException;
 use custom\CusLog;
-
+use think\Db;
 
 
 class Building extends Base
