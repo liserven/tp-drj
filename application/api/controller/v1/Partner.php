@@ -136,6 +136,13 @@ class Partner extends Base
                 'msg' => '验证码错误'
             ]);
         }
+
+        $partnerAudit = Db::table('partner_audit')->where([ 'user_id'=> $this->user['ud_id'], 'examine_status'=> [ 'in', '3,2'] ])->find();
+        if( $partnerAudit )
+        {
+            Db::table('partner_audit')->where([ 'user_id'=> $this->user['ud_id']])->delete();
+        }
+
         $partnerResult = (new PartnerService($this->user['ud_id']))->applyPartnerByUser();
 //        PhoneCode::destroy([ 'phone'=> $this->user['ud_phone']]);
         if ($partnerResult) {
