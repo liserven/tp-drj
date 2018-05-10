@@ -52,10 +52,7 @@
                 <th data-field="id">
                     <div class="layui-table-cell laytable-cell-1-id">
                         <span>ID</span>
-                        <span class="layui-table-sort layui-inline">
-                            <i class="layui-edge layui-table-sort-asc"></i><i
-                                class="layui-edge layui-table-sort-desc"></i>
-                        </span>
+
                     </div>
                 </th>
                 <th data-field="name">
@@ -153,13 +150,11 @@
                 </tr>
             </volist>
             </tbody>
-            <!--
             <tfoot>
-                <tr>
-
-                </tr>
+            <tr>
+                <td colspan="13">{$page->render();}</td>
+            </tr>
             </tfoot>
-            -->
         </table>
 
     </div>

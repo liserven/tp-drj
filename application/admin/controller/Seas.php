@@ -22,18 +22,21 @@ class Seas extends Base
 
     public function toList()
     {
-        $seaslist = db('Seas')->select();
-         $page = [];
-        foreach ($seaslist as $k=>$val){
-            $page[$k]['id']    = $val['id'];
-            $page[$k]['phone'] = $val['phone'];
-            $list = db('user_data')->where('ud_id',$val['uid'])->find();
-            $page[$k]['uid']  = $list['ud_name'];
-            $page[$k]['status'] = $val['status'];
-        }
+        $seaslist = Db::table('seas')->paginate('15')->each(function($item,$key){
+            if(is_array($item) && !empty($item)){
+                $list = db('user_data')->where('ud_id',$item['uid'])->find();
+                $item['uid'] = $list['ud_name'];
+                return $item;
 
 
-        $this->assign('page', $page);
+            }
+
+
+
+        });
+
+
+        $this->assign('page', $seaslist);
         return $this->fetch();
     }
 

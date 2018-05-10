@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:72:"D:\phpStudy\WWW\drhome\public/../application/admin\view\bset\tolist.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:72:"D:\phpStudy\WWW\drhome\public/../application/admin\view\bset\tolist.html";i:1525855177;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
 
 <!DOCTYPE HTML>
 <html>
@@ -42,8 +42,7 @@
     
 <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
     <legend>选项列表 <a href="javascript:;" class="layui-btn layui-btn-small add">添加选项</a>
-        <a href="<?php echo url('user/leadingin'); ?>" class="layui-btn layui-btn-danger layui-btn-small">批量导入</a>
-        <a href="<?php echo url('user/expuser'); ?>" class="layui-btn layui-btn-warm layui-btn-small">批量导出</a>
+
         <a href="javascript:;" class="layui-btn layui-btn-default layui-btn-small refresh"><i class="layui-icon">&#x1002;</i>刷新</a>
     </legend>
 </fieldset>
@@ -118,7 +117,7 @@
                         <div class="layui-table-cell"><?php echo $vo['id']; ?></div>
                     </td>
                     <td>
-                        <div class="layui-table-cell"><?php echo $vo['clum_id']; ?></div>
+                        <div class="layui-table-cell"><?php echo $vo['clumr_id']; ?></div>
                     </td>
                     <td>
                         <div class="layui-table-cell"><?php echo $vo['name']; ?></div>
@@ -126,11 +125,11 @@
 
 
                     <td>
-                        <div class="layui-table-cell"><?php echo $vo['create_at']; ?></div>
+                        <div class="layui-table-cell"><?php echo date('Y-m-d,H:i:m',$vo['create_at']); ?></div>
                     </td>
 
                     <td>
-                        <div class="layui-table-cell"><?php echo $vo['update_at']; ?></div>
+                        <div class="layui-table-cell"><?php echo date('Y-m-d,H:i:m',$vo['update_at']); ?></div>
                     </td>
 
                     <td>

@@ -3,4 +3,57 @@ layui.use(['layer','custom'], function () {
         layer = layui.layer,
         common = layui.custom;
 
-});
+
+
+    $(".forbidden").each(function (e) {
+        var _this = $(this);
+        _this.click(function () {
+
+            var id = _this.attr('data-id');
+            $.post('/admin/Consumer/forbidden', {id: id}, function (result) {
+                if (result.bol) {
+                    common.dMsg({
+                        msg: '成功',
+                        bol: true
+                    }, 1);
+                }
+                else {
+                    common.dMsg({
+                        msg: '失败',
+                        bol: false
+                    }, 1);
+                }
+            })
+
+            return false;
+
+        });
+
+    });
+    $(".forbiddenr").each(function (e) {
+        var _this = $(this);
+        _this.click(function () {
+
+            var id = _this.attr('data-id');
+            $.post('/admin/Consumer/forbiddenr', {id: id}, function (result) {
+                if (result.bol) {
+                    common.dMsg({
+                        msg: '成功',
+                        bol: true
+                    }, 1);
+                }
+                else {
+                    common.dMsg({
+                        msg: '失败',
+                        bol: false
+                    }, 1);
+                }
+            })
+
+            return false;
+
+        });
+
+    });
+
+    });

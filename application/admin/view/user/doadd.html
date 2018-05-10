@@ -4,19 +4,46 @@
         <div class="layui-form-item">
             <label class="layui-form-label">姓名</label>
             <div class="layui-input-inline">
-                <input type="text" name="g_name" lay-verify="required" placeholder="请输入标题" class="layui-input">
+                <input type="text" name="name" lay-verify="required" placeholder="请输入标题" class="layui-input">
             </div>
         </div>
         <div class="layui-form-item">
             <label class="layui-form-label">手机号</label>
             <div class="layui-input-inline">
-                <input type="text" name="g_price" lay-verify="required" placeholder="请输入替换内容" class="layui-input">
+                <input type="text" name="phone" lay-verify="required" placeholder="请输入替换内容" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">密码</label>
+            <div class="layui-input-inline">
+                <input type="text" name="password" lay-verify="required" placeholder="请输入替换内容" class="layui-input">
             </div>
         </div>
         <div class="layui-form-item">
             <label class="layui-form-label">性别</label>
             <div class="layui-input-inline">
-                <input type="text" name="g_price_r" lay-verify="required" placeholder="请输入替换内容" class="layui-input">
+                <input type="text" name="sex" lay-verify="required" placeholder="请输入替换内容" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">身份</label>
+            <div class="layui-input-inline">
+                <select >
+                    <option>请选择</option>
+                    <option value="1">金牌代理合伙人</option>
+                    <option value="2">五星代理合伙人</option>
+                    <option value="3">特约代理合伙人</option>
+                    <option value="4">承包代理合伙人</option>
+                    <option value="5">营销代理合伙人</option>
+                    <option value="6">黄金金牌代理合伙人</option>
+
+                </select>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">推荐人</label>
+            <div class="layui-input-inline">
+                <input type="text" name="groom" lay-verify="required" placeholder="请输入替换内容" class="layui-input">
             </div>
         </div>
         <div class="layui-form-item">
@@ -49,12 +76,34 @@
 
 
         </div>
-
         <div class="layui-form-item">
             <label class="layui-form-label">其他</label>
+            <div class="layui-input-inline">
+                <input type="text" name="g_price" lay-verify="required" placeholder="请输入替换内容" class="layui-input">
+            </div>
+
+
+
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">身份证正面</label>
+            <div class="layui-col-md2">
+                <img src="" id="img-upload-a" alt="" class="screen-img" required>
+                <input type="hidden" name="g_img" id="input-form-a">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">身份证反面</label>
             <div class="layui-col-md2">
                 <img src="" id="img-upload-b" alt="" class="screen-img" required>
                 <input type="hidden" name="g_img" id="input-form-b">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">半身照片</label>
+            <div class="layui-col-md2">
+                <img src="" id="img-upload-c" alt="" class="screen-img" required>
+                <input type="hidden" name="g_img" id="input-form-c">
             </div>
         </div>
 

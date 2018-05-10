@@ -40,8 +40,7 @@ class User extends Base
     {
 
          $userlist = Db::table('user_data')->where('type=2 AND status=1')->paginate('15');
-
-         $this->assign('page', $userlist);
+          $this->assign('page', $userlist);
          return $this->fetch();
 
     }

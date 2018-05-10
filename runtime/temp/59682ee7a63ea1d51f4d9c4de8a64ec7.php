@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:72:"D:\phpStudy\WWW\drhome\public/../application/admin\view\seas\tolist.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:72:"D:\phpStudy\WWW\drhome\public/../application/admin\view\seas\tolist.html";i:1525861862;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
 
 <!DOCTYPE HTML>
 <html>
@@ -61,21 +61,11 @@
                         <span>#</span>
                     </div>
                 </th>
-                <th data-field="1" data-unresize="true">
-                    <div class="layui-table-cell laytable-cell-1-1 laytable-cell-checkbox">
-                        <input name="layTableCheckbox" lay-skin="primary" lay-filter="layTableAllChoose" type="checkbox">
-                        <div class="layui-unselect layui-form-checkbox" lay-skin="primary">
-                            <i class="layui-icon"></i>
-                        </div>
-                    </div>
-                </th>
+
                 <th data-field="id">
                     <div class="layui-table-cell laytable-cell-1-id">
-                        <span>ID</span>
-                        <span class="layui-table-sort layui-inline">
-                            <i class="layui-edge layui-table-sort-asc"></i><i
-                                class="layui-edge layui-table-sort-desc"></i>
-                        </span>
+                        <span>用户ID</span>
+
                     </div>
                 </th>
                 <th data-field="name">
@@ -101,14 +91,7 @@
                     <td >
                         <div class="layui-table-cell"><?php echo $key; ?></div>
                     </td>
-                    <td>
-                        <div class="layui-table-cell">
-                            <input name="layTableCheckbox" class="" lay-skin="primary" value="1" type="checkbox">
-                            <div class="layui-unselect layui-form-checkbox" lay-skin="primary">
-                                <i class="layui-icon"></i>
-                            </div>
-                        </div>
-                    </td>
+
                     <td>
                         <div class="layui-table-cell"><?php echo $vo['id']; ?></div>
                     </td>
@@ -131,7 +114,11 @@
                 </tr>
             <?php endforeach; endif; else: echo "" ;endif; ?>
             </tbody>
-
+            <tfoot>
+            <tr>
+                <td colspan="13"><?php echo $page->render();; ?></td>
+            </tr>
+            </tfoot>
         </table>
 
     </div>

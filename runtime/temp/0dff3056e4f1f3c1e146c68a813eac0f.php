@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:74:"D:\phpStudy\WWW\drhome\public/../application/admin\view\action\tolist.html";i:1525761248;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:76:"D:\phpStudy\WWW\drhome\public/../application/admin\view\prohibit\tolist.html";i:1525761480;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
 
 <!DOCTYPE HTML>
 <html>
@@ -41,8 +41,7 @@
 <div class="box-content">
     
 <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
-    <legend>行为列表 <a href="javascript:;" class="layui-btn layui-btn-small add">添加行为</a>
-
+    <legend>建材列表 <a href="javascript:;" class="layui-btn layui-btn-small add">添加建材</a>
         <a href="javascript:;" class="layui-btn layui-btn-default layui-btn-small refresh"><i class="layui-icon">&#x1002;</i>刷新</a>
     </legend>
 </fieldset>
@@ -79,20 +78,23 @@
                 </th>
                 <th data-field="name">
                     <div class="layui-table-cell">
-                        <span>行为名称</span>
+                        <span>建材名称</span>
                     </div>
                 </th>
                 <th data-field="type">
-                    <div class="layui-table-cell"><span>行为url</span></div>
+                    <div class="layui-table-cell"><span>所属大类</span></div>
                 </th>
                 <th data-field="type">
-                    <div class="layui-table-cell"><span>父级分类</span></div>
+                    <div class="layui-table-cell"><span>所属小类</span></div>
                 </th>
                 <th>
-                    <div class="layui-table-cell"><span>状态</span></div>
+                    <div class="layui-table-cell"><span>价格</span></div>
+                </th>
+                <th>
+                    <div class="layui-table-cell"><span>适配户型</span></div>
                 </th>
                 <th data-field="createdTime">
-                    <div class="layui-table-cell"><span>创建时间</span></div>
+                    <div class="layui-table-cell"><span>上架时间</span></div>
                 </th>
                 <th data-field="modifiedTime">
                     <div class="layui-table-cell"><span>修改时间</span></div>
@@ -104,7 +106,7 @@
             </thead>
             <tbody class="">
             <?php if(is_array($page) || $page instanceof \think\Collection || $page instanceof \think\Paginator): $i = 0; $__LIST__ = $page;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-            <tr data-index="0" class="tbody_content" data-id="<?php echo $vo['ad_id']; ?>">
+            <tr data-index="0" class="tbody_content" data-id="<?php echo $vo['pd_id']; ?>">
                 <td >
                     <div class="layui-table-cell"><?php echo $key; ?></div>
                 </td>
@@ -117,26 +119,28 @@
                     </div>
                 </td>
                 <td>
-                    <div class="layui-table-cell"><?php echo $vo['ad_id']; ?></div>
+                    <div class="layui-table-cell"><?php echo $vo['pd_id']; ?></div>
                 </td>
                 <td>
-                    <div class="layui-table-cell"><?php echo $vo['ad_topic']; ?></div>
-                </td>
-
-                <td>
-                    <div class="layui-table-cell"><?php echo $vo['ad_url']; ?></div>
+                    <div class="layui-table-cell"><?php echo $vo['pd_text']; ?></div>
                 </td>
                 <td>
-                    <div class="layui-table-cell"><?php echo !empty($vo['pname']['ad_topic'])?$vo['pname']['ad_topic']:'一级分类'; ?></div>
+                    <div class="layui-table-cell"><?php echo $vo['sorts']['ps_name']; ?></div>
                 </td>
                 <td data-id="1">
                     <div class="layui-table-cell">
                         <input type="checkbox" lay-filter="eidt_status" lay-skin="switch" lay-text="启用|停用"
-                               type-d="<?php echo $vo['ad_status']==1?2:1; ?>" <?php echo $vo['ad_status']==1?'checked' :''; ?>>
+                               type-d="<?php echo $vo['pd_status']==1?2:1; ?>" <?php echo $vo['pd_status']==1?'checked' :''; ?>>
                     </div>
                 </td>
                 <td>
-                    <div class="layui-table-cell"><?php echo $vo['create_at']; ?></div>
+                    <div class="layui-table-cell"><?php echo $vo['pd_replace']; ?></div>
+                </td>
+                <td>
+                    <div class="layui-table-cell"><?php echo $vo['update_at']; ?></div>
+                </td>
+                <td>
+                    <div class="layui-table-cell"><?php echo $vo['update_at']; ?></div>
                 </td>
                 <td>
                     <div class="layui-table-cell"><?php echo $vo['update_at']; ?></div>
@@ -145,7 +149,6 @@
                     <div class="layui-table-cell">
                         <a class="layui-btn layui-btn-xs edit">编辑</a>
                         <a class="layui-btn layui-btn-danger layui-btn-xs do_del">删除</a>
-                        
                     </div>
                 </td>
             </tr>

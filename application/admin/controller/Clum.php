@@ -19,7 +19,16 @@ class Clum extends Base
 {
     public function tolist()
     {
-        $page = BuildingColumn::getClumPage();
+        $page = Db::table('building_column')->paginate('15')->each(function($item,$key){
+            if(is_array($item) && !empty($item)) {
+                $list = db('building_column')->where('id', $item['pid'])->find();
+
+                $item['pid'] = $list['name'];
+
+                return $item;
+            }
+        });
+
         $this->assign('page',$page);
 
         return $this->fetch();

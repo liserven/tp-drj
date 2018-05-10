@@ -56,7 +56,13 @@ class Bset extends Base{
     }
 
     public function tolist(){
-        $page = BuildingDetailsSet::getBuildingPage();
+        $page = Db::table('building_details_set')->paginate('15')->each(function($item,$key){
+                if(is_array($item) && !empty($item)){
+                    $list = db('building_column')->where('id',$item['clumr_id'])->find();
+                    $item['clumr_id'] = $list['name'];
+                    return $item;
+                }
+        });
         $this->assign('page',$page);
         return $this->fetch();
     }

@@ -19,21 +19,11 @@
                         <span>#</span>
                     </div>
                 </th>
-                <th data-field="1" data-unresize="true">
-                    <div class="layui-table-cell laytable-cell-1-1 laytable-cell-checkbox">
-                        <input name="layTableCheckbox" lay-skin="primary" lay-filter="layTableAllChoose" type="checkbox">
-                        <div class="layui-unselect layui-form-checkbox" lay-skin="primary">
-                            <i class="layui-icon"></i>
-                        </div>
-                    </div>
-                </th>
+
                 <th data-field="id">
                     <div class="layui-table-cell laytable-cell-1-id">
                         <span>ID</span>
-                        <span class="layui-table-sort layui-inline">
-                            <i class="layui-edge layui-table-sort-asc"></i><i
-                                class="layui-edge layui-table-sort-desc"></i>
-                        </span>
+
                     </div>
                 </th>
                 <th data-field="name">
@@ -48,7 +38,9 @@
                     <div class="layui-table-cell"><span>红包发放人</span></div>
                 </th>
 
-
+                <th data-field="type">
+                    <div class="layui-table-cell"><span>发起时间</span></div>
+                </th>
 
 
             </tr>
@@ -59,14 +51,7 @@
                     <td >
                         <div class="layui-table-cell">{$key}</div>
                     </td>
-                    <td>
-                        <div class="layui-table-cell">
-                            <input name="layTableCheckbox" class="" lay-skin="primary" value="1" type="checkbox">
-                            <div class="layui-unselect layui-form-checkbox" lay-skin="primary">
-                                <i class="layui-icon"></i>
-                            </div>
-                        </div>
-                    </td>
+
                     <td>
                         <div class="layui-table-cell">{$vo.id}</div>
                     </td>
@@ -79,6 +64,9 @@
 
                     <td>
                         <div class="layui-table-cell">{$vo.partner_id}</div>
+                    </td>
+                    <td>
+                        <div class="layui-table-cell">{$vo.create_at|date='Y-m-d,H:i:m',###}</div>
                     </td>
 
 

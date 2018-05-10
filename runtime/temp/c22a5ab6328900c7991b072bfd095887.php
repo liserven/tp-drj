@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:78:"D:\phpStudy\WWW\drhome\public/../application/admin\view\orbuilding\tolist.html";i:1525761650;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:78:"D:\phpStudy\WWW\drhome\public/../application/admin\view\orbuilding\tolist.html";i:1525858716;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
 
 <!DOCTYPE HTML>
 <html>
@@ -98,9 +98,7 @@
                 <th data-field="createdTime">
                     <div class="layui-table-cell"><span>创建时间</span></div>
                 </th>
-                <th data-field="modifiedTime">
-                    <div class="layui-table-cell"><span>修改时间</span></div>
-                </th>
+
                 <th data-field="modifiedTime">
                     <div class="layui-table-cell"><span>操作</span></div>
                 </th>
@@ -136,42 +134,52 @@
                     <td>
                         <div class="layui-table-cell"><?php echo $vo['pay']; ?></div>
                     </td>
+
                     <td>
-                        <div class="layui-table-cell"><?php echo $vo['status']; ?></div>
+                        <?php if($vo['status'] == '1'): ?>
+                        <div class="layui-table-cell">未付款</div>
+                        <?php endif; if($vo['status'] == '2'): ?>
+                            <div class="layui-table-cell">已付款</div>
+                        <?php endif; if($vo['status'] == '3'): ?>
+                            <div class="layui-table-cell">已发货</div>
+                        <?php endif; if($vo['status'] == '4'): ?>
+                            <div class="layui-table-cell">已签收</div>
+                        <?php endif; if($vo['status'] == '5'): ?>
+                            <div class="layui-table-cell">已取消</div>
+                        <?php endif; if($vo['status'] == '6'): ?>
+                            <div class="layui-table-cell">已退货</div>
+                        <?php endif; ?>
+
+
                     </td>
                     <td>
                         <div class="layui-table-cell"><?php echo $vo['logistics']; ?></div>
                     </td>
                         </else>
                     </if>
-                    <?php if($vo['is_receive'] == 1): ?>
-                    <td>
-
-                        <div class="layui-table-cell">已收货</div>
-                    </td>
-                        <?php else: ?>
-                            <td>
-
-                                <div class="layui-table-cell">未收货</div>
-                            </td>
-                    <?php endif; ?>
 
                     <td>
-                        <div class="layui-table-cell"><?php echo $vo['create_at']; ?></div>
+
+                        <div class="layui-table-cell"><?php echo $vo['is_receive']==1?'已收货':'派送中'; ?></div>
                     </td>
+
+
                     <td>
-                        <div class="layui-table-cell"><?php echo $vo['update_at']; ?></div>
+                        <div class="layui-table-cell"><?php echo date('Y-m-d,H:i:m',$vo['create_at']); ?></div>
                     </td>
+
+
                     <?php if($vo['logistics'] == ''): ?>
                     <td class="layui-table-cell">
 
-                            <a class="layui-btn layui-btn-xs find-ali-status" data-id="<?php echo $vo['id']; ?>">填写发货信息</a>
+                            <a class="layui-btn layui-btn-xs find-ali-status" data-id="<?php echo $vo['id']; ?>">填写运单号</a>
 
                     </td>
                         <?php else: ?>
                             <td class="layui-table-cell">
 
                                 <a class="layui-btn layui-btn-xs layui-btn-normal detail  " data-id="<?php echo $vo['id']; ?>">查看详情</a>
+                                <a class="layui-btn layui-btn-primary layui-btn-xs detail_set  " data-id="<?php echo $vo['id']; ?>">修改运单号</a>
 
                             </td>
                     <?php endif; ?>
@@ -179,13 +187,16 @@
                 </tr>
             <?php endforeach; endif; else: echo "" ;endif; ?>
             </tbody>
-
+            <tfoot>
+            <tr>
+                <td colspan="13"><?php echo $page->render();; ?></td>
+            </tr>
+            </tfoot>
         </table>
-
     </div>
-</div>
-</div>
-</div>
+    </div>
+
+
 </div>
 <?php if(($aName == 'doadd') OR ($aName == 'doedit')): ?>
     <script type="text/javascript" src="__STATIC__/ueditor/1.4.3/ueditor.config.js"></script>

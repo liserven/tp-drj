@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:74:"D:\phpStudy\WWW\drhome\public/../application/admin\view\action\tolist.html";i:1525761248;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:73:"D:\phpStudy\WWW\drhome\public/../application/admin\view\villa\tolist.html";i:1525761528;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
 
 <!DOCTYPE HTML>
 <html>
@@ -41,11 +41,30 @@
 <div class="box-content">
     
 <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
-    <legend>行为列表 <a href="javascript:;" class="layui-btn layui-btn-small add">添加行为</a>
-
+    <legend>别墅列表 <a href="javascript:;" class="layui-btn layui-btn-small add">添加别墅</a>
         <a href="javascript:;" class="layui-btn layui-btn-default layui-btn-small refresh"><i class="layui-icon">&#x1002;</i>刷新</a>
     </legend>
 </fieldset>
+<div class="layui-col-md12 layui-col-md-offset4">
+    <div class="layui-form-query">
+        <form class="layui-form" id="query_form" action="<?php echo url('villa/lookup'); ?>">
+            <div class="layui-form-item">
+                <div class="layui-inline">
+                    <label class="layui-form-mid">别墅名称：</label>
+                    <div class="layui-input-inline">
+                        <input name="name" title="请输入建材名称" class="layui-input" type="text">
+                    </div>
+                   
+                </div>
+                <div class="layui-inline">
+                    <div class="layui-input-inline">
+                        <button class="layui-btn" type="submit" lay-submit="seach_phone"><i class="layui-icon"></i>查询</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
 <div class="layui-form layui-border-box layui-table-view" lay-filter="content-box" style="padding: 20px;border: 0;">
     <div class="layui-table-box">
         <table class="layui-table" style="width: 100%; border: 1px solid #eee">
@@ -60,42 +79,59 @@
                         <span>#</span>
                     </div>
                 </th>
-                <th data-field="1" data-unresize="true">
-                    <div class="layui-table-cell laytable-cell-1-1 laytable-cell-checkbox">
-                        <input name="layTableCheckbox" lay-skin="primary" lay-filter="layTableAllChoose" type="checkbox">
-                        <div class="layui-unselect layui-form-checkbox" lay-skin="primary">
-                            <i class="layui-icon"></i>
-                        </div>
-                    </div>
-                </th>
+
                 <th data-field="id">
                     <div class="layui-table-cell laytable-cell-1-id">
                         <span>ID</span>
-                        <span class="layui-table-sort layui-inline">
-                            <i class="layui-edge layui-table-sort-asc"></i><i
-                            class="layui-edge layui-table-sort-desc"></i>
-                        </span>
+
                     </div>
                 </th>
                 <th data-field="name">
                     <div class="layui-table-cell">
-                        <span>行为名称</span>
+                        <span>别墅名称</span>
                     </div>
                 </th>
                 <th data-field="type">
-                    <div class="layui-table-cell"><span>行为url</span></div>
-                </th>
-                <th data-field="type">
-                    <div class="layui-table-cell"><span>父级分类</span></div>
+                    <div class="layui-table-cell"><span>总价</span></div>
                 </th>
                 <th>
-                    <div class="layui-table-cell"><span>状态</span></div>
+                    <div class="layui-table-cell"><span>平米价格</span></div>
+                </th>
+                <th>
+                    <div class="layui-table-cell"><span>占地面积</span></div>
+                </th>
+                <th>
+                    <div class="layui-table-cell"><span>建筑面积</span></div>
+                </th>
+                <th>
+                    <div class="layui-table-cell"><span>层高</span></div>
+                </th>
+                <th>
+                    <div class="layui-table-cell"><span>用户门</span></div>
+                </th>
+                <th>
+                    <div class="layui-table-cell"><span>窗户</span></div>
+                </th>
+                <th>
+                    <div class="layui-table-cell"><span>屋面瓦</span></div>
+                </th>
+                <th>
+                    <div class="layui-table-cell"><span>外墙</span></div>
                 </th>
                 <th data-field="createdTime">
-                    <div class="layui-table-cell"><span>创建时间</span></div>
+                <div class="layui-table-cell"><span>缩略图</span></div>
+                </th>
+                <th data-field="type">
+                    <div class="layui-table-cell"><span>推荐首页</span></div>
+                </th>
+                <th data-field="createdTime">
+                    <div class="layui-table-cell"><span>室</span></div>
                 </th>
                 <th data-field="modifiedTime">
-                    <div class="layui-table-cell"><span>修改时间</span></div>
+                    <div class="layui-table-cell"><span>厅</span></div>
+                </th>
+                <th data-field="modifiedTime">
+                    <div class="layui-table-cell"><span>卫</span></div>
                 </th>
                 <th data-field="11">
                     <div class="layui-table-cell" align="center"><span>操作</span></div>
@@ -104,46 +140,65 @@
             </thead>
             <tbody class="">
             <?php if(is_array($page) || $page instanceof \think\Collection || $page instanceof \think\Paginator): $i = 0; $__LIST__ = $page;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-            <tr data-index="0" class="tbody_content" data-id="<?php echo $vo['ad_id']; ?>">
+            <tr data-index="0" class="tbody_content" data-id="<?php echo $vo['id']; ?>">
                 <td >
                     <div class="layui-table-cell"><?php echo $key; ?></div>
                 </td>
-                <td>
-                    <div class="layui-table-cell">
-                        <input name="layTableCheckbox" class="" lay-skin="primary" value="1" type="checkbox">
-                        <div class="layui-unselect layui-form-checkbox" lay-skin="primary">
-                            <i class="layui-icon"></i>
-                        </div>
-                    </div>
-                </td>
-                <td>
-                    <div class="layui-table-cell"><?php echo $vo['ad_id']; ?></div>
-                </td>
-                <td>
-                    <div class="layui-table-cell"><?php echo $vo['ad_topic']; ?></div>
-                </td>
 
                 <td>
-                    <div class="layui-table-cell"><?php echo $vo['ad_url']; ?></div>
+                    <div class="layui-table-cell"><?php echo $vo['id']; ?></div>
                 </td>
                 <td>
-                    <div class="layui-table-cell"><?php echo !empty($vo['pname']['ad_topic'])?$vo['pname']['ad_topic']:'一级分类'; ?></div>
-                </td>
-                <td data-id="1">
-                    <div class="layui-table-cell">
-                        <input type="checkbox" lay-filter="eidt_status" lay-skin="switch" lay-text="启用|停用"
-                               type-d="<?php echo $vo['ad_status']==1?2:1; ?>" <?php echo $vo['ad_status']==1?'checked' :''; ?>>
-                    </div>
+                    <div class="layui-table-cell"><?php echo $vo['vd_name']; ?></div>
                 </td>
                 <td>
-                    <div class="layui-table-cell"><?php echo $vo['create_at']; ?></div>
+                    <div class="layui-table-cell"><?php echo $vo['vd_price']; ?></div>
                 </td>
                 <td>
-                    <div class="layui-table-cell"><?php echo $vo['update_at']; ?></div>
+                    <div class="layui-table-cell"><?php echo $vo['vd_unit_price']; ?></div>
                 </td>
+                <td>
+                    <div class="layui-table-cell"><?php echo $vo['vd_covers_area']; ?></div>
+                </td>
+                <td>
+                    <div class="layui-table-cell"><?php echo $vo['vd_building_area']; ?></div>
+                </td>
+                <td>
+                    <div class="layui-table-cell"><?php echo $vo['vd_height']; ?></div>
+                </td>
+                <td>
+                    <div class="layui-table-cell"><?php echo $vo['vd_door']; ?></div>
+                </td>
+                <td>
+                    <div class="layui-table-cell"><?php echo $vo['vd_windows']; ?></div>
+                </td>
+                <td>
+                    <div class="layui-table-cell"><?php echo $vo['vd_wmw']; ?></div>
+                </td>
+                <td>
+                    <div class="layui-table-cell"><?php echo $vo['vd_wq']; ?></div>
+                </td>
+                <td>
+                    <div class="layui-table-cell"><img src="<?php echo $vo['vd_logo']; ?>?imageView2/1/w/50/h/50"></div>
+                </td>
+                <td>
+                    <div class="layui-table-cell"><?php echo $vo['is_index']==1?'是':'否'; ?></div>
+                </td>
+                <td>
+                    <div class="layui-table-cell"><?php echo $vo['room']; ?></div>
+                </td>
+                <td>
+                    <div class="layui-table-cell"><?php echo $vo['office']; ?></div>
+                </td>
+                <td>
+                    <div class="layui-table-cell"><?php echo $vo['wei']; ?></div>
+                </td>
+
+
                 <td>
                     <div class="layui-table-cell">
                         <a class="layui-btn layui-btn-xs edit">编辑</a>
+                        <a class="layui-btn layui-btn-xs layui-btn-normal changes" data-id="<?php echo $vo['id']; ?>">下架</a>
                         <a class="layui-btn layui-btn-danger layui-btn-xs do_del">删除</a>
                         
                     </div>
@@ -152,9 +207,9 @@
             <?php endforeach; endif; else: echo "" ;endif; ?>
             </tbody>
             <tfoot>
-                <tr>
-                    <td colspan="13"><?php echo $page->render();; ?></td>
-                </tr>
+            <tr>
+                <td colspan="13"><?php echo $page->render();; ?></td>
+            </tr>
             </tfoot>
         </table>
 

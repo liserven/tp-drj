@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:76:"D:\phpStudy\WWW\drhome\public/../application/admin\view\building\tolist.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:76:"D:\phpStudy\WWW\drhome\public/../application/admin\view\building\tolist.html";i:1525847647;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
 
 <!DOCTYPE HTML>
 <html>
@@ -147,11 +147,11 @@
                     <div class="layui-table-cell"><img src="<?php echo $vo['g_img']; ?>?imageView2/1/w/50/h/50"></div>
                 </td>
                 <td>
-                    <div class="layui-table-cell"><?php echo $vo['create_at']; ?></div>
+                    <div class="layui-table-cell"><?php echo date('Y-m-d,H:i:m',$vo['create_at']); ?></div>
                 </td>
 
                 <td>
-                    <div class="layui-table-cell"><?php echo $vo['update_at']; ?></div>
+                    <div class="layui-table-cell"><?php echo date('Y-m-d,H:i:m',$vo['update_at']); ?></div>
                 </td>
 
                 <td>

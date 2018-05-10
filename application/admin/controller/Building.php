@@ -182,11 +182,11 @@ class Building extends Base
             }
 
             $data['g_name'] = input('g_name');
-            $data['g_price'] = input('g_price');
-            $data['g_price_r'] = input('g_price_r');
-            $data['g_column'] = input('g_column');
-            $data['g_columr'] = input('g_columr');
-            $data['g_material'] = input('g_material');
+            $data['g_price'] = input('g_price');//商品价格
+            $data['g_price_r'] = input('g_price_r');//商品折后价格
+            $data['g_column'] = input('g_column');//商品一级分类
+            $data['g_columr'] = input('g_columr');//商品二级分类
+            $data['g_material'] = input('g_material');//商品材质
             $data['id'] = input('id');
 
             $Deploy = input('deploy/a'); //售后服务
@@ -216,10 +216,10 @@ class Building extends Base
 
             Db::startTrans();
             try {
-                Db::table('building_img')->where(['g_id'=> $data['id']])->delete();
-                Db::table('building_screen')->where(['gid'=> $data['id']])->delete();
-                Db::table('building_set')->where(['gid'=> $data['id']])->delete();
-                Db::table('building_customer')->where(['gid'=> $data['id']])->delete();
+                Db::table('building_img')->where(['g_id'=> $data['id']])->delete();//删除商品之前所存图片
+                Db::table('building_screen')->where(['gid'=> $data['id']])->delete();//删除商品之前所存规格
+                Db::table('building_set')->where(['gid'=> $data['id']])->delete();//删除商品之前所存选项
+                Db::table('building_customer')->where(['gid'=> $data['id']])->delete();//删除商品之前所存售后
 
 
 
@@ -279,11 +279,11 @@ class Building extends Base
                     }
                 }
 
-                (new BuildingCustomer())->saveAll($deplData);
-                (new BuildingSet())->saveAll($setData);
+                (new BuildingCustomer())->saveAll($deplData);//保存商品售后
+                (new BuildingSet())->saveAll($setData);//保存商品单独选项
 
-                (new BuildingImg())->saveAll($imgsData);
-                (new BuildingScreen())->saveAll($screenData);
+                (new BuildingImg())->saveAll($imgsData);//保存商品图片
+                (new BuildingScreen())->saveAll($screenData);//保存商品规格
 
 
                 BuildingDetails::update($data);
@@ -350,7 +350,7 @@ class Building extends Base
 
     public function unbuilding()
     {
-        $list = db('building_details')->where('status', '2')->select();
+        $list = db('building_details')->where('status', '2')->paginate('15');
         $this->assign('page', $list);
         return $this->fetch();
     }
@@ -362,7 +362,8 @@ class Building extends Base
 
 
         $page = db('building_details')->where('id',$id)->setField('status','2');
-        CusLog::writeLog($this->User['am_id'], '下架了 <a class="c-red">' . $page->id . '</a>');
+
+
         return $this->resultHandle($page);
     }
 
@@ -376,7 +377,7 @@ class Building extends Base
         CusLog::writeLog($this->User['am_id'], '上架 <a class="c-red">' . $page->id . '</a>');
         return $this->resultHandle($page);
     }
-
+  //删除图片
     public function doImgDel($id)
     {
         (new IDMustBePositiveInt())->goCheck();

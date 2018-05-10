@@ -59,11 +59,9 @@
 
 
                 <th data-field="createdTime">
-                    <div class="layui-table-cell"><span>创建时间</span></div>
+                    <div class="layui-table-cell"><span>注册时间</span></div>
                 </th>
-                <th data-field="modifiedTime">
-                    <div class="layui-table-cell"><span>修改时间</span></div>
-                </th>
+
                 <th data-field="modifiedTime">
                     <div class="layui-table-cell"><span>操作</span></div>
                 </th>
@@ -105,17 +103,20 @@
 
                     </if>
                     <td>
-                        <div class="layui-table-cell">{$vo.create_at}</div>
+                        <div class="layui-table-cell">{$vo.create_at|date='Y-m-d,H:i:m',###}</div>
                     </td>
-                    <td>
-                        <div class="layui-table-cell">{$vo.update_at}</div>
-                    </td>
+
                     <td>
                         <div class="layui-table-cell">
-                            <input type="hidden" name="id" value="{$vo.ud_id}">
-                            <a class="layui-btn layui-btn-xs forbidden ">禁用</a>
+
+                            <eq name="vo.status" value="1">
+                            <a class="layui-btn layui-btn-xs layui-btn-danger forbidden " data-id="{$vo.ud_id}">禁用</a>
+                            </eq>
+                            <eq name="vo.status" value="2">
+                                <a class="layui-btn layui-btn-xs layui-btn-danger forbiddenr " data-id="{$vo.ud_id}">取消禁用</a>
+                            </eq>
                             <a class="layui-btn layui-btn-xs layui-btn-normal check" data-id="{$vo.ud_id}">详情</a>
-                            <a class="layui-btn layui-btn-danger layui-btn-xs do_del">删除</a>
+
 
                         </div>
                     </td>

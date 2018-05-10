@@ -57,9 +57,7 @@
                 <th data-field="createdTime">
                     <div class="layui-table-cell"><span>创建时间</span></div>
                 </th>
-                <th data-field="modifiedTime">
-                    <div class="layui-table-cell"><span>修改时间</span></div>
-                </th>
+
                 <th data-field="modifiedTime">
                     <div class="layui-table-cell"><span>操作</span></div>
                 </th>
@@ -95,42 +93,57 @@
                     <td>
                         <div class="layui-table-cell">{$vo.pay}</div>
                     </td>
+
                     <td>
-                        <div class="layui-table-cell">{$vo.status}</div>
+                        <eq name="$vo.status" value="1">
+                        <div class="layui-table-cell">未付款</div>
+                        </eq>
+                        <eq name="$vo.status" value="2">
+                            <div class="layui-table-cell">已付款</div>
+                        </eq>
+                        <eq name="$vo.status" value="3">
+                            <div class="layui-table-cell">已发货</div>
+                        </eq>
+                        <eq name="$vo.status" value="4">
+                            <div class="layui-table-cell">已签收</div>
+                        </eq>
+                        <eq name="$vo.status" value="5">
+                            <div class="layui-table-cell">已取消</div>
+                        </eq>
+                        <eq name="$vo.status" value="6">
+                            <div class="layui-table-cell">已退货</div>
+                        </eq>
+
+
                     </td>
                     <td>
                         <div class="layui-table-cell">{$vo.logistics}</div>
                     </td>
                         </else>
                     </if>
-                    <if condition="$vo.is_receive eq 1">
-                    <td>
-
-                        <div class="layui-table-cell">已收货</div>
-                    </td>
-                        <else>
-                            <td>
-
-                                <div class="layui-table-cell">未收货</div>
-                            </td>
-                    </if>
 
                     <td>
-                        <div class="layui-table-cell">{$vo.create_at}</div>
+
+                        <div class="layui-table-cell">{$vo.is_receive==1?'已收货':'派送中'}</div>
                     </td>
+
+
                     <td>
-                        <div class="layui-table-cell">{$vo.update_at}</div>
+                        <div class="layui-table-cell">{$vo.create_at|date='Y-m-d,H:i:m',###}</div>
                     </td>
+
+
                     <eq name="$vo.logistics" value="">
                     <td class="layui-table-cell">
 
-                            <a class="layui-btn layui-btn-xs find-ali-status" data-id="{$vo.id}">填写发货信息</a>
+                            <a class="layui-btn layui-btn-xs find-ali-status" data-id="{$vo.id}">填写运单号</a>
 
                     </td>
                         <else>
                             <td class="layui-table-cell">
 
                                 <a class="layui-btn layui-btn-xs layui-btn-normal detail  " data-id="{$vo.id}">查看详情</a>
+                                <a class="layui-btn layui-btn-primary layui-btn-xs detail_set  " data-id="{$vo.id}">修改运单号</a>
 
                             </td>
                     </eq>
@@ -138,10 +151,12 @@
                 </tr>
             </volist>
             </tbody>
-
+            <tfoot>
+            <tr>
+                <td colspan="13">{$page->render();}</td>
+            </tr>
+            </tfoot>
         </table>
-
     </div>
-</div>
-</div>
-</div>
+    </div>
+

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:76:"D:\phpStudy\WWW\drhome\public/../application/admin\view\consumer\tolist.html";i:1525775355;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:76:"D:\phpStudy\WWW\drhome\public/../application/admin\view\consumer\tolist.html";i:1525860488;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
 
 <!DOCTYPE HTML>
 <html>
@@ -100,11 +100,9 @@
 
 
                 <th data-field="createdTime">
-                    <div class="layui-table-cell"><span>创建时间</span></div>
+                    <div class="layui-table-cell"><span>注册时间</span></div>
                 </th>
-                <th data-field="modifiedTime">
-                    <div class="layui-table-cell"><span>修改时间</span></div>
-                </th>
+
                 <th data-field="modifiedTime">
                     <div class="layui-table-cell"><span>操作</span></div>
                 </th>
@@ -114,7 +112,7 @@
             <tbody class="">
             <?php if(is_array($page) || $page instanceof \think\Collection || $page instanceof \think\Paginator): $i = 0; $__LIST__ = $page;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
                 <tr data-index="0" class="tbody_content" data-id="<?php echo $vo['ud_id']; ?>">
-                    
+
                     <td>
                         <div class="layui-table-cell"><?php echo $vo['ud_id']; ?></div>
                     </td>
@@ -146,17 +144,19 @@
 
                     <?php endif; ?>
                     <td>
-                        <div class="layui-table-cell"><?php echo $vo['create_at']; ?></div>
+                        <div class="layui-table-cell"><?php echo date('Y-m-d,H:i:m',$vo['create_at']); ?></div>
                     </td>
-                    <td>
-                        <div class="layui-table-cell"><?php echo $vo['update_at']; ?></div>
-                    </td>
+
                     <td>
                         <div class="layui-table-cell">
-                            <input type="hidden" name="id" value="<?php echo $vo['ud_id']; ?>">
-                            <a class="layui-btn layui-btn-xs forbidden ">禁用</a>
+
+                            <?php if($vo['status'] == '1'): ?>
+                            <a class="layui-btn layui-btn-xs layui-btn-danger forbidden " data-id="<?php echo $vo['ud_id']; ?>">禁用</a>
+                            <?php endif; if($vo['status'] == '2'): ?>
+                                <a class="layui-btn layui-btn-xs layui-btn-danger forbiddenr " data-id="<?php echo $vo['ud_id']; ?>">取消禁用</a>
+                            <?php endif; ?>
                             <a class="layui-btn layui-btn-xs layui-btn-normal check" data-id="<?php echo $vo['ud_id']; ?>">详情</a>
-                            <a class="layui-btn layui-btn-danger layui-btn-xs do_del">删除</a>
+
 
                         </div>
                     </td>

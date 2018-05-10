@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:74:"D:\phpStudy\WWW\drhome\public/../application/admin\view\action\tolist.html";i:1525761248;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:72:"D:\phpStudy\WWW\drhome\public/../application/admin\view\clum\tolist.html";i:1525853329;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
 
 <!DOCTYPE HTML>
 <html>
@@ -41,7 +41,7 @@
 <div class="box-content">
     
 <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
-    <legend>行为列表 <a href="javascript:;" class="layui-btn layui-btn-small add">添加行为</a>
+    <legend>建材类别 <a href="javascript:;" class="layui-btn layui-btn-small add">添加建材分类</a>
 
         <a href="javascript:;" class="layui-btn layui-btn-default layui-btn-small refresh"><i class="layui-icon">&#x1002;</i>刷新</a>
     </legend>
@@ -49,10 +49,10 @@
 <div class="layui-form layui-border-box layui-table-view" lay-filter="content-box" style="padding: 20px;border: 0;">
     <div class="layui-table-box">
         <table class="layui-table" style="width: 100%; border: 1px solid #eee">
-          <colgroup>
-            <col width="50">
-            <col width="50">
-          </colgroup>
+            <colgroup>
+                <col width="50">
+                <col width="50">
+            </colgroup>
             <thead>
             <tr>
                 <th data-field="0">
@@ -60,37 +60,22 @@
                         <span>#</span>
                     </div>
                 </th>
-                <th data-field="1" data-unresize="true">
-                    <div class="layui-table-cell laytable-cell-1-1 laytable-cell-checkbox">
-                        <input name="layTableCheckbox" lay-skin="primary" lay-filter="layTableAllChoose" type="checkbox">
-                        <div class="layui-unselect layui-form-checkbox" lay-skin="primary">
-                            <i class="layui-icon"></i>
-                        </div>
-                    </div>
-                </th>
+
                 <th data-field="id">
                     <div class="layui-table-cell laytable-cell-1-id">
                         <span>ID</span>
-                        <span class="layui-table-sort layui-inline">
-                            <i class="layui-edge layui-table-sort-asc"></i><i
-                            class="layui-edge layui-table-sort-desc"></i>
-                        </span>
+
                     </div>
                 </th>
                 <th data-field="name">
                     <div class="layui-table-cell">
-                        <span>行为名称</span>
+                        <span>类别名称</span>
                     </div>
                 </th>
                 <th data-field="type">
-                    <div class="layui-table-cell"><span>行为url</span></div>
+                    <div class="layui-table-cell"><span>所属分类</span></div>
                 </th>
-                <th data-field="type">
-                    <div class="layui-table-cell"><span>父级分类</span></div>
-                </th>
-                <th>
-                    <div class="layui-table-cell"><span>状态</span></div>
-                </th>
+
                 <th data-field="createdTime">
                     <div class="layui-table-cell"><span>创建时间</span></div>
                 </th>
@@ -104,64 +89,54 @@
             </thead>
             <tbody class="">
             <?php if(is_array($page) || $page instanceof \think\Collection || $page instanceof \think\Paginator): $i = 0; $__LIST__ = $page;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-            <tr data-index="0" class="tbody_content" data-id="<?php echo $vo['ad_id']; ?>">
-                <td >
-                    <div class="layui-table-cell"><?php echo $key; ?></div>
-                </td>
-                <td>
-                    <div class="layui-table-cell">
-                        <input name="layTableCheckbox" class="" lay-skin="primary" value="1" type="checkbox">
-                        <div class="layui-unselect layui-form-checkbox" lay-skin="primary">
-                            <i class="layui-icon"></i>
-                        </div>
-                    </div>
-                </td>
-                <td>
-                    <div class="layui-table-cell"><?php echo $vo['ad_id']; ?></div>
-                </td>
-                <td>
-                    <div class="layui-table-cell"><?php echo $vo['ad_topic']; ?></div>
-                </td>
+                <tr data-index="0" class="tbody_content" data-id="<?php echo $vo['id']; ?>">
+                    <td >
+                        <div class="layui-table-cell"><?php echo $key; ?></div>
+                    </td>
+               
+                    <td>
+                        <div class="layui-table-cell"><?php echo $vo['id']; ?></div>
+                    </td>
+                    <td>
+                        <div class="layui-table-cell"><?php echo $vo['name']; ?></div>
+                    </td>
+                    <?php if($vo['pid'] == null): ?>
+                    <td>
+                        <div class="layui-table-cell">一级分类</div>
+                    </td>
+                        <?php else: ?>
+                            <td>
+                                <div class="layui-table-cell"><?php echo $vo['pid']; ?></div>
+                            </td>
+                    <?php endif; ?>
 
-                <td>
-                    <div class="layui-table-cell"><?php echo $vo['ad_url']; ?></div>
-                </td>
-                <td>
-                    <div class="layui-table-cell"><?php echo !empty($vo['pname']['ad_topic'])?$vo['pname']['ad_topic']:'一级分类'; ?></div>
-                </td>
-                <td data-id="1">
-                    <div class="layui-table-cell">
-                        <input type="checkbox" lay-filter="eidt_status" lay-skin="switch" lay-text="启用|停用"
-                               type-d="<?php echo $vo['ad_status']==1?2:1; ?>" <?php echo $vo['ad_status']==1?'checked' :''; ?>>
-                    </div>
-                </td>
-                <td>
-                    <div class="layui-table-cell"><?php echo $vo['create_at']; ?></div>
-                </td>
-                <td>
-                    <div class="layui-table-cell"><?php echo $vo['update_at']; ?></div>
-                </td>
-                <td>
-                    <div class="layui-table-cell">
-                        <a class="layui-btn layui-btn-xs edit">编辑</a>
-                        <a class="layui-btn layui-btn-danger layui-btn-xs do_del">删除</a>
-                        
-                    </div>
-                </td>
-            </tr>
+                    <td>
+                        <div class="layui-table-cell"><?php echo $vo['create_at']; ?></div>
+                    </td>
+                    <td>
+                        <div class="layui-table-cell"><?php echo $vo['update_at']; ?></div>
+                    </td>
+                    <td>
+                        <div class="layui-table-cell">
+                            <a class="layui-btn layui-btn-xs edit">编辑</a>
+                            <a class="layui-btn layui-btn-danger layui-btn-xs do_del">删除</a>
+
+                        </div>
+                    </td>
+                </tr>
             <?php endforeach; endif; else: echo "" ;endif; ?>
             </tbody>
             <tfoot>
-                <tr>
-                    <td colspan="13"><?php echo $page->render();; ?></td>
-                </tr>
+            <tr>
+                <td colspan="13"><?php echo $page->render();; ?></td>
+            </tr>
             </tfoot>
         </table>
 
     </div>
 </div>
 </div>
-</div>  
+</div>
 </div>
 <?php if(($aName == 'doadd') OR ($aName == 'doedit')): ?>
     <script type="text/javascript" src="__STATIC__/ueditor/1.4.3/ueditor.config.js"></script>
