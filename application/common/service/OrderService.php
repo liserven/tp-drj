@@ -16,6 +16,7 @@ use app\lib\exception\BuildingException;
 use app\lib\exception\OrderException;
 use app\lib\exception\ParameterException;
 use app\lib\exception\UserException;
+use think\Db;
 
 /**
  * Class OrderService
@@ -89,6 +90,7 @@ class OrderService
         $oPIDs = [];
         foreach ($buildings as $item) {
             array_push($oPIDs, $item['type']);
+            Db::table('shopping_trolley')->where([ 'g_bs_id'=> $item['type']])->delete();
         }
         // 为了避免循环查询数据库
 
@@ -127,6 +129,7 @@ class OrderService
             $orderDetailData[$key]['g_number'] = $buildings[$key]['count'];
             $orderDetailData[$key]['g_type'] = $buildings[$key]['type'];
             $orderDetailData[$key]['g_img'] = $product['img'];
+            $orderDetailData[$key]['money_r'] = $product['price'];
             $orderDetailData[$key]['order_no'] = $this->orderNo;
             if(!empty($invoiceType))
             {

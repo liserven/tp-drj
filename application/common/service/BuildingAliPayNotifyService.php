@@ -113,11 +113,12 @@ class BuildingAliPayNotifyService
         foreach ($orderDetails as $orderDetail)
         {
             //找出该商品
-            $product = BuildingScreen::get($orderDetail['gid']);
+            $product = BuildingScreen::get($orderDetail['g_type']);
             //监测库存，如果库存充足，修改已支付，库存不足修改状态库存不足
-            $status =  BuildingOrderStatus::PAIDSTOCKNO;
-            if( $product['stock'] > $orderDetail['g_number'] )
+            if( $product['stock'] < $orderDetail['g_number'] )
             {
+                $status =  BuildingOrderStatus::PAIDSTOCKNO;
+            }else{
                 $status = BuildingOrderStatus::PAID;
                 $product->stock = $product['stock'] - $orderDetail['g_number'];
                 $product->save();  //修改库存

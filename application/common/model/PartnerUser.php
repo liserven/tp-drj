@@ -15,15 +15,15 @@ class PartnerUser extends BaseModel
 
 
     //根据合伙人查询客户
-    public static function getCustomerListByPartnerId($partnerId)
+    public static function getCustomerListByPartnerId($where, $rows=10)
     {
         return self::alias('pu')
-                    ->where(['pu_partner_id'=> $partnerId])
+                    ->where($where)
                     ->join('__USER_DATA__ ud', 'ud.ud_id=pu.pu_user_id', 'left')
                     ->group('ud.ud_id')
                     ->order('pu.pu_id DESC')
                     ->field('pu.source, pu.status, ud.ud_name, ud.ud_logo, ud.ud_sex, ud.ud_phone, ud.county, ud.town, ud.ud_id')
-                    ->select();
+                    ->paginate($rows);
     }
 
 

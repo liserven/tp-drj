@@ -10,6 +10,7 @@ namespace app\api\controller\v1;
 
 
 use app\common\model\BuildingOrderDetail;
+use app\common\service\BuildingAliPayNotifyService;
 use app\common\service\KdniaoService;
 use app\common\validate\IDMustBePositiveInt;
 use app\lib\exception\OrderException;
@@ -24,9 +25,26 @@ class KdNiao extends Base
     {
         (new IDMustBePositiveInt())->goCheck();
         $order = BuildingOrderDetail::get($id);
+        if( !$order['express_code'] || !$order['logistics'])
+        {
+            return show(false, '当前没有物流信息', [], 90004);
+        }
+
         $kdService = new KdniaoService();
         $result =  $kdService->getOrderTracesByJson($order['express_code'],$order['logistics']);
+        $phone = Db::table('express_code')->where(['code'=> $result['ShipperCode']])->find();
+        $result['phone'] = $phone['phone'];
+        $result['g_img'] = $order['g_img'];
+        $result['order_no'] = $order['order_no'];
+        $result['g_name'] = $order['g_name'];
         return show(true, 'ok', $result);
+    }
+
+
+    //测试检查库存
+    public function checkOut()
+    {
+        dd((new BuildingAliPayNotifyService())->checkStock(111));
     }
 
 

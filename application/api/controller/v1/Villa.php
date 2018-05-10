@@ -10,13 +10,16 @@ namespace app\api\controller\v1;
 
 use app\common\model\VillaData as VillaModel;
 use app\common\model\VillaData;
+use app\common\model\VillaOrder;
 use app\common\validate\IDMustBePositiveInt;
 use app\lib\exception\ParameterException;
 use app\common\model\VillaImg;
+use app\lib\exception\PartnerException;
 use app\lib\exception\VillaException;
 use enum\VillaImageType;
 use enum\PartnerUserStatus;
 use app\common\model\VillaCollection;
+use think\Db;
 
 /**
  * Class Villa
@@ -28,6 +31,7 @@ class Villa extends Base
 
     protected $beforeActionList = [
         'checkLogin' => [ 'only' => 'villaCollection' ],
+        'checkPartner' => ['only' => 'getOrderDetail']
     ];
 
     //获取别墅列表
@@ -137,6 +141,25 @@ class Villa extends Base
             $resultData['isCollection'] = 2; //如果是2，说明是添加收藏成功
         }
         return show(true, 'ok', $resultData);
+    }
+
+
+    public function getOrderDetail($id)
+    {
+        (new IDMustBePositiveInt())->goCheck();
+        $data = Db::table('villa_order')->alias('vo')->where([ 'id'=> $id])->field('id,order_id as order_no, user_id, partner_id
+        ,villa_type, villa_name, villa_img,status')->find();
+        if( $data['partner_id'] != $this->user['ud_id'])
+        {
+            throw new PartnerException([
+                'msg'=> '该订单不属于你,无法查看'
+            ]);
+        }
+        $data['detail'] = Db::table('villa_order_detail')->where([ 'order_id'=> $id])->select();
+        return show(true, 'ok', $data);
+
+
+
 
     }
 }

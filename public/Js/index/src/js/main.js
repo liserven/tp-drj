@@ -29,12 +29,29 @@ $(function() {
 	})
 	$('.current_class').removeClass('swiper-pagination-fraction');
 
-	let x = 1;
 
-	function f(y = x) {
-	  let x = 2;
-	  console.log(y);
-	}
+    var $width = $('.status_1 button').width();
+    $('.status_1 button').height($width);
 
-	f() // 1
+    $('.graredenvelope').click(function(){
+        confirm("我的！都是我的！！");
+    })
+	
+	$('.receive_packet').click(function () {
+		var phone = $('.receive_phone').val();
+		var packets_id = $(".packets_id").val();
+		if( phone.length == 0 )
+		{
+			alert('手机号不能为空');
+		}
+		$.post('/api/v1/receive_packet', {phone: phone, packet_id : packets_id}, function (result) {
+			if(result.bol)
+			{
+				layer.msg(result.bol);
+			}
+			else{
+				layer.msg(result.bol);
+			}
+        })
+    });
 })

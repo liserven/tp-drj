@@ -47,6 +47,7 @@ Route::post('api/:version/check_repeat','api/:version.Partner/checkRepeat');
 
 //查询物流接口
 Route::get('api/:version/get_wuliu','api/:version.KdNiao/findKd');
+Route::get('api/:version/get_check','api/:version.KdNiao/checkOut');
 
 
 
@@ -83,10 +84,12 @@ Route::get('api/:version/customs', 'api/:version.Partner/getCustomer');
 Route::post('api/:version/apply_partner', 'api/:version.Partner/applyPartner');
 //合伙人获取个人名片
 Route::get('api/:version/gettcard', 'api/:version.Partner/getPartnerCard');
+Route::get('api/:version/partner_statistics', 'api/:version.Partner/getPartnerStatistics');
 Route::post('api/:version/p_phone', 'api/:version.Partner/partnerPhoneUser' ); //合伙人打电话动作
 Route::post('api/:version/binding_user', 'api/:version.Partner/PartnerBindingUser' ); //合伙人发起绑定请求
 Route::post('api/:version/like_partner', 'api/:version.Partner/setPartnerLike' ); //合伙人点赞
 Route::post('api/:version/star_partner', 'api/:version.Partner/setPartnerScore' ); //合伙人评分
+
 //获取合伙人统计信息
 //用户接收绑定消息
 Route::get('api/:version/eum_list', 'api/:version.Notice/partnerUserEnm');
@@ -132,6 +135,7 @@ Route::get('api/:version/c_building', 'api/:version.Collection/getUserBuildingCo
 //订单
 //别墅订单
 Route::get('api/:version/o_villa', 'api/:version.Order/getOrderByVilla'); //获取收藏建材列表
+Route::get('api/:version/o_villa_d', 'api/:version.Villa/getOrderDetail'); //获取收藏建材列表
 
 
 
@@ -163,6 +167,7 @@ Route::get('api/:version/partner_money', 'api/:version.Partner/getPartnerMoney')
 Route::get('api/:version/o_building', 'api/:version.Order/getOrderByBuilding'); //查询订单
 Route::post('api/:version/cancel_order', 'api/:version.Order/cancelBuildingOrder'); //取消订单
 Route::post('api/:version/del_building_order', 'api/:version.Order/delBuildingOrder'); //订单
+Route::post('api/:version/sign_order', 'api/:version.Order/outOrder'); //订单
 //查询订单详情
 
 Route::get('api/:version/o_building_d', 'api/:version.Order/getOrderDetailBuilding'); //查询订单详情
@@ -259,6 +264,8 @@ Route::get('share/red', 'index/Share/red');
 Route::get('share/card', 'index/Share/card');
 Route::get('share/home', 'index/Share/home');
 Route::get('share/building', 'index/Share/index');
+Route::get('swoole/index', 'index/Share/swoole');
+Route::get('share/redpacket', 'index/Share/redpacket');
 
 
 

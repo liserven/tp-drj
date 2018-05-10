@@ -41,7 +41,7 @@ class Partner extends Base
 
     protected $beforeActionList = [
         //前置操作，验证用户权限，必须是合伙才有权限访问
-        'checkPartner' => ['only' => 'getCustomer,partnerPhoneUser,PartnerBindingUser,potentialCustomers,redConfirm,partnerRedConfirm,getStatistics'],
+        'checkPartner' => ['only' => 'getPartnerStatistics,getCustomer,partnerPhoneUser,PartnerBindingUser,potentialCustomers,redConfirm,partnerRedConfirm,getStatistics'],
         //前置操作 必须是用户才能访问
         'checkUserScope' => ['only' => 'applyPartner,setPartnerLike,setPartnerScore,getPartnerMoney'],
         //必须登录情况下访问
@@ -51,7 +51,26 @@ class Partner extends Base
     //获取客户列表资料
     public function getCustomer()
     {
-        $customs = PartnerUser::getCustomerListByPartnerId($this->user['ud_id']);
+        $limit = $this->getLimit();
+        $status = input('status') ? input('status') : 0;
+        $where = [
+            'pu_partner_id'=> $this->user['ud_id']
+        ];
+        if( $status != 0 )
+        {
+            $where['pu.status'] = $status;
+        }
+
+        $customs = PartnerUser::getCustomerListByPartnerId($where, $limit);
+        $customs->each(function($item, $key){
+            if( $item['status'] >= 3 )
+            {
+                $villaOrderId = Db::table('villa_order')->where([ 'user_id'=> $item['ud_id']])->find();
+                $item['villa_order_id'] = $villaOrderId['id'];
+            }else{
+                $item['villa_order_id'] = 0;
+            }
+        });
         if (empty($customs)) {
             throw new CustomException();
         } else {
@@ -277,27 +296,73 @@ class Partner extends Base
                 'msg' => '当前没有潜在客户'
             ]);
         }
-        $users = [];
-        foreach ($customers as $key => $val) {
-            $user = Db::table('user_data')->where(['ud_phone' => $val['phone']])->field('ud_name, ud_logo, ud_sex, ud_id,ud_phone')->find();
-            if( $user )
+        $userd = [];
+        $customers->each(function ($item, $key)
+        {
+            $user = Db::table('user_data')->where(['ud_phone' => $item['phone']])->field('ud_name, ud_logo, ud_sex, ud_id,ud_phone')->find();
+            if($user)
             {
-                $users[$key] = Db::table('user_data')->where(['ud_phone' => $val['phone']])->field('ud_name, ud_logo, ud_sex, ud_id,ud_phone')->find();
                 $redUse = Db::table('red_use')->where([ 'partner_id'=> $this->user['ud_id'], 'user_id'=> $user['ud_id']])->find();
                 $redUserIs = !$redUse ? 1 : 2;
                 if( $redUse['status'] == 2 )
                 {
                     $redUserIs = 3;
                 }
-                $users[$key]['red_confirm'] = $redUserIs;
-                $users[$key]['price'] = $val['money'];
-                $users[$key]['time'] = date('Y-m-d',$val['create_at']);
-                $users[$key]['red_id'] = $val['rid'];
+
+                $userd = $item;
+                $userd['red_confirm'] = $redUserIs;
+                $userd['price'] = $item['money'];
+                $userd['time'] = date('Y-m-d',$item['create_at']);
+                $userd['red_id'] = $item['rid'];
+                $userd['ud_name'] = $user['ud_name'];
+                $userd['ud_logo'] = $user['ud_logo'];
+                $userd['ud_sex'] = $user['ud_sex'];
+
+                return $userd;
             }
-        }
+        });
+//        $customers->each(function ($item, $key) use ($customers){
+//            $user = Db::table('user_data')->where(['ud_phone' => $item['phone']])->field('ud_name, ud_logo, ud_sex, ud_id,ud_phone')->find();
+//            if( $user )
+//            {
+//                $redUse = Db::table('red_use')->where([ 'partner_id'=> $this->user['ud_id'], 'user_id'=> $user['ud_id']])->find();
+//                $redUserIs = !$redUse ? 1 : 2;
+//                if( $redUse['status'] == 2 )
+//                {
+//                    $redUserIs = 3;
+//                }
+//                $item['red_confirm'] = $redUserIs;
+//                $item['price'] = $item['money'];
+//                $item['time'] = date('Y-m-d',$item['create_at']);
+//                $item['red_id'] = $item['rid'];
+//                $item['ud_name'] = $user['ud_name'];
+//            }
+//            else{
+//                $item['ud_name'] = 111;
+//                unset($customers[$key]);
+//            }
+//            return $item;
+//        });
+//        foreach ($customers as $key => $val) {
+//            $user = Db::table('user_data')->where(['ud_phone' => $val['phone']])->field('ud_name, ud_logo, ud_sex, ud_id,ud_phone')->find();
+//            if( $user )
+//            {
+//                $users[$key] = Db::table('user_data')->where(['ud_phone' => $val['phone']])->field('ud_name, ud_logo, ud_sex, ud_id,ud_phone')->find();
+//                $redUse = Db::table('red_use')->where([ 'partner_id'=> $this->user['ud_id'], 'user_id'=> $user['ud_id']])->find();
+//                $redUserIs = !$redUse ? 1 : 2;
+//                if( $redUse['status'] == 2 )
+//                {
+//                    $redUserIs = 3;
+//                }
+//                $users[$key]['red_confirm'] = $redUserIs;
+//                $users[$key]['price'] = $val['money'];
+//                $users[$key]['time'] = date('Y-m-d',$val['create_at']);
+//                $users[$key]['red_id'] = $val['rid'];
+//            }
+//        }
 
 
-        return show(true, 'ok', $users);
+        return show(true, 'ok', $customers);
     }
 
     //红包确认使用信息
@@ -356,4 +421,41 @@ class Partner extends Base
             ->group('town')->select();
         return show(true, 'ok', $customers);
     }
+
+
+    //获取合伙人数据统计
+    public function getPartnerStatistics()
+    {
+        $fb = Db::table('villa_order')->alias('vo')->where([ 'partner_id'=> $this->user['ud_id']])->group('town')
+            ->join('__VILLA_DATA__ vd', 'vo.villa_name=vd.vd_name', 'left')
+            ->field('vo.town, sum(vd.vd_price)/10000 as money ')->order('money desc')->select();
+        $cj = Db::query('SELECT FROM_UNIXTIME(create_at, "%m") AS crea,  COUNT(id) AS total FROM villa_order GROUP BY crea ');
+        $m = ["01","02","03","04","05","06","07","08","09","10","11","12"];
+        $arr = array_column($cj, 'crea');
+        $max = max($arr);
+
+        $k = array_diff($m, $arr);
+        foreach ($k as $ey=> $v)
+        {
+            if( $v>$max){
+                unset($k[$ey]);
+            }
+            else{
+                $arrTemp['crea'] = $v;
+                $arrTemp['total'] = 0;
+                array_push($cj, $arrTemp);
+            }
+        }
+        foreach ($cj as $key => $row) {
+            $distance[$key] = $row['crea'];
+            $money[$key] = $row['crea'];
+        }
+        array_multisort($distance, SORT_ASC, $cj);
+        $data['cj'] = $cj;
+        $data['fb'] = $fb;
+        return show(true, '', $data);
+    }
+
 }
+
+
