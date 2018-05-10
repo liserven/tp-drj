@@ -84,10 +84,12 @@ Route::get('api/:version/customs', 'api/:version.Partner/getCustomer');
 Route::post('api/:version/apply_partner', 'api/:version.Partner/applyPartner');
 //合伙人获取个人名片
 Route::get('api/:version/gettcard', 'api/:version.Partner/getPartnerCard');
+Route::get('api/:version/partner_statistics', 'api/:version.Partner/getPartnerStatistics');
 Route::post('api/:version/p_phone', 'api/:version.Partner/partnerPhoneUser' ); //合伙人打电话动作
 Route::post('api/:version/binding_user', 'api/:version.Partner/PartnerBindingUser' ); //合伙人发起绑定请求
 Route::post('api/:version/like_partner', 'api/:version.Partner/setPartnerLike' ); //合伙人点赞
 Route::post('api/:version/star_partner', 'api/:version.Partner/setPartnerScore' ); //合伙人评分
+
 //获取合伙人统计信息
 //用户接收绑定消息
 Route::get('api/:version/eum_list', 'api/:version.Notice/partnerUserEnm');

@@ -62,9 +62,13 @@ class User extends Base
         $villaOrder = Db::table('villa_order')->where(['user_id'=> $this->user['ud_id']])->field('id, order_id, user_id, villa_type, 
         
         villa_name, villa_img, status')->find();
+
         if( !empty($villaOrder))
         {
             $villaOrderDetail = Db::table('villa_order_detail')->where(['order_id'=> $villaOrder['id']])->select();
+            foreach ( $villaOrderDetail as &$value ){
+                $value['create_at'] = date("Y-m-d", $value['create_at']);
+            }
             $villaOrder['details'] = $villaOrderDetail;
             $userData['villa_order'] = $villaOrder;
         }

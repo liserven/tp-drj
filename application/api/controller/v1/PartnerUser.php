@@ -118,7 +118,7 @@ class PartnerUser extends Base
                     'villa_name' => $villa['vd_name'],
                     'villa_img' => $villa['vd_logo'],
 //                    'contract'=> $contract,
-                    'villa_type' => $villa['vd_class'] == 1 ? '定制别墅' : '私人定制',
+                    'villa_type' => $villa['vd_class'],
                     'city' => $city,
                     'provice' => $provice,
                     'county' => $county,

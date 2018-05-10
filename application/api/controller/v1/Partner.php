@@ -41,7 +41,7 @@ class Partner extends Base
 
     protected $beforeActionList = [
         //前置操作，验证用户权限，必须是合伙才有权限访问
-        'checkPartner' => ['only' => 'getCustomer,partnerPhoneUser,PartnerBindingUser,potentialCustomers,redConfirm,partnerRedConfirm,getStatistics'],
+        'checkPartner' => ['only' => 'getPartnerStatistics,getCustomer,partnerPhoneUser,PartnerBindingUser,potentialCustomers,redConfirm,partnerRedConfirm,getStatistics'],
         //前置操作 必须是用户才能访问
         'checkUserScope' => ['only' => 'applyPartner,setPartnerLike,setPartnerScore,getPartnerMoney'],
         //必须登录情况下访问
@@ -421,4 +421,41 @@ class Partner extends Base
             ->group('town')->select();
         return show(true, 'ok', $customers);
     }
+
+
+    //获取合伙人数据统计
+    public function getPartnerStatistics()
+    {
+        $fb = Db::table('villa_order')->alias('vo')->where([ 'partner_id'=> $this->user['ud_id']])->group('town')
+            ->join('__VILLA_DATA__ vd', 'vo.villa_name=vd.vd_name', 'left')
+            ->field('vo.town, sum(vd.vd_price)/10000 as money ')->order('money desc')->select();
+        $cj = Db::query('SELECT FROM_UNIXTIME(create_at, "%m") AS crea,  COUNT(id) AS total FROM villa_order GROUP BY crea ');
+        $m = ["01","02","03","04","05","06","07","08","09","10","11","12"];
+        $arr = array_column($cj, 'crea');
+        $max = max($arr);
+
+        $k = array_diff($m, $arr);
+        foreach ($k as $ey=> $v)
+        {
+            if( $v>$max){
+                unset($k[$ey]);
+            }
+            else{
+                $arrTemp['crea'] = $v;
+                $arrTemp['total'] = 0;
+                array_push($cj, $arrTemp);
+            }
+        }
+        foreach ($cj as $key => $row) {
+            $distance[$key] = $row['crea'];
+            $money[$key] = $row['crea'];
+        }
+        array_multisort($distance, SORT_ASC, $cj);
+        $data['cj'] = $cj;
+        $data['fb'] = $fb;
+        return show(true, '', $data);
+    }
+
 }
+
+
