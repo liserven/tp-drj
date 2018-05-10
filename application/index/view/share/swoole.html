@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+        <div id="content">
+
+        </div>
+
+        <input type="text" id="message" >
+        <button onclick="sendCli()">发送</button>
+
+</body>
+
+<script>
+    function GetRandomNum(Min,Max)
+    {
+        var Range = Max - Min;
+        var Rand = Math.random();
+        return(Min + Math.round(Rand * Range));
+    }
+    var num = GetRandomNum(1,50);
+    var wsServer = 'ws://47.104.154.142:8888';
+    var websocket = new WebSocket(wsServer);
+
+    function sendCli()
+    {
+        var a = document.getElementById("message").value;
+        a="message:"+a;
+        websocket.send(a);
+    }
+
+
+
+    websocket.onopen = function (evt) {
+        $str = "auth:"+num
+        websocket.send($str)
+    };
+
+    websocket.onclose = function (evt) {
+        console.log("Disconnected");
+    };
+
+    websocket.onmessage = function (evt) {
+        var d = document.getElementById("content");
+        var li = document.createElement('li');
+        var data = eval("("+evt.data+")");
+        li.innerHTML = data.content;
+        d.append(li)
+    };
+
+    websocket.onerror = function (evt, e) {
+        console.log('Error occured: ' + evt.data);
+    };
+</script>
+</html>

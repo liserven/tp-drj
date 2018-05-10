@@ -49,6 +49,7 @@ class PartnerAliPayNotifyService
 
                 if( $app_id != $config['appId'] || $seller_id != $config['seller_id'] || empty($orderData) )
                 {
+                    $orderData->delete();
                     //如果appid不对， 商户号不对 订单也不存在
                     exit('fail');
                 }
@@ -79,10 +80,12 @@ class PartnerAliPayNotifyService
                     }
                 }
                 else{
+                    $orderData->delete();
 //                    $orderData->examine_status = PartnerUserStatus::NO_PAID;
                     exit('fail');
                 }
             }
+            $orderData->delete();
             Log::write('签名验证失败了。');
             exit('fail');
         }

@@ -30,7 +30,7 @@ class Packets extends Base
         //前置操作，验证用户权限，必须是合伙才有权限访问
         'checkPartner' => ['only' => 'launchPackets,partnerConfirmRed,findPartner'],
         //用户
-        'checkUserScope' => ['only' => 'receivePackets,givePackets,getMyGiveRed,getMyReceiveRed,getUserPackets,redUse']
+        'checkUserScope' => ['only' => 'givePackets,getMyGiveRed,getMyReceiveRed,getUserPackets,redUse']
     ];
 
     //查看我领取的红包
@@ -87,7 +87,18 @@ class Packets extends Base
     public function receivePackets()
     {
         $packetsServer = new PacketsServer();
-        $phone = input('phone') ? input('phone') : $this->user['ud_phone'];
+        $phone = input('phone');
+        if(!$phone)
+        {
+            $this->checkLogins();
+            if( empty($this->user) )
+            {
+                throw new ParameterException([
+                    'msg'=> '领取条件缺失'
+                ]);
+            }
+            $phone = $this->user['ud_phone'];
+        }
         $packetId = input('packet_id');
         return $this->resultHandle($packetsServer->receivePacket($phone, $packetId));
     }

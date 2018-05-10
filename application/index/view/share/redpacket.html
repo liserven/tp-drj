@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link href="https://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+	<title>红包分享</title>
+	<link rel="stylesheet" type="text/css" href="__JS__/index/src/css/style.css">
+	<link href="__JS__/index/src/css/swiper.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="__JS__/index/src/css/public.css">
+	<link rel="stylesheet" type="text/css" href="__JS__/index/src/css/page_style.css">
+	<style type="text/css">
+		body {
+			background: url(__JS__/index/src/image/redpacket.jpg) 0 0 no-repeat;
+			background-size: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<header class="redpacketop">
+			<ul>
+				<li>
+					<img src="__JS__/index/src/image/redpacket_logo.png">
+					<h3>{$data.ud_name}</h3>
+					<span>{$data.create_at | date='Y-m-d', ###}</span>
+					<p>{$data.word}</p>
+				</li>
+				<!-- 这里分三种状态 status_1是未绑定手机号 status_2是绑定手机号 status_3是抢完红包后的状态 -->
+				<!--<li class="status_1 on">-->
+					<!--&lt;!&ndash; 抢红包 &ndash;&gt;-->
+					<!--<button class="graredenvelope">抢</button>-->
+				<!--</li>-->
+				<li class="status_2">
+					<!-- 绑定手机号 -->
+					<dd>所抢到的红包将绑定至该手机号</dd>
+					<input type="number" class="receive_phone" />
+					<button class="receive_packet">绑定手机号</button>
+				</li>
+				<li class="status_3  on">
+					<dd>红包在手，豪宅我有！</dd>
+					<p><b>10000</b> 元</p>
+                    <input type="hidden" class="packets_id" value="{$data.id}">
+					<img src="__JS__/index/src/image/opendrj_btn.png">
+					<a>红包已放置账户<span>13978451245</span>登录APP即可使用</a>
+				</li>
+			</ul>
+		</header>
+		<div class="redpacket">
+			<ul class="row-router">
+				<p>领取{$grab|count}/{$data.total}个</p>
+                <volist name="grab" id="vo">
+                    <li>
+                        <img src="{$vo.ud_logo}">
+                        <dd>
+                            <h5>{$vo.ud_name}</h5>
+                            <span>{$vo.create_at}</span>
+                        </dd>
+                        <a>{$vo.money} 元</a>
+                    </li>
+                </volist>
+			</ul>
+
+			<!-- 活动细则 -->
+			<div class="detailed">
+				<div style="background-color: #000;height: 1px;width: 90%;position: absolute;left: 0;right: 0;margin: auto;top: 11px;z-index: 10"></div>
+				<a>活动细则</a>
+				<p>1.该红包为定荣家别墅红包，使用范围仅限于别墅施工环节，每份订单仅限使用一个红包。</p>
+				<p>2.使用红包时的手机需为抢红包时使用的手机号。</p>
+				<p>3.每个红包只可使用一次。</p>
+				<p>4.发放至手机号的红包需要在APP用手机号注册后才可使用。</p>
+				<p>5.发放至定荣家账户的红包登陆后即可使用。</p>
+				<p>6.领取到的红包可进行任意转送。</p>
+				<p>7.定荣家保留法律范围内允许的对活动的解释权。</p>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="__JS__/index/src/js/main.js"></script>
+</html>

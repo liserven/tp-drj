@@ -20,29 +20,34 @@ use app\common\service\WxPayServer;
 use app\common\validate\IDMustBePositiveInt;
 use app\lib\exception\BuildingException;
 use app\lib\exception\OrderException;
+use app\lib\exception\ParameterException;
 use enum\BuildingOrderStatus;
 use think\Db;
 
 class Order extends Base
 {
     protected $beforeActionList = [
-        'checkLogin'=> [ 'only'=> 'getOrderByBuilding,getOrderByVilla,reportOrder,cancelBuildingOrder,delBuildingOrder
+        'checkLogin' => ['only' => 'getOrderByBuilding,getOrderByVilla,reportOrder,cancelBuildingOrder,delBuildingOrder
         ,getOrderDetailBuilding,AnOorder']
     ];
-
 
 
     //建材订单
     public function getOrderByBuilding()
     {
-        $oBuildings = BuildingOrder::getOrderDetailsBuWhere([ 'user_id'=> $this->user['ud_id']]);
-        if(collection($oBuildings)->isEmpty())
-        {
-            throw new BuildingException([
-                'msg'=>'当前没有订单'
+        $status = input('status');
+        if (!$status) {
+            throw new ParameterException([
+                'msg' => '状态不可为空'
             ]);
         }
-        return show( true, 'ok', $oBuildings);
+        $oBuildings = BuildingOrder::getOrderDetailsBuWhere(['user_id' => $this->user['ud_id'], 'bo.status' => $status]);
+        if (collection($oBuildings)->isEmpty()) {
+            throw new BuildingException([
+                'msg' => '当前没有订单'
+            ]);
+        }
+        return show(true, 'ok', $oBuildings);
     }
 
 
@@ -50,25 +55,25 @@ class Order extends Base
     public function getOrderDetailBuilding($id)
     {
         (new IDMustBePositiveInt())->goCheck();
-        $oBuilding = BuildingOrder::getOrderDetailsBuWhereFind([ 'id'=> $id]); //获取订单
-        $oBuilding['address'] = UserDelivery::get($oBuilding['snap_address']);
-        if(!$oBuilding)
+        $oBuilding = BuildingOrder::getOrderDetailsBuWhereFind(['id' => $id]); //获取订单
+        if( !$oBuilding )
         {
+            return show( false, '订单不存在', [], 90004);
+        }
+        $oBuilding['address'] = UserDelivery::get($oBuilding['snap_address']);
+        if (!$oBuilding) {
             throw new OrderException();
         }
-        if( $oBuilding['user_id'] != $this->user['ud_id'])
-        {
+        if ($oBuilding['user_id'] != $this->user['ud_id']) {
             throw new OrderException([
-                'msg'=> '该订单不是你的'
+                'msg' => '该订单不是你的'
             ]);
         }
-        $details = BuildingOrderDetail::getBuildOrdersByOrderId([ 'order_id'=> $oBuilding['id']]); //获取订单详情
-        foreach ($details as &$detail)
-        {
-            if( $detail['status'] == BuildingOrderStatus::PAID )
-            {
+        $details = BuildingOrderDetail::getBuildOrdersByOrderId(['order_id' => $oBuilding['id']]); //获取订单详情
+        foreach ($details as &$detail) {
+            if ($detail['status'] == BuildingOrderStatus::PAID) {
                 //如果已经支付 有物流信息
-                $wl = (new KdniaoService())->getOrderTracesByJson($detail['express_code'],$detail['logistics'], $oBuilding['pay_time']);
+                $wl = (new KdniaoService())->getOrderTracesByJson($detail['express_code'], $detail['logistics'], $oBuilding['pay_time']);
                 $detail['wl_name'] = $wl['kd_name'];
                 $detail['pay_time'] = $oBuilding['pay_time'];
                 $detail['wl_detail'] = $wl['Traces'][0];
@@ -80,33 +85,26 @@ class Order extends Base
     }
 
 
-
-
     //别墅订单
     public function getOrderByVilla()
     {
-        $oBuildings = Db::table('villa_order')->where([ 'user_id'=> $this->user['ud_id']])->
-            field('order_id, partner_id, user_id, create_at, villa_type, villa_name, villa_img, status')->limit(10)->select();
-        foreach ( $oBuildings as &$villa)
-        {
-            if( $villa['status'] == 1 )
-            {
+        $oBuildings = Db::table('villa_order')->where(['user_id' => $this->user['ud_id']])->
+        field('order_id, partner_id, user_id, create_at, villa_type, villa_name, villa_img, status')->limit(10)->select();
+        foreach ($oBuildings as &$villa) {
+            if ($villa['status'] == 1) {
                 $villa['status'] = '已签约';
             }
-            if( $villa['status'] == 2 )
-            {
+            if ($villa['status'] == 2) {
                 $villa['status'] = '施工中';
             }
-            if( $villa['status'] == 3 )
-            {
+            if ($villa['status'] == 3) {
                 $villa['status'] = '项目已完成';
             }
         }
-        if(empty($oBuildings))
-        {
+        if (empty($oBuildings)) {
             throw new BuildingException();
         }
-        return show( true, 'ok', $oBuildings);
+        return show(true, 'ok', $oBuildings);
     }
 
 
@@ -116,32 +114,33 @@ class Order extends Base
         $counts = input('count/a');
         $types = input('type/a');
         $products = [];
-        foreach ($ids as $key=>$id)
-        {
+        foreach ($ids as $key => $id) {
             $products[$key]['id'] = $id;
             $products[$key]['count'] = $counts[$key];
             $products[$key]['type'] = $types[$key];
         }
-        $payService = new OrderService( );
+        $payService = new OrderService();
         $orderResult = $payService->directPurchase($this->user['ud_id'], $products);
-        if( $orderResult['pass'] ) {
+        if ($orderResult['pass']) {
             return show(true, 'ok', $orderResult);
-        }
-        else{
-            return show( false , 'error', []);
+        } else {
+            return show(false, 'error', []);
         }
     }
+
     //提交订单
     public function reportOrder()
     {
         $products = input('products/a');
-        $payService = new OrderService( );
-        $orderResult = $payService->directPurchase($this->user['ud_id'], $products);
-        if( $orderResult['pass'] ) {
-            return show(true, 'ok', $orderResult);
+        if( !empty($products))
+        {
         }
-        else{
-            return show( false , 'error', []);
+        $payService = new OrderService();
+        $orderResult = $payService->directPurchase($this->user['ud_id'], $products);
+        if ($orderResult['pass']) {
+            return show(true, 'ok', $orderResult);
+        } else {
+            return show(false, 'error', []);
         }
     }
 
@@ -152,8 +151,7 @@ class Order extends Base
         (new IDMustBePositiveInt())->goCheck();
         //取消订单 已经支付过的订单无法取消
         $orderDetail = BuildingOrder::get($id);
-        if( $orderDetail->status >= BuildingOrderStatus::PAID || empty($orderDetail) )
-        {
+        if ($orderDetail->status >= BuildingOrderStatus::PAID || empty($orderDetail)) {
             //订单已支付 或已取消
             throw new OrderException([
                 'msg' => '订单已经支付或已取消，无法取消',
@@ -161,18 +159,15 @@ class Order extends Base
             ]);
         }
 
-        try{
+        try {
             $orderDetail->status = BuildingOrderStatus::CANCEL; //修改状态为取消
             $orderDetail->cancel_reason = $content;
             $orderDetail->save();
 
-            return show(true, 'ok', [ 'is_cancel'=> true]);
-        }catch (\Exception $e)
-        {
-            return show( false , 'error', [ 'is_cancel'=> false]);
+            return show(true, 'ok', ['is_cancel' => true]);
+        } catch (\Exception $e) {
+            return show(false, 'error', ['is_cancel' => false]);
         }
-
-
 
 
     }
@@ -184,32 +179,47 @@ class Order extends Base
         (new IDMustBePositiveInt())->goCheck();
         //取消订单 已经支付过的订单无法取消
         $orderDetail = BuildingOrder::get($id);
-        if( empty($orderDetail) )
-        {
+        if (empty($orderDetail)) {
             throw new OrderException([
                 'msg' => '订单不存在，无法删除',
                 'errorCode' => 90010
             ]);
         }
 
-        if( $orderDetail->status != BuildingOrderStatus::CANCEL && $orderDetail->status != BuildingOrderStatus::UNPAID  )
-        {
+        if ($orderDetail->status != BuildingOrderStatus::CANCEL && $orderDetail->status != BuildingOrderStatus::UNPAID) {
             throw new OrderException([
                 'msg' => '订单正在支付，无法删除',
                 'errorCode' => 90011
             ]);
         }
         Db::startTrans();
-        try{
+        try {
             $orderDetail->delete();
-            BuildingOrderDetail::destroy([ 'order_id'=> $id ]);
+            BuildingOrderDetail::destroy(['order_id' => $id]);
             Db::commit();
-            return show( true, 'ok', [ 'is_del'=> true]);
+            return show(true, 'ok', ['is_del' => true]);
 
-        }catch (\Exception $e){
+        } catch (\Exception $e) {
             Db::rollback();
-            return show( false, 'ok', [ 'is_del'=> false]);
+            return show(false, 'ok', ['is_del' => false]);
         }
+    }
+
+
+
+    public function outOrder($id)
+    {
+        (new IDMustBePositiveInt())->goCheck();
+        //取消订单 已经支付过的订单无法取消
+        $orderDetail = BuildingOrderDetail::get($id);
+        if( $orderDetail['user_id'] != $this->user['ud_id'])
+        {
+            return show( false, '无法修改别人订单');
+        }
+        $orderDetail->status=BuildingOrderStatus::SIGN;
+        $result = $orderDetail->save();
+        return $this->resultHandle($result);
+
 
 
 

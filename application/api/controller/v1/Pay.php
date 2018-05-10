@@ -73,6 +73,13 @@ class Pay extends Base
                 'msg' => '该订单已经支付或已取消'
             ]);
         }
+        if( $orderData['user_id'] != $this->user['ud_id'])
+        {
+            throw new OrderException([
+                'msg'=> '该订单不属于你'
+            ]);
+        }
+
         $aliPayService = new AlipayServer();
         return $aliPayService->get([
             'order_name' => $orderData->snap_name,

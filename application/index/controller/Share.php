@@ -11,9 +11,11 @@ namespace app\index\controller;
 use app\common\model\BuildingDetails;
 use app\common\model\VillaData;
 use app\common\model\VillaImg;
+use app\common\validate\IDMustBePositiveInt;
 use enum\VillaImageType;
 use app\common\service\PartnerService;
 use enum\PartnerUserStatus;
+use think\Db;
 
 class Share extends BaseController
 {
@@ -55,4 +57,39 @@ class Share extends BaseController
         $this->assign('data', $data);
         return $this->fetch();
     }
+
+    public function redpacket($id){
+        (new IDMustBePositiveInt())->goCheck();
+        $data = Db::table('give_red')->where(['id'=> $id])
+            ->alias('gr')
+            ->join('__USER_DATA__ ud', 'ud.ud_id=gr.user_id', 'left')
+            ->field('ud.ud_sex, ud.ud_name,gr.total,ud.ud_logo,gr.id, ud.ud_phone, gr.create_at, gr.word')
+            ->find();
+        $grab = Db::table('grab_red')->where([ 'rid'=> $data['id']])->order('id desc')->select();
+        if( !empty($grab) )
+        {
+            foreach ($grab as &$val)
+            {
+                $user = Db::table('user_data')->where([ 'ud_phone'=> $val['phone'] ])->find();
+                if( !empty($user) )
+                {
+                    $val['ud_name'] = $user['ud_name'];
+                    $val['ud_logo'] = $user['ud_logo'];
+                }
+                else{
+                    $val['ud_name'] = '定荣'.rand(1000,9999);
+                    $val['ud_logo'] = '/Js/index/src/image/default_logo.png';
+                }
+            }
+        }
+        $this->assign('grab', $grab);
+        $this->assign('data', $data);
+        return $this->fetch();
+    }
+    public function swoole()
+    {
+        return $this->fetch();
+    }
+
+
 }

@@ -168,8 +168,8 @@ class PartnerUser extends Base
                     'type' => 3,
                 ]);
                 $villaOrderDetailData = [
-                    'order_id' => $villaOrderResult['id'],
-                    'status' => '签订合同',
+                    'order_id' => $id,
+                    'status' => '已经完工',
                     'create_at' => time()
                 ];
                 Db::table('villa_order_detail')->insert($villaOrderDetailData);
