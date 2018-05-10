@@ -70,13 +70,14 @@
                     </if>
 
                     <td>
-                        <div class="layui-table-cell">{$vo.create_at}</div>
+                        <div class="layui-table-cell">{$vo.create_at|date='Y-m-d,H:i:m',###}</div>
                     </td>
                     <td>
-                        <div class="layui-table-cell">{$vo.update_at}</div>
+                        <div class="layui-table-cell">{$vo.update_at|date='Y-m-d,H:i:m',###}</div>
                     </td>
                     <td>
                         <div class="layui-table-cell">
+                            <input type="hidden" name="id" value="{$vo.id}">
                             <a class="layui-btn layui-btn-xs edit">编辑</a>
                             <a class="layui-btn layui-btn-danger layui-btn-xs do_del">删除</a>
 

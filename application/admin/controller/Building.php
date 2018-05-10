@@ -374,7 +374,7 @@ class Building extends Base
 
 
         $page = db('building_details')->where('id',$id)->setField('status','1');
-        CusLog::writeLog($this->User['am_id'], '上架 <a class="c-red">' . $page->id . '</a>');
+
         return $this->resultHandle($page);
     }
   //删除图片

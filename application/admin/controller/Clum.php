@@ -113,5 +113,24 @@ class Clum extends Base
         return $this->fetch();
     }
 
+    public function doEdit(){
+
+        if ($this->request->isPost()) {
+            if (!$this->_checkAction()) {
+                return $this->ajaxShow(false, '无权此操作');
+            }
+       }else{
+            $id = input('id/d');
+            $province  = db('building_column')->where('pid', 0)->select();
+           $page = db('building_column')->where('id',$id)->find();
+
+           $this->assign([
+               'page'=>$page,
+               'province'=>$province
+           ]);
+         return view();
+       }
+    }
+
 }
 
