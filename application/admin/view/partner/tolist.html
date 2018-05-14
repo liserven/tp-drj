@@ -51,7 +51,9 @@
                 <th data-field="11">
                     <div class="layui-table-cell" align="center"><span>手机号</span></div>
                 </th>
-
+                <th data-field="11">
+                    <div class="layui-table-cell" align="center"><span>身份</span></div>
+                </th>
                 <th data-field="11">
                     <div class="layui-table-cell" align="center"><span>付款状态</span></div>
                 </th>
@@ -123,7 +125,9 @@
                     <td>
                         <div class="layui-table-cell">{$vo.phone}</div>
                     </td>
-
+                    <td>
+                        <div class="layui-table-cell">{$vo.type}</div>
+                    </td>
                     <td>
                         <div class="layui-table-cell">{$vo.examine_status|aliPayStatusNum}</div>
                     </td>
@@ -131,18 +135,20 @@
                         <div class="layui-table-cell">
                             <input type="hidden" name="" class="wx" value="{$vo.transaction_id}">
                             <input type="hidden" name="" class="zfb" value="{$vo.trade_no}">
-                            <eq name="vo.examine_status" value="4">
+                            <eq name="vo.examine_status" value="1">
                                 <a class="layui-btn layui-btn-xs find-ali-status" pay-type="{$vo.payment_type}" name="{$vo.name}">查询付款</a>
-
-
                                 <a class="layui-btn layui-btn-xs find-ali-status" pay-type="{$vo.payment_type}" name="{$vo.name}">退款</a>
-                                <a class="layui-btn layui-btn-xs aggry" data-id="{$vo.user_id}">通过</a>
+                                <a class="layui-btn layui-btn-xs">已通过</a>
                             </eq>
                             <eq name="vo.examine_status" value="3">
-
+                                <a class="layui-btn layui-btn-xs aggry" data-id="{$vo.user_id}">通过</a>
                                 <a class="layui-btn layui-btn-danger layui-btn-xs ">拒绝</a>
                             </eq>
+                            <eq name="vo.examine_status" value="2">
+                                <a class="layui-btn layui-btn-xs">未通过</a>
+                            </eq>
                         </div>
+
                     </td>
                 </tr>
             </volist>

@@ -1,5 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:75:"D:\phpStudy\WWW\drhome\public/../application/admin\view\partner\tolist.html";i:1525775467;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
-
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:75:"D:\phpStudy\WWW\drhome\public/../application/admin\view\partner\tolist.html";i:1526284528;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -92,7 +91,9 @@
                 <th data-field="11">
                     <div class="layui-table-cell" align="center"><span>手机号</span></div>
                 </th>
-
+                <th data-field="11">
+                    <div class="layui-table-cell" align="center"><span>身份</span></div>
+                </th>
                 <th data-field="11">
                     <div class="layui-table-cell" align="center"><span>付款状态</span></div>
                 </th>
@@ -164,7 +165,9 @@
                     <td>
                         <div class="layui-table-cell"><?php echo $vo['phone']; ?></div>
                     </td>
-
+                    <td>
+                        <div class="layui-table-cell"><?php echo $vo['type']; ?></div>
+                    </td>
                     <td>
                         <div class="layui-table-cell"><?php echo aliPayStatusNum($vo['examine_status']); ?></div>
                     </td>
@@ -172,17 +175,18 @@
                         <div class="layui-table-cell">
                             <input type="hidden" name="" class="wx" value="<?php echo $vo['transaction_id']; ?>">
                             <input type="hidden" name="" class="zfb" value="<?php echo $vo['trade_no']; ?>">
-                            <?php if($vo['examine_status'] == '4'): ?>
+                            <?php if($vo['examine_status'] == '1'): ?>
                                 <a class="layui-btn layui-btn-xs find-ali-status" pay-type="<?php echo $vo['payment_type']; ?>" name="<?php echo $vo['name']; ?>">查询付款</a>
-
-
                                 <a class="layui-btn layui-btn-xs find-ali-status" pay-type="<?php echo $vo['payment_type']; ?>" name="<?php echo $vo['name']; ?>">退款</a>
-                                <a class="layui-btn layui-btn-xs aggry" data-id="<?php echo $vo['user_id']; ?>">通过</a>
+                                <a class="layui-btn layui-btn-xs">已通过</a>
                             <?php endif; if($vo['examine_status'] == '3'): ?>
-
+                                <a class="layui-btn layui-btn-xs aggry" data-id="<?php echo $vo['user_id']; ?>">通过</a>
                                 <a class="layui-btn layui-btn-danger layui-btn-xs ">拒绝</a>
+                            <?php endif; if($vo['examine_status'] == '2'): ?>
+                                <a class="layui-btn layui-btn-xs">未通过</a>
                             <?php endif; ?>
                         </div>
+
                     </td>
                 </tr>
             <?php endforeach; endif; else: echo "" ;endif; ?>

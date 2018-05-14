@@ -130,8 +130,8 @@
                     <div class="layui-table-cell">{$vo.update_at|date='Y-m-d',###}</div>
                 </td>
                 <td class="layui-table-cell ">
-                      <input type="hidden" name="id" value="{$vo.ud_id}">
-                    <a class="layui-btn layui-btn-xs find-ali-status" name="{$vo.ud_name}"  >查看详情</a>
+                    <input type="hidden" id="id" value="{$vo.ud_id}">
+                    <a class="layui-btn layui-btn-xs find-ali-status" name="{$vo.ud_name}" data-id="{$vo.ud_id}" >查看详情</a>
                     <a class="layui-btn layui-btn-danger layui-btn-xs  black_pull" data-id="{$vo.ud_id}">除名</a>
 
                 </td>

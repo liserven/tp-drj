@@ -20,7 +20,7 @@ class villa extends Base
 
     public function tolist(){
         //别墅列表
-        $page = Db::table('villa_data')->where('status','1')->paginate('15');
+        $page = Db::table('villa_data')->where('status','1')->order('id','DESC')->paginate('15');
 
         $this->assign('page',$page);
 
@@ -44,7 +44,7 @@ class villa extends Base
             $data['office']             = input('office');//厅
             $data['vd_class']           = input('vd_class');//一级分类
             $data['vd_class_r']         = input('vd_class_r');//二级分类
-            $data['vd_logo']            = input('logo');
+            $data['vd_logo']            = input('vd_logo');
             $data['vd_windows']         = input('vd_windows');
             $Deploy                     = input('like/a');
             $lb                         = input('lb-input/a');
@@ -182,7 +182,7 @@ class villa extends Base
         }
     }
     //别墅修改
-    public function doedit(){
+    public function doEdit(){
 
         if ($this->request->isPost()) {
             if (!$this->_checkAction()) {
@@ -203,11 +203,109 @@ class villa extends Base
             $data['office']             = input('office');//厅
             $data['vd_class']           = input('vd_class');//一级分类
             $data['vd_class_r']         = input('vd_class_r');//二级分类
-            $wg                         = input('wg-input/a');
+            $data['vd_logo']            = input('logo');
+            $data['vd_windows']         = input('vd_windows'); //窗户
+            $Deploy                     = input('like/a');//售后
+            $lb                         = input('lb-input/a');//列表图
+            $wg                         = input('wg-input/a');//外观图
+
+            $jg                         = input('jg-input/a');//景观图
+            $mj                         = input('mj-input/a');//面积图
+            $xj                         = input('xj-input/a');//细节图
+            $sn                         = input('sn-input/a');//室内图
 
             try{
-                $result = VillaData::create($data);
-                return $this->resultHandle($result);
+                $data = VillaData::create($data);
+                Db::table('villa_img')->where(['vi_villa_id'=> $data['id']])->delete();//删除商品之前所存图片
+
+
+                Db::table('villa_customer')->where(['vid'=> $data['id']])->delete();//删除商品之前所存售后
+                $deplData = [];
+                $imgData = [];
+                $imgDatab = [];
+                $imgDatac = [];
+                $imgDatad = [];
+                $imgDataa = [];
+                $imgDatae = [];
+                //遍历别墅外观图
+                if(is_array($wg) && !empty($wg)) {
+                    foreach ($wg as $k => $v) {
+
+                        $imgData[$k]['vi_villa_id'] = $data['id'];
+                        $imgData[$k]['img'] = $v;
+                        $imgData[$k]['type'] = 1;
+
+
+                    }
+                }
+                //遍历别墅景观图
+                if(is_array($jg) && !empty($jg)) {
+                    foreach ($jg as $k => $v) {
+                        $imgDataa[$k]['vi_villa_id'] = $data['id'];
+                        $imgDataa[$k]['img'] = $v;
+                        $imgDataa[$k]['type'] = 4;
+
+                    }
+                }
+                //遍历别墅面积图
+                if(is_array($mj) && !empty($jg)) {
+                    foreach ($mj as $k => $val) {
+                        $imgDatab[$k]['vi_villa_id'] = $data['id'];
+                        $imgDatab[$k]['img'] = $val;
+                        $imgDatab[$k]['type'] = 5;
+
+                    }
+                }
+
+                //遍历别墅细节图
+                if(is_array($xj) && !empty($jg)) {
+                    foreach ($xj as $k => $val) {
+                        $imgDatac[$k]['vi_villa_id'] = $data['id'];
+                        $imgDatac[$k]['img'] = $val;
+                        $imgDatac[$k]['type'] = 3;
+
+                    }
+                }
+                //遍历别墅室内图
+                if(is_array($sn) && !empty($jg)) {
+                    foreach ($sn as $k => $val) {
+                        $imgDatad[$k]['vi_villa_id'] = $data['id'];
+                        $imgDatad[$k]['img'] = $val;
+                        $imgDatad[$k]['type'] = 2;
+
+                    }
+                }
+                //遍历别墅轮播图
+                if(is_array($lb) && !empty($jg)) {
+                    foreach ($lb as $k => $val) {
+                        $imgDatae[$k]['vi_villa_id'] = $data['id'];
+                        $imgDatae[$k]['img'] = $val;
+                        $imgDatae[$k]['type'] = 6;
+
+                    }
+                }
+
+                //合并别墅图片数组
+                $imgData=array_merge_recursive($imgData,$imgDataa,$imgDatab,$imgDatac,$imgDatad,$imgDatae);
+                //遍历别墅售后服务
+                if(is_array($Deploy) && !empty($Deploy)) {
+                    foreach ($Deploy as $k => $val) {
+                        $deplData[$k]['vid']           = $data['id'];
+                        $list = db('deploy')->where('id',$val)->find();
+                        $deplData[$k]['cus_name']         = $list['name'];
+
+                        $deplData[$k]['img']           = $list['img'];
+                    }
+                }
+
+
+                (new VillaCustomer())->saveAll($deplData);
+
+                (new VillaImg())->saveAll($imgData);
+
+
+                return $this->resultHandle($data);
+
 
             }catch (\Exception $e)
             {

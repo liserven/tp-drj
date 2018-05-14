@@ -71,4 +71,29 @@ class Consumer extends Base{
         }
     }
 
+    //用户详细信息
+
+    public function getUserAddress(){
+       $id = input('get.id');
+       $data = Db::table('user_delivery')->where('uid',$id)->select();
+       $this->assign('data',$data);
+       return $this->fetch();
+    }
+
+    //用户查询
+
+    public function findGet(){
+        $v = input('select');
+        $d = input('mes');
+        if($v == 1){
+            $page = db('user_data')->where('ud_name', $d)->find();
+            $this->assign('page', $page);
+            return $this->fetch();
+        }else{
+            $page = db('user_data')->where('ud_phone', $d)->find();
+            $this->assign('page', $page);
+            return $this->fetch();
+        }
+    }
+
 }

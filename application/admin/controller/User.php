@@ -237,18 +237,16 @@ class User extends Base
     public function setSeal()
     {
     }
-    public function getUserStar($id=''){
 
-
-
+    //获取合伙人星级评分
+    public function getUserStar(){
+        $id = input('get.id');
         $data = db('partner_star')->where('pid',$id)->find();
-
-
         $this->assign('data', $data);
         return $this->fetch();
 
     }
-
+   //黑名单列表
     public function black($id){
         (new IDMustBePositiveInt())->goCheck();
 

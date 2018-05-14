@@ -17,7 +17,7 @@ use think\db;
 
 class Dope extends Base{
       public function tolist(){
-          $list = db('dopes')->order('id','desc')->select();
+          $list = db('dopes')->order('id','desc')->paginate('15');
           $this->assign('page', $list);
           return $this->fetch();
       }

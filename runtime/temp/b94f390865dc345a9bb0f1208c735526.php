@@ -1,5 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:72:"D:\phpStudy\WWW\drhome\public/../application/admin\view\user\tolist.html";i:1525833369;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
-
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:72:"D:\phpStudy\WWW\drhome\public/../application/admin\view\user\tolist.html";i:1526289351;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -171,8 +170,8 @@
                     <div class="layui-table-cell"><?php echo date('Y-m-d',$vo['update_at']); ?></div>
                 </td>
                 <td class="layui-table-cell ">
-                      <input type="hidden" name="id" value="<?php echo $vo['ud_id']; ?>">
-                    <a class="layui-btn layui-btn-xs find-ali-status" name="<?php echo $vo['ud_name']; ?>"  >查看详情</a>
+                    <input type="hidden" id="id" value="<?php echo $vo['ud_id']; ?>">
+                    <a class="layui-btn layui-btn-xs find-ali-status" name="<?php echo $vo['ud_name']; ?>" data-id="<?php echo $vo['ud_id']; ?>" >查看详情</a>
                     <a class="layui-btn layui-btn-danger layui-btn-xs  black_pull" data-id="<?php echo $vo['ud_id']; ?>">除名</a>
 
                 </td>

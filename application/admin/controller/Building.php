@@ -35,7 +35,7 @@ class Building extends Base
     public function tolist()
     {
 
-        $page = Db::table('building_details')->where('status','1')->paginate('10');
+        $page = Db::table('building_details')->where('status','1')->order('id','DESC')->paginate('10');
 
         $this->assign('page', $page);
 

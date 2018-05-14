@@ -1,5 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:76:"D:\phpStudy\WWW\drhome\public/../application/admin\view\consumer\tolist.html";i:1525860488;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
-
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:76:"D:\phpStudy\WWW\drhome\public/../application/admin\view\consumer\tolist.html";i:1526290826;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -45,19 +44,31 @@
 
     </legend>
 </fieldset>
-<div class="layui-col-md12 layui-col-md-offset4">
+<div class="layui-col-md12">
     <div class="layui-form-query">
-        <form class="layui-form" id="query_form" action="<?php echo url('consumer/lookup'); ?>">
-            <div class="layui-form-item">
-                <div class="layui-inline">
-                    <label class="layui-form-mid">手机号/用户名：</label>
+        <form class="layui-form" id="query_form" action="<?php echo url('consumer/findGet'); ?>">
+            <div class="layui-form-item" style="padding-left:20px ;">
+                <div class="layui-block">
+                    <label class="layui-form-mid">选项：</label>
                     <div class="layui-input-inline">
-                        <input name="phone" title="请输入用户手机号" class="layui-input" type="text">
+                        <select name="select">
+                            <option>请选择</option>
+                            <option value="1">姓名</option>
+                            <option value="2">手机号</option>
+
+
+                        </select>
                     </div>
-                </div>
-                <div class="layui-inline">
                     <div class="layui-input-inline">
-                        <button class="layui-btn" type="submit" lay-submit="seach_phone"><i class="layui-icon"></i>查询</button>
+                        <input type="text" name="mes" lay-verify="required" placeholder="请输入查询内容" class="layui-input">
+                    </div>
+
+
+                    <div class="layui-inline">
+                        <div class="layui-input-inline">
+                            <button class="layui-btn" type="submit" lay-submit="seach_phone" lay-filter="find"><i class="layui-icon"></i>查询
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -149,13 +160,14 @@
 
                     <td>
                         <div class="layui-table-cell">
-
+                            <input type="hidden" id="id" value="<?php echo $vo['ud_id']; ?>">
                             <?php if($vo['status'] == '1'): ?>
                             <a class="layui-btn layui-btn-xs layui-btn-danger forbidden " data-id="<?php echo $vo['ud_id']; ?>">禁用</a>
                             <?php endif; if($vo['status'] == '2'): ?>
                                 <a class="layui-btn layui-btn-xs layui-btn-danger forbiddenr " data-id="<?php echo $vo['ud_id']; ?>">取消禁用</a>
                             <?php endif; ?>
-                            <a class="layui-btn layui-btn-xs layui-btn-normal check" data-id="<?php echo $vo['ud_id']; ?>">详情</a>
+                            <input type="hidden" name="id" value="<?php echo $vo['ud_id']; ?>">
+                            <a class="layui-btn layui-btn-xs layui-btn-normal getUserAddress" name="<?php echo $vo['ud_name']; ?>">详情</a>
 
 
                         </div>

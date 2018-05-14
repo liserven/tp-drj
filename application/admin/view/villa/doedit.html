@@ -67,6 +67,12 @@
             </div>
         </div>
         <div class="layui-form-item">
+            <label class="layui-form-label">窗户</label>
+            <div class="layui-input-inline">
+                <input type="text" name="vd_windows"  value="{$arr.vd_windows}" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
             <label class="layui-form-label">屋面瓦</label>
             <div class="layui-input-inline">
                 <input type="text" name="vd_wmw"  value="{$arr.vd_wmw}" class="layui-input">
@@ -99,6 +105,14 @@
             </div>
         </div>
         <div class="layui-form-item">
+            <label class="layui-form-label">缩略图</label>
+            <div class="layui-col-md2">
+                <img src="{$arr.vd_logo}" id="img-upload-b" alt="" class="screen-img">
+                <input type="hidden" name="vd_logo" id="input-form-b" >
+            </div>
+        </div>
+
+        <div class="layui-form-item">
             <label class="layui-form-label">外观图：</label>
             <div class="layui-input-block">
                 <div class="layui-upload">
@@ -115,7 +129,7 @@
                             </thead>
                             <tbody id="wg-detail">
                                 <volist name="img" id="vo">
-                                    <eq name="type" value="1">
+                                    <eq name="$vo.type" value="1">
                                         <tr>
                                             <td>
                                                 原图
@@ -156,7 +170,7 @@
                             </tr></thead>
                             <tbody id="sn-detail">
                             <volist name="img" id="vo">
-                                <eq name="type" value="2">
+                                <eq name="$vo.type" value="2">
                                     <tr>
                                         <td>
                                             原图
@@ -194,7 +208,7 @@
                             </tr></thead>
                             <tbody id="xj-detail">
                             <volist name="img" id="vo">
-                                <eq name="type" value="3">
+                                <eq name="$vo.type" value="3">
                                     <tr>
                                         <td>
                                             原图
@@ -232,7 +246,7 @@
                             </tr></thead>
                             <tbody id="jg-detail">
                             <volist name="img" id="vo">
-                                <eq name="type" value="4">
+                                <eq name="$vo.type" value="4">
                                     <tr>
                                         <td>
                                             原图
@@ -270,7 +284,7 @@
                             </tr></thead>
                             <tbody id="mj-detail">
                             <volist name="img" id="vo">
-                                <eq name="type" value="5">
+                                <eq name="$vo.type" value="5">
                                     <tr>
                                         <td>
                                             原图

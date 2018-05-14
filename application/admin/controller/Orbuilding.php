@@ -26,7 +26,7 @@ class Orbuilding extends Base
     //订单列表
     public function tolist()
     {
-        $page = db('building_order_detail')->paginate('15')->each(function($item,$key){
+        $page = db('building_order_detail')->order('id','desc')->paginate('15')->each(function($item,$key){
             if (is_array($item) && !empty($item)) {
 
                     $list = db('user_data')->where('ud_id', $item['uid'])->find();
@@ -34,13 +34,7 @@ class Orbuilding extends Base
                     return $item;
             }
         });
-
-
-
-
-
         $this->assign('page', $page);
-
         return $this->fetch();
     }
 

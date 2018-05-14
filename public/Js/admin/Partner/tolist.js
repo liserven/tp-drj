@@ -45,11 +45,17 @@ layui.use(['layer','custom'], function () {
             $.post('/admin/Partner/aggry', { id:id}, function (result) {
                 if( result.bol)
                 {
-                    layer.msg('成功');
+                    common.dMsg({
+                        msg: '成功',
+                        bol: true
+                    },1);
 
                 }
                 else{
-                    layer.msg('失败');
+                    common.dMsg({
+                        msg: '失败',
+                        bol: true
+                    },1);
                 }
             } )
 
@@ -59,6 +65,35 @@ layui.use(['layer','custom'], function () {
 
 
     });
+    $(".unaggry").each(function (e) {
+        var _this = $(this);
+        _this.click(function(){
+
+            var id = _this.attr('data-id');
+            $.post('/admin/Partner/unaggry', { id:id}, function (result) {
+                if( result.bol)
+                {
+                    common.dMsg({
+                        msg: '已拒绝',
+                        bol: true
+                    },1);
+
+                }
+                else{
+                    common.dMsg({
+                        msg: '失败',
+                        bol: true
+                    },1);
+                }
+            } )
+
+            return false;
+
+        });
+
+
+    });
+
 
 });
 

@@ -1,5 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:71:"D:\phpStudy\WWW\drhome\public/../application/admin\view\user\doadd.html";i:1525831776;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
-
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:71:"D:\phpStudy\WWW\drhome\public/../application/admin\view\user\doadd.html";i:1526269298;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -62,8 +61,16 @@
         </div>
         <div class="layui-form-item">
             <label class="layui-form-label">性别</label>
+            <div class="layui-input-block">
+                <input type="radio" name="sex" value="1" title="男">
+                <input type="radio" name="sex" value="2" title="女" >
+                <input type="radio" name="sex" value="3" title="保密" checked>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">个人说明</label>
             <div class="layui-input-inline">
-                <input type="text" name="sex" lay-verify="required" placeholder="请输入替换内容" class="layui-input">
+                <input type="text" name="message" lay-verify="required" placeholder="请输入替换内容" class="layui-input">
             </div>
         </div>
         <div class="layui-form-item">
@@ -71,13 +78,8 @@
             <div class="layui-input-inline">
                 <select >
                     <option>请选择</option>
-                    <option value="1">金牌代理合伙人</option>
-                    <option value="2">五星代理合伙人</option>
-                    <option value="3">特约代理合伙人</option>
                     <option value="4">承包代理合伙人</option>
                     <option value="5">营销代理合伙人</option>
-                    <option value="6">黄金金牌代理合伙人</option>
-
                 </select>
             </div>
         </div>
@@ -104,20 +106,19 @@
             <div class="layui-input-inline">
                 <input type="text" name="g_price" lay-verify="required" placeholder="请输入替换内容" class="layui-input">
             </div>
-
-
-
         </div>
         <div class="layui-form-item">
             <label class="layui-form-label">镇</label>
             <div class="layui-input-inline">
                 <input type="text" name="g_price" lay-verify="required" placeholder="请输入替换内容" class="layui-input">
             </div>
-
-
-
         </div>
-
+        <div class="layui-form-item">
+            <label class="layui-form-label">其他</label>
+            <div class="layui-input-inline">
+                <input type="text" name="g_price" lay-verify="required" placeholder="请输入替换内容" class="layui-input">
+            </div>
+        </div>
         <div class="layui-form-item">
             <label class="layui-form-label">身份证正面</label>
             <div class="layui-col-md2">

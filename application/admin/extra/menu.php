@@ -209,7 +209,7 @@ return [
             [
                 'id' => '',
                 'icon' => '&#xe62d;',
-                'ad_topic' => '建材下架',
+                'ad_topic' => '下架列表',
                 'ad_url' => "/admin/Building/unbuilding",
                 'target' => 'target',
                 'content' => '建材下架',
@@ -218,7 +218,7 @@ return [
                 'id' => '',
                 'icon' => '&#xe62d;',
                 'ad_topic' => '建材分析',
-                'ad_url' => "/admin/Deploy/tolist",
+                'ad_url' => "/admin/Buildinganal/tolist",
                 'target' => 'target',
                 'content' => '建材分析',
             ],
@@ -396,14 +396,7 @@ return [
         'target' => 'target',
         'content' => '系统管理',
         'two' => [
-            [
-                'id' => '',
-                'icon' => '&#xe62d;',
-                'ad_topic' => '敏感字管理',
-                'ad_url' => "/admin/Prohibit/tolist",
-                'target' => 'target',
-                'content' => '敏感字管理',
-            ],
+
             [
                 'id' => '',
                 'icon' => '&#xe62d;',

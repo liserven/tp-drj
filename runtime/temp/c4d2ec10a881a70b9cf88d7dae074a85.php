@@ -1,5 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:72:"D:\phpStudy\WWW\drhome\public/../application/admin\view\bset\tolist.html";i:1525855177;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
-
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:72:"D:\phpStudy\WWW\drhome\public/../application/admin\view\bset\tolist.html";i:1526291420;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -46,25 +45,6 @@
         <a href="javascript:;" class="layui-btn layui-btn-default layui-btn-small refresh"><i class="layui-icon">&#x1002;</i>刷新</a>
     </legend>
 </fieldset>
-<div class="layui-col-md12 layui-col-md-offset4">
-    <div class="layui-form-query">
-        <form class="layui-form" id="query_form" action="<?php echo url('building/lookup'); ?>">
-            <div class="layui-form-item">
-                <div class="layui-inline">
-                    <label class="layui-form-mid">建材名称：</label>
-                    <div class="layui-input-inline">
-                        <input name="name" title="请输入建材名称" class="layui-input" type="text">
-                    </div>
-                </div>
-                <div class="layui-inline">
-                    <div class="layui-input-inline">
-                        <button class="layui-btn" type="submit" lay-submit="seach_phone"><i class="layui-icon"></i>查询</button>
-                    </div>
-                </div>
-            </div>
-        </form>
-    </div>
-</div>
 <div class="layui-form layui-border-box layui-table-view" lay-filter="content-box" style="padding: 20px;border: 0;">
     <div class="layui-table-box">
         <table class="layui-table" style="width: 100%; border: 1px solid #eee">

@@ -18,7 +18,8 @@ layui.use(['layer','custom','form'], function () {
     $(".find-ali-status").each(function(e){
         var _this = $(this);
         _this.click(function () {
-            var url = '/admin/User/getUserStar';
+            var id = document.getElementById("id").value;
+            var url = '/admin/User/getUserStar?id='+id;
             var name = _this.attr('name');
             var title = '查询 <strong style="color:#f60"> '+name+' </strong>详细情况';
          common.dialog({url:url, area:[ '40%','50%' ], title:title});

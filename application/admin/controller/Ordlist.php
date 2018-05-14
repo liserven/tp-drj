@@ -20,16 +20,16 @@ class Ordlist extends Base{
 
     public function tolist(){
 
-        $ordlist = db('villa_order')->select();
+        $ordlist = Db::table('villa_order')->paginate('15')->each(function($item,$key){
+            $item = db('user_data')->where('ud_id',$item['user_id'])->find();
+            $item['user_id'] = $item['ud_name'];
+            $item = db('user_data')->where('ud_id',$item['partner_id'])->find();
+            $item['partner_id'] =  $item['ud_name'];
+            return $item;
+        });
 
 
-        foreach ($ordlist as $k=>$val){
-           $data[$k] = db('user_data')->where('ud_id',$val['user_id'])->find();
-           $ordlist[$k]['user_id'] = $data[$k]['ud_name'];
-           $list[$k] = db('user_data')->where('ud_id',$val['partner_id'])->find();
 
-           $ordlist[$k]['partner_id'] = $list[$k]['ud_name'];
-        }
 
 
         $this->assign([

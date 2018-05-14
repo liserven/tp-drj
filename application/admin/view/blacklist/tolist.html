@@ -4,23 +4,32 @@
 
     </legend>
 </fieldset>
-<div class="layui-col-md12 layui-col-md-offset4">
+<div class="layui-col-md12">
     <div class="layui-form-query">
         <form class="layui-form" id="query_form" action="">
-            <div class="layui-form-item">
-                <div class="layui-form-label">
-                    <select class="layui-form-mid">
-                        <option>名称</option>
-                        <option>地区</option>
-                        <option>手机号</option>
-                    </select>
+            <div class="layui-form-item" style="padding-left:20px ;">
+                <div class="layui-block">
+                    <label class="layui-form-mid">选项：</label>
                     <div class="layui-input-inline">
-                        <input name="phone" title="请输入用户手机号" class="layui-input" type="text">
+                        <select >
+                            <option>请选择</option>
+                            <option value="1">姓名</option>
+                            <option value="2">手机号</option>
+                            <option value="3">状态</option>
+                            <option value="4">地区</option>
+
+                        </select>
                     </div>
-                </div>
-                <div class="layui-inline">
                     <div class="layui-input-inline">
-                        <button class="layui-btn" type="submit" lay-submit="seach_phone"><i class="layui-icon"></i>查询</button>
+                        <input type="text" name="sex" lay-verify="required" placeholder="请输入查询内容" class="layui-input">
+                    </div>
+
+
+                    <div class="layui-inline">
+                        <div class="layui-input-inline">
+                            <button class="layui-btn" type="submit" lay-submit="seach_phone" lay-filter="find"><i class="layui-icon"></i>查询
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -41,14 +50,7 @@
                         <span>#</span>
                     </div>
                 </th>
-                <th data-field="1" data-unresize="true">
-                    <div class="layui-table-cell laytable-cell-1-1 laytable-cell-checkbox">
-                        <input name="layTableCheckbox" lay-skin="primary" lay-filter="layTableAllChoose" type="checkbox">
-                        <div class="layui-unselect layui-form-checkbox" lay-skin="primary">
-                            <i class="layui-icon"></i>
-                        </div>
-                    </div>
-                </th>
+
                 <th data-field="id">
                     <div class="layui-table-cell laytable-cell-1-id">
                         <span>ID</span>
@@ -93,14 +95,7 @@
                     <td >
                         <div class="layui-table-cell">{$key}</div>
                     </td>
-                    <td>
-                        <div class="layui-table-cell">
-                            <input name="layTableCheckbox" class="" lay-skin="primary" value="1" type="checkbox">
-                            <div class="layui-unselect layui-form-checkbox" lay-skin="primary">
-                                <i class="layui-icon"></i>
-                            </div>
-                        </div>
-                    </td>
+
                     <td>
                         <div class="layui-table-cell">{$vo.ud_id}</div>
                     </td>

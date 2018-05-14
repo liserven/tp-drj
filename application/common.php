@@ -388,7 +388,7 @@ function aliPayStatus($status)
 }
 function aliPayStatusNum($status)
 {
-    if($status == '4')
+    if($status == '4' || $status == '1' )
     {
         return '<span class="layui-badge layui-bg-green">付款成功</span>';
     }

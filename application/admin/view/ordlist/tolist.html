@@ -113,14 +113,25 @@
                         <div class="layui-table-cell">{$vo.villa_type==1?'标准别墅':'定制别墅'}</div>
                     </td>
                     <td>
+                        <div class="layui-table-cell"><img src="{$vo.contract}?imageView2/1/w/50/h/50"></div>
+                    </td>
+                    <td>
                         <div class="layui-table-cell"><img src="{$vo.villa_img}?imageView2/1/w/50/h/50"></div>
                     </td>
+
                     <td>
-                        <div class="layui-table-cell">{$vo.status}</div>
+                        <eq name="vo.status" value="1">
+                        <div class="layui-table-cell">签订合同</div>
+                        </eq>
+                        <eq name="vo.status" value="2">
+                            <div class="layui-table-cell">施工中</div>
+                        </eq>
+                        <eq name="vo.status" value="3">
+                            <div class="layui-table-cell">已完工</div>
+                        </eq>
                     </td>
-                    <td>
-                        <div class="layui-table-cell">{$vo.contract}</div>
-                    </td>
+
+
 
                     <td>
                         <div class="layui-table-cell">

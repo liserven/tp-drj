@@ -1,5 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:76:"D:\phpStudy\WWW\drhome\public/../application/admin\view\building\doedit.html";i:1525937282;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
-
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:76:"D:\phpStudy\WWW\drhome\public/../application/admin\view\building\doedit.html";i:1525937749;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -279,7 +278,8 @@
             <div class="layui-input-block">
                 <?php if(is_array($deploy) || $deploy instanceof \think\Collection || $deploy instanceof \think\Paginator): $i = 0; $__LIST__ = $deploy;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
                     <input name="deploy[]" title="<?php echo $vo['name']; ?>" type="checkbox">
-                           <?php  if( in_array( $vo['id'], $deploys) ) {  echo 'checked';} endforeach; endif; else: echo "" ;endif; ?>
+
+                <?php endforeach; endif; else: echo "" ;endif; ?>
             </div>
         </div>
         <div class="layui-form-item">

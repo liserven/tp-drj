@@ -13,9 +13,7 @@ use app\common\validate\Find;
 
 class Omgdp extends Base{
     public function tolist(){
-        $omgdplist  = db('omit_gdp')->order('gdp','desc')->select();
-        $this->assign('page',$omgdplist);
-        return $this->fetch();
+       return "二期项目,敬请期待......";
     }
 }
 
