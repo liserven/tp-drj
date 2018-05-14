@@ -79,4 +79,35 @@ class BuildingService
         return $screen;
     }
 
+//收藏建材 多个
+    public function setBuildingCollections($userId, $ids)
+    {
+        if( !is_array($ids))
+        {
+            throw new ParameterException([
+                'msg'=> '参数错误'
+            ]);
+        }
+        foreach ($ids as $id)
+        {
+            $where = [
+                'u_id' => $userId,
+                'bu_id' => $id,
+            ];
+            if( !BuildingDetails::get($id)){
+                throw new BuildingException();
+            }
+            $isCollection= $this->buildingIsCollection($where);
+            if(!$isCollection )
+            {
+                $resultData = BuildingCollection::create($where);
+                $resultData['isCollection'] = 2; //如果是2，说明是添加收藏成功
+            }
+        }
+        return show(true, 'ok', $resultData);
+    }
+
+
+
+
 }

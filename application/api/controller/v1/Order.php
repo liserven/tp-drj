@@ -76,10 +76,15 @@ class Order extends Base
                 $wl = (new KdniaoService())->getOrderTracesByJson($detail['express_code'], $detail['logistics'], $oBuilding['pay_time']);
                 $detail['wl_name'] = $wl['kd_name'];
                 $detail['pay_time'] = $oBuilding['pay_time'];
-                $detail['wl_detail'] = $wl['Traces'][0];
             }
         }
         $oBuilding['details'] = $details;
+        $oBuilding['g_receipt'] = $details[0]['g_receipt'] ? $details[0]['g_receipt'] : '';
+        $oBuilding['g_rise'] = $details[0]['g_rise'] ? $details[0]['g_rise'] : '';
+        $oBuilding['g_content'] = $details[0]['g_content'] ? $details[0]['g_content'] : '';
+        $oBuilding['taxpayer_number'] = $details[0]['taxpayer_number'] ? $details[0]['taxpayer_number'] : '';
+        $oBuilding['g_type'] = $details[0]['g_type'] ? $details[0]['g_type'] : '';
+        $oBuilding['message'] = $details[0]['message'] ? $details[0]['message'] : '';
         return show(true, 'ok', $oBuilding);
 
     }

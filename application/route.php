@@ -129,6 +129,7 @@ Route::post('api/:version/a_report_building', 'api/:version.Order/AnOorder');
 // 购买
 //建材收藏
 Route::post('api/:version/building_collection', 'api/:version.Building/buildingCollection');
+Route::post('api/:version/building_collections', 'api/:version.Building/buildingCollections');
 Route::post('api/:version/del_b_collections', 'api/:version.Collection/delBuildingCollections');
 Route::get('api/:version/c_building', 'api/:version.Collection/getUserBuildingConnection'); //获取收藏建材列表
 
@@ -159,6 +160,7 @@ Route::post('api/:version/wx_notify', 'api/:version.Pay/payBuildingByWxNotify');
 
 //获取合伙人费用
 Route::get('api/:version/partner_money', 'api/:version.Partner/getPartnerMoney');
+Route::post('api/:version/edit_partner_info', 'api/:version.Partner/editPartnerInfo');
 
 
 

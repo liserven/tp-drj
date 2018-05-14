@@ -55,10 +55,9 @@ class User extends Base
         }else{
             $userData['reds'] = GrabRed::where(['phone'=>$userData['ud_phone']])->count();
         }
-        $userData['reds'] = GrabRed::where(['phone'=>$userData['ud_phone']])->count();
         $userData['customer'] = Db::table('villa_order')->where(['partner_id'=> $this->user['ud_id']])->count();
         $userData['town'] = $userData['town'] ? $userData['town'] : false;
-        $userData['url'] = config('app.root_url').'share/card?id='.$userData['ud_id'];
+        $userData['url'] = config('app.root_url').'/share/card?id='.$userData['ud_id'];
         $villaOrder = Db::table('villa_order')->where(['user_id'=> $this->user['ud_id']])->field('id, order_id, user_id, villa_type, 
         
         villa_name, villa_img, status')->find();

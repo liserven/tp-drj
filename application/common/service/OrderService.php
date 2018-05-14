@@ -131,6 +131,7 @@ class OrderService
             $orderDetailData[$key]['g_img'] = $product['img'];
             $orderDetailData[$key]['money_r'] = $product['price'];
             $orderDetailData[$key]['order_no'] = $this->orderNo;
+            $orderDetailData[$key]['message'] = input('message') ? input('message') :'请尽快发货，亲';
             if(!empty($invoiceType))
             {
                 $orderDetailData[$key]['g_receipt'] = $invoiceType;

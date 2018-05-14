@@ -54,7 +54,7 @@ class Login extends Base
      */
     public function register(){
         $data['ud_phone']    = input('post.phone');
-        $data['ud_name']    = '用户'.input('post.phone');
+        $data['ud_name']    = '用户'.rand(1000,9999);
         $data['ud_logo']    = 'http://ozi65v7vu.bkt.clouddn.com/%E7%94%B7.png';
         $code = input('post.code');
         if( !$code )

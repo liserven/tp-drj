@@ -14,7 +14,7 @@ class BuildingOrder extends BaseModel
         return self::alias('bo')
             ->where($where)
             ->field('bo.id, bo.order_no, bo.total_price, bo.total_count, bo.snap_img, bo.snap_name,
-                       bo.snap_address,  bo.create_at, bo.status, bo.payment_type')
+                       bo.snap_address,  bo.create_at, bo.status, bo.payment_type,bo.message')
             ->order('id desc')
             ->paginate($rows);
     }

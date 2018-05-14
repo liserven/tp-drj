@@ -142,7 +142,6 @@ class Geo extends Base
                      count(distinct pl.id) as likes, ud.status,ud.ud_id,ud.long, ud.lat')->paginate($limit);
         }
         else{
-            dd(222);
             $partner_data = Db::table('user_data')->alias('ud')
                 ->where([ 'ud.ud_id'=>$partner_user[0]['pu_partner_id'], 'ud.type'=>2, 'ud.status'=>1 ])
                 ->join('__PARTNER_LAUD__ pl', 'pl.pid=ud.ud_id', 'left')

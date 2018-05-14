@@ -20,7 +20,7 @@ use app\common\model\UserNotices;
 use app\common\validate\PartnerAuditValidate;
 use app\lib\exception\ParameterException;
 use app\lib\exception\PartnerException;
-use enum\PartnerBindingUserEnum;
+use enum\PartnerUserStatus;
 use think\Db;
 
 class PartnerService
@@ -31,6 +31,7 @@ class PartnerService
      * 该类主要实现用户的各个方面封装功能
      */
 
+    //构造方法
     //构造方法
     function __construct($userId){
         $this->userId = $userId;
@@ -143,7 +144,7 @@ class PartnerService
     public function isBinding()
     {
         //验证和该合伙人是否存在绑定或者签约关系或者其他关系
-        $partner = PartnerUser::get(['user_id'=> $this->userId, 'partner_id'=> $this->signUserInfo['ud_id'], 'status'=>['>=',PartnerBindingUserEnum::BINDING] ]);
+        $partner = PartnerUser::get(['user_id'=> $this->userId, 'partner_id'=> $this->signUserInfo['ud_id'], 'status'=>['>=',PartnerUserStatus::BINDING] ]);
         return !empty($partner)?$partner:false;
     }
 
@@ -152,7 +153,7 @@ class PartnerService
     {
         //查看
         //查重的思路： 可能以后会有跟进这个字段，先预留，然后就是他有这条数据并且还是绑定或者绑定更高的状态 就是已经有了绑定，即为存在重复
-        $partner = PartnerUser::get(['pu_user_id'=> $userId, 'status'=>['>=',PartnerBindingUserEnum::BINDING]]);
+        $partner = PartnerUser::get(['pu_user_id'=> $userId, 'status'=>['>=',PartnerUserStatus::BINDING]]);
         return !empty($partner)?$partner:false;
     }
 
@@ -206,7 +207,7 @@ class PartnerService
     }
 
     //组合申请合伙人信息
-    private function binationPartnerBuditData()
+    public function binationPartnerBuditData()
     {
         if(!request()->file('code_just'))
         {
@@ -247,7 +248,8 @@ class PartnerService
             'county' => input('county') ,          //所在县
             'town' => input('town') ,          //所在镇
             'user_id' => $this->userId ,       //用户id
-            'order_no' => makeOrderNo()
+            'order_no' => makeOrderNo(),
+            'type'=> input('type'),
         ];
         (new PartnerAuditValidate())->goCheck($partnerAuditData);
         return $partnerAuditData;

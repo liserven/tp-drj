@@ -10,6 +10,7 @@ namespace app\api\controller\v1;
 
 use app\common\lib\CustomSms;
 use app\common\model\BargainSte;
+use app\common\model\PartnerAudit;
 use app\common\model\PartnerDeal;
 use app\common\model\PartnerStar;
 use app\common\model\PartnerUser;
@@ -43,7 +44,7 @@ class Partner extends Base
         //前置操作，验证用户权限，必须是合伙才有权限访问
         'checkPartner' => ['only' => 'getPartnerStatistics,getCustomer,partnerPhoneUser,PartnerBindingUser,potentialCustomers,redConfirm,partnerRedConfirm,getStatistics'],
         //前置操作 必须是用户才能访问
-        'checkUserScope' => ['only' => 'applyPartner,setPartnerLike,setPartnerScore,getPartnerMoney'],
+        'checkUserScope' => ['only' => 'editPartnerInfo,applyPartner,setPartnerLike,setPartnerScore,getPartnerMoney'],
         //必须登录情况下访问
         'checkLogin' => ['only' => 'getPartnerCard']
     ];
@@ -176,7 +177,25 @@ class Partner extends Base
 
     }
 
+    //合伙人申请失败就重新编辑接口
+    public function editPartnerInfo()
+    {
+        $partnerAudit = PartnerAudit::get([ 'user_id'=> $this->user['ud_id']]);
+        if( !$partnerAudit )
+        {
+            return show( false , '没有申请记录.');
+        }
+        if( $partnerAudit['examine_status'] != 2  )
+        {
+            return show(false , '申请未驳回，不需要重新申请');
+        }
 
+        $partnerAuditData = (new PartnerService())->binationPartnerBuditData();
+        $result = Db::table('partner_audit')->where([ 'user_id'=> $this->user['ud_id']])->update($partnerAuditData);
+        return $this->resultHandle($result);
+    }
+
+    //合伙人申请支付 支付宝支付异步接口
     public function applyPartnerAliNotify()
     {
         $aliNotify = new PartnerAliPayNotifyService();
@@ -304,70 +323,50 @@ class Partner extends Base
             ]);
         }
         $userd = [];
+
         $customers->each(function ($item, $key)
         {
+
             $user = Db::table('user_data')->where(['ud_phone' => $item['phone']])->field('ud_name, ud_logo, ud_sex, ud_id,ud_phone')->find();
-            if($user)
+
+            if( !empty($user ))
             {
-                $redUse = Db::table('red_use')->where([ 'partner_id'=> $this->user['ud_id'], 'user_id'=> $user['ud_id']])->find();
-                $redUserIs = !$redUse ? 1 : 2;
-                if( $redUse['status'] == 2 )
-                {
-                    $redUserIs = 3;
+                if( $item != null){
+                    $redUse = Db::table('red_use')->where([ 'partner_id'=> $this->user['ud_id'], 'user_id'=> $user['ud_id']])->find();
+                    $redUserIs = !$redUse ? 1 : 2;
+                    if( $redUse['status'] == 2 )
+                    {
+                        $redUserIs = 3;
+                    }
+
+                    $userd = [
+                        "id"=> $item['id'],
+                        "rid"=> $item['rid'],
+                        "money"=> $item['money'],
+                        "phone"=> $item['phone'],
+                        "partner_id"=> $item['partner_id'],
+                        "status"=> $item['status'],
+                    ];
+                    $userd['red_confirm'] = $redUserIs;
+                    $userd['price'] = $item['money'];
+                    $userd['time'] = date('Y-m-d',$item['create_at']);
+                    $userd['red_id'] = $item['rid'];
+                    $userd['ud_name'] = $user['ud_name'];
+                    $userd['ud_id'] = $user['ud_id'];
+                    $userd['ud_logo'] = $user['ud_logo'];
+                    $userd['ud_sex'] = $user['ud_sex'];
+
+                    return $userd;
                 }
 
-                $userd = $item;
-                $userd['red_confirm'] = $redUserIs;
-                $userd['price'] = $item['money'];
-                $userd['time'] = date('Y-m-d',$item['create_at']);
-                $userd['red_id'] = $item['rid'];
-                $userd['ud_name'] = $user['ud_name'];
-                $userd['ud_logo'] = $user['ud_logo'];
-                $userd['ud_sex'] = $user['ud_sex'];
 
-                return $userd;
             }
-        });
-//        $customers->each(function ($item, $key) use ($customers){
-//            $user = Db::table('user_data')->where(['ud_phone' => $item['phone']])->field('ud_name, ud_logo, ud_sex, ud_id,ud_phone')->find();
-//            if( $user )
-//            {
-//                $redUse = Db::table('red_use')->where([ 'partner_id'=> $this->user['ud_id'], 'user_id'=> $user['ud_id']])->find();
-//                $redUserIs = !$redUse ? 1 : 2;
-//                if( $redUse['status'] == 2 )
-//                {
-//                    $redUserIs = 3;
-//                }
-//                $item['red_confirm'] = $redUserIs;
-//                $item['price'] = $item['money'];
-//                $item['time'] = date('Y-m-d',$item['create_at']);
-//                $item['red_id'] = $item['rid'];
-//                $item['ud_name'] = $user['ud_name'];
-//            }
-//            else{
-//                $item['ud_name'] = 111;
-//                unset($customers[$key]);
-//            }
-//            return $item;
-//        });
-//        foreach ($customers as $key => $val) {
-//            $user = Db::table('user_data')->where(['ud_phone' => $val['phone']])->field('ud_name, ud_logo, ud_sex, ud_id,ud_phone')->find();
-//            if( $user )
-//            {
-//                $users[$key] = Db::table('user_data')->where(['ud_phone' => $val['phone']])->field('ud_name, ud_logo, ud_sex, ud_id,ud_phone')->find();
-//                $redUse = Db::table('red_use')->where([ 'partner_id'=> $this->user['ud_id'], 'user_id'=> $user['ud_id']])->find();
-//                $redUserIs = !$redUse ? 1 : 2;
-//                if( $redUse['status'] == 2 )
-//                {
-//                    $redUserIs = 3;
-//                }
-//                $users[$key]['red_confirm'] = $redUserIs;
-//                $users[$key]['price'] = $val['money'];
-//                $users[$key]['time'] = date('Y-m-d',$val['create_at']);
-//                $users[$key]['red_id'] = $val['rid'];
-//            }
-//        }
+            else{
+                return [];
+            }
 
+
+        });
 
         return show(true, 'ok', $customers);
     }
@@ -410,11 +409,19 @@ class Partner extends Base
                 'msg' => '参数错误'
             ]);
         }
+        $isSign = Db::table('partner_audit')->where([ 'user_id'=> $this->user['ud_id']])->find();
+        if( $isSign )
+        {
+            $check = $isSign['examine_status'];
+        }
+        else{
+            $check = 0;
+        }
         $cityTotal = Db::table('city')->where(['city_name' => $city])->field('partner_limit')->find();
         $partnerTotal = Db::table('user_data')->where(['type' => 2, 'city' => $city])->count();
         $isApply = $cityTotal['partner_limit'] <= $partnerTotal ? false : true;
         $money = BargainSte::find();
-        return show(true, 'ok', ['is_apply' => $isApply, 'money' => $money['partner_money']]);
+        return show(true, 'ok', ['is_apply' => $isApply, 'money' => $money['partner_money'] , 'check'=> $check]);
     }
 
 

@@ -14,6 +14,7 @@ use app\common\model\PartnerUserEum;
 use app\lib\exception\ParameterException;
 use app\lib\exception\PartnerException;
 use enum\PartnerBindingUserEnum;
+use enum\PartnerUserStatus;
 use think\Db;
 
 class UserService
@@ -48,14 +49,14 @@ class UserService
             if( $partnerUser )
             {
                 //如果之前存在跟进关系就修改一下状态
-                $partnerUser->status = PartnerBindingUserEnum::BINDING;
+                $partnerUser->status = PartnerUserStatus::BINDING;
                 $partnerUser->save();
             }else{
                 //如果之前没有跟进 填加新的数据
                 $partnerUserData = [
                     'pu_partner_id' => $partner_id,
                     'pu_user_id' => $userId,
-                    'status' => PartnerBindingUserEnum::BINDING,
+                    'status' => PartnerUserStatus::BINDING,
                 ];
                 PartnerUser::create($partnerUserData);
             }
@@ -73,7 +74,7 @@ class UserService
                 PartnerUserEum::create($partnerUserEumData);
             }
             //删除掉除我和当前绑定合伙人的数据外的其他数据
-            PartnerUserEum::where('user_id', '<>', $userId)->delete();
+            PartnerUserEum::where(['partner_id' => ['<>', $partner_id], 'user_id'=> $userId,  ])->delete();
             PartnerUser::where([ 'pu_user_id'=> $userId, 'pu_partner_id'=> [ 'neq', $partner_id]])->delete();
             Db::commit();
         }catch (\Exception $e){
@@ -93,7 +94,7 @@ class UserService
     {
         //查看
         //查重的思路： 可能以后会有跟进这个字段，先预留，然后就是他有这条数据并且还是绑定或者绑定更高的状态 就是已经有了绑定，即为存在重复
-        $partner = PartnerUser::get(['pu_user_id'=> $userId, 'status'=>['>=',PartnerBindingUserEnum::BINDING]]);
+        $partner = PartnerUser::get(['pu_user_id'=> $userId, 'status'=>['>=',PartnerUserStatus::BINDING]]);
         return !empty($partner)?$partner:false;
     }
 

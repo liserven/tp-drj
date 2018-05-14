@@ -16,6 +16,7 @@ class PartnerAuditValidate extends BaseValidate
         'id_code_just' => 'require',
         'id_code_back' => 'require',
         'id_photo' => 'require',
-        'city'=> 'require'
+        'city'=> 'require',
+        'type'=> 'require'
     ];
 }

@@ -29,7 +29,8 @@ class BuildingOrderDetail extends BaseModel
             ->order('bod.id desc')
             ->join('__BUILDING_SCREEN__ bs', 'bs.id=bod.g_type', 'left' )
             ->field('bod.g_name, bod.id, bod.g_money_solo, bod.g_money_all, bod.g_number, bod.order_no,
-             bod.order_status, bod.status,bod.logistics, bod.express_code,bod.g_img, bs.size as typename, money_r')
+             bod.order_status, bod.status,bod.logistics, bod.express_code,bod.g_img, bs.size as typename, money_r,bod.message, g_receipt, g_rise
+             ,g_content, g_type,bod.gid, g_type,taxpayer_number')
             ->select();
     }
 

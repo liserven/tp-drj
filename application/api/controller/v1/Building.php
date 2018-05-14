@@ -35,7 +35,7 @@ class Building extends Base
 
     protected $beforeActionList = [
         //验证登陆
-        'checkLogin' => [ 'only' => 'buildingCollection,addShoppingCart,delShoppingCart,getShoppingCart' ],
+        'checkLogin' => [ 'only' => 'buildingCollections,buildingCollection,addShoppingCart,delShoppingCart,getShoppingCart' ],
         //验证id参数必须
         'checkIDMustBePositiveInt' => [ 'only' => 'buildingCollection' ],
     ];
@@ -114,8 +114,14 @@ class Building extends Base
         $result = (new BuildingService())->setBuildingCollection($this->user['ud_id'], $id);
         return $result;
     }
-
-
+    /**
+     *建材收藏
+     */
+    public function buildingCollections($ids)
+    {
+        $result = (new BuildingService())->setBuildingCollections($this->user['ud_id'], $ids);
+        return $result;
+    }
     /*
      * 建材添加购物车
      * */

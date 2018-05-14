@@ -18,10 +18,12 @@ use Exception;
  */
 class ExceptionHandler extends Handle
 {
-    private $code;
-    private $msg;
-    private $errorCode;
-    private $bol;
+    public $code = 400;
+    public $bol = false;
+    public $msg = 'invalid parameters';
+    public $error_code = 999;
+
+
     public function render(Exception $e)
      {
         if ($e instanceof BaseException)
