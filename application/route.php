@@ -292,6 +292,9 @@ Route::get('api/:version/l_town', 'api/:version.City/getTown');
 
 
 Route::post('api/:version/kdtuisong', 'api/:version.KdNiao/kdtuisong'); //订单
+Route::post('api/:version/subscribe', 'api/:version.KdNiao/subscribe'); //订单
+
+
 
 
 

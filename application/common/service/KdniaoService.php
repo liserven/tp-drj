@@ -64,7 +64,7 @@ class KdniaoService
      * @param  array $datas 提交的数据
      * @return url响应返回的html
      */
-    private function sendPost($url, $datas) {
+    public function sendPost($url, $datas) {
         $temps = array();
         foreach ($datas as $key => $value) {
             $temps[] = sprintf('%s=%s', $key, $value);
