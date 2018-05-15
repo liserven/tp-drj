@@ -159,6 +159,11 @@ class Packets extends Base
                 throw new PacketsException();
             }
         }
+        $reds = $reds->toArray();
+        foreach ( $reds['data'] as $key=> &$val )
+        {
+            $val['create_at'] = date('Y-m-d', strtotime($val['create_at']));
+        }
         return show(true, 'ok', $reds);
 
     }
