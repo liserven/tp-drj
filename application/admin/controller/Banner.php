@@ -33,6 +33,7 @@ class Banner extends Base
         if( $this->request->isPost() )
         {
             $data = input('post.');
+
             if( strtotime($data['over_time']) < time() )
             {
                 return show( false, '下架时间不得是过去时间..');
@@ -62,7 +63,8 @@ class Banner extends Base
         if( $this->request->isPost() )
         {
             $data = input('post.');
-            $banner_data = BannerModel::get([ 'pid'=>$data['pid'] ]);
+
+            $banner_data = BannerModel::get([ 'pid'=>$data['id'] ]);
             if( !$banner_data )
             {
                 return show(false, '该Banner不存在了' );

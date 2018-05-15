@@ -13,4 +13,6 @@ class Quinta extends Base{
     public function tolist(){
         return view();
     }
+
+
 }

@@ -11,6 +11,7 @@ namespace app\admin\controller;
 use app\common\model\BuildingOrderDetail;
 use app\lib\exception\OrderException;
 use app\lib\exception\ParameterException;
+use enum\BuildingOrderStatus;
 use think\Db;
 
 class Orbuilding extends Base
@@ -45,32 +46,34 @@ class Orbuilding extends Base
             if (!$this->_checkAction()) {
                 return $this->ajaxShow(false, '无权此操作');
             }
-
-
             $list = BuildingOrderDetail::get(input('post.id/d'));
             if (!$list) {
                 throw new OrderException();
             }
-
-
-           //填完运单号像用户发送配送通知
-           $messagelist['img'] = $list['g_img'];
-           $messagelist['user_id'] = $list['uid'];
-           $messagelist['topic']    = '发货通知';
-           $messagelist['type']   = 2;
-           $messagelist['content'] = '您的宝贝正在快马加鞭得向您赶来';
-           $page = Db::table('user_notices')->insert($messagelist);
-            $a = input('logustics');
-            $b = input('logustics_code');
-            if (!$a || !$b) {
-                throw new ParameterException();
-            }
+            Db::startTrans();
             try{
+                //填完运单号像用户发送配送通知
+                $messagelist['img'] = $list['g_img'];
+                $messagelist['user_id'] = $list['uid'];
+                $messagelist['topic']    = '发货通知';
+                $messagelist['type']   = 2;
+                $messagelist['content'] = '您的宝贝正在快马加鞭得向您赶来';
+                $page = Db::table('user_notices')->insert($messagelist);
+                $a = input('logustics');
+                $b = input('logustics_code');
+                if (!$a || !$b) {
+                    throw new ParameterException();
+                }
+                //添加运单号与物流公司
                 $list->express_code = $b;
                 $list->logistics = $a;
+                //更改状态为发货
+                $list->status = BuildingOrderStatus::TRANSLATE;
                 $result = $list->save();
+                Db::commit();
                 return $this->resultHandle($result);
             }catch (\Exception $e){
+                Db::rollback();
                 return show( false, $e->getMessage());
             }
         } else {
@@ -104,4 +107,29 @@ class Orbuilding extends Base
 
 
     }
-}
+
+    //修改运单号
+    public function details($id){
+       if($this->request->isPost()){
+           if (!$this->_checkAction()) {
+               return $this->ajaxShow(false, '无权此操作');
+           }
+           $data[]
+
+       }else{
+           $id = $id;
+
+
+           $page = Db::table('express_code')->select();
+           $list = Db::table('building_order_detail')->find();
+           $this->assign([
+               'page' => $page,
+               'id' => $id,
+               'list'=>$list
+           ]);
+
+           return view();
+       }
+       }
+    }
+

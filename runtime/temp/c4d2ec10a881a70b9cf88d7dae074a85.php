@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:72:"D:\phpStudy\WWW\drhome\public/../application/admin\view\bset\tolist.html";i:1526291420;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:72:"D:\phpStudy\WWW\drhome\public/../application/admin\view\bset\tolist.html";i:1526352201;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -114,6 +114,7 @@
 
                     <td>
                         <div class="layui-table-cell">
+                            <input type="hidden" name="id" value="<?php echo $vo['id']; ?>">
                             <a class="layui-btn layui-btn-xs edit">编辑</a>
                             <a class="layui-btn layui-btn-danger layui-btn-xs do_del">删除</a>
 

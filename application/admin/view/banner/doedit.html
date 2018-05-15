@@ -17,9 +17,9 @@
             <label class="layui-form-label">图片：</label>
             <div class="layui-col-md3">
                 <div id="container">
-                    <button id="pickfiles" class="layui-btn layui-btn-normal">上传</button>
+                    <button id="pickfiles" class="layui-btn layui-btn-normal">更换</button>
                 </div>
-                <img src="{$data.href}"  id="yl_logo"/>
+                <img src="{$data.img}"  id="yl_logo"/>
                 <input type="hidden" name="img" id="logo_img">
             </div>
         </div>
@@ -51,8 +51,9 @@
         </div>
         <div class="layui-form-item">
             <div class="layui-input-block">
-                <button class="layui-btn" lay-submit lay-filter="formEdit">立即提交</button>
                 <input type="hidden" name="id" value="{$data.pid}">
+                <button class="layui-btn" lay-submit lay-filter="formEdit">立即提交</button>
+
                 <button type="reset" class="layui-btn layui-btn-primary">重置</button>
             </div>
         </div>

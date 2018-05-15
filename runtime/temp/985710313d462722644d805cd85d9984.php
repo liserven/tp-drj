@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:73:"D:\phpStudy\WWW\drhome\public/../application/admin\view\banner\doadd.html";i:1526349775;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:74:"D:\phpStudy\WWW\drhome\public/../application/admin\view\banner\doedit.html";i:1526350184;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -39,27 +39,27 @@
 
 <div class="box-content">
     
-<div class='layui-row' style="padding: 20px;">
-    <form class="layui-form" method="post" action="<?php echo url('admin/Banner/doAdd'); ?>" enctype="multipart/form-data">
+<div style="padding: 20px;">
+    <form class="layui-form" action="<?php echo url('admin/Member/doAdd'); ?>">
         <div class="layui-form-item">
-            <label class="layui-form-label">标题</label>
-            <div class="layui-col-md3">
-                <input type="text" name="title" lay-verify="required" placeholder="请输入标题" class="layui-input">
+            <label class="layui-form-label">行为名称</label>
+            <div class="layui-input-inline">
+                <input type="text" name="title" value="<?php echo $data['title']; ?>"  lay-verify="required" placeholder="请输入标题" class="layui-input">
             </div>
         </div>
         <div class="layui-form-item">
-            <label class="layui-form-label">url</label>
-            <div class="layui-col-md3">
-                <input type="text" name="url" lay-verify="required" placeholder="请输入地址" class="layui-input">
+            <label class="layui-form-label">行为url</label>
+            <div class="layui-input-inline">
+                <input type="text" name="url" value="<?php echo $data['url']; ?>"  lay-verify="required" placeholder="请输入url" class="layui-input">
             </div>
         </div>
         <div class="layui-form-item">
             <label class="layui-form-label">图片：</label>
             <div class="layui-col-md3">
                 <div id="container">
-                    <button id="pickfiles" class="layui-btn layui-btn-normal">上传</button>
+                    <button id="pickfiles" class="layui-btn layui-btn-normal">更换</button>
                 </div>
-                <img src=""  id="yl_logo"/>
+                <img src="<?php echo $data['img']; ?>"  id="yl_logo"/>
                 <input type="hidden" name="img" id="logo_img">
             </div>
         </div>
@@ -67,19 +67,13 @@
         <div class="layui-form-item">
             <label class="layui-form-label">开始时间</label>
             <div class="layui-col-md3">
-                <input type="text" id="start_time" name="start_time"  lay-verify="required" class="layui-input">
+                <input type="text" id="start_time" name="start_time" value="<?php echo $data['start_time']; ?>" lay-verify="required" class="layui-input">
             </div>
         </div>
         <div class="layui-form-item">
             <label class="layui-form-label">结束时间</label>
             <div class="layui-col-md3">
-                <input type="text" id="over_time" name="over_time"  lay-verify="required" class="layui-input">
-            </div>
-        </div>
-        <div class="layui-form-item">
-            <label class="layui-form-label">顺序</label>
-            <div class="layui-col-md1">
-                <input type="number" name="order"  value="99" lay-verify="required"  class="layui-input">
+                <input type="text" id="over_time" name="over_time"  value="<?php echo $data['over_time']; ?>"  lay-verify="required" class="layui-input">
             </div>
         </div>
         <div class="layui-form-item">
@@ -90,12 +84,21 @@
             </div>
         </div>
         <div class="layui-form-item">
+            <label class="layui-form-label">顺序</label>
+            <div class="layui-col-md1">
+                <input type="number" name="order"  lay-verify="required" value="<?php echo $data['order']; ?>"  class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
             <div class="layui-input-block">
-                <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+                <input type="hidden" name="id" value="<?php echo $data['pid']; ?>">
+                <button class="layui-btn" lay-submit lay-filter="formEdit">立即提交</button>
+
                 <button type="reset" class="layui-btn layui-btn-primary">重置</button>
             </div>
         </div>
     </form>
+
 </div>
 </div>
 <?php if(($aName == 'doadd') OR ($aName == 'doedit')): ?>

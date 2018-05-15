@@ -21,10 +21,10 @@ class Ordlist extends Base{
     public function tolist(){
 
         $ordlist = Db::table('villa_order')->paginate('15')->each(function($item,$key){
-            $item = db('user_data')->where('ud_id',$item['user_id'])->find();
-            $item['user_id'] = $item['ud_name'];
-            $item = db('user_data')->where('ud_id',$item['partner_id'])->find();
-            $item['partner_id'] =  $item['ud_name'];
+            $page = db('user_data')->where('ud_id',$item['user_id'])->find();
+            $list = db('user_data')->where('ud_id',$item['partner_id'])->find();
+            $item['user_id'] = $page['ud_name'];
+            $item['partner_id'] =  $list['ud_name'];
             return $item;
         });
 

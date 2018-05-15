@@ -1,0 +1,30 @@
+<layout name="layout"/>
+<div style="padding: 20px;">
+
+    <form class="layui-form"  method="post" action="{:url()}">
+        <div class="layui-form-item">
+            <label class="layui-form-label">运单号</label>
+            <div class="layui-input-inline">
+                <input type="text" name="logustics"  lay-verify="required" value="{$list.logistics}" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">选择物流</label>
+            <div class="layui-input-inline">
+                <select name="logustics_code" lay-verify="required">
+                    <volist name="page" id="vo">
+                        <option value="{$vo.code}">{$vo.name}</option>
+                    </volist>
+                </select>
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <input type="hidden" name="id" value="{$id}">
+                <button class="layui-btn" lay-submit lay-filter="logistics" id="submit">立即提交</button>
+            </div>
+        </div>
+    </form>
+</div>
+

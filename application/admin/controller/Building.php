@@ -216,6 +216,7 @@ class Building extends Base
 
             Db::startTrans();
             try {
+
                 Db::table('building_img')->where(['g_id'=> $data['id']])->delete();//删除商品之前所存图片
                 Db::table('building_screen')->where(['gid'=> $data['id']])->delete();//删除商品之前所存规格
                 Db::table('building_set')->where(['gid'=> $data['id']])->delete();//删除商品之前所存选项
@@ -387,6 +388,8 @@ class Building extends Base
 
 
     }
+
+
 
 
 

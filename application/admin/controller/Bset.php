@@ -95,7 +95,7 @@ class Bset extends Base{
             }
             $data['id']      = input('id');
             $data['clum_id'] = input('province');
-            $data['name']    = input('name');
+            $data['name']    = input('name/a');
 
 
 
@@ -109,11 +109,13 @@ class Bset extends Base{
             }
         } else {
             (new IDMustBePositiveInt())->goCheck();
-            $province = db('building_column')->where('pid', 0)->select();
+            $id = input('id');
+            $province = db('building_column')->where('pid','neq',0)->select();
             $this->assign([
                 'province' => $province,
             ]);
-            $data = BuildingDetailsSet::find([ 'id'=> input('id/d')]);
+            $data = Db::table('building_details_set')->where('id',$id)->select();
+
             $this->assign('data', $data);
             return $this->fetch();
         }

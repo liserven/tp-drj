@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:76:"D:\phpStudy\WWW\drhome\public/../application/admin\view\propellin\doadd.html";i:1526298340;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:79:"D:\phpStudy\WWW\drhome\public/../application/admin\view\orbuilding\details.html";i:1526353855;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -39,38 +39,30 @@
 
 <div class="box-content">
     
-<script type="text/javascript" charset="utf-8" src="__JS__/ueditor.config.js"></script>
-<script type="text/javascript" charset="utf-8" src="__JS__/ueditor.all.min.js"> </script>
-<script type="text/javascript" charset="utf-8" src="__JS__/lang/zh-cn/zh-cn.js"></script>
 <div style="padding: 20px;">
-    <form class="layui-form">
+
+    <form class="layui-form"  method="post">
+        <div class="layui-form-item">
+            <label class="layui-form-label">运单号</label>
+            <div class="layui-input-inline">
+                <input type="text" name="logustics"  lay-verify="required" value="<?php echo $list['logistics']; ?>" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">选择物流</label>
+            <div class="layui-input-inline">
+                <select name="logustics_code" lay-verify="required">
+                    <?php if(is_array($page) || $page instanceof \think\Collection || $page instanceof \think\Paginator): $i = 0; $__LIST__ = $page;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+                        <option value="<?php echo $vo['code']; ?>"><?php echo $vo['name']; ?></option>
+                    <?php endforeach; endif; else: echo "" ;endif; ?>
+                </select>
+            </div>
+        </div>
 
         <div class="layui-form-item">
-            <label class="layui-form-label">消息内容</label>
-            <div>
-                <script id="editor"  type="text/plain" style="width:1024px;height:500px;"></script>
-                </div>
-                </div>
-
-                <div class="layui-form-item">
-                    <div class="layui-input-block">
-                    <button class="layui-btn" lay-submit lay-filter="formDemo" id="submit">立即提交</button>
-                    <button type="reset" class="layui-btn layui-btn-primary">重置</button>
-                    </div>
-                    </div>
-                    </form>
-
-                    </div>
-                    <script type="text/javascript" >
-
-                //实例化编辑器
-                //建议使用工厂方法getEditor创建和引用编辑器实例，如果在某个闭包下引用该编辑器，直接调用UE.getEditor('editor')就能拿到相关的实例
-                var ue = UE.getEditor('editor');
-                $(function(){
-                    var editor = new baidu.editor.ui.Editor();
-                    editor.render("content");
-                });
-                </script>
+            <div class="layui-input-block">
+                <input type="hidden" name="id" value="<?php echo $id; ?>">
+                <button class="layui-btn" lay-submit lay-filter="logistics" id="submit">立即提交</button>
             </div>
         </div>
     </form>

@@ -19,21 +19,11 @@
                         <span>#</span>
                     </div>
                 </th>
-                <th data-field="1" data-unresize="true">
-                    <div class="layui-table-cell laytable-cell-1-1 laytable-cell-checkbox">
-                        <input name="layTableCheckbox" lay-skin="primary" lay-filter="layTableAllChoose" type="checkbox">
-                        <div class="layui-unselect layui-form-checkbox" lay-skin="primary">
-                            <i class="layui-icon"></i>
-                        </div>
-                    </div>
-                </th>
+
                 <th data-field="id">
                     <div class="layui-table-cell laytable-cell-1-id">
                         <span>ID</span>
-                        <span class="layui-table-sort layui-inline">
-                            <i class="layui-edge layui-table-sort-asc"></i><i
-                            class="layui-edge layui-table-sort-desc"></i>
-                        </span>
+
                     </div>
                 </th>
                 <th data-field="name">
@@ -47,9 +37,6 @@
                 <th data-field="type">
                     <div class="layui-table-cell"><span>Banner图片</span></div>
                 </th>
-                 <th data-field="type">
-                    <div class="layui-table-cell"><span>Banner排序</span></div>
-                </th>
 
                 </th>
                 <th data-field="createdTime">
@@ -58,9 +45,7 @@
                 <th data-field="modifiedTime">
                     <div class="layui-table-cell"><span>修改时间</span></div>
                 </th>
-                 <th>
-                    <div class="layui-table-cell"><span>状态</span></div>
-                </th>
+
                 <th data-field="11">
                     <div class="layui-table-cell" align="center"><span>操作</span></div>
                 </th>
@@ -72,14 +57,7 @@
                 <td >
                     <div class="layui-table-cell">{$key}</div>
                 </td>
-                <td>
-                    <div class="layui-table-cell">
-                        <input name="layTableCheckbox" class="" lay-skin="primary" value="1" type="checkbox">
-                        <div class="layui-unselect layui-form-checkbox" lay-skin="primary">
-                            <i class="layui-icon"></i>
-                        </div>
-                    </div>
-                </td>
+
                 <td>
                     <div class="layui-table-cell">{$vo.pid}</div>
                 </td>
@@ -88,14 +66,12 @@
                 </td>
 
                 <td>
-                    <div class="layui-table-cell">{$vo.href}</div>
+                    <div class="layui-table-cell">{$vo.url}</div>
                 </td>
                 <td>
                     <div class="layui-table-cell" style="height:50px"><img src="{$vo.img}?imageView2/1/w/60/h/60"></div>
                 </td>
-                <td>
-                    <div class="layui-table-cell"><input value='{$vo.order}' class='layui-input edit-order' style='height:28px;line-height: 28px;'/></div>
-                </td>
+
 
 
                 <td>
@@ -104,12 +80,7 @@
                 <td>
                     <div class="layui-table-cell">{$vo.update_at}</div>
                 </td>
-                <td data-id="1">
-                    <div class="layui-table-cell">
-                        <input type="checkbox" lay-filter="eidt_status" lay-skin="switch" lay-text="启用|停用"
-                               type-d="{$vo.status==1?2:1}" {$vo.status==1 ? 'checked' :''}>
-                    </div>
-                </td>
+
                 <td>
                     <div class="layui-table-cell">
                         <a class="layui-btn layui-btn-xs edit">编辑</a>

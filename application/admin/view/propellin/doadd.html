@@ -3,15 +3,10 @@
 <script type="text/javascript" charset="utf-8" src="__JS__/ueditor.all.min.js"> </script>
 <script type="text/javascript" charset="utf-8" src="__JS__/lang/zh-cn/zh-cn.js"></script>
 <div style="padding: 20px;">
-    <form class="layui-form" action="{url('api/v1.Push/push')}">
+    <form class="layui-form">
+
         <div class="layui-form-item">
-            <label class="layui-form-label">消息名称</label>
-            <div class="layui-input-inline">
-                <input type="text" name="content"  lay-verify="required" placeholder="请输入标题" class="layui-input">
-            </div>
-        </div>
-        <div class="layui-form-item">
-            <label class="layui-form-label">消息名称</label>
+            <label class="layui-form-label">消息内容</label>
             <div>
                 <script id="editor"  type="text/plain" style="width:1024px;height:500px;"></script>
                 </div>

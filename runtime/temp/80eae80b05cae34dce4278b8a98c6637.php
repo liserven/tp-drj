@@ -1,5 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:74:"D:\phpStudy\WWW\drhome\public/../application/admin\view\banner\tolist.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
-
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:74:"D:\phpStudy\WWW\drhome\public/../application/admin\view\banner\tolist.html";i:1526349886;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -42,8 +41,7 @@
     
 <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
     <legend>banner管理 <a href="javascript:;" class="layui-btn layui-btn-small add">添加Banner</a>
-        <a href="<?php echo url('user/leadingin'); ?>" class="layui-btn layui-btn-danger layui-btn-small">批量导入</a>
-        <a href="<?php echo url('user/expuser'); ?>" class="layui-btn layui-btn-warm layui-btn-small">批量导出</a>
+
         <a href="javascript:;" class="layui-btn layui-btn-default layui-btn-small refresh"><i class="layui-icon">&#x1002;</i>刷新</a>
     </legend>
 </fieldset>
@@ -61,21 +59,11 @@
                         <span>#</span>
                     </div>
                 </th>
-                <th data-field="1" data-unresize="true">
-                    <div class="layui-table-cell laytable-cell-1-1 laytable-cell-checkbox">
-                        <input name="layTableCheckbox" lay-skin="primary" lay-filter="layTableAllChoose" type="checkbox">
-                        <div class="layui-unselect layui-form-checkbox" lay-skin="primary">
-                            <i class="layui-icon"></i>
-                        </div>
-                    </div>
-                </th>
+
                 <th data-field="id">
                     <div class="layui-table-cell laytable-cell-1-id">
                         <span>ID</span>
-                        <span class="layui-table-sort layui-inline">
-                            <i class="layui-edge layui-table-sort-asc"></i><i
-                            class="layui-edge layui-table-sort-desc"></i>
-                        </span>
+
                     </div>
                 </th>
                 <th data-field="name">
@@ -89,9 +77,6 @@
                 <th data-field="type">
                     <div class="layui-table-cell"><span>Banner图片</span></div>
                 </th>
-                 <th data-field="type">
-                    <div class="layui-table-cell"><span>Banner排序</span></div>
-                </th>
 
                 </th>
                 <th data-field="createdTime">
@@ -100,9 +85,7 @@
                 <th data-field="modifiedTime">
                     <div class="layui-table-cell"><span>修改时间</span></div>
                 </th>
-                 <th>
-                    <div class="layui-table-cell"><span>状态</span></div>
-                </th>
+
                 <th data-field="11">
                     <div class="layui-table-cell" align="center"><span>操作</span></div>
                 </th>
@@ -114,14 +97,7 @@
                 <td >
                     <div class="layui-table-cell"><?php echo $key; ?></div>
                 </td>
-                <td>
-                    <div class="layui-table-cell">
-                        <input name="layTableCheckbox" class="" lay-skin="primary" value="1" type="checkbox">
-                        <div class="layui-unselect layui-form-checkbox" lay-skin="primary">
-                            <i class="layui-icon"></i>
-                        </div>
-                    </div>
-                </td>
+
                 <td>
                     <div class="layui-table-cell"><?php echo $vo['pid']; ?></div>
                 </td>
@@ -130,14 +106,12 @@
                 </td>
 
                 <td>
-                    <div class="layui-table-cell"><?php echo $vo['href']; ?></div>
+                    <div class="layui-table-cell"><?php echo $vo['url']; ?></div>
                 </td>
                 <td>
                     <div class="layui-table-cell" style="height:50px"><img src="<?php echo $vo['img']; ?>?imageView2/1/w/60/h/60"></div>
                 </td>
-                <td>
-                    <div class="layui-table-cell"><input value='<?php echo $vo['order']; ?>' class='layui-input edit-order' style='height:28px;line-height: 28px;'/></div>
-                </td>
+
 
 
                 <td>
@@ -146,12 +120,7 @@
                 <td>
                     <div class="layui-table-cell"><?php echo $vo['update_at']; ?></div>
                 </td>
-                <td data-id="1">
-                    <div class="layui-table-cell">
-                        <input type="checkbox" lay-filter="eidt_status" lay-skin="switch" lay-text="启用|停用"
-                               type-d="<?php echo $vo['status']==1?2:1; ?>" <?php echo $vo['status']==1?'checked' :''; ?>>
-                    </div>
-                </td>
+
                 <td>
                     <div class="layui-table-cell">
                         <a class="layui-btn layui-btn-xs edit">编辑</a>

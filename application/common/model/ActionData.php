@@ -19,7 +19,7 @@ class ActionData extends BaseModel
         return $this->belongsTo('ActionData','ad_pid','ad_id');
     }
     //条件查询全部分布
-    public static function findByPage($where=[],$rows=10){
+    public static function findByPage($where=[],$rows=15){
         //一对一查询
         return self::with('pname')->where(self::getWhereArr($where))->paginate($rows);
     }

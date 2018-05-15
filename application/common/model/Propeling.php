@@ -11,7 +11,7 @@ namespace app\common\model;
 
 class Propeling  extends BaseModel
 {
-    public static function getPropelPage($where = [], $rows = 5)
+    public static function getPropelPage($where = [], $rows = 15)
     {
         return self::getCommon($where)->paginate($rows);
     }

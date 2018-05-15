@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:72:"D:\phpStudy\WWW\drhome\public/../application/admin\view\bset\doedit.html";i:1526352608;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:71:"D:\phpStudy\WWW\drhome\public/../application/admin\view\bset\doadd.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -46,48 +46,46 @@
     </legend>
 </fieldset>
 
-<form class="layui-form" method="post"  enctype="multipart/form-data" onsubmit="return false;">
-    <div class="layui-form-item">
-        <label class="layui-form-label">选择分类</label>
-        <div class="layui-input-inline">
-            <select name="province" id="p" filter="sss">
-                <?php if(is_array($province) || $province instanceof \think\Collection || $province instanceof \think\Paginator): $i = 0; $__LIST__ = $province;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+<form class="layui-form" method="post" enctype="multipart/form-data" onsubmit="return false;">
+<div class="layui-form-item">
+    <label class="layui-form-label">选择分类</label>
+    <div class="layui-input-inline">
+        <select name="province" id="p" filter="sss">
+            <?php if(is_array($province) || $province instanceof \think\Collection || $province instanceof \think\Paginator): $i = 0; $__LIST__ = $province;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
 
-                    <option value="<?php echo $vo['id']; ?>"><?php echo $vo['name']; ?></option>
-                <?php endforeach; endif; else: echo "" ;endif; ?>
+                <option value="<?php echo $vo['id']; ?>"><?php echo $vo['name']; ?></option>
+            <?php endforeach; endif; else: echo "" ;endif; ?>
 
-            </select>
-        </div>
+        </select>
     </div>
+</div>
 
 
     <div class="set_box">
         <div class="layui-form-item">
             <div class="set_box_t">
                 <label class="layui-form-label">详情选项：</label>
-                <?php if(is_array($data) || $data instanceof \think\Collection || $data instanceof \think\Paginator): $i = 0; $__LIST__ = $data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
                 <div class="layui-input-inline">
-                    <input type="text" name="name[]" lay-verify="required" value="<?php echo $vo['name']; ?>" class="layui-input">
+                    <input type="text" name="name[]" lay-verify="required" placeholder="请输入选项" class="layui-input">
                 </div>
-                <?php endforeach; endif; else: echo "" ;endif; ?>
             </div>
         </div>
     </div>
-    <div class="layui-form-item" style="height:30px">
-        <label class="layui-form-label">操作：</label>
-        <div class="layui-col-md6">
-            <button class="layui-btn layui-btn-xs" id="add_set">添加一条</button>
-            <button class="layui-btn layui-btn-xs" id="del_set">删除一条</button>
+        <div class="layui-form-item" style="height:30px">
+                <label class="layui-form-label">操作：</label>
+                <div class="layui-col-md6">
+                    <button class="layui-btn layui-btn-xs" id="add_set">添加一条</button>
+                    <button class="layui-btn layui-btn-xs" id="del_set">删除一条</button>
+                </div>
         </div>
-    </div>
 
 
-    <div class="layui-form-item">
-        <div class="layui-input-block">
-            <button class="layui-btn" lay-submit lay-filter="formDemo" id="submit">立即提交</button>
-            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button class="layui-btn" lay-submit lay-filter="formDemo" id="submit">立即提交</button>
+                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+            </div>
         </div>
-    </div>
 
 
 </form>
