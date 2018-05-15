@@ -12,6 +12,7 @@ namespace app\api\controller\v1;
 use app\common\model\BuildingOrder;
 use app\common\model\BuildingOrderDetail;
 use app\common\model\UserDelivery;
+use app\common\model\UserNotices;
 use app\common\model\VillaOrder;
 use app\common\service\KdniaoService;
 use app\common\service\OrderService;
@@ -27,7 +28,7 @@ use think\Db;
 class Order extends Base
 {
     protected $beforeActionList = [
-        'checkLogin' => ['only' => 'getOrderByBuilding,getOrderByVilla,reportOrder,cancelBuildingOrder,delBuildingOrder
+        'checkLogin' => ['only' => 'confirmReceive,getOrderByBuilding,getOrderByVilla,reportOrder,cancelBuildingOrder,delBuildingOrder
         ,getOrderDetailBuilding,AnOorder']
     ];
 
@@ -41,8 +42,10 @@ class Order extends Base
                 'msg' => '状态不可为空'
             ]);
         }
-        $oBuildings = BuildingOrder::getOrderDetailsBuWhere(['user_id' => $this->user['ud_id'], 'bo.status' => $status]);
-        if (collection($oBuildings)->isEmpty()) {
+        $limit = $this->getLimit();
+        $oBuildings = Db::table('building_order_detail')->where(['uid' => $this->user['ud_id'], 'status' => $status])
+            ->field('id, u_address_id as snap_address,gid,g_name as snap_name,g_money_all as total_price,g_money_solo,g_number as total_count, g_img as snap_img,create_at,status,message,g_type')->paginate($limit);
+        if ($oBuildings->isEmpty()) {
             throw new BuildingException([
                 'msg' => '当前没有订单'
             ]);
@@ -224,10 +227,37 @@ class Order extends Base
         $orderDetail->status=BuildingOrderStatus::SIGN;
         $result = $orderDetail->save();
         return $this->resultHandle($result);
-
-
-
-
     }
 
+    //确认收货
+    public function confirmReceive($id)
+    {
+        (new IDMustBePositiveInt())->goCheck();
+        $order = BuildingOrderDetail::get($id);
+        if( !$order || $order['uid'] != $this->user['ud_id'])
+        {
+            return show( false , '该订单不存在或不属于你');
+
+        }
+        if( $order['status'] != BuildingOrderStatus::TRANSLATE )
+        {
+            return show( false, '该订单还未发货,无法确认收货');
+        }
+        Db::startTrans();
+        try{
+            $order->status = BuildingOrderStatus::SIGN;
+            $order->is_receive = 2;
+            $order->save();
+            UserNotices::create([
+                'user_id'=> $this->user['ud_id'],
+                'topic'=> '收货通知',
+                'content'=> '您所购买的'.$order['g_name'].'已经已经确认收货, 欢迎选择定容家,祝您购物愉快!',
+            ]);
+            Db::commit();
+            return show( true, '确认收货成功');
+        }catch (\Exception $e){
+            Db::rollback();
+            return show( false, $e->getMessage());
+        }
+    }
 }

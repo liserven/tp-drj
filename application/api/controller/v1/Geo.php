@@ -50,7 +50,7 @@ class Geo extends Base
             ];
             UserData::update($data);
         }
-        $result = substr($result, 0, 6);
+        $result = substr($result, 0, 3);
         //获取附近的所有用户列表
         $partners = UserData::where(['geohash' => ['LIKE', $result . '%'], 'type' => $type, 'status'=> 1])->select();
         $ids = array_column(collection($partners)->toArray(), 'ud_id'); //获取所有用户id

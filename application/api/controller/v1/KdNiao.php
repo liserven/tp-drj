@@ -16,6 +16,7 @@ use app\common\validate\IDMustBePositiveInt;
 use app\lib\exception\OrderException;
 use enum\BuildingOrderStatus;
 use think\Db;
+use think\Log;
 
 class KdNiao extends Base
 {
@@ -47,5 +48,31 @@ class KdNiao extends Base
         dd((new BuildingAliPayNotifyService())->checkStock(111));
     }
 
+
+
+    public function kdtuisong()
+    {
+        $json = json_decode(file_get_contents('php://input'), 1);
+        $data = json_decode($json['RequestData'], true);
+        if( !$data )
+        {
+            $result = [
+                'EBusinessID'=> '1151847',
+                'UpdateTime'=>  '2016-08-09 16:42:33',
+                'Success'=> true,
+                'Reason'=>'',
+            ];
+
+        }else{
+            $result = [
+                'EBusinessID'=> '1151847',
+                'UpdateTime'=> '2016-08-09 16:42:22',
+                'Success'=> true,
+                'Reason'=>'',
+            ];
+
+        }
+        return json($result);
+    }
 
 }

@@ -168,6 +168,7 @@ Route::post('api/:version/edit_partner_info', 'api/:version.Partner/editPartnerI
 //建材订单
 Route::get('api/:version/o_building', 'api/:version.Order/getOrderByBuilding'); //查询订单
 Route::post('api/:version/cancel_order', 'api/:version.Order/cancelBuildingOrder'); //取消订单
+Route::post('api/:version/confirm_receive', 'api/:version.Order/confirmReceive'); //取消订单
 Route::post('api/:version/del_building_order', 'api/:version.Order/delBuildingOrder'); //订单
 Route::post('api/:version/sign_order', 'api/:version.Order/outOrder'); //订单
 //查询订单详情
@@ -290,6 +291,7 @@ Route::get('api/:version/l_county', 'api/:version.City/getCounty');
 Route::get('api/:version/l_town', 'api/:version.City/getTown');
 
 
+Route::post('api/:version/kdtuisong', 'api/:version.KdNiao/kdtuisong'); //订单
 
 
 
