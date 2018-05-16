@@ -172,7 +172,7 @@ class Packets extends Base
     //合伙人查询自己发出的红包列表
     public function findPartner(){
         $limit = input('limit') ? input('limit') : 10;
-        $lists = Db::table('give_red')->where([ 'user_id'=> $this->user['ud_id']])->paginate($limit);
+        $lists = Db::table('give_red')->where([ 'user_id'=> $this->user['ud_id']])->order('id desc')->paginate($limit);
         if( $lists->isEmpty())
         {
             throw new PacketsException();

@@ -87,7 +87,7 @@ class Login extends Base
         }
         $password = input('post.password');
         $data['ud_password']    = md5($password);
-        $type = input('login_type');
+        $type = input('type');
         if( !empty($type))
         {
             $data['ud_name'] = input('nickname');
@@ -215,7 +215,7 @@ class Login extends Base
             $data = [
                 'is_login' => false,
                 'token' => $token,
-                'is_partner'=> $user_data['type'] == 1 ? true : false,
+                'is_partner'=> $user_data['type'] == 2 ? true : false,
                 'is_push' => $user_data['ud_push'] == 1 ? true : false
             ];
         }
