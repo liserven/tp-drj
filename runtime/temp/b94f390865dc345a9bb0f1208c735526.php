@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:72:"D:\phpStudy\WWW\drhome\public/../application/admin\view\user\tolist.html";i:1526289351;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:72:"D:\phpStudy\WWW\drhome\public/../application/admin\view\user\tolist.html";i:1526470103;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -46,22 +46,21 @@
 </fieldset>
 <div class="layui-col-md12">
     <div class="layui-form-query">
-        <form class="layui-form" id="query_form" action="">
+        <form class="layui-form" id="query_form" action="<?php echo url('user/lookup'); ?>">
             <div class="layui-form-item" style="padding-left:20px ;">
                 <div class="layui-block">
                     <label class="layui-form-mid">选项：</label>
                     <div class="layui-input-inline">
-                        <select >
+                        <select name="name">
                             <option>请选择</option>
                             <option value="1">姓名</option>
                             <option value="2">手机号</option>
-                            <option value="3">状态</option>
-                            <option value="4">地区</option>
+
 
                         </select>
                     </div>
                     <div class="layui-input-inline">
-                        <input type="text" name="sex" lay-verify="required" placeholder="请输入查询内容" class="layui-input">
+                        <input type="text" name="user" lay-verify="required" placeholder="请输入查询内容" class="layui-input">
                     </div>
 
 
@@ -109,7 +108,12 @@
                 <th data-field="sex">
                     <div class="layui-table-cell"><span>性别</span></div>
                 </th>
-
+                <th data-field="state">
+                    <div class="layui-table-cell"><span>身份</span></div>
+                </th>
+                <th data-field="state">
+                    <div class="layui-table-cell"><span>推荐人</span></div>
+                </th>
                 <th data-field="state">
                     <div class="layui-table-cell"><span>地区</span></div>
                 </th>
@@ -159,7 +163,12 @@
                     </else>
 
                 <?php endif; ?>
-
+                <td>
+                    <div class="layui-table-cell"><?php echo $vo['ud_status']; ?></div>
+                </td>
+                <td>
+                    <div class="layui-table-cell"><?php echo $vo['referee']; ?></div>
+                </td>
                 <td>
                     <div class="layui-table-cell"><?php echo $vo['province']; ?><?php echo $vo['city']; ?><?php echo $vo['county']; ?><?php echo $vo['town']; ?></div>
                 </td>

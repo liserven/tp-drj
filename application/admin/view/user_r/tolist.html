@@ -71,9 +71,7 @@
                 <th data-field="11">
                     <div class="layui-table-cell" align="center"><span>开始时间</span></div>
                 </th>
-                <th data-field="11">
-                    <div class="layui-table-cell" align="center"><span>结束时间</span></div>
-                </th>
+
             </tr>
             </thead>
             <tbody class="">
@@ -101,11 +99,9 @@
                         <div class="layui-table-cell">{$vo.word}</div>
                     </td>
                     <td>
-                        <div class="layui-table-cell">{$vo.create_at}</div>
+                        <div class="layui-table-cell">{$vo.create_at|date='Y-m-d H:i:m',###}</div>
                     </td>
-                    <td>
-                        <div class="layui-table-cell">{$vo.update_at}</div>
-                    </td>
+
 
                 </tr>
             </volist>

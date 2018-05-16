@@ -63,7 +63,7 @@ return [
                 'target' => 'target',
                 'content' => '合伙人审核',
             ],
-           
+
             [
                 'id' => '',
                 'icon' => '&#xe62d;',

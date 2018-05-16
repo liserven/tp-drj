@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:75:"D:\phpStudy\WWW\drhome\public/../application/admin\view\partner\tolist.html";i:1526372766;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:75:"D:\phpStudy\WWW\drhome\public/../application/admin\view\partner\tolist.html";i:1526458344;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -182,11 +182,11 @@
                             <input type="hidden" name="" class="zfb" value="<?php echo $vo['trade_no']; ?>">
                             <?php if($vo['examine_status'] == '1'): ?>
                                 <a class="layui-btn layui-btn-xs find-ali-status" pay-type="<?php echo $vo['payment_type']; ?>" name="<?php echo $vo['name']; ?>">查询付款</a>
-                                <a class="layui-btn layui-btn-xs find-ali-status" pay-type="<?php echo $vo['payment_type']; ?>" name="<?php echo $vo['name']; ?>">退款</a>
+
                                 <a class="layui-btn layui-btn-xs">已通过</a>
                             <?php endif; if($vo['examine_status'] == '3'): ?>
                                 <a class="layui-btn layui-btn-xs aggry" data-id="<?php echo $vo['user_id']; ?>">通过</a>
-                                <a class="layui-btn layui-btn-danger layui-btn-xs ">拒绝</a>
+                                <a class="layui-btn layui-btn-danger unaggry layui-btn-xs"data-id="<?php echo $vo['user_id']; ?>">拒绝</a>
                             <?php endif; if($vo['examine_status'] == '2'): ?>
                                 <a class="layui-btn layui-btn-xs">未通过</a>
                             <?php endif; ?>

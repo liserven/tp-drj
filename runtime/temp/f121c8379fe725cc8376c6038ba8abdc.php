@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:77:"D:\phpStudy\WWW\drhome\public/../application/admin\view\blacklist\tolist.html";i:1526032947;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:77:"D:\phpStudy\WWW\drhome\public/../application/admin\view\blacklist\tolist.html";i:1526470509;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -44,38 +44,7 @@
 
     </legend>
 </fieldset>
-<div class="layui-col-md12">
-    <div class="layui-form-query">
-        <form class="layui-form" id="query_form" action="">
-            <div class="layui-form-item" style="padding-left:20px ;">
-                <div class="layui-block">
-                    <label class="layui-form-mid">选项：</label>
-                    <div class="layui-input-inline">
-                        <select >
-                            <option>请选择</option>
-                            <option value="1">姓名</option>
-                            <option value="2">手机号</option>
-                            <option value="3">状态</option>
-                            <option value="4">地区</option>
 
-                        </select>
-                    </div>
-                    <div class="layui-input-inline">
-                        <input type="text" name="sex" lay-verify="required" placeholder="请输入查询内容" class="layui-input">
-                    </div>
-
-
-                    <div class="layui-inline">
-                        <div class="layui-input-inline">
-                            <button class="layui-btn" type="submit" lay-submit="seach_phone" lay-filter="find"><i class="layui-icon"></i>查询
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </form>
-    </div>
-</div>
 <div class="layui-form layui-border-box layui-table-view" lay-filter="content-box" style="padding: 20px;border: 0;">
     <div class="layui-table-box">
         <table class="layui-table" style="width: 100%; border: 1px solid #eee">
@@ -179,8 +148,8 @@
                     <td class="layui-table-cell ">
 
                         <a class="layui-btn layui-btn-xs find-ali-status" name="<?php echo $vo['ud_name']; ?>" >查看详情</a>
-                        <a class="layui-btn layui-btn-danger layui-btn-xs  black_roll" data-id="<?php echo $vo['ud_id']; ?>">取消拉黑</a>
-
+                        <a class="layui-btn  layui-btn-warm layui-btn-xs  black_roll" data-id="<?php echo $vo['ud_id']; ?>">取消拉黑</a>
+                        <a class="layui-btn layui-btn-danger layui-btn-xs do_del">删除</a>
                     </td>
                 </tr>
             <?php endforeach; endif; else: echo "" ;endif; ?>

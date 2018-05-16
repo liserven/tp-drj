@@ -28,4 +28,10 @@ class Blacklist  extends Base
 
         return $this->resultHandle($list);
     }
+
+    public function doDel($id)
+    {
+        $page = Db::table('user_data')->where('ud_id',$id)->delete();
+        return $this->resultHandle($page);
+    }
 }

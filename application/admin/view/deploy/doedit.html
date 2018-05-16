@@ -1,6 +1,6 @@
 <layout name="layout" />
 <div style="padding: 20px;">
-    <form class="layui-form">
+    <form class="layui-form" method="post" enctype="multipart/form-data">
         <div class="layui-form-item">
             <label class="layui-form-label">售后类型</label>
             <div class="layui-input-inline">
@@ -13,7 +13,7 @@
         <div class="layui-form-item">
             <label class="layui-form-label">售后名称</label>
             <div class="layui-input-inline">
-                <input type="text" name="name"  lay-verify="required" placeholder="请输入名称" class="layui-input" value="{$data,name}">
+                <input type="text" name="name" lay-verify="required" class="layui-input" value="{$data.name}">
             </div>
         </div>
         <div class="layui-form-item">
@@ -25,6 +25,7 @@
         </div>
         <div class="layui-form-item">
             <div class="layui-input-block">
+
                 <button class="layui-btn" lay-submit lay-filter="formDemo" id="submit">立即提交</button>
                 <button type="reset" class="layui-btn layui-btn-primary">重置</button>
             </div>

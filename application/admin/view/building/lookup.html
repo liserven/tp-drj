@@ -55,10 +55,7 @@
             </tr>
             </thead>
             <tbody class="">
-
-
-
-
+            <tr data-index="0" class="tbody_content" data-id="{$list.id}">
                     <td>
                         <div class="layui-table-cell">{$list.id}</div>
                     </td>
@@ -74,32 +71,28 @@
                     <td>
                         <div class="layui-table-cell">{$list.order}</div>
                     </td>
-                    <if condition="$list['is_index'] eq 1">
-                        <td>
-                            <div class="layui-table-cell">是</div>
-                        </td>
-
-                        <else>
-                            <td>
-                                <div class="layui-table-cell">否</div>
-                            </td>
-                    </if>
+                <td>
+                    <div class="layui-table-cell">{$list.is_index==1?'是':'否'}</div>
+                </td>
                     <td>
                         <div class="layui-table-cell"><img src="{$list.g_img}?imageView2/1/w/50/h/50"></div>
                     </td>
                     <td>
-                        <div class="layui-table-cell">{$list.create_at}</div>
+                        <div class="layui-table-cell">{$list.create_at|date='Y-m-d H:i:m',###}</div>
                     </td>
 
                     <td>
-                        <div class="layui-table-cell">{$list.update_at}</div>
+                        <div class="layui-table-cell">{$list.update_at|date='Y-m-d H:i:m',###}</div>
                     </td>
 
                     <td>
                         <div class="layui-table-cell">
                             <input type="hidden" name="id" value="{$list.id}">
                             <a class="layui-btn layui-btn-xs edit">编辑</a>
+                            <eq name="$list.status" value="1">
                             <a class="layui-btn layui-btn-xs layui-btn-normal  changes" data-id="{$list.id}">下架</a>
+                            </eq>
+                            <a class="layui-btn layui-btn-xs layui-btn-normal  regain" data-id="{$list.id}">上架</a>
                             <a class="layui-btn layui-btn-danger layui-btn-xs do_del">删除</a>
 
                         </div>

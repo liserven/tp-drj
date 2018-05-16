@@ -40,7 +40,6 @@ layui.use(['layer','custom'], function () {
     $(".aggry").each(function (e) {
         var _this = $(this);
         _this.click(function(){
-
             var id = _this.attr('data-id');
             $.post('/admin/Partner/aggry', { id:id}, function (result) {
                 if( result.bol)

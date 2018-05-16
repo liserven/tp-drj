@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:74:"D:\phpStudy\WWW\drhome\public/../application/admin\view\user_r\tolist.html";i:1526033083;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:74:"D:\phpStudy\WWW\drhome\public/../application/admin\view\user_r\tolist.html";i:1526464583;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -111,9 +111,7 @@
                 <th data-field="11">
                     <div class="layui-table-cell" align="center"><span>开始时间</span></div>
                 </th>
-                <th data-field="11">
-                    <div class="layui-table-cell" align="center"><span>结束时间</span></div>
-                </th>
+               
             </tr>
             </thead>
             <tbody class="">
@@ -141,11 +139,9 @@
                         <div class="layui-table-cell"><?php echo $vo['word']; ?></div>
                     </td>
                     <td>
-                        <div class="layui-table-cell"><?php echo $vo['create_at']; ?></div>
+                        <div class="layui-table-cell"><?php echo date('Y-m-d H:i:m',$vo['create_at']); ?></div>
                     </td>
-                    <td>
-                        <div class="layui-table-cell"><?php echo $vo['update_at']; ?></div>
-                    </td>
+
 
                 </tr>
             <?php endforeach; endif; else: echo "" ;endif; ?>

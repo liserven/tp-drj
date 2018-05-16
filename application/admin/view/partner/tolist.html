@@ -142,12 +142,12 @@
                             <input type="hidden" name="" class="zfb" value="{$vo.trade_no}">
                             <eq name="vo.examine_status" value="1">
                                 <a class="layui-btn layui-btn-xs find-ali-status" pay-type="{$vo.payment_type}" name="{$vo.name}">查询付款</a>
-                                <a class="layui-btn layui-btn-xs find-ali-status" pay-type="{$vo.payment_type}" name="{$vo.name}">退款</a>
+
                                 <a class="layui-btn layui-btn-xs">已通过</a>
                             </eq>
                             <eq name="vo.examine_status" value="3">
                                 <a class="layui-btn layui-btn-xs aggry" data-id="{$vo.user_id}">通过</a>
-                                <a class="layui-btn layui-btn-danger layui-btn-xs ">拒绝</a>
+                                <a class="layui-btn layui-btn-danger unaggry layui-btn-xs"data-id="{$vo.user_id}">拒绝</a>
                             </eq>
                             <eq name="vo.examine_status" value="2">
                                 <a class="layui-btn layui-btn-xs">未通过</a>

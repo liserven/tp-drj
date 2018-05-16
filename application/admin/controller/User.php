@@ -71,20 +71,25 @@ class User extends Base
             if (!$this->_checkAction()) {
                 return $this->ajaxShow(false, '无权此操作');
             }
-            $data['ud_name']   = input('name');
-            $data['ud_phone']  = input('phone');
-            $data['ud_sex']    = input('sex');
-            $data['province']  = input('province');
-            $data['city']  = input('city');
-            $data['county']  = input('county');
-            $data['town']  = input('town');
-            $data['ud_address']  = input('ud_address');
-            $data['ud_photo']  = input('ud_photo');
-            $data['ud_id_photo']  = input('ud_id_photo');
-            $data['referee']  = input('referee');
-            $data['ud_logo']  = input('ud_logo');
-            $data['type']    = 2;
-            Db::startTrans();
+            $data['ud_name']           = input('name');//姓名
+            $data['ud_phone']          = input('phone');//手机号
+            $data['ud_password']       = md5(input('password'));//密码
+            $data['ud_sex']            = input('sex');//性别
+            $data['ud_logo']           = input('ud_logo');//头像
+            $data['province']          = input('province');//省
+            $data['city']              = input('city');//市
+            $data['county']            = input('county');//县
+            $data['town']              = input('town');//镇
+            $data['ud_address']        = input('ud_address');//详细地址
+            $data['ud_photo']          = input('ud_photo');//一寸照片
+            $data['ud_id_photo']       = input('ud_id_photo');//身份证正面
+            $data['ud_id_photo_r']     = input('ud_id_photo_r');//身份证反面
+            $data['referee']           = input('referee');//推荐人
+            $data['ud_status']         = input('ud_status');//合伙人类型
+            $data['type']              = 2;//类型
+            $data['ud_examine_status'] = 1;//审核状态
+            $data['message']           = input('message');//个人说明
+
             try{
                 $result = UserData::create($data);
                 return $this->resultHandle($result);
@@ -266,6 +271,20 @@ class User extends Base
         return $this->resultHandle($list);
     }
 
+    //合伙人查询
+    public function lookup(){
+        $name = input('name');
+        $user = input('user');
+        if($name == 1){
+            $list = db('user_data')->where('ud_name',$user)->find();
+            $this->assign('list',$list);
+            return view();
+        }else{
+            $list = db('user_data')->where('ud_phone',$user)->find();
+            $this->assign('list',$list);
+            return view();
+        }
 
+    }
 
 }

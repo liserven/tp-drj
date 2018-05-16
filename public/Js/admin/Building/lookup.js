@@ -46,6 +46,33 @@ layui.use(['layer','custom'], function () {
 
 
     });
+    $(".regain").each(function (e) {
+        var _this = $(this);
+        _this.click(function(){
+
+            var id = _this.attr('data-id');
+            $.post('/admin/Building/regain', { id:id}, function (result) {
+                if( result.bol)
+                {
+                    common.dMsg({
+                        msg: '成功',
+                        bol: true
+                    },2);
+                }
+                else{
+                    common.dMsg({
+                        msg: '失败',
+                        bol: false
+                    },1);
+                }
+            } )
+
+            return false;
+
+        });
+
+
+    });
 
 
 });
