@@ -13,6 +13,8 @@ use app\lib\exception\OrderException;
 use app\lib\exception\ParameterException;
 use enum\BuildingOrderStatus;
 use think\Db;
+use think\Exception;
+use app\api\controller\v1\KdNiao;
 
 class Orbuilding extends Base
 {
@@ -61,16 +63,19 @@ class Orbuilding extends Base
                 $page = Db::table('user_notices')->insert($messagelist);
                 $a = input('logustics');
                 $b = input('logustics_code');
+
                 if (!$a || !$b) {
                     throw new ParameterException();
                 }
+
+
                 //添加运单号与物流公司
                 $list->express_code = $b;
                 $list->logistics = $a;
                 //更改状态为发货
                 $list->status = BuildingOrderStatus::TRANSLATE;
                 $result = $list->save();
-                Db::commit();
+                Db::startTrans();
                 return $this->resultHandle($result);
             }catch (\Exception $e){
                 Db::rollback();
@@ -114,12 +119,16 @@ class Orbuilding extends Base
            if (!$this->_checkAction()) {
                return $this->ajaxShow(false, '无权此操作');
            }
-           $data[]
-
+           Db::startTrans();
+           try{
+               $data = Db::table('building_order_detail')->update(['id'=>$id,'logistics'=>input('logustics'),'express_code'=>input('express_code')]);
+               return $this->resultHandle($data);
+           }catch (\Exception $e){
+               Db::rollback();
+               return show( false, $e->getMessage());
+           }
        }else{
            $id = $id;
-
-
            $page = Db::table('express_code')->select();
            $list = Db::table('building_order_detail')->find();
            $this->assign([

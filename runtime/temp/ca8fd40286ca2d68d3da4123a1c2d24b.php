@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:75:"D:\phpStudy\WWW\drhome\public/../application/admin\view\partner\tolist.html";i:1526284528;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:75:"D:\phpStudy\WWW\drhome\public/../application/admin\view\partner\tolist.html";i:1526372766;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -168,6 +168,11 @@
                     <td>
                         <div class="layui-table-cell"><?php echo $vo['type']; ?></div>
                     </td>
+                    <?php if($vo['examine_status'] == '4'): ?>
+                    <td>
+                        <div class="layui-table-cell"><?php echo aliPayStatusNum($vo['examine_status']); ?></div>
+                    </td>
+                    <?php endif; ?>
                     <td>
                         <div class="layui-table-cell"><?php echo aliPayStatusNum($vo['examine_status']); ?></div>
                     </td>

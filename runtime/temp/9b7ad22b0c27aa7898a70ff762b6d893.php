@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:79:"D:\phpStudy\WWW\drhome\public/../application/admin\view\orbuilding\details.html";i:1526353855;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:79:"D:\phpStudy\WWW\drhome\public/../application/admin\view\orbuilding\details.html";i:1526380688;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -41,7 +41,7 @@
     
 <div style="padding: 20px;">
 
-    <form class="layui-form"  method="post">
+    <form class="layui-form"  method="post" action="<?php echo url(); ?>">
         <div class="layui-form-item">
             <label class="layui-form-label">运单号</label>
             <div class="layui-input-inline">
@@ -62,7 +62,7 @@
         <div class="layui-form-item">
             <div class="layui-input-block">
                 <input type="hidden" name="id" value="<?php echo $id; ?>">
-                <button class="layui-btn" lay-submit lay-filter="logistics" id="submit">立即提交</button>
+                <button class="layui-btn" lay-submit lay-filter="details" id="submit">立即提交</button>
             </div>
         </div>
     </form>

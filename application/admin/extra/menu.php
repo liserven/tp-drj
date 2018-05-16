@@ -63,14 +63,7 @@ return [
                 'target' => 'target',
                 'content' => '合伙人审核',
             ],
-            [
-                'id' => '',
-                'icon' => '&#xe62d;',
-                'ad_topic' => '合伙人绩效考核',
-                'ad_url' => "/admin/Partnerd/tolist",
-                'target' => 'target',
-                'content' => '合伙人绩效考核',
-            ],
+           
             [
                 'id' => '',
                 'icon' => '&#xe62d;',
@@ -85,7 +78,7 @@ return [
                 'ad_topic' => '黑名单',
                 'ad_url' => "/admin/Blacklist/tolist",
                 'target' => 'target',
-                'content' => '合伙人区域分析',
+                'content' => '黑名单',
             ],
         ],
     ],
@@ -214,14 +207,7 @@ return [
                 'target' => 'target',
                 'content' => '建材下架',
             ],
-            [
-                'id' => '',
-                'icon' => '&#xe62d;',
-                'ad_topic' => '建材分析',
-                'ad_url' => "/admin/Buildinganal/tolist",
-                'target' => 'target',
-                'content' => '建材分析',
-            ],
+
         ],
     ],
     'Bieshu' => [
@@ -365,29 +351,7 @@ return [
         ],
     ],
 
-    'Gdp' => [
-        'icon' => '&#xe62d;',
-        'id' => 'menu_notice',
-        'ad_topic' => 'GDP',
-        'ad_url' => 'http://www.baodu.com',
-        'target' => 'target',
-        'content' => 'GDP',
-        'two' => [
-            [
-                'id' => '',
-                'icon' => '&#xe62d;',
-                'ad_topic' => 'GDP',
-                'ad_url' => "/admin/Omgdp/tolist",
-                'target' => 'target',
-                'content' => '省GDP',
-            ],
 
-
-
-
-
-        ],
-    ],
     'System' => [
         'icon' => '&#xe62d;',
         'id' => 'menu_notice',

@@ -391,7 +391,10 @@ function aliPayStatusNum($status)
     if($status == '4' || $status == '1' )
     {
         return '<span class="layui-badge layui-bg-green">付款成功</span>';
+    }else{
+        return '<span class="layui-badge layui-btn-danger">未付款</span>';
     }
+
 }
 
 //驼峰转换下划线

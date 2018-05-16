@@ -10,6 +10,7 @@ namespace app\admin\controller;
 
 use app\common\model\User as UserModel;
 use app\common\model\Member as MemberModel;
+use app\common\model\UserData;
 use app\common\service\UserResetPass;
 use app\common\validate\IDMustBePositiveInt;
 use app\common\validate\UserValidate;
@@ -70,9 +71,9 @@ class User extends Base
             if (!$this->_checkAction()) {
                 return $this->ajaxShow(false, '无权此操作');
             }
-            $data['ud_name']   = input('ud_name');
-            $data['ud_phone']  = input('ud_phone');
-            $data['ud_sex']    = input('ud_sex');
+            $data['ud_name']   = input('name');
+            $data['ud_phone']  = input('phone');
+            $data['ud_sex']    = input('sex');
             $data['province']  = input('province');
             $data['city']  = input('city');
             $data['county']  = input('county');
@@ -82,6 +83,16 @@ class User extends Base
             $data['ud_id_photo']  = input('ud_id_photo');
             $data['referee']  = input('referee');
             $data['ud_logo']  = input('ud_logo');
+            $data['type']    = 2;
+            Db::startTrans();
+            try{
+                $result = UserData::create($data);
+                return $this->resultHandle($result);
+
+            }catch (\Exception $e){
+                Db::rollback();
+                return show(false, $e->getMessage());
+            }
 
             }else{
             return view();

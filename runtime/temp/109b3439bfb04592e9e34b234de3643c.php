@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:71:"D:\phpStudy\WWW\drhome\public/../application/admin\view\user\doadd.html";i:1526269298;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:71:"D:\phpStudy\WWW\drhome\public/../application/admin\view\user\doadd.html";i:1526269585;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -92,52 +92,52 @@
         <div class="layui-form-item">
             <label class="layui-form-label">省</label>
             <div class="layui-input-inline">
-                <input type="text" name="g_material"lay-verify="required"  placeholder="请输入替换内容" class="layui-input">
+                <input type="text" name="province"lay-verify="required"  placeholder="请输入替换内容" class="layui-input">
             </div>
         </div>
         <div class="layui-form-item">
             <label class="layui-form-label">市</label>
             <div class="layui-input-inline">
-                <input type="text" name="g_price" lay-verify="required" placeholder="请输入替换内容" class="layui-input">
+                <input type="text" name="city" lay-verify="required" placeholder="请输入替换内容" class="layui-input">
             </div>
         </div>
         <div class="layui-form-item">
             <label class="layui-form-label">县</label>
             <div class="layui-input-inline">
-                <input type="text" name="g_price" lay-verify="required" placeholder="请输入替换内容" class="layui-input">
+                <input type="text" name="county" lay-verify="required" placeholder="请输入替换内容" class="layui-input">
             </div>
         </div>
         <div class="layui-form-item">
             <label class="layui-form-label">镇</label>
             <div class="layui-input-inline">
-                <input type="text" name="g_price" lay-verify="required" placeholder="请输入替换内容" class="layui-input">
+                <input type="text" name="town" lay-verify="required" placeholder="请输入替换内容" class="layui-input">
             </div>
         </div>
         <div class="layui-form-item">
             <label class="layui-form-label">其他</label>
             <div class="layui-input-inline">
-                <input type="text" name="g_price" lay-verify="required" placeholder="请输入替换内容" class="layui-input">
+                <input type="text" name="ud_address" lay-verify="required" placeholder="请输入替换内容" class="layui-input">
             </div>
         </div>
         <div class="layui-form-item">
             <label class="layui-form-label">身份证正面</label>
             <div class="layui-col-md2">
                 <img src="" id="img-upload-a" alt="" class="screen-img" required>
-                <input type="hidden" name="g_img" id="input-form-a">
+                <input type="hidden" name="ud_id_photo" id="input-form-a">
             </div>
         </div>
         <div class="layui-form-item">
             <label class="layui-form-label">身份证反面</label>
             <div class="layui-col-md2">
                 <img src="" id="img-upload-b" alt="" class="screen-img" required>
-                <input type="hidden" name="g_img" id="input-form-b">
+                <input type="hidden" name="ud_id_photo_r" id="input-form-b">
             </div>
         </div>
         <div class="layui-form-item">
             <label class="layui-form-label">半身照片</label>
             <div class="layui-col-md2">
                 <img src="" id="img-upload-c" alt="" class="screen-img" required>
-                <input type="hidden" name="g_img" id="input-form-c">
+                <input type="hidden" name="ud_id_photo_e" id="input-form-c">
             </div>
         </div>
 
