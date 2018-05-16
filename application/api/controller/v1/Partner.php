@@ -190,7 +190,8 @@ class Partner extends Base
             return show(false , '申请未驳回，不需要重新申请');
         }
 
-        $partnerAuditData = (new PartnerService())->binationPartnerBuditData();
+        $partnerAuditData = (new PartnerService($this->user['ud_id']))->binationPartnerBuditData();
+        $partnerAuditData['examine_status'] = 3;
         $result = Db::table('partner_audit')->where([ 'user_id'=> $this->user['ud_id']])->update($partnerAuditData);
         return $this->resultHandle($result);
     }
@@ -323,50 +324,39 @@ class Partner extends Base
             ]);
         }
         $userd = [];
-
-        $customers->each(function ($item, $key)
+        $customers= $customers->toArray();
+        foreach ($customers['data'] as $key=> &$item)
         {
-
             $user = Db::table('user_data')->where(['ud_phone' => $item['phone']])->field('ud_name, ud_logo, ud_sex, ud_id,ud_phone')->find();
 
-            if( !empty($user ))
-            {
-                if( $item != null){
+
+
                     $redUse = Db::table('red_use')->where([ 'partner_id'=> $this->user['ud_id'], 'user_id'=> $user['ud_id']])->find();
                     $redUserIs = !$redUse ? 1 : 2;
                     if( $redUse['status'] == 2 )
                     {
                         $redUserIs = 3;
                     }
+                    $item['red_confirm'] = $redUserIs;
+                    $item['price'] = $item['money'];
+                    $item['time'] = date('Y-m-d',$item['create_at']);
+                    $item['red_id'] = $item['rid'];
+            if( !empty($user['ud_name'] ))
+            {
+                    $item['ud_name'] = $user['ud_name'];
+                    $item['ud_id'] = $user['ud_id'];
+                    $item['ud_logo'] = $user['ud_logo'];
+                    $item['ud_sex'] = $user['ud_sex'];
 
-                    $userd = [
-                        "id"=> $item['id'],
-                        "rid"=> $item['rid'],
-                        "money"=> $item['money'],
-                        "phone"=> $item['phone'],
-                        "partner_id"=> $item['partner_id'],
-                        "status"=> $item['status'],
-                    ];
-                    $userd['red_confirm'] = $redUserIs;
-                    $userd['price'] = $item['money'];
-                    $userd['time'] = date('Y-m-d',$item['create_at']);
-                    $userd['red_id'] = $item['rid'];
-                    $userd['ud_name'] = $user['ud_name'];
-                    $userd['ud_id'] = $user['ud_id'];
-                    $userd['ud_logo'] = $user['ud_logo'];
-                    $userd['ud_sex'] = $user['ud_sex'];
-
-                    return $userd;
-                }
-
-
-            }
-            else{
-                return [];
+            }else{
+                $item['ud_name'] = '用户'.$item['phone'];
+                $item['ud_id'] = 0;
+                $item['ud_logo'] = 'http://ozi65v7vu.bkt.clouddn.com/%E7%94%B7.png';
+                $item['ud_sex'] = 2;
             }
 
 
-        });
+        }
 
         return show(true, 'ok', $customers);
     }
@@ -444,6 +434,12 @@ class Partner extends Base
             ->join('__VILLA_DATA__ vd', 'vo.villa_name=vd.vd_name', 'left')
             ->field('vo.town, sum(vd.vd_price)/10000 as money ')->order('money desc')->select();
         $cj = Db::query('SELECT FROM_UNIXTIME(create_at, "%m") AS crea,  COUNT(id) AS total FROM villa_order GROUP BY crea ');
+        if( empty($cj) && empty($fb ))
+        {
+            throw new PartnerException([
+                'msg'=> '该合伙还没有成交客户'
+            ]);
+        }
         $m = ["01","02","03","04","05","06","07","08","09","10","11","12"];
         $arr = array_column($cj, 'crea');
         $max = max($arr);

@@ -94,11 +94,11 @@ class Geo extends Base
                         $users[$j] = $tmp;
                     }
 
-                    $users[$i]['distance'] = $users[$i]['distance']/1000 . 'km';
+                    $users[$i]['distance'] = round($users[$i]['distance']/1000, 2) . 'km';
                 }
             }
         }else{
-            $users[0]['distance'] = $users[0]['distance']/1000 . 'km';
+            $users[0]['distance'] = round($users[0]['distance']/1000, 2) . 'km';
         }
         return show( true, 'ok', $users);
     }
