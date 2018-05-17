@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:71:"D:\phpStudy\WWW\drhome\public/../application/admin\view\user\doadd.html";i:1526436948;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:71:"D:\phpStudy\WWW\drhome\public/../application/admin\view\user\doadd.html";i:1526527008;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -90,28 +90,31 @@
             </div>
         </div>
         <div class="layui-form-item">
-            <label class="layui-form-label">省</label>
-            <div class="layui-input-inline">
-                <input type="text" name="province"lay-verify="required"  placeholder="请输入替换内容" class="layui-input">
-            </div>
+        <label class="layui-form-label">地区：</label>
+        <div class="layui-input-inline">
+            <select name="provice" id="provice" lay-filter="provice">
+                <option value="">请选择</option>
+                <?php if(is_array($provice) || $provice instanceof \think\Collection || $provice instanceof \think\Paginator): $i = 0; $__LIST__ = $provice;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+                    <option value="<?php echo $vo['provice_name']; ?>" data-id="<?php echo $vo['provice_id']; ?>" ><?php echo $vo['provice_name']; ?></option>
+                <?php endforeach; endif; else: echo "" ;endif; ?>
+            </select>
         </div>
-        <div class="layui-form-item">
-            <label class="layui-form-label">市</label>
-            <div class="layui-input-inline">
-                <input type="text" name="city" lay-verify="required" placeholder="请输入替换内容" class="layui-input">
-            </div>
+        <div class="layui-input-inline">
+            <select name="city" id="city" lay-filter="city">
+                <option value="">选择市级</option>
+
+            </select>
         </div>
-        <div class="layui-form-item">
-            <label class="layui-form-label">县</label>
-            <div class="layui-input-inline">
-                <input type="text" name="county" lay-verify="required" placeholder="请输入替换内容" class="layui-input">
-            </div>
+        <div class="layui-input-inline">
+            <select name="county" id="county" lay-filter="county">
+                <option value="">选择县级</option>
+            </select>
         </div>
-        <div class="layui-form-item">
-            <label class="layui-form-label">镇</label>
-            <div class="layui-input-inline">
-                <input type="text" name="town" lay-verify="required" placeholder="请输入替换内容" class="layui-input">
-            </div>
+        <div class="layui-input-inline">
+            <select name="town" id="town" lay-filter="town">
+                <option value="">选择镇级</option>
+            </select>
+        </div>
         </div>
         <div class="layui-form-item">
             <label class="layui-form-label">其他</label>
@@ -119,6 +122,7 @@
                 <input type="text" name="ud_address"  placeholder="请输入替换内容" class="layui-input">
             </div>
         </div>
+
         <div class="layui-form-item">
             <label class="layui-form-label">头像</label>
             <div class="layui-col-md2">

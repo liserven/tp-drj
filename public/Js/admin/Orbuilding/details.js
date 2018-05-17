@@ -34,15 +34,9 @@ layui.use(['layer','custom','form'], function () {
         });
     */
     form.on("submit(details)", function(data){
-        $.post('/admin/Orbuilding/details', data.field, function (result) {
-            if( result.bol)
-            {
-                layer.msg(result.msg, {icon:1, time:1000});
-                window.parent.location.reload();
-            }else{
-                layer.msg(result.msg, {icon:2, time:1000});
-
-            }
+        alert('dsaasd');return false;
+        $.post('/admin/Orbuilding/logistics', data.field, function (result) {
+           window.parent.location.reload();
         });
         return false;
     });

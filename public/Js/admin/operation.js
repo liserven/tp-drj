@@ -57,6 +57,9 @@ layui.define(['layer', 'laydate', 'form','custom'], function (exports) {
 
     //刷新
     $('.refresh').click(function () {
+        layer.msg('加载中...', {
+            icon: 6
+        });
         window.location.reload();
     });
 

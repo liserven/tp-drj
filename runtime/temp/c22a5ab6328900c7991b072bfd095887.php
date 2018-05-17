@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:78:"D:\phpStudy\WWW\drhome\public/../application/admin\view\orbuilding\tolist.html";i:1525858716;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:78:"D:\phpStudy\WWW\drhome\public/../application/admin\view\orbuilding\tolist.html";i:1526539557;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -44,6 +44,25 @@
         <a href="javascript:;" class="layui-btn layui-btn-default layui-btn-small refresh"><i class="layui-icon">&#x1002;</i>刷新</a>
     </legend>
 </fieldset>
+<div class="layui-col-md12 layui-col-md-offset4">
+    <div class="layui-form-query">
+        <form class="layui-form" id="query_form" action="">
+            <div class="layui-form-item">
+                <div class="layui-inline">
+                    <label class="layui-form-mid">手机号：</label>
+                    <div class="layui-input-inline">
+                        <input name="phone" title="请输入用户手机号" class="layui-input" type="text">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <div class="layui-input-inline">
+                        <button class="layui-btn" type="submit" lay-submit="seach_phone"><i class="layui-icon"></i>查询</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
 <div class="layui-form layui-border-box layui-table-view" lay-filter="content-box" style="padding: 20px;border: 0;">
     <div class="layui-table-box">
         <table class="layui-table" style="width: 100%; border: 1px solid #eee">
@@ -159,29 +178,24 @@
 
                     <td>
 
-                        <div class="layui-table-cell"><?php echo $vo['is_receive']==1?'已收货':'派送中'; ?></div>
+                        <div class="layui-table-cell"><?php echo $vo['is_receive']==2?'已收货':'派送中'; ?></div>
                     </td>
 
 
                     <td>
                         <div class="layui-table-cell"><?php echo date('Y-m-d,H:i:m',$vo['create_at']); ?></div>
                     </td>
-
-
-                    <?php if($vo['logistics'] == ''): ?>
-                    <td class="layui-table-cell">
-
-                            <a class="layui-btn layui-btn-xs find-ali-status" data-id="<?php echo $vo['id']; ?>">填写运单号</a>
-
-                    </td>
-                        <?php else: ?>
-                            <td class="layui-table-cell">
-
-                                <a class="layui-btn layui-btn-xs layui-btn-normal detail  " data-id="<?php echo $vo['id']; ?>">查看详情</a>
-                                <a class="layui-btn layui-btn-primary layui-btn-xs detail_set  " data-id="<?php echo $vo['id']; ?>">修改运单号</a>
-
-                            </td>
-                    <?php endif; ?>
+                        <td class="layui-table-cell">
+                            <?php if($vo['status'] != '1'): ?>
+                            <a class="layui-btn layui-btn-xs find-ali-status" data-id="<?php echo $vo['id']; ?>">
+                                <?php if(!(empty($vo['logistics']) || (($vo['logistics'] instanceof \think\Collection || $vo['logistics'] instanceof \think\Paginator ) && $vo['logistics']->isEmpty()))): ?>
+                                    修改运单号
+                                    <?php else: ?>
+                                    填写运单号
+                                <?php endif; ?>
+                            </a>
+                            <?php endif; ?>
+                        </td>
 
                 </tr>
             <?php endforeach; endif; else: echo "" ;endif; ?>

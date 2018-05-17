@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:72:"D:\phpStudy\WWW\drhome\public/../application/admin\view\user\tolist.html";i:1526541443;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:76:"D:\phpStudy\WWW\drhome\public/../application/admin\view\user\getbywhere.html";i:1526525362;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -40,71 +40,17 @@
 <div class="box-content">
     
 <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
-    <legend>合伙人列表
-        <a href="javascript:;" class="layui-btn layui-btn-small add">添加合伙人</a>
+    <legend>查询结果
+
     </legend>
 </fieldset>
-<div class="layui-col-md12">
-    <div class="layui-form-query">
-        <form class="layui-form" id="query_form" action="">
-            <div class="layui-form-item" style="padding-left:20px ;">
-                <div class="layui-block">
-                    <label class="layui-form-mid">地区：</label>
-                    <div class="layui-input-inline">
-                        <select name="provice" id="provice" lay-filter="provice">
-                            <option value="">请选择</option>
-                            <?php if(is_array($provice) || $provice instanceof \think\Collection || $provice instanceof \think\Paginator): $i = 0; $__LIST__ = $provice;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-                                <option value="<?php echo $vo['provice_name']; ?>" data-id="<?php echo $vo['provice_id']; ?>" ><?php echo $vo['provice_name']; ?></option>
-                            <?php endforeach; endif; else: echo "" ;endif; ?>
-                        </select>
-                    </div>
-                    <div class="layui-input-inline">
-                        <select name="city" id="city" lay-filter="city">
-                            <option value="">选择市级</option>
-
-                        </select>
-                    </div>
-                    <div class="layui-input-inline">
-                        <select name="county" id="county" lay-filter="county">
-                            <option value="">选择县级</option>
-                        </select>
-                    </div>
-                    <div class="layui-input-inline">
-                        <select name="town" id="town" lay-filter="town">
-                            <option value="">选择镇级</option>
-                        </select>
-                    </div>
-                    <div class="layui-inline">
-                        <label class="layui-form-mid">手机号：</label>
-                        <div class="layui-input-inline">
-                            <input name="phone" title="请输入用户手机号" class="layui-input" type="text">
-                        </div>
-                    </div>
-                    <div class="layui-inline">
-                        <label class="layui-form-mid">用户名：</label>
-                        <div class="layui-input-inline">
-                            <input name="name" title="请输入用户用户名" class="layui-input" type="text">
-                        </div>
-                    </div>
-                    <div class="layui-inline">
-                        <div class="layui-input-inline">
-                            <button class="layui-btn" type="submit" lay-submit="seach_phone"><i class="layui-icon"></i>查询
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </form>
-    </div>
-</div>
-
 <div class="layui-form layui-border-box layui-table-view" lay-filter="content-box" style="padding: 20px;border: 0;">
     <div class="layui-table-box">
         <table class="layui-table" style="width: 100%; border: 1px solid #eee">
-          <colgroup>
-            <col width="50">
-            <col width="50">
-          </colgroup>
+            <colgroup>
+                <col width="50">
+                <col width="50">
+            </colgroup>
             <thead>
             <tr>
 
@@ -153,28 +99,28 @@
             </tr>
             </thead>
             <tbody class="">
-            <?php if(is_array($page) || $page instanceof \think\Collection || $page instanceof \think\Paginator): $i = 0; $__LIST__ = $page;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-            <tr data-index="0" class="tbody_content" data-id="<?php echo $vo['ud_id']; ?>">
+           <?php if(is_array($page) || $page instanceof \think\Collection || $page instanceof \think\Paginator): $i = 0; $__LIST__ = $page;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$list): $mod = ($i % 2 );++$i;?>
+            <tr data-index="0" class="tbody_content" data-id="<?php echo $list['ud_id']; ?>">
 
                 <td>
-                    <div class="layui-table-cell"><?php echo $vo['ud_id']; ?></div>
+                    <div class="layui-table-cell"><?php echo $list['ud_id']; ?></div>
                 </td>
                 <td>
-                    <div class="layui-table-cell"><?php echo $vo['ud_name']; ?></div>
+                    <div class="layui-table-cell"><?php echo $list['ud_name']; ?></div>
                 </td>
                 <td>
-                    <div class="layui-table-cell"><?php echo $vo['ud_phone']; ?></div>
+                    <div class="layui-table-cell"><?php echo $list['ud_phone']; ?></div>
                 </td>
                 <td>
                     <div class="layui-table-cell" style="height:55px;">
-                        <img src="<?php echo $vo['ud_logo']; ?>?imageView2/1/w/50/h/50" alt="">
+                        <img src="<?php echo $list['ud_logo']; ?>?imageView2/1/w/50/h/50" alt="">
                     </div>
                 </td>
-                <?php if($vo['ud_sex'] == 1): ?>
+                <?php if($list['ud_sex'] == 1): ?>
                     <td>
                         <div class="layui-table-cell">男</div>
                     </td>
-                    <?php elseif($vo['ud_sex'] == 2): ?>
+                    <?php elseif($list['ud_sex'] == 2): ?>
                         <td>
                             <div class="layui-table-cell">女</div>
                         </td>
@@ -187,40 +133,36 @@
 
                 <?php endif; ?>
                 <td>
-                    <div class="layui-table-cell"><?php echo $vo['ud_status']; ?></div>
+                    <div class="layui-table-cell"><?php echo $list['ud_status']; ?></div>
                 </td>
                 <td>
-                    <div class="layui-table-cell"><?php echo $vo['referee']; ?></div>
+                    <div class="layui-table-cell"><?php echo $list['referee']; ?></div>
                 </td>
                 <td>
-                    <div class="layui-table-cell"><?php echo $vo['province']; ?><?php echo $vo['city']; ?><?php echo $vo['county']; ?><?php echo $vo['town']; ?></div>
+                    <div class="layui-table-cell"><?php echo $list['province']; ?><?php echo $list['city']; ?><?php echo $list['county']; ?><?php echo $list['town']; ?></div>
                 </td>
                 <td>
-                    <div class="layui-table-cell"><?php echo date('Y-m-d',$vo['create_at']); ?></div>
+                    <div class="layui-table-cell"><?php echo date('Y-m-d',$list['create_at']); ?></div>
                 </td>
                 <td>
-                    <div class="layui-table-cell"><?php echo date('Y-m-d',$vo['update_at']); ?></div>
+                    <div class="layui-table-cell"><?php echo date('Y-m-d',$list['update_at']); ?></div>
                 </td>
                 <td class="layui-table-cell ">
-                    <input type="hidden" id="id" value="<?php echo $vo['ud_id']; ?>">
-                    <a class="layui-btn layui-btn-xs find-ali-status" name="<?php echo $vo['ud_name']; ?>" data-id="<?php echo $vo['ud_id']; ?>" >查看详情</a>
-                    <a class="layui-btn layui-btn-danger layui-btn-xs  black_pull" data-id="<?php echo $vo['ud_id']; ?>">除名</a>
+                    <input type="hidden" id="id" value="<?php echo $list['ud_id']; ?>">
+                    <a class="layui-btn layui-btn-xs find-ali-status" name="<?php echo $list['ud_name']; ?>" data-id="<?php echo $list['ud_id']; ?>" >查看详情</a>
+                    <a class="layui-btn layui-btn-danger layui-btn-xs  black_pull" data-id="<?php echo $list['ud_id']; ?>">除名</a>
 
                 </td>
             </tr>
-            <?php endforeach; endif; else: echo "" ;endif; ?>
+           <?php endforeach; endif; else: echo "" ;endif; ?>
             </tbody>
-            <tfoot>
-            <tr>
-                <td colspan="13"><?php echo $page->render();; ?></td>
-            </tr>
-            </tfoot>
+
         </table>
 
     </div>
 </div>
 </div>
-</div>  
+</div>
 </div>
 <?php if(($aName == 'doadd') OR ($aName == 'doedit')): ?>
     <script type="text/javascript" src="__STATIC__/ueditor/1.4.3/ueditor.config.js"></script>

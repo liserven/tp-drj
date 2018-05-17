@@ -8,7 +8,10 @@
 
 namespace app\admin\controller;
 
+use app\common\model\BuildingOrder;
 use app\common\model\BuildingOrderDetail;
+use app\common\model\UserNotices;
+use app\common\validate\IDMustBePositiveInt;
 use app\lib\exception\OrderException;
 use app\lib\exception\ParameterException;
 use enum\BuildingOrderStatus;
@@ -29,14 +32,33 @@ class Orbuilding extends Base
     //订单列表
     public function tolist()
     {
-        $page = db('building_order_detail')->order('id','desc')->paginate('15')->each(function($item,$key){
-            if (is_array($item) && !empty($item)) {
-
-                    $list = db('user_data')->where('ud_id', $item['uid'])->find();
-                    $item['uid'] = $list['ud_name'];
-                    return $item;
-            }
-        });
+        $phone = input('phone');
+        $where=[];
+        if ($phone) {
+            $where['ud_phone'] = $phone;
+        }
+        $page = db('building_order_detail')
+            ->alias('bod')
+            ->join('__USER_DATA__ ud', 'ud.ud_id=bod.uid', 'left')
+            ->where($where)
+            ->field('bod.*, ud.ud_name as uid, ud.ud_phone')
+            ->order('id', 'desc')
+            ->paginate('15');
+//        ->each(function($item,$key){
+//            if (is_array($item) && !empty($item)) {
+//                $phone = input('phone');
+//                $where = [
+//                   'ud_id' =>  $item['uid']
+//                ];
+//                if( $phone )
+//                {
+//                    $where['ud_phone'] = $phone;
+//                }
+//                    $list = db('user_data')->where($where)->find();
+//                    $item['uid'] = $list['ud_name'];
+//                    return $item;
+//            }
+//        });
         $this->assign('page', $page);
         return $this->fetch();
     }
@@ -49,37 +71,39 @@ class Orbuilding extends Base
                 return $this->ajaxShow(false, '无权此操作');
             }
             $list = BuildingOrderDetail::get(input('post.id/d'));
+
             if (!$list) {
                 throw new OrderException();
             }
             Db::startTrans();
-            try{
-                //填完运单号像用户发送配送通知
-                $messagelist['img'] = $list['g_img'];
-                $messagelist['user_id'] = $list['uid'];
-                $messagelist['topic']    = '发货通知';
-                $messagelist['type']   = 2;
-                $messagelist['content'] = '您的宝贝正在快马加鞭得向您赶来';
-                $page = Db::table('user_notices')->insert($messagelist);
+            try {
+                if( empty($list['logistics']))
+                {
+                    //填完运单号像用户发送配送通知
+                    $messagelist['img'] = $list['g_img'];
+                    $messagelist['user_id'] = $list['uid'];
+                    $messagelist['topic'] = '发货通知';
+                    $messagelist['type'] = 2;
+                    $messagelist['content'] = '您的宝贝正在快马加鞭得向您赶来';
+
+                    UserNotices::create($messagelist);
+                }
                 $a = input('logustics');
                 $b = input('logustics_code');
-
-                if (!$a || !$b) {
-                    throw new ParameterException();
-                }
-
-
                 //添加运单号与物流公司
                 $list->express_code = $b;
                 $list->logistics = $a;
+                if (!$a || !$b) {
+                    throw new ParameterException();
+                }
                 //更改状态为发货
                 $list->status = BuildingOrderStatus::TRANSLATE;
                 $result = $list->save();
-                Db::startTrans();
-                return $this->resultHandle($result);
-            }catch (\Exception $e){
+                Db::commit();
+                return show( true, 'ok');
+            } catch (\Exception $e) {
                 Db::rollback();
-                return show( false, $e->getMessage());
+                return show(false, $e->getMessage());
             }
         } else {
             //填写运单号
@@ -87,9 +111,11 @@ class Orbuilding extends Base
 
 
             $page = Db::table('express_code')->select();
+            $list = BuildingOrderDetail::get($id);
             $this->assign([
                 'page' => $page,
-                'id' => $id
+                'id' => $id,
+                'list'=>$list
             ]);
 
             return view();
@@ -102,7 +128,6 @@ class Orbuilding extends Base
         $id = input('id');
 
         $list = Db::table('building_order_detail')->where('id', $id)->find();
-
         $page = Db::table('user_delivery')->where('id', $list['u_address_id'])->find();
         $this->assign([
             'list' => $list,
@@ -114,31 +139,33 @@ class Orbuilding extends Base
     }
 
     //修改运单号
-    public function details($id){
-       if($this->request->isPost()){
-           if (!$this->_checkAction()) {
-               return $this->ajaxShow(false, '无权此操作');
-           }
-           Db::startTrans();
-           try{
-               $data = Db::table('building_order_detail')->update(['id'=>$id,'logistics'=>input('logustics'),'express_code'=>input('express_code')]);
-               return $this->resultHandle($data);
-           }catch (\Exception $e){
-               Db::rollback();
-               return show( false, $e->getMessage());
-           }
-       }else{
-           $id = $id;
-           $page = Db::table('express_code')->select();
-           $list = Db::table('building_order_detail')->find();
-           $this->assign([
-               'page' => $page,
-               'id' => $id,
-               'list'=>$list
-           ]);
+    public function details($id)
+    {
+        (new IDMustBePositiveInt())->goCheck();
+        if ($this->request->isPost()) {
+            if (!$this->_checkAction()) {
+                return $this->ajaxShow(false, '无权此操作');
+            }
+            Db::startTrans();
+            try {
+                $data = Db::table('building_order_detail')->update(['id' => $id, 'logistics' => input('logustics'), 'express_code' => input('express_code')]);
+                return $this->resultHandle($data);
+            } catch (\Exception $e) {
+                Db::rollback();
+                return show(false, $e->getMessage());
+            }
+        } else {
+            $id = $id;
+            $page = Db::table('express_code')->select();
+            $list = BuildingOrderDetail::get($id);
+            $this->assign([
+                'page' => $page,
+                'id' => $id,
+                'list' => $list
+            ]);
 
-           return view();
-       }
-       }
+            return view();
+        }
     }
+}
 

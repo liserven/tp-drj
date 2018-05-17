@@ -1,7 +1,35 @@
-<div>
-<p>星级评分: <span class="">{$data.star}</span></p>
-<p>受赞数量: <span class="">{$data.star}</span></p>
-<p>沟通数量: <span class="">{$data.star}</span></p>
-<p>成交数量: <span class="">{$data.star}</span></p>
-<p>个人说明: <span class="">{$data.star}</span></p>
-</div>
+<layout name="layout"/>
+<table class="layui-table" lay-even="" lay-skin="nob">
+    <colgroup>
+        <col width="150">
+        <col width="150">
+        <col width="200">
+        <col>
+    </colgroup>
+    <tbody>
+    <tr>
+        <td>星级评分:</td>
+        <td>{$data.star}</td>
+    </tr>
+    <tr>
+        <td>受赞数量:</td>
+        <td>{$list}</td>
+    </tr>
+    <tr>
+        <td>成交数量:</td>
+        <td>{$abcd}</td>
+
+    </tr>
+    <tr>
+        <td>沟通数量:</td>
+        <td>暂无数据</td>
+
+    </tr>
+    <tr>
+        <td>个人说明:</td>
+        <td>{$page.message}</td>
+
+    </tr>
+    </tbody>
+</table>
+
