@@ -8,9 +8,11 @@
 
 namespace app\admin\controller;
 
+use think\Db;
+
 class Ask extends Base{
     public function tolist(){
-        $asklist = db('opinion_back')->order('id','desc')->select();
+        $asklist = Db::table('opinion_back')->order('id','desc')->paginate('15');
         $this->assign('page', $asklist);
         return $this->fetch();
     }

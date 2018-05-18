@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:72:"D:\phpStudy\WWW\drhome\public/../application/admin\view\villa\doadd.html";i:1526002442;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:72:"D:\phpStudy\WWW\drhome\public/../application/admin\view\villa\doadd.html";i:1526550019;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -143,6 +143,29 @@
             <div class="layui-input-inline">
                 <input type="text" name="wei"  placeholder="请输入替换内容" class="layui-input">
             </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">推荐Banner</label>
+            <div class="layui-input-block">
+                <input name="banner" value="1" title="是"  type="radio" >
+                <input name="banner" value="2" title="否" checked="" type="radio">
+            </div>
+            <div class="layui-col-md2" >
+                <img src="" id="img-upload-c" alt="" class="screen-img" >
+                <input type="hidden" name="banner" id="input-form-c">
+            </div>
+
+
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">推荐首页</label>
+            <div class="layui-input-block">
+                <input name="is_index" value="1" title="是"  type="radio" >
+                <input name="is_index" value="2" title="否" checked="" type="radio">
+            </div>
+
+
+
         </div>
         <div class="layui-form-item">
             <label class="layui-form-label">缩略图</label>

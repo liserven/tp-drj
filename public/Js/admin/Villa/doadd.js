@@ -46,5 +46,10 @@ layui.use(['form','custom'], function(){
         imgObj : '#img-upload-b', //图片预览img对象
         inputObj : '#input-form-b',  //上传成功，表单放置对象
     });
+    common.imgUpload({
+        bthObj : '#img-upload-c', //点击上传按钮
+        imgObj : '#img-upload-c', //图片预览img对象
+        inputObj : '#input-form-c',  //上传成功，表单放置对象
+    });
 
 });

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:77:"D:\phpStudy\WWW\drhome\public/../application/admin\view\propellin\tolist.html";i:1526348903;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:77:"D:\phpStudy\WWW\drhome\public/../application/admin\view\propellin\tolist.html";i:1526607271;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -74,10 +74,12 @@
                     <div class="layui-table-cell"><span>推送状态</span></div>
                 </th>
                 <th data-field="type">
-                    <div class="layui-table-cell"><span>推送时间</span></div>
+                    <div class="layui-table-cell"><span>创建时间</span></div>
                 </th>
 
-
+                <th data-field="type">
+                    <div class="layui-table-cell"><span>操作</span></div>
+                </th>
 
             </tr>
             </thead>
@@ -102,8 +104,10 @@
                     <td>
                         <div class="layui-table-cell"><?php echo $vo['create_at']; ?></div>
                     </td>
-
-
+                    <td>
+                    <input type="hidden" name="id" value="<?php echo $vo['id']; ?>">
+                         <a class="layui-btn layui-btn-xs layui-btn-normal changes" data-id="<?php echo $vo['id']; ?>">推送</a>
+                    </td>
                 </tr>
             <?php endforeach; endif; else: echo "" ;endif; ?>
             </tbody>

@@ -35,9 +35,7 @@
                 <th data-field="createdTime">
                     <div class="layui-table-cell"><span>创建时间</span></div>
                 </th>
-                <th data-field="modifiedTime">
-                    <div class="layui-table-cell"><span>修改时间</span></div>
-                </th>
+
                 <th data-field="11">
                     <div class="layui-table-cell" align="center"><span>操作</span></div>
                 </th>
@@ -57,32 +55,30 @@
                     <td>
                         <div class="layui-table-cell">{$vo.content}</div>
                     </td>
-                    <if condition="$vo.type eq 1">
+                    <eq name="$vo.type" value="1">
                         <td>
-                            <div class="layui-table-cell">咨询</div>
+                        <div class="layui-table-cell">咨询</div>
                         </td>
-                    </if>
-                     <if condition="$vo.type eq 2">
-                         <td>
-                             <div class="layui-table-cell">建议</div>
-                         </td>
-                     </if>
-                     <if condition="$vo.type eq 3">
-                             <td>
-                                 <div class="layui-table-cell">投诉</div>
-                             </td>
-                     </if>
-                    <if condition="$vo.type eq 4">
+                    </eq>
+                    <eq name="$vo.type" value="2">
                         <td>
-                            <div class="layui-table-cell">其他</div>
+                        <div class="layui-table-cell">建议</div>
                         </td>
-                    </if>
+                    </eq>
+                    <eq name="$vo.type" value="3">
+                        <td>
+                        <div class="layui-table-cell">投诉</div>
+                        </td>
+                    </eq>
+                    <eq name="$vo.type" value="4">
                     <td>
-                        <div class="layui-table-cell">{$vo.create_at}</div>
+                        <div class="layui-table-cell">其他</div>
                     </td>
+                    </eq>
                     <td>
-                        <div class="layui-table-cell">{$vo.update_at}</div>
+                        <div class="layui-table-cell">{$vo.create_at|date='Y-m-d H:i:m',###}</div>
                     </td>
+
                     <td>
                         <div class="layui-table-cell">
                             <a class="layui-btn layui-btn-xs edit">编辑</a>
@@ -93,7 +89,11 @@
                 </tr>
             </volist>
             </tbody>
-
+            <tfoot>
+            <tr>
+                <td colspan="13">{$page->render();}</td>
+            </tr>
+            </tfoot>
         </table>
 
     </div>

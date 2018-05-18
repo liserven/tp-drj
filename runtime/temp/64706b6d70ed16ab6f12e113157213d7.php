@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:71:"D:\phpStudy\WWW\drhome\public/../application/admin\view\ask\tolist.html";i:1526002349;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:71:"D:\phpStudy\WWW\drhome\public/../application/admin\view\ask\tolist.html";i:1526553120;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -75,9 +75,7 @@
                 <th data-field="createdTime">
                     <div class="layui-table-cell"><span>创建时间</span></div>
                 </th>
-                <th data-field="modifiedTime">
-                    <div class="layui-table-cell"><span>修改时间</span></div>
-                </th>
+
                 <th data-field="11">
                     <div class="layui-table-cell" align="center"><span>操作</span></div>
                 </th>
@@ -97,29 +95,27 @@
                     <td>
                         <div class="layui-table-cell"><?php echo $vo['content']; ?></div>
                     </td>
-                    <?php if($vo['type'] == 1): ?>
+                    <?php if($vo['type'] == '1'): ?>
                         <td>
-                            <div class="layui-table-cell">咨询</div>
+                        <div class="layui-table-cell">咨询</div>
                         </td>
-                    <?php endif; if($vo['type'] == 2): ?>
-                         <td>
-                             <div class="layui-table-cell">建议</div>
-                         </td>
-                     <?php endif; if($vo['type'] == 3): ?>
-                             <td>
-                                 <div class="layui-table-cell">投诉</div>
-                             </td>
-                     <?php endif; if($vo['type'] == 4): ?>
+                    <?php endif; if($vo['type'] == '2'): ?>
                         <td>
-                            <div class="layui-table-cell">其他</div>
+                        <div class="layui-table-cell">建议</div>
                         </td>
+                    <?php endif; if($vo['type'] == '3'): ?>
+                        <td>
+                        <div class="layui-table-cell">投诉</div>
+                        </td>
+                    <?php endif; if($vo['type'] == '4'): ?>
+                    <td>
+                        <div class="layui-table-cell">其他</div>
+                    </td>
                     <?php endif; ?>
                     <td>
-                        <div class="layui-table-cell"><?php echo $vo['create_at']; ?></div>
+                        <div class="layui-table-cell"><?php echo date('Y-m-d H:i:m',$vo['create_at']); ?></div>
                     </td>
-                    <td>
-                        <div class="layui-table-cell"><?php echo $vo['update_at']; ?></div>
-                    </td>
+
                     <td>
                         <div class="layui-table-cell">
                             <a class="layui-btn layui-btn-xs edit">编辑</a>
@@ -130,7 +126,11 @@
                 </tr>
             <?php endforeach; endif; else: echo "" ;endif; ?>
             </tbody>
-
+            <tfoot>
+            <tr>
+                <td colspan="13"><?php echo $page->render();; ?></td>
+            </tr>
+            </tfoot>
         </table>
 
     </div>

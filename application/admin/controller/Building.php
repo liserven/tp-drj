@@ -78,17 +78,15 @@ class Building extends Base
             $data['g_price_r'] = input('g_price_r');//商品价格
             $data['g_columr'] = input('quiz2');
             $data['g_column'] = input('quiz1');
-
-
-            //$data['g_price_r']  = input('g_price_r');//商品折后价格
-            // $data['name']    = input('name');//商品分类名称
-
+            $page['img']      = input('banner');
             $data['g_material'] = input('g_material');
-
-
             try {
                 $result = BuildingDetails::create($data);
-
+                if(!empty($page['img'])){
+                    $page['gid'] = $result['id'];
+                    $page['type'] = 2;
+                    $res = Db::table('banner')->insert($page);
+                }
                 $screenData = [];
                 $imgsData = [];
                 $imgssData = [];

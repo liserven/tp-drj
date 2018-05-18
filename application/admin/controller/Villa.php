@@ -54,9 +54,15 @@ class villa extends Base
             $mj                         = input('mj-input/a');
             $xj                         = input('xj-input/a');
             $sn                         = input('sn-input/a');
+            $page['img']                = input('banner');
             //开启事物
             try{
                 $reuslt = VillaData::create($data);
+                if(!empty($page['img'])){
+                    $page['gid'] = $reuslt['id'];
+                    $page['type'] = 3;
+                    $res = Db::table('banner')->insert($page);
+                }
 
                  $deplData = [];
                  $imgData = [];

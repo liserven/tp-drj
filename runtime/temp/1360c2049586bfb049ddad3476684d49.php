@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:76:"D:\phpStudy\WWW\drhome\public/../application/admin\view\consumer\tolist.html";i:1526290826;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:76:"D:\phpStudy\WWW\drhome\public/../application/admin\view\consumer\tolist.html";i:1526547977;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -46,27 +46,24 @@
 </fieldset>
 <div class="layui-col-md12">
     <div class="layui-form-query">
-        <form class="layui-form" id="query_form" action="<?php echo url('consumer/findGet'); ?>">
+        <form class="layui-form" id="query_form" action="">
             <div class="layui-form-item" style="padding-left:20px ;">
                 <div class="layui-block">
-                    <label class="layui-form-mid">选项：</label>
-                    <div class="layui-input-inline">
-                        <select name="select">
-                            <option>请选择</option>
-                            <option value="1">姓名</option>
-                            <option value="2">手机号</option>
-
-
-                        </select>
+                    <div class="layui-inline">
+                        <label class="layui-form-mid">手机号：</label>
+                        <div class="layui-input-inline">
+                            <input name="phone" title="请输入用户手机号" class="layui-input" type="text">
+                        </div>
                     </div>
-                    <div class="layui-input-inline">
-                        <input type="text" name="mes" lay-verify="required" placeholder="请输入查询内容" class="layui-input">
+                    <div class="layui-inline">
+                        <label class="layui-form-mid">用户名：</label>
+                        <div class="layui-input-inline">
+                            <input name="name" title="请输入用户用户名" class="layui-input" type="text">
+                        </div>
                     </div>
-
-
                     <div class="layui-inline">
                         <div class="layui-input-inline">
-                            <button class="layui-btn" type="submit" lay-submit="seach_phone" lay-filter="find"><i class="layui-icon"></i>查询
+                            <button class="layui-btn" type="submit" lay-submit="seach_phone"><i class="layui-icon"></i>查询
                             </button>
                         </div>
                     </div>
@@ -75,6 +72,7 @@
         </form>
     </div>
 </div>
+
 <div class="layui-form layui-border-box layui-table-view" lay-filter="content-box" style="padding: 20px;border: 0;">
     <div class="layui-table-box">
         <table class="layui-table" style="width: 100%; border: 1px solid #eee">

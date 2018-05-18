@@ -12,19 +12,24 @@ class Consumer extends Base{
 
     //获取用户列表
     public function tolist(){
-        $list = db('user_data')->where('type',1)->paginate(15);
+        $phone = input('get.phone');
+        $name  = input('get.name');
+        $where = [
+            'type' => 1,
+        ];
+        if (!empty($phone)) {
+            $where['ud_phone'] = $phone;
+        }
+        if (!empty($name)) {
+            $where['ud_name'] = $name;
+        }
+        $list = db('user_data')->where($where)->paginate('15');
         $this->assign('page',$list);
         return $this->fetch();
     }
 
     //查找
-    public function lookup(){
-        $phone = input('phone');
-        $list = db('user_data')->where('ud_phone',$phone)->select();
-        return view();
 
-
-    }
     //用户禁用
     public function forbidden($id){
         (new IDMustBePositiveInt())->goCheck();
@@ -79,21 +84,4 @@ class Consumer extends Base{
        $this->assign('data',$data);
        return $this->fetch();
     }
-
-    //用户查询
-
-    public function findGet(){
-        $v = input('select');
-        $d = input('mes');
-        if($v == 1){
-            $page = db('user_data')->where('ud_name', $d)->find();
-            $this->assign('page', $page);
-            return $this->fetch();
-        }else{
-            $page = db('user_data')->where('ud_phone', $d)->find();
-            $this->assign('page', $page);
-            return $this->fetch();
-        }
-    }
-
 }

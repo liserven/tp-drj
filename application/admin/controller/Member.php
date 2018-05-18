@@ -34,8 +34,7 @@ class Member extends Base
     }
 
     protected $beforeActionList = [
-        'before',
-        'before' => ['except'=>'toEditPass'],
+        '_checkLogin' => ['except'=>'toEditPass'],
         '_checkSupre' => ['only'=>'toEditPass'],
     ];
 

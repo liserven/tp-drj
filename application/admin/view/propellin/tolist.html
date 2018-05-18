@@ -34,10 +34,12 @@
                     <div class="layui-table-cell"><span>推送状态</span></div>
                 </th>
                 <th data-field="type">
-                    <div class="layui-table-cell"><span>推送时间</span></div>
+                    <div class="layui-table-cell"><span>创建时间</span></div>
                 </th>
 
-
+                <th data-field="type">
+                    <div class="layui-table-cell"><span>操作</span></div>
+                </th>
 
             </tr>
             </thead>
@@ -62,8 +64,10 @@
                     <td>
                         <div class="layui-table-cell">{$vo.create_at}</div>
                     </td>
-
-
+                    <td>
+                    <input type="hidden" name="id" value="{$vo.id}">
+                         <a class="layui-btn layui-btn-xs layui-btn-normal changes" data-id="{$vo.content}">推送</a>
+                    </td>
                 </tr>
             </volist>
             </tbody>
