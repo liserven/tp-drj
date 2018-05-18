@@ -39,6 +39,11 @@ class User extends Base
      */
     public function toList()
     {
+        $list = Db::table('user_data')->where('province','null')->select();
+        var_dump($list);exit;
+
+
+
 
         $province = input('get.provice');
         $city = input('get.city');

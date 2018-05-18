@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:73:"D:\phpStudy\WWW\drhome\public/../application/admin\view\villa\tolist.html";i:1526004248;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:73:"D:\phpStudy\WWW\drhome\public/../application/admin\view\villa\tolist.html";i:1526634503;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -163,7 +163,7 @@
                     <div class="layui-table-cell"><?php echo $vo['vd_building_area']; ?></div>
                 </td>
                 <td>
-                    <div class="layui-table-cell"><?php echo $vo['vd_height']; ?></div>
+                    <div class="layui-table-cell"><?php echo msubstr($vo['vd_height'],0,8); ?></div>
                 </td>
                 <td>
                     <div class="layui-table-cell"><?php echo $vo['vd_door']; ?></div>
@@ -175,7 +175,7 @@
                     <div class="layui-table-cell"><?php echo $vo['vd_wmw']; ?></div>
                 </td>
                 <td>
-                    <div class="layui-table-cell"><?php echo $vo['vd_wq']; ?></div>
+                    <div class="layui-table-cell"><?php echo msubstr($vo['vd_wq'],0,8); ?></div>
                 </td>
                 <td>
                     <div class="layui-table-cell"><img src="<?php echo $vo['vd_logo']; ?>?imageView2/1/w/50/h/50"></div>

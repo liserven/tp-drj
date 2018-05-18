@@ -12,7 +12,8 @@ layui.use(['layer','custom'], function () {
         _this.click(function(){
 
             var content = _this.attr('data-id');
-            $.post('api/v1.Push/push', { content:content}, function (result) {
+
+            $.post('/api/v1/jpush', {content:content}, function (result) {
                 if( result.bol)
                 {
                     common.dMsg({

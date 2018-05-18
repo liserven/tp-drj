@@ -194,6 +194,7 @@ class villa extends Base
             if (!$this->_checkAction()) {
                 return $this->ajaxShow(false, '无权此操作');
             }
+            $data['id']                 = input('post.id');
 
             $data['vd_name']            = input('vd_name');//别墅名称
             $data['vd_price']           = input('vd_price');//别墅价格
@@ -209,7 +210,7 @@ class villa extends Base
             $data['office']             = input('office');//厅
             $data['vd_class']           = input('vd_class');//一级分类
             $data['vd_class_r']         = input('vd_class_r');//二级分类
-            $data['vd_logo']            = input('logo');
+            $data['vd_logo']            = input('vd_logo');
             $data['vd_windows']         = input('vd_windows'); //窗户
             $Deploy                     = input('like/a');//售后
             $lb                         = input('lb-input/a');//列表图
@@ -221,7 +222,8 @@ class villa extends Base
             $sn                         = input('sn-input/a');//室内图
 
             try{
-                $data = VillaData::create($data);
+                $data = VillaData::update($data);
+
                 Db::table('villa_img')->where(['vi_villa_id'=> $data['id']])->delete();//删除商品之前所存图片
 
 

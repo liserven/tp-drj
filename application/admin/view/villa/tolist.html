@@ -123,7 +123,7 @@
                     <div class="layui-table-cell">{$vo.vd_building_area}</div>
                 </td>
                 <td>
-                    <div class="layui-table-cell">{$vo.vd_height}</div>
+                    <div class="layui-table-cell">{$vo.vd_height|msubstr=0,8}</div>
                 </td>
                 <td>
                     <div class="layui-table-cell">{$vo.vd_door}</div>
@@ -135,7 +135,7 @@
                     <div class="layui-table-cell">{$vo.vd_wmw}</div>
                 </td>
                 <td>
-                    <div class="layui-table-cell">{$vo.vd_wq}</div>
+                    <div class="layui-table-cell">{$vo.vd_wq|msubstr=0,8}</div>
                 </td>
                 <td>
                     <div class="layui-table-cell"><img src="{$vo.vd_logo}?imageView2/1/w/50/h/50"></div>

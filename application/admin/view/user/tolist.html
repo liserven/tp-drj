@@ -98,14 +98,15 @@
                     <div class="layui-table-cell"><span>推荐人</span></div>
                 </th>
                 <th data-field="state">
+                    <div class="layui-table-cell"><span>微信ID</span></div>
+                </th>
+                <th data-field="state">
                     <div class="layui-table-cell"><span>地区</span></div>
                 </th>
                 <th data-field="createdTime">
-                    <div class="layui-table-cell"><span>创建时间</span></div>
+                    <div class="layui-table-cell"><span>通过时间</span></div>
                 </th>
-                <th data-field="modifiedTime">
-                    <div class="layui-table-cell"><span>修改时间</span></div>
-                </th>
+
                 <th data-field="modifiedTime">
                     <div class="layui-table-cell"><span>操作</span></div>
                 </th>
@@ -153,14 +154,15 @@
                     <div class="layui-table-cell">{$vo.referee}</div>
                 </td>
                 <td>
+                    <div class="layui-table-cell">{$vo.wx_openid}</div>
+                </td>
+                <td>
                     <div class="layui-table-cell">{$vo.province}{$vo.city}{$vo.county}{$vo.town}</div>
                 </td>
                 <td>
                     <div class="layui-table-cell">{$vo.create_at|date='Y-m-d',###}</div>
                 </td>
-                <td>
-                    <div class="layui-table-cell">{$vo.update_at|date='Y-m-d',###}</div>
-                </td>
+
                 <td class="layui-table-cell ">
                     <input type="hidden" id="id" value="{$vo.ud_id}">
                     <a class="layui-btn layui-btn-xs find-ali-status" name="{$vo.ud_name}" data-id="{$vo.ud_id}" >查看详情</a>

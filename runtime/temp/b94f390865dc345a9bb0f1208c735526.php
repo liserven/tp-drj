@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:72:"D:\phpStudy\WWW\drhome\public/../application/admin\view\user\tolist.html";i:1526541443;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:72:"D:\phpStudy\WWW\drhome\public/../application/admin\view\user\tolist.html";i:1526625274;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -138,14 +138,15 @@
                     <div class="layui-table-cell"><span>推荐人</span></div>
                 </th>
                 <th data-field="state">
+                    <div class="layui-table-cell"><span>微信ID</span></div>
+                </th>
+                <th data-field="state">
                     <div class="layui-table-cell"><span>地区</span></div>
                 </th>
                 <th data-field="createdTime">
-                    <div class="layui-table-cell"><span>创建时间</span></div>
+                    <div class="layui-table-cell"><span>通过时间</span></div>
                 </th>
-                <th data-field="modifiedTime">
-                    <div class="layui-table-cell"><span>修改时间</span></div>
-                </th>
+
                 <th data-field="modifiedTime">
                     <div class="layui-table-cell"><span>操作</span></div>
                 </th>
@@ -193,14 +194,15 @@
                     <div class="layui-table-cell"><?php echo $vo['referee']; ?></div>
                 </td>
                 <td>
+                    <div class="layui-table-cell"><?php echo $vo['wx_openid']; ?></div>
+                </td>
+                <td>
                     <div class="layui-table-cell"><?php echo $vo['province']; ?><?php echo $vo['city']; ?><?php echo $vo['county']; ?><?php echo $vo['town']; ?></div>
                 </td>
                 <td>
                     <div class="layui-table-cell"><?php echo date('Y-m-d',$vo['create_at']); ?></div>
                 </td>
-                <td>
-                    <div class="layui-table-cell"><?php echo date('Y-m-d',$vo['update_at']); ?></div>
-                </td>
+
                 <td class="layui-table-cell ">
                     <input type="hidden" id="id" value="<?php echo $vo['ud_id']; ?>">
                     <a class="layui-btn layui-btn-xs find-ali-status" name="<?php echo $vo['ud_name']; ?>" data-id="<?php echo $vo['ud_id']; ?>" >查看详情</a>

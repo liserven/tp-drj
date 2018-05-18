@@ -5,8 +5,8 @@
     Time : {17:57}
 */
 return [
-    'ak' => 'me0n-EolWG-KGgXau-Bcm4UWpjS61ssZu288V5bl',
-    'sk' => 'PsQeF-EKCWY09QcbimoSNvTV3veYMawxF__rxgC_',
-    'bucket' => 'yachter',
-    'image_url' => 'http://oy1wh09ro.bkt.clouddn.com',
+    'ak' => 'nOxUwK0WMGBsS2_kT9w6du7EEEQwc92KeptYy3oi',
+    'sk' => 'XDVk3JLJdGawfvIRsfCVlFDt6IPB3qLnLYMMlYL2',
+    'bucket' => 'drjhome',
+    'image_url' => 'http://p7z62dk7h.bkt.clouddn.com',
 ];

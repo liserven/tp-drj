@@ -185,7 +185,7 @@ class Building extends Base
             $data['g_column'] = input('g_column');//商品一级分类
             $data['g_columr'] = input('g_columr');//商品二级分类
             $data['g_material'] = input('g_material');//商品材质
-            $data['id'] = input('id');
+            $data['id'] = input('post.id');
 
             $Deploy = input('deploy/a'); //售后服务
 

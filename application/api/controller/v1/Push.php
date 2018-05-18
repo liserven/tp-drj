@@ -19,6 +19,7 @@ class Push
     public function push()
     {
         $content = input('content');
+
         $array = input('extras/a');
         if( !$content)
         {

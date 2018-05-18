@@ -24,4 +24,6 @@ class Common extends Controller
         $this->assign('kx',config('kx'));
     }
 
+
+
 }

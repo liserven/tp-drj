@@ -5,8 +5,8 @@
     Time : {17:57}
 */
 return [
-    'ak' => 'SrYlUAatpuPnDwSPJgOxNa_-PgtwZWhs8uIe5QKp',
-    'sk' => 'G502-8VwyaKKQ79tkPvTgyzX8Ps5qa3RxY_u007t',
-    'bucket' => 'chinappw',
-    'image_url' => 'http://ozi65v7vu.bkt.clouddn.com',
+    'ak' => 'nOxUwK0WMGBsS2_kT9w6du7EEEQwc92KeptYy3oi',
+    'sk' => 'XDVk3JLJdGawfvIRsfCVlFDt6IPB3qLnLYMMlYL2',
+    'bucket' => 'drjhome',
+    'image_url' => 'http://p7z62dk7h.bkt.clouddn.com',
 ];
