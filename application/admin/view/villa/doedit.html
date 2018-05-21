@@ -12,8 +12,8 @@
             <div class="layui-input-inline">
                 <select name="vd_class" lay-verify="required">
 
-                    <option value="定制别墅">定制别墅</option>
-                    <option value="标准别墅">标准别墅</option>
+                    <option value="定制别墅"  <eq name="$arr.vd_class" value="定制别墅">selected</eq>>定制别墅</option>
+                    <option value="标准别墅" <eq name="$arr.vd_class" value="标准别墅">selected</eq>>标准别墅</option>
 
                 </select>
             </div>
@@ -23,9 +23,9 @@
             <div class="layui-input-inline">
                 <select name="vd_class_r" lay-verify="required">
 
-                    <option value="家">家</option>
-                    <option value="墅">墅</option>
-                    <option value="堡">堡</option>
+                    <option value="家" <eq name="$arr.vd_class_r" value="家">selected</eq>>家</option>
+                    <option value="墅" <eq name="$arr.vd_class_r" value="墅">selected</eq>>墅</option>
+                    <option value="堡" <eq name="$arr.vd_class_r" value="堡">selected</eq>>堡</option>
                 </select>
             </div>
         </div>

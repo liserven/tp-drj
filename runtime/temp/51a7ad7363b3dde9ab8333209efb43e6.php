@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:73:"D:\phpStudy\WWW\drhome\public/../application/admin\view\villa\doedit.html";i:1526613601;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:73:"D:\phpStudy\WWW\drhome\public/../application/admin\view\villa\doedit.html";i:1526872142;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -52,8 +52,8 @@
             <div class="layui-input-inline">
                 <select name="vd_class" lay-verify="required">
 
-                    <option value="定制别墅">定制别墅</option>
-                    <option value="标准别墅">标准别墅</option>
+                    <option value="定制别墅"  <?php if($arr['vd_class'] == '定制别墅'): ?>selected<?php endif; ?>>定制别墅</option>
+                    <option value="标准别墅" <?php if($arr['vd_class'] == '标准别墅'): ?>selected<?php endif; ?>>标准别墅</option>
 
                 </select>
             </div>
@@ -63,9 +63,9 @@
             <div class="layui-input-inline">
                 <select name="vd_class_r" lay-verify="required">
 
-                    <option value="家">家</option>
-                    <option value="墅">墅</option>
-                    <option value="堡">堡</option>
+                    <option value="家" <?php if($arr['vd_class_r'] == '家'): ?>selected<?php endif; ?>>家</option>
+                    <option value="墅" <?php if($arr['vd_class_r'] == '墅'): ?>selected<?php endif; ?>>墅</option>
+                    <option value="堡" <?php if($arr['vd_class_r'] == '堡'): ?>selected<?php endif; ?>>堡</option>
                 </select>
             </div>
         </div>
