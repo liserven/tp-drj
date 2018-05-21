@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:76:"D:\phpStudy\WWW\drhome\public/../application/admin\view\building\doedit.html";i:1526613823;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:76:"D:\phpStudy\WWW\drhome\public/../application/admin\view\building\doedit.html";i:1526886819;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -135,7 +135,7 @@
             <label class="layui-form-label">商品图</label>
             <div class="layui-col-md2">
                 <img src="<?php echo $data['g_img']; ?>" id="img-upload-b" alt="" class="screen-img" required>
-                <input type="hidden" name="g_img" id="input-form-b">
+                <input type="hidden" name="g_img" id="input-form-b" value="<?php echo $data['g_img']; ?>">
             </div>
         </div>
         <div class="screen_box">

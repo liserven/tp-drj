@@ -58,6 +58,33 @@
                 <th>
                     <div class="layui-table-cell"><span>平米价格</span></div>
                 </th>
+                <th>
+                    <div class="layui-table-cell"><span>占地面积</span></div>
+                </th>
+                <th>
+                    <div class="layui-table-cell"><span>建筑面积</span></div>
+                </th>
+                <th>
+                    <div class="layui-table-cell"><span>层高</span></div>
+                </th>
+                <th>
+                    <div class="layui-table-cell"><span>用户门</span></div>
+                </th>
+                <th>
+                    <div class="layui-table-cell"><span>窗户</span></div>
+                </th>
+                <th>
+                    <div class="layui-table-cell"><span>屋面瓦</span></div>
+                </th>
+                <th>
+                    <div class="layui-table-cell"><span>外墙</span></div>
+                </th>
+                <th data-field="createdTime">
+                    <div class="layui-table-cell"><span>缩略图</span></div>
+                </th>
+                <th data-field="type">
+                    <div class="layui-table-cell"><span>推荐首页</span></div>
+                </th>
                 <th data-field="createdTime">
                     <div class="layui-table-cell"><span>室</span></div>
                 </th>
@@ -90,6 +117,33 @@
                     </td>
                     <td>
                         <div class="layui-table-cell">{$vo.vd_unit_price}</div>
+                    </td>
+                    <td>
+                        <div class="layui-table-cell">{$vo.vd_covers_area}</div>
+                    </td>
+                    <td>
+                        <div class="layui-table-cell">{$vo.vd_building_area}</div>
+                    </td>
+                    <td>
+                        <div class="layui-table-cell">{$vo.vd_height|msubstr=0,8}</div>
+                    </td>
+                    <td>
+                        <div class="layui-table-cell">{$vo.vd_door}</div>
+                    </td>
+                    <td>
+                        <div class="layui-table-cell">{$vo.vd_windows}</div>
+                    </td>
+                    <td>
+                        <div class="layui-table-cell">{$vo.vd_wmw}</div>
+                    </td>
+                    <td>
+                        <div class="layui-table-cell">{$vo.vd_wq|msubstr=0,8}</div>
+                    </td>
+                    <td>
+                        <div class="layui-table-cell"><img src="{$vo.vd_logo}?imageView2/1/w/50/h/50"></div>
+                    </td>
+                    <td>
+                        <div class="layui-table-cell">{$vo.is_index == 1?'是':'否'}</div>
                     </td>
                     <td>
                         <div class="layui-table-cell">{$vo.room}</div>

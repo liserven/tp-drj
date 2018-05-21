@@ -28,7 +28,9 @@ class villa extends Base
     }
     public function doadd(){
         if($this->request->isPost())
-        {
+        { if (!$this->_checkAction()) {
+            return $this->ajaxShow(false, '无权此操作');
+        }
 
             $data['vd_name']            = input('vd_name');//别墅名称
             $data['vd_price']           = input('vd_price');//别墅价格
@@ -44,8 +46,10 @@ class villa extends Base
             $data['office']             = input('office');//厅
             $data['vd_class']           = input('vd_class');//一级分类
             $data['vd_class_r']         = input('vd_class_r');//二级分类
-            $data['vd_logo']            = input('vd_logo');
-            $data['vd_windows']         = input('vd_windows');
+            $data['vd_logo']            = input('vd_logo');//缩略图
+            $data['vd_windows']         = input('vd_windows');//窗户
+            $data['is_index']           = input('is_index');//是否推荐首页
+            $data['is_banner']          = input('is_banner');//是否推荐首页
             $Deploy                     = input('like/a');
             $lb                         = input('lb-input/a');
             $wg                         = input('wg-input/a');
@@ -210,7 +214,7 @@ class villa extends Base
             $data['office']             = input('office');//厅
             $data['vd_class']           = input('vd_class');//一级分类
             $data['vd_class_r']         = input('vd_class_r');//二级分类
-            $data['vd_logo']            = input('vd_logo');
+            $data['vd_logo']            = input('post.logo');
             $data['vd_windows']         = input('vd_windows'); //窗户
             $Deploy                     = input('like/a');//售后
             $lb                         = input('lb-input/a');//列表图
@@ -325,10 +329,16 @@ class villa extends Base
 
             $data = VillaData::get([ 'id'=> $id]);
             $img = Db::table('villa_img')->where(['vi_villa_id' => $id])->select(); //商品图片
+            $depl = Db::table('deploy')->select(); //商品售后
+            $depla = Db::table('villa_customer')->where('vid',$id)->select();
+
+
 
             $this->assign([
                 'arr' => $data,
-                'img' => $img
+                'img' => $img,
+                'data'=> $depl,
+                'res' => $depla
             ]);
             return $this->fetch();
         }

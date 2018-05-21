@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:73:"D:\phpStudy\WWW\drhome\public/../application/admin\view\villa\doedit.html";i:1526872142;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:73:"D:\phpStudy\WWW\drhome\public/../application/admin\view\villa\doedit.html";i:1526890981;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -40,7 +40,7 @@
 <div class="box-content">
     
 <div style="padding: 20px;">
-    <form class="layui-form" method="POST" enctype="multipart/form-data">
+    <form class="layui-form" method="post" enctype="multipart/form-data">
         <div class="layui-form-item">
             <label class="layui-form-label">别墅名称</label>
             <div class="layui-input-inline">
@@ -147,11 +147,58 @@
         <div class="layui-form-item">
             <label class="layui-form-label">缩略图</label>
             <div class="layui-col-md2">
-                <img src="<?php echo $arr['vd_logo']; ?>" id="img-upload-b" alt="" class="screen-img">
-                <input type="hidden" name="vd_logo" id="input-form-b" >
+                <img src="<?php echo $arr['vd_logo']; ?>" id="img-upload-b"  class="screen-img">
+                <input type="hidden" name="vd_logo" id="input-form-b" value="<?php echo $arr['vd_logo']; ?>">
             </div>
         </div>
+        <div class="layui-form-item" >
+            <label class="layui-form-label">服务选择</label>
+            <div class="layui-input-block">
+                <?php if(is_array($data) || $data instanceof \think\Collection || $data instanceof \think\Paginator): $i = 0; $__LIST__ = $data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+                    <input name="like[]"  title="<?php echo $vo['name']; ?>"  type="checkbox" value="<?php echo $vo['id']; ?>" <?php if(is_array($res) || $res instanceof \think\Collection || $res instanceof \think\Paginator): $i = 0; $__LIST__ = $res;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vd): $mod = ($i % 2 );++$i;if($vo['name'] == $vd['cus_name']): ?>checked<?php endif; endforeach; endif; else: echo "" ;endif; ?>>
+                <?php endforeach; endif; else: echo "" ;endif; ?>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">轮播图：</label>
+            <div class="layui-input-block">
+                <div class="layui-upload">
+                    <button type="button" class="layui-btn layui-btn-normal" id="lb-list">选择多文件</button>
+                    <div class="layui-upload-list">
+                        <table class="layui-table">
+                            <thead>
+                            <tr><th>文件名</th>
+                                <th>大小</th>
+                                <th>状态</th>
+                                <th>预览</th>
+                                <th>操作</th>
+                            </tr>
+                            </thead>
+                            <tbody id="lb-detail">
+                            <?php if(is_array($img) || $img instanceof \think\Collection || $img instanceof \think\Paginator): $i = 0; $__LIST__ = $img;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;if($vo['type'] == '6'): ?>
+                                    <tr>
+                                        <td>
+                                            原图
+                                        </td>
+                                        <input type="hidden" name="wg-input[]" id="lsy-<?php echo $key; ?>" value="<?php echo $vo['img']; ?>" />
+                                        <td></td>
+                                        <td>已上传</td>
+                                        <td class="yl-'+index+'"><img src="<?php echo $vo['img']; ?>" alt="" width="80" height="80"></td>
+                                        <td>
+                                            <button class="layui-btn layui-btn-mini layui-btn-danger delete-img" data-id="<?php echo $vo['id']; ?>">删除</button>
+                                        </td>
+                                    </tr>
+                                <?php endif; endforeach; endif; else: echo "" ;endif; ?>
+                            </tbody>
+                        </table>
 
+                        </tbody>
+                        </table>
+                    </div>
+                    <button type="button" class="layui-btn" id="lb-start-btn">开始上传</button>
+                </div>
+            </div>
+        </div>
         <div class="layui-form-item">
             <label class="layui-form-label">外观图：</label>
             <div class="layui-input-block">
@@ -173,7 +220,7 @@
                                             <td>
                                                 原图
                                             </td>
-                                            <input type="hidden" name="wg-input[]" id="lsy-<?php echo $key; ?>" value="<?php echo $vo['img']; ?>" />
+                                            <input type="hidden" name="wg-input[]"  value="<?php echo $vo['img']; ?>" />
                                             <td></td>
                                             <td>已上传</td>
                                             <td class="yl-'+index+'"><img src="<?php echo $vo['img']; ?>" alt="" width="80" height="80"></td>

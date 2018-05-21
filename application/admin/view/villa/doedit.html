@@ -1,6 +1,6 @@
 <layout name="layout" />
 <div style="padding: 20px;">
-    <form class="layui-form" method="POST" enctype="multipart/form-data">
+    <form class="layui-form" method="post" enctype="multipart/form-data">
         <div class="layui-form-item">
             <label class="layui-form-label">别墅名称</label>
             <div class="layui-input-inline">
@@ -105,13 +105,82 @@
             </div>
         </div>
         <div class="layui-form-item">
+            <label class="layui-form-label">推荐Banner</label>
+            <div class="layui-input-block">
+                <input name="banner" value="1" title="是"  type="radio" <eq name="$arr.is_banner" value="1">checked</eq>>
+                <input name="banner" value="2" title="否" type="radio" <eq name="$arr.is_banner" value="1">checked</eq>>
+            </div>
+            <div class="layui-col-md2 display:none">
+                <img src="" id="img-upload-c" alt="" class="screen-img" >
+                <input type="hidden" name="banner" id="input-form-c">
+            </div>
+
+
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">推荐首页</label>
+            <div class="layui-input-block">
+                <input name="is_index" value="1" title="是"  type="radio"  <eq name="$arr.is_index" value="1">checked</eq>>
+                <input name="is_index" value="2" title="否"  type="radio" <eq name="$arr.is_index" value="2">checked</eq>>
+            </div>
+
+            <div class="layui-form-item">
             <label class="layui-form-label">缩略图</label>
             <div class="layui-col-md2">
-                <img src="{$arr.vd_logo}" id="img-upload-b" alt="" class="screen-img">
-                <input type="hidden" name="vd_logo" id="input-form-b" >
+                <img src="{$arr.vd_logo}" id="img-upload-b"  class="screen-img">
+                <input type="hidden" name="vd_logo" id="input-form-b" value="{$arr.vd_logo}">
             </div>
         </div>
+        <div class="layui-form-item" >
+            <label class="layui-form-label">服务选择</label>
+            <div class="layui-input-block">
+                <volist name="data" id="vo">
+                    <input name="like[]"  title="{$vo.name}"  type="checkbox" value="{$vo.id}" <volist name="res" id="vd"><eq name="vo.name" value="$vd.cus_name">checked</eq></volist>>
+                </volist>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">轮播图：</label>
+            <div class="layui-input-block">
+                <div class="layui-upload">
+                    <button type="button" class="layui-btn layui-btn-normal" id="lb-list">选择多文件</button>
+                    <div class="layui-upload-list">
+                        <table class="layui-table">
+                            <thead>
+                            <tr><th>文件名</th>
+                                <th>大小</th>
+                                <th>状态</th>
+                                <th>预览</th>
+                                <th>操作</th>
+                            </tr>
+                            </thead>
+                            <tbody id="lb-detail">
+                            <volist name="img" id="vo">
+                                <eq name="$vo.type" value="6">
+                                    <tr>
+                                        <td>
+                                            原图
+                                        </td>
+                                        <input type="hidden" name="wg-input[]" id="lsy-{$key}" value="{$vo.img}" />
+                                        <td></td>
+                                        <td>已上传</td>
+                                        <td class="yl-'+index+'"><img src="{$vo.img}" alt="" width="80" height="80"></td>
+                                        <td>
+                                            <button class="layui-btn layui-btn-mini layui-btn-danger delete-img" data-id="{$vo.id}">删除</button>
+                                        </td>
+                                    </tr>
+                                </eq>
+                            </volist>
+                            </tbody>
+                        </table>
 
+                        </tbody>
+                        </table>
+                    </div>
+                    <button type="button" class="layui-btn" id="lb-start-btn">开始上传</button>
+                </div>
+            </div>
+        </div>
         <div class="layui-form-item">
             <label class="layui-form-label">外观图：</label>
             <div class="layui-input-block">
@@ -134,7 +203,7 @@
                                             <td>
                                                 原图
                                             </td>
-                                            <input type="hidden" name="wg-input[]" id="lsy-{$key}" value="{$vo.img}" />
+                                            <input type="hidden" name="wg-input[]"  value="{$vo.img}" />
                                             <td></td>
                                             <td>已上传</td>
                                             <td class="yl-'+index+'"><img src="{$vo.img}" alt="" width="80" height="80"></td>

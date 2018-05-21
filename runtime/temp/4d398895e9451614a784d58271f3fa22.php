@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:74:"D:\phpStudy\WWW\drhome\public/../application/admin\view\villa\unvilla.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:74:"D:\phpStudy\WWW\drhome\public/../application/admin\view\villa\unvilla.html";i:1526882744;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -98,6 +98,33 @@
                 <th>
                     <div class="layui-table-cell"><span>平米价格</span></div>
                 </th>
+                <th>
+                    <div class="layui-table-cell"><span>占地面积</span></div>
+                </th>
+                <th>
+                    <div class="layui-table-cell"><span>建筑面积</span></div>
+                </th>
+                <th>
+                    <div class="layui-table-cell"><span>层高</span></div>
+                </th>
+                <th>
+                    <div class="layui-table-cell"><span>用户门</span></div>
+                </th>
+                <th>
+                    <div class="layui-table-cell"><span>窗户</span></div>
+                </th>
+                <th>
+                    <div class="layui-table-cell"><span>屋面瓦</span></div>
+                </th>
+                <th>
+                    <div class="layui-table-cell"><span>外墙</span></div>
+                </th>
+                <th data-field="createdTime">
+                    <div class="layui-table-cell"><span>缩略图</span></div>
+                </th>
+                <th data-field="type">
+                    <div class="layui-table-cell"><span>推荐首页</span></div>
+                </th>
                 <th data-field="createdTime">
                     <div class="layui-table-cell"><span>室</span></div>
                 </th>
@@ -132,6 +159,33 @@
                         <div class="layui-table-cell"><?php echo $vo['vd_unit_price']; ?></div>
                     </td>
                     <td>
+                        <div class="layui-table-cell"><?php echo $vo['vd_covers_area']; ?></div>
+                    </td>
+                    <td>
+                        <div class="layui-table-cell"><?php echo $vo['vd_building_area']; ?></div>
+                    </td>
+                    <td>
+                        <div class="layui-table-cell"><?php echo msubstr($vo['vd_height'],0,8); ?></div>
+                    </td>
+                    <td>
+                        <div class="layui-table-cell"><?php echo $vo['vd_door']; ?></div>
+                    </td>
+                    <td>
+                        <div class="layui-table-cell"><?php echo $vo['vd_windows']; ?></div>
+                    </td>
+                    <td>
+                        <div class="layui-table-cell"><?php echo $vo['vd_wmw']; ?></div>
+                    </td>
+                    <td>
+                        <div class="layui-table-cell"><?php echo msubstr($vo['vd_wq'],0,8); ?></div>
+                    </td>
+                    <td>
+                        <div class="layui-table-cell"><img src="<?php echo $vo['vd_logo']; ?>?imageView2/1/w/50/h/50"></div>
+                    </td>
+                    <td>
+                        <div class="layui-table-cell"><?php echo $vo['is_index']==1?'是':'否'; ?></div>
+                    </td>
+                    <td>
                         <div class="layui-table-cell"><?php echo $vo['room']; ?></div>
                     </td>
                     <td>
@@ -144,7 +198,7 @@
 
                     <td>
                         <div class="layui-table-cell">
-                            <a class="layui-btn layui-btn-xs edit">编辑</a>
+
                             <a class="layui-btn layui-btn-xs layui-btn-normal regain" data-id="<?php echo $vo['id']; ?>">上架</a>
                             <a class="layui-btn layui-btn-danger layui-btn-xs do_del">删除</a>
 

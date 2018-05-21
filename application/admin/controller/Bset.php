@@ -88,35 +88,38 @@ class Bset extends Base{
     }
 
 
-    public function doedit(){
+    public function doEdit(){
         if ($this->request->isPost()) {
             if (!$this->_checkAction()) {
                 return $this->ajaxShow(false, '无权此操作');
             }
             $data['id']      = input('id');
-            $data['clum_id'] = input('province');
-            $data['name']    = input('name/a');
+            $data['clumr_id'] = input('province');
+            $data['name']    = input('name');
 
 
-
+              Db::commit();
             try{
-                $result = BuildingDetailsSet::create($data);
+                $result = BuildingDetailsSet::update($data);
+                echo $result->getLastSql();exit;
                 return $this->resultHandle($result);
 
             }catch (\Exception $e)
             {
+                Db::rollback();
                 return show( false, $e->getMessage() );
             }
         } else {
             (new IDMustBePositiveInt())->goCheck();
             $id = input('id');
             $province = db('building_column')->where('pid','neq',0)->select();
+            $data = Db::table('building_details_set')->where('id',$id)->find();
             $this->assign([
                 'province' => $province,
+                'data'     => $data
             ]);
-            $data = Db::table('building_details_set')->where('id',$id)->select();
 
-            $this->assign('data', $data);
+
             return $this->fetch();
         }
     }
