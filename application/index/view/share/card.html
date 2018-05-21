@@ -10,16 +10,18 @@
 	<link rel="stylesheet" type="text/css" href="__JS__/index/src/css/public.css">
 	<link rel="stylesheet" type="text/css" href="__JS__/index/src/css/page_style.css">
 	<style type="text/css">
+		html {
+			height: 100%;
+		}
 		.card_content {
 			background: url(__JS__/index/src/image/logo_image.jpg) 0 0 no-repeat;
 			background-size: 100%;
-			position: fixed;
 			height: 100%;width: 100%;
 		}
 	</style>
 </head>
-<body>
-	<div class="card_content">
+<body style="height: 100%;">
+	<div class="card_content" style="height: 100%;">
 		<div class="socard text-center">
 			<ul class="personal">
 				<img class="avatar_logo" src="{$data.ud_logo}">

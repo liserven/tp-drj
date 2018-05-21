@@ -81,7 +81,7 @@ class BuildingAliPayNotifyService
                     $orderData->payment_type = 'zfb';
                     $orderData->trade_no = $trade_no;
                     $orderData->parment_money = $total_fee;
-                    $orderData->pay_time = $pay_date;
+                    $orderData->pay_time = time();
                     $orderData->save();
                     BuildingOrderDetail::where(['order_id'=> $orderData['id']])->update(['status'=> $status]);
                     UserNotices::create($NoticeData);

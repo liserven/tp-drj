@@ -55,53 +55,81 @@ class Index extends Base
     //非合伙人进入之后获取县级的合伙人列表
     public function getPartnerList()
     {
-
-        $county = input('county');
-        $city = input('city');
+        $limit = $this->getLimit();
+        /**
+         *
+         * 如果是费登录用户 肯定是搜索合伙人的
+         * 如果是合伙人就是搜索用户
+         *
+         *
+         */
+        $type = 2;
         $this->checkLogins();
-        if( $this->user )
-        {
-            //如果是登录用户
-            $partner_user = Db::table('partner_user')->where(['pu_user_id'=> $this->user['ud_id']])
-                ->paginate(10);
+        if (!empty($this->user)) {
+            if ($this->user['type'] == 2) {
+                //为1是搜索用户
+                $type = 1;
+            }
         }
-        else{
-            $partner_user = [];
-        }
-        if( empty($partner_user) )
+        if( $type == 2 )
         {
+            $county = input('county');
+            $city = input('city');
             if( empty($county) && empty($city))
             {
                 throw new ParameterException([
                     'msg' => '地区必须填写一个'
                 ]);
             }
-            $partner_data = UserData::getCityPartner([ 'ud.county'=> $county]);
-            if( $partner_data->isEmpty() )
+            //如果为2就是搜索合伙人
+            if($this->user)
             {
-                $partner_data = UserData::getCityPartner([ 'ud.city'=> $city]);
-                if($partner_data->isEmpty())
+                //如果是登录用户  先查看是否有绑定合伙人
+                $partner_user = Db::table('partner_user')->where(['pu_user_id'=> $this->user['ud_id']])
+                    ->paginate(10);
+            }
+            else{
+                $partner_user = Db::table('partner_user')->where(['pu_user_id'=> 0 ])
+                    ->paginate(10);
+            }
+            if($partner_user->isEmpty())
+            {
+
+                //如果没有绑定合伙人
+                $partner_data = UserData::getCityPartner([ 'ud.county'=> $county], $limit);
+                if( $partner_data->isEmpty() )
                 {
-                    throw new PartnerException();
+                    $partner_data = UserData::getCityPartner([ 'ud.city'=> $city], $limit);
                 }
+            }
+            foreach ($partner_data as $key=>&$partner)
+            {
+                $star = Db::table('partner_star')->where([ 'pid'=> $partner['ud_id']])->avg('star');
+                $partner['star'] = $star <= 0 ? 5 : $star;
+                $partner['deal'] = Db::table('partner_user')->where([ 'pu_partner_id'=>$partner['ud_id'], 'status'=> PartnerUserStatus::SIGN])->count();
+                $partner['comm'] = 999;
+                $partner['share_url'] = 'http://www.61drhome.cn/share/card?id='.$partner['ud_id'];
             }
         }
         else{
-            $partner_data = Db::table('user_data')->alias('ud')
-                ->where([ 'ud.ud_id'=>$partner_user[0]['pu_partner_id'], 'ud.type'=>2, 'ud.status'=>1 ])
-                ->join('__PARTNER_LAUD__ pl', 'pl.pid=ud.ud_id', 'left')
+            //搜用公海用户
+            $partner_data = Db::table('seas')->alias('s')->where( [ 'ud.county'=> $this->user['county'], 'ud.type'=> 1, 'ud.status'=> 1])->
+                join('__USER_DATA__ ud', 'ud.ud_id=s.uid', 'left')
                 ->group('ud.ud_id')
                 ->field('ud.ud_name, ud.ud_phone, ud.ud_logo, ud.ud_sex, ud.city, ud.province, ud.county, ud.town,
-                     count(distinct pl.id) as likes, ud.status,ud.ud_id')->limit(1)->select();
+                     ud.status,ud.ud_id')->paginate($limit);
+            if( $partner_data->isEmpty() )
+            {
+                $partner_data = Db::table('seas')->alias('s')->where( [ 'ud.city'=> $this->user['city'], 'ud.type'=> 1, 'ud.status'=> 1])->
+                join('__USER_DATA__ ud', 'ud.ud_id=s.uid', 'left')
+                    ->group('ud.ud_id')
+                    ->field('ud.ud_name, ud.ud_phone, ud.ud_logo, ud.ud_sex, ud.city, ud.province, ud.county, ud.town,
+                     ud.status,ud.ud_id')->paginate($limit);
+            }
         }
-
-        foreach ($partner_data as $key=>&$partner)
+        if($partner_data->isEmpty())
         {
-            $star = Db::table('partner_star')->where([ 'pid'=> $partner['ud_id']])->avg('star');
-            $partner['star'] = $star <= 0 ? 5 : $star;
-            $partner['deal'] = Db::table('partner_user')->where([ 'pu_partner_id'=>$partner['ud_id'], 'status'=> PartnerUserStatus::SIGN])->count();
-            $partner['comm'] = 999;
-            $partner['share_url'] = 'http://www.61drhome.cn/share/card?id='.$partner['ud_id'];
+            throw new PartnerException();
         }
         return show( true, 'ok', $partner_data);
     }

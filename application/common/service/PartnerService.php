@@ -175,6 +175,15 @@ class PartnerService
                 'msg' => '地区不可缺少',
             ]);
         }
+        $refee_phone = input('referee_phone') ;
+        $refeePartner = UserData::get([ 'ud_phone'=> $refee_phone, 'type'=>2 ]);
+        if( !$refeePartner )
+        {
+            throw new ParameterException([
+                'msg'=> '推荐人必须是合伙人'
+            ]);
+        }
+
         $cityPartnerLimit = City::getPartnerLimitNum($city);
 
 
@@ -247,6 +256,8 @@ class PartnerService
             'province' => input('province') ,          //所在省
             'county' => input('county') ,          //所在县
             'town' => input('town') ,          //所在镇
+            'referee_phone' => $refeePartner['partner_phone'], //推荐人手机号
+            'referee' => $refeePartner['referee'] ,          //推荐人姓名
             'user_id' => $this->userId ,       //用户id
             'order_no' => makeOrderNo(),
             'type'=> input('type'),

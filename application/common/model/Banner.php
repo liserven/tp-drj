@@ -44,6 +44,6 @@ class Banner extends BaseModel
         $where['b.status'] = 1;
 //        $where['b.start_time'] = ['<', time()];
 //        $where['b.over_time'] = ['>', time()];
-        return self::getCommon($where)->field('b.href,b.img,b.title,b.type, b.gid')->limit(0, $rows)->select();
+        return self::getCommon($where)->field('b.href,b.img,b.title,b.type,b.url, b.gid')->limit(0, $rows)->select();
     }
 }

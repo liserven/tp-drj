@@ -87,7 +87,7 @@ class BuildingDetails extends BaseModel
 
     public static function getIndex()
     {
-        return self::where([ 'status'=>1 ])->order([ 'is_index'=> 'asc', 'order'=> 'asc'])->field('id,g_name, g_price, g_img')->limit(0,9)->select();
+        return self::where([ 'status'=>1 ])->order([ 'is_index'=> 'asc', 'order'=> 'asc'])->field('id,g_name, g_price, g_img, g_price_r')->limit(0,9)->select();
     }
 
 

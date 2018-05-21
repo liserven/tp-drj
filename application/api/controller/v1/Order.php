@@ -43,8 +43,14 @@ class Order extends Base
             ]);
         }
         $limit = $this->getLimit();
-        $oBuildings = Db::table('building_order_detail')->where(['uid' => $this->user['ud_id'], 'status' => $status])
-            ->field('id, u_address_id as snap_address,gid,g_name as snap_name,g_money_all as total_price,g_money_solo,g_number as total_count, g_img as snap_img,create_at,status,message,g_type')->paginate($limit);
+        $oBuildings = Db::table('building_order')->where(['user_id' => $this->user['ud_id'], 'status' => $status])
+
+            ->field('id, order_no, total_count, snap_img, snap_name, total_price')->paginate($limit);
+//        $oBuildings = Db::table('building_order_detail')->where(['uid' => $this->user['ud_id'], 'status' => $status])
+//
+//            ->field('order_id as id, u_address_id as snap_address,gid,g_name as snap_name,g_money_all as total_price,order_no
+//            ,g_money_solo,g_number as total_count, g_img as snap_img,create_at,status,message,g_type')->paginate($limit);
+
         if ($oBuildings->isEmpty()) {
             throw new BuildingException([
                 'msg' => '当前没有订单'
@@ -74,7 +80,7 @@ class Order extends Base
         }
         $details = BuildingOrderDetail::getBuildOrdersByOrderId(['order_id' => $oBuilding['id']]); //获取订单详情
         foreach ($details as &$detail) {
-            if ($detail['status'] == BuildingOrderStatus::PAID) {
+            if ($detail['status'] == BuildingOrderStatus::TRANSLATE) {
                 //如果已经支付 有物流信息
                 $wl = (new KdniaoService())->getOrderTracesByJson($detail['express_code'], $detail['logistics'], $oBuilding['pay_time']);
                 $detail['wl_name'] = $wl['kd_name'];
@@ -233,8 +239,8 @@ class Order extends Base
     public function confirmReceive($id)
     {
         (new IDMustBePositiveInt())->goCheck();
-        $order = BuildingOrderDetail::get($id);
-        if( !$order || $order['uid'] != $this->user['ud_id'])
+        $order = BuildingOrder::get($id);
+        if( !$order || $order['user_id'] != $this->user['ud_id'])
         {
             return show( false , '该订单不存在或不属于你');
 
@@ -246,12 +252,14 @@ class Order extends Base
         Db::startTrans();
         try{
             $order->status = BuildingOrderStatus::SIGN;
-            $order->is_receive = 2;
             $order->save();
+            Db::table('building_order_detail')->where([ 'order_id'=> $id])->update([ 'status'=> BuildingOrderStatus::SIGN, 'is_receive'=> 2]);
             UserNotices::create([
                 'user_id'=> $this->user['ud_id'],
                 'topic'=> '收货通知',
-                'content'=> '您所购买的'.$order['g_name'].'已经已经确认收货, 欢迎选择定容家,祝您购物愉快!',
+                'content'=> '您所购买的'.$order['snap_name'].'已经已经确认收货, 欢迎选择定容家,祝您购物愉快!',
+                'type'=> 2,
+                'img'=> $order['snap_img']
             ]);
             Db::commit();
             return show( true, '确认收货成功');

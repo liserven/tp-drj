@@ -34,4 +34,9 @@ class Banner extends Base
         }
         return show(true, '', $banners);
     }
+
+    public function aaa()
+    {
+    }
+
 }

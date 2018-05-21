@@ -268,7 +268,9 @@ Route::get('share/card', 'index/Share/card');
 Route::get('share/home', 'index/Share/home');
 Route::get('share/building', 'index/Share/index');
 Route::get('swoole/index', 'index/Share/swoole');
+Route::get('send_swoole', 'index/Swoole/index');
 Route::get('share/redpacket', 'index/Share/redpacket');
+Route::get('upload', 'index/Download/index');
 
 
 
@@ -293,6 +295,11 @@ Route::get('api/:version/l_town', 'api/:version.City/getTown');
 
 Route::post('api/:version/kdtuisong', 'api/:version.KdNiao/kdtuisong'); //订单
 Route::post('api/:version/subscribe', 'api/:version.KdNiao/subscribe'); //订单
+
+
+
+
+Route::get('api/:version/encode', 'api/:version.Geo/encode'); //订单
 
 
 

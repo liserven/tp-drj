@@ -25,8 +25,8 @@ class Geo extends Base
 
     public function index()
     {
-        $n_latitude = input('lat');  //纬度
-        $n_longitude = input('lng'); //经度
+        $n_latitude = input('lat') ? input('lat') : 39.9148891;  //纬度
+        $n_longitude = input('lng')? input('lng'):116.4038740; //经度
         $limit = $this->getLimit();
         if (!$n_longitude || !$n_latitude) {
             throw new UserException([
@@ -52,7 +52,7 @@ class Geo extends Base
         }
         $result = substr($result, 0, 3);
         //获取附近的所有用户列表
-        $partners = UserData::where(['geohash' => ['LIKE', $result . '%'], 'type' => $type, 'status'=> 1])->select();
+        $partners = UserData::where(['geohash' => ['LIKE', $result . '%'], 'type' => $type, 'status' => 1])->select();
         $ids = array_column(collection($partners)->toArray(), 'ud_id'); //获取所有用户id
         //跟查询条件查询用户
 
@@ -81,26 +81,21 @@ class Geo extends Base
         }
         $total = count($users);
         $tmp = [];
-        if( $total > 1 )
-        {
-            for ( $i=0; $i<$total; $i++)
-            {
-                for ($j=0; $j<$total-1; $j++)
-                {
-                    if( $users[$j]['distance'] > $users[$j+1]['distance']  )
-                    {
-                        $tmp = $users[$j+1];
-                        $users[$j+1] = $users[$j];
+        if ($total > 1) {
+            for ($i = 0; $i < $total; $i++) {
+                for ($j = 0; $j < $total - 1; $j++) {
+                    if ($users[$j]['distance'] > $users[$j + 1]['distance']) {
+                        $tmp = $users[$j + 1];
+                        $users[$j + 1] = $users[$j];
                         $users[$j] = $tmp;
                     }
-
-                    $users[$i]['distance'] = round($users[$i]['distance']/1000, 2) . 'km';
+                    $users[$i]['juli'] = round($users[$i]['distance'] / 1000, 2) . 'km';
                 }
             }
-        }else{
-            $users[0]['distance'] = round($users[0]['distance']/1000, 2) . 'km';
+        } else {
+            $users[0]['juli'] = round($users[0]['distance'] / 1000, 2) . 'km';
         }
-        return show( true, 'ok', $users);
+        return show(true, 'ok', $users);
     }
 
 
@@ -122,28 +117,24 @@ class Geo extends Base
     private function getPartnerList($ids, $limit)
     {
         //先查看我有没有绑定的合伙人
-        if( $this->user )
-        {
+        if ($this->user) {
             //如果是登录用户
-            $partner_user = Db::table('partner_user')->where(['pu_user_id'=> $this->user['ud_id']])
+            $partner_user = Db::table('partner_user')->where(['pu_user_id' => $this->user['ud_id']])
                 ->paginate(10);
-        }
-        else{
+        } else {
             $partner_user = [];
         }
-        if( empty($partner_user) )
-        {
+        if (empty($partner_user)) {
 
             $partner_data = Db::table('user_data')->alias('ud')
-                ->where([ 'ud.ud_id'=>[ 'in', $ids ] , 'ud.type'=>2, 'ud.status'=>1 ])
+                ->where(['ud.ud_id' => ['in', $ids], 'ud.type' => 2, 'ud.status' => 1])
                 ->join('__PARTNER_LAUD__ pl', 'pl.pid=ud.ud_id', 'left')
                 ->group('ud.ud_id')
                 ->field('ud.ud_name, ud.ud_phone, ud.ud_logo, ud.ud_sex, ud.city, ud.province, ud.county, ud.town,
                      count(distinct pl.id) as likes, ud.status,ud.ud_id,ud.long, ud.lat')->paginate($limit);
-        }
-        else{
+        } else {
             $partner_data = Db::table('user_data')->alias('ud')
-                ->where([ 'ud.ud_id'=>$partner_user[0]['pu_partner_id'], 'ud.type'=>2, 'ud.status'=>1 ])
+                ->where(['ud.ud_id' => $partner_user[0]['pu_partner_id'], 'ud.type' => 2, 'ud.status' => 1])
                 ->join('__PARTNER_LAUD__ pl', 'pl.pid=ud.ud_id', 'left')
                 ->group('ud.ud_id')
                 ->field('ud.ud_name, ud.ud_phone, ud.ud_logo, ud.ud_sex, ud.city, ud.province, ud.county, ud.town,
@@ -155,16 +146,34 @@ class Geo extends Base
             ]);
         }
         $partners = [];
-        foreach ($partner_data as $key=>&$partner)
-        {
-            $star = Db::table('partner_star')->where([ 'pid'=> $partner['ud_id']])->avg('star');
+        foreach ($partner_data as $key => &$partner) {
+            $star = Db::table('partner_star')->where(['pid' => $partner['ud_id']])->avg('star');
             $partners[$key] = $partner;
             $partners[$key]['star'] = $star <= 0 ? 5 : $star;
-            $partners[$key]['deal'] = Db::table('partner_user')->where([ 'pu_partner_id'=>$partner['ud_id'], 'status'=> PartnerUserStatus::SIGN])->count();
+            $partners[$key]['deal'] = Db::table('partner_user')->where(['pu_partner_id' => $partner['ud_id'], 'status' => PartnerUserStatus::SIGN])->count();
             $partners[$key]['comm'] = 999;
-            $partners[$key]['share_url'] = 'http://www.61drhome.cn/share/card?id='.$partner['ud_id'];
+            $partners[$key]['share_url'] = 'http://www.61drhome.cn/share/card?id=' . $partner['ud_id'];
         }
         return $partners;
+    }
+
+
+
+    public function encode($lat, $lng)
+    {
+        $n_latitude = input('lat');  //纬度
+        $n_longitude = input('lng'); //经度
+        $limit = $this->getLimit();
+        if (!$n_longitude || !$n_latitude) {
+            throw new UserException([
+                'msg' => '当前定位不可为空'
+            ]);
+        }
+        //搜索类型   1搜索用户 2搜索合伙人 默认搜索合伙人
+        $type = 2;
+        $hash = new GeoHash();
+        $result = $hash->encode($n_latitude, $n_longitude);
+        return $result;
     }
 
 }

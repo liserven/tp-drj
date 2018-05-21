@@ -270,7 +270,7 @@ nav {
 	margin-top: 1.5rem;
 }
 .avatar_name span {
-	font-size: 3.2rem;
+	font-size: 2.6rem;
 	margin: 0 1rem 0 0;
 }
 .address {
@@ -341,7 +341,7 @@ nav {
 	height: 18.4rem;
 	width: 90%;
 	margin: 32rem auto 0;
-	background: url(./../image/redpacket_qiang.jpg) 0 0 no-repeat;
+	background: url(./../image/redpacket_qiang.png) 0 0 no-repeat;
 	background-size: 100%;
 }
 .redpacketop ul {

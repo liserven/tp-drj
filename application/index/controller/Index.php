@@ -23,8 +23,7 @@ class Index extends Controller
 
     public function index()
     {
-        echo phpinfo();die;
-
+echo phpinfo();
         return $this->fetch();
 
     }

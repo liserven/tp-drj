@@ -9,6 +9,7 @@
 namespace app\api\controller\v1;
 
 
+use app\common\model\BuildingOrder;
 use app\common\model\BuildingOrderDetail;
 use app\common\model\UserNotices;
 use app\common\service\BuildingAliPayNotifyService;
@@ -31,9 +32,9 @@ class KdNiao extends Base
         {
             return show(false, '当前没有物流信息', [], 90004);
         }
-
+        $orders = BuildingOrder::get($order['order_id']);
         $kdService = new KdniaoService();
-        $result =  $kdService->getOrderTracesByJson($order['express_code'],$order['logistics']);
+        $result =  $kdService->getOrderTracesByJson($order['express_code'],$order['logistics'], $orders['pay_time']);
         $phone = Db::table('express_code')->where(['code'=> $result['ShipperCode']])->find();
         $result['phone'] = $phone['phone'];
         $result['g_img'] = $order['g_img'];

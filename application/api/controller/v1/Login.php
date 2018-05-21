@@ -53,6 +53,17 @@ class Login extends Base
      * @return 注册成功 跳转登录页面，失败 提示错误消息
      */
     public function register(){
+        $province = input('province');
+        $city = input('city');
+        $county = input('county');
+        $town = input('town');
+        if( !$province || !$city || !$county || !$town )
+        {
+            throw new ParameterException([
+                'msg'=> '地区参数错误'
+            ]);
+        }
+
         $data['ud_phone']    = input('post.phone');
         $data['ud_name']    = '用户'.rand(1000,9999);
         $data['ud_logo']    = 'http://ozi65v7vu.bkt.clouddn.com/%E7%94%B7.png';
@@ -93,6 +104,11 @@ class Login extends Base
             $data['ud_name'] = input('nickname');
             $data['ud_sex'] = input('sex');
             $data['ud_logo'] = input('logo');
+            $data['province'] = $province;
+            $data['city'] = $city;
+            $data['county'] = $county;
+            $data['town'] = $town;
+
             $openid = input('openid');
             if( $type == 'wx' )
             {
