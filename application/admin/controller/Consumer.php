@@ -10,22 +10,47 @@ use think\Exception;
 
 class Consumer extends Base{
 
+    protected function _initialize()
+    {
+        $this->assign('provice', Db::table('provice')->select());
+        parent::_initialize();
+    }
+
+
     //获取用户列表
     public function tolist(){
+        $province = input('get.provice');
+        $city = input('get.city');
+        $county = input('get.county');
+        $town = input('get.town');
         $phone = input('get.phone');
         $name  = input('get.name');
         $where = [
             'type' => 1,
+            'status' => 1
         ];
+        if (!empty($town)) {
+            $where['town'] = $town;
+        }
+        if (!empty($county)) {
+            $where['county'] = $county;
+        }
+        if (!empty($city)) {
+            $where['city'] =$city;
+        }
+        if (!empty($province)) {
+            $where['province'] = $province;
+        }
         if (!empty($phone)) {
             $where['ud_phone'] = $phone;
         }
         if (!empty($name)) {
             $where['ud_name'] = $name;
         }
-        $list = db('user_data')->where($where)->paginate('15');
-        $this->assign('page',$list);
+        $userlist = Db::table('user_data')->where($where)->paginate('15');
+        $this->assign('page', $userlist);
         return $this->fetch();
+
     }
 
     //查找

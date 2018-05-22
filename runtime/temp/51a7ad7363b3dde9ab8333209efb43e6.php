@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:73:"D:\phpStudy\WWW\drhome\public/../application/admin\view\villa\doedit.html";i:1526890981;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:73:"D:\phpStudy\WWW\drhome\public/../application/admin\view\villa\doedit.html";i:1526891827;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -145,6 +145,26 @@
             </div>
         </div>
         <div class="layui-form-item">
+            <label class="layui-form-label">推荐Banner</label>
+            <div class="layui-input-block">
+                <input name="banner" value="1" title="是"  type="radio" <?php if($arr['is_banner'] == '1'): ?>checked<?php endif; ?>>
+                <input name="banner" value="2" title="否" type="radio" <?php if($arr['is_banner'] == '1'): ?>checked<?php endif; ?>>
+            </div>
+            <div class="layui-col-md2 display:none">
+                <img src="" id="img-upload-c" alt="" class="screen-img" >
+                <input type="hidden" name="banner" id="input-form-c">
+            </div>
+
+
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">推荐首页</label>
+            <div class="layui-input-block">
+                <input name="is_index" value="1" title="是"  type="radio"  <?php if($arr['is_index'] == '1'): ?>checked<?php endif; ?>>
+                <input name="is_index" value="2" title="否"  type="radio" <?php if($arr['is_index'] == '2'): ?>checked<?php endif; ?>>
+            </div>
+
+            <div class="layui-form-item">
             <label class="layui-form-label">缩略图</label>
             <div class="layui-col-md2">
                 <img src="<?php echo $arr['vd_logo']; ?>" id="img-upload-b"  class="screen-img">

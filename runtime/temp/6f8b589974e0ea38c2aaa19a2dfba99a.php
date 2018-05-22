@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:72:"D:\phpStudy\WWW\drhome\public/../application/admin\view\villa\doadd.html";i:1526883189;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:72:"D:\phpStudy\WWW\drhome\public/../application/admin\view\villa\doadd.html";i:1526891798;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -147,8 +147,8 @@
         <div class="layui-form-item">
             <label class="layui-form-label">推荐Banner</label>
             <div class="layui-input-block">
-                <input name="banner" value="1" title="是"  type="radio" >
-                <input name="banner" value="2" title="否" checked="" type="radio">
+                <input name="is_banner" value="1" title="是"  type="radio" >
+                <input name="is_banner" value="2" title="否" checked="" type="radio">
             </div>
             <div class="layui-col-md2 display:none">
                 <img src="" id="img-upload-c" alt="" class="screen-img" >

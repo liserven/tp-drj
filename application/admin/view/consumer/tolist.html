@@ -9,6 +9,31 @@
         <form class="layui-form" id="query_form" action="">
             <div class="layui-form-item" style="padding-left:20px ;">
                 <div class="layui-block">
+                    <label class="layui-form-mid">地区：</label>
+                    <div class="layui-input-inline">
+                        <select name="provice" id="provice" lay-filter="provice">
+                            <option value="">请选择</option>
+                            <volist name="provice" id="vo">
+                                <option value="{$vo.provice_name}" data-id="{$vo.provice_id}" >{$vo.provice_name}</option>
+                            </volist>
+                        </select>
+                    </div>
+                    <div class="layui-input-inline">
+                        <select name="city" id="city" lay-filter="city">
+                            <option value="">选择市级</option>
+
+                        </select>
+                    </div>
+                    <div class="layui-input-inline">
+                        <select name="county" id="county" lay-filter="county">
+                            <option value="">选择县级</option>
+                        </select>
+                    </div>
+                    <div class="layui-input-inline">
+                        <select name="town" id="town" lay-filter="town">
+                            <option value="">选择镇级</option>
+                        </select>
+                    </div>
                     <div class="layui-inline">
                         <label class="layui-form-mid">手机号：</label>
                         <div class="layui-input-inline">
@@ -66,6 +91,9 @@
                 <th data-field="sex">
                     <div class="layui-table-cell"><span>性别</span></div>
                 </th>
+                <th data-field="sex">
+                    <div class="layui-table-cell"><span>地区</span></div>
+                </th>
 
 
                 <th data-field="createdTime">
@@ -112,6 +140,9 @@
                         </else>
 
                     </if>
+                    <td>
+                        <div class="layui-table-cell">{$vo.province}{$vo.city}{$vo.county}{$vo.town}</div>
+                    </td>
                     <td>
                         <div class="layui-table-cell">{$vo.create_at|date='Y-m-d,H:i:m',###}</div>
                     </td>

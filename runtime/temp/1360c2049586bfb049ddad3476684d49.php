@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:76:"D:\phpStudy\WWW\drhome\public/../application/admin\view\consumer\tolist.html";i:1526547977;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:76:"D:\phpStudy\WWW\drhome\public/../application/admin\view\consumer\tolist.html";i:1526954140;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -49,6 +49,31 @@
         <form class="layui-form" id="query_form" action="">
             <div class="layui-form-item" style="padding-left:20px ;">
                 <div class="layui-block">
+                    <label class="layui-form-mid">地区：</label>
+                    <div class="layui-input-inline">
+                        <select name="provice" id="provice" lay-filter="provice">
+                            <option value="">请选择</option>
+                            <?php if(is_array($provice) || $provice instanceof \think\Collection || $provice instanceof \think\Paginator): $i = 0; $__LIST__ = $provice;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+                                <option value="<?php echo $vo['provice_name']; ?>" data-id="<?php echo $vo['provice_id']; ?>" ><?php echo $vo['provice_name']; ?></option>
+                            <?php endforeach; endif; else: echo "" ;endif; ?>
+                        </select>
+                    </div>
+                    <div class="layui-input-inline">
+                        <select name="city" id="city" lay-filter="city">
+                            <option value="">选择市级</option>
+
+                        </select>
+                    </div>
+                    <div class="layui-input-inline">
+                        <select name="county" id="county" lay-filter="county">
+                            <option value="">选择县级</option>
+                        </select>
+                    </div>
+                    <div class="layui-input-inline">
+                        <select name="town" id="town" lay-filter="town">
+                            <option value="">选择镇级</option>
+                        </select>
+                    </div>
                     <div class="layui-inline">
                         <label class="layui-form-mid">手机号：</label>
                         <div class="layui-input-inline">
@@ -106,6 +131,9 @@
                 <th data-field="sex">
                     <div class="layui-table-cell"><span>性别</span></div>
                 </th>
+                <th data-field="sex">
+                    <div class="layui-table-cell"><span>地区</span></div>
+                </th>
 
 
                 <th data-field="createdTime">
@@ -152,6 +180,9 @@
                         </else>
 
                     <?php endif; ?>
+                    <td>
+                        <div class="layui-table-cell"><?php echo $vo['province']; ?><?php echo $vo['city']; ?><?php echo $vo['county']; ?><?php echo $vo['town']; ?></div>
+                    </td>
                     <td>
                         <div class="layui-table-cell"><?php echo date('Y-m-d,H:i:m',$vo['create_at']); ?></div>
                     </td>
