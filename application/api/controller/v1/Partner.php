@@ -21,6 +21,7 @@ use app\common\service\PartnerAliPayNotifyService;
 use app\common\service\PartnerService;
 use app\common\service\PartnerWxNotify;
 use app\common\service\PayService;
+use app\common\service\WxPayService;
 use app\common\validate\PhoneValidate;
 use app\lib\exception\CustomException;
 use app\lib\exception\ParameterException;
@@ -155,9 +156,16 @@ class Partner extends Base
             }
             //如果是微信
             if ($type == 'wx') {
-                $wxPayServer = new PayService();
-                $result = $wxPayServer->applyPartnerPay($partnerResult->order_no);
-                return json($result);
+//                $wxPayServer = new PayService();
+//                $result = $wxPayServer->applyPartnerPay($partnerResult->order_no);
+//                return json($result);
+                $wxServer = new WxPayService();
+                $wxServer->notify_url = 'http://www.61drhome.cn/apply_partner_notify';
+                $wxServer->body = '定荣家-合伙人申请';
+                $wxServer->out_trade_no = makeOrderNo();
+                $wxServer->total_fee = 0.01;
+                return json($wxServer->doPay());
+
             }
             //如果是支付宝。
             if ($type == 'zfb') {
@@ -189,8 +197,9 @@ class Partner extends Base
         {
             return show(false , '申请未驳回，不需要重新申请');
         }
-
-        $partnerAuditData = (new PartnerService($this->user['ud_id']))->binationPartnerBuditData();
+        $partnerService=new PartnerService($this->user['ud_id']);
+        $partnerService->checkPartnerIs();
+        $partnerAuditData = $partnerService->binationPartnerBuditData();
         $partnerAuditData['examine_status'] = 3;
         $result = Db::table('partner_audit')->where([ 'user_id'=> $this->user['ud_id']])->update($partnerAuditData);
         return $this->resultHandle($result);
@@ -400,13 +409,21 @@ class Partner extends Base
             ]);
         }
         $isSign = Db::table('partner_audit')->where([ 'user_id'=> $this->user['ud_id']])->find();
-        if( $isSign )
+        if( $isSign['examine_status'] == 3 && empty($isSign['pay_time']) )
         {
-            $check = $isSign['examine_status'];
-        }
-        else{
+            Db::table('partner_audit')->where([ 'user_id'=> $this->user['ud_id']])->delete();
             $check = 0;
         }
+        else{
+            if( $isSign )
+            {
+                $check = $isSign['examine_status'];
+            }
+            else{
+                $check = 0;
+            }
+        }
+
         $cityTotal = Db::table('city')->where(['city_name' => $city])->field('partner_limit')->find();
         $partnerTotal = Db::table('user_data')->where(['type' => 2, 'city' => $city])->count();
         $isApply = $cityTotal['partner_limit'] <= $partnerTotal ? false : true;
@@ -466,6 +483,12 @@ class Partner extends Base
         return show(true, '', $data);
     }
 
+
+    public function demoPay(){
+        $wxPayServer = new PayService();
+        $result = $wxPayServer->applyPartnerPay(makeOrderNo());
+        return json($result);
+    }
 }
 
 

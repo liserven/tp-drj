@@ -48,11 +48,11 @@ class PayService
         $this->orderNo = $orderId;
         $money = BargainSte::find();
         $total = !empty($money['partner_money']) ? $money['partner_money'] : 20000;
-        $body = '定容家申请合伙人费用';
+        $body = '定荣家申请合伙人费用';
         return $this->makeWxPreOrder($total, $notifyUrl, $body);
     }
     // 构建微信支付订单信息
-    private function makeWxPreOrder($totalPrice, $notifyUrl='', $body='定容家' )
+    private function makeWxPreOrder($totalPrice, $notifyUrl='', $body='定荣家' )
     {
         $notify = !empty($notifyUrl)?$notifyUrl:'http://www.61drhome.cn/api/v1/wx_notify';
         $wxOrderData = new \WxPayUnifiedOrder();

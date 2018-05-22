@@ -65,7 +65,6 @@ class WxPayHelper{
                 $buff .= $k . "=" . $v . "&";
             }
         }
-
         $buff = trim($buff, "&");
         //签名步骤二：在string后加入KEY
         $string = $buff . "&key=".$api_key;

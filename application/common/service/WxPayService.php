@@ -25,8 +25,6 @@ class WxPayService
     //付款金额(必填)
     public $total_fee = 0;
 
-    //自定义超时(选填，支持dhmc)
-    public $time_expire = '';
 
     private $WxPayHelper;
 
@@ -46,12 +44,12 @@ class WxPayService
         if (empty($this->body)) {
             die('body error');
         }
-        if (empty($this->time_expire)){
-            die('time_expire error');
-        }
         //检测支付金额
         if (empty($this->total_fee) || !is_numeric($this->total_fee)) {
             die('total_fee error');
+        }
+        else{
+            $this->total_fee = $this->total_fee * 100;
         }
         //异步通知URL
         if (empty($this->notify_url)) {
@@ -80,7 +78,7 @@ class WxPayService
     {
         $url = "https://api.mch.weixin.qq.com/pay/unifiedorder";
 
-        $data["appid"] 		  = $this->config['appid'];//微信开放平台审核通过的应用APPID
+        $data["appid"] 		  = $this->config['appId'];//微信开放平台审核通过的应用APPID
         $data["body"] 		  = $this->body;//商品或支付单简要描述
         $data["mch_id"] 	  = $this->config['mch_id'];//商户号
         $data["nonce_str"] 	  = $this->WxPayHelper->getRandChar(32);//随机字符串
@@ -88,7 +86,6 @@ class WxPayService
         $data["out_trade_no"] = $this->out_trade_no;//商户订单号
         $data["spbill_create_ip"] = $this->WxPayHelper->get_client_ip();//终端IP
         $data["total_fee"]        = $this->total_fee;//总金额
-        $data["time_expire"]	  = $this->time_expire;//交易结束时间
         $data["trade_type"]   	  = "APP";//交易类型
         $data["sign"] 			  = $this->WxPayHelper->getSign($data, $this->config['api_key']);//签名
         $xml 		= $this->WxPayHelper->arrayToXml($data);
@@ -108,13 +105,13 @@ class WxPayService
      */
     public function getOrder($prepayId)
     {
-        $data["appid"] 		= $this->config['appid'];
-        $data["noncestr"] 	= $this->WxPayHelper->getRandChar(32);
+        $data['appid'] 		= $this->config['appId'];
+        $data['noncestr'] 	= $this->WxPayHelper->getRandChar(32);
         $data["package"] 	= "Sign=WXPay";
         $data["partnerid"] 	= $this->config['mch_id'];
-        $data["prepayid"] 	= $prepayId;
-        $data["timestamp"] 	= time();
-        $data["sign"] 		= $this->WxPayHelper->getSign($data, $this->config['api_key']);
+        $data['prepayid'] 	= $prepayId;
+        $data['timestamp'] 	= time();
+        $data["paySign"] 		= $this->WxPayHelper->getSign($data, $this->config['api_key']);
         $data["packagestr"] = "Sign=WXPay";
         return $data;
     }

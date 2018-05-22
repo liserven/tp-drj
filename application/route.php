@@ -161,6 +161,7 @@ Route::post('api/:version/wx_notify', 'api/:version.Pay/payBuildingByWxNotify');
 //获取合伙人费用
 Route::get('api/:version/partner_money', 'api/:version.Partner/getPartnerMoney');
 Route::post('api/:version/edit_partner_info', 'api/:version.Partner/editPartnerInfo');
+Route::post('api/:version/demo_pay', 'api/:version.Partner/demoPay');
 
 
 

@@ -85,30 +85,30 @@ class Index extends Base
             if($this->user)
             {
                 //如果是登录用户  先查看是否有绑定合伙人
-                $partner_user = Db::table('partner_user')->where(['pu_user_id'=> $this->user['ud_id']])
+                $partner_data = Db::table('partner_user')->alias('pu')->where(['pu_user_id'=> $this->user['ud_id']])
+                    ->join('__USER_DATA__ ud', 'pu.pu_partner_id=ud.ud_id', 'left')
+                    ->field('ud.ud_name, ud.ud_phone, ud.ud_logo, ud.ud_sex, ud.city, ud.province, ud.county, ud.town,
+                     ud.status,ud.ud_id')
                     ->paginate(10);
             }
             else{
-                $partner_user = Db::table('partner_user')->where(['pu_user_id'=> 0 ])
-                    ->paginate(10);
-            }
-            if($partner_user->isEmpty())
-            {
-
-                //如果没有绑定合伙人
                 $partner_data = UserData::getCityPartner([ 'ud.county'=> $county], $limit);
                 if( $partner_data->isEmpty() )
                 {
                     $partner_data = UserData::getCityPartner([ 'ud.city'=> $city], $limit);
                 }
             }
-            foreach ($partner_data as $key=>&$partner)
+
+                //如果没有绑定合伙人
+            $partner_data = $partner_data->toArray();
+            foreach ($partner_data['data'] as $key=>&$partner)
             {
                 $star = Db::table('partner_star')->where([ 'pid'=> $partner['ud_id']])->avg('star');
                 $partner['star'] = $star <= 0 ? 5 : $star;
                 $partner['deal'] = Db::table('partner_user')->where([ 'pu_partner_id'=>$partner['ud_id'], 'status'=> PartnerUserStatus::SIGN])->count();
                 $partner['comm'] = 999;
                 $partner['share_url'] = 'http://www.61drhome.cn/share/card?id='.$partner['ud_id'];
+                $partner['likes'] = Db::table('partner_laud')->where(['pid'=> $partner['ud_id']])->count();
             }
         }
         else{
@@ -127,7 +127,7 @@ class Index extends Base
                      ud.status,ud.ud_id')->paginate($limit);
             }
         }
-        if($partner_data->isEmpty())
+        if( empty($partner_data['data']) )
         {
             throw new PartnerException();
         }

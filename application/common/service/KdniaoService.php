@@ -45,7 +45,7 @@ class KdniaoService
         $result['kd_name'] = $kd_name['name'];
         $arr = [
             'AcceptStation' => '支付成功',
-            'AcceptTime' => $pay_time
+            'AcceptTime' => date('Y-m-d H:i:s',$pay_time)
         ];
         array_unshift($result['Traces'], $arr);
         $num = (count($result['Traces'])-1);
