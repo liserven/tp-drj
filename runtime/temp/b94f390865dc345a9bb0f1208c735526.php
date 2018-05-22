@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:72:"D:\phpStudy\WWW\drhome\public/../application/admin\view\user\tolist.html";i:1526625274;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:72:"D:\phpStudy\WWW\drhome\public/../application/admin\view\user\tolist.html";i:1526957400;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -141,6 +141,9 @@
                     <div class="layui-table-cell"><span>微信ID</span></div>
                 </th>
                 <th data-field="state">
+                    <div class="layui-table-cell"><span>身份证号</span></div>
+                </th>
+                <th data-field="state">
                     <div class="layui-table-cell"><span>地区</span></div>
                 </th>
                 <th data-field="createdTime">
@@ -195,6 +198,9 @@
                 </td>
                 <td>
                     <div class="layui-table-cell"><?php echo $vo['wx_openid']; ?></div>
+                </td>
+                <td>
+                    <div class="layui-table-cell"><?php echo $vo['ud_id_num']; ?></div>
                 </td>
                 <td>
                     <div class="layui-table-cell"><?php echo $vo['province']; ?><?php echo $vo['city']; ?><?php echo $vo['county']; ?><?php echo $vo['town']; ?></div>

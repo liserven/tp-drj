@@ -160,7 +160,7 @@ class villa extends Base
                 return show(false, $e->getMessage() );
             }
         }else{
-            $data  = db('deploy')->select();
+            $data  = db('deploy')->where('type','1')->select();
             $this->assign('data',$data);
             return view();
         }

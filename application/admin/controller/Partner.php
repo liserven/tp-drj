@@ -71,6 +71,7 @@ class Partner extends Base
                 'referee'   => $page['referee'],
                 'ud_status' => $page['type'],
                 'ud_examine_status' => 1,
+                'partner_phone'=>$page['referee_phone']
             );
             $list = db('user_data')->where('ud_id',$id)->setField($data);
             $messagelist['user_id'] = $id;

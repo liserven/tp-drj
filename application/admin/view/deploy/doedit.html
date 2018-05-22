@@ -5,8 +5,8 @@
             <label class="layui-form-label">售后类型</label>
             <div class="layui-input-inline">
                 <select name="type" id="culm"  lay-filter="sort">
-                    <option value="1">别墅</option>
-                    <option value="2">建材</option>
+                    <option value="1" <eq name="$data.type" value="1"> selected</eq>>别墅</option>
+                    <option value="2" <eq name="$data.type" value="2"> selected</eq>>建材</option>
                 </select>
             </div>
         </div>
@@ -20,7 +20,7 @@
             <label class="layui-form-label">图标</label>
             <div class="layui-col-md2">
                 <img src="{$data.img}" id="img-upload-1" alt="" class="screen-img" required>
-                <input type="hidden" name="img" id="input-form-1">
+                <input type="hidden" name="img" id="input-form-1" value="{$data.img}">
             </div>
         </div>
         <div class="layui-form-item">

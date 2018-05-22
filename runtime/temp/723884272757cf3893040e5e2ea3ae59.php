@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:74:"D:\phpStudy\WWW\drhome\public/../application/admin\view\deploy\doedit.html";i:1526456292;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:74:"D:\phpStudy\WWW\drhome\public/../application/admin\view\deploy\doedit.html";i:1526957664;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -45,8 +45,8 @@
             <label class="layui-form-label">售后类型</label>
             <div class="layui-input-inline">
                 <select name="type" id="culm"  lay-filter="sort">
-                    <option value="1">别墅</option>
-                    <option value="2">建材</option>
+                    <option value="1" <?php if($data['type'] == '1'): ?> selected<?php endif; ?>>别墅</option>
+                    <option value="2" <?php if($data['type'] == '2'): ?> selected<?php endif; ?>>建材</option>
                 </select>
             </div>
         </div>
@@ -60,7 +60,7 @@
             <label class="layui-form-label">图标</label>
             <div class="layui-col-md2">
                 <img src="<?php echo $data['img']; ?>" id="img-upload-1" alt="" class="screen-img" required>
-                <input type="hidden" name="img" id="input-form-1">
+                <input type="hidden" name="img" id="input-form-1" value="<?php echo $data['img']; ?>">
             </div>
         </div>
         <div class="layui-form-item">
