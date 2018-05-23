@@ -16,8 +16,6 @@ use app\lib\exception\OrderException;
 use app\lib\exception\ParameterException;
 use enum\BuildingOrderStatus;
 use think\Db;
-use think\Exception;
-use app\api\controller\v1\KdNiao;
 
 class Orbuilding extends Base
 {
@@ -71,7 +69,10 @@ class Orbuilding extends Base
                 return $this->ajaxShow(false, '无权此操作');
             }
             $list = BuildingOrderDetail::get(input('post.id/d'));
-            $res  = BuildingOrder::get(input('post.id/d'));
+            $res  = BuildingOrder::get($list['order_id']);
+            $res ->status = BuildingOrderStatus::TRANSLATE;
+
+
             if (!$list) {
                 throw new OrderException();
             }
@@ -98,7 +99,7 @@ class Orbuilding extends Base
                 }
                 //更改状态为发货
                 $list->status = BuildingOrderStatus::TRANSLATE;
-                $res ->status = BuildingOrderStatus::TRANSLATE;
+
                 $result = $list->save();
                 Db::commit();
                 return show( true, 'ok');
