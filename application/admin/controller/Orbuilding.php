@@ -69,8 +69,6 @@ class Orbuilding extends Base
                 return $this->ajaxShow(false, '无权此操作');
             }
             $list = BuildingOrderDetail::get(input('post.id/d'));
-            $res  = BuildingOrder::get($list['order_id']);
-            $res ->status = BuildingOrderStatus::TRANSLATE;
 
 
             if (!$list) {
@@ -99,7 +97,9 @@ class Orbuilding extends Base
                 }
                 //更改状态为发货
                 $list->status = BuildingOrderStatus::TRANSLATE;
-
+                $res  = BuildingOrder::get($list['order_id']);
+                $res ->status = BuildingOrderStatus::TRANSLATE;
+                $res = $res->save();
                 $result = $list->save();
                 Db::commit();
                 return show( true, 'ok');

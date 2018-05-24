@@ -5199,3 +5199,142 @@
 [ sql ] [ SQL ] SHOW COLUMNS FROM `user_data` [ RunTime:0.042003s ]
 [ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM ( SELECT count(*) FROM `user_data` WHERE  `type` = 2 GROUP BY `province` ) `_group_count_` LIMIT 1 [ RunTime:0.040002s ]
 [ sql ] [ SQL ] SELECT count(distinct ud_id) as totals,`ud_id`,province as name FROM `user_data` WHERE  `type` = 2 GROUP BY `province` ORDER BY totals desc LIMIT 0,10 [ RunTime:0.041002s ]
+---------------------------------------------------------------
+[ 2018-05-23T18:41:06+08:00 ] 127.0.0.1 GET /admin/Partners/tolist?/admin/Partners/tolist=&page=2
+[ info ] drj.bjzhishanzhimei.com/admin/Partners/tolist?/admin/Partners/tolist=&page=2 [运行时间：1.791103s][吞吐率：0.56req/s] [内存消耗：3,125.25kb] [文件加载：74]
+[ info ] [ LANG ] D:\phpStudy\WWW\drhome\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Partners',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1526675936,1526866186,1527040391,1527058214; PHPSESSID=i799gv0lomlkuk3dohgapjokm3; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1527070844',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin/Partners/tolist?/admin/Partners/tolist=&page=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Partners/tolist' => '',
+  'page' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drhome\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drhome\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\Partners->tolist[ D:\phpStudy\WWW\drhome\application\admin\controller\Partners.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\drhome\public/../application/admin\view\partners\tolist.html [ array (
+  0 => 'provice',
+  1 => 'menu',
+  2 => 'path',
+  3 => 'User',
+  4 => 'mName',
+  5 => 'cName',
+  6 => 'aName',
+  7 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.073004s ] mysql:host=47.104.154.142;port=9989;dbname=drj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `provice` [ RunTime:0.050003s ]
+[ sql ] [ SQL ] SELECT * FROM `provice` [ RunTime:0.049003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `action_data` [ RunTime:0.050003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 0 [ RunTime:0.050002s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 49 [ RunTime:0.050003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 51 [ RunTime:0.049002s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 59 [ RunTime:0.050003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 63 [ RunTime:0.049002s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 67 [ RunTime:0.050003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 75 [ RunTime:0.050003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 80 [ RunTime:0.049003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 82 [ RunTime:0.049003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 85 [ RunTime:0.049003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 87 [ RunTime:0.049003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 92 [ RunTime:0.051003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 95 [ RunTime:0.049003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_data` [ RunTime:0.051003s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM ( SELECT count(*) FROM `user_data` WHERE  `type` = 2 GROUP BY `province` ) `_group_count_` LIMIT 1 [ RunTime:0.053003s ]
+[ sql ] [ SQL ] SELECT count(distinct ud_id) as totals,`ud_id`,province as name FROM `user_data` WHERE  `type` = 2 GROUP BY `province` ORDER BY totals desc LIMIT 10,10 [ RunTime:0.052003s ]
+---------------------------------------------------------------
+[ 2018-05-23T18:41:08+08:00 ] 127.0.0.1 GET /admin/User/tolist
+[ info ] drj.bjzhishanzhimei.com/admin/User/tolist [运行时间：1.991114s][吞吐率：0.50req/s] [内存消耗：3,231.56kb] [文件加载：74]
+[ info ] [ LANG ] D:\phpStudy\WWW\drhome\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'User',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1526675936,1526866186,1527040391,1527058214; PHPSESSID=i799gv0lomlkuk3dohgapjokm3; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1527070844',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/User/tolist' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drhome\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drhome\\runtime\\session',
+)
+[ info ] [ RUN ] app\admin\controller\User->toList[ D:\phpStudy\WWW\drhome\application\admin\controller\User.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\drhome\public/../application/admin\view\user\tolist.html [ array (
+  0 => 'provice',
+  1 => 'menu',
+  2 => 'path',
+  3 => 'User',
+  4 => 'mName',
+  5 => 'cName',
+  6 => 'aName',
+  7 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.073004s ] mysql:host=47.104.154.142;port=9989;dbname=drj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `provice` [ RunTime:0.051003s ]
+[ sql ] [ SQL ] SELECT * FROM `provice` [ RunTime:0.050003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `action_data` [ RunTime:0.051003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 0 [ RunTime:0.051003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 49 [ RunTime:0.050003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 51 [ RunTime:0.051003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 59 [ RunTime:0.053003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 63 [ RunTime:0.050003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 67 [ RunTime:0.051003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 75 [ RunTime:0.051003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 80 [ RunTime:0.050003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 82 [ RunTime:0.050002s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 85 [ RunTime:0.051003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 87 [ RunTime:0.051003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 92 [ RunTime:0.051003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 95 [ RunTime:0.051002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_data` [ RunTime:0.051003s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `user_data` WHERE  `type` = 2  AND `status` = 1 LIMIT 1 [ RunTime:0.052002s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `type` = 2  AND `status` = 1 LIMIT 0,15 [ RunTime:0.052003s ]
