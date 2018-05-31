@@ -1,0 +1,79 @@
+---------------------------------------------------------------
+[ 2018-05-30T09:15:50+08:00 ] 127.0.0.1 GET /admin
+[ info ] drj.bjzhishanzhimei.com/admin [运行时间：0.546032s][吞吐率：1.83req/s] [内存消耗：1,914.83kb] [文件加载：63]
+[ info ] [ LANG ] D:\phpStudy\WWW\drhome\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drhome\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drhome\\runtime\\session',
+)
+[ info ] [ VIEW ] D:\phpStudy\WWW\drhome\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-30T09:15:54+08:00 ] 127.0.0.1 GET /admin/login/index.html
+[ info ] drj.bjzhishanzhimei.com/admin/login/index.html [运行时间：0.477027s][吞吐率：2.10req/s] [内存消耗：1,923.47kb] [文件加载：62]
+[ info ] [ LANG ] D:\phpStudy\WWW\drhome\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy\WWW\drhome\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\drhome\public/../application/admin\view\login\index.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File

@@ -1,0 +1,1654 @@
+---------------------------------------------------------------
+[ 2018-05-31T09:22:27+08:00 ] 127.0.0.1 GET /admin
+[ info ] drj.bjzhishanzhimei.com/admin [运行时间：0.421024s][吞吐率：2.38req/s] [内存消耗：1,914.83kb] [文件加载：63]
+[ info ] [ LANG ] D:\phpStudy\WWW\drhome\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drhome\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drhome\\runtime\\session',
+)
+[ info ] [ VIEW ] D:\phpStudy\WWW\drhome\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-31T09:22:31+08:00 ] 127.0.0.1 GET /admin/login/index.html
+[ info ] drj.bjzhishanzhimei.com/admin/login/index.html [运行时间：0.460026s][吞吐率：2.17req/s] [内存消耗：1,923.47kb] [文件加载：62]
+[ info ] [ LANG ] D:\phpStudy\WWW\drhome\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy\WWW\drhome\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\drhome\public/../application/admin\view\login\index.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-31T17:06:38+08:00 ] 127.0.0.1 GET /admin
+[ info ] drj.bjzhishanzhimei.com/admin [运行时间：0.449025s][吞吐率：2.23req/s] [内存消耗：1,914.75kb] [文件加载：63]
+[ info ] [ LANG ] D:\phpStudy\WWW\drhome\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1526866186,1527040391,1527058214,1527155550',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drhome\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drhome\\runtime\\session',
+)
+[ info ] [ VIEW ] D:\phpStudy\WWW\drhome\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-31T17:06:41+08:00 ] 127.0.0.1 GET /admin/login/index.html
+[ info ] drj.bjzhishanzhimei.com/admin/login/index.html [运行时间：0.436025s][吞吐率：2.29req/s] [内存消耗：1,923.68kb] [文件加载：62]
+[ info ] [ LANG ] D:\phpStudy\WWW\drhome\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1527040391,1527058214,1527155550,1527757599; PHPSESSID=rf009k0ic3r3a5jk31dmruv0l1; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1527757599',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy\WWW\drhome\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\drhome\public/../application/admin\view\login\index.html [ array (
+  0 => 'mName',
+  1 => 'cName',
+  2 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-31T17:06:42+08:00 ] 127.0.0.1 GET /captcha.html
+[ info ] drj.bjzhishanzhimei.com/captcha.html [运行时间：0.441025s][吞吐率：2.27req/s] [内存消耗：1,575.78kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\drhome\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1527040391,1527058214,1527155550,1527757599; PHPSESSID=rf009k0ic3r3a5jk31dmruv0l1; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1527757599',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/captcha_html' => '',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\phpStudy\WWW\drhome\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drhome\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drhome\\runtime\\session',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-31T17:06:53+08:00 ] 127.0.0.1 POST /admin/login/login.html
+[ info ] drj.bjzhishanzhimei.com/admin/login/login.html [运行时间：2.818161s][吞吐率：0.35req/s] [内存消耗：2,964.69kb] [文件加载：73]
+[ info ] [ LANG ] D:\phpStudy\WWW\drhome\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1527040391,1527058214,1527155550,1527757599; PHPSESSID=rf009k0ic3r3a5jk31dmruv0l1; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1527757602',
+  'content-length' => '45',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/login_html' => '',
+  'phone' => '12345678910',
+  'password' => '123456',
+  'captcha' => 'FFP',
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\phpStudy\WWW\drhome\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drhome\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drhome\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [2002]SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: ��֪�������������� [D:\phpStudy\WWW\drhome\thinkphp\library\think\db\Connection.php:293]
+---------------------------------------------------------------
+[ 2018-05-31T17:06:57+08:00 ] 127.0.0.1 POST /admin/login/login.html
+[ info ] drj.bjzhishanzhimei.com/admin/login/login.html [运行时间：0.416024s][吞吐率：2.40req/s] [内存消耗：1,923.40kb] [文件加载：62]
+[ info ] [ LANG ] D:\phpStudy\WWW\drhome\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1527040391,1527058214,1527155550,1527757599; PHPSESSID=rf009k0ic3r3a5jk31dmruv0l1; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1527757602',
+  'content-length' => '45',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/login_html' => '',
+  'phone' => '12345678910',
+  'password' => '123456',
+  'captcha' => 'FFP',
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\phpStudy\WWW\drhome\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drhome\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drhome\\runtime\\session',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-31T17:06:57+08:00 ] 127.0.0.1 GET /captcha.html?0.1217619290470453
+[ info ] drj.bjzhishanzhimei.com/captcha.html?0.1217619290470453 [运行时间：0.379021s][吞吐率：2.64req/s] [内存消耗：1,575.84kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\drhome\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1527040391,1527058214,1527155550,1527757599; PHPSESSID=rf009k0ic3r3a5jk31dmruv0l1; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1527757602',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/captcha_html' => '',
+  '0_1217619290470453' => '',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\phpStudy\WWW\drhome\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drhome\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drhome\\runtime\\session',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-31T17:07:08+08:00 ] 127.0.0.1 POST /admin/login/login.html
+[ info ] drj.bjzhishanzhimei.com/admin/login/login.html [运行时间：2.753158s][吞吐率：0.36req/s] [内存消耗：2,964.69kb] [文件加载：73]
+[ info ] [ LANG ] D:\phpStudy\WWW\drhome\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1527040391,1527058214,1527155550,1527757599; PHPSESSID=rf009k0ic3r3a5jk31dmruv0l1; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1527757602',
+  'content-length' => '45',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/login_html' => '',
+  'phone' => '12345678910',
+  'password' => '123456',
+  'captcha' => 'RTf',
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\phpStudy\WWW\drhome\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drhome\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drhome\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [2002]SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: ��֪�������������� [D:\phpStudy\WWW\drhome\thinkphp\library\think\db\Connection.php:293]
+---------------------------------------------------------------
+[ 2018-05-31T17:07:37+08:00 ] 127.0.0.1 POST /admin/login/login.html
+[ info ] drj.bjzhishanzhimei.com/admin/login/login.html [运行时间：0.417023s][吞吐率：2.40req/s] [内存消耗：1,923.41kb] [文件加载：62]
+[ info ] [ LANG ] D:\phpStudy\WWW\drhome\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1527040391,1527058214,1527155550,1527757599; PHPSESSID=rf009k0ic3r3a5jk31dmruv0l1; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1527757602',
+  'content-length' => '45',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/login_html' => '',
+  'phone' => '12345678910',
+  'password' => '123456',
+  'captcha' => 'RTf',
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\phpStudy\WWW\drhome\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drhome\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drhome\\runtime\\session',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-31T17:07:37+08:00 ] 127.0.0.1 GET /captcha.html?0.7373060713158262
+[ info ] drj.bjzhishanzhimei.com/captcha.html?0.7373060713158262 [运行时间：0.367021s][吞吐率：2.72req/s] [内存消耗：1,575.84kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\drhome\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1527040391,1527058214,1527155550,1527757599; PHPSESSID=rf009k0ic3r3a5jk31dmruv0l1; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1527757602',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/captcha_html' => '',
+  '0_7373060713158262' => '',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\phpStudy\WWW\drhome\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drhome\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drhome\\runtime\\session',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-31T17:07:49+08:00 ] 127.0.0.1 POST /admin/login/login.html
+[ info ] drj.bjzhishanzhimei.com/admin/login/login.html [运行时间：5.087291s][吞吐率：0.20req/s] [内存消耗：3,125.88kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\drhome\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1527040391,1527058214,1527155550,1527757599; PHPSESSID=rf009k0ic3r3a5jk31dmruv0l1; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1527757602',
+  'content-length' => '45',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/login_html' => '',
+  'phone' => '12345678910',
+  'password' => '123456',
+  'captcha' => 'yGm',
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\phpStudy\WWW\drhome\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drhome\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drhome\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.074004s ] mysql:host=47.104.154.142;port=9989;dbname=drj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `member` [ RunTime:0.055003s ]
+[ sql ] [ SQL ] SELECT * FROM `member` WHERE  `am_phone` = '12345678910' LIMIT 1 [ RunTime:0.054003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `member_log` [ RunTime:0.050002s ]
+[ sql ] [ SQL ] INSERT INTO `member_log` (`ml_member_id` , `ml_name` , `ml_url` , `ml_ip` , `create_at`) VALUES (17 , '登录后台' , 'admin/login/login' , '127.0.0.1' , 1527757665) [ RunTime:0.059004s ]
+[ sql ] [ SQL ] UPDATE `member`  SET `am_ssid`='rf009k0ic3r3a5jk31dmruv0l1',`am_pre_time`=1527757665,`update_at`=1527757665  WHERE  `am_id` = 17 [ RunTime:4.127236s ]
+---------------------------------------------------------------
+[ 2018-05-31T17:08:02+08:00 ] 127.0.0.1 GET /admin/index/index.html
+[ info ] drj.bjzhishanzhimei.com/admin/index/index.html [运行时间：12.916739s][吞吐率：0.08req/s] [内存消耗：3,058.05kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\drhome\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1527040391,1527058214,1527155550,1527757599; PHPSESSID=rf009k0ic3r3a5jk31dmruv0l1; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1527757602',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drhome\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drhome\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\drhome\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\drhome\public/../application/admin\view\index\index.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.071004s ] mysql:host=47.104.154.142;port=9989;dbname=drj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `action_data` [ RunTime:7.667439s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 0 [ RunTime:0.049003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 49 [ RunTime:0.052003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 51 [ RunTime:0.057003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 59 [ RunTime:0.053003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 63 [ RunTime:3.713213s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 67 [ RunTime:0.051003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 75 [ RunTime:0.051003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 80 [ RunTime:0.050003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 82 [ RunTime:0.051002s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 85 [ RunTime:0.050003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 87 [ RunTime:0.051003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 92 [ RunTime:0.050003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 95 [ RunTime:0.049002s ]
+---------------------------------------------------------------
+[ 2018-05-31T17:08:11+08:00 ] 127.0.0.1 GET /admin/index/welcome.html
+[ info ] drj.bjzhishanzhimei.com/admin/index/welcome.html [运行时间：9.001515s][吞吐率：0.11req/s] [内存消耗：2,998.44kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\drhome\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1527040391,1527058214,1527155550,1527757599; PHPSESSID=rf009k0ic3r3a5jk31dmruv0l1; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1527757602',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/welcome_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drhome\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drhome\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\drhome\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\drhome\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'service',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.085005s ] mysql:host=47.104.154.142;port=9989;dbname=drj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `action_data` [ RunTime:0.054003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 0 [ RunTime:0.057003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 49 [ RunTime:0.055003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 51 [ RunTime:0.051003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 59 [ RunTime:3.712213s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 63 [ RunTime:0.056004s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 67 [ RunTime:0.050003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 75 [ RunTime:0.050003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 80 [ RunTime:1.890108s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 82 [ RunTime:1.487085s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 85 [ RunTime:0.059003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 87 [ RunTime:0.057003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 92 [ RunTime:0.056003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 95 [ RunTime:0.054003s ]
+[ sql ] [ SQL ] select version() [ RunTime:0.054003s ]
+---------------------------------------------------------------
+[ 2018-05-31T17:08:15+08:00 ] 127.0.0.1 GET /admin/User_r/tolist
+[ info ] drj.bjzhishanzhimei.com/admin/User_r/tolist [运行时间：8.043460s][吞吐率：0.12req/s] [内存消耗：3,173.73kb] [文件加载：75]
+[ info ] [ LANG ] D:\phpStudy\WWW\drhome\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'User_r',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1527040391,1527058214,1527155550,1527757599; PHPSESSID=rf009k0ic3r3a5jk31dmruv0l1; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1527757683',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/User_r/tolist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drhome\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drhome\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\UserR->tolist[ D:\phpStudy\WWW\drhome\application\admin\controller\UserR.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\drhome\public/../application/admin\view\user_r\tolist.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.087005s ] mysql:host=47.104.154.142;port=9989;dbname=drj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `action_data` [ RunTime:0.056003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 0 [ RunTime:0.058004s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 49 [ RunTime:0.055003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 51 [ RunTime:0.061003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 59 [ RunTime:0.058003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 63 [ RunTime:0.057003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 67 [ RunTime:0.051003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 75 [ RunTime:0.055003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 80 [ RunTime:0.049003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 82 [ RunTime:0.050003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 85 [ RunTime:0.055003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 87 [ RunTime:0.054003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 92 [ RunTime:0.056003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 95 [ RunTime:0.056003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `give_red` [ RunTime:0.053003s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `give_red` LIMIT 1 [ RunTime:0.049003s ]
+[ sql ] [ SQL ] SELECT * FROM `give_red` ORDER BY `id`  DESC LIMIT 0,15 [ RunTime:0.050003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_data` [ RunTime:0.057003s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 387 LIMIT 1 [ RunTime:0.056003s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 387 LIMIT 1 [ RunTime:0.057003s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 387 LIMIT 1 [ RunTime:0.062004s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 387 LIMIT 1 [ RunTime:0.057003s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 387 LIMIT 1 [ RunTime:0.549032s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 7 LIMIT 1 [ RunTime:0.326019s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 7 LIMIT 1 [ RunTime:0.058003s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 2 LIMIT 1 [ RunTime:0.054003s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 1 LIMIT 1 [ RunTime:0.050003s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 5 LIMIT 1 [ RunTime:0.056003s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 35 LIMIT 1 [ RunTime:0.064004s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 35 LIMIT 1 [ RunTime:0.050003s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 35 LIMIT 1 [ RunTime:0.053003s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 35 LIMIT 1 [ RunTime:0.051003s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 35 LIMIT 1 [ RunTime:0.049003s ]
+---------------------------------------------------------------
+[ 2018-05-31T17:08:16+08:00 ] 127.0.0.1 GET /Js/admin/UserR/tolist.js?v=1527757695
+[ info ] drj.bjzhishanzhimei.com/Js/admin/UserR/tolist.js?v=1527757695 [运行时间：0.708041s][吞吐率：1.41req/s] [内存消耗：1,572.23kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\WWW\drhome\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Js',
+    1 => 'admin',
+    2 => 'UserR',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1527040391,1527058214,1527155550,1527757599; PHPSESSID=rf009k0ic3r3a5jk31dmruv0l1; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1527757683',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin/User_r/tolist',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/Js/admin/UserR/tolist_js' => '',
+  'v' => '1527757695',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-31T17:08:49+08:00 ] 127.0.0.1 GET /admin/User_r/tolist?sex=%E9%99%88%E6%98%A5%E5%85%89
+[ info ] drj.bjzhishanzhimei.com/admin/User_r/tolist?sex=%E9%99%88%E6%98%A5%E5%85%89 [运行时间：15.977914s][吞吐率：0.06req/s] [内存消耗：3,173.25kb] [文件加载：75]
+[ info ] [ LANG ] D:\phpStudy\WWW\drhome\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'User_r',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1527040391,1527058214,1527155550,1527757599; PHPSESSID=rf009k0ic3r3a5jk31dmruv0l1; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1527757683',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin/User_r/tolist',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/User_r/tolist' => '',
+  'sex' => '陈春光',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drhome\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drhome\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\UserR->tolist[ D:\phpStudy\WWW\drhome\application\admin\controller\UserR.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\drhome\public/../application/admin\view\user_r\tolist.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.063004s ] mysql:host=47.104.154.142;port=9989;dbname=drj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `action_data` [ RunTime:8.162467s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 0 [ RunTime:0.047003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 49 [ RunTime:0.055003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 51 [ RunTime:0.047003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 59 [ RunTime:0.043003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 63 [ RunTime:0.043002s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 67 [ RunTime:0.051003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 75 [ RunTime:2.375136s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 80 [ RunTime:0.042002s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 82 [ RunTime:0.044003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 85 [ RunTime:0.043002s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 87 [ RunTime:0.045003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 92 [ RunTime:0.044003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 95 [ RunTime:0.055003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `give_red` [ RunTime:0.046003s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `give_red` LIMIT 1 [ RunTime:0.390023s ]
+[ sql ] [ SQL ] SELECT * FROM `give_red` ORDER BY `id`  DESC LIMIT 0,15 [ RunTime:0.359020s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_data` [ RunTime:0.046002s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 387 LIMIT 1 [ RunTime:0.049002s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 387 LIMIT 1 [ RunTime:0.049003s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 387 LIMIT 1 [ RunTime:0.044003s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 387 LIMIT 1 [ RunTime:0.048003s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 387 LIMIT 1 [ RunTime:0.044002s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 7 LIMIT 1 [ RunTime:0.052003s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 7 LIMIT 1 [ RunTime:0.047002s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 2 LIMIT 1 [ RunTime:0.045002s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 1 LIMIT 1 [ RunTime:0.955055s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 5 LIMIT 1 [ RunTime:0.053003s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 35 LIMIT 1 [ RunTime:0.504029s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 35 LIMIT 1 [ RunTime:0.269015s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 35 LIMIT 1 [ RunTime:0.052003s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 35 LIMIT 1 [ RunTime:0.059003s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 35 LIMIT 1 [ RunTime:0.277016s ]
+---------------------------------------------------------------
+[ 2018-05-31T17:08:50+08:00 ] 127.0.0.1 GET /Js/admin/UserR/tolist.js?v=1527757729
+[ info ] drj.bjzhishanzhimei.com/Js/admin/UserR/tolist.js?v=1527757729 [运行时间：0.481027s][吞吐率：2.08req/s] [内存消耗：1,572.38kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\WWW\drhome\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Js',
+    1 => 'admin',
+    2 => 'UserR',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1527040391,1527058214,1527155550,1527757599; PHPSESSID=rf009k0ic3r3a5jk31dmruv0l1; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1527757683',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin/User_r/tolist?sex=%E9%99%88%E6%98%A5%E5%85%89',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/Js/admin/UserR/tolist_js' => '',
+  'v' => '1527757729',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-31T17:30:26+08:00 ] 127.0.0.1 GET /admin/User_r/tolist?sex=%E9%99%88%E6%98%A5%E5%85%89
+[ info ] drj.bjzhishanzhimei.com/admin/User_r/tolist?sex=%E9%99%88%E6%98%A5%E5%85%89 [运行时间：4.666267s][吞吐率：0.21req/s] [内存消耗：3,333.04kb] [文件加载：77]
+[ info ] [ LANG ] D:\phpStudy\WWW\drhome\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'User_r',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1527040391,1527058214,1527155550,1527757599; PHPSESSID=rf009k0ic3r3a5jk31dmruv0l1; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1527757683',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin/User_r/tolist',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/User_r/tolist' => '',
+  'sex' => '陈春光',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drhome\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drhome\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\UserR->tolist[ D:\phpStudy\WWW\drhome\application\admin\controller\UserR.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\drhome\public/../application/admin\view\user_r\tolist.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.071004s ] mysql:host=47.104.154.142;port=9989;dbname=drj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `action_data` [ RunTime:0.048002s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 0 [ RunTime:0.056003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 49 [ RunTime:0.050003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 51 [ RunTime:0.054003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 59 [ RunTime:0.056004s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 63 [ RunTime:0.050002s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 67 [ RunTime:0.046003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 75 [ RunTime:0.045002s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 80 [ RunTime:0.047003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 82 [ RunTime:0.049003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 85 [ RunTime:0.046003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 87 [ RunTime:0.046003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 92 [ RunTime:0.052003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 95 [ RunTime:0.051003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `give_red` [ RunTime:0.048003s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `give_red` LIMIT 1 [ RunTime:0.045003s ]
+[ sql ] [ SQL ] SELECT * FROM `give_red` ORDER BY `id`  DESC LIMIT 0,15 [ RunTime:0.047002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_data` [ RunTime:0.045003s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 387 LIMIT 1 [ RunTime:0.048002s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 387 LIMIT 1 [ RunTime:0.054003s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 387 LIMIT 1 [ RunTime:0.049003s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 387 LIMIT 1 [ RunTime:0.045002s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 387 LIMIT 1 [ RunTime:0.045003s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 7 LIMIT 1 [ RunTime:0.048002s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 7 LIMIT 1 [ RunTime:0.281016s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 2 LIMIT 1 [ RunTime:0.058003s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 1 LIMIT 1 [ RunTime:0.059003s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 5 LIMIT 1 [ RunTime:0.500029s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 35 LIMIT 1 [ RunTime:0.274015s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 35 LIMIT 1 [ RunTime:0.046003s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 35 LIMIT 1 [ RunTime:0.049003s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 35 LIMIT 1 [ RunTime:0.050003s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 35 LIMIT 1 [ RunTime:0.275016s ]
+---------------------------------------------------------------
+[ 2018-05-31T17:30:26+08:00 ] 127.0.0.1 GET /Js/admin/UserR/tolist.js?v=1527759026
+[ info ] drj.bjzhishanzhimei.com/Js/admin/UserR/tolist.js?v=1527759026 [运行时间：0.524030s][吞吐率：1.91req/s] [内存消耗：1,572.38kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\WWW\drhome\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Js',
+    1 => 'admin',
+    2 => 'UserR',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1527040391,1527058214,1527155550,1527757599; PHPSESSID=rf009k0ic3r3a5jk31dmruv0l1; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1527757683',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin/User_r/tolist?sex=%E9%99%88%E6%98%A5%E5%85%89',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/Js/admin/UserR/tolist_js' => '',
+  'v' => '1527759026',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-31T17:31:27+08:00 ] 127.0.0.1 GET /admin/User_r/tolist?sex=%E9%99%88%E6%98%A5%E5%85%89
+[ info ] drj.bjzhishanzhimei.com/admin/User_r/tolist?sex=%E9%99%88%E6%98%A5%E5%85%89 [运行时间：3.286188s][吞吐率：0.30req/s] [内存消耗：2,990.37kb] [文件加载：71]
+[ info ] [ LANG ] D:\phpStudy\WWW\drhome\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'User_r',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1527040391,1527058214,1527155550,1527757599; PHPSESSID=rf009k0ic3r3a5jk31dmruv0l1; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1527757683',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin/User_r/tolist?sex=%E9%99%88%E6%98%A5%E5%85%89',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/User_r/tolist' => '',
+  'sex' => '陈春光',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drhome\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drhome\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\UserR->tolist[ D:\phpStudy\WWW\drhome\application\admin\controller\UserR.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.082005s ] mysql:host=47.104.154.142;port=9989;dbname=drj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `action_data` [ RunTime:0.597034s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 0 [ RunTime:0.058004s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 49 [ RunTime:0.052003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 51 [ RunTime:0.056003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 59 [ RunTime:0.367021s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 63 [ RunTime:0.049003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 67 [ RunTime:0.053003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 75 [ RunTime:0.052003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 80 [ RunTime:0.051003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 82 [ RunTime:0.817047s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 85 [ RunTime:0.048003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 87 [ RunTime:0.056004s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 92 [ RunTime:0.051003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 95 [ RunTime:0.049002s ]
+---------------------------------------------------------------
+[ 2018-05-31T17:31:53+08:00 ] 127.0.0.1 GET /admin/User_r/tolist
+[ info ] drj.bjzhishanzhimei.com/admin/User_r/tolist [运行时间：2.832162s][吞吐率：0.35req/s] [内存消耗：2,990.29kb] [文件加载：71]
+[ info ] [ LANG ] D:\phpStudy\WWW\drhome\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'User_r',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1527040391,1527058214,1527155550,1527757599; PHPSESSID=rf009k0ic3r3a5jk31dmruv0l1; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1527757683',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/User_r/tolist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drhome\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drhome\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\UserR->tolist[ D:\phpStudy\WWW\drhome\application\admin\controller\UserR.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.070004s ] mysql:host=47.104.154.142;port=9989;dbname=drj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `action_data` [ RunTime:0.050003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 0 [ RunTime:0.452025s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 49 [ RunTime:0.050002s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 51 [ RunTime:0.377021s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 59 [ RunTime:0.053003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 63 [ RunTime:0.341019s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 67 [ RunTime:0.064004s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 75 [ RunTime:0.049003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 80 [ RunTime:0.049003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 82 [ RunTime:0.049002s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 85 [ RunTime:0.048003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 87 [ RunTime:0.288017s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 92 [ RunTime:0.052003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 95 [ RunTime:0.056004s ]
+---------------------------------------------------------------
+[ 2018-05-31T17:31:59+08:00 ] 127.0.0.1 GET /admin/User_r/tolist
+[ info ] drj.bjzhishanzhimei.com/admin/User_r/tolist [运行时间：3.175181s][吞吐率：0.31req/s] [内存消耗：2,990.29kb] [文件加载：71]
+[ info ] [ LANG ] D:\phpStudy\WWW\drhome\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'User_r',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1527040391,1527058214,1527155550,1527757599; PHPSESSID=rf009k0ic3r3a5jk31dmruv0l1; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1527757683',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/User_r/tolist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drhome\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drhome\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\UserR->tolist[ D:\phpStudy\WWW\drhome\application\admin\controller\UserR.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.074005s ] mysql:host=47.104.154.142;port=9989;dbname=drj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `action_data` [ RunTime:0.500029s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 0 [ RunTime:0.051003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 49 [ RunTime:0.052003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 51 [ RunTime:0.050003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 59 [ RunTime:0.056004s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 63 [ RunTime:0.053004s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 67 [ RunTime:0.323018s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 75 [ RunTime:0.053003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 80 [ RunTime:0.054003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 82 [ RunTime:0.821047s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 85 [ RunTime:0.052003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 87 [ RunTime:0.050003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 92 [ RunTime:0.052003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 95 [ RunTime:0.053003s ]
+---------------------------------------------------------------
+[ 2018-05-31T17:34:28+08:00 ] 127.0.0.1 GET /admin/User_r/tolist
+[ info ] drj.bjzhishanzhimei.com/admin/User_r/tolist [运行时间：1.937111s][吞吐率：0.52req/s] [内存消耗：2,990.66kb] [文件加载：71]
+[ info ] [ LANG ] D:\phpStudy\WWW\drhome\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'User_r',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1527040391,1527058214,1527155550,1527757599; PHPSESSID=rf009k0ic3r3a5jk31dmruv0l1; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1527757683',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/User_r/tolist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drhome\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drhome\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\UserR->tolist[ D:\phpStudy\WWW\drhome\application\admin\controller\UserR.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.062003s ] mysql:host=47.104.154.142;port=9989;dbname=drj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `action_data` [ RunTime:0.044003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 0 [ RunTime:0.043003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 49 [ RunTime:0.046002s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 51 [ RunTime:0.044002s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 59 [ RunTime:0.042002s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 63 [ RunTime:0.043002s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 67 [ RunTime:0.046003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 75 [ RunTime:0.045003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 80 [ RunTime:0.046002s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 82 [ RunTime:0.292016s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 85 [ RunTime:0.297017s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 87 [ RunTime:0.044003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 92 [ RunTime:0.044002s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 95 [ RunTime:0.044003s ]
+---------------------------------------------------------------
+[ 2018-05-31T17:34:44+08:00 ] 127.0.0.1 GET /admin/User_r/tolist
+[ info ] drj.bjzhishanzhimei.com/admin/User_r/tolist [运行时间：3.825219s][吞吐率：0.26req/s] [内存消耗：3,333.03kb] [文件加载：77]
+[ info ] [ LANG ] D:\phpStudy\WWW\drhome\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'User_r',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1527040391,1527058214,1527155550,1527757599; PHPSESSID=rf009k0ic3r3a5jk31dmruv0l1; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1527757683',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/User_r/tolist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drhome\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drhome\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\UserR->tolist[ D:\phpStudy\WWW\drhome\application\admin\controller\UserR.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\drhome\public/../application/admin\view\user_r\tolist.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.063004s ] mysql:host=47.104.154.142;port=9989;dbname=drj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `action_data` [ RunTime:0.044003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 0 [ RunTime:0.044003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 49 [ RunTime:0.043002s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 51 [ RunTime:0.043002s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 59 [ RunTime:0.046003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 63 [ RunTime:0.044002s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 67 [ RunTime:0.044002s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 75 [ RunTime:0.043003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 80 [ RunTime:0.043002s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 82 [ RunTime:0.044003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 85 [ RunTime:0.044002s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 87 [ RunTime:0.044003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 92 [ RunTime:0.045003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 95 [ RunTime:0.043002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `give_red` [ RunTime:0.043002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `give_red` LIMIT 1 [ RunTime:0.043003s ]
+[ sql ] [ SQL ] SELECT * FROM `give_red` ORDER BY `id`  DESC LIMIT 0,15 [ RunTime:0.043003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_data` [ RunTime:0.047003s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 387 LIMIT 1 [ RunTime:0.044003s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 387 LIMIT 1 [ RunTime:0.044003s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 387 LIMIT 1 [ RunTime:0.045003s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 387 LIMIT 1 [ RunTime:0.045003s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 387 LIMIT 1 [ RunTime:0.044003s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 7 LIMIT 1 [ RunTime:0.044003s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 7 LIMIT 1 [ RunTime:0.045003s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 2 LIMIT 1 [ RunTime:0.045002s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 1 LIMIT 1 [ RunTime:0.044003s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 5 LIMIT 1 [ RunTime:0.044003s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 35 LIMIT 1 [ RunTime:0.496028s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 35 LIMIT 1 [ RunTime:0.269016s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 35 LIMIT 1 [ RunTime:0.045003s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 35 LIMIT 1 [ RunTime:0.046003s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 35 LIMIT 1 [ RunTime:0.044002s ]
+---------------------------------------------------------------
+[ 2018-05-31T17:34:45+08:00 ] 127.0.0.1 GET /Js/admin/UserR/tolist.js?v=1527759284
+[ info ] drj.bjzhishanzhimei.com/Js/admin/UserR/tolist.js?v=1527759284 [运行时间：0.535031s][吞吐率：1.87req/s] [内存消耗：1,572.23kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\WWW\drhome\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Js',
+    1 => 'admin',
+    2 => 'UserR',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1527040391,1527058214,1527155550,1527757599; PHPSESSID=rf009k0ic3r3a5jk31dmruv0l1; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1527757683',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin/User_r/tolist',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/Js/admin/UserR/tolist_js' => '',
+  'v' => '1527759284',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-31T17:35:01+08:00 ] 127.0.0.1 GET /admin/User_r/tolist?name=%E9%99%88%E6%98%A5%E5%85%89
+[ info ] drj.bjzhishanzhimei.com/admin/User_r/tolist?name=%E9%99%88%E6%98%A5%E5%85%89 [运行时间：2.545145s][吞吐率：0.39req/s] [内存消耗：3,102.91kb] [文件加载：75]
+[ info ] [ LANG ] D:\phpStudy\WWW\drhome\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'User_r',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1527040391,1527058214,1527155550,1527757599; PHPSESSID=rf009k0ic3r3a5jk31dmruv0l1; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1527757683',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin/User_r/tolist',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/User_r/tolist' => '',
+  'name' => '陈春光',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drhome\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drhome\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\UserR->tolist[ D:\phpStudy\WWW\drhome\application\admin\controller\UserR.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\drhome\public/../application/admin\view\user_r\tolist.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.069004s ] mysql:host=47.104.154.142;port=9989;dbname=drj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `action_data` [ RunTime:0.051003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 0 [ RunTime:0.048003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 49 [ RunTime:0.050002s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 51 [ RunTime:0.049002s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 59 [ RunTime:0.380021s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 63 [ RunTime:0.048003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 67 [ RunTime:0.047002s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 75 [ RunTime:0.050003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 80 [ RunTime:0.050003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 82 [ RunTime:0.049003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 85 [ RunTime:0.050002s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 87 [ RunTime:0.298017s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 92 [ RunTime:0.049002s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 95 [ RunTime:0.049003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `give_red` [ RunTime:0.047002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `give_red` WHERE  `user_id` = 0 LIMIT 1 [ RunTime:0.048003s ]
+[ sql ] [ SQL ] SELECT * FROM `give_red` WHERE  `user_id` = 0 ORDER BY `id`  DESC LIMIT 0,15 [ RunTime:0.050003s ]
+---------------------------------------------------------------
+[ 2018-05-31T17:35:01+08:00 ] 127.0.0.1 GET /Js/admin/UserR/tolist.js?v=1527759301
+[ info ] drj.bjzhishanzhimei.com/Js/admin/UserR/tolist.js?v=1527759301 [运行时间：0.512029s][吞吐率：1.95req/s] [内存消耗：1,572.38kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\WWW\drhome\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Js',
+    1 => 'admin',
+    2 => 'UserR',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1527040391,1527058214,1527155550,1527757599; PHPSESSID=rf009k0ic3r3a5jk31dmruv0l1; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1527757683',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin/User_r/tolist?name=%E9%99%88%E6%98%A5%E5%85%89',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/Js/admin/UserR/tolist_js' => '',
+  'v' => '1527759301',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-31T17:36:17+08:00 ] 127.0.0.1 GET /admin/User_r/tolist?name=%E9%99%88%E6%98%A5%E5%85%89
+[ info ] drj.bjzhishanzhimei.com/admin/User_r/tolist?name=%E9%99%88%E6%98%A5%E5%85%89 [运行时间：1.572090s][吞吐率：0.64req/s] [内存消耗：2,990.77kb] [文件加载：71]
+[ info ] [ LANG ] D:\phpStudy\WWW\drhome\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'User_r',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1527040391,1527058214,1527155550,1527757599; PHPSESSID=rf009k0ic3r3a5jk31dmruv0l1; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1527757683',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin/User_r/tolist',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/User_r/tolist' => '',
+  'name' => '陈春光',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drhome\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drhome\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\UserR->tolist[ D:\phpStudy\WWW\drhome\application\admin\controller\UserR.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.066004s ] mysql:host=47.104.154.142;port=9989;dbname=drj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `action_data` [ RunTime:0.043003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 0 [ RunTime:0.045003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 49 [ RunTime:0.043003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 51 [ RunTime:0.043003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 59 [ RunTime:0.044003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 63 [ RunTime:0.044003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 67 [ RunTime:0.045002s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 75 [ RunTime:0.297017s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 80 [ RunTime:0.042002s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 82 [ RunTime:0.043002s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 85 [ RunTime:0.042002s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 87 [ RunTime:0.042002s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 92 [ RunTime:0.043003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 95 [ RunTime:0.045003s ]
+---------------------------------------------------------------
+[ 2018-05-31T18:21:30+08:00 ] 127.0.0.1 GET /admin/User_r/tolist
+[ info ] drj.bjzhishanzhimei.com/admin/User_r/tolist [运行时间：3.926225s][吞吐率：0.25req/s] [内存消耗：3,174.32kb] [文件加载：75]
+[ info ] [ LANG ] D:\phpStudy\WWW\drhome\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'User_r',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1527040391,1527058214,1527155550,1527757599; PHPSESSID=rf009k0ic3r3a5jk31dmruv0l1; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1527757683',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/User_r/tolist' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drhome\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drhome\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\UserR->tolist[ D:\phpStudy\WWW\drhome\application\admin\controller\UserR.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\drhome\public/../application/admin\view\user_r\tolist.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.063003s ] mysql:host=47.104.154.142;port=9989;dbname=drj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `action_data` [ RunTime:0.046003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 0 [ RunTime:0.042003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 49 [ RunTime:0.042002s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 51 [ RunTime:0.041002s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 59 [ RunTime:0.042002s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 63 [ RunTime:0.042003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 67 [ RunTime:0.043002s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 75 [ RunTime:0.042002s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 80 [ RunTime:0.042002s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 82 [ RunTime:0.043002s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 85 [ RunTime:0.044003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 87 [ RunTime:0.044002s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 92 [ RunTime:0.042003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 95 [ RunTime:0.042002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `give_red` [ RunTime:0.044002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `give_red` LIMIT 1 [ RunTime:0.041002s ]
+[ sql ] [ SQL ] SELECT * FROM `give_red` ORDER BY `id`  DESC LIMIT 0,15 [ RunTime:0.043002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_data` [ RunTime:0.045002s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 387 LIMIT 1 [ RunTime:0.042003s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 387 LIMIT 1 [ RunTime:0.049003s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 387 LIMIT 1 [ RunTime:0.042003s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 387 LIMIT 1 [ RunTime:0.264015s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 387 LIMIT 1 [ RunTime:0.492029s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 7 LIMIT 1 [ RunTime:0.045003s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 7 LIMIT 1 [ RunTime:0.045002s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 2 LIMIT 1 [ RunTime:0.044003s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 1 LIMIT 1 [ RunTime:0.044003s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 5 LIMIT 1 [ RunTime:0.044002s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 35 LIMIT 1 [ RunTime:0.043002s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 35 LIMIT 1 [ RunTime:0.271015s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 35 LIMIT 1 [ RunTime:0.043002s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 35 LIMIT 1 [ RunTime:0.044002s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 35 LIMIT 1 [ RunTime:0.043002s ]
+---------------------------------------------------------------
+[ 2018-05-31T18:21:30+08:00 ] 127.0.0.1 GET /Js/admin/UserR/tolist.js?v=1527762089
+[ info ] drj.bjzhishanzhimei.com/Js/admin/UserR/tolist.js?v=1527762089 [运行时间：0.531031s][吞吐率：1.88req/s] [内存消耗：1,572.23kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\WWW\drhome\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Js',
+    1 => 'admin',
+    2 => 'UserR',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1527040391,1527058214,1527155550,1527757599; PHPSESSID=rf009k0ic3r3a5jk31dmruv0l1; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1527757683',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin/User_r/tolist',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/Js/admin/UserR/tolist_js' => '',
+  'v' => '1527762089',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-31T18:21:37+08:00 ] 127.0.0.1 GET /admin/User_r/tolist?name=%E9%99%88%E6%98%A5%E5%85%89
+[ info ] drj.bjzhishanzhimei.com/admin/User_r/tolist?name=%E9%99%88%E6%98%A5%E5%85%89 [运行时间：2.319133s][吞吐率：0.43req/s] [内存消耗：3,133.09kb] [文件加载：75]
+[ info ] [ LANG ] D:\phpStudy\WWW\drhome\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'User_r',
+    2 => 'tolist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1527040391,1527058214,1527155550,1527757599; PHPSESSID=rf009k0ic3r3a5jk31dmruv0l1; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1527757683',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin/User_r/tolist',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/User_r/tolist' => '',
+  'name' => '陈春光',
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+  'path' => 'D:\\phpStudy\\WWW\\drhome\\runtime\\session',
+  'sess_path' => 'D:\\phpStudy\\WWW\\drhome\\runtime\\session',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\UserR->tolist[ D:\phpStudy\WWW\drhome\application\admin\controller\UserR.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\drhome\public/../application/admin\view\user_r\tolist.html [ array (
+  0 => 'menu',
+  1 => 'path',
+  2 => 'User',
+  3 => 'mName',
+  4 => 'cName',
+  5 => 'aName',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.063003s ] mysql:host=47.104.154.142;port=9989;dbname=drj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `action_data` [ RunTime:0.046002s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 0 [ RunTime:0.044002s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 49 [ RunTime:0.042003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 51 [ RunTime:0.044003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 59 [ RunTime:0.046003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 63 [ RunTime:0.045003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 67 [ RunTime:0.276016s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 75 [ RunTime:0.045003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 80 [ RunTime:0.045002s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 82 [ RunTime:0.044002s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 85 [ RunTime:0.043003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 87 [ RunTime:0.045002s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 92 [ RunTime:0.044003s ]
+[ sql ] [ SQL ] SELECT * FROM `action_data` WHERE  `ad_pid` = 95 [ RunTime:0.043002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_data` [ RunTime:0.048003s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_name` = '陈春光' LIMIT 1 [ RunTime:0.044003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `give_red` [ RunTime:0.044003s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `give_red` WHERE  `user_id` = 387 LIMIT 1 [ RunTime:0.044003s ]
+[ sql ] [ SQL ] SELECT * FROM `give_red` WHERE  `user_id` = 387 ORDER BY `id`  DESC LIMIT 0,15 [ RunTime:0.044002s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 387 LIMIT 1 [ RunTime:0.044003s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 387 LIMIT 1 [ RunTime:0.043002s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 387 LIMIT 1 [ RunTime:0.044003s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 387 LIMIT 1 [ RunTime:0.045003s ]
+[ sql ] [ SQL ] SELECT * FROM `user_data` WHERE  `ud_id` = 387 LIMIT 1 [ RunTime:0.044002s ]
+---------------------------------------------------------------
+[ 2018-05-31T18:21:38+08:00 ] 127.0.0.1 GET /Js/admin/UserR/tolist.js?v=1527762097
+[ info ] drj.bjzhishanzhimei.com/Js/admin/UserR/tolist.js?v=1527762097 [运行时间：0.495028s][吞吐率：2.02req/s] [内存消耗：1,572.38kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\WWW\drhome\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Js',
+    1 => 'admin',
+    2 => 'UserR',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'Hm_lvt_9d483e9e48ba1faa0dfceaf6333de846=1527040391,1527058214,1527155550,1527757599; PHPSESSID=rf009k0ic3r3a5jk31dmruv0l1; Hm_lpvt_9d483e9e48ba1faa0dfceaf6333de846=1527757683',
+  'referer' => 'http://drj.bjzhishanzhimei.com/admin/User_r/tolist?name=%E9%99%88%E6%98%A5%E5%85%89',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+  'host' => 'drj.bjzhishanzhimei.com',
+)
+[ info ] [ PARAM ] array (
+  '/Js/admin/UserR/tolist_js' => '',
+  'v' => '1527762097',
+)
+[ info ] [ LOG ] INIT File

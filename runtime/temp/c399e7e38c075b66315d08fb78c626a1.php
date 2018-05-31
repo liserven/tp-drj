@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:74:"D:\phpStudy\WWW\drhome\public/../application/admin\view\user_r\tolist.html";i:1526464729;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:74:"D:\phpStudy\WWW\drhome\public/../application/admin\view\user_r\tolist.html";i:1527759106;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\layout.html";i:1525422713;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\header.html";i:1525942363;s:57:"D:\phpStudy\WWW\drhome\application\admin\view\footer.html";i:1525422713;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -49,16 +49,10 @@
         <form class="layui-form" id="query_form" action="">
             <div class="layui-form-item" style="padding-left:20px ;">
                 <div class="layui-block">
-                    <label class="layui-form-mid">选项：</label>
-                    <div class="layui-input-inline">
-                        <select >
-                            <option>用户名称</option>
 
 
-                        </select>
-                    </div>
                     <div class="layui-input-inline">
-                        <input type="text" name="sex" lay-verify="required" placeholder="请输入查询内容" class="layui-input">
+                        <input type="text" name="name" lay-verify="required" placeholder="请输入用户名称" class="layui-input">
                     </div>
 
 
