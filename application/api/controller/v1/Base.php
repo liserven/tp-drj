@@ -11,6 +11,7 @@ namespace app\api\controller\v1;
 
 use app\common\service\Token;
 use app\common\validate\IDMustBePositiveInt;
+use app\lib\exception\UserException;
 use think\Controller;
 
 class Base extends Controller
@@ -37,6 +38,7 @@ class Base extends Controller
     //验证合伙人权限
     protected function checkPartner()
     {
+
         Token::needSuperScope();
         $this->user = Token::getCurrentIdentity();
     }

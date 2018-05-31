@@ -50,7 +50,7 @@ class Pay extends Base
         $payServer->total_fee = $orderData['total_price']*100;
         $payServer->out_trade_no = $orderData['order_no'];
         $payServer->notify_url = 'http://www.61drhome.cn/api/v1/wx_notify';
-        $payServer->body = $orderData['snap_name'];
+        $payServer->body = '定荣家-'.$orderData['snap_name'].'支付';
         return json($payServer->doPay());
      }
 

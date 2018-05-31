@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="__STATIC__/jquery-3.2.1.min.js"></script>
+    <script src="http://cdn.bootcss.com/blueimp-md5/1.1.0/js/md5.js"></script>
+    <script src="__STATIC__/jmessage.min.js"></script>
+    <script src="__JS__/index/chat.js"></script>
+    <script>
+        var JIM = new JMessage({debug: true});
+        var appkey = 'a7268c5210a5f6d69a06beda';
+        var date = Date.parse(new Date());
+        var random_str = '456789asdsadsa';
+        var signTrue = md5("appkey=" + appkey + "&timestamp=" + date + "&random_str=" + random_str + "&key=ed4d2305c12a4b9165fdd281");
+        JIM.init({
+            "appkey": appkey,
+            "random_str": random_str,
+            "signature": signTrue,
+            "timestamp": date,
+            "flag": 1
+        }).onSuccess(function (data) {
+            console.log('success:' + JSON.stringify(data));
+            appendToDashboard('success' + JSON.stringify(data));
+        }).onFail(function (data) {
+            console.log('error:' + JSON.stringify(data))
+            appendToDashboard('error: ' + JSON.stringify(data));
+        });
+
+        function appendToDashboard(text) {
+            $('#dashboard').append('<p style="margin-left: 16px">' + text + '</p>')
+
+        }
+    </script>
+</head>
+<body>
+
+{__CONTENT__}
+
+<div id="dashboard">
+
+</div>
+</body>
+
+</html>

@@ -46,6 +46,7 @@ class BuildingWxPayNotifyService extends \WxPayNotify
                     $orderData->parment_money = $totalFell;
                     $orderData->pay_time = $timeEnd;
                     $orderData->save();
+                    Db::table('building_order_detail')->where(['order_id'=> $orderData['id']])->update(['status'=>BuildingOrderStatus::PAID]);
                     UserNotices::create($NoticeData);
                 }
                 Db::commit();

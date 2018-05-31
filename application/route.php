@@ -304,6 +304,11 @@ Route::get('api/:version/encode', 'api/:version.Geo/encode'); //订单
 
 
 
+//即时聊天相关接口
+Route::get('api/:version/im_register', 'api/:version.Im/register'); //订单
+Route::get('api/:version/query', 'api/:version.Query/index'); //订单
+
+
 
 
 

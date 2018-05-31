@@ -54,10 +54,10 @@ class Villa extends Base
         if( !empty($room) ) $where['room'] = $room;
         if( !empty($layer) ) $where['vd_height'] = $layer;
 
+
         $limit = input('limit');
         $limit = $limit ? $limit : 20;
         $villas = VillaModel::getVillaPage($where, $limit, $order);
-
         if( $villas->isEmpty() ){
             throw new ParameterException([
                 'msg' => '暂无别墅数据'

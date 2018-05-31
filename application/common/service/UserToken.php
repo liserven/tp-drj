@@ -60,6 +60,15 @@ class UserToken extends Token
         $cachedValue = $this->prepareCachedValue($user->toArray());
 
         $token = $this->saveToCache($cachedValue);
+        //将最新的token存入数据库
+        $user->token = $token;
+        $editTokenResult = $user->save();
+        if( !$editTokenResult )
+        {
+            throw new UserException([
+                'msg'=> '修改登录标示错误,登录失败'
+            ]);
+        }
         $data = [
             'is_partner' => $cachedValue['type']==2? true: false,
             'token' => $token

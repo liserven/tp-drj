@@ -270,7 +270,7 @@ class Partner extends Base
                 'msg' => '您不是该合伙人的客户无法评分'
             ]);
         }
-        if ($partnerUser['status'] != '结款') {
+        if ($partnerUser['status'] != PartnerUserStatus::END) {
             throw new PartnerException([
                 'msg' => '项目正在进行中,无法评分'
             ]);

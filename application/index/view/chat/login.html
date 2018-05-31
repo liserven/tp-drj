@@ -1,0 +1,34 @@
+<layout name="layout"/>
+帐号 : <input type="text" value="" name="account" id="account">
+密码 : <input type="text" name="password" id="password">
+<button id="login" onclick="login()">登录</button>
+
+
+
+<script>
+
+    function login() {
+
+
+        JIM.login({
+            'username' : $('#account').val(),
+            'password': $('#password').val(),
+        }).onSuccess(function(data) {
+
+
+
+            console.log('success:' + JSON.stringify(data));
+            appendToDashboard(JSON.stringify(data));
+
+
+
+        }).onFail(function(data) {
+
+            console.log('error:' + JSON.stringify(data));
+            appendToDashboard('error: ' +JSON.stringify(data));
+        }).onTimeout(function(data) {
+            console.log('timeout:' + JSON.stringify(data));
+            appendToDashboard('timeout: ' +JSON.stringify(data));
+        });
+    }
+</script>

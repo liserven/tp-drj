@@ -87,11 +87,6 @@ function getComment($pid, $cpid)
     return $tmp;
 }
 
-//友好输出
-function dd($resources)
-{
-    halt($resources);
-}
 
 //验证敏感字
 function checkProhibit($str = '')

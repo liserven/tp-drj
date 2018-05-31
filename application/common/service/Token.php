@@ -4,6 +4,7 @@
 namespace app\common\service;
 
 
+use app\common\model\UserData;
 use app\lib\exception\ForbiddenException;
 use app\lib\exception\ParameterException;
 use app\lib\exception\TokenException;
@@ -115,6 +116,8 @@ class Token
         $token = Request::instance()
             ->header('token');
         $identities = Cache::get($token);
+
+
         //cache 助手函数有bug
 //        $identities = cache($token);
         if (!$identities)
@@ -124,6 +127,14 @@ class Token
         else
         {
             $identities = json_decode($identities, true);
+            $userData = UserData::get($identities['ud_id']);
+            if( $userData['token'] != $token )
+            {
+                throw new TokenException([
+                    'msg'=> '当前账号在其他区域登录',
+                    'errorCode' => 100006
+                ]);
+            }
             if( !empty( $keys ) )
             {
                 $result = [];

@@ -37,6 +37,16 @@
       <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
       <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
       <path value="G:\swoole-ide-helper-master" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/jaeger/querylist" />
+      <path value="$PROJECT_DIR$/vendor/jaeger/phpquery-single" />
+      <path value="$PROJECT_DIR$/vendor/jaeger/g-http" />
+      <path value="$PROJECT_DIR$/vendor/tightenco/collect" />
+      <path value="$PROJECT_DIR$/vendor/topthink/framework" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="5.4.0" />

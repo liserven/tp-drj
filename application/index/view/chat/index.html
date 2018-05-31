@@ -1,0 +1,79 @@
+<layout name="layout"/>
+<div class="login-box" >
+    帐号 : <input type="text" value="" name="account" id="account">
+    密码 : <input type="text" name="password" id="password">
+    <button id="login" onclick="login()">登录</button>
+</div>
+<textarea name="" id="content" cols="30" rows="10">
+</textarea>
+<button onclick="sendSingleMsg()">发送</button>
+<script>
+    var username;
+    if(!isLogin())
+    {
+        $('.login-box'),show();
+    }
+    else{
+        $('.login-box'),hide();
+
+    }
+    function isLogin(){
+        if(!JIM.isLogin())
+        {
+            return false;
+        }
+        return true;
+    }
+    function sendSingleMsg() {
+        if( !isLogin() )
+        {
+            alert('未登陆,请登陆')
+            return false;
+        }
+
+        JIM.sendSingleMsg({
+            'target_username' : '135255',
+            'appkey' :  appkey,
+            'content' : '12221',
+            'no_offline' : false,
+            'no_notification' : false,
+            //'custom_notification':{'enabled':true,'title':'title','alert':'alert','at_prefix':'atprefix'}
+            need_receipt:true
+        }).onSuccess(function(data,msg) {
+            console.log('success data:' + JSON.stringify(data));
+            console.log('succes msg:' + JSON.stringify(msg));
+            appendToDashboard('success: ' +JSON.stringify(data));
+        }).onFail(function(data) {
+            console.log('error:' + JSON.stringify(data));
+            appendToDashboard('error: ' +JSON.stringify(data));
+        });
+    }
+    function login() {
+
+
+        JIM.login({
+            'username' : $('#account').val(),
+            'password': $('#password').val(),
+        }).onSuccess(function(data) {
+            JIM.onMsgReceive(function(data) {
+                console.log('1msg_receive:' + data);
+
+                appendToDashboard('msg_receive:' +  data.messages[0].from_username+ "说:"+ data.messages[0].content.msg_body.text);
+
+            });
+            alert('登陆成功');
+            console.log('success:' + JSON.stringify(data));
+            appendToDashboard(JSON.stringify(data));
+
+
+
+        }).onFail(function(data) {
+
+            console.log('error:' + JSON.stringify(data));
+            appendToDashboard('error: ' +JSON.stringify(data));
+        }).onTimeout(function(data) {
+            console.log('timeout:' + JSON.stringify(data));
+            appendToDashboard('timeout: ' +JSON.stringify(data));
+        });
+    }
+</script>

@@ -158,6 +158,12 @@ class PartnerUser extends Base
                     'msg' => '该订单还未开始建设，不能完工'
                 ]);
             }
+            $orderId = input('order_id');
+            if (!$orderId) {
+                throw new PartnerException([
+                    'msg' => '订单id必须'
+                ]);
+            }
             Db::startTrans();
             try {
                 //如果是完工
@@ -168,7 +174,7 @@ class PartnerUser extends Base
                     'type' => 3,
                 ]);
                 $villaOrderDetailData = [
-                    'order_id' => $id,
+                    'order_id' => $orderId,
                     'status' => '已经完工',
                     'create_at' => time()
                 ];
@@ -184,7 +190,7 @@ class PartnerUser extends Base
 
             } catch (\Exception $e) {
                 Db::rollback();
-                return show(true, '完工失败!');
+                return show(true, $e->getMessage());
             }
         }
 

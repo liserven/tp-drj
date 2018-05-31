@@ -1,0 +1,20 @@
+<layout name="layout" />
+帐号 : <input type="text" value="" name="account" id="account">
+密码 : <input type="text" name="password" id="password">
+昵称 : <input type="text" name="password" id="name">
+<button id="login" onclick="register()">注册</button>
+<script>
+    function register(){
+        JIM.register({
+            'username' : $('#account').val(),
+            'password': $('#password').val(),
+            'nickname' : $('#name').val()
+        }).onSuccess(function(data) {
+            console.log('success:' + JSON.stringify(data));
+            appendToDashboard(JSON.stringify(data));
+        }).onFail(function(data) {
+            console.log('error:' + JSON.stringify(data))
+            appendToDashboard('error: ' +JSON.stringify(data));
+        });
+    }
+</script>
