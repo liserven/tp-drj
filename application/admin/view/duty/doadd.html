@@ -28,9 +28,9 @@
                     <fieldset class="layui-elem-field">
                         <legend>{$vo.ad_topic}</legend>
                         <div class="layui-field-box">
-                            <input type="checkbox" value="{$vo.ad_id}" name="actions[]" title="{$vo.ad_topic}" lay-filter="check-all" class="check-all" lay-skin="primary">
+                            <input style="top:0; !important;"  type="checkbox" value="{$vo.ad_id}" name="actions[]" title="{$vo.ad_topic}" lay-filter="check-all" class="check-all" lay-skin="primary">
                             <volist name="vo['actions']" id="v">
-                                <input type="checkbox" value="{$v.ad_id}" name="actions[]" lay-filter="check-one" title="{$v.ad_topic}" class="check-one" lay-skin="primary">
+                                <input style="top:0; !important;" type="checkbox" value="{$v.ad_id}" name="actions[]" lay-filter="check-one" title="{$v.ad_topic}" class="check-one" lay-skin="primary">
                             </volist>
                         </div>
                     </fieldset>

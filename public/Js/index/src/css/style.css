@@ -106,6 +106,7 @@ li {
 	border-radius: 30px;
 	margin: 1rem 0 0 0;
 }
+
 .list {
 	overflow: hidden;
 	padding: 2rem 0 0.5rem 0;
@@ -387,6 +388,8 @@ nav {
 .redpacketop ul li.status_1 {
 	line-height: 18.4rem;
 	display: block;
+	width: 45%;
+	padding: 15% 0 0 0;
 }
 .redpacketop ul li.on {
 	display: none;
@@ -419,7 +422,7 @@ nav {
 	margin-top: 1.5rem;
 }
 .redpacketop ul li.status_3 {
-	padding: 4rem 1rem 0;
+	padding: 1rem 1rem 0;
 }
 .redpacketop ul li.status_3 dd {
 	font-size: 1.4rem;
