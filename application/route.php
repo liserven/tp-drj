@@ -264,7 +264,7 @@ Route::get('api/:version/u_notice', 'api/:version.Notice/noticeList');
 Route::get( 'api/:version/search', 'api/:version.Index/search');
 
 //分享
-Route::get('share/red', 'index/Share/red');
+Route::get('share/red', 'index/Share/redpacket');
 Route::get('share/card', 'index/Share/card');
 Route::get('share/home', 'index/Share/home');
 Route::get('share/building', 'index/Share/index');

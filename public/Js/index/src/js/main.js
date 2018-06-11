@@ -4,6 +4,12 @@ $(function() {
 		window.history.go(-1);  
 	})
 
+
+    var $img = $('.avatar_name a').find('img')
+	if($img.attr('src') == '/Js/index/src/image/sex_3.png') {
+        $('.avatar_name a').hide()
+	}
+
 	$('.collect').click(function () {
 		if($(this).attr('src') == './src/image/collect_icon.png'){
 			$(this).attr('src', './src/image/oncollect_icon.png');
@@ -33,26 +39,34 @@ $(function() {
     var $width = $('.status_1 button').width();
     $('.status_1 button').height($width);
 
-    $('.graredenvelope').click(function(){
-        confirm("我的！都是我的！！");
+
+    $('.qianghongbao').click(function () {
+        $('.status').addClass('on')
+        $('.status_2').removeClass('on')
     })
-	
+
+
 	$('.receive_packet').click(function () {
 		var phone = $('.receive_phone').val();
 		var packets_id = $(".packets_id").val();
-		if( phone.length == 0 )
+        var myreg = /^[1][3,4,5,7,8][0-9]{9}$/;
+        if( phone.length == 0 || phone.length < 11 || phone.length > 11 )
 		{
-			alert('手机号不能为空');
+			alert('手机号格式不正确');
+			return false;
 		}
-		$.post('/api/v1/receive_packet', {phone: phone, packet_id : packets_id}, function (result) {
+        $.post('/api/v1/receive_packet', {phone: phone, packet_id : packets_id}, function (result) {
 			if(result.bol)
 			{
-				alert('领取成功');
+				alert(result.msg);
+                $('.status').addClass('on')
+                $('.status_3').removeClass('on')
 			}
 			else{
-				alert('领取失败');
+				alert(result.msg);
 			}
         })
+        $('.sharend').html(phone)
     });
 
     var wigth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;

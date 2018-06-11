@@ -27,22 +27,22 @@
 					<p>{$data.word}</p>
 				</li>
 				<!-- 这里分三种状态 status_1是未绑定手机号 status_2是绑定手机号 status_3是抢完红包后的状态 -->
-				<!--<li class="status_1 on">-->
-					<!--&lt;!&ndash; 抢红包 &ndash;&gt;-->
-					<!--<button class="graredenvelope">抢</button>-->
-				<!--</li>-->
-				<li class="status_2">
+				<li class="status_1 status">
+					<!-- 抢红包 -->
+					<button class="graredenvelope qianghongbao">抢</button>
+				</li>
+				<li class="status_2 status on">
 					<!-- 绑定手机号 -->
 					<dd>所抢到的红包将绑定至该手机号</dd>
-					<input type="number" class="receive_phone" />
+					<input type="number" class="receive_phone" maxlength="11" />
 					<button class="receive_packet">绑定手机号</button>
 				</li>
-				<li class="status_3  on">
+				<li class="status_3 status on">
 					<dd>红包在手，豪宅我有！</dd>
 					<p><b>10000</b> 元</p>
                     <input type="hidden" class="packets_id" value="{$data.id}">
 					<img src="__JS__/index/src/image/opendrj_btn.png">
-					<a>红包已放置账户<span>13978451245</span>登录APP即可使用</a>
+					<a>红包已放置账户<span class="sharend">13978451245</span>登录APP即可使用</a>
 				</li>
 			</ul>
 		</header>

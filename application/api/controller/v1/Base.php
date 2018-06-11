@@ -61,10 +61,10 @@ class Base extends Controller
     protected function resultHandle($result, $errCode = 90004)
     {
         if( !empty($result) ){
-            return show(true, 'ok');
+            return show(true, '操作成功');
         }
         else{
-            return show(false, 'err', [], $errCode);
+            return show(false, '操作失败', [], $errCode);
         }
     }
 
