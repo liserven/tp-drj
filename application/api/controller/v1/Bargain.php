@@ -33,7 +33,7 @@ class Bargain extends Base
 
     protected $beforeActionList = [
         //用户
-        'checkLogin'=> [ 'only'=> 'launchBargain,myBargain' ]
+        'checkLogin'=> [ 'only'=> 'launchBargain,myBargain,getBargainConfig' ]
     ];
 
 
@@ -70,12 +70,10 @@ class Bargain extends Base
     //查询砍价配置
     public function getBargainConfig()
     {
-        $data = BargainModel::get([ 'user_id'=> $this->user['ud_id']]);
-        if( empty($data) )
-        {
-            return show(true, '你还没有发起过砍价', []);
-        }
+
+        $isBargain = BargainModel::get([ 'user_id'=> $this->user['ud_id']]);
         $config = BargainSte::find()->hidden([ 'id', 'red_set', 'create_at', 'update_at', 'status']);
+        $config['is_bargain'] = $isBargain ? true : false;
         return show(true, 'ok', $config);
     }
 

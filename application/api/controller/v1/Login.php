@@ -232,7 +232,9 @@ class Login extends Base
                 'is_login' => false,
                 'token' => $token,
                 'is_partner'=> $user_data['type'] == 2 ? true : false,
-                'is_push' => $user_data['ud_push'] == 1 ? true : false
+                'is_push' => $user_data['ud_push'] == 1 ? true : false,
+                'phone'=> $user_data['ud_phone'],
+                'password' => $user_data['ud_password'],
             ];
         }
         return show( true, 'ok', $data);
@@ -288,7 +290,9 @@ class Login extends Base
             PhoneCode::destroy([ 'phone'=>$user->ud_phone ]);
             Db::commit();
 
-            return show(true,'修改成功');
+            return show(true,'修改成功', [
+                'new_pass'=> $password
+            ]);
 
         }catch (\Exception $e)
         {
