@@ -25,7 +25,6 @@ class Bset extends Base{
                 return $this->ajaxShow(false, '无权此操作');
             }
             $gid = input('province');
-
             $data = input('name/a');
             try {
                 if (is_array($data) && !empty($data)) {
@@ -33,20 +32,14 @@ class Bset extends Base{
                     foreach ($data as $k => $val) {
                        $resData[$k]['name'] = $val;
                        $resData[$k]['clumr_id'] = $gid;
-
-
                     }
-
-
                 }
                 (new BuildingDetailsSet())->saveAll($resData);
                 return $this->resultHandle($resData);
             }catch(\Exception $e){
                 return show( false, $e->getMessage() );
             }
-
         }else{
-
             $province = db('building_column')->where('pid','>','0')->select();
             $this->assign([
                 'province' => $province,

@@ -80,6 +80,14 @@ return [
                 'target' => 'target',
                 'content' => '黑名单',
             ],
+            [
+                'id' => '',
+                'icon' => '&#xe62d;',
+                'ad_topic' => '客服管理',
+                'ad_url' => "/admin/Custom/tolist",
+                'target' => 'target',
+                'content' => '客服管理',
+            ],
         ],
     ],
     'User' => [

@@ -90,6 +90,7 @@ class Index extends Base
                     ->field('ud.ud_name, ud.ud_phone, ud.ud_logo, ud.ud_sex, ud.city, ud.province, ud.county, ud.town,
                      ud.status,ud.ud_id')
                     ->paginate(10);
+
             }
             else{
                 $partner_data = UserData::getCityPartner([ 'ud.county'=> $county], $limit);
@@ -109,6 +110,7 @@ class Index extends Base
                 $partner['comm'] = 999;
                 $partner['share_url'] = 'http://www.61drhome.cn/share/card?id='.$partner['ud_id'];
                 $partner['likes'] = Db::table('partner_laud')->where(['pid'=> $partner['ud_id']])->count();
+
             }
         }
         else{

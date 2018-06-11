@@ -70,6 +70,11 @@ class Bargain extends Base
     //查询砍价配置
     public function getBargainConfig()
     {
+        $data = BargainModel::get([ 'user_id'=> $this->user['ud_id']]);
+        if( empty($data) )
+        {
+            return show(true, '你还没有发起过砍价', []);
+        }
         $config = BargainSte::find()->hidden([ 'id', 'red_set', 'create_at', 'update_at', 'status']);
         return show(true, 'ok', $config);
     }
