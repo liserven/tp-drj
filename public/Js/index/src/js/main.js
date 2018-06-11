@@ -78,7 +78,7 @@ $(function() {
     }else if(wigth>315){
         phoneType = "iphone5 or iphone5s";
         $('.redpacketop ul li:first-child p').css({
-			'font-size':'1.4rem',
+			'font-size':'1.2rem',
 			'padding': '0 1rem'
 		})
         $('.redpacketop ul li.status_2 input').css({
@@ -87,11 +87,20 @@ $(function() {
 		})
 		$('.redpacketop ul li.status_2 button').css({
 			'font-size':'1.5rem',
-			'margin':'1rem 0 0 1.5rem'
+			'margin':'1rem 0 0 1.8rem'
 		})
+        $('.redpacketop ul li dd span').css({
+            'font-size':'1.4rem',
+        })
 		$('.redpacketop ul li.status_2').css({
 			'padding-top': '3rem'
 		})
+		$('.redpacketop').css('margin-top', '32rem')
+		$('.interaction a img').css('width','2.5rem')
+		$('.avatar_name span').css('font-size','2.6rem')
+		$('.centent dd').css('css', '1.4rem')
+        $('.centent dd b').css('css', '2.2rem')
+        $('.personal').css('padding-top', '5rem')
     }else{
         phoneType = "iphone 4s";
     }

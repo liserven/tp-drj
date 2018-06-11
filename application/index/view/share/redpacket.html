@@ -3,6 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="screen-orientation"content="portrait">
+	<meta name="x5-orientation"content="portrait">
 	<link href="https://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
 	<title>红包分享</title>
 	<link rel="stylesheet" type="text/css" href="__JS__/index/src/css/style.css">
@@ -11,8 +13,9 @@
 	<link rel="stylesheet" type="text/css" href="__JS__/index/src/css/page_style.css">
 	<style type="text/css">
 		body {
-			background: url(__JS__/index/src/image/redpacket.jpg) 0 0 no-repeat;
+			background: url(__JS__/index/src/image/redpacket.png) 0 0 no-repeat;
 			background-size: 100%;
+			background-color: rgb(208, 15, 46);
 		}
 	</style>
 </head>
@@ -42,21 +45,21 @@
 					<p><b>10000</b> 元</p>
                     <input type="hidden" class="packets_id" value="{$data.id}">
 					<img src="__JS__/index/src/image/opendrj_btn.png">
-					<a>红包已放置账户<span class="sharend">13978451245</span>登录APP即可使用</a>
+					<a>红包已放置账户,<br><span class="sharend">13978451245</span><br>登录APP即可使用</a>
 				</li>
 			</ul>
 		</header>
 		<div class="redpacket">
 			<ul class="row-router">
-				<p>领取{$grab|count}/{$data.total}个</p>
+				<p>领取{$grab|count}/{$data.num}个</p>
                 <volist name="grab" id="vo">
                     <li>
-                        <img src="{$vo.ud_logo}">
+                        <img width="58px" height="58px" src="{$vo.ud_logo}" style="border-radius: 50%">
                         <dd>
                             <h5>{$vo.ud_name}</h5>
-                            <span>{$vo.create_at}</span>
+                            <span>{$vo.create_at|date='Y-m-d H:i:m',###}</span>
                         </dd>
-                        <a>{$vo.money} 元</a>
+                        <a><b>{$vo.money}</b> 元</a>
                     </li>
                 </volist>
 			</ul>
@@ -78,4 +81,16 @@
 </body>
 <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="__JS__/index/src/js/main.js"></script>
+<script>
+    var is_weixin = (function(){return navigator.userAgent.toLowerCase().indexOf('micromessenger') !== -1})();
+    if(is_weixin){
+        $(function(){
+            return true;
+        });
+    }else{
+        $(function(){
+            return false;
+        });
+    }
+</script>
 </html>

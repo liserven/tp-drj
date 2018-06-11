@@ -63,7 +63,7 @@ class Share extends BaseController
         $data = Db::table('give_red')->where(['id'=> $id])
             ->alias('gr')
             ->join('__USER_DATA__ ud', 'ud.ud_id=gr.user_id', 'left')
-            ->field('ud.ud_sex, ud.ud_name,gr.total,ud.ud_logo,gr.id, ud.ud_phone, gr.create_at, gr.word')
+            ->field('ud.ud_sex, ud.ud_name,gr.total,ud.ud_logo,gr.id, ud.ud_phone, gr.create_at, gr.word,gr.num')
             ->find();
         $grab = Db::table('grab_red')->where([ 'rid'=> $data['id']])->order('id desc')->select();
         if( !empty($grab) )
