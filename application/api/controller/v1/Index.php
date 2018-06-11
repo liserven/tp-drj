@@ -106,9 +106,9 @@ class Index extends Base
                 $star = Db::table('partner_star')->where([ 'pid'=> $partner['ud_id']])->avg('star');
                 $partner['star'] = $star <= 0 ? 5 : $star;
                 $partner['deal'] = Db::table('partner_user')->where([ 'pu_partner_id'=>$partner['ud_id'], 'status'=> PartnerUserStatus::SIGN])->count();
-                $partner['comm'] = 999;
+                $partner['comm'] = 0;
                 $partner['share_url'] = 'http://www.61drhome.cn/share/card?id='.$partner['ud_id'];
-                $partner['likes'] = Db::table('partner_laud')->where(['pid'=> $partner['ud_id']])->count();
+                $partner['likes'] = Db::table('partner_laud')->where(['pid'=> $partner['ud_id']])->count()?$partner['praise']=1:$partner['praise']=0;
             }
         }
         else{

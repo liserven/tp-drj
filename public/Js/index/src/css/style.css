@@ -260,7 +260,7 @@ nav {
 	border-radius: 10px;
 }
 .personal {
-	padding: 5rem 0 3rem 0;
+	padding: 8rem 0 3rem 0;
 	margin: 0;
 }
 .avatar_logo {
@@ -271,7 +271,7 @@ nav {
 	margin-top: 1.5rem;
 }
 .avatar_name span {
-	font-size: 2.6rem;
+	font-size: 3.2rem;
 	margin: 0 1rem 0 0;
 }
 .address {
@@ -288,12 +288,12 @@ nav {
 }
 .centent dd {
 	color: #999999;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     padding: 0;
 }
 .centent dd b{
 	color: #d00f30;
-    font-size: 2.2rem;
+    font-size: 2.6rem;
 }
 .grade.on3 {
 	width: 80%;
@@ -311,7 +311,7 @@ nav {
 	margin: 0
 }
 .interaction a img {
-	width: 2.5rem;
+	width: 3.5rem;
 }
 .thumbsup {
 	padding: 0.5rem 1.5rem;
@@ -339,19 +339,21 @@ nav {
 
 
 .redpacketop {
-	height: 18.4rem;
+	/*height: 18.4rem;*/
 	width: 90%;
-	margin: 32rem auto 0;
-	background: url(./../image/redpacket_qiang.png) 0 0 no-repeat;
+	margin: 38rem auto 0;
 	background-size: 100%;
+	background-color: rgb(346, 96, 91);
+	border-radius: 5px;
 }
 .redpacketop ul {
 	text-align: center;
 	display: flex;
 }
 .redpacketop ul li:first-child {
-	padding-top: 1.5rem;
+	padding: 1.5rem;
 	width: 55%;
+	border-right: 1px dashed #c22d28;
 }
 .redpacketop ul li:last-child {
 	width: 45%;
@@ -362,7 +364,7 @@ nav {
 .redpacketop ul li:first-child h3 {
 	font-size: 2.1rem;
 	color: #000;
-	margin: 0.5rem 0;
+	margin: 0.3rem 0 0.5rem 0;
 }
 .redpacketop ul li:first-child span {
 	font-size: 1.4rem;
@@ -372,6 +374,8 @@ nav {
 	font-size: 1.8rem;
 	color: #fff;
 	padding: 0px 2rem;
+	text-align: left;
+	margin: 0;
 }
 .redpacketop ul li:last-child button {
 	display: none;
@@ -420,6 +424,7 @@ nav {
 	display: block;
 	padding: 0.5rem 1rem;
 	margin-top: 1.5rem;
+	margin-left: 1.8rem;
 }
 .redpacketop ul li.status_3 {
 	padding: 1rem 1rem 0;
@@ -467,7 +472,7 @@ nav {
 	margin-bottom: 1.5rem;
 }
 .redpacket li img {
-	width: 20%;
+	/*width: 20%;*/
 	float: left;
 }
 .redpacket li dd {
@@ -477,6 +482,7 @@ nav {
 .redpacket li dd h5 {
 	font-size: 2.1rem;
 	color: #000;
+	margin-bottom: 5px;
 }
 .redpacket li dd span {
 	font-size: 1.4rem;

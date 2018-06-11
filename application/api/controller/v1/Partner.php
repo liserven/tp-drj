@@ -89,7 +89,7 @@ class Partner extends Base
         $star = Db::table('partner_star')->where(['pid' => $userId])->avg('star');
         $partner_data['star'] = $star <= 0 ? 5 : $star;
         $partner_data['deal'] = Db::table('partner_user')->where(['pu_partner_id' => $userId, 'status' => PartnerUserStatus::SIGN])->count();
-        $partner_data['comm'] = 999;
+        $partner_data['comm'] = 0;
         $partner_data['order'] = Db::table('building_order')->where(['user_id'=> $userId])->count();
         $partner_data['reds'] = Db::table('give_red')->where(['user_id'=> $userId])->count();
         $partner_data['customer'] = Db::table('villa_order')->where(['partner_id'=> $userId])->count();

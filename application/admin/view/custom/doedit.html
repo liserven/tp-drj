@@ -1,0 +1,54 @@
+<layout name="layout"/>
+<div style="padding: 20px;">
+    <form class="layui-form" method="post" enctype=multipart/form-data>
+        <div class="layui-form-item">
+            <label class="layui-form-label">姓名</label>
+            <div class="layui-input-inline">
+                <input type="text" name="name" lay-verify="required" value="{$data.name}" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">手机号</label>
+            <div class="layui-input-inline">
+                <input type="text" name="phone" lay-verify="required" value="{$data.phone}" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">性别</label>
+            <div class="layui-input-block">
+                <input type="radio" name="sex" value="1" title="男" <eq name="$data.sex" value="1">checked</eq>>
+                <input type="radio" name="sex" value="2" title="女" <eq name="$data.sex" value="2">checked</eq>>
+                <input type="radio" name="sex" value="3" title="保密"<eq name="$data.sex" value="3">checked</eq>>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">头像</label>
+            <div class="layui-col-md2">
+                <img src="{$data.logo}" id="img-upload-d" alt="" class="screen-img">
+                <input type="hidden" name="ud_logo" id="input-form-d" value="{$data.logo}">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">地区</label>
+            <div class="layui-input-inline">
+                <input type="text" name="address" lay-verify="required" value="{$data.address}" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">个人说明</label>
+            <div class="layui-input-inline">
+                <input type="text" name="message" lay-verify="required" value="{$data.message}" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <input type="hidden" name="id" value="{$data.id}">
+                <button class="layui-btn" lay-submit lay-filter="formEdit" id="submit">立即提交</button>
+                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+            </div>
+        </div>
+    </form>
+
+</div>
+
+

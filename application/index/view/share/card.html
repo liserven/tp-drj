@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link href="https://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
 	<title>我的名片</title>
+	<meta name='apple-itunes-app' content='app-id=1394994857'>
 	<link rel="stylesheet" type="text/css" href="__JS__/index/src/css/style.css">
 	<link href="https://cdn.bootcss.com/Swiper/4.2.0/css/swiper.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="__JS__/index/src/css/public.css">
@@ -43,16 +44,45 @@
 					</dd>
 				</dl>
 				<dl class="interaction text-center">
-					<a href="tel:{$data.ud_phone}"><img src="__JS__/index/src/image/telphone_icon.png"></a>
-					<a href="sms:{$data.ud_phone}"><img src="__JS__/index/src/image/smsmessage_icon.png"></a>
-					<a><img src="__JS__/index/src/image/shareto_icon.png"></a>
+					<a href="drstore://com.zszm.drstore.dingrongstore"><img src="__JS__/index/src/image/telphone_icon.png"></a>
+					<a href="drstore://com.zszm.drstore.dingrongstore"><img src="__JS__/index/src/image/smsmessage_icon.png"></a>
+					<a href="drstore://com.zszm.drstore.dingrongstore"><img src="__JS__/index/src/image/shareto_icon.png"></a>
 					<a class="thumbsup"><img width="25" src="__JS__/index/src/image/onthumbsup.png">{$data.likes}</a>
 				</dl>
 			</ul>
 		</div>
-		<div class="in_shop text-center">进入商城</div>
+		<div class="in_shop text-center" id=""><a style="color: #fff;" id="openApp" href="">进入商城</a></div>
 	</div>
 </body>
 <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="__JS__/index/src/js/main.js"></script>
+<script>
+    document.getElementById('openApp').onclick = function(e){
+        // if(navigator.userAgent.match(/(iPhone|iPod|iPad);?/i))
+        // {
+        //     window.location.href = "com.baidu.tieba://";//ios app协议
+        //     window.setTimeout(function() {
+        //         window.location.href = "https://itunes.apple.com/cn/app/id477927812";
+        //     }, 2000)
+        // }
+        // if(navigator.userAgent.match(/android/i))
+        // {
+        //     window.location.href = "com.baidu.tieba://app";//android app协议
+        //     window.setTimeout(function() {
+        //         window.location.href = "https://****.apk";//android 下载地址
+        //     }, 2000)
+        // }
+    };
+
+
+    // var u = navigator.userAgent, app = navigator.appVersion;
+    // var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Linux') > -1; //g
+    // var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+    // if (isAndroid) {
+    //     $('#openApp').attr('href', 'drstore://com.zszm.drstore.dingrongstore')
+    // }
+    // if (isIOS) {
+    //     $('#openApp').attr('href', 'com.zszm.drhome?id=1394994857')
+    // }
+</script>
 </html>
