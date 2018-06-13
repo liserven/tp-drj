@@ -81,15 +81,41 @@ class Index extends Base
                     'msg' => '地区必须填写一个'
                 ]);
             }
+
+            $is_bind = false;  //初始化绑定是没有的。
             //如果为2就是搜索合伙人
             if($this->user)
             {
+
+                //如果是已经登录的
+
                 //如果是登录用户  先查看是否有绑定合伙人
                 $partner_data = Db::table('partner_user')->alias('pu')->where(['pu_user_id'=> $this->user['ud_id']])
                     ->join('__USER_DATA__ ud', 'pu.pu_partner_id=ud.ud_id', 'left')
                     ->field('ud.ud_name, ud.ud_phone, ud.ud_logo, ud.ud_sex, ud.city, ud.province, ud.county, ud.town,
                      ud.status,ud.ud_id')
-                    ->paginate(10);
+                    ->paginate($limit);
+                if( $partner_data->isEmpty() ) {
+                    $partner_data = UserData::getCityPartner([ 'ud.county'=> $county], $limit);
+                    if( $partner_data->isEmpty() )
+                    {
+                        $partner_data = UserData::getCityPartner([ 'ud.city'=> $city], $limit);
+                        if( $partner_data->isEmpty())
+                        {
+                            $partner_data = Db::table('custom')->paginate($limit);
+                            $result = [
+                                'msg'  => '客服信息',
+                                'bol'  => false,
+                                'error_code' => 90004,
+                                'data'=> $partner_data
+                            ];
+                            return json($result);
+                        }
+                    }
+                }
+                else{
+                    $is_bind = true;
+                }
 
             }
             else{
@@ -97,11 +123,21 @@ class Index extends Base
                 if( $partner_data->isEmpty() )
                 {
                     $partner_data = UserData::getCityPartner([ 'ud.city'=> $city], $limit);
+                    if( $partner_data->isEmpty())
+                    {
+                        $partner_data = Db::table('custom')->paginate($limit);
+                        $result = [
+                            'msg'  => '客服信息',
+                            'bol'  => false,
+                            'error_code' => 90004,
+                            'data'=> $partner_data
+                        ];
+                        return json($result);
+                    }
                 }
             }
-
-                //如果没有绑定合伙人
             $partner_data = $partner_data->toArray();
+            $partner_data['is_bind'] = $is_bind;
             foreach ($partner_data['data'] as $key=>&$partner)
             {
                 $star = Db::table('partner_star')->where([ 'pid'=> $partner['ud_id']])->avg('star');
@@ -109,12 +145,8 @@ class Index extends Base
                 $partner['deal'] = Db::table('partner_user')->where([ 'pu_partner_id'=>$partner['ud_id'], 'status'=> PartnerUserStatus::SIGN])->count();
                 $partner['comm'] = 0;
                 $partner['share_url'] = 'http://www.61drhome.cn/share/card?id='.$partner['ud_id'];
-<<<<<<< HEAD
                 $partner['likes'] = Db::table('partner_laud')->where(['pid'=> $partner['ud_id']])->count();
-
-=======
                 $partner['likes'] = Db::table('partner_laud')->where(['pid'=> $partner['ud_id']])->count()?$partner['praise']=1:$partner['praise']=0;
->>>>>>> c9caf70496a871822f8c9f7196753ac691ab0f23
             }
         }
         else{
@@ -135,7 +167,9 @@ class Index extends Base
         }
         if( empty($partner_data['data']) )
         {
-            throw new PartnerException();
+            throw new PartnerException([
+                'msg'=> '该地区咱无数据'
+            ]);
         }
         return show( true, 'ok', $partner_data);
     }
@@ -223,5 +257,17 @@ class Index extends Base
 
         return show( true, 'ok', $data);
 
+    }
+
+
+    public function getVersion()
+    {
+        $data = [
+            'versionCode'=> 1,
+            'versionName'=> '1.1',
+            'apkURl'=> 'http://www.61drhome.cn/static/dingrongstore-release.apk',
+            'updateMsg'=> '1.定荣家 V2版震撼来袭 \n2.更多的不同类型别墅供您挑选 \n3.强大的自定义功能，你可随心随意的看你所看 \n4.欢迎查看官网 \n5.定荣家官网:<a href=\'http://www.51drhome.com/\'>http://www.51drhome.com/</a>'
+        ];
+        return show(true, 'ok', $data);
     }
 }

@@ -61,10 +61,10 @@ class Bargain extends Base
         }
         return $this->resultHandle((new BargainServer())->helps([
             'phone' => $phone,
-            'bargainId' => $bargainId,
+            'b_id' => $bargainId,
             'nickname' => $nickname,
             'logo'  => $logo,
-            'openId' => $openid,
+            'open_id' => $openid,
         ]));
     }
     //查询砍价配置
@@ -86,7 +86,9 @@ class Bargain extends Base
             return show(true, '你还没有发起过砍价', []);
         }
         $data['helps'] = BargainMinute::all(['b_id'=> $data['id']]);
+        $data['money_total'] = count($data['helps']) * $data['b_money_solo'];
         $data['is_end'] = $data['b_number'] <= count($data['helps']) ? 2 : 1;
+        $data['share_url'] = 'http://baidu.com';
         return show( true, 'ok', $data );
     }
 }

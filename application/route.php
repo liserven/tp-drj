@@ -135,8 +135,8 @@ Route::get('api/:version/c_building', 'api/:version.Collection/getUserBuildingCo
 
 //订单
 //别墅订单
-Route::get('api/:version/o_villa', 'api/:version.Order/getOrderByVilla'); //获取收藏建材列表
-Route::get('api/:version/o_villa_d', 'api/:version.Villa/getOrderDetail'); //获取收藏建材列表
+Route::get('api/:version/o_villa', 'api/:version.Order/getOrderByVilla'); //别墅订单
+Route::get('api/:version/o_villa_d', 'api/:version.Villa/getOrderDetail'); //别墅订单详情
 
 
 
@@ -307,6 +307,12 @@ Route::get('api/:version/encode', 'api/:version.Geo/encode'); //订单
 //即时聊天相关接口
 Route::get('api/:version/im_register', 'api/:version.Im/register'); //订单
 Route::get('api/:version/query', 'api/:version.Query/index'); //订单
+
+
+
+Route::get('api/:version/version', 'api/:version.index/getVersion'); //版本
+
+
 
 
 

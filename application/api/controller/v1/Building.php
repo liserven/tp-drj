@@ -48,10 +48,12 @@ class Building extends Base
         $oneType = input('get.one_type');
         $twoType = input('get.two_type');
         $name = input('name');
+        $is_sales = 1;
         $where= []; //用于条件查询数据
         if(!empty($oneType)) $where['bd.g_column'] = $oneType;
         if(!empty($twoType)) $where['bd.g_columr'] = $twoType;
         if(!empty($name)) $where['bd.g_name'] = [ 'LIKE', '%'.$name.'%'];
+        $where['is_sales'] = !empty(input('sales') )? input('sales') :$is_sales;
         $limit = input('limit') ? input('limit') : 10;
         //组织好查询条件
         $list = BuildingDetails::getListByWhere($where, $limit);

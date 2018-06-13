@@ -14,6 +14,7 @@ use app\common\model\PartnerAudit;
 use app\common\model\PartnerDeal;
 use app\common\model\PartnerStar;
 use app\common\model\PartnerUser;
+use app\common\model\PartnerUserEum;
 use app\common\model\PhoneCode;
 use app\common\model\UserData;
 use app\common\service\AlipayServer;
@@ -287,7 +288,19 @@ class Partner extends Base
             'uid' => $this->user['ud_id'],
             'star' => $starNum,
         ];
-        return $this->resultHandle(PartnerStar::create($starData));
+        Db::startTrans();
+        try{
+
+            PartnerStar::create($starData);
+            $partnerUserData = PartnerUser::get([ 'pu_user_id'=> $this->user['ud_id'], 'pu_partner_id'=> $partner_id]);
+            $partnerUserData->status = PartnerUserStatus::BINDING;
+            $partnerUserData->save();
+            Db::commit();
+            return $this->resultHandle();
+        }catch (\Exception $exception){
+            Db::rollback();
+            return show(false, $exception->getMessage());
+        }
     }
 
 

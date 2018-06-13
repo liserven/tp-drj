@@ -54,6 +54,7 @@ class BargainServer
             'b_money' => $this->total,
             'b_number' => $this->count,
             'b_content' => !empty($content) ? $content : '帮忙砍价',
+            'b_money_solo'=> ceil($this->total/$this->count),
         ];
 
         $result = Bargain::create($bargainData);
